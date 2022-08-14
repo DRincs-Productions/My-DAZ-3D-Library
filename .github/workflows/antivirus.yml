@@ -1,0 +1,23 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Git Anti Virus Scan
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    - cron: '31 17 * * 0'
+
+jobs:
+  gitavscan:
+    runs-on: ubuntu-latest
+    name: AV scan
+    steps:
+    - uses: actions/checkout@v3
+    - name: Git AV Scan
+      uses: djdefi/gitavscan@main
