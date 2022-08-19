@@ -16,3 +16,17 @@ First install [GitHub Desktop](https://desktop.github.com/) then clone this repo
 (Important) After that you have to add the created folder as Daz library, like this.
 
 ![alt text](https://github.com/DonRP/BBS-3D/blob/master/images/2021-06-052.webp "Daz")
+
+
+### Pull branch
+
+To **insert** or **update** the Toolkit in your repo with Pull branch I recommend the following procedure:
+
+(only if you want to insert the repo) Create a new empty branch, in the example I'll use **vscode-template**
+
+```shell
+git checkout -b daz-assert-templete
+git checkout daz-assert-templete
+git pull https://github.com/DRincs-Productions/daz-assert-templete.git --allow-unrelated-histories
+
+```
