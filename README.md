@@ -27,6 +27,6 @@ To **insert** or **update** the Toolkit in your repo with Pull branch I recommen
 ```shell
 git checkout -b daz-assert-templete
 git checkout daz-assert-templete
-git pull https://github.com/DRincs-Productions/daz-assert-templete --allow-unrelated-histories
+git pull https://github.com/DRincs-Productions/daz-assert-templete.git main --allow-unrelated-histories
 
 ```
