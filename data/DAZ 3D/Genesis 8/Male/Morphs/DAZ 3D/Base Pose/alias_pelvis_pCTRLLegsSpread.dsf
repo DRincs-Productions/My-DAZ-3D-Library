@@ -1,0 +1,44 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Pose/alias_pelvis_pCTRLLegsSpread.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-06-21T23:27:34Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "pCTRLLegsSpread",
+			"name" : "pCTRLLegsSpread",
+			"parent" : "/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#pelvis",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "alias",
+				"name" : "pCTRLLegsSpread",
+				"label" : "Legs Spread",
+				"target_channel" : "Genesis8Male:/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Pose/pCTRLLegsSpread.dsf#CTRLLegsOut?value"
+			},
+			"group" : "/Pose Controls/Legs"
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "pCTRLLegsSpread-1",
+				"url" : "#pCTRLLegsSpread"
+			}
+		]
+	}
+}

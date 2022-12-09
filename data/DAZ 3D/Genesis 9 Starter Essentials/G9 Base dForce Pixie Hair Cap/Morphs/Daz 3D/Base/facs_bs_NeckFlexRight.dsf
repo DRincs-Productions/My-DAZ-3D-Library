@@ -1,0 +1,63 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/Morphs/Daz%203D/Base/facs_bs_NeckFlexRight.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-10-05T18:12:53Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_bs_NeckFlexRight",
+			"name" : "facs_bs_NeckFlexRight",
+			"parent" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/dForce%20Pixie%20Hair%20Cap_1085.dsf#Morphing%20Pixie%20Hair%20Cap",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "facs_bs_NeckFlexRight",
+				"visible" : false,
+				"locked" : true,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : 0,
+				"max" : 0,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Pose Controls/Neck",
+			"morph" : {
+				"vertex_count" : 1085,
+				"deltas" : {
+					"count" : 3,
+					"values" : [
+						[ 734, -0.001484618, -0.000505858, 0.000486178 ],
+						[ 736, -0.0003220048, 0, 0.0001085857 ],
+						[ 757, -0.001094239, -0.0001490102, 0.0003615502 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_bs_NeckFlexRight-1",
+				"url" : "#facs_bs_NeckFlexRight"
+			}
+		]
+	}
+}

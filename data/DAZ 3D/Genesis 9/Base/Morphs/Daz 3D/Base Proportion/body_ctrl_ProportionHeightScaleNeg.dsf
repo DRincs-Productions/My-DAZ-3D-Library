@@ -1,0 +1,884 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base%20Proportion/body_ctrl_ProportionHeightScaleNeg.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-07-18T14:58:20Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "body_ctrl_ProportionHeightScaleNeg",
+			"name" : "body_ctrl_ProportionHeightScaleNeg",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#Genesis9",
+			"presentation" : {
+				"type" : "Modifier/Shape",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.1607843, 0.1607843, 0.1607843 ], [ 0.4980392, 0, 0 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "body_ctrl_ProportionHeightScaleNeg",
+				"label" : "body_ctrl_ProportionHeightScaleNeg",
+				"visible" : false,
+				"value" : 0,
+				"min" : 0,
+				"max" : 2,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Hidden/Proportion",
+			"formulas" : [
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#Genesis9?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : -0.25 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base%20Proportion/body_bs_ProportionHeight.dsf#body_bs_ProportionHeight?value" },
+						{ "op" : "push", "val" : -1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_foot:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_foot?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_toes:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_toes?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_bigtoe1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_bigtoe1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_bigtoe2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_bigtoe2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_indextoe1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_indextoe1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_indextoe2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_indextoe2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_midtoe1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_midtoe1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_midtoe2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_midtoe2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_ringtoe1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_ringtoe1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_ringtoe2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_ringtoe2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_pinkytoe1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_pinkytoe1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_pinkytoe2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_pinkytoe2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_foot:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_foot?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_toes:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_toes?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_bigtoe1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_bigtoe1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_bigtoe2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_bigtoe2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_indextoe1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_indextoe1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_indextoe2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_indextoe2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_midtoe1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_midtoe1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_midtoe2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_midtoe2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_ringtoe1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_ringtoe1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_ringtoe2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_ringtoe2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_pinkytoe1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_pinkytoe1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_pinkytoe2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_pinkytoe2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_hand:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_hand?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_thumb1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_thumb1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_thumb2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_thumb2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_thumb3:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_thumb3?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_indexmetacarpal:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_indexmetacarpal?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_index1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_index1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_index2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_index2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_index3:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_index3?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_midmetacarpal:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_midmetacarpal?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_mid1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_mid1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_mid2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_mid2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_mid3:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_mid3?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_ringmetacarpal:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_ringmetacarpal?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_ring1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_ring1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_ring2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_ring2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_ring3:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_ring3?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_pinkymetacarpal:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_pinkymetacarpal?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_pinky1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_pinky1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_pinky2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_pinky2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_pinky3:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_pinky3?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_hand:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_hand?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_thumb1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_thumb1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_thumb2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_thumb2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_thumb3:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_thumb3?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_indexmetacarpal:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_indexmetacarpal?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_index1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_index1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_index2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_index2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_index3:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_index3?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_midmetacarpal:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_midmetacarpal?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_mid1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_mid1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_mid2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_mid2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_mid3:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_mid3?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_ringmetacarpal:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_ringmetacarpal?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_ring1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_ring1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_ring2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_ring2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_ring3:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_ring3?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_pinkymetacarpal:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_pinkymetacarpal?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_pinky1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_pinky1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_pinky2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_pinky2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_pinky3:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_pinky3?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "neck1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#neck1?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "neck2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#neck2?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "head:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#head?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "upperteeth:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#upperteeth?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lowerjaw:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#lowerjaw?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lowerteeth:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#lowerteeth?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lowerfacerig:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#lowerfacerig?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_lipcorner:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_lipcorner?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_liplower:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_liplower?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "liplowermiddle:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#liplowermiddle?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_liplower:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_liplower?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_lipcorner:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_lipcorner?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_cheeklower:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_cheeklower?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_cheeklower:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_cheeklower?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "chin:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#chin?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "upperfacerig:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#upperfacerig?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_browinner:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_browinner?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_browouter:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_browouter?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_browinner:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_browinner?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_browouter:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_browouter?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "centerbrow:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#centerbrow?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_eyelidupper:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_eyelidupper?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_eyelidlower:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_eyelidlower?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_eyelidupper:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_eyelidupper?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_eyelidlower:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_eyelidlower?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_squint:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_squint?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_squint:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_squint?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_cheek:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_cheek?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_cheek:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_cheek?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_nostril:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_nostril?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_nostril:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_nostril?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lipuppermiddle:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#lipuppermiddle?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_lipupper:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_lipupper?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_lipupper:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_lipupper?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_eye:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_eye?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_eye:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_eye?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_ear:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_ear?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_ear:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_ear?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHeightScaleNeg?value" },
+						{ "op" : "push", "val" : 0.16 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "body_ctrl_ProportionHeightScaleNeg-1",
+				"url" : "#body_ctrl_ProportionHeightScaleNeg"
+			}
+		]
+	}
+}

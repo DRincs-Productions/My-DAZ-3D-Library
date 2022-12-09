@@ -1,0 +1,234 @@
+// DAZ Studio version 4.10.0.123 filetype DAZ Script
+/**********************************************************************
+ 
+	Copyright (C) 2002-2018 Daz 3D, Inc. All Rights Reserved.
+ 
+	This script is provided as part of the Daz Script Documentation. The
+	contents of this script, and\or any portion thereof, may only be used
+	in accordance with the following license:
+ 
+	Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+	- http://creativecommons.org/licenses/by/3.0
+ 
+	To contact Daz 3D or for more information about Daz Script visit the
+	Daz 3D website:
+ 
+	- http://www.daz3d.com
+ 
+**********************************************************************/
+// Source: ./resources/Lesson Strips/Common/Interactive.dsa
+
+// Define an anonymous function;
+// serves as our main loop,
+// limits the scope of variables
+( function(){
+	
+	// If the version number is less than required; 4.10.0.123
+	if( App.version64 < 0x0004000a0000007b ){
+		// Inform the user
+		MessageBox.information( qsTr("%1 4.10.0.123 or newer is required to continue.\nCurrent version: %2.")
+			.arg( App.appName ).arg( App.longVersionString ),
+			qsTr("Resource Error"), qsTr("&OK") );
+		// We're done...
+		return;
+	}
+	
+	// Create a file info object for easy access
+	var g_oFile = new DzFileInfo( getScriptFileName() );
+	
+	// Get the path of our include script. Doing it this way, we can debug
+	// with an ascii file and ship a binary [encrypted] file with the same
+	// name... without having to update the contents of the script or manually
+	// handle the file extensions.
+	var g_sInclude = String( "%1/Lesson Strips/Common/Interactive" ).arg( App.getResourcesPath() );
+	var g_oScript = new DzScript();
+	var g_sIncludeFull = g_oScript.getScriptFile( g_sInclude );
+	
+	// If our script was not found
+	if( g_sIncludeFull.isEmpty() ){
+		// Inform the user
+		MessageBox.information( qsTr("%1 : Could not find \"%2\"").arg( g_oFile.baseName() ).arg( g_sInclude ),
+			qsTr("Critical Error"), qsTr("&OK") );
+		
+		// We're done...
+		return;
+	}
+	
+	// Include the script
+	include( g_sIncludeFull );
+	
+	// Define the arrary of interactive lesson instructions
+	var aInstructions = [];
+	
+	var sContinue = qsTr("Continue");
+	var nWidth = 355;
+	
+	var sRenderer = "NVIDIA Iray";
+	
+	var sActionClass = "DzOpenAction";
+	var oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Open the Scene"),
+		qsTr("First, open the //Barefoot Dancer// scene you saved in the last lesson.\n\n" +
+			"Select the ##%1.label## action in the toolbar or under the ##%1.menu## menu " +
+			"from the **Main Menu Bar**.\n\n" +
+			"If the scene is already open, select //%2//.")
+				.arg( sActionClass )
+				.arg( sContinue ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = renderSettingsPaneEditorRendererSelect(
+		sRenderer,
+		qsTr("Change the Active Renderer"),
+		qsTr("Since this tutorial is specifically made for the //%1// render engine, " +
+			"you will need to switch the active renderer to //%1//.\n\n" +
+			"If you are running %2 (32-bit), you will not be able " +
+			"to finish this lesson because //%1// is not available in this version of %2. " +
+			"Please see the //Barefoot Dancer 3Delight// lesson.")
+				.arg( sRenderer )
+				.arg( App.appName ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = displayMessage(
+		qsTr("Exposure Value"),
+		qsTr("If there is ever trouble with the lighting in a scene, the Exposure Value tool can help.\n\n" +
+			"Exposure Value controls the overall brightness of an image, using a combination of " +
+			"settings. It is comparable to changing pupil size to see more or less light.\n\n" +
+			"Click //%1// (below) to proceed with this lesson. Click //Stop [Esc]// to exit the " +
+			"lesson at any time.")
+				.arg( sContinue ),
+		"",
+		nWidth,
+		sContinue );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	var sDrawStyle = "NVIDIA Iray";
+	oInstruction = auxViewportControlSelect(
+		"controls.drawstyle",
+		sDrawStyle,
+		qsTr("Changing the Drawstyle to %1").arg( sDrawStyle ),
+		qsTr("For this part of the lesson you will want to make sure the DrawStyle is set to %1.\n\n" +
+			"For this lesson to work, you will need an NVIDIA video card of at least 4GB, since %1 " +
+			"requires a lot of memory. Please click //Stop [Esc]//, and move on to the next lesson " +
+			"if the video card is less than 4GB.\n\n" +
+			"Otherwise, follow the arrows to the DrawStyle option in the viewport to change " +
+			"the setting and see the exposure value changes.")
+				.arg( sDrawStyle ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = renderSettingsPaneEditorRendererSelect(
+		sRenderer,
+		qsTr("Change the Active Renderer"),
+		qsTr("Switch the active renderer to //%1//. This will provide access to the settings that you " +
+			"will set up next.")
+				.arg( sRenderer ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = renderSettingsPanePropertyEdit(
+		"Editor/Tone Mapping/Exposure Value",
+		8.0,
+		0.1,
+		qsTr("Increasing the Exposure Value"),
+		qsTr("Great! Now locate the //Exposure Value// property under **Tone Mapping** in the **Render " +
+			"Settings** pane. Manually change the value to 8 by clicking the slider number. " +
+			"The lower the exposure value number, the brighter a scene may appear. Notice " +
+			"how the lighting changes!\n\n" +
+			"If you have recently enabled the //%1// DrawStyle, it may take a moment " +
+			"before the image updates in the **Aux Viewport**.\n\n" +
+			"When you are ready, click //%2// (below) to proceed.")
+				.arg( sDrawStyle )
+				.arg( sContinue ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = renderSettingsPanePropertyEdit(
+		"Editor/Tone Mapping/Exposure Value",
+		13.0,
+		0.1,
+		qsTr("Decreasing the Exposure Value"),
+		qsTr("Does the scene appear overexposed? If a scene is ever too bright after manually " +
+			"adding light, remember to check the exposure value. Try setting the //Exposure " +
+			"Value// property to //13//, like the lighting on a cloudy day, so that the scene will " +
+			"be visible again.\n\n" +
+			"For more information on lighting in //%1//, please go to the following link: " +
+			"[[www.youtube.com/watch?v=Qb1m1vm5EB0&t=1s|Lighting Tutorial]]\n\n" +
+			"When you are ready, click //%2// (below) to proceed.")
+				.arg( sRenderer )
+				.arg( sContinue ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	sActionClass = "DzSaveAction";
+	oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Better Safe than Sorry"),
+		qsTr("You are almost finished. Save to ensure you do not lose your work.\n\n" +
+			"You can find the ##%1.label## action in the **Main Menu Bar** under the " +
+			"##%1.menu## menu or use the ##%1.shortcut## shortcut to save the scene.")
+				.arg( sActionClass ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = displayMessage(
+		qsTr("Finding the Light"),
+		qsTr("When you are ready, press //%1// to start the next lesson. Or press //Stop [Esc]// to practice making your own " +
+			"exposure changes.")
+				.arg( sContinue ),
+		"",
+		nWidth,
+		qsTr("Continue to VIII - Rendering a Scene") );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = lessonSelect(
+		"/Guided Tours/I - Getting Started/VIII - Rendering a Scene",
+		qsTr("Moving On"),
+		qsTr("Fantastic. Let's start //VIII - Rendering a Scene//."),
+		"",
+		nWidth );
+	aInstructions.push( oInstruction );
+	
+	
+	// Define an array of additionally required files;
+	var aRequiredFiles = [
+		/*
+		requiredAsset(
+			"/Default/Figures/People/Female/Real World/Genesis 8 Basic Female.duf",
+			"Genesis 8 Starter Essentials",
+			42071
+		)
+		*/
+	];
+	
+	// Process the lesson
+	processLesson( aInstructions, aRequiredFiles );
+	
+// Finalize the function and invoke
+})();

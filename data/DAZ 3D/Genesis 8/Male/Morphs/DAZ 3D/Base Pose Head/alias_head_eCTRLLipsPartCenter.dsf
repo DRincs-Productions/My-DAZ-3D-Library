@@ -1,0 +1,44 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Pose%20Head/alias_head_eCTRLLipsPartCenter.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-06-21T23:27:34Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "eCTRLLipsPartCenter",
+			"name" : "eCTRLLipsPartCenter",
+			"parent" : "/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#head",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "alias",
+				"name" : "eCTRLLipsPartCenter",
+				"label" : "Lips Part Center",
+				"target_channel" : "Genesis8Male:/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Pose%20Head/eCTRLLipsPartCenter.dsf#eCTRLLipsPartCenter?value"
+			},
+			"group" : "/Pose Controls/Head/Mouth/Lips"
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "eCTRLLipsPartCenter-1",
+				"url" : "#eCTRLLipsPartCenter"
+			}
+		]
+	}
+}

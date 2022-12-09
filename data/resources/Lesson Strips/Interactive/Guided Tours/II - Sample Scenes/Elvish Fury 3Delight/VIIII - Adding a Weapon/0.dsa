@@ -1,0 +1,209 @@
+// DAZ Studio version 4.10.0.123 filetype DAZ Script
+/**********************************************************************
+ 
+	Copyright (C) 2002-2018 Daz 3D, Inc. All Rights Reserved.
+ 
+	This script is provided as part of the Daz Script Documentation. The
+	contents of this script, and\or any portion thereof, may only be used
+	in accordance with the following license:
+ 
+	Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+	- http://creativecommons.org/licenses/by/3.0
+ 
+	To contact Daz 3D or for more information about Daz Script visit the
+	Daz 3D website:
+ 
+	- http://www.daz3d.com
+ 
+**********************************************************************/
+// Source: ./resources/Lesson Strips/Common/Interactive.dsa
+
+// Define an anonymous function;
+// serves as our main loop,
+// limits the scope of variables
+( function(){
+	
+	// If the version number is less than required; 4.10.0.123
+	if( App.version64 < 0x0004000a0000007b ){
+		// Inform the user
+		MessageBox.information( qsTr("%1 4.10.0.123 or newer is required to continue.\nCurrent version: %2.")
+			.arg( App.appName ).arg( App.longVersionString ),
+			qsTr("Resource Error"), qsTr("&OK") );
+		// We're done...
+		return;
+	}
+	
+	// Create a file info object for easy access
+	var g_oFile = new DzFileInfo( getScriptFileName() );
+	
+	// Get the path of our include script. Doing it this way, we can debug
+	// with an ascii file and ship a binary [encrypted] file with the same
+	// name... without having to update the contents of the script or manually
+	// handle the file extensions.
+	var g_sInclude = String( "%1/Lesson Strips/Common/Interactive" ).arg( App.getResourcesPath() );
+	var g_oScript = new DzScript();
+	var g_sIncludeFull = g_oScript.getScriptFile( g_sInclude );
+	
+	// If our script was not found
+	if( g_sIncludeFull.isEmpty() ){
+		// Inform the user
+		MessageBox.information( qsTr("%1 : Could not find \"%2\"").arg( g_oFile.baseName() ).arg( g_sInclude ),
+			qsTr("Critical Error"), qsTr("&OK") );
+		
+		// We're done...
+		return;
+	}
+	
+	// Include the script
+	include( g_sIncludeFull );
+	
+	// Define the arrary of interactive lesson instructions
+	var aInstructions = [];
+	
+	var sContinue = qsTr("Continue");
+	var nWidth = 355;
+	
+	var nContentPaneVersion = 0x0004000b00000070; // 4.11.0.112
+	
+	var sPane = (App.version64 >= nContentPaneVersion ? "Content Library" : "Smart Content");
+	
+	var sRenderer = "3Delight";
+	
+	var sActionClass = "DzOpenAction";
+	var oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Open the Scene"),
+		qsTr("Open the //Elvish Fury// scene.\n\n" +
+			"Select the ##%1.label## action in the toolbar or under the ##%1.menu## menu " +
+			"from the **Main Menu Bar**.\n\n" +
+			"If the scene is already open, select //%2//.")
+				.arg( sActionClass )
+				.arg( sContinue ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = scenePaneNodeSelect(
+		"Genesis 8 Female",
+		qsTr("Selecting Your Figure"),
+		qsTr("Select //Genesis 8 Female// in the **Scene** pane."),
+		"",
+		nWidth );
+	aInstructions.push( oInstruction );
+	
+	
+	var sRelPath = "/Props/Weapons/Blades/Dark Fantasy Dual Bladed Spear Hand Right.duf";
+	var sAssetPath = "/People/Genesis 8 Female/Props/Dark Fantasy Weapons/Dark Fantasy Dual Bladed Spear Hand Right.duf";
+	var sProduct = "Genesis 8 Starter Essentials";
+	var nSku = 42071;
+	var sTitle = qsTr("Adding a Weapon");
+	var sDescription = qsTr("In the **%1** pane, find and double-click //Dark Fantasy Dual Bladed Spear " +
+			"Hand Right// to load the weapon into the scene.")
+				.arg( sPane );
+	var sNote = "";
+	if( App.version64 >= nContentPaneVersion ){
+		oInstruction = contentLibraryPaneAssetLoad(
+			sRelPath, sAssetPath, sProduct, nSku, sTitle, sDescription, sNote, nWidth );
+	} else {
+		oInstruction = smartContentPaneAssetLoad(
+			sRelPath, sAssetPath, sProduct, nSku, sTitle, sDescription, sNote, nWidth );
+	}
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = scenePaneNodeSelect(
+		"Right Forearm Bend",
+		qsTr("Selecting the Arm"),
+		qsTr("Select //Right Forearm Bend// in the **Scene** pane."),
+		"",
+		nWidth );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = posingPanePropertyEdit(
+		"/Right Forearm Bend/General/Transforms/Rotation/Bend",
+		61.58,
+		0.5,
+		qsTr("Posing the Arm"),
+		qsTr("Now that you have the weapon added to your scene, notice that the hand poses around " +
+			"the weapon.\n\n" +
+			"In the **Posing** pane, under the **Pose Controls > Transforms > Rotation** property group, " +
+			"move the **Bend** property to 61.58.\n\n" +
+			"If the lesson does not automatically move forward, click //%1//.")
+				.arg( sContinue ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	oInstruction = setElevateToListView( oInstruction, true );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = posingPanePropertyEdit(
+		"/Right Forearm Bend/General/Transforms/Rotation/Bend",
+		10.28,
+		0.5,
+		qsTr("Posing the Arm"),
+		qsTr("Now, in the **Posing** pane, under the **Pose Controls > Transforms > Rotation** property group, " +
+			"move the **Twist** property to 10.28.\n\n" +
+			"If the lesson does not automatically move forward, click //%1//.")
+				.arg( sContinue ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	oInstruction = setElevateToListView( oInstruction, true );
+	aInstructions.push( oInstruction );
+	
+	
+	sActionClass = "DzSaveAction";
+	oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Better Safe than Sorry"),
+		qsTr("Before you move on, be sure to save.\n\n" +
+			"You can find the ##%1.label## action in the **Main Menu Bar** under the ##%1.menu## menu or use the " +
+			"##%1.shortcut## shortcut to save the scene.")
+				.arg( sActionClass ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = displayMessage(
+		qsTr("Congratulations"),
+		qsTr("You have now completed the ninth step in this lesson series!\n\n" +
+			"When you are ready, continue to the next lesson, or press //Stop [Esc]// " +
+			"below to practice what you have learned."),
+		"",
+		nWidth,
+		qsTr("Continue to X - Rendering a Scene") );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = lessonSelect(
+		"/Guided Tours/II - Sample Scenes/Elvish Fury 3Delight/X - Rendering a Scene",
+		qsTr("Moving On"),
+		qsTr("Follow the arrows to render the scene."),
+		"",
+		nWidth );
+	aInstructions.push( oInstruction );
+	
+	
+	// Define an array of additionally required files;
+	var aRequiredFiles = [
+		/*
+		requiredAsset(
+			"/Default/Figures/People/Female/Real World/Genesis 8 Female.duf",
+			"Genesis 8 Starter Essentials",
+			42071
+		)
+		*/
+	];
+	
+	// Process the lesson
+	processLesson( aInstructions, aRequiredFiles );
+	
+// Finalize the function and invoke
+})();

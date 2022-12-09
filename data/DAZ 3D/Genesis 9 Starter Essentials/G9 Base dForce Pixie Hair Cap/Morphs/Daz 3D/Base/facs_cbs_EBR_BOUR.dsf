@@ -1,0 +1,71 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/Morphs/Daz%203D/Base/facs_cbs_EBR_BOUR.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-10-05T18:12:53Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_cbs_EBR_BOUR",
+			"name" : "facs_cbs_EBR_BOUR",
+			"parent" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/dForce%20Pixie%20Hair%20Cap_1085.dsf#Morphing%20Pixie%20Hair%20Cap",
+			"presentation" : {
+				"type" : "Modifier/Shape",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "facs_cbs_EBR_BOUR",
+				"visible" : false,
+				"locked" : true,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : 0,
+				"max" : 0,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Hidden/FACS/Fixes",
+			"morph" : {
+				"vertex_count" : 1085,
+				"deltas" : {
+					"count" : 11,
+					"values" : [
+						[ 696, 9.832112e-06, 6.422224e-05, 5.108509e-05 ],
+						[ 697, 2.38942e-06, 1.639146e-05, 1.229663e-05 ],
+						[ 1036, 1.138806e-05, 8.028603e-05, 5.278547e-05 ],
+						[ 1038, 3.273998e-05, 0.0002720082, 0.0001674412 ],
+						[ 1039, 8.025776e-06, 6.569262e-05, 4.076613e-05 ],
+						[ 1055, 6.028622e-06, 4.946561e-05, 3.060685e-05 ],
+						[ 1056, 3.149578e-05, 0.000262321, 0.0001610008 ],
+						[ 1071, 2.277876e-05, -3.89252e-05, -2.605736e-05 ],
+						[ 1073, 3.264798e-05, 0.0001482705, 8.576037e-05 ],
+						[ 1074, 6.874114e-05, -8.896242e-05, -7.079919e-05 ],
+						[ 1075, 9.584861e-05, 0.0008125704, 0.0004877427 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_cbs_EBR_BOUR-1",
+				"url" : "#facs_cbs_EBR_BOUR"
+			}
+		]
+	}
+}

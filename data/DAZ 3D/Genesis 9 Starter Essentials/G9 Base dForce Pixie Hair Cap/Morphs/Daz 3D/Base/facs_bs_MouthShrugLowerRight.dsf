@@ -1,0 +1,80 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/Morphs/Daz%203D/Base/facs_bs_MouthShrugLowerRight.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-10-05T18:12:53Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_bs_MouthShrugLowerRight",
+			"name" : "facs_bs_MouthShrugLowerRight",
+			"parent" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/dForce%20Pixie%20Hair%20Cap_1085.dsf#Morphing%20Pixie%20Hair%20Cap",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "facs_bs_MouthShrugLowerRight",
+				"visible" : false,
+				"locked" : true,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : 0,
+				"max" : 0,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Pose Controls/Head/Mouth",
+			"morph" : {
+				"vertex_count" : 1085,
+				"deltas" : {
+					"count" : 20,
+					"values" : [
+						[ 729, 6.617355e-05, -8.895733e-07, -0.002679291 ],
+						[ 730, 5.744744e-05, 1.395606e-05, -0.002464339 ],
+						[ 973, 1.019406e-05, 3.25963e-05, 4.043671e-06 ],
+						[ 1011, 5.025646e-05, 0.0002862728, -0.0001935456 ],
+						[ 1012, 0.000503996, 0.001220636, -0.0003114527 ],
+						[ 1013, 3.157799e-05, 0.0001332125, -0.0003885161 ],
+						[ 1014, 4.972813e-05, 0.0001678718, 1.147563e-05 ],
+						[ 1015, 8.371688e-06, 0, -0.0003183595 ],
+						[ 1016, 1.048949e-05, 2.187692e-05, -6.201351e-06 ],
+						[ 1019, 1.209445e-05, 2.522423e-05, -7.1502e-06 ],
+						[ 1021, 2.831969e-06, 8.798352e-07, -0.0001308961 ],
+						[ 1022, 6.589361e-06, 9.301693e-07, -0.0002897828 ],
+						[ 1061, 0.000119358, 3.919812e-07, -0.004318435 ],
+						[ 1062, 4.111572e-05, 0.000206733, 4.536808e-05 ],
+						[ 1063, 0.0006714494, 0.002297149, 0.0003541957 ],
+						[ 1064, 0.0009698931, 0.004499217, 0.0004397801 ],
+						[ 1065, 0.0007831494, 0.004365396, -0.001621218 ],
+						[ 1066, 5.709509e-06, 3.265247e-05, 5.713405e-06 ],
+						[ 1067, 0.0001431699, 6.427597e-05, -0.003851422 ],
+						[ 1068, 0.0005264026, 0.002926659, -0.002946118 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_bs_MouthShrugLowerRight-1",
+				"url" : "#facs_bs_MouthShrugLowerRight"
+			}
+		]
+	}
+}

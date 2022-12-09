@@ -1,0 +1,190 @@
+// DAZ Studio version 4.10.0.123 filetype DAZ Script
+/**********************************************************************
+ 
+	Copyright (C) 2002-2018 Daz 3D, Inc. All Rights Reserved.
+ 
+	This script is provided as part of the Daz Script Documentation. The
+	contents of this script, and\or any portion thereof, may only be used
+	in accordance with the following license:
+ 
+	Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+	- http://creativecommons.org/licenses/by/3.0
+ 
+	To contact Daz 3D or for more information about Daz Script visit the
+	Daz 3D website:
+ 
+	- http://www.daz3d.com
+ 
+**********************************************************************/
+// Source: ./resources/Lesson Strips/Common/Interactive.dsa
+
+// Define an anonymous function;
+// serves as our main loop,
+// limits the scope of variables
+( function(){
+	
+	// If the version number is less than required; 4.10.0.123
+	if( App.version64 < 0x0004000a0000007b ){
+		// Inform the user
+		MessageBox.information( qsTr("%1 4.10.0.123 or newer is required to continue.\nCurrent version: %2.")
+			.arg( App.appName ).arg( App.longVersionString ),
+			qsTr("Resource Error"), qsTr("&OK") );
+		// We're done...
+		return;
+	}
+	
+	// Create a file info object for easy access
+	var g_oFile = new DzFileInfo( getScriptFileName() );
+	
+	// Get the path of our include script. Doing it this way, we can debug
+	// with an ascii file and ship a binary [encrypted] file with the same
+	// name... without having to update the contents of the script or manually
+	// handle the file extensions.
+	var g_sInclude = String( "%1/Lesson Strips/Common/Interactive" ).arg( App.getResourcesPath() );
+	var g_oScript = new DzScript();
+	var g_sIncludeFull = g_oScript.getScriptFile( g_sInclude );
+	
+	// If our script was not found
+	if( g_sIncludeFull.isEmpty() ){
+		// Inform the user
+		MessageBox.information( qsTr("%1 : Could not find \"%2\"").arg( g_oFile.baseName() ).arg( g_sInclude ),
+			qsTr("Critical Error"), qsTr("&OK") );
+		
+		// We're done...
+		return;
+	}
+	
+	// Include the script
+	include( g_sIncludeFull );
+	
+	// Define the arrary of interactive lesson instructions
+	var aInstructions = [];
+	
+	var sContinue = qsTr("Continue");
+	var nWidth = 355;
+	
+	var sRenderer = "3Delight";
+	
+	var sActionClass = "DzOpenAction";
+	var oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Open the Scene"),
+		qsTr("Open your //Elvish Fury// scene from the last lesson.\n\n" +
+			"To do this select the ##%1.label## action in the toolbar or under the ##%1.menu## menu from the " +
+			"**Main Menu Bar**.\n\n" +
+			"If the scene is already open, select //%2//.")
+				.arg( sActionClass )
+				.arg( sContinue ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = scenePaneNodeSelect(
+		"Genesis 8 Female",
+		qsTr("Scene Pane"),
+		qsTr("You will need to select //Genesis 8 Female// in the **Scene** pane."),
+		"",
+		nWidth );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = parametersPanePropertyEdit(
+		"/General/Transforms/Translation/xTranslate",
+		7.34,
+		0.5,
+		qsTr("Out of the Steps"),
+		qsTr("When you figure loads into the scene, notice that it loads into the middle " +
+			"of the steps. You will want to fix this by Translating the figure.\n\n" +
+			"In the **Parameters** pane, find **Translation** in the property group. " +
+			"Move the **X Translate** property to 7.34. " +
+			"If you click once on the number **0.00**, you can type in 7.34 and press **[Enter]** to translate the figure.\n\n" +
+			"If your lesson does not automatically move forward, click //%1//.")
+				.arg( sContinue ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = parametersPanePropertyEdit(
+		"/General/Transforms/Translation/yTranslate",
+		5.35,
+		0.5,
+		qsTr("Out of the Steps"),
+		qsTr("Move the **Y Translate** property to 5.35.\n\n" +
+			"If your lesson does not automatically move forward, click //%1//.")
+				.arg( sContinue ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = parametersPanePropertyEdit(
+		"/General/Transforms/Translation/zTranslate",
+		544.35,
+		0.5,
+		qsTr("Out of the Steps"),
+		qsTr("Move the **Z Translate** propery to 544.35. The figure will now be outside of your viewport " +
+			"Do Not Panic. Continue to the next lesson.\n\n" +
+			"If your lesson does not automatically move forward, click //%1//.")
+				.arg( sContinue ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	sActionClass = "DzSaveAction";
+	oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Better Safe than Sorry"),
+		qsTr("Before you move on, save your scene again, so if you choose to stop the lesson series, you can pick " +
+			"up where you left off.\n\n" +
+			"You can find the ##%1.label## action in the **Main Menu Bar** under the ##%1.menu## menu or use the " +
+			"##%1.shortcut## shortcut to save the scene.")
+				.arg( sActionClass ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = displayMessage(
+		qsTr("Congratulations"),
+		qsTr("You have now learned how to translate your figure!\n\n" +
+			"Click //%1// to start the next lesson, or click the //Stop [Esc]// button to practice.")
+				.arg( sContinue ),
+		"",
+		nWidth,
+		qsTr("V - Adding and Moving a Camera") );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = lessonSelect(
+		"/Guided Tours/II - Sample Scenes/Elvish Fury 3Delight/V - Adding and Moving a Camera",
+		qsTr("Moving On"),
+		qsTr("Locate the //V - Adding and Moving a Camera//."),
+		"",
+		nWidth );
+	aInstructions.push( oInstruction );
+	
+	
+	// Define an array of additionally required files;
+	var aRequiredFiles = [
+		/*
+		requiredAsset(
+			"/Default/Figures/People/Female/Real World/Genesis 8 Basic Female.duf",
+			"Genesis 8 Starter Essentials",
+			42071
+		)
+		*/
+	];
+	
+	// Process the lesson
+	processLesson( aInstructions, aRequiredFiles );
+	
+// Finalize the function and invoke
+})();

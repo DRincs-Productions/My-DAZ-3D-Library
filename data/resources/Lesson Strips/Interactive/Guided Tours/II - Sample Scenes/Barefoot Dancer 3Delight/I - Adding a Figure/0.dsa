@@ -1,0 +1,209 @@
+// DAZ Studio version 4.10.0.123 filetype DAZ Script
+/**********************************************************************
+ 
+	Copyright (C) 2002-2018 Daz 3D, Inc. All Rights Reserved.
+ 
+	This script is provided as part of the Daz Script Documentation. The
+	contents of this script, and\or any portion thereof, may only be used
+	in accordance with the following license:
+ 
+	Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+	- http://creativecommons.org/licenses/by/3.0
+ 
+	To contact Daz 3D or for more information about Daz Script visit the
+	Daz 3D website:
+ 
+	- http://www.daz3d.com
+ 
+**********************************************************************/
+// Source: ./resources/Lesson Strips/Common/Interactive.dsa
+
+// Define an anonymous function;
+// serves as our main loop,
+// limits the scope of variables
+( function(){
+	
+	// If the version number is less than required; 4.10.0.123
+	if( App.version64 < 0x0004000a0000007b ){
+		// Inform the user
+		MessageBox.information( qsTr("%1 4.10.0.123 or newer is required to continue.\nCurrent version: %2.")
+			.arg( App.appName ).arg( App.longVersionString ),
+			qsTr("Resource Error"), qsTr("&OK") );
+		// We're done...
+		return;
+	}
+	
+	// Create a file info object for easy access
+	var g_oFile = new DzFileInfo( getScriptFileName() );
+	
+	// Get the path of our include script. Doing it this way, we can debug
+	// with an ascii file and ship a binary [encrypted] file with the same
+	// name... without having to update the contents of the script or manually
+	// handle the file extensions.
+	var g_sInclude = String( "%1/Lesson Strips/Common/Interactive" ).arg( App.getResourcesPath() );
+	var g_oScript = new DzScript();
+	var g_sIncludeFull = g_oScript.getScriptFile( g_sInclude );
+	
+	// If our script was not found
+	if( g_sIncludeFull.isEmpty() ){
+		// Inform the user
+		MessageBox.information( qsTr("%1 : Could not find \"%2\"").arg( g_oFile.baseName() ).arg( g_sInclude ),
+			qsTr("Critical Error"), qsTr("&OK") );
+		
+		// We're done...
+		return;
+	}
+	
+	// Include the script
+	include( g_sIncludeFull );
+	
+	// Define the arrary of interactive lesson instructions
+	var aInstructions = [];
+	
+	var sContinue = qsTr("Continue");
+	var nWidth = 355;
+	
+	var sRenderer = "3Delight";
+	
+	var oInstruction = displayMessage(
+		qsTr("Barefoot Dancer"),
+		imageResource( "Barefoot Dancer/BarefootDancer3Delight.jpg", 455, 350, false, true ) +
+		qsTr("Welcome to the //Barefoot Dancer// Interactive Lesson!\n\n" +
+			"After completing this lesson, you will be able to build and render " +
+			"a scene using the //%1// Render Engine in %2.\n\n "+
+			"Click //%3// (below) to proceed with this lesson. Click //Stop [Esc]// " +
+			"to exit the lesson at any time." )
+				.arg( sRenderer )
+				.arg( App.appName )
+				.arg( sContinue ),
+		"",
+		nWidth,
+		sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	var sActionClass = "DzNewAction";
+	oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Starting a New Scene"),
+		qsTr("Click the ##%1.label## action in the toolbar; this gives you a fresh scene. " +
+			"You can also find the ##%1.label## action in the **Main Menu Bar** at the top of the " +
+			"screen under the ##%1.menu## menu or use the ##%1.shortcut## shortcut.")
+				.arg( sActionClass ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = smartContentPaneAssetLoad(
+		"/Default/Figures/People/Female/Real World/Genesis 8 Basic Female.duf",
+		"/People/Genesis 8 Female/Genesis 8 Basic Female.duf",
+		"Genesis 8 Starter Essentials",
+		42071,
+		qsTr("Loading Your Character"),
+		qsTr("You will want to load your figure from the **Smart Content** pane. \n\n " +
+			"To do this, go to the **Smart Content** pane, under the **Figures > People >" +
+			"Female > Real World** category, and double-click the //Genesis 8 Basic Female// icon."),
+		"",
+		nWidth );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = scenePaneNodeSelect(
+		"Genesis 8 Female",
+		qsTr("Loading Your Character"),
+		qsTr("Select //Genesis 8 Female// in the **Scene** pane."),
+		"",
+		nWidth );
+	aInstructions.push( oInstruction );
+	
+	
+	var sTitle = qsTr("Filter By Context");
+	var sDescription = qsTr("Open the **Smart Content** pane and make sure that //%1// is " +
+			"checked in the bottom left corner.\n\n" +
+			"When //%1// is checked, only content that is compatible with the " +
+			"highlighted item in the **Scene** pane will appear in the **Smart Content** pane.")
+				.arg( sTitle );
+	var sNote = "";
+	var bValue = true;
+	if( typeof( smartContentPaneFilesFilterByContext ) == "function" ){
+		oInstruction = smartContentPaneFilesFilterByContext(
+			bValue, sTitle, sDescription, sNote, nWidth );
+	} else {
+		oInstruction = createInstruction(
+			g_sWidgetType,
+			"SmartContent.SmartContentFileContentTab.ContentTabFilterByContextCbx",
+			sTitle, sDescription, sNote, nWidth, "", false );
+		oInstruction = requireValue( oInstruction, bValue );
+	}
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = smartContentPaneAssetLoad(
+		"/Default/Materials/Feminine/Genesis 8 Female/Skin/Base MAT All Maps.duf",
+		"/People/Genesis 8 Female/Materials/Base Materials/3Delight/Base MAT All Maps.duf",
+		"Genesis 8 Starter Essentials",
+		42071,
+		qsTr("Loading Your Character"),
+		qsTr("//Genesis 8 Female// loads with Iray textures. You will need " +
+			"to change her skin to //%1// (RSL) textures.\n\n" +
+			"Follow the arrows and double-click the //%1// skin texture to load it onto the figure.")
+				.arg( sRenderer ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	sActionClass = "DzSaveAction";
+	oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Better Safe than Sorry"),
+		qsTr("Save your progress at any time by using the shortcut ##%1.shortcut## " +
+			"Or, use the ##%1.label## action in the **Main Menu Bar** under the " +
+			"##%1.menu##.\n\n" +
+			"When you save your scene, be sure to name it //Barefoot Dancer//.")
+				.arg( sActionClass ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = displayMessage(
+		qsTr("Congratulations"),
+		qsTr("You have now completed the first step in this lesson series!\n\n" +
+			"When you are ready, continue to the next lesson, or press " +
+			"//Stop (Esc)// below to practice what you learned."),
+		"",
+		nWidth,
+		qsTr("Continue to II - Dressing a Figure") );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = lessonSelect(
+		"/Guided Tours/II - Sample Scenes/Barefoot Dancer 3Delight/II - Dressing a Figure",
+		qsTr("Next Lesson"),
+		qsTr("Locate and click //II - Dressing a Figure// from the **Lesson Selector**."),
+		"",
+		nWidth );
+	aInstructions.push( oInstruction );
+	
+	
+	// Define an array of additionally required files;
+	var aRequiredFiles = [
+		/*
+		requiredAsset(
+			"/Default/Figures/People/Female/Real World/Genesis 8 Basic Female.duf",
+			"Genesis 8 Starter Essentials",
+			42071
+		)
+		*/
+	];
+	
+	// Process the lesson
+	processLesson( aInstructions, aRequiredFiles );
+	
+// Finalize the function and invoke
+})();

@@ -1,0 +1,1810 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/NVIDIA%20MDL%20Examples/Metal%20Brushed/Metal%20Brushed.dsf",
+		"type" : "material",
+		"contributor" : {
+			"author" : "DAZ 3D",
+			"email" : "support@daz3d.com",
+			"website" : "http://www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2015-05-19T03:05:00Z"
+	},
+	"material_library" : [
+		{
+			"id" : "Metal Brushed",
+			"diffuse" : {
+				"channel" : {
+					"id" : "diffuse",
+					"type" : "float_color",
+					"name" : "Diffuse Color",
+					"label" : "Metal Color",
+					"value" : [ 0.8221681, 0.8221681, 0.8221681 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"step_size" : 1,
+					"color_blend_mode" : "rgb"
+				},
+				"group" : "/Metal Brushed"
+			},
+			"extra" : [
+				{
+					"type" : "studio/material/daz_brick",
+					"brick_settings" : {
+						"BrickSetup" : {
+							"type" : "settings",
+							"value" : {
+								"Bricks" : {
+									"type" : "settings",
+									"value" : {
+										"Brick_1" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzUserParametersBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"UserOutputParameters" : {
+															"type" : "settings",
+															"value" : {
+																"user_out_1" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "outlinecolorid_value_arg",
+																		"ParamType" : "color",
+																		"PropertyClass" : "DzColorProperty",
+																		"PropertyName" : "OutlineColorID"
+																	}
+																},
+																"user_out_2" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "metal_color",
+																		"ParamType" : "color",
+																		"PropertyClass" : "DzFloatColorProperty",
+																		"PropertyName" : "Diffuse Color"
+																	}
+																},
+																"user_out_3" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "brush_texture",
+																		"ParamType" : "texture_2d",
+																		"PropertyClass" : "DzImageProperty",
+																		"PropertyName" : "brush_texture"
+																	}
+																},
+																"user_out_4" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "brushing_strength",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "brushing_strength"
+																	}
+																},
+																"user_out_5" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "roughness_texture_u",
+																		"ParamType" : "texture_2d",
+																		"PropertyClass" : "DzImageProperty",
+																		"PropertyName" : "roughness_texture_u"
+																	}
+																},
+																"user_out_6" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "roughness_texture_v",
+																		"ParamType" : "texture_2d",
+																		"PropertyClass" : "DzImageProperty",
+																		"PropertyName" : "roughness_texture_v"
+																	}
+																},
+																"user_out_7" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "is_normaltexture",
+																		"ParamType" : "bool",
+																		"PropertyClass" : "DzBoolProperty",
+																		"PropertyName" : "is_normaltexture"
+																	}
+																},
+																"user_out_8" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "bump_strength_value_arg",
+																		"MapArgName" : "bump_strength_map_arg",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "Bump Strength"
+																	}
+																},
+																"user_out_9" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "reflection_stretch",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "reflection_stretch"
+																	}
+																},
+																"user_out_10" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "x",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "Horizontal Tiles"
+																	}
+																},
+																"user_out_11" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "y",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "Vertical Tiles"
+																	}
+																}
+															}
+														},
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "User Parameters (3)",
+																"HideParams" : false,
+																"PosX" : 308,
+																"PosY" : -295,
+																"Width" : [ "i", 217 ],
+																"Height" : [ "i", 380 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 119,
+																						"Green" : 215,
+																						"Blue" : 241
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 128,
+																						"Green" : 5,
+																						"Blue" : 231
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 138,
+																						"Green" : 22,
+																						"Blue" : 98
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 249,
+																						"Green" : 209,
+																						"Blue" : 229
+																					}
+																				}
+																			}
+																		},
+																		"Param_4" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 200,
+																						"Green" : 17,
+																						"Blue" : 136
+																					}
+																				}
+																			}
+																		},
+																		"Param_5" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 70,
+																						"Green" : 112,
+																						"Blue" : 5
+																					}
+																				}
+																			}
+																		},
+																		"Param_6" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 71,
+																						"Green" : 128,
+																						"Blue" : 6
+																					}
+																				}
+																			}
+																		},
+																		"Param_7" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 125,
+																						"Green" : 65,
+																						"Blue" : 101
+																					}
+																				}
+																			}
+																		},
+																		"Param_8" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 199,
+																						"Green" : 3,
+																						"Blue" : 135
+																					}
+																				}
+																			}
+																		},
+																		"Param_9" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 226,
+																						"Green" : 88,
+																						"Blue" : 152
+																					}
+																				}
+																			}
+																		},
+																		"Param_10" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 127,
+																						"Green" : 128,
+																						"Blue" : 120
+																					}
+																				}
+																			}
+																		},
+																		"Param_11" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 128,
+																						"Green" : 144,
+																						"Blue" : 121
+																					}
+																				}
+																			}
+																		},
+																		"Param_12" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 128,
+																						"Green" : 144,
+																						"Blue" : 121
+																					}
+																				}
+																			}
+																		}
+																	}
+																},
+																"BrickIsRightToLeft" : true
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"val1" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Auto Add"
+															}
+														},
+														"outlinecolorid_value_arg" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_outlinecolorid_value_arg_b1_t0",
+																"Label" : "Material ID",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Material ID",
+																		"Hidden" : false,
+																		"Path" : "/General/Material ID",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"Name" : "OutlineColorID"
+																	}
+																}
+															}
+														},
+														"metal_color" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_metal_color_b1_t0",
+																"Label" : "Metal Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Metal Color",
+																		"Hidden" : false,
+																		"Path" : "/Metal Brushed",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 1,
+																		"BlendMode" : [ "i", 2 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"RedF" : 0.65,
+																				"GreenF" : 0.65,
+																				"BlueF" : 0.65
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"RedF" : 0.65,
+																				"GreenF" : 0.65,
+																				"BlueF" : 0.65
+																			}
+																		},
+																		"Name" : "Diffuse Color"
+																	}
+																}
+															}
+														},
+														"brush_texture" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_brush_texture_b1_t0",
+																"Label" : "Brush Texture",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Brush Texture",
+																		"Hidden" : false,
+																		"Path" : "/Metal Brushed",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"DefaultImageGamma" : 0,
+																		"TextureModifierFlags" : [ "i", 0 ],
+																		"Value" : "/resources/brushed_full_contrast.jpg",
+																		"Name" : "brush_texture"
+																	}
+																}
+															}
+														},
+														"brushing_strength" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_brushing_strength_b1_t0",
+																"Label" : "Brushing Strength",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Brushing Strength",
+																		"Hidden" : false,
+																		"Path" : "/Metal Brushed",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 0.5,
+																		"DefaultValue" : 0.5,
+																		"Name" : "brushing_strength"
+																	}
+																}
+															}
+														},
+														"roughness_texture_u" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_roughness_texture_u_b1_t0",
+																"Label" : "Roughness Texture U",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Roughness Texture U",
+																		"Hidden" : false,
+																		"Path" : "/Metal Brushed",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"DefaultImageGamma" : 0,
+																		"TextureModifierFlags" : [ "i", 0 ],
+																		"Value" : "/resources/brushed_full_contrast.jpg",
+																		"Name" : "roughness_texture_u"
+																	}
+																}
+															}
+														},
+														"roughness_texture_v" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_roughness_texture_v_b1_t0",
+																"Label" : "Roughness Texture V",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Roughness Texture V",
+																		"Hidden" : false,
+																		"Path" : "/Metal Brushed",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"DefaultImageGamma" : 0,
+																		"TextureModifierFlags" : [ "i", 0 ],
+																		"Value" : "/resources/brushed_full_contrast.jpg",
+																		"Name" : "roughness_texture_v"
+																	}
+																}
+															}
+														},
+														"is_normaltexture" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_is_normaltexture_b1_t0",
+																"Label" : "Is Normaltexture",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Is Normal Texture",
+																		"Hidden" : false,
+																		"Path" : "/Bump",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : false,
+																		"DefaultValue" : false,
+																		"Name" : "is_normaltexture"
+																	}
+																}
+															}
+														},
+														"bump_strength_value_arg" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_bump_strength_value_arg_b1_t0,elr_bump_strength_map_arg_b1_t1",
+																"Label" : "Bump Strength",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Bump Strength",
+																		"Hidden" : false,
+																		"Path" : "/Bump",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : true,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"TextureModifierFlags" : [ "i", 0 ],
+																		"Min" : -1000,
+																		"Max" : 1000,
+																		"Sensitivity" : 1,
+																		"AsPercent" : false,
+																		"Value" : 0.4,
+																		"DefaultValue" : 0.4,
+																		"MapImage" : "/resources/brushed_a.jpg",
+																		"Name" : "Bump Strength"
+																	}
+																}
+															}
+														},
+														"reflection_stretch" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_reflection_stretch_b1_t0",
+																"Label" : "Reflection Stretch",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Reflection Stretch",
+																		"Hidden" : false,
+																		"Path" : "/Metal Brushed",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 0.75,
+																		"DefaultValue" : 0.75,
+																		"Name" : "reflection_stretch"
+																	}
+																}
+															}
+														},
+														"x" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_x_b1_t0",
+																"Label" : "X",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Horizontal Tiles",
+																		"Hidden" : false,
+																		"Path" : "/Tiling",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : -1000,
+																		"Max" : 1000,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 3,
+																		"DefaultValue" : 3,
+																		"Name" : "Horizontal Tiles"
+																	}
+																}
+															}
+														},
+														"y" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_y_b1_t0",
+																"Label" : "Y",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Vertical Tiles",
+																		"Hidden" : false,
+																		"Path" : "/Tiling",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : -1000,
+																		"Max" : 1000,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 3,
+																		"DefaultValue" : 3,
+																		"Name" : "Vertical Tiles"
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_2" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzCustomMDLBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "Custom MDL (1)",
+																"HideParams" : false,
+																"PosX" : -143,
+																"PosY" : -312,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 346 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 7,
+																						"Green" : 216,
+																						"Blue" : 104
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_4" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_5" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_6" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_7" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_8" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_9" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_10" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"MDL Callable" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "MDL Callable",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"Value" : "nvidia/metal_examples.mdl#metal_brushed"
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"metal_color" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Metal color"
+															}
+														},
+														"brush_texture" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Brush Texture"
+															}
+														},
+														"roughness_texture_u" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Roughness Texture U"
+															}
+														},
+														"roughness_texture_v" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Roughness Texture V"
+															}
+														},
+														"bump_texture" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Bump Texture"
+															}
+														},
+														"is_normaltexture" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Is Normaltexture"
+															}
+														},
+														"brushing_strength" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Brushing strength"
+															}
+														},
+														"reflection_stretch" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Reflection strength"
+															}
+														},
+														"bump_amount" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Bump Amount"
+															}
+														},
+														"tiling" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Texture Tiling"
+															}
+														},
+														"Result" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_Result_b2_t0",
+																"Label" : "Result"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_3" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzMdlFloat3Input3",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "Float3 3 Inputs (4)",
+																"HideParams" : false,
+																"PosX" : 23,
+																"PosY" : 114,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 209 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 15,
+																						"Green" : 176,
+																						"Blue" : 208
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"Result Frequency" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Result Frequency",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 1 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 0 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"x" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "X"
+															}
+														},
+														"y" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Y"
+															}
+														},
+														"z" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Z"
+															}
+														},
+														"Result" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_Result_b3_t0",
+																"Label" : "Result"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_4" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzDirectValueBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "Direct Value (5)",
+																"HideParams" : false,
+																"PosX" : 269,
+																"PosY" : 246,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 131 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 147,
+																						"Green" : 157,
+																						"Blue" : 4
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																},
+																"SettingsGroupCollapsed" : true
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"ValueType" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Type",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 8 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : [ "i", 0 ],
+																		"DefaultValue" : [ "i", 0 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"Result" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_Result_b4_t0",
+																"Label" : "Result"
+															}
+														},
+														"value" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_value_b4_t0",
+																"Label" : "Value",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Value",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : -1e+38,
+																		"Max" : 1e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 1,
+																		"DefaultValue" : 0,
+																		"Name" : "value"
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_5" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzMDLSurfaceBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickSet" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Name" : "shader_MDL_Surface_1",
+																		"LastInvalidate" : "1432004664"
+																	}
+																},
+																"BrickTitle" : "MDL Surface (6)",
+																"HideParams" : false,
+																"PosX" : -409,
+																"PosY" : -276,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 135 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"material" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Material"
+															}
+														},
+														"color_id" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_color_id_b5_t0",
+																"Label" : "Material ID",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Material ID",
+																		"Hidden" : false,
+																		"Path" : "/General/Material ID",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"Name" : "OutlineColorID"
+																	}
+																}
+															}
+														},
+														"subd_displacement_level" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_subd_displacement_level_b5_t0",
+																"Label" : "SubD Displacement Level",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "SubD Displacement Level",
+																		"Hidden" : false,
+																		"Path" : "/Geometry/Displacement",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 12 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : [ "i", 0 ],
+																		"DefaultValue" : [ "i", 0 ],
+																		"Name" : "SubD Displacement Level"
+																	}
+																}
+															}
+														},
+														"max_displacement" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Displace Max"
+															}
+														},
+														"rootSettings" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Root Settings"
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								},
+								"Connections" : {
+									"type" : "settings",
+									"value" : {
+										"Connection_0" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "metal_color",
+												"TargetParam" : "metal_color"
+											}
+										},
+										"Connection_1" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "brush_texture",
+												"TargetParam" : "brush_texture"
+											}
+										},
+										"Connection_2" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "roughness_texture_u",
+												"TargetParam" : "roughness_texture_u"
+											}
+										},
+										"Connection_3" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "roughness_texture_v",
+												"TargetParam" : "roughness_texture_v"
+											}
+										},
+										"Connection_4" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "bump_texture",
+												"TargetParam" : "bump_strength_value_arg"
+											}
+										},
+										"Connection_5" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "is_normaltexture",
+												"TargetParam" : "is_normaltexture"
+											}
+										},
+										"Connection_6" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "brushing_strength",
+												"TargetParam" : "brushing_strength"
+											}
+										},
+										"Connection_7" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "reflection_stretch",
+												"TargetParam" : "reflection_stretch"
+											}
+										},
+										"Connection_8" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "bump_amount",
+												"TargetParam" : "bump_strength_value_arg"
+											}
+										},
+										"Connection_9" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_3",
+												"SourceParam" : "tiling",
+												"TargetParam" : "Result"
+											}
+										},
+										"Connection_10" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_3",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "x",
+												"TargetParam" : "x"
+											}
+										},
+										"Connection_11" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_3",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "y",
+												"TargetParam" : "y"
+											}
+										},
+										"Connection_12" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_3",
+												"TargetBrick" : "Brick_4",
+												"SourceParam" : "z",
+												"TargetParam" : "Result"
+											}
+										},
+										"Connection_13" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_5",
+												"TargetBrick" : "Brick_2",
+												"SourceParam" : "material",
+												"TargetParam" : "Result"
+											}
+										},
+										"Connection_14" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_5",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "color_id",
+												"TargetParam" : "outlinecolorid_value_arg"
+											}
+										}
+									}
+								},
+								"BrickUserName" : "Metal Brushed",
+								"Identifier" : "{195ac2dc-26d1-4961-873a-217b45c70219}"
+							}
+						}
+					}
+				},
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Tags",
+								"type" : "string",
+								"label" : "Tags",
+								"value" : ""
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"label" : "Smooth",
+								"value" : true
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"label" : "Angle",
+								"value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"value" : false
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "OutlineColorID",
+								"type" : "color",
+								"label" : "Material ID",
+								"value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/General/Material ID"
+						},
+						{
+							"channel" : {
+								"id" : "brush_texture",
+								"type" : "image",
+								"label" : "Brush Texture",
+								"default_image_gamma" : 0
+							},
+							"group" : "/Metal Brushed"
+						},
+						{
+							"channel" : {
+								"id" : "brushing_strength",
+								"type" : "float",
+								"label" : "Brushing Strength",
+								"value" : 0.5,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Metal Brushed"
+						},
+						{
+							"channel" : {
+								"id" : "roughness_texture_u",
+								"type" : "image",
+								"label" : "Roughness Texture U",
+								"default_image_gamma" : 0
+							},
+							"group" : "/Metal Brushed"
+						},
+						{
+							"channel" : {
+								"id" : "roughness_texture_v",
+								"type" : "image",
+								"label" : "Roughness Texture V",
+								"default_image_gamma" : 0
+							},
+							"group" : "/Metal Brushed"
+						},
+						{
+							"channel" : {
+								"id" : "is_normaltexture",
+								"type" : "bool",
+								"label" : "Is Normal Texture",
+								"value" : false
+							},
+							"group" : "/Bump"
+						},
+						{
+							"channel" : {
+								"id" : "Bump Strength",
+								"type" : "float",
+								"label" : "Bump Strength",
+								"value" : 0.4,
+								"min" : -1000,
+								"max" : 1000,
+								"step_size" : 1,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Bump"
+						},
+						{
+							"channel" : {
+								"id" : "reflection_stretch",
+								"type" : "float",
+								"label" : "Reflection Stretch",
+								"value" : 0.75,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Metal Brushed"
+						},
+						{
+							"channel" : {
+								"id" : "Horizontal Tiles",
+								"type" : "float",
+								"label" : "Horizontal Tiles",
+								"value" : 3,
+								"min" : -1000,
+								"max" : 1000,
+								"step_size" : 0.01
+							},
+							"group" : "/Tiling"
+						},
+						{
+							"channel" : {
+								"id" : "Vertical Tiles",
+								"type" : "float",
+								"label" : "Vertical Tiles",
+								"value" : 3,
+								"min" : -1000,
+								"max" : 1000,
+								"step_size" : 0.01
+							},
+							"group" : "/Tiling"
+						}
+					]
+				}
+			]
+		}
+	]
+}

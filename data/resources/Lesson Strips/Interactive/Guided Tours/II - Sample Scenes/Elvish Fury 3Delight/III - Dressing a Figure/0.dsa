@@ -1,0 +1,331 @@
+// DAZ Studio version 4.10.0.123 filetype DAZ Script
+/**********************************************************************
+ 
+	Copyright (C) 2002-2018 Daz 3D, Inc. All Rights Reserved.
+ 
+	This script is provided as part of the Daz Script Documentation. The
+	contents of this script, and\or any portion thereof, may only be used
+	in accordance with the following license:
+ 
+	Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+	- http://creativecommons.org/licenses/by/3.0
+ 
+	To contact Daz 3D or for more information about Daz Script visit the
+	Daz 3D website:
+ 
+	- http://www.daz3d.com
+ 
+**********************************************************************/
+// Source: ./resources/Lesson Strips/Common/Interactive.dsa
+
+// Define an anonymous function;
+// serves as our main loop,
+// limits the scope of variables
+( function(){
+	
+	// If the version number is less than required; 4.10.0.123
+	if( App.version64 < 0x0004000a0000007b ){
+		// Inform the user
+		MessageBox.information( qsTr("%1 4.10.0.123 or newer is required to continue.\nCurrent version: %2.")
+			.arg( App.appName ).arg( App.longVersionString ),
+			qsTr("Resource Error"), qsTr("&OK") );
+		// We're done...
+		return;
+	}
+	
+	// Create a file info object for easy access
+	var g_oFile = new DzFileInfo( getScriptFileName() );
+	
+	// Get the path of our include script. Doing it this way, we can debug
+	// with an ascii file and ship a binary [encrypted] file with the same
+	// name... without having to update the contents of the script or manually
+	// handle the file extensions.
+	var g_sInclude = String( "%1/Lesson Strips/Common/Interactive" ).arg( App.getResourcesPath() );
+	var g_oScript = new DzScript();
+	var g_sIncludeFull = g_oScript.getScriptFile( g_sInclude );
+	
+	// If our script was not found
+	if( g_sIncludeFull.isEmpty() ){
+		// Inform the user
+		MessageBox.information( qsTr("%1 : Could not find \"%2\"").arg( g_oFile.baseName() ).arg( g_sInclude ),
+			qsTr("Critical Error"), qsTr("&OK") );
+		
+		// We're done...
+		return;
+	}
+	
+	// Include the script
+	include( g_sIncludeFull );
+	
+	// Define the arrary of interactive lesson instructions
+	var aInstructions = [];
+	
+	var sContinue = qsTr("Continue");
+	var nWidth = 355;
+	
+	var nContentPaneVersion = 0x0004000b00000070; // 4.11.0.112
+	
+	var sPane = (App.version64 >= nContentPaneVersion ? "Content Library" : "Smart Content"); 
+	
+	var sRenderer = "3Delight";
+	
+	var sActionClass = "DzOpenAction";
+	var oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Open the Scene"),
+		qsTr("It is now time to dress your figure. First, open the //Elvish Fury// scene you "+
+			"created and saved in the last lesson.\n\n" +
+			"Select the ##%1.label## action in the toolbar or under the ##%1.menu## menu " +
+			"from the **Main Menu Bar**.\n\n" +
+			"If the scene is already open, select //%2//.")
+				.arg( sActionClass )
+				.arg( sContinue ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = scenePaneNodeSelect(
+		"Genesis 8 Female",
+		qsTr("Dressing Your Character"),
+		qsTr("You will need to select //Genesis 8 Female// in the **Scene** pane " +
+			"before loading the clothing."),
+		"",
+		nWidth );
+	aInstructions.push( oInstruction );
+	
+	
+	var sRelPath = "/Default/Wardrobe/Outfits/Shadow Thief !!Outfit.duf";
+	var sAssetPath = "/People/Genesis 8 Female/Clothing/Shadow Thief/Shadow Thief !!Outfit.duf";
+	var sProduct = "Shadow Thief Outfit for Genesis 8 Female(s)";
+	var nSku = 46691;
+	var sTitle = qsTr("Dressing Your Character");
+	var sDescription = qsTr("You can now add clothing to your character. Follow the arrows in the " +
+			"**%1** pane and double-click " +
+			"//Shadow Thief !!Outfit// to load it into your scene.")
+				.arg( sPane );
+	var sNote = "";
+	if( App.version64 >= nContentPaneVersion ){
+		oInstruction = contentLibraryPaneAssetLoad(
+			sRelPath, sAssetPath, sProduct, nSku, sTitle, sDescription, sNote, nWidth );
+
+	} else {
+		oInstruction = smartContentPaneAssetLoad(
+			sRelPath, sAssetPath, sProduct, nSku, sTitle, sDescription, sNote, nWidth );
+	}
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = scenePaneNodeSelect(
+		"B25STTop",
+		qsTr("Changing Clothing Textures"),
+		qsTr("You can now change the material of the clothing.\n\n" +
+			"To do this, select //B25STTop// in the **Scene** pane. "),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	sRelPath = "/Default/Materials/Wardrobe/Brediana the Arcane Top.duf";
+	sAssetPath = "/People/Genesis 8 Female/Clothing/Shadow Thief/Materials/3Delight/Brediana the Arcane Top.duf";
+	sProduct = "Shadow Thief Outfit Textures";
+	nSku = 46693;
+	sTitle = qsTr("Changing Clothing Textures");
+	sDescription = qsTr("Follow the arrows in the **%1** pane and double-click the RSL material icon.\n\n" +
+			"Remember that RSL materials are made to be rendered in the //%2// render engine.")
+				.arg( sPane )
+				.arg( sRenderer );
+	sNote = "";
+	if( App.version64 >= nContentPaneVersion ){
+		oInstruction = contentLibraryPaneAssetLoad(
+			sRelPath, sAssetPath, sProduct, nSku, sTitle, sDescription, sNote, nWidth );
+
+	} else {
+		oInstruction = smartContentPaneAssetLoad(
+			sRelPath, sAssetPath, sProduct, nSku, sTitle, sDescription, sNote, nWidth );
+
+	}
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = scenePaneNodeSelect(
+		"B25STThighStraps",
+		qsTr("Changing Clothing Textures"),
+		qsTr("Select //B25STThighStraps// in the **Scene** pane. "),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	sRelPath = "/Default/Materials/Accessories/Brediana the Arcane ThighStraps.duf";
+	sAssetPath = "/People/Genesis 8 Female/Clothing/Shadow Thief/Materials/3Delight/Brediana the Arcane ThighStraps.duf";
+	sProduct = "Shadow Thief Outfit Textures";
+	nSku = 46693;
+	sTitle = qsTr("Changing Clothing Textures");
+	sDescription = qsTr("Follow the arrows in the **%1** pane and double-click the RSL material icon.")
+				.arg( sPane );
+	sNote = "";
+	if( App.version64 >= nContentPaneVersion ){
+		oInstruction = contentLibraryPaneAssetLoad(
+			sRelPath, sAssetPath, sProduct, nSku, sTitle, sDescription, sNote, nWidth );
+
+	} else {
+		oInstruction = smartContentPaneAssetLoad(
+			sRelPath, sAssetPath, sProduct, nSku, sTitle, sDescription, sNote, nWidth );
+
+	}
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = scenePaneNodeSelect(
+		"B25STGloves",
+		qsTr("Changing Clothing Textures"),
+		qsTr("Select //B25STGloves// in the **Scene** pane. "),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	sRelPath = "/Default/Materials/Wardrobe/Brediana the Arcane Gloves.duf";
+	sAssetPath = "/People/Genesis 8 Female/Clothing/Shadow Thief/Materials/3Delight/Brediana the Arcane Gloves.duf";
+	sProduct = "Shadow Thief Outfit Textures";
+	nSku = 46693;
+	sTitle = qsTr("Changing Clothing Textures");
+	sDescription = qsTr("Follow the arrows in the **%1** pane and double-click the RSL material icon.")
+				.arg( sPane );
+	sNote = "";
+	if( App.version64 >= nContentPaneVersion ){
+		oInstruction = contentLibraryPaneAssetLoad(
+			sRelPath, sAssetPath, sProduct, nSku, sTitle, sDescription, sNote, nWidth );
+
+	} else {
+		oInstruction = smartContentPaneAssetLoad(
+			sRelPath, sAssetPath, sProduct, nSku, sTitle, sDescription, sNote, nWidth );
+
+	}
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = scenePaneNodeSelect(
+		"B25STBoots",
+		qsTr("Changing Clothing Textures"),
+		qsTr("Select //B25STBoots// in the **Scene** pane. "),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	sRelPath = "/Default/Materials/Wardrobe/Brediana the Arcane Boots.duf";
+	sAssetPath = "/People/Genesis 8 Female/Clothing/Shadow Thief/Materials/3Delight/Brediana the Arcane Boots.duf";
+	sProduct = "Shadow Thief Outfit Textures";
+	nSku = 46693;
+	sTitle = qsTr("Changing Clothing Textures");
+	sDescription = qsTr("Follow the arrows in the **%1** pane and double-click the RSL material icon.")
+				.arg( sPane );
+	sNote = "";
+	if( App.version64 >= nContentPaneVersion ){
+		oInstruction = contentLibraryPaneAssetLoad(
+			sRelPath, sAssetPath, sProduct, nSku, sTitle, sDescription, sNote, nWidth );
+
+	} else {
+		oInstruction = smartContentPaneAssetLoad(
+			sRelPath, sAssetPath, sProduct, nSku, sTitle, sDescription, sNote, nWidth );
+
+	}
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = scenePaneNodeSelect(
+		"Genesis 8 Female",
+		qsTr("Loading Hair on Your Character"),
+		qsTr("You will need to select //Genesis 8 Female// in the **Scene** pane " +
+			"before adding the hair."),
+		"",
+		nWidth );
+	aInstructions.push( oInstruction );
+	
+	
+	sRelPath = "/Default/Hair/Short/Toulouse Hair.duf";
+	sAssetPath = "/People/Genesis 8 Female/Hair/Toulouse Hair/Toulouse Hair.duf";
+	sProduct = "Genesis 8 Starter Essentials";
+	nSku = 42071;
+	sTitle = qsTr("Loading Hair on Your Character");
+	sDescription = qsTr("Your character is now dressed, but she is still bald!\n\n" +
+			"To give her hair, locate and double-click the //Toulouse Hair// icon " +
+			"in the **%1** pane.")
+				.arg( sPane );
+	sNote = "";
+	if( App.version64 >= nContentPaneVersion ){
+		oInstruction = contentLibraryPaneAssetLoad(
+			sRelPath, sAssetPath, sProduct, nSku, sTitle, sDescription, sNote, nWidth );
+
+	} else {
+		oInstruction = smartContentPaneAssetLoad(
+			sRelPath, sAssetPath, sProduct, nSku, sTitle, sDescription, sNote, nWidth );
+
+	}
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	sActionClass = "DzSaveAction";
+	oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Better Safe than Sorry"),
+		qsTr("Before you move on, be sure to save your scene.\n\n" +
+			"You can find the ##%1.label## action in the **Main Menu Bar** under the " +
+			"##%1.menu## menu or use the ##%1.shortcut## shortcut to save the scene.")
+				.arg( sActionClass ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = displayMessage(
+		qsTr("Congratulations"),
+		qsTr("Adding clothing and hair is just that simple.\n\n" +
+			"You have now completed the second step in this lesson series!\n\n" +
+			"When you are ready, continue to the next lesson, or press " +
+			"//Stop [Esc]// below to practice what you learned."),
+		"",
+		nWidth,
+		qsTr("Continue to IV - Translating a Figure") );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = lessonSelect(
+		"/Guided Tours/II - Sample Scenes/Elvish Fury 3Delight/IV - Translating a Figure",
+		qsTr("Next Lesson"),
+		qsTr("To load an environment, move on to the next lesson."),
+		"",
+		nWidth );
+	aInstructions.push( oInstruction );
+	
+	
+	// Define an array of additionally required files;
+	var aRequiredFiles = [
+		/*
+		requiredAsset(
+			"/Default/Figures/People/Female/Real World/Genesis 8 Basic Female.duf",
+			"Genesis 8 Starter Essentials",
+			42071
+		)
+		*/
+	];
+	
+	// Process the lesson
+	processLesson( aInstructions, aRequiredFiles );
+	
+// Finalize the function and invoke
+})();

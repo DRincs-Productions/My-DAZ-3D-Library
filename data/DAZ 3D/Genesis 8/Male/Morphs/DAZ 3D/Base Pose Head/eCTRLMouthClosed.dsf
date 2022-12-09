@@ -1,0 +1,323 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Pose%20Head/eCTRLMouthClosed.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-06-21T23:27:32Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "eCTRLMouthClosed",
+			"name" : "eCTRLMouthClosed",
+			"parent" : "/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#Genesis8Male",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "eCTRLMouthClosed",
+				"label" : "Mouth Closed",
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Pose Controls/Head/Mouth",
+			"formulas" : [
+				{
+					"output" : "lowerJaw:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lowerJaw?translation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.3031675 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lowerJaw:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lowerJaw?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -10 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lNasolabialMouthCorner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lNasolabialMouthCorner?translation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : 0.5882353 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lNasolabialMouthCorner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lNasolabialMouthCorner?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.5701358 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rNasolabialMouthCorner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rNasolabialMouthCorner?translation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.5882353 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rNasolabialMouthCorner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rNasolabialMouthCorner?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.5701358 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lLipCorver:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lLipCorver?translation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : 0.3348416 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lLipCorver:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lLipCorver?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.7692308 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lLipLowerOuter:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lLipLowerOuter?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.1674209 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lLipLowerInner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lLipLowerInner?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : 0.02262443 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rLipLowerInner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rLipLowerInner?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : 0.02262443 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rLipLowerOuter:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rLipLowerOuter?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.1674209 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rLipCorner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rLipCorner?translation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.3348416 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rLipCorner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rLipCorner?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.7692308 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "LipBelow:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#LipBelow?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.1244344 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "LipBelow:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#LipBelow?translation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.122172 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Chin:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#Chin?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : 15.47511 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lCheekLowerInner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lCheekLowerInner?translation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : 0.1357466 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rCheekLowerInner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rCheekLowerInner?translation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.1357466 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lNostril:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lNostril?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.07013577 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rNostril:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rNostril?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.07013577 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lLipBelowNose:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lLipBelowNose?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.1040725 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rLipBelowNose:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rLipBelowNose?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.1040725 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lLipNasolabialCrease:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lLipNasolabialCrease?translation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.02714944 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lLipNasolabialCrease:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lLipNasolabialCrease?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.1719458 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rLipNasolabialCrease:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rLipNasolabialCrease?translation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : 0.02714944 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rLipNasolabialCrease:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rLipNasolabialCrease?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.1719458 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lNoseBirdge:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lNoseBirdge?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : 0.1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rNasolabialUpper:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rNasolabialUpper?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : 0.1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "LipUpperMiddle:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#LipUpperMiddle?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.1357467 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lLipUpperOuter:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lLipUpperOuter?translation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : 0.1719457 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lLipUpperInner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lLipUpperInner?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.2081449 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rLipUpperInner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rLipUpperInner?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.2081449 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rLipUpperOuter:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rLipUpperOuter?translation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLMouthClosed?value" },
+						{ "op" : "push", "val" : -0.1719457 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "eCTRLMouthClosed-1",
+				"url" : "#eCTRLMouthClosed"
+			}
+		]
+	}
+}

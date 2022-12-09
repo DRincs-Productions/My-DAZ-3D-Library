@@ -1,0 +1,60 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/dForce%20Starter%20Essentials/Bardot%20Top/Morphs/Mada/Base/PBMThighsTone.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : ""
+		},
+		"revision" : "1.0",
+		"modified" : "2017-10-03T18:19:26Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "PBMThighsTone",
+			"name" : "PBMThighsTone",
+			"parent" : "/data/Daz%203D/dForce%20Starter%20Essentials/Bardot%20Top/BardotTop_10570.dsf#BardotTop",
+			"presentation" : {
+				"type" : "Modifier/Shape",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.4588235, 0.172549, 0.2156863 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "PBMThighsTone",
+				"visible" : false,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Actor/Legs/Real World",
+			"morph" : {
+				"vertex_count" : 10570,
+				"deltas" : {
+					"count" : 2,
+					"values" : [
+						[ 3112, 1.471495e-05, -3.344814e-06, 1.242692e-06 ],
+						[ 3113, 1.531018e-05, -3.717286e-06, 1.146129e-06 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "PBMThighsTone-1",
+				"url" : "#PBMThighsTone"
+			}
+		]
+	}
+}

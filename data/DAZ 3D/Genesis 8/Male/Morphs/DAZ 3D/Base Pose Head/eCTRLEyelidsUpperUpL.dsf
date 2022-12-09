@@ -1,0 +1,84 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Pose%20Head/eCTRLEyelidsUpperUpL.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-06-21T23:27:32Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "eCTRLEyelidsUpperUpL",
+			"name" : "eCTRLEyelidsUpperUpL",
+			"parent" : "/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#Genesis8Male",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "eCTRLEyelidsUpperUpL",
+				"label" : "eCTRLEyelidsUpperUpL",
+				"visible" : false,
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Hidden/Pose Controls/Head/Eyes",
+			"formulas" : [
+				{
+					"output" : "Genesis8Male:#eCTRLEyelidsUpperUpL?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Pose%20Head/eCTRLEyelidsUpperUp-DownL.dsf#eCTRLEyelidsUpperUp-DownL?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidUpperInner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lEyelidUpperInner?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLEyelidsUpperUpL?value" },
+						{ "op" : "push", "val" : -5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidTop:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lEyelidTop?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLEyelidsUpperUpL?value" },
+						{ "op" : "push", "val" : -5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidUpperOuter:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lEyelidUpperOuter?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#eCTRLEyelidsUpperUpL?value" },
+						{ "op" : "push", "val" : -5 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "eCTRLEyelidsUpperUpL-1",
+				"url" : "#eCTRLEyelidsUpperUpL"
+			}
+		]
+	}
+}

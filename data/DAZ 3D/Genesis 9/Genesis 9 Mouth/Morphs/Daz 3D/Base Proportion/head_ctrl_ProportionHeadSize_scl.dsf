@@ -1,0 +1,93 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Morphs/Daz%203D/Base%20Proportion/head_ctrl_ProportionHeadSize_scl.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "0.0",
+		"modified" : "2022-06-21T17:16:22Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "head_ctrl_ProportionHeadSize_scl",
+			"name" : "head_ctrl_ProportionHeadSize_scl",
+			"parent" : "/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Genesis9Mouth.dsf#Genesis9Mouth",
+			"presentation" : {
+				"type" : "Modifier/Shape",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.1607843, 0.1607843, 0.1607843 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "head_ctrl_ProportionHeadSize_scl",
+				"label" : "Proportion Head Size",
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"region" : "Head",
+			"group" : "/Base",
+			"formulas" : [
+				{
+					"output" : "tongue01:/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Genesis9Mouth.dsf#tongue01?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9Mouth:#head_ctrl_ProportionHeadSize_scl?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "tongue02:/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Genesis9Mouth.dsf#tongue02?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9Mouth:#head_ctrl_ProportionHeadSize_scl?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "tongue03:/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Genesis9Mouth.dsf#tongue03?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9Mouth:#head_ctrl_ProportionHeadSize_scl?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "tongue04:/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Genesis9Mouth.dsf#tongue04?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9Mouth:#head_ctrl_ProportionHeadSize_scl?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "tongue05:/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Genesis9Mouth.dsf#tongue05?scale/general",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9Mouth:#head_ctrl_ProportionHeadSize_scl?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "head_ctrl_ProportionHeadSize_scl-1",
+				"url" : "#head_ctrl_ProportionHeadSize_scl"
+			}
+		]
+	}
+}

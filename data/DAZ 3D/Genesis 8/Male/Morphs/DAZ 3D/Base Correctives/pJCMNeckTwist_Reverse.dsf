@@ -1,0 +1,76 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Correctives/pJCMNeckTwist_Reverse.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-06-21T23:27:32Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "pJCMNeckTwist_Reverse",
+			"name" : "pJCMNeckTwist_Reverse",
+			"parent" : "/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#Genesis8Male",
+			"presentation" : {
+				"type" : "Modifier/Corrective",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.1607843, 0.1607843, 0.1607843 ], [ 0.4980392, 0, 0 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "pJCMNeckTwist_Reverse",
+				"label" : "pJCMNeckTwist_Reverse",
+				"visible" : false,
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Hidden/Correctives/Base",
+			"formulas" : [
+				{
+					"output" : "Genesis8Male:#pJCMNeckTwist_Reverse?value",
+					"operations" : [
+						{ "op" : "push", "url" : "neck:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#neck?rotation/x" },
+						{ "op" : "push", "val" : 0.025 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis8Male:/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Correctives/pJCMNeckTwist_22_R.dsf#pJCMNeckTwist_22_R?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pJCMNeckTwist_Reverse?value" },
+						{ "op" : "push", "val" : -1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis8Male:/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Correctives/pJCMNeckTwist_22_L.dsf#pJCMNeckTwist_22_L?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pJCMNeckTwist_Reverse?value" },
+						{ "op" : "push", "val" : -1 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "pJCMNeckTwist_Reverse-1",
+				"url" : "#pJCMNeckTwist_Reverse"
+			}
+		]
+	}
+}

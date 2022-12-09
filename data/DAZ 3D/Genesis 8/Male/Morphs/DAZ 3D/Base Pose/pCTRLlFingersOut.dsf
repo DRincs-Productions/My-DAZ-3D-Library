@@ -1,0 +1,124 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Pose/pCTRLlFingersOut.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-06-21T23:27:32Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "pCTRLlFingersOut",
+			"name" : "pCTRLlFingersOut",
+			"parent" : "/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#Genesis8Male",
+			"presentation" : {
+				"type" : "Modifier/Corrective",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "pCTRLlFingersOut",
+				"label" : "pCTRLlFingersOut",
+				"visible" : false,
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Hidden/Pose Controls/Hands/Left",
+			"formulas" : [
+				{
+					"output" : "Genesis8Male:#pCTRLlFingersOut?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Pose/pCTRLlFingersInOut.dsf#CTRLlFingersInOut?value" },
+						{ "op" : "push", "val" : -1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lCarpal1:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lCarpal1?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLlFingersOut?value" },
+						{ "op" : "push", "val" : -0.75 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lIndex1:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lIndex1?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLlFingersOut?value" },
+						{ "op" : "push", "val" : -9 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lCarpal2-1:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lCarpal2-1?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLlFingersOut?value" },
+						{ "op" : "push", "val" : -0.25 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lMid1:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lMid1?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLlFingersOut?value" },
+						{ "op" : "push", "val" : -1.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lCarpal3:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lCarpal3?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLlFingersOut?value" },
+						{ "op" : "push", "val" : 0.25 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lRing1:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lRing1?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLlFingersOut?value" },
+						{ "op" : "push", "val" : 5.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lCarpal2:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lCarpal2?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLlFingersOut?value" },
+						{ "op" : "push", "val" : 0.75 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lPinky1:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lPinky1?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLlFingersOut?value" },
+						{ "op" : "push", "val" : 9 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "pCTRLlFingersOut-1",
+				"url" : "#pCTRLlFingersOut"
+			}
+		]
+	}
+}

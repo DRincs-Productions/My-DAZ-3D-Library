@@ -1,0 +1,75 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/Blended%20Dual%20Lobe%20Hair%20Shader.duf",
+		"type" : "preset_shader",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : ""
+		},
+		"revision" : "1.0",
+		"modified" : "2019-04-15T23:28:58Z"
+	},
+	"scene" : {
+		"materials" : [
+			{
+				"url" : "/data/Daz%203D/dForce%20Starter%20Essentials/Blended%20Dual%20Lobe%20Hair%20Shader/Blended%20Dual%20Lobe%20Hair.dsf#Blended%20Dual%20Lobe%20Hair",
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "float_color",
+						"name" : "Diffuse Color"
+					}
+				},
+				"extra" : [
+					{
+						"type" : "studio/material/daz_brick"
+					},
+					{
+						"type" : "studio_material_channels",
+						"channels" : [
+							{
+								"channel" : {
+									"id" : "Root Transmission Color",
+									"type" : "float_color"
+								}
+							},
+							{
+								"channel" : {
+									"id" : "Tip Transmission Color",
+									"type" : "float_color"
+								}
+							},
+							{
+								"channel" : {
+									"id" : "Hair Root Color",
+									"type" : "float_color"
+								}
+							},
+							{
+								"channel" : {
+									"id" : "Hair Tip Color",
+									"type" : "float_color",
+									"value" : [ 0.7297401, 0.5325205, 0.3511192 ]
+								}
+							},
+							{
+								"channel" : {
+									"id" : "Highlight Root Color",
+									"type" : "float_color"
+								}
+							},
+							{
+								"channel" : {
+									"id" : "Tip Highlight Color",
+									"type" : "float_color"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,99 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Morphs/Daz%203D/Base/Mouth_Down.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2021-01-25T19:01:40Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "Mouth_Down",
+			"name" : "Mouth_Down",
+			"parent" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Genesis%208.1%20Face%20Controls",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.1607843, 0.1607843, 0.1607843 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Mouth_Down",
+				"label" : "Mouth_Down",
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/LR",
+			"formulas" : [
+				{
+					"output" : "Genesis%208.1%20Face%20Controls:#Mouth_Down?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Mouth_Down_R2:/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Down_R2?translation/y" },
+						{ "op" : "push", "val" : -1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis%208.1%20Face%20Controls:#Mouth_Down?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Mouth_Down_L2:/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Down_L2?translation/y" },
+						{ "op" : "push", "val" : -1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Mouth_Down_R:/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Down_R?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis%208.1%20Face%20Controls:#Mouth_Down?value" },
+						{ "op" : "push", "val" : -1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_Mouth_Down:/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Mouth_Down?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis%208.1%20Face%20Controls:#Mouth_Down?value" },
+						{ "op" : "push", "val" : -1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_Mouth_Down:/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Mouth_Down?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis%208.1%20Face%20Controls:#Mouth_Down?value" },
+						{ "op" : "push", "val" : -1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Mouth_Down_L:/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Down_L?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis%208.1%20Face%20Controls:#Mouth_Down?value" },
+						{ "op" : "push", "val" : -1 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "Mouth_Down-1",
+				"url" : "#Mouth_Down"
+			}
+		]
+	}
+}

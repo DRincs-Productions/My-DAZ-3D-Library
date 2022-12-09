@@ -1,0 +1,227 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Female/Morphs/DAZ%203D/Base%20Pose/pCTRLrFingersFist.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-03-28T16:13:18Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "CTRLrFingersFist",
+			"name" : "pCTRLrFingersFist",
+			"parent" : "/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#Genesis8Female",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "pCTRLrFingersFist",
+				"label" : "Right Fingers Fist",
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Pose Controls/Hands/Right",
+			"formulas" : [
+				{
+					"output" : "rCarpal1:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rCarpal1?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : -2.226666 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rIndex1:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rIndex1?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : 2.666667 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rIndex1:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rIndex1?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : -1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rIndex1:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rIndex1?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : 75.06667 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rIndex2:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rIndex2?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : 100 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rIndex3:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rIndex3?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : 90 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rCarpal2:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rCarpal2?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : -0.4266667 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rMid1:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rMid1?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : -3 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rMid1:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rMid1?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : 77.6 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rMid2:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rMid2?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : 100 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rMid3:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rMid3?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : 90 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rCarpal3:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rCarpal3?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : 1.44 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rRing1:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rRing1?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : -4.666667 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rRing1:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rRing1?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : 74.13333 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rRing2:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rRing2?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : 100 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rRing3:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rRing3?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : 90 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rCarpal4:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rCarpal4?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : 3.206667 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rPinky1:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rPinky1?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : -4.533333 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rPinky1:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rPinky1?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : 7.4 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rPinky1:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rPinky1?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : 72.26666 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rPinky2:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rPinky2?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : 100 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rPinky3:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rPinky3?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrFingersFist?value" },
+						{ "op" : "push", "val" : 90 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "pCTRLrFingersFist",
+				"url" : "#CTRLrFingersFist"
+			}
+		]
+	}
+}

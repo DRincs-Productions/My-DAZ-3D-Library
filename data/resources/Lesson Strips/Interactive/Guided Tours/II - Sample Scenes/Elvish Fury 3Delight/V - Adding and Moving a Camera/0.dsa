@@ -1,0 +1,387 @@
+// DAZ Studio version 4.10.0.123 filetype DAZ Script
+/**********************************************************************
+ 
+	Copyright (C) 2002-2018 Daz 3D, Inc. All Rights Reserved.
+ 
+	This script is provided as part of the Daz Script Documentation. The
+	contents of this script, and\or any portion thereof, may only be used
+	in accordance with the following license:
+ 
+	Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+	- http://creativecommons.org/licenses/by/3.0
+ 
+	To contact Daz 3D or for more information about Daz Script visit the
+	Daz 3D website:
+ 
+	- http://www.daz3d.com
+ 
+**********************************************************************/
+// Source: ./resources/Lesson Strips/Common/Interactive.dsa
+
+// Define an anonymous function;
+// serves as our main loop,
+// limits the scope of variables
+( function(){
+	
+	// If the version number is less than required; 4.10.0.123
+	if( App.version64 < 0x0004000a0000007b ){
+		// Inform the user
+		MessageBox.information( qsTr("%1 4.10.0.123 or newer is required to continue.\nCurrent version: %2.")
+			.arg( App.appName ).arg( App.longVersionString ),
+			qsTr("Resource Error"), qsTr("&OK") );
+		// We're done...
+		return;
+	}
+	
+	// Create a file info object for easy access
+	var g_oFile = new DzFileInfo( getScriptFileName() );
+	
+	// Get the path of our include script. Doing it this way, we can debug
+	// with an ascii file and ship a binary [encrypted] file with the same
+	// name... without having to update the contents of the script or manually
+	// handle the file extensions.
+	var g_sInclude = String( "%1/Lesson Strips/Common/Interactive" ).arg( App.getResourcesPath() );
+	var g_oScript = new DzScript();
+	var g_sIncludeFull = g_oScript.getScriptFile( g_sInclude );
+	
+	// If our script was not found
+	if( g_sIncludeFull.isEmpty() ){
+		// Inform the user
+		MessageBox.information( qsTr("%1 : Could not find \"%2\"").arg( g_oFile.baseName() ).arg( g_sInclude ),
+			qsTr("Critical Error"), qsTr("&OK") );
+		
+		// We're done...
+		return;
+	}
+	
+	// Include the script
+	include( g_sIncludeFull );
+	
+	// Define the arrary of interactive lesson instructions
+	var aInstructions = [];
+	
+	var sContinue = qsTr("Continue");
+	var nWidth = 355;
+	
+	var sRenderer = "3Delight";
+	
+	var sActionClass = "DzOpenAction";
+	var oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Open the Scene"),
+		qsTr("Open your //Elvish Fury// scene from the last lesson.\n\n" +
+			"To do this select the ##%1.label## action in the toolbar or under the ##%1.menu## menu from the " +
+			"**Main Menu Bar**.\n\n" +
+			"If the scene is already open, select //%2//.")
+				.arg( sActionClass )
+				.arg( sContinue ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	var sValue = "Perspective View"
+	oInstruction = activeViewportControlSelect(
+		"controls.camera",
+		sValue,
+		qsTr("Switching Your View"),
+		qsTr("When the environment loads into the scene, a camera is also added. Before " +
+			"moving on, you will want to change the view back to //%1//.")
+				.arg( sValue ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	var sClickToContinue = "";
+	if( App.version64 >= 0x0004000b0000006f ){ // 4.11.0.111
+		sClickToContinue = qsTr("\n\nClick //%1// when you are ready to move on.").arg( sContinue );
+	}
+	
+	var sInteractive = "interactive";
+	oInstruction = activeViewportControlSelect(
+		"controls.zoom_dolly",
+		undefined,
+		qsTr("Using the Dolly Zoom Control"),
+		qsTr("With the //Dolly Zoom// control, you can adjust the distance of the view from your figure.\n\n" +
+			"To do this, click and hold the highlighted icon with the **left** button on your mouse while " +
+			"moving it up or down.\n\n" +
+			"When you are happy with your results, release the left button on your mouse.%1")
+				.arg( sClickToContinue ),
+		qsTr("The default position of the //Perspective View// has placed us on the ground " +
+			"above the steps. You will need to zoom out quite a bit in order to see the figure."),
+		nWidth );
+	oInstruction = requireValue( oInstruction, sInteractive );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = activeViewportControlSelect(
+		"controls.zoom_focal",
+		undefined,
+		qsTr("Using the Focal Zoom Control"),
+		qsTr("With the //Focal Zoom// control, you can adjust the //Focal Length// of the view.\n\n" +
+			"To do this, click and hold the highlighted icon with the **right** button on your " +
+			"mouse while moving it up or down.\n\n" +
+			"When you are happy with your results, release the right button on your mouse.%1")
+				.arg( sClickToContinue ),
+		qsTr("This control is the same as the //Dolly Zoom// control except it is accessed with the **right** " +
+			"button on your mouse."),
+		nWidth );
+	oInstruction = requireValue( oInstruction, sInteractive );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = activeViewportControlSelect(
+		"controls.pan",
+		undefined,
+		qsTr("Using the Pan Control"),
+		qsTr("With the //Pan// control, you can adjust the vertical and horizontal position of your view.\n\n" +
+			"Adjust the //Pan// control until you have your desired view of the figure.\n\n" +
+			"To do this, click and hold the highlighted icon with the **left** button on your " +
+			"mouse while moving it around. " +
+			"You will notice you can adjust the position of your view.\n\n" +
+			"When you are happy with your results, release the left button on your mouse.%1")
+				.arg( sClickToContinue ),
+		"",
+		nWidth );
+	oInstruction = requireValue( oInstruction, sInteractive );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = activeViewportControlSelect(
+		"controls.dolly",
+		undefined,
+		qsTr("Using the Dolly Control"),
+		qsTr("With the //Dolly// control, you can adjust the horizontal position and the distance of the view.\n\n" +
+			"To do this, click and hold the highlighted icon with the **right** button on your " +
+			"mouse while moving it around. " +
+			"You will notice that this control moves the vew closer, farther, left, and/or right.\n\n" +
+			"When you are happy with your results, release the left button on your mouse.%1")
+				.arg( sClickToContinue ),
+		qsTr("This control is the same as the //Pan// control except it is accessed with the **right** " +
+			"button on your mouse."),
+		nWidth );
+	oInstruction = requireValue( oInstruction, sInteractive );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = activeViewportControlSelect(
+		"controls.orbit",
+		undefined,
+		qsTr("Using the Orbit Control"),
+		qsTr("With the //Orbit// control, you can adjust the angle of your view around its focal point.\n\n" +
+			"To do this, click and hold the highlighted icon with the **left** button on your " +
+			"mouse while moving it around. " +
+			"You will notice that you can adjust the angle of your view.\n\n" +
+			"When you are happy with your results, release the left button on your mouse.%1")
+				.arg( sClickToContinue ),
+		"",
+		nWidth );
+	oInstruction = requireValue( oInstruction, sInteractive );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = activeViewportControlSelect(
+		"controls.rotate",
+		undefined,
+		qsTr("Using the Rotate Control"),
+		qsTr("With the //Rotate// control, you can rotate the view around its origin; like you are " +
+			"turning your head.\n\n" +
+			"To do this, click and hold the highlighted icon with the **right** button on your " +
+			"mouse while moving it around, " +
+			"You will notice that you can adjust the angle of your view as if you are moving your head.\n\n" +
+			"When you are happy with your results, release the left button on your mouse.%1")
+				.arg( sClickToContinue ),
+		qsTr("This control is the same as the //Rotate// control except it is accessed with the **right** " +
+			"button on your mouse."),
+		nWidth );
+	oInstruction = requireValue( oInstruction, sInteractive );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = activeViewportControlSelect(
+		"controls.zoom_dolly",
+		undefined,
+		qsTr("Adjusting Dolly Zoom"),
+		qsTr("If you moved out too far, you can move back in using the //Dolly Zoom// control.\n\n" +
+			"To do this, click and hold the highlighted icon with the **left** button on " +
+			"your mouse while moving it forwards " +
+			"or backwards.\n\n" +
+			"When you are happy with your results, release the left button on your mouse.%1")
+				.arg( sClickToContinue ),
+		"",
+		nWidth );
+	oInstruction = requireValue( oInstruction, sInteractive );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	var aSubInstructions = [];
+	
+	sValue = "Fury Camera";
+	oInstruction = widgetSelect(
+		"CreateNewItemDlg.CreateNewItemDlgNameLEdit",
+		qsTr("Name the Camera"),
+		qsTr("Name the camera **%1**.")
+				.arg( sValue ),
+		"",
+		nWidth,
+		"" );
+	oInstruction = requireValue( oInstruction, sValue );
+	aSubInstructions.push( oInstruction );
+	
+	
+	oInstruction = widgetSelect(
+		"CreateNewItemDlg.OptionsDlgOptionsBtn",
+		qsTr("Show Options"),
+		qsTr("Select //Show Options >>//.\n\n" +
+			"You MUST select //Show Options >>// in order move on to the next step.\n\n" +
+			"When the options appear, click //Skip// to move on.")
+				.replace( />/g, "&gt;" ),
+		"",
+		nWidth,
+		sContinue );
+	oInstruction = requireValue( oInstruction, true );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aSubInstructions.push( oInstruction );
+	
+	
+	sValue = qsTr("Copy Active View : <Perspective View>");
+	oInstruction = widgetSelect(
+		"CreateNewItemDlg.CreateNewItemDlgActiveViewRBtn",
+		qsTr("Choose an Option"),
+		qsTr("Check the //%1// option.")
+				.arg( sValue.replace( "<", "&lt;" ).replace( ">", "&gt;" ) ),
+		"",
+		nWidth,
+		"" );
+	oInstruction = requireValue( oInstruction, true );
+	aSubInstructions.push( oInstruction );
+	
+	
+	sValue = qsTr("Accept");
+	oInstruction = widgetSelect(
+		"CreateNewItemDlg.BasicDlgAcceptDialogBtn",
+		qsTr("Accept and Create"),
+		qsTr("Click the //%1// button to create the camera.").arg( sValue ),
+		"",
+		nWidth,
+		"" );
+	aSubInstructions.push( oInstruction );
+	
+	
+	sActionClass = "DzNewCameraAction";
+	oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Create a New Camera"),
+		qsTr("To save this angle for later use, you will want to add a **Camera**.\n\n" +
+			"To do this, go to //Create > ##%1.label##//.")
+				.arg( sActionClass ),
+		"",
+		nWidth );
+	oInstruction = setDialogInstructions( oInstruction, aSubInstructions );
+	aInstructions.push( oInstruction );
+	
+	
+	sValue = "Fury Camera";
+	oInstruction = activeViewportControlSelect(
+		"controls.camera",
+		sValue,
+		qsTr("Switching Your View"),
+		qsTr("Now, when you open the scene, you will want to select //%1// from the " +
+			"**View Selection Menu**. Keep this in mind as you go through the lesson.")
+				.arg( sValue ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = widgetLocate(
+		"Main.DzViewControlKeyNavActionToolBtn",
+		qsTr("Using Keyboard Navigation"),
+		qsTr("Easy right? Try the keyboard navigation for faster adjustments.\n"),
+		qsTr("Keyboard Navigation allows you to use the W, A, S, D, Q, and E keys instead " +
+			"of sliders for camera movement.\n\n" +
+			"You can play with this tool when this lesson has ended."),
+		nWidth,
+		qsTr("Keyboard Navigation Tool") );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = widgetLocate(
+		"Main.DzSceneNavigatorToolActionToolBtn",
+		qsTr("Navigating the Scene"),
+		qsTr("You can also use the **Scene Navigator** tool to move around your scene. If the Scene Navigator tool is " +
+			"turned on, you can click anywhere in the viewport, hold down the mouse left-click button, and move the mouse " +
+			"around to pivot your view.\n\n" +
+			"Try combining the W, A, S, D, Q, and E keyboard shortcuts with the Scene Navigator tool to look " +
+			"around the scene.\n\n" +
+			"You can play with these tools when this lesson has ended."),
+		"",
+		nWidth,
+		qsTr("Scene Navigator Tool") );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	sActionClass = "DzSaveAction";
+	oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Better Safe than Sorry"),
+		qsTr("Before you move on, save your scene again, so if you choose to stop the lesson series, you can pick " +
+			"up where you left off.\n\n" +
+			"You can find the ##%1.label## action in the **Main Menu Bar** under the ##%1.menu## menu or use the " +
+			"##%1.shortcut## shortcut to save the scene.")
+				.arg( sActionClass ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = displayMessage(
+		qsTr("Congratulations"),
+		qsTr("The more familiar you are with navigating, the easier and more enjoyable it will be to create your own scenes.\n\n" +
+			"Click //%1// to start the next lesson, or click the //Stop [Esc]// button to practice.")
+				.arg( sContinue ),
+		"",
+		nWidth,
+		qsTr("Continue to VI - Posing a Figure") );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = lessonSelect(
+		"/Guided Tours/II - Sample Scenes/Elvish Fury 3Delight/VI - Posing a Figure",
+		qsTr("Moving On"),
+		qsTr("Locate the //VI - Posing a Figure//."),
+		"",
+		nWidth );
+	aInstructions.push( oInstruction );
+	
+	
+	// Define an array of additionally required files;
+	var aRequiredFiles = [
+		/*
+		requiredAsset(
+			"/Default/Figures/People/Female/Real World/Genesis 8 Basic Female.duf",
+			"Genesis 8 Starter Essentials",
+			42071
+		)
+		*/
+	];
+	
+	// Process the lesson
+	processLesson( aInstructions, aRequiredFiles );
+	
+// Finalize the function and invoke
+})();

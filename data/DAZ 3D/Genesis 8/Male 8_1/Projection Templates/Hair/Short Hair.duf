@@ -1,0 +1,2628 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Male/Projection%20Templates/Hair/Short%20Hair.duf",
+		"type" : "wearable",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-08-09T20:58:38Z"
+	},
+	"material_library" : [
+		{
+			"id" : "Face_Short_Hair",
+			"type" : "Plastic",
+			"diffuse" : {
+				"channel" : {
+					"id" : "diffuse",
+					"type" : "color",
+					"name" : "Diffuse Color",
+					"label" : "Diffuse Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 0.2, 0.2, 0.2 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"diffuse_strength" : {
+				"channel" : {
+					"id" : "diffuse_strength",
+					"type" : "float",
+					"name" : "Diffuse Strength",
+					"label" : "Diffuse Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"specular" : {
+				"channel" : {
+					"id" : "specular",
+					"type" : "color",
+					"name" : "Specular Color",
+					"label" : "Specular Color",
+					"value" : [ 0.6, 0.6, 0.6 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"specular_strength" : {
+				"channel" : {
+					"id" : "specular_strength",
+					"type" : "float",
+					"name" : "Specular Strength",
+					"label" : "Specular Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"glossiness" : {
+				"channel" : {
+					"id" : "glossiness",
+					"type" : "float",
+					"name" : "Glossiness",
+					"label" : "Glossiness",
+					"value" : 1,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"ambient" : {
+				"channel" : {
+					"id" : "ambient",
+					"type" : "color",
+					"name" : "Ambient Color",
+					"label" : "Ambient Color",
+					"value" : [ 0, 0, 0 ],
+					"current_value" : [ 0.8, 0.8, 0.8 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Ambient"
+			},
+			"ambient_strength" : {
+				"channel" : {
+					"id" : "ambient_strength",
+					"type" : "float",
+					"name" : "Ambient Strength",
+					"label" : "Ambient Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Ambient"
+			},
+			"reflection" : {
+				"channel" : {
+					"id" : "reflection",
+					"type" : "color",
+					"name" : "Reflection Color",
+					"label" : "Reflection Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Reflection"
+			},
+			"reflection_strength" : {
+				"channel" : {
+					"id" : "reflection_strength",
+					"type" : "float",
+					"name" : "Reflection Strength",
+					"label" : "Reflection Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Reflection"
+			},
+			"refraction" : {
+				"channel" : {
+					"id" : "refraction",
+					"type" : "color",
+					"name" : "Refraction Color",
+					"label" : "Refraction Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Refraction"
+			},
+			"refraction_strength" : {
+				"channel" : {
+					"id" : "refraction_strength",
+					"type" : "float",
+					"name" : "Refraction Strength",
+					"label" : "Refraction Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Refraction"
+			},
+			"ior" : {
+				"channel" : {
+					"id" : "ior",
+					"type" : "float",
+					"name" : "Index of Refraction",
+					"label" : "Index of Refraction",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 10,
+					"clamped" : true,
+					"step_size" : 0.01
+				},
+				"group" : "/Refraction"
+			},
+			"bump" : {
+				"channel" : {
+					"id" : "bump",
+					"type" : "float",
+					"name" : "Bump Strength",
+					"label" : "Bump Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 2,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true,
+					"invalid_without_map" : true
+				},
+				"group" : "/Bump"
+			},
+			"bump_min" : {
+				"channel" : {
+					"id" : "bump_min",
+					"type" : "float",
+					"name" : "Negative Bump",
+					"label" : "Negative Bump",
+					"value" : -0.01,
+					"current_value" : -0.01,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Bump"
+			},
+			"bump_max" : {
+				"channel" : {
+					"id" : "bump_max",
+					"type" : "float",
+					"name" : "Positive Bump",
+					"label" : "Positive Bump",
+					"value" : 0.01,
+					"current_value" : 0.01,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Bump"
+			},
+			"displacement" : {
+				"channel" : {
+					"id" : "displacement",
+					"type" : "float",
+					"name" : "Displacement Strength",
+					"label" : "Displacement Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 2,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true,
+					"invalid_without_map" : true
+				},
+				"group" : "/Displacement"
+			},
+			"displacement_min" : {
+				"channel" : {
+					"id" : "displacement_min",
+					"type" : "float",
+					"name" : "Minimum Displacement",
+					"label" : "Minimum Displacement",
+					"value" : -0.1,
+					"current_value" : -0.1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Displacement"
+			},
+			"displacement_max" : {
+				"channel" : {
+					"id" : "displacement_max",
+					"type" : "float",
+					"name" : "Maximum Displacement",
+					"label" : "Maximum Displacement",
+					"value" : 0.1,
+					"current_value" : 0.1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Displacement"
+			},
+			"transparency" : {
+				"channel" : {
+					"id" : "transparency",
+					"type" : "float",
+					"name" : "Opacity Strength",
+					"label" : "Opacity Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Opacity"
+			},
+			"normal" : {
+				"channel" : {
+					"id" : "normal",
+					"type" : "image",
+					"name" : "Normal Map",
+					"label" : "Normal Map",
+					"default_image_gamma" : 1
+				},
+				"group" : "/Normal Mapping"
+			},
+			"u_offset" : {
+				"channel" : {
+					"id" : "u_offset",
+					"type" : "float",
+					"name" : "Horizontal Offset",
+					"label" : "Horizontal Offset",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"u_scale" : {
+				"channel" : {
+					"id" : "u_scale",
+					"type" : "float",
+					"name" : "Horizontal Tiles",
+					"label" : "Horizontal Tiles",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"v_offset" : {
+				"channel" : {
+					"id" : "v_offset",
+					"type" : "float",
+					"name" : "Vertical Offset",
+					"label" : "Vertical Offset",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"v_scale" : {
+				"channel" : {
+					"id" : "v_scale",
+					"type" : "float",
+					"name" : "Vertical Tiles",
+					"label" : "Vertical Tiles",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"extra" : [
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Multiply Specular Through Opacity",
+								"type" : "bool",
+								"label" : "Multiply Specular Through Opacity",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Sheen Color",
+								"type" : "color",
+								"label" : "Sheen Color",
+								"visible" : false,
+								"value" : [ 0.4, 0.4, 0.4 ],
+								"current_value" : [ 0.4, 0.4, 0.4 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Scatter Color",
+								"type" : "color",
+								"label" : "Scatter Color",
+								"visible" : false,
+								"value" : [ 0.8, 0.1490196, 0.05882353 ],
+								"current_value" : [ 0.8, 0.1490196, 0.05882353 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Thickness",
+								"type" : "float",
+								"label" : "Thickness",
+								"visible" : false,
+								"value" : 0.25,
+								"current_value" : 0.25,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Lighting Model",
+								"type" : "enum",
+								"label" : "Lighting Model",
+								"value" : 0,
+								"current_value" : 0,
+								"enum_values" : [ "Plastic", "Metallic", "Skin", "Glossy (Plastic)", "Matte", "Glossy (Metallic)" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Tags",
+								"type" : "string",
+								"label" : "Tags",
+								"value" : "",
+								"current_value" : ""
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"label" : "Smooth",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"label" : "Angle",
+								"value" : 89.9,
+								"current_value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"current_value" : 3,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/Render Priority"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id" : "Ears_Short_Hair",
+			"type" : "Plastic",
+			"diffuse" : {
+				"channel" : {
+					"id" : "diffuse",
+					"type" : "color",
+					"name" : "Diffuse Color",
+					"label" : "Diffuse Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 0.2, 0.2, 0.2 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"diffuse_strength" : {
+				"channel" : {
+					"id" : "diffuse_strength",
+					"type" : "float",
+					"name" : "Diffuse Strength",
+					"label" : "Diffuse Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"specular" : {
+				"channel" : {
+					"id" : "specular",
+					"type" : "color",
+					"name" : "Specular Color",
+					"label" : "Specular Color",
+					"value" : [ 0.6, 0.6, 0.6 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"specular_strength" : {
+				"channel" : {
+					"id" : "specular_strength",
+					"type" : "float",
+					"name" : "Specular Strength",
+					"label" : "Specular Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"glossiness" : {
+				"channel" : {
+					"id" : "glossiness",
+					"type" : "float",
+					"name" : "Glossiness",
+					"label" : "Glossiness",
+					"value" : 1,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"ambient" : {
+				"channel" : {
+					"id" : "ambient",
+					"type" : "color",
+					"name" : "Ambient Color",
+					"label" : "Ambient Color",
+					"value" : [ 0, 0, 0 ],
+					"current_value" : [ 0.8, 0.8, 0.8 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Ambient"
+			},
+			"ambient_strength" : {
+				"channel" : {
+					"id" : "ambient_strength",
+					"type" : "float",
+					"name" : "Ambient Strength",
+					"label" : "Ambient Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Ambient"
+			},
+			"reflection" : {
+				"channel" : {
+					"id" : "reflection",
+					"type" : "color",
+					"name" : "Reflection Color",
+					"label" : "Reflection Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Reflection"
+			},
+			"reflection_strength" : {
+				"channel" : {
+					"id" : "reflection_strength",
+					"type" : "float",
+					"name" : "Reflection Strength",
+					"label" : "Reflection Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Reflection"
+			},
+			"refraction" : {
+				"channel" : {
+					"id" : "refraction",
+					"type" : "color",
+					"name" : "Refraction Color",
+					"label" : "Refraction Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Refraction"
+			},
+			"refraction_strength" : {
+				"channel" : {
+					"id" : "refraction_strength",
+					"type" : "float",
+					"name" : "Refraction Strength",
+					"label" : "Refraction Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Refraction"
+			},
+			"ior" : {
+				"channel" : {
+					"id" : "ior",
+					"type" : "float",
+					"name" : "Index of Refraction",
+					"label" : "Index of Refraction",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 10,
+					"clamped" : true,
+					"step_size" : 0.01
+				},
+				"group" : "/Refraction"
+			},
+			"bump" : {
+				"channel" : {
+					"id" : "bump",
+					"type" : "float",
+					"name" : "Bump Strength",
+					"label" : "Bump Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 2,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true,
+					"invalid_without_map" : true
+				},
+				"group" : "/Bump"
+			},
+			"bump_min" : {
+				"channel" : {
+					"id" : "bump_min",
+					"type" : "float",
+					"name" : "Negative Bump",
+					"label" : "Negative Bump",
+					"value" : -0.01,
+					"current_value" : -0.01,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Bump"
+			},
+			"bump_max" : {
+				"channel" : {
+					"id" : "bump_max",
+					"type" : "float",
+					"name" : "Positive Bump",
+					"label" : "Positive Bump",
+					"value" : 0.01,
+					"current_value" : 0.01,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Bump"
+			},
+			"displacement" : {
+				"channel" : {
+					"id" : "displacement",
+					"type" : "float",
+					"name" : "Displacement Strength",
+					"label" : "Displacement Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 2,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true,
+					"invalid_without_map" : true
+				},
+				"group" : "/Displacement"
+			},
+			"displacement_min" : {
+				"channel" : {
+					"id" : "displacement_min",
+					"type" : "float",
+					"name" : "Minimum Displacement",
+					"label" : "Minimum Displacement",
+					"value" : -0.1,
+					"current_value" : -0.1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Displacement"
+			},
+			"displacement_max" : {
+				"channel" : {
+					"id" : "displacement_max",
+					"type" : "float",
+					"name" : "Maximum Displacement",
+					"label" : "Maximum Displacement",
+					"value" : 0.1,
+					"current_value" : 0.1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Displacement"
+			},
+			"transparency" : {
+				"channel" : {
+					"id" : "transparency",
+					"type" : "float",
+					"name" : "Opacity Strength",
+					"label" : "Opacity Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Opacity"
+			},
+			"normal" : {
+				"channel" : {
+					"id" : "normal",
+					"type" : "image",
+					"name" : "Normal Map",
+					"label" : "Normal Map",
+					"default_image_gamma" : 1
+				},
+				"group" : "/Normal Mapping"
+			},
+			"u_offset" : {
+				"channel" : {
+					"id" : "u_offset",
+					"type" : "float",
+					"name" : "Horizontal Offset",
+					"label" : "Horizontal Offset",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"u_scale" : {
+				"channel" : {
+					"id" : "u_scale",
+					"type" : "float",
+					"name" : "Horizontal Tiles",
+					"label" : "Horizontal Tiles",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"v_offset" : {
+				"channel" : {
+					"id" : "v_offset",
+					"type" : "float",
+					"name" : "Vertical Offset",
+					"label" : "Vertical Offset",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"v_scale" : {
+				"channel" : {
+					"id" : "v_scale",
+					"type" : "float",
+					"name" : "Vertical Tiles",
+					"label" : "Vertical Tiles",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"extra" : [
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Multiply Specular Through Opacity",
+								"type" : "bool",
+								"label" : "Multiply Specular Through Opacity",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Sheen Color",
+								"type" : "color",
+								"label" : "Sheen Color",
+								"visible" : false,
+								"value" : [ 0.4, 0.4, 0.4 ],
+								"current_value" : [ 0.4, 0.4, 0.4 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Scatter Color",
+								"type" : "color",
+								"label" : "Scatter Color",
+								"visible" : false,
+								"value" : [ 0.8, 0.1490196, 0.05882353 ],
+								"current_value" : [ 0.8, 0.1490196, 0.05882353 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Thickness",
+								"type" : "float",
+								"label" : "Thickness",
+								"visible" : false,
+								"value" : 0.25,
+								"current_value" : 0.25,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Lighting Model",
+								"type" : "enum",
+								"label" : "Lighting Model",
+								"value" : 0,
+								"current_value" : 0,
+								"enum_values" : [ "Plastic", "Metallic", "Skin", "Glossy (Plastic)", "Matte", "Glossy (Metallic)" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Tags",
+								"type" : "string",
+								"label" : "Tags",
+								"value" : "",
+								"current_value" : ""
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"label" : "Smooth",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"label" : "Angle",
+								"value" : 89.9,
+								"current_value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"current_value" : 3,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/Render Priority"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id" : "Torso_Short_Hair",
+			"type" : "Plastic",
+			"diffuse" : {
+				"channel" : {
+					"id" : "diffuse",
+					"type" : "color",
+					"name" : "Diffuse Color",
+					"label" : "Diffuse Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 0.2, 0.2, 0.2 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"diffuse_strength" : {
+				"channel" : {
+					"id" : "diffuse_strength",
+					"type" : "float",
+					"name" : "Diffuse Strength",
+					"label" : "Diffuse Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"specular" : {
+				"channel" : {
+					"id" : "specular",
+					"type" : "color",
+					"name" : "Specular Color",
+					"label" : "Specular Color",
+					"value" : [ 0.6, 0.6, 0.6 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"specular_strength" : {
+				"channel" : {
+					"id" : "specular_strength",
+					"type" : "float",
+					"name" : "Specular Strength",
+					"label" : "Specular Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"glossiness" : {
+				"channel" : {
+					"id" : "glossiness",
+					"type" : "float",
+					"name" : "Glossiness",
+					"label" : "Glossiness",
+					"value" : 1,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"ambient" : {
+				"channel" : {
+					"id" : "ambient",
+					"type" : "color",
+					"name" : "Ambient Color",
+					"label" : "Ambient Color",
+					"value" : [ 0, 0, 0 ],
+					"current_value" : [ 0.8, 0.8, 0.8 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Ambient"
+			},
+			"ambient_strength" : {
+				"channel" : {
+					"id" : "ambient_strength",
+					"type" : "float",
+					"name" : "Ambient Strength",
+					"label" : "Ambient Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Ambient"
+			},
+			"reflection" : {
+				"channel" : {
+					"id" : "reflection",
+					"type" : "color",
+					"name" : "Reflection Color",
+					"label" : "Reflection Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Reflection"
+			},
+			"reflection_strength" : {
+				"channel" : {
+					"id" : "reflection_strength",
+					"type" : "float",
+					"name" : "Reflection Strength",
+					"label" : "Reflection Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Reflection"
+			},
+			"refraction" : {
+				"channel" : {
+					"id" : "refraction",
+					"type" : "color",
+					"name" : "Refraction Color",
+					"label" : "Refraction Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Refraction"
+			},
+			"refraction_strength" : {
+				"channel" : {
+					"id" : "refraction_strength",
+					"type" : "float",
+					"name" : "Refraction Strength",
+					"label" : "Refraction Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Refraction"
+			},
+			"ior" : {
+				"channel" : {
+					"id" : "ior",
+					"type" : "float",
+					"name" : "Index of Refraction",
+					"label" : "Index of Refraction",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 10,
+					"clamped" : true,
+					"step_size" : 0.01
+				},
+				"group" : "/Refraction"
+			},
+			"bump" : {
+				"channel" : {
+					"id" : "bump",
+					"type" : "float",
+					"name" : "Bump Strength",
+					"label" : "Bump Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 2,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true,
+					"invalid_without_map" : true
+				},
+				"group" : "/Bump"
+			},
+			"bump_min" : {
+				"channel" : {
+					"id" : "bump_min",
+					"type" : "float",
+					"name" : "Negative Bump",
+					"label" : "Negative Bump",
+					"value" : -0.01,
+					"current_value" : -0.01,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Bump"
+			},
+			"bump_max" : {
+				"channel" : {
+					"id" : "bump_max",
+					"type" : "float",
+					"name" : "Positive Bump",
+					"label" : "Positive Bump",
+					"value" : 0.01,
+					"current_value" : 0.01,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Bump"
+			},
+			"displacement" : {
+				"channel" : {
+					"id" : "displacement",
+					"type" : "float",
+					"name" : "Displacement Strength",
+					"label" : "Displacement Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 2,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true,
+					"invalid_without_map" : true
+				},
+				"group" : "/Displacement"
+			},
+			"displacement_min" : {
+				"channel" : {
+					"id" : "displacement_min",
+					"type" : "float",
+					"name" : "Minimum Displacement",
+					"label" : "Minimum Displacement",
+					"value" : -0.1,
+					"current_value" : -0.1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Displacement"
+			},
+			"displacement_max" : {
+				"channel" : {
+					"id" : "displacement_max",
+					"type" : "float",
+					"name" : "Maximum Displacement",
+					"label" : "Maximum Displacement",
+					"value" : 0.1,
+					"current_value" : 0.1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Displacement"
+			},
+			"transparency" : {
+				"channel" : {
+					"id" : "transparency",
+					"type" : "float",
+					"name" : "Opacity Strength",
+					"label" : "Opacity Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Opacity"
+			},
+			"normal" : {
+				"channel" : {
+					"id" : "normal",
+					"type" : "image",
+					"name" : "Normal Map",
+					"label" : "Normal Map",
+					"default_image_gamma" : 1
+				},
+				"group" : "/Normal Mapping"
+			},
+			"u_offset" : {
+				"channel" : {
+					"id" : "u_offset",
+					"type" : "float",
+					"name" : "Horizontal Offset",
+					"label" : "Horizontal Offset",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"u_scale" : {
+				"channel" : {
+					"id" : "u_scale",
+					"type" : "float",
+					"name" : "Horizontal Tiles",
+					"label" : "Horizontal Tiles",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"v_offset" : {
+				"channel" : {
+					"id" : "v_offset",
+					"type" : "float",
+					"name" : "Vertical Offset",
+					"label" : "Vertical Offset",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"v_scale" : {
+				"channel" : {
+					"id" : "v_scale",
+					"type" : "float",
+					"name" : "Vertical Tiles",
+					"label" : "Vertical Tiles",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"extra" : [
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Multiply Specular Through Opacity",
+								"type" : "bool",
+								"label" : "Multiply Specular Through Opacity",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Sheen Color",
+								"type" : "color",
+								"label" : "Sheen Color",
+								"visible" : false,
+								"value" : [ 0.4, 0.4, 0.4 ],
+								"current_value" : [ 0.4, 0.4, 0.4 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Scatter Color",
+								"type" : "color",
+								"label" : "Scatter Color",
+								"visible" : false,
+								"value" : [ 0.8, 0.1490196, 0.05882353 ],
+								"current_value" : [ 0.8, 0.1490196, 0.05882353 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Thickness",
+								"type" : "float",
+								"label" : "Thickness",
+								"visible" : false,
+								"value" : 0.25,
+								"current_value" : 0.25,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Lighting Model",
+								"type" : "enum",
+								"label" : "Lighting Model",
+								"value" : 0,
+								"current_value" : 0,
+								"enum_values" : [ "Plastic", "Metallic", "Skin", "Glossy (Plastic)", "Matte", "Glossy (Metallic)" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Tags",
+								"type" : "string",
+								"label" : "Tags",
+								"value" : "",
+								"current_value" : ""
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"label" : "Smooth",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"label" : "Angle",
+								"value" : 89.9,
+								"current_value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"current_value" : 3,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/Render Priority"
+						}
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"nodes" : [
+			{
+				"id" : "ShortHair_837",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#ShortHair_837",
+				"name" : "ShortHair_837",
+				"label" : "ShortHair",
+				"geometries" : [
+					{
+						"id" : "ShortHair",
+						"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#ShortHair",
+						"name" : "ShortHair",
+						"label" : "shape",
+						"type" : "subdivision_surface",
+						"current_subdivision_level" : 1,
+						"edge_interpolation_mode" : "edges_only",
+						"extra" : [
+							{
+								"type" : "studio_geometry_channels",
+								"channels" : [
+									{
+										"channel" : {
+											"id" : "SubDRenderLevel",
+											"type" : "int",
+											"current_value" : 0
+										}
+									}
+								]
+							}
+						]
+					}
+				],
+				"conform_target" : "name://@selection:",
+				"preview" : {
+					"type" : "figure",
+					"oriented_box" : {
+						"min" : [ -15.707, 85.925, -11.253 ],
+						"max" : [ 15.708, 181.16, 11.35 ]
+					},
+					"center_point" : [ 0, 0, 0 ],
+					"end_point" : [ 0, 103.876, 0 ],
+					"rotation_order" : "YXZ"
+				}
+			},
+			{
+				"id" : "hip",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#hip",
+				"name" : "hip",
+				"label" : "Hip",
+				"parent" : "#ShortHair_837",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 103.5941, 1.915123 ],
+					"end_point" : [ 0, 86.71755, 0.6914883 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "pelvis",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#pelvis",
+				"name" : "pelvis",
+				"label" : "Pelvis",
+				"parent" : "#hip",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 105.529, 1.80733 ],
+					"end_point" : [ 0, 85.9352, 2.431853 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "abdomenLower",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#abdomenLower",
+				"name" : "abdomenLower",
+				"label" : "Abdomen Lower",
+				"parent" : "#hip",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 105.4197, 0.1559995 ],
+					"end_point" : [ 0, 113.7622, -0.6516659 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "abdomenUpper",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#abdomenUpper",
+				"name" : "abdomenUpper",
+				"label" : "Abdomen Upper",
+				"parent" : "#abdomenLower",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 113.851, 0.7088884 ],
+					"end_point" : [ 0, 121.6108, -0.3588328 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "chestLower",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#chestLower",
+				"name" : "chestLower",
+				"label" : "Chest Lower",
+				"parent" : "#abdomenUpper",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 122.0601, -0.008112133 ],
+					"end_point" : [ 0, 142.8653, 1.385201 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "chestUpper",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#chestUpper",
+				"name" : "chestUpper",
+				"label" : "Chest Upper",
+				"parent" : "#chestLower",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 135.2389, -3.512701 ],
+					"end_point" : [ 0, 148.9166, -2.571884 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "lCollar",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#lCollar",
+				"name" : "lCollar",
+				"label" : "Left Collar",
+				"parent" : "#chestUpper",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 4.063411, 146.5237, -4.624425 ],
+					"end_point" : [ 15.6162, 147.6652, -5.539772 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "rCollar",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#rCollar",
+				"name" : "rCollar",
+				"label" : "Right Collar",
+				"parent" : "#chestUpper",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -4.063411, 146.5237, -4.624425 ],
+					"end_point" : [ -15.6162, 147.6652, -5.539772 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "neckLower",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#neckLower",
+				"name" : "neckLower",
+				"label" : "Neck Lower",
+				"parent" : "#chestUpper",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.381, 0, -0.381 ],
+						"max" : [ 0.382, 3.819, 0.382 ]
+					},
+					"center_point" : [ 0, 154.2024, -4.287979 ],
+					"end_point" : [ 0, 157.8335, -3.104819 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "neckUpper",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#neckUpper",
+				"name" : "neckUpper",
+				"label" : "Neck Upper",
+				"parent" : "#neckLower",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -6.324, -2.838, -6.628 ],
+						"max" : [ 6.325, 6.338, 2.042 ]
+					},
+					"center_point" : [ 0, 157.7291, -2.052884 ],
+					"end_point" : [ 0, 163.2163, -1.525104 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "head",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#head",
+				"name" : "head",
+				"label" : "Head",
+				"parent" : "#neckUpper",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -8.224, -2.982, -9.49 ],
+						"max" : [ 8.225, 17.996, 11.673 ]
+					},
+					"center_point" : [ 0, 163.1674, -1.864532 ],
+					"end_point" : [ 0, 166.7126, -1.774063 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "lowerJaw",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#lowerJaw",
+				"name" : "lowerJaw",
+				"label" : "Lower Jaw",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 164.9014, 0.1842566 ],
+					"end_point" : [ 0, 161.8109, 7.938394 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "upperFaceRig",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#upperFaceRig",
+				"name" : "upperFaceRig",
+				"label" : "Upper Face Rig",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 163.1808, -1.874151 ],
+					"end_point" : [ 0, 166.7303, -1.775447 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "rBrowInner",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#rBrowInner",
+				"name" : "rBrowInner",
+				"label" : "Right Brow Inner",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -2.04842, 171.5367, 9.223793 ],
+					"end_point" : [ -2.053402, 171.5322, 10.12372 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rBrowMid",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#rBrowMid",
+				"name" : "rBrowMid",
+				"label" : "Right Brow Middle",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -3.896087, 171.7752, 8.895058 ],
+					"end_point" : [ -3.92235, 171.7967, 9.778939 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rBrowOuter",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#rBrowOuter",
+				"name" : "rBrowOuter",
+				"label" : "Right Brow Outer",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -5.438126, 171.1506, 7.544299 ],
+					"end_point" : [ -5.467217, 171.1277, 8.464276 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lBrowInner",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#lBrowInner",
+				"name" : "lBrowInner",
+				"label" : "Left Brow Inner",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 2.04842, 171.5367, 9.223793 ],
+					"end_point" : [ 2.053402, 171.5322, 10.12372 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lBrowMid",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#lBrowMid",
+				"name" : "lBrowMid",
+				"label" : "Left Brow Middle",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 3.896087, 171.7752, 8.895058 ],
+					"end_point" : [ 3.92235, 171.7967, 9.778939 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lBrowOuter",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#lBrowOuter",
+				"name" : "lBrowOuter",
+				"label" : "Left Brow Outer",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 5.438126, 171.1506, 7.544299 ],
+					"end_point" : [ 5.467217, 171.1277, 8.464276 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "CenterBrow",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#CenterBrow",
+				"name" : "CenterBrow",
+				"label" : "Center Brow",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 171.4855, 9.702775 ],
+					"end_point" : [ 0, 171.4783, 10.59231 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lCheekUpper",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#lCheekUpper",
+				"name" : "lCheekUpper",
+				"label" : "Left Cheek Upper",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 5.425804, 166.6699, 6.965333 ],
+					"end_point" : [ 5.457929, 166.6443, 7.990579 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rCheekUpper",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#rCheekUpper",
+				"name" : "rCheekUpper",
+				"label" : "Right Cheek Upper",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -5.425804, 166.6699, 6.965333 ],
+					"end_point" : [ -5.457929, 166.6443, 7.990579 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lEar",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#lEar",
+				"name" : "lEar",
+				"label" : "Left Ear",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 6.844874, 167.5486, -1.079517 ],
+					"end_point" : [ 8.659964, 167.4172, -4.085102 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "rEar",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#rEar",
+				"name" : "rEar",
+				"label" : "Right Ear",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -6.844874, 167.5486, -1.079517 ],
+					"end_point" : [ -8.659964, 167.4172, -4.085102 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "lPectoral",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#lPectoral",
+				"name" : "lPectoral",
+				"label" : "Left Pectoral",
+				"parent" : "#chestLower",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 3.68573, 130.4377, -9.287436 ],
+					"end_point" : [ 10.83739, 134.9564, 9.536959 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rPectoral",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#rPectoral",
+				"name" : "rPectoral",
+				"label" : "Right Pectoral",
+				"parent" : "#chestLower",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -3.68573, 130.4377, -9.287436 ],
+					"end_point" : [ -10.83739, 134.9564, 9.536959 ],
+					"rotation_order" : "ZYX"
+				}
+			}
+		],
+		"modifiers" : [
+			{
+				"id" : "SkinBinding",
+				"url" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/ShortHair_837.dsf#SkinBinding",
+				"parent" : "#ShortHair",
+				"extra" : [
+					{
+						"type" : "skin_settings",
+						"auto_normalize_general" : true,
+						"auto_normalize_local" : true,
+						"auto_normalize_scale" : true,
+						"binding_mode" : "General",
+						"general_map_mode" : "DualQuat",
+						"scale_mode" : "BindingMaps"
+					}
+				]
+			}
+		],
+		"materials" : [
+			{
+				"id" : "Face_Short_Hair-1",
+				"url" : "#Face_Short_Hair",
+				"geometry" : "#ShortHair",
+				"groups" : [ "Face_Short_Hair" ],
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "color",
+						"name" : "Diffuse Color",
+						"current_value" : [ 0.2, 0.2, 0.2 ],
+						"image" : null
+					}
+				},
+				"diffuse_strength" : {
+					"channel" : {
+						"id" : "diffuse_strength",
+						"type" : "float",
+						"name" : "Diffuse Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"specular" : {
+					"channel" : {
+						"id" : "specular",
+						"type" : "color",
+						"name" : "Specular Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"specular_strength" : {
+					"channel" : {
+						"id" : "specular_strength",
+						"type" : "float",
+						"name" : "Specular Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"glossiness" : {
+					"channel" : {
+						"id" : "glossiness",
+						"type" : "float",
+						"name" : "Glossiness",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"ambient" : {
+					"channel" : {
+						"id" : "ambient",
+						"type" : "color",
+						"name" : "Ambient Color",
+						"current_value" : [ 0.8, 0.8, 0.8 ],
+						"image" : null
+					}
+				},
+				"ambient_strength" : {
+					"channel" : {
+						"id" : "ambient_strength",
+						"type" : "float",
+						"name" : "Ambient Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"reflection" : {
+					"channel" : {
+						"id" : "reflection",
+						"type" : "color",
+						"name" : "Reflection Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"reflection_strength" : {
+					"channel" : {
+						"id" : "reflection_strength",
+						"type" : "float",
+						"name" : "Reflection Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"refraction" : {
+					"channel" : {
+						"id" : "refraction",
+						"type" : "color",
+						"name" : "Refraction Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"refraction_strength" : {
+					"channel" : {
+						"id" : "refraction_strength",
+						"type" : "float",
+						"name" : "Refraction Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"ior" : {
+					"channel" : {
+						"id" : "ior",
+						"type" : "float",
+						"name" : "Index of Refraction",
+						"current_value" : 0
+					}
+				},
+				"bump" : {
+					"channel" : {
+						"id" : "bump",
+						"type" : "float",
+						"name" : "Bump Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"bump_min" : {
+					"channel" : {
+						"id" : "bump_min",
+						"type" : "float",
+						"name" : "Negative Bump",
+						"current_value" : -0.01
+					}
+				},
+				"bump_max" : {
+					"channel" : {
+						"id" : "bump_max",
+						"type" : "float",
+						"name" : "Positive Bump",
+						"current_value" : 0.01
+					}
+				},
+				"displacement" : {
+					"channel" : {
+						"id" : "displacement",
+						"type" : "float",
+						"name" : "Displacement Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"displacement_min" : {
+					"channel" : {
+						"id" : "displacement_min",
+						"type" : "float",
+						"name" : "Minimum Displacement",
+						"current_value" : -0.1
+					}
+				},
+				"displacement_max" : {
+					"channel" : {
+						"id" : "displacement_max",
+						"type" : "float",
+						"name" : "Maximum Displacement",
+						"current_value" : 0.1
+					}
+				},
+				"transparency" : {
+					"channel" : {
+						"id" : "transparency",
+						"type" : "float",
+						"name" : "Opacity Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"normal" : {
+					"channel" : {
+						"id" : "normal",
+						"type" : "image",
+						"name" : "Normal Map",
+						"image" : null
+					}
+				},
+				"u_offset" : {
+					"channel" : {
+						"id" : "u_offset",
+						"type" : "float",
+						"name" : "Horizontal Offset",
+						"current_value" : 0
+					}
+				},
+				"u_scale" : {
+					"channel" : {
+						"id" : "u_scale",
+						"type" : "float",
+						"name" : "Horizontal Tiles",
+						"current_value" : 1
+					}
+				},
+				"v_offset" : {
+					"channel" : {
+						"id" : "v_offset",
+						"type" : "float",
+						"name" : "Vertical Offset",
+						"current_value" : 0
+					}
+				},
+				"v_scale" : {
+					"channel" : {
+						"id" : "v_scale",
+						"type" : "float",
+						"name" : "Vertical Tiles",
+						"current_value" : 1
+					}
+				},
+				"uv_set" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/UV%20Sets/Daz%203D/Base/default.dsf#default"
+			},
+			{
+				"id" : "Ears_Short_Hair-1",
+				"url" : "#Ears_Short_Hair",
+				"geometry" : "#ShortHair",
+				"groups" : [ "Ears_Short_Hair" ],
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "color",
+						"name" : "Diffuse Color",
+						"current_value" : [ 0.2, 0.2, 0.2 ],
+						"image" : null
+					}
+				},
+				"diffuse_strength" : {
+					"channel" : {
+						"id" : "diffuse_strength",
+						"type" : "float",
+						"name" : "Diffuse Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"specular" : {
+					"channel" : {
+						"id" : "specular",
+						"type" : "color",
+						"name" : "Specular Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"specular_strength" : {
+					"channel" : {
+						"id" : "specular_strength",
+						"type" : "float",
+						"name" : "Specular Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"glossiness" : {
+					"channel" : {
+						"id" : "glossiness",
+						"type" : "float",
+						"name" : "Glossiness",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"ambient" : {
+					"channel" : {
+						"id" : "ambient",
+						"type" : "color",
+						"name" : "Ambient Color",
+						"current_value" : [ 0.8, 0.8, 0.8 ],
+						"image" : null
+					}
+				},
+				"ambient_strength" : {
+					"channel" : {
+						"id" : "ambient_strength",
+						"type" : "float",
+						"name" : "Ambient Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"reflection" : {
+					"channel" : {
+						"id" : "reflection",
+						"type" : "color",
+						"name" : "Reflection Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"reflection_strength" : {
+					"channel" : {
+						"id" : "reflection_strength",
+						"type" : "float",
+						"name" : "Reflection Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"refraction" : {
+					"channel" : {
+						"id" : "refraction",
+						"type" : "color",
+						"name" : "Refraction Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"refraction_strength" : {
+					"channel" : {
+						"id" : "refraction_strength",
+						"type" : "float",
+						"name" : "Refraction Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"ior" : {
+					"channel" : {
+						"id" : "ior",
+						"type" : "float",
+						"name" : "Index of Refraction",
+						"current_value" : 0
+					}
+				},
+				"bump" : {
+					"channel" : {
+						"id" : "bump",
+						"type" : "float",
+						"name" : "Bump Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"bump_min" : {
+					"channel" : {
+						"id" : "bump_min",
+						"type" : "float",
+						"name" : "Negative Bump",
+						"current_value" : -0.01
+					}
+				},
+				"bump_max" : {
+					"channel" : {
+						"id" : "bump_max",
+						"type" : "float",
+						"name" : "Positive Bump",
+						"current_value" : 0.01
+					}
+				},
+				"displacement" : {
+					"channel" : {
+						"id" : "displacement",
+						"type" : "float",
+						"name" : "Displacement Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"displacement_min" : {
+					"channel" : {
+						"id" : "displacement_min",
+						"type" : "float",
+						"name" : "Minimum Displacement",
+						"current_value" : -0.1
+					}
+				},
+				"displacement_max" : {
+					"channel" : {
+						"id" : "displacement_max",
+						"type" : "float",
+						"name" : "Maximum Displacement",
+						"current_value" : 0.1
+					}
+				},
+				"transparency" : {
+					"channel" : {
+						"id" : "transparency",
+						"type" : "float",
+						"name" : "Opacity Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"normal" : {
+					"channel" : {
+						"id" : "normal",
+						"type" : "image",
+						"name" : "Normal Map",
+						"image" : null
+					}
+				},
+				"u_offset" : {
+					"channel" : {
+						"id" : "u_offset",
+						"type" : "float",
+						"name" : "Horizontal Offset",
+						"current_value" : 0
+					}
+				},
+				"u_scale" : {
+					"channel" : {
+						"id" : "u_scale",
+						"type" : "float",
+						"name" : "Horizontal Tiles",
+						"current_value" : 1
+					}
+				},
+				"v_offset" : {
+					"channel" : {
+						"id" : "v_offset",
+						"type" : "float",
+						"name" : "Vertical Offset",
+						"current_value" : 0
+					}
+				},
+				"v_scale" : {
+					"channel" : {
+						"id" : "v_scale",
+						"type" : "float",
+						"name" : "Vertical Tiles",
+						"current_value" : 1
+					}
+				},
+				"uv_set" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/UV%20Sets/Daz%203D/Base/default.dsf#default"
+			},
+			{
+				"id" : "Torso_Short_Hair-1",
+				"url" : "#Torso_Short_Hair",
+				"geometry" : "#ShortHair",
+				"groups" : [ "Torso_Short_Hair" ],
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "color",
+						"name" : "Diffuse Color",
+						"current_value" : [ 0.2, 0.2, 0.2 ],
+						"image" : null
+					}
+				},
+				"diffuse_strength" : {
+					"channel" : {
+						"id" : "diffuse_strength",
+						"type" : "float",
+						"name" : "Diffuse Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"specular" : {
+					"channel" : {
+						"id" : "specular",
+						"type" : "color",
+						"name" : "Specular Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"specular_strength" : {
+					"channel" : {
+						"id" : "specular_strength",
+						"type" : "float",
+						"name" : "Specular Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"glossiness" : {
+					"channel" : {
+						"id" : "glossiness",
+						"type" : "float",
+						"name" : "Glossiness",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"ambient" : {
+					"channel" : {
+						"id" : "ambient",
+						"type" : "color",
+						"name" : "Ambient Color",
+						"current_value" : [ 0.8, 0.8, 0.8 ],
+						"image" : null
+					}
+				},
+				"ambient_strength" : {
+					"channel" : {
+						"id" : "ambient_strength",
+						"type" : "float",
+						"name" : "Ambient Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"reflection" : {
+					"channel" : {
+						"id" : "reflection",
+						"type" : "color",
+						"name" : "Reflection Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"reflection_strength" : {
+					"channel" : {
+						"id" : "reflection_strength",
+						"type" : "float",
+						"name" : "Reflection Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"refraction" : {
+					"channel" : {
+						"id" : "refraction",
+						"type" : "color",
+						"name" : "Refraction Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"refraction_strength" : {
+					"channel" : {
+						"id" : "refraction_strength",
+						"type" : "float",
+						"name" : "Refraction Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"ior" : {
+					"channel" : {
+						"id" : "ior",
+						"type" : "float",
+						"name" : "Index of Refraction",
+						"current_value" : 0
+					}
+				},
+				"bump" : {
+					"channel" : {
+						"id" : "bump",
+						"type" : "float",
+						"name" : "Bump Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"bump_min" : {
+					"channel" : {
+						"id" : "bump_min",
+						"type" : "float",
+						"name" : "Negative Bump",
+						"current_value" : -0.01
+					}
+				},
+				"bump_max" : {
+					"channel" : {
+						"id" : "bump_max",
+						"type" : "float",
+						"name" : "Positive Bump",
+						"current_value" : 0.01
+					}
+				},
+				"displacement" : {
+					"channel" : {
+						"id" : "displacement",
+						"type" : "float",
+						"name" : "Displacement Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"displacement_min" : {
+					"channel" : {
+						"id" : "displacement_min",
+						"type" : "float",
+						"name" : "Minimum Displacement",
+						"current_value" : -0.1
+					}
+				},
+				"displacement_max" : {
+					"channel" : {
+						"id" : "displacement_max",
+						"type" : "float",
+						"name" : "Maximum Displacement",
+						"current_value" : 0.1
+					}
+				},
+				"transparency" : {
+					"channel" : {
+						"id" : "transparency",
+						"type" : "float",
+						"name" : "Opacity Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"normal" : {
+					"channel" : {
+						"id" : "normal",
+						"type" : "image",
+						"name" : "Normal Map",
+						"image" : null
+					}
+				},
+				"u_offset" : {
+					"channel" : {
+						"id" : "u_offset",
+						"type" : "float",
+						"name" : "Horizontal Offset",
+						"current_value" : 0
+					}
+				},
+				"u_scale" : {
+					"channel" : {
+						"id" : "u_scale",
+						"type" : "float",
+						"name" : "Horizontal Tiles",
+						"current_value" : 1
+					}
+				},
+				"v_offset" : {
+					"channel" : {
+						"id" : "v_offset",
+						"type" : "float",
+						"name" : "Vertical Offset",
+						"current_value" : 0
+					}
+				},
+				"v_scale" : {
+					"channel" : {
+						"id" : "v_scale",
+						"type" : "float",
+						"name" : "Vertical Tiles",
+						"current_value" : 1
+					}
+				},
+				"uv_set" : "/data/Daz%203D/Genesis%208/Male/Tools/Projection%20Templates/Short%20Hair/UV%20Sets/Daz%203D/Base/default.dsf#default"
+			}
+		]
+	}
+}

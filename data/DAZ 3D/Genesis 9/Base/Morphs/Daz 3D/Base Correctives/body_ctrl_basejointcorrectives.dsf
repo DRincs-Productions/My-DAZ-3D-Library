@@ -1,0 +1,49 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base%20Correctives/body_ctrl_basejointcorrectives.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-06-21T17:34:53Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "body_basejointcorrectives",
+			"name" : "body_ctrl_basejointcorrectives",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#Genesis9",
+			"presentation" : {
+				"type" : "Modifier/Utility",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.9764706, 0.772549, 0.1764706 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "body_ctrl_basejointcorrectives",
+				"label" : "Base Joint Correctives",
+				"value" : 1,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/General/Misc"
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "body_ctrl_basejointcorrectives",
+				"url" : "#body_basejointcorrectives"
+			}
+		]
+	}
+}

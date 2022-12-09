@@ -1,0 +1,83 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Pose/pCTRLShldrsFrntBck.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-06-21T23:27:32Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "pCTRLShldrsFrntBck",
+			"name" : "pCTRLShldrsFrntBck",
+			"parent" : "/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#Genesis8Male",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "pCTRLShldrsFrntBck",
+				"label" : "Shoulders Front-Back",
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Pose Controls/Arms",
+			"formulas" : [
+				{
+					"output" : "lCollar:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lCollar?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLShldrsFrntBck?value" },
+						{ "op" : "push", "val" : -22 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lShldr:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lShldr?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLShldrsFrntBck?value" },
+						{ "op" : "push", "val" : 26 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rCollar:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rCollar?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLShldrsFrntBck?value" },
+						{ "op" : "push", "val" : 22 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rShldr:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rShldr?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLShldrsFrntBck?value" },
+						{ "op" : "push", "val" : -26 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "pCTRLShldrsFrntBck-1",
+				"url" : "#pCTRLShldrsFrntBck"
+			}
+		]
+	}
+}

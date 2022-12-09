@@ -1,0 +1,76 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/Morphs/Daz%203D/Base/facs_bs_CheekInflateLeft.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-10-05T18:12:53Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_bs_CheekInflateLeft",
+			"name" : "facs_bs_CheekInflateLeft",
+			"parent" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/dForce%20Pixie%20Hair%20Cap_1085.dsf#Morphing%20Pixie%20Hair%20Cap",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "facs_bs_CheekInflateLeft",
+				"visible" : false,
+				"locked" : true,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : 0,
+				"max" : 0,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Pose Controls/Head/Cheek and Jaw",
+			"morph" : {
+				"vertex_count" : 1085,
+				"deltas" : {
+					"count" : 16,
+					"values" : [
+						[ 200, 9.741107e-05, 0, 0.0001071106 ],
+						[ 201, 0.000501484, 8.540505e-07, 0.0004854601 ],
+						[ 482, 0.005316949, -0.0001181191, 0.001132389 ],
+						[ 483, 0.001236791, -0.0001086909, 0.0004779305 ],
+						[ 484, 0.002400883, -4.35736e-05, 0.0009585349 ],
+						[ 485, 0.0001048652, -1.585747e-05, 4.668807e-05 ],
+						[ 490, 0.0001482961, 0, 1.151695e-05 ],
+						[ 491, 0.0001683109, 0, 1.407908e-05 ],
+						[ 492, 5.128095e-05, 0, 4.809979e-06 ],
+						[ 535, 0.001754987, 0.0001111088, 0.002484516 ],
+						[ 536, 3.367084e-05, 0, 5.390736e-05 ],
+						[ 537, 0.001095265, -6.612228e-05, 0.0006708164 ],
+						[ 538, 0.01154669, -0.001331347, 0.005491582 ],
+						[ 539, 0.02942965, -0.002309516, 0.01352461 ],
+						[ 541, 0.008484188, 0.000128642, 0.008864551 ],
+						[ 542, 0.02206627, -0.001095224, 0.01377239 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_bs_CheekInflateLeft-1",
+				"url" : "#facs_bs_CheekInflateLeft"
+			}
+		]
+	}
+}

@@ -1,0 +1,59 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base%20Pose/body_ctrl_lBreastUp-Down.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-07-20T19:17:33Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "CTRLlBreastUp-Down",
+			"name" : "body_ctrl_lBreastUp-Down",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#Genesis9",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "body_ctrl_lBreastUp-Down",
+				"label" : "Breasts Up-Down Left",
+				"value" : 0,
+				"min" : -0.8,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Pose Controls/Torso/Feminine",
+			"formulas" : [
+				{
+					"output" : "l_pectoral:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#l_pectoral?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLlBreastUp-Down?value" },
+						{ "op" : "push", "val" : -10 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "body_ctrl_lBreastUp-Down",
+				"url" : "#CTRLlBreastUp-Down"
+			}
+		]
+	}
+}

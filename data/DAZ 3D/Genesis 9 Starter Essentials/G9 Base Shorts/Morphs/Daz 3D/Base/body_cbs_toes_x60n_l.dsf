@@ -1,0 +1,57 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20Shorts/Morphs/Daz%203D/Base/body_cbs_toes_x60n_l.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : ""
+		},
+		"revision" : "1.0",
+		"modified" : "2022-10-18T14:53:00Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "body_cbs_toes_x60n_l",
+			"name" : "body_cbs_toes_x60n_l",
+			"parent" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20Shorts/EssentialShortsG9.dsf#EssentialShorts",
+			"presentation" : {
+				"type" : "Modifier/Shape",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "body_cbs_toes_x60n_l",
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Hidden/Base Correctives/Feet",
+			"morph" : {
+				"vertex_count" : 8256,
+				"deltas" : {
+					"count" : 0,
+					"values" : [
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "body_cbs_toes_x60n_l-1",
+				"url" : "#body_cbs_toes_x60n_l"
+			}
+		]
+	}
+}

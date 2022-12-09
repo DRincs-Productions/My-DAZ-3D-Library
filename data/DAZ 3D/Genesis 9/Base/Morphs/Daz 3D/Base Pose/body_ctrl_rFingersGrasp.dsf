@@ -1,0 +1,227 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base%20Pose/body_ctrl_rFingersGrasp.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-07-13T23:24:54Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "CTRLrFingersGrasp",
+			"name" : "body_ctrl_rFingersGrasp",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#Genesis9",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "body_ctrl_rFingersGrasp",
+				"label" : "Right Fingers Grasp",
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Pose Controls/Hands/Right",
+			"formulas" : [
+				{
+					"output" : "r_indexmetacarpal:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_indexmetacarpal?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : -1.3 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_index1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_index1?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : 3.299059 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_index1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_index1?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : 82.20588 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_index2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_index2?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : 92.61176 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_index3:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_index3?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : 71.78124 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_mid1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_mid1?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : -3.894404 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_mid1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_mid1?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : 2.544988 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_mid1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_mid1?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : 88.17647 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_mid2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_mid2?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : 94.39641 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_mid3:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_mid3?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : 73.62958 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_ringmetacarpal:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_ringmetacarpal?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : 0.4 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_ring1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_ring1?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : -5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_ring1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_ring1?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : 6.503858 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_ring1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_ring1?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : 80.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_ring2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_ring2?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : 93.40962 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_ring3:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_ring3?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : 67.46262 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_pinkymetacarpal:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_pinkymetacarpal?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : 2 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_pinky1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_pinky1?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : -0.6470588 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_pinky1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_pinky1?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : 12 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_pinky1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_pinky1?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : 80.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_pinky2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_pinky2?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : 80.22353 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_pinky3:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#r_pinky3?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#CTRLrFingersGrasp?value" },
+						{ "op" : "push", "val" : 74.47059 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "body_ctrl_rFingersGrasp",
+				"url" : "#CTRLrFingersGrasp"
+			}
+		]
+	}
+}

@@ -1,0 +1,648 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/NVIDIA%20MDL%20Examples/Carpaint%20Blue/Carpaint%20Blue.dsf",
+		"type" : "material",
+		"contributor" : {
+			"author" : "DAZ 3D",
+			"email" : "support@daz3d.com",
+			"website" : "http://www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2015-05-19T01:25:22Z"
+	},
+	"material_library" : [
+		{
+			"id" : "Carpaint Blue",
+			"extra" : [
+				{
+					"type" : "studio/material/daz_brick",
+					"brick_settings" : {
+						"BrickSetup" : {
+							"type" : "settings",
+							"value" : {
+								"Bricks" : {
+									"type" : "settings",
+									"value" : {
+										"Brick_1" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzUserParametersBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"UserOutputParameters" : {
+															"type" : "settings",
+															"value" : {
+																"user_out_1" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "outlinecolorid_value_arg",
+																		"ParamType" : "color",
+																		"PropertyClass" : "DzColorProperty",
+																		"PropertyName" : "OutlineColorID"
+																	}
+																},
+																"user_out_2" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "coat_ior_1",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "coat_ior"
+																	}
+																}
+															}
+														},
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "User Parameters (3)",
+																"HideParams" : false,
+																"PosX" : 230,
+																"PosY" : -173,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 380 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 119,
+																						"Green" : 215,
+																						"Blue" : 241
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 254,
+																						"Green" : 117,
+																						"Blue" : 34
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 128,
+																						"Green" : 5,
+																						"Blue" : 231
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 104,
+																						"Green" : 63,
+																						"Blue" : 33
+																					}
+																				}
+																			}
+																		}
+																	}
+																},
+																"BrickIsRightToLeft" : true
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"val1" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Auto Add"
+															}
+														},
+														"outlinecolorid_value_arg" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_outlinecolorid_value_arg_b1_t0",
+																"Label" : "Material ID",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Material ID",
+																		"Hidden" : false,
+																		"Path" : "/General/Material ID",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"Name" : "OutlineColorID"
+																	}
+																}
+															}
+														},
+														"coat_ior_1" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_coat_ior_1_b1_t0",
+																"Label" : "coat ior",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "coat ior",
+																		"Hidden" : false,
+																		"Path" : "/Carpaint Blue",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : 1,
+																		"Max" : 4,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 1.5,
+																		"DefaultValue" : 1.5,
+																		"Name" : "coat_ior"
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_2" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzCustomMDLBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "Custom MDL (1)",
+																"HideParams" : false,
+																"PosX" : -73,
+																"PosY" : -59,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 175 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 7,
+																						"Green" : 216,
+																						"Blue" : 104
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"MDL Callable" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "MDL Callable",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"Value" : "nvidia::carpaint_measured::carpaint_blue"
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"coat_ior" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "coat ior"
+															}
+														},
+														"Result" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_Result_b2_t0",
+																"Label" : "Result"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_3" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzMDLSurfaceBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickSet" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Name" : "shader_MDL_Surface",
+																		"LastInvalidate" : "1431998667"
+																	}
+																},
+																"BrickTitle" : "MDL Surface (2)",
+																"HideParams" : false,
+																"PosX" : -442,
+																"PosY" : -170,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 135 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"material" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Material"
+															}
+														},
+														"color_id" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_color_id_b3_t0",
+																"Label" : "Material ID",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Material ID",
+																		"Hidden" : false,
+																		"Path" : "/General/Material ID",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"Name" : "OutlineColorID"
+																	}
+																}
+															}
+														},
+														"subd_displacement_level" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_subd_displacement_level_b3_t0",
+																"Label" : "SubD Displacement Level",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "SubD Displacement Level",
+																		"Hidden" : false,
+																		"Path" : "/MDL Surface (2)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 12 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : [ "i", 0 ],
+																		"DefaultValue" : [ "i", 0 ],
+																		"Name" : "SubD Displacement Level"
+																	}
+																}
+															}
+														},
+														"max_displacement" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Displace Max"
+															}
+														},
+														"rootSettings" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Root Settings"
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								},
+								"Connections" : {
+									"type" : "settings",
+									"value" : {
+										"Connection_0" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "coat_ior",
+												"TargetParam" : "coat_ior_1"
+											}
+										},
+										"Connection_1" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_3",
+												"TargetBrick" : "Brick_2",
+												"SourceParam" : "material",
+												"TargetParam" : "Result"
+											}
+										},
+										"Connection_2" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_3",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "color_id",
+												"TargetParam" : "outlinecolorid_value_arg"
+											}
+										}
+									}
+								},
+								"BrickUserName" : "Carpaint Blue",
+								"Identifier" : "{7172500f-cfbe-4006-908f-7e5c88c74d9a}"
+							}
+						}
+					}
+				},
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Tags",
+								"type" : "string",
+								"label" : "Tags",
+								"value" : ""
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"label" : "Smooth",
+								"value" : true
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"label" : "Angle",
+								"value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"value" : false
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "OutlineColorID",
+								"type" : "color",
+								"label" : "Material ID",
+								"value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/General/Material ID"
+						},
+						{
+							"channel" : {
+								"id" : "coat_ior",
+								"type" : "float",
+								"label" : "coat ior",
+								"value" : 1.5,
+								"min" : 1,
+								"max" : 4,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Carpaint Blue"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,207 @@
+// DAZ Studio version 4.10.0.123 filetype DAZ Script
+/**********************************************************************
+ 
+	Copyright (C) 2002-2018 Daz 3D, Inc. All Rights Reserved.
+ 
+	This script is provided as part of the Daz Script Documentation. The
+	contents of this script, and\or any portion thereof, may only be used
+	in accordance with the following license:
+ 
+	Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+	- http://creativecommons.org/licenses/by/3.0
+ 
+	To contact Daz 3D or for more information about Daz Script visit the
+	Daz 3D website:
+ 
+	- http://www.daz3d.com
+ 
+**********************************************************************/
+// Source: ./resources/Lesson Strips/Common/Interactive.dsa
+
+// Define an anonymous function;
+// serves as our main loop,
+// limits the scope of variables
+( function(){
+	
+	// If the version number is less than required; 4.10.0.123
+	if( App.version64 < 0x0004000a0000007b ){
+		// Inform the user
+		MessageBox.information( qsTr("%1 4.10.0.123 or newer is required to continue.\nCurrent version: %2.")
+			.arg( App.appName ).arg( App.longVersionString ),
+			qsTr("Resource Error"), qsTr("&OK") );
+		// We're done...
+		return;
+	}
+	
+	// Create a file info object for easy access
+	var g_oFile = new DzFileInfo( getScriptFileName() );
+	
+	// Get the path of our include script. Doing it this way, we can debug
+	// with an ascii file and ship a binary [encrypted] file with the same
+	// name... without having to update the contents of the script or manually
+	// handle the file extensions.
+	var g_sInclude = String( "%1/Lesson Strips/Common/Interactive" ).arg( App.getResourcesPath() );
+	var g_oScript = new DzScript();
+	var g_sIncludeFull = g_oScript.getScriptFile( g_sInclude );
+	
+	// If our script was not found
+	if( g_sIncludeFull.isEmpty() ){
+		// Inform the user
+		MessageBox.information( qsTr("%1 : Could not find \"%2\"").arg( g_oFile.baseName() ).arg( g_sInclude ),
+			qsTr("Critical Error"), qsTr("&OK") );
+		
+		// We're done...
+		return;
+	}
+	
+	// Include the script
+	include( g_sIncludeFull );
+	
+	// Define the arrary of interactive lesson instructions
+	var aInstructions = [];
+	
+	var sContinue = qsTr("Continue");
+	var nWidth = 355;
+	
+	var sRenderer = "3Delight";
+	
+	var sActionClass = "DzOpenAction";
+	var oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Open the Scene"),
+		qsTr("Open your //Barefoot Dancer// scene from the last lesson.\n\n" +
+			"To do this select the ##%1.label## action in the toolbar or under the ##%1.menu## menu from the " +
+			"**Main Menu Bar**.\n\n" +
+			"If the scene is already open, select //%2//.")
+				.arg( sActionClass )
+				.arg( sContinue ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = scenePaneNodeSelect(
+		"Genesis 8 Female",
+		qsTr("Selecting the Figure"),
+		qsTr("Moving your figure is the next step. To demonstrate moving an object around the scene, " +
+			"make sure you have //Genesis 8 Female// selected in the **Scene** pane."),
+		"",
+		nWidth );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = parametersPanePropertyEdit(
+		"/General/Transforms/Translation/xTranslate",
+		-12,
+		0.5,
+		qsTr("Moving Your Figure Around"),
+		qsTr("With your figure selected, open the **Parameters** pane. Under " +
+			"**General > Transforms**, you can adjust the object's X, Y, and Z values in the scene.\n\n" +
+			"For this scene, let's move the X Translate to -12.00. " +
+			"If you click once on the number **0.00**, you can type in -12 and click **[Enter]** to " +
+			"translate the figure.\n\n" +
+			"If the lesson does not automatically move forward, click //%1//.")
+				.arg( sContinue ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = parametersPanePropertyEdit(
+		"/General/Transforms/Rotation/yRotate",
+		60,
+		0.5,
+		qsTr("Moving Your Figure Around"),
+		qsTr("Using the Y Rotate property, move the figure by adjusting the " +
+			"value to 60.\n\n" +
+			"If the lesson does not automatically move forward, click //%1//.")
+				.arg( sContinue ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = widgetLocate(
+		"Main.DzViewControlKeyNavActionToolBtn",
+		qsTr("Using Keyboard Navigation"),
+		qsTr("Pretty easy, right? Using the translating tools is how you can move any figure or " +
+			"other object in the scene. Instead of moving objects in the scene, you can also move " +
+			"your point of view through the scene.\n\n" +
+			"First, you can turn on and off Keyboard Navigation. When on, Keyboard Navigation " +
+			"allows you to use the W, A, S, D, Q, and E keys to move around your scene."),
+		"",
+		nWidth,
+		qsTr("Keyboard Navigation Tool") );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = widgetLocate(
+		"Main.DzSceneNavigatorToolActionToolBtn",
+		qsTr("Navigating the Scene"),
+		qsTr("You can also use the **Scene Navigator** tool to move around your scene. If the Scene Navigator " +
+			"tool is turned on, you can click anywhere in the viewport, hold down the mouse button, " +
+			"and move the mouse around to pivot your view.\n\n" +
+			"Try combining the W, A, S, D, Q, and E keyboard shortcuts with the Scene Navigator tool " +
+			"\"mouse-look\" to move around the scene like in a video game."),
+		"",
+		nWidth,
+		qsTr("Scene Navigator Tool") );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	sActionClass = "DzSaveAction";
+	oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Better Safe than Sorry"),
+		qsTr("Before you move on, save your scene again, so if you choose to stop the lesson series, you can pick " +
+			"up where you left off.\n\n" +
+			"You can find the ##%1.label## action in the **Main Menu Bar** under the ##%1.menu## menu or use the " +
+			"##%1.shortcut## shortcut to save the scene.")
+				.arg( sActionClass ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = displayMessage(
+		qsTr("Stop to Practice"),
+		qsTr("Good work. Click //%1// to start the next lesson, or click the //Stop [Esc]// button and " +
+			"practice translating your character.")
+				.arg( sContinue ),
+		"",
+		nWidth,
+		qsTr("Continue to VII - Rendering a Scene") );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = lessonSelect(
+		"/Guided Tours/II - Sample Scenes/Barefoot Dancer 3Delight/VII - Rendering a Scene",
+		qsTr("Moving On"),
+		qsTr("Great! Follow the arrows to start //VII - Rendering a Scene//."),
+		"",
+		nWidth );
+	aInstructions.push( oInstruction );
+	
+	
+	// Define an array of additionally required files;
+	var aRequiredFiles = [
+		/*
+		requiredAsset(
+			"/Default/Figures/People/Female/Real World/Genesis 8 Basic Female.duf",
+			"Genesis 8 Starter Essentials",
+			42071
+		)
+		*/
+	];
+	
+	// Process the lesson
+	processLesson( aInstructions, aRequiredFiles );
+	
+// Finalize the function and invoke
+})();

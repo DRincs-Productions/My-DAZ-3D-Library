@@ -1,0 +1,259 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%208/Female%208_1/Morphs/Daz%203D/FACSExpressions/facs_ctrl_Shock.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2020-11-18T04:51:38Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_ctrl_Shock",
+			"name" : "facs_ctrl_Shock",
+			"parent" : "/data/Daz%203D/Genesis%208/Female%208_1/Genesis8_1Female.dsf#Genesis8_1Female",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "facs_ctrl_Shock",
+				"label" : "Shock",
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Pose Controls/Head/Expressions 8.1",
+			"formulas" : [
+				{
+					"output" : "Genesis8_1Female:/data/Daz%203D/Genesis%208/Female%208_1/Morphs/Daz%203D/FACS/facs_jnt_JawRecess.dsf#facs_jnt_JawRecess?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : 0.1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis8_1Female:/data/Daz%203D/Genesis%208/Female%208_1/Morphs/Daz%203D/FACS/facs_jnt_JawOpen.dsf#facs_jnt_JawOpen?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : 0.4 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis8_1Female:/data/Daz%203D/Genesis%208/Female%208_1/Morphs/Daz%203D/FACS/facs_ctrl_MouthPress.dsf#facs_ctrl_MouthPress?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : 0.34 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis8_1Female:/data/Daz%203D/Genesis%208/Female%208_1/Morphs/Daz%203D/FACS/facs_ctrl_MouthLowerDown.dsf#facs_ctrl_MouthLowerDown?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : 0.4 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis8_1Female:/data/Daz%203D/Genesis%208/Female%208_1/Morphs/Daz%203D/FACS/facs_ctrl_MouthFrown.dsf#facs_ctrl_MouthFrown?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : 0.3 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis8_1Female:/data/Daz%203D/Genesis%208/Female%208_1/Morphs/Daz%203D/FACS/facs_ctrl_EyeWide.dsf#facs_ctrl_EyeWide?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : 0.7 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis8_1Female:/data/Daz%203D/Genesis%208/Female%208_1/Morphs/Daz%203D/FACS/facs_ctrl_CheekSquint.dsf#facs_ctrl_CheekSquint?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : 0.15 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis8_1Female:/data/Daz%203D/Genesis%208/Female%208_1/Morphs/Daz%203D/FACS/facs_ctrl_BrowInnerUp.dsf#facs_ctrl_BrowInnerUp?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis8_1Female:/data/Daz%203D/Genesis%208/Female%208_1/Morphs/Daz%203D/FACS/facs_ctrl_BrowDown.dsf#facs_ctrl_BrowDown?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : 0.3 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rBrowInner:/data/Daz%203D/Genesis%208/Female%208_1/Genesis8_1Female.dsf#rBrowInner?translation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : 0.2 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rBrowInner:/data/Daz%203D/Genesis%208/Female%208_1/Genesis8_1Female.dsf#rBrowInner?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : -0.1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rBrowMid:/data/Daz%203D/Genesis%208/Female%208_1/Genesis8_1Female.dsf#rBrowMid?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : 0.1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lBrowInner:/data/Daz%203D/Genesis%208/Female%208_1/Genesis8_1Female.dsf#lBrowInner?translation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : -0.2 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lBrowInner:/data/Daz%203D/Genesis%208/Female%208_1/Genesis8_1Female.dsf#lBrowInner?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : -0.1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lBrowMid:/data/Daz%203D/Genesis%208/Female%208_1/Genesis8_1Female.dsf#lBrowMid?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : 0.1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidLowerOuter:/data/Daz%203D/Genesis%208/Female%208_1/Genesis8_1Female.dsf#lEyelidLowerOuter?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : -1.525 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidLower:/data/Daz%203D/Genesis%208/Female%208_1/Genesis8_1Female.dsf#lEyelidLower?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : -3.025 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidLower_2:/data/Daz%203D/Genesis%208/Female%208_1/Genesis8_1Female.dsf#lEyelidLower_2?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : -3.025 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rEyelidLowerOuter:/data/Daz%203D/Genesis%208/Female%208_1/Genesis8_1Female.dsf#rEyelidLowerOuter?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : -1.525 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rEyelidLower:/data/Daz%203D/Genesis%208/Female%208_1/Genesis8_1Female.dsf#rEyelidLower?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : -3.025 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rEyelidLowerInner:/data/Daz%203D/Genesis%208/Female%208_1/Genesis8_1Female.dsf#rEyelidLowerInner?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : -3.025 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis8_1Female:/data/Daz%203D/Genesis%208/Female%208_1/Morphs/Daz%203D/FACS/facs_bs_NasalFlare_div2.dsf#facs_bs_NasalFlare_div2?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : 0.67 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis8_1Female:/data/Daz%203D/Genesis%208/Female%208_1/Morphs/Daz%203D/FACS/facs_bs_MouthPucker_div2.dsf#facs_bs_MouthPucker_div2?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : 0.25 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis8_1Female:/data/Daz%203D/Genesis%208/Female%208_1/Morphs/Daz%203D/FACS/facs_bs_MouthFunnel_div2.dsf#facs_bs_MouthFunnel_div2?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : 0.2 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis8_1Female:/data/Daz%203D/Genesis%208/Female%208_1/Morphs/Daz%203D/FACS/facs_bs_BrowOuterUpRight_div2.dsf#facs_BrowOuterUpRight?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis8_1Female:/data/Daz%203D/Genesis%208/Female%208_1/Morphs/Daz%203D/FACS/facs_bs_BrowOuterUpLeft_div2.dsf#facs_BrowOuterUpLeft?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Female:#facs_ctrl_Shock?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_ctrl_Shock-1",
+				"url" : "#facs_ctrl_Shock"
+			}
+		]
+	}
+}

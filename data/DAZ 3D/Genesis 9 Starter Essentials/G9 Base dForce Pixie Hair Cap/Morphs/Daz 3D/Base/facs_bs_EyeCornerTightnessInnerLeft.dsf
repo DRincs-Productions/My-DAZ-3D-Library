@@ -1,0 +1,69 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/Morphs/Daz%203D/Base/facs_bs_EyeCornerTightnessInnerLeft.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-10-05T18:12:53Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_bs_EyeCornerTightnessInnerLeft",
+			"name" : "facs_bs_EyeCornerTightnessInnerLeft",
+			"parent" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/dForce%20Pixie%20Hair%20Cap_1085.dsf#Morphing%20Pixie%20Hair%20Cap",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "facs_bs_EyeCornerTightnessInnerLeft",
+				"visible" : false,
+				"locked" : true,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : 0,
+				"max" : 0,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Pose Controls/Head/Eyes/Adjustments",
+			"morph" : {
+				"vertex_count" : 1085,
+				"deltas" : {
+					"count" : 9,
+					"values" : [
+						[ 165, 1.801403e-06, -2.901588e-05, -1.384647e-06 ],
+						[ 166, -5.0911e-07, -2.412092e-05, 3.495566e-07 ],
+						[ 456, 3.350676e-06, -1.116351e-05, -3.254861e-06 ],
+						[ 525, 0.0003313719, -0.001065097, -0.0003188936 ],
+						[ 526, 5.436517e-05, -0.002098072, -2.057278e-05 ],
+						[ 531, -1.397328e-06, -1.003795e-05, 1.297519e-06 ],
+						[ 532, -4.995678e-06, -6.14451e-05, 4.671816e-06 ],
+						[ 533, -7.002511e-05, -0.001101835, 4.300214e-05 ],
+						[ 534, 0.0001379607, -0.000991908, -0.0001352602 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_bs_EyeCornerTightnessInnerLeft-1",
+				"url" : "#facs_bs_EyeCornerTightnessInnerLeft"
+			}
+		]
+	}
+}

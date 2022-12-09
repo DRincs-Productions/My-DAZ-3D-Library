@@ -1,0 +1,47 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Utilities/Preview%20Clothing%20Template.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "0.0",
+		"modified" : "2022-07-22T04:02:05Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "Preview Clothing Template",
+			"name" : "Preview Clothing Template",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#Genesis9",
+			"presentation" : {
+				"type" : "Modifier/Utility",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "file",
+				"name" : "Preview Clothing Template",
+				"label" : "Preview Clothing Template",
+				"value" : "/data/Daz 3D/Genesis 9/Base/Tools/Utilities/Load Projection Templates.dse",
+				"file_type" : "file_load",
+				"file_display_text" : "Preview Clothing Template",
+				"file_filter" : "DSON User File (*.duf)"
+			},
+			"group" : "/Utilities"
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "Preview Clothing Template-1",
+				"url" : "#Preview%20Clothing%20Template"
+			}
+		]
+	}
+}

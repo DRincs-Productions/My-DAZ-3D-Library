@@ -1,0 +1,76 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/dForce%20Starter%20Essentials/Bardot%20Top/Morphs/Mada/Base/PBMHipBoneCrest.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : ""
+		},
+		"revision" : "1.0",
+		"modified" : "2017-10-03T18:19:26Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "PBMHipBoneCrest",
+			"name" : "PBMHipBoneCrest",
+			"parent" : "/data/Daz%203D/dForce%20Starter%20Essentials/Bardot%20Top/BardotTop_10570.dsf#BardotTop",
+			"presentation" : {
+				"type" : "Modifier/Shape",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.4588235, 0.172549, 0.2156863 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "PBMHipBoneCrest",
+				"visible" : false,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Actor/Hip/Real World",
+			"morph" : {
+				"vertex_count" : 10570,
+				"deltas" : {
+					"count" : 18,
+					"values" : [
+						[ 3103, -3.733245e-05, 8.361744e-05, 1.655818e-05 ],
+						[ 3104, -3.588562e-05, 8.575848e-05, 1.828226e-05 ],
+						[ 3105, -2.901356e-05, 7.781918e-05, 1.912057e-05 ],
+						[ 3106, -2.006273e-05, 6.103861e-05, 1.725377e-05 ],
+						[ 3107, -9.425054e-06, 3.427716e-05, 1.164311e-05 ],
+						[ 3108, -5.758683e-06, 2.275614e-05, 8.330786e-06 ],
+						[ 3109, -4.53239e-06, 1.90842e-05, 7.292784e-06 ],
+						[ 3110, -7.583134e-06, 2.9837e-05, 1.110056e-05 ],
+						[ 3111, -1.324394e-05, 4.974876e-05, 1.756762e-05 ],
+						[ 3112, -1.844847e-05, 6.545826e-05, 2.200241e-05 ],
+						[ 3113, -1.484326e-05, 5.621252e-05, 1.988572e-05 ],
+						[ 3114, -6.313488e-06, 2.616453e-05, 1.02454e-05 ],
+						[ 3149, 5.176385e-06, 2.142169e-05, 8.49114e-06 ],
+						[ 3150, 8.07607e-06, 3.229791e-05, 1.231353e-05 ],
+						[ 3151, 5.80882e-06, 2.408628e-05, 9.407187e-06 ],
+						[ 3161, 4.365785e-06, 1.567766e-05, 4.825428e-06 ],
+						[ 3162, 1.537035e-05, 4.156257e-05, 9.903003e-06 ],
+						[ 3961, -2.682549e-06, 1.008043e-05, 3.289417e-06 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "PBMHipBoneCrest-1",
+				"url" : "#PBMHipBoneCrest"
+			}
+		]
+	}
+}

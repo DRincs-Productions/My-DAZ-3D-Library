@@ -1,0 +1,44 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Female/Morphs/DAZ%203D/Base%20Pose/alias_lHand_pCTRLlThumbInOut.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-03-28T16:13:18Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "pCTRLlThumbInOut",
+			"name" : "pCTRLlThumbInOut",
+			"parent" : "/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#lHand",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "alias",
+				"name" : "pCTRLlThumbInOut",
+				"label" : "Left Thumb In-Out",
+				"target_channel" : "Genesis8Female:/data/DAZ%203D/Genesis%208/Female/Morphs/DAZ%203D/Base%20Pose/pCTRLlThumbInOut.dsf#CTRLlThumbInOut?value"
+			},
+			"group" : "/Pose Controls/Hands/Left"
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "pCTRLlThumbInOut-1",
+				"url" : "#pCTRLlThumbInOut"
+			}
+		]
+	}
+}

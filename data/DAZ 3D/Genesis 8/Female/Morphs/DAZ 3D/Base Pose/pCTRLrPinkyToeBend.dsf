@@ -1,0 +1,59 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Female/Morphs/DAZ%203D/Base%20Pose/pCTRLrPinkyToeBend.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-03-28T16:13:18Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "CTRLrPinkyToeBend",
+			"name" : "pCTRLrPinkyToeBend",
+			"parent" : "/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#Genesis8Female",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "pCTRLrPinkyToeBend",
+				"label" : "Right Pinky Toe Bend",
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Pose Controls/Feet/Right",
+			"formulas" : [
+				{
+					"output" : "rSmallToe4:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rSmallToe4?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrPinkyToeBend?value" },
+						{ "op" : "push", "val" : 45 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "pCTRLrPinkyToeBend",
+				"url" : "#CTRLrPinkyToeBend"
+			}
+		]
+	}
+}

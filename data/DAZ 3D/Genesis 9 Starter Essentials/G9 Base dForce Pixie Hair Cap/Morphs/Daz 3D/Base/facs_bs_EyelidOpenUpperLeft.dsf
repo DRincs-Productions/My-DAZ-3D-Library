@@ -1,0 +1,88 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/Morphs/Daz%203D/Base/facs_bs_EyelidOpenUpperLeft.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-10-05T18:12:53Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_bs_EyelidOpenUpperLeft",
+			"name" : "facs_bs_EyelidOpenUpperLeft",
+			"parent" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/dForce%20Pixie%20Hair%20Cap_1085.dsf#Morphing%20Pixie%20Hair%20Cap",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "facs_bs_EyelidOpenUpperLeft",
+				"visible" : false,
+				"locked" : true,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : 0,
+				"max" : 0,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Pose Controls/Head/Eyes/Sub-Components",
+			"morph" : {
+				"vertex_count" : 1085,
+				"deltas" : {
+					"count" : 28,
+					"values" : [
+						[ 167, 0.00724964, 0.008234393, 0.008654755 ],
+						[ 168, 0.004866337, 0.00704908, 0.00681926 ],
+						[ 172, 0.001273949, 0.001957532, 0.001970674 ],
+						[ 174, 0.001886295, 0.003005416, 0.002682752 ],
+						[ 175, 0.002818271, 0.004027224, 0.00357197 ],
+						[ 274, 1.170751e-05, 8.67223e-06, 3.585634e-06 ],
+						[ 389, 0.002262565, 0.003028033, 0.003528981 ],
+						[ 390, 2.243451e-05, 2.553237e-05, 3.510096e-05 ],
+						[ 391, 7.057345e-05, 5.708519e-05, 2.96565e-05 ],
+						[ 505, 4.816956e-05, 3.115714e-05, 1.117652e-05 ],
+						[ 508, 0.004066309, 0.003196363, 0.001935088 ],
+						[ 509, 0.001505363, 0.001084451, 0.0004655605 ],
+						[ 510, 0.007012383, 0.005225141, 0.005190823 ],
+						[ 511, 0.002512461, 0.002137979, 0.001913758 ],
+						[ 512, 0.001280473, 0.001072419, 0.0005816513 ],
+						[ 519, 6.85271e-06, 1.062049e-05, 1.043471e-05 ],
+						[ 520, 0.0005666947, 0.0009999039, 0.0007771006 ],
+						[ 521, 3.99684e-05, 6.175182e-05, 5.170699e-05 ],
+						[ 522, 2.163956e-05, 1.781965e-05, 1.552984e-05 ],
+						[ 529, 0.01009122, 0.01332228, 0.01403819 ],
+						[ 530, 0.0143156, 0.01448662, 0.01600887 ],
+						[ 531, 0.005551034, 0.007997251, 0.008645348 ],
+						[ 532, 0.00181275, 0.002002662, 0.002799776 ],
+						[ 533, 3.389057e-05, 0, 3.347035e-05 ],
+						[ 545, 0.0002990848, 0.0002083502, 4.778994e-05 ],
+						[ 547, 0.01043832, 0.005489412, 0.00382737 ],
+						[ 548, 0.003910014, 0.002297859, 0.0008514931 ],
+						[ 549, 0.01560415, 0.009664957, 0.01061926 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_bs_EyelidOpenUpperLeft-1",
+				"url" : "#facs_bs_EyelidOpenUpperLeft"
+			}
+		]
+	}
+}

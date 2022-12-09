@@ -1,0 +1,2480 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Built-in%20Content/WeaveDisplacement/Weave%20Displace.dsf",
+		"type" : "material",
+		"contributor" : {
+			"author" : "DAZ 3D",
+			"email" : "",
+			"website" : "http://www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "Wed May 2 19:01:53 2012"
+	},
+	"material_library" : [
+		{
+			"id" : "Weave Displace",
+			"extra" : [
+				{
+					"type" : "studio/material/daz_brick",
+					"brick_settings" : {
+						"BrickSetup" : {
+							"type" : "settings",
+							"value" : {
+								"Bricks" : {
+									"type" : "settings",
+									"value" : {
+										"Brick_1" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzSimpleSurfaceBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickSet" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Name" : "shader_Surface",
+																		"LastInvalidate" : "1336006900"
+																	}
+																},
+																"HideParams" : false,
+																"PosX" : 10,
+																"PosY" : 148,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 234 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"shadowPassActive" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Shadow Pass",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 1 ],
+																		"Value" : [ "i", 1 ]
+																	}
+																},
+																"beautyPassActive" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Beauty Pass",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 1 ],
+																		"Value" : [ "i", 1 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"c_in" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_360ab6d5_45c2_4f45_ae7e_1b43bca8a9ab_token_44",
+																"Label" : "Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Color",
+																		"Hidden" : false,
+																		"Path" : "/Surface (1)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "Color"
+																	}
+																}
+															}
+														},
+														"o_in" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_90b0b709_711c_4445_b064_2a26c25a976f_token_45",
+																"Label" : "Opacity",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Opacity",
+																		"Hidden" : false,
+																		"Path" : "/Surface (1)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "opac"
+																	}
+																}
+															}
+														},
+														"acceptShadows" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_d28a3530_a5bc_47da_876c_632b1f163b17_token_46",
+																"Label" : "Accept Shadows",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Accept Shadows",
+																		"Hidden" : true,
+																		"Path" : "/Surface (1)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 1 ],
+																		"Value" : [ "i", 1 ],
+																		"Name" : "Accept Shadows"
+																	}
+																}
+															}
+														},
+														"rootSettings" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Root Settings"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_2" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzDefaultMaterialBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"HideParams" : false,
+																"PosX" : 293,
+																"PosY" : 146,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 414 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_4" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_6" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_7" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_8" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_9" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_10" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_14" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 101,
+																						"Green" : 127,
+																						"Blue" : 8
+																					}
+																				}
+																			}
+																		},
+																		"Param_15" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 142,
+																						"Green" : 212,
+																						"Blue" : 72
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"Lighting Model" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Lighting Model",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 5 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 0 ],
+																		"Value" : [ "i", 0 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"DiffuseColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_3e2a95e8_2016_485a_8eb6_d242a2487409_token_47",
+																"Label" : "Diffuse Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Color",
+																		"Hidden" : false,
+																		"Path" : "/Diffuse",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "Diffuse Color"
+																	}
+																}
+															}
+														},
+														"DiffuseStrength" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_7c2b7b89_3a62_4c89_8e2e_6e6df40dab31_token_48",
+																"Label" : "Diffuse Strength",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Strength",
+																		"Hidden" : false,
+																		"Path" : "/Diffuse",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : true,
+																		"DefaultValue" : 1,
+																		"Value" : 1,
+																		"Name" : "Diffuse Strength"
+																	}
+																}
+															}
+														},
+														"Glossiness" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_f5337e81_f8f0_4388_bee7_21a66b31f4d4_token_49",
+																"Label" : "Glossiness",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Glossiness",
+																		"Hidden" : false,
+																		"Path" : "/Specular",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : true,
+																		"DefaultValue" : 0.95,
+																		"Value" : 1,
+																		"Name" : "Glossiness"
+																	}
+																}
+															}
+														},
+														"SpecularColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_58fd747e_1e47_4c55_b1d3_149502f25a75_token_50",
+																"Label" : "Specular Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Color",
+																		"Hidden" : false,
+																		"Path" : "/Specular",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 153 ],
+																				"Green" : [ "i", 153 ],
+																				"Blue" : [ "i", 153 ]
+																			}
+																		},
+																		"Name" : "Specular Color"
+																	}
+																}
+															}
+														},
+														"SpecularStrength" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_dbbad3d0_fdaf_400e_a4c0_595bb56d8a3a_token_51",
+																"Label" : "Specular Strength",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Strength",
+																		"Hidden" : false,
+																		"Path" : "/Specular",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : true,
+																		"DefaultValue" : 1,
+																		"Value" : 1,
+																		"Name" : "Specular Strength"
+																	}
+																}
+															}
+														},
+														"SpecularThroughOpacity" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_0e7b9839_ae37_4b85_a2a3_cf76475d35f0_token_52",
+																"Label" : "Specular Through Opacity",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Multiply Through Opacity",
+																		"Hidden" : false,
+																		"Path" : "/Specular",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 1 ],
+																		"Value" : [ "i", 1 ],
+																		"Name" : "Multiply Specular Through Opacity"
+																	}
+																}
+															}
+														},
+														"AmbientColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_3610436e_5991_4173_901b_9b14299fe267_token_53",
+																"Label" : "Ambient Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Color",
+																		"Hidden" : false,
+																		"Path" : "/Ambient",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"Name" : "Ambient Color"
+																	}
+																}
+															}
+														},
+														"AmbientStrength" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_202e3fc2_e00b_4a26_8742_a1e6dd010f11_token_54",
+																"Label" : "Ambient Strength",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Strength",
+																		"Hidden" : false,
+																		"Path" : "/Ambient",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : true,
+																		"DefaultValue" : 1,
+																		"Value" : 1,
+																		"Name" : "Ambient Strength"
+																	}
+																}
+															}
+														},
+														"OpacityColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_076ad545_b005_4ff8_ba76_708dd8178122_token_55",
+																"Label" : "Opacity Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Strength",
+																		"Hidden" : false,
+																		"Path" : "/Opacity",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 1 ],
+																		"Sensitivity" : [ "i", 0 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "Opacity Strength"
+																	}
+																}
+															}
+														},
+														"ReflectionColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_a89e2040_1f6b_4120_8acd_48fa24306b68_token_56",
+																"Label" : "Reflection Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Reflection Color",
+																		"Hidden" : true,
+																		"Path" : "/DAZ Material (2)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"Name" : "reflection"
+																	}
+																}
+															}
+														},
+														"RefractionColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_86d06bab_cfbd_4096_8ad0_7d57b03233d6_token_57",
+																"Label" : "Refraction Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Refraction Color",
+																		"Hidden" : true,
+																		"Path" : "/DAZ Material (2)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"Name" : "refraction"
+																	}
+																}
+															}
+														},
+														"PIn" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Point"
+															}
+														},
+														"In" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "In"
+															}
+														},
+														"Nn" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Nn"
+															}
+														},
+														"ColorOut" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_61845de0_ef82_4734_80b4_335d160ad0a5_token_58",
+																"Label" : "Color"
+															}
+														},
+														"OpacityOut" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_bb8d2367_3afa_4ef5_b3f8_6ae9b528634b_token_59",
+																"Label" : "Opacity"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_3" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzDisplaceBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickSet" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Name" : "shader_Displacement",
+																		"LastInvalidate" : "1336006900"
+																	}
+																},
+																"HideParams" : false,
+																"PosX" : 38,
+																"PosY" : 591,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 244 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"shadowPassActive" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Shadow Pass",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 1 ],
+																		"Value" : [ "i", 1 ]
+																	}
+																},
+																"beautyPassActive" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Beauty Pass",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 1 ],
+																		"Value" : [ "i", 1 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"n" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "New N"
+															}
+														},
+														"p" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "New P"
+															}
+														},
+														"radius" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_d05efb33_57f0_4e79_a475_bac53c732cad_token_70",
+																"Label" : "Displace Max",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Displace Max",
+																		"Hidden" : false,
+																		"Path" : "/Displacement (3)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -1e+38,
+																		"Max" : 1e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 1,
+																		"Value" : 1,
+																		"Name" : "radius"
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_4" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzStandardDisplaceBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"HideParams" : false,
+																"PosX" : 297,
+																"PosY" : 592,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 218 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 222,
+																						"Green" : 91,
+																						"Blue" : 16
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 222,
+																						"Green" : 219,
+																						"Blue" : 16
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_4" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_5" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"nout" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_0bf86d90_dbc0_4170_a10e_34a5bc347359_token_71",
+																"Label" : "N"
+															}
+														},
+														"pout" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_8283cdbc_359d_4406_9e67_930d3c1f170c_token_72",
+																"Label" : "P"
+															}
+														},
+														"displace" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_a7c19e3d_5831_4334_a7a9_95cdf845de09_token_73",
+																"Label" : "Displace",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Displace",
+																		"Hidden" : false,
+																		"Path" : "/Displace-Standard (4)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -1e+38,
+																		"Max" : 1e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 0,
+																		"Value" : 0,
+																		"Name" : "displace"
+																	}
+																}
+															}
+														},
+														"strength" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_540ffe75_65d2_4da3_a6be_058b3da19cf5_token_74",
+																"Label" : "Strength",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Strength",
+																		"Hidden" : false,
+																		"Path" : "/Displace-Standard (4)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 1,
+																		"Value" : 1,
+																		"Name" : "strength"
+																	}
+																}
+															}
+														},
+														"min" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_8a428fb0_f557_4ef7_b289_192eacb72c37_token_75",
+																"Label" : "Min",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Min",
+																		"Hidden" : false,
+																		"Path" : "/Displace-Standard (4)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -1e+38,
+																		"Max" : 1e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : -0.1,
+																		"Value" : -0.1,
+																		"Name" : "min"
+																	}
+																}
+															}
+														},
+														"max" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_847b0f4d_af20_43a5_be85_a5d741bef311_token_76",
+																"Label" : "Max",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Max",
+																		"Hidden" : false,
+																		"Path" : "/Displace-Standard (4)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -1e+38,
+																		"Max" : 1e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 0.1,
+																		"Value" : 0.1,
+																		"Name" : "max"
+																	}
+																}
+															}
+														},
+														"inp" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "P"
+															}
+														},
+														"inn" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Nn"
+															}
+														},
+														"inng" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Ng"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_5" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzWeaveBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"HideParams" : false,
+																"PosX" : 589,
+																"PosY" : 611,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 281 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 11,
+																						"Green" : 43,
+																						"Blue" : 217
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"weave" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_34bba3cb_e99b_4f22_bf0f_07301a904047_token_77",
+																"Label" : "Weave"
+															}
+														},
+														"xfreq" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_417fe840_0fe5_4e72_996e_be452728c69e_token_78",
+																"Label" : "XFreq",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "XFreq",
+																		"Hidden" : false,
+																		"Path" : "/Weave (5)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -1e+38,
+																		"Max" : 1e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 2,
+																		"Value" : 45,
+																		"Name" : "xfreq2"
+																	}
+																}
+															}
+														},
+														"yfreq" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_77bbfa5b_0790_4c6e_9a5f_0ff4160602ee_token_79",
+																"Label" : "YFreq",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "YFreq",
+																		"Hidden" : false,
+																		"Path" : "/Weave (5)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -1e+38,
+																		"Max" : 1e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 2,
+																		"Value" : 45,
+																		"Name" : "yfreq2"
+																	}
+																}
+															}
+														},
+														"z" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_6439ffee_7a4f_4c6f_a0be_9f1646d0ffcb_token_80",
+																"Label" : "Height",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Height",
+																		"Hidden" : false,
+																		"Path" : "/Weave (5)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -1e+38,
+																		"Max" : 1e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 2,
+																		"Value" : 2,
+																		"Name" : "z2"
+																	}
+																}
+															}
+														},
+														"s" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "S"
+															}
+														},
+														"t" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "T"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_6" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzWeaveBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"HideParams" : false,
+																"PosX" : 818,
+																"PosY" : 263,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 245 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 218,
+																						"Green" : 52,
+																						"Blue" : 158
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"weave" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_c0fb2f64_55bf_4ca4_926e_085dcf760390_token_30",
+																"Label" : "Weave"
+															}
+														},
+														"xfreq" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_2e094f0a_6c59_40b5_9af9_480b230709d6_token_31",
+																"Label" : "XFreq",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "XFreq",
+																		"Hidden" : false,
+																		"Path" : "/Weave (6)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -1e+38,
+																		"Max" : 1e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 2,
+																		"Value" : 45,
+																		"Name" : "xfreq"
+																	}
+																}
+															}
+														},
+														"yfreq" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_51161cbb_a3f8_43da_88e7_01773edc73bb_token_32",
+																"Label" : "YFreq",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "YFreq",
+																		"Hidden" : false,
+																		"Path" : "/Weave (6)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -1e+38,
+																		"Max" : 1e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 2,
+																		"Value" : 45,
+																		"Name" : "yfreq"
+																	}
+																}
+															}
+														},
+														"z" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_4b29a83e_e6ad_4175_be59_8a5d8ad18fed_token_33",
+																"Label" : "Height",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Height",
+																		"Hidden" : false,
+																		"Path" : "/Weave (6)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -1e+38,
+																		"Max" : 1e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 2,
+																		"Value" : 2,
+																		"Name" : "z"
+																	}
+																}
+															}
+														},
+														"s" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "S"
+															}
+														},
+														"t" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "T"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_7" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzMixBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"HideParams" : false,
+																"PosX" : 586,
+																"PosY" : 270,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 337 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 84,
+																						"Green" : 255,
+																						"Blue" : 92
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"ValueType" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Type",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 4 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 0 ],
+																		"Value" : [ "i", 1 ]
+																	}
+																},
+																"Operation" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Operation",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 5 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 0 ],
+																		"Value" : [ "i", 0 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"out" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_89183e98_7a1d_427a_b867_68540707a6d8_token_34",
+																"Label" : "Out"
+															}
+														},
+														"alpha" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_d9b98f89_64b1_4dc7_aec9_a3993a2cb955_token_35",
+																"Label" : "Alpha",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Alpha",
+																		"Hidden" : false,
+																		"Path" : "/Mix (7)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -1e+38,
+																		"Max" : 1e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 0,
+																		"Value" : 0,
+																		"Name" : "alpha"
+																	}
+																}
+															}
+														},
+														"base" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_45cd82df_ec8f_4a44_9e09_3b7772fb2c1e_token_36",
+																"Label" : "Base",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Base",
+																		"Hidden" : false,
+																		"Path" : "/Mix (7)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 96 ],
+																				"Green" : [ "i", 96 ],
+																				"Blue" : [ "i", 96 ]
+																			}
+																		},
+																		"Name" : "base2"
+																	}
+																}
+															}
+														},
+														"layer" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_32c3ff02_83e0_40b2_a68e_f07a3b3d3109_token_37",
+																"Label" : "Layer",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Layer",
+																		"Hidden" : false,
+																		"Path" : "/Mix (7)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 193 ],
+																				"Green" : [ "i", 193 ],
+																				"Blue" : [ "i", 193 ]
+																			}
+																		},
+																		"Name" : "layer2"
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								},
+								"Connections" : {
+									"type" : "settings",
+									"value" : {
+										"Connection_0" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_1",
+												"TargetBrick" : "Brick_2",
+												"SourceParam" : "c_in",
+												"TargetParam" : "ColorOut"
+											}
+										},
+										"Connection_1" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_1",
+												"TargetBrick" : "Brick_2",
+												"SourceParam" : "o_in",
+												"TargetParam" : "OpacityOut"
+											}
+										},
+										"Connection_2" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_7",
+												"SourceParam" : "DiffuseColor",
+												"TargetParam" : "out"
+											}
+										},
+										"Connection_3" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_3",
+												"TargetBrick" : "Brick_4",
+												"SourceParam" : "n",
+												"TargetParam" : "nout"
+											}
+										},
+										"Connection_4" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_3",
+												"TargetBrick" : "Brick_4",
+												"SourceParam" : "p",
+												"TargetParam" : "pout"
+											}
+										},
+										"Connection_5" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_4",
+												"TargetBrick" : "Brick_5",
+												"SourceParam" : "displace",
+												"TargetParam" : "weave"
+											}
+										},
+										"Connection_6" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_7",
+												"TargetBrick" : "Brick_6",
+												"SourceParam" : "alpha",
+												"TargetParam" : "weave"
+											}
+										}
+									}
+								},
+								"BrickUserName" : "Weave Displace",
+								"Identifier" : "{1c792aa9-f2e0-4c1d-b49f-4ea5d44cca86}"
+							}
+						}
+					}
+				},
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"name" : "Smooth On",
+								"label" : "Smooth",
+								"value" : true
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"name" : "Smooth Angle",
+								"label" : "Angle",
+								"value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"name" : "Render Priority",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"name" : "Propagate Priority",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"value" : false
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Accept Shadows",
+								"type" : "bool",
+								"name" : "Accept Shadows",
+								"label" : "Accept Shadows",
+								"visible" : false,
+								"value" : true
+							},
+							"group" : "/Surface (1)"
+						},
+						{
+							"channel" : {
+								"id" : "radius",
+								"type" : "float",
+								"name" : "radius",
+								"label" : "Displace Max",
+								"value" : 1,
+								"min" : -1e+38,
+								"max" : 1e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Displacement (3)"
+						},
+						{
+							"channel" : {
+								"id" : "Diffuse Strength",
+								"type" : "float",
+								"name" : "Diffuse Strength",
+								"label" : "Strength",
+								"value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Diffuse"
+						},
+						{
+							"channel" : {
+								"id" : "Glossiness",
+								"type" : "float",
+								"name" : "Glossiness",
+								"label" : "Glossiness",
+								"value" : 0.95,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Specular Color",
+								"type" : "color",
+								"name" : "Specular Color",
+								"label" : "Color",
+								"value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Specular Strength",
+								"type" : "float",
+								"name" : "Specular Strength",
+								"label" : "Strength",
+								"value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Multiply Specular Through Opacity",
+								"type" : "bool",
+								"name" : "Multiply Specular Through Opacity",
+								"label" : "Multiply Through Opacity",
+								"value" : true
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Color",
+								"type" : "color",
+								"name" : "Ambient Color",
+								"label" : "Color",
+								"value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Ambient"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Strength",
+								"type" : "float",
+								"name" : "Ambient Strength",
+								"label" : "Strength",
+								"value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Ambient"
+						},
+						{
+							"channel" : {
+								"id" : "Opacity Strength",
+								"type" : "color",
+								"name" : "Opacity Strength",
+								"label" : "Strength",
+								"value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Opacity"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Color",
+								"type" : "color",
+								"name" : "reflection",
+								"label" : "Reflection Color",
+								"visible" : false,
+								"value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/DAZ Material (2)"
+						},
+						{
+							"channel" : {
+								"id" : "Refraction Color",
+								"type" : "color",
+								"name" : "refraction",
+								"label" : "Refraction Color",
+								"visible" : false,
+								"value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/DAZ Material (2)"
+						},
+						{
+							"channel" : {
+								"id" : "base2",
+								"type" : "color",
+								"name" : "base2",
+								"label" : "Base",
+								"value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Mix (7)"
+						},
+						{
+							"channel" : {
+								"id" : "layer2",
+								"type" : "color",
+								"name" : "layer2",
+								"label" : "Layer",
+								"value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Mix (7)"
+						},
+						{
+							"channel" : {
+								"id" : "strength",
+								"type" : "float",
+								"name" : "strength",
+								"label" : "Strength",
+								"value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Displace-Standard (4)"
+						},
+						{
+							"channel" : {
+								"id" : "min",
+								"type" : "float",
+								"name" : "min",
+								"label" : "Min",
+								"value" : -0.1,
+								"min" : -1e+38,
+								"max" : 1e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Displace-Standard (4)"
+						},
+						{
+							"channel" : {
+								"id" : "max",
+								"type" : "float",
+								"name" : "max",
+								"label" : "Max",
+								"value" : 0.1,
+								"min" : -1e+38,
+								"max" : 1e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Displace-Standard (4)"
+						},
+						{
+							"channel" : {
+								"id" : "xfreq2",
+								"type" : "float",
+								"name" : "xfreq2",
+								"label" : "XFreq",
+								"value" : 2,
+								"min" : -1e+38,
+								"max" : 1e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Weave (5)"
+						},
+						{
+							"channel" : {
+								"id" : "yfreq2",
+								"type" : "float",
+								"name" : "yfreq2",
+								"label" : "YFreq",
+								"value" : 2,
+								"min" : -1e+38,
+								"max" : 1e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Weave (5)"
+						},
+						{
+							"channel" : {
+								"id" : "z2",
+								"type" : "float",
+								"name" : "z2",
+								"label" : "Height",
+								"value" : 2,
+								"min" : -1e+38,
+								"max" : 1e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Weave (5)"
+						},
+						{
+							"channel" : {
+								"id" : "xfreq",
+								"type" : "float",
+								"name" : "xfreq",
+								"label" : "XFreq",
+								"value" : 2,
+								"min" : -1e+38,
+								"max" : 1e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Weave (6)"
+						},
+						{
+							"channel" : {
+								"id" : "yfreq",
+								"type" : "float",
+								"name" : "yfreq",
+								"label" : "YFreq",
+								"value" : 2,
+								"min" : -1e+38,
+								"max" : 1e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Weave (6)"
+						},
+						{
+							"channel" : {
+								"id" : "z",
+								"type" : "float",
+								"name" : "z",
+								"label" : "Height",
+								"value" : 2,
+								"min" : -1e+38,
+								"max" : 1e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Weave (6)"
+						}
+					]
+				}
+			]
+		}
+	]
+}

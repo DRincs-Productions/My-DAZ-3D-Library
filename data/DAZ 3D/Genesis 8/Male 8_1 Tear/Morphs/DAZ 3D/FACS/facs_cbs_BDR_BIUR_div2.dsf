@@ -1,0 +1,63 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%208/Male%208_1%20Tear/Morphs/Daz%203D/FACS/facs_cbs_BDR_BIUR_div2.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "0.0",
+		"modified" : "2020-12-18T04:06:56Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_cbs_BDR_BIUR_div2",
+			"name" : "facs_cbs_BDR_BIUR_div2",
+			"parent" : "/data/Daz%203D/Genesis%208/Male%208_1%20Tear/Male%208_1%20Tear.dsf#bs_TearProjectionShape",
+			"presentation" : {
+				"type" : "Modifier/Corrective",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.1607843, 0.1607843, 0.1607843 ], [ 0.4980392, 0, 0 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "facs_cbs_BDR_BIUR_div2",
+				"visible" : false,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Hidden/FACS/Fixes",
+			"morph" : {
+				"vertex_count" : 212,
+				"deltas" : {
+					"count" : 5,
+					"values" : [
+						[ 109, 0.0003457075, -0.0007019329, -0.001708911 ],
+						[ 110, 0.0002677441, -0.001068115, -0.001688004 ],
+						[ 111, -0.0002994537, -0.0006713867, -0.001049042 ],
+						[ 145, 9.036064e-05, -0.0001831055, -0.001083374 ],
+						[ 146, -0.0002133846, -4.577637e-05, -0.002783775 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_cbs_BDR_BIUR_div2-1",
+				"url" : "#facs_cbs_BDR_BIUR_div2"
+			}
+		]
+	}
+}

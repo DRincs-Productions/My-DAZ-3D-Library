@@ -1,0 +1,60 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Bobbie25/Basic%20Wear/Basic%20Wear%20T_Shirt/Morphs/Bobbie25/Base/rCollar_CTRLMD_N_ZRotate_n45.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-07-21T17:26:11Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "CTRLMD_N_ZRotate_n45",
+			"name" : "CTRLMD_N_ZRotate_n45",
+			"parent" : "/data/Bobbie25/Basic%20Wear/Basic%20Wear%20T_Shirt/T_Shirt_20728.dsf#rCollar",
+			"presentation" : {
+				"type" : "Modifier/Corrective",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.5019608, 0, 0 ], [ 0.5019608, 0, 0 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "CTRLMD_N_ZRotate_n45",
+				"label" : "CTRLMD_N_ZRotate_n45",
+				"visible" : false,
+				"locked" : true,
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Hidden/CTRLMDs",
+			"formulas" : [
+				{
+					"output" : "rCollar:#CTRLMD_N_ZRotate_n45?value",
+					"operations" : [
+						{ "op" : "push", "url" : "rCollar:/data/Bobbie25/Basic%20Wear/Basic%20Wear%20T_Shirt/T_Shirt_20728.dsf#rCollar?rotation/z" },
+						{ "op" : "push", "val" : -0.02222222 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "CTRLMD_N_ZRotate_n45-1",
+				"url" : "#CTRLMD_N_ZRotate_n45"
+			}
+		]
+	}
+}

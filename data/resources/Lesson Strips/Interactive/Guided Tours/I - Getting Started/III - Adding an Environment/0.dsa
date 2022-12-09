@@ -1,0 +1,186 @@
+// DAZ Studio version 4.10.0.123 filetype DAZ Script
+/**********************************************************************
+ 
+	Copyright (C) 2002-2018 Daz 3D, Inc. All Rights Reserved.
+ 
+	This script is provided as part of the Daz Script Documentation. The
+	contents of this script, and\or any portion thereof, may only be used
+	in accordance with the following license:
+ 
+	Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+	- http://creativecommons.org/licenses/by/3.0
+ 
+	To contact Daz 3D or for more information about Daz Script visit the
+	Daz 3D website:
+ 
+	- http://www.daz3d.com
+ 
+**********************************************************************/
+// Source: ./resources/Lesson Strips/Common/Interactive.dsa
+
+// Define an anonymous function;
+// serves as our main loop,
+// limits the scope of variables
+( function(){
+	
+	// If the version number is less than required; 4.10.0.123
+	if( App.version64 < 0x0004000a0000007b ){
+		// Inform the user
+		MessageBox.information( qsTr("%1 4.10.0.123 or newer is required to continue.\nCurrent version: %2.")
+			.arg( App.appName ).arg( App.longVersionString ),
+			qsTr("Resource Error"), qsTr("&OK") );
+		// We're done...
+		return;
+	}
+	
+	// Create a file info object for easy access
+	var g_oFile = new DzFileInfo( getScriptFileName() );
+	
+	// Get the path of our include script. Doing it this way, we can debug
+	// with an ascii file and ship a binary [encrypted] file with the same
+	// name... without having to update the contents of the script or manually
+	// handle the file extensions.
+	var g_sInclude = String( "%1/Lesson Strips/Common/Interactive" ).arg( App.getResourcesPath() );
+	var g_oScript = new DzScript();
+	var g_sIncludeFull = g_oScript.getScriptFile( g_sInclude );
+	
+	// If our script was not found
+	if( g_sIncludeFull.isEmpty() ){
+		// Inform the user
+		MessageBox.information( qsTr("%1 : Could not find \"%2\"").arg( g_oFile.baseName() ).arg( g_sInclude ),
+			qsTr("Critical Error"), qsTr("&OK") );
+		
+		// We're done...
+		return;
+	}
+	
+	// Include the script
+	include( g_sIncludeFull );
+	
+	// Define the arrary of interactive lesson instructions
+	var aInstructions = [];
+	
+	var sContinue = qsTr("Continue");
+	var nWidth = 355;
+	
+	var sRenderer = "NVIDIA Iray";
+	
+	var sActionClass = "DzOpenAction";
+	var oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Open the Scene"),
+		qsTr("Before learning how to select objects and load an environment into the scene, " +
+			"open the //Barefoot Dancer// scene you created and saved in the last lesson.\n\n" +
+			"Select the ##%1.label## action in the toolbar or under the ##%1.menu## menu " +
+			"from the **Main Menu Bar**.\n\n" +
+			"If the scene is already open, select //%2//.")
+				.arg( sActionClass )
+				.arg( sContinue ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = renderSettingsPaneEditorRendererSelect(
+		sRenderer,
+		qsTr("Change the Active Renderer"),
+		qsTr("Since this tutorial is specifically made for the //%1// render engine, " +
+			"you will need to switch the active renderer to //%1//.\n\n" +
+			"If you are running %2 (32-bit), you will not be able " +
+			"to finish this lesson because //%1// is not available in this version of %2. " +
+			"Please see the //Barefoot Dancer 3Delight// lesson.")
+				.arg( sRenderer )
+				.arg( App.appName ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	var sTitle = qsTr("Filter By Context");
+	var sDescription = qsTr("While //%1// is checked in the **Smart Content** pane, " +
+			"you will only be shown things that are made to be added to what you have selected "+
+			"in your scene. Since a person can not wear an environment, we'll uncheck this " +
+			"to show all items, not just those for our //Genesis 8 Female//.\n\n" +
+			"To make sure that you will be able to continue with the lesson, verify " +
+			"that //%1// is unchecked.")
+				.arg( sTitle );
+	var sNote = "";
+	var bValue = false;
+	if( typeof( smartContentPaneFilesFilterByContext ) == "function" ){
+		oInstruction = smartContentPaneFilesFilterByContext(
+			bValue, sTitle, sDescription, sNote, nWidth );
+	} else {
+		oInstruction = createInstruction(
+			g_sWidgetType,
+			"SmartContent.SmartContentFileContentTab.ContentTabFilterByContextCbx",
+			sTitle, sDescription, sNote, nWidth, "", false );
+		oInstruction = requireValue( oInstruction, bValue );
+	}
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = smartContentPaneAssetLoad(
+		"/Default/Environments/Architecture/Interior/Shaded Haven.duf",
+		"/Scene Builder/Starter Essentials/Shaded Haven.duf",
+		"Genesis 2 Starter Essentials",
+		16280,
+		qsTr("Loading an Environment"),
+		qsTr("You can now load an environment into the scene.\n\n" +
+			"Loading an environment is like loading any other piece of content. Go to the " +
+			"**Smart Content** pane, under the **Environments > Architecture > Interior** category, and " +
+			"double-click //Shaded Haven//."),
+		"",
+		nWidth );
+	aInstructions.push( oInstruction );
+	
+	
+	sActionClass = "DzSaveAction";
+	oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Better Safe than Sorry"),
+		qsTr("Be sure to save before moving on. You can find the ##%1.label## action in the **Main Menu Bar** " +
+			"under the ##%1.menu## menu or use the ##%1.shortcut## shortcut to save the scene.")
+				.arg( sActionClass ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = displayMessage(
+		qsTr("Congratulations"),
+		qsTr("This completes the third lesson in the series. You have learned how to add " +
+			"and select items in the scene."),
+		"",
+		nWidth,
+		qsTr("Continue to IV - Posing a Figure") );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = lessonSelect(
+		"/Guided Tours/I - Getting Started/IV - Posing a Figure",
+		qsTr("Moving On"),
+		qsTr("Wonderful. Move on to //IV - Posing a Figure// when you are ready."),
+		"",
+		nWidth );
+	aInstructions.push( oInstruction );
+	
+	
+	// Define an array of additionally required files;
+	var aRequiredFiles = [
+		/*
+		requiredAsset(
+			"/Default/Figures/People/Female/Real World/Genesis 8 Basic Female.duf",
+			"Genesis 8 Starter Essentials",
+			42071
+		)
+		*/
+	];
+	
+	// Process the lesson
+	processLesson( aInstructions, aRequiredFiles );
+	
+// Finalize the function and invoke
+})();

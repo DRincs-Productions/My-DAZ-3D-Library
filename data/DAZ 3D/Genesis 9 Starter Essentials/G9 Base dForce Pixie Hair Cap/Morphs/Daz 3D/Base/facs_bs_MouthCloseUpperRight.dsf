@@ -1,0 +1,68 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/Morphs/Daz%203D/Base/facs_bs_MouthCloseUpperRight.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-10-05T18:12:53Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_bs_MouthCloseUpperRight",
+			"name" : "facs_bs_MouthCloseUpperRight",
+			"parent" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/dForce%20Pixie%20Hair%20Cap_1085.dsf#Morphing%20Pixie%20Hair%20Cap",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "facs_bs_MouthCloseUpperRight",
+				"visible" : false,
+				"locked" : true,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : 0,
+				"max" : 0,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Pose Controls/Head/Mouth",
+			"morph" : {
+				"vertex_count" : 1085,
+				"deltas" : {
+					"count" : 8,
+					"values" : [
+						[ 802, -0.002306298, 0.0009997374, 1.958441e-05 ],
+						[ 804, -0.002652973, 0.0009821348, 2.952915e-05 ],
+						[ 820, -2.682734e-05, 1.108725e-05, 2.504082e-07 ],
+						[ 821, -2.224632e-05, 8.482038e-06, 2.373386e-07 ],
+						[ 1033, -1.446755e-05, 2.172981e-05, 1.130034e-05 ],
+						[ 1037, -2.458549e-05, 3.692667e-05, 1.920328e-05 ],
+						[ 1071, -2.730817e-05, 2.961683e-05, 2.130841e-05 ],
+						[ 1074, -0.00127002, 0.001869679, 0.0009919183 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_bs_MouthCloseUpperRight-1",
+				"url" : "#facs_bs_MouthCloseUpperRight"
+			}
+		]
+	}
+}

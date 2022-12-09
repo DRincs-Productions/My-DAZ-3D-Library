@@ -1,0 +1,83 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base%20Pose/body_ctrl_WaistTwist.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2021-12-29T14:03:49Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "body_ctrl_WaistTwist",
+			"name" : "body_ctrl_WaistTwist",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#Genesis9",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "body_ctrl_WaistTwist",
+				"label" : "Waist Twist",
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Pose Controls/Torso",
+			"formulas" : [
+				{
+					"output" : "spine1:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#spine1?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_WaistTwist?value" },
+						{ "op" : "push", "val" : 20 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "spine2:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#spine2?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_WaistTwist?value" },
+						{ "op" : "push", "val" : 20 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "spine3:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#spine3?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_WaistTwist?value" },
+						{ "op" : "push", "val" : 12 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "spine4:/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#spine4?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_WaistTwist?value" },
+						{ "op" : "push", "val" : 12 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "body_ctrl_WaistTwist-1",
+				"url" : "#body_ctrl_WaistTwist"
+			}
+		]
+	}
+}

@@ -1,0 +1,75 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Pose/pCTRLNeckHeadTwist.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-06-21T23:27:32Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "CTRLNeckHeadTwist",
+			"name" : "pCTRLNeckHeadTwist",
+			"parent" : "/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#Genesis8Male",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "pCTRLNeckHeadTwist",
+				"label" : "Neck-Head Twist",
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Pose Controls/Neck",
+			"formulas" : [
+				{
+					"output" : "neck:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#neck?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#CTRLNeckHeadTwist?value" },
+						{ "op" : "push", "val" : 22 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "neck_2:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#neck_2?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#CTRLNeckHeadTwist?value" },
+						{ "op" : "push", "val" : 22 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "head:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#head?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#CTRLNeckHeadTwist?value" },
+						{ "op" : "push", "val" : 22 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "pCTRLNeckHeadTwist",
+				"url" : "#CTRLNeckHeadTwist"
+			}
+		]
+	}
+}

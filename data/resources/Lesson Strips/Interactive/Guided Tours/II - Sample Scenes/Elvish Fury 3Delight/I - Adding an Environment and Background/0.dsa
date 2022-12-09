@@ -1,0 +1,246 @@
+// DAZ Studio version 4.10.0.123 filetype DAZ Script
+/**********************************************************************
+ 
+	Copyright (C) 2002-2018 Daz 3D, Inc. All Rights Reserved.
+ 
+	This script is provided as part of the Daz Script Documentation. The
+	contents of this script, and\or any portion thereof, may only be used
+	in accordance with the following license:
+ 
+	Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+	- http://creativecommons.org/licenses/by/3.0
+ 
+	To contact Daz 3D or for more information about Daz Script visit the
+	Daz 3D website:
+ 
+	- http://www.daz3d.com
+ 
+**********************************************************************/
+// Source: ./resources/Lesson Strips/Common/Interactive.dsa
+
+// Define an anonymous function;
+// serves as our main loop,
+// limits the scope of variables
+( function(){
+	
+	// If the version number is less than required; 4.10.0.123
+	if( App.version64 < 0x0004000a0000007b ){
+		// Inform the user
+		MessageBox.information( qsTr("%1 4.10.0.123 or newer is required to continue.\nCurrent version: %2.")
+			.arg( App.appName ).arg( App.longVersionString ),
+			qsTr("Resource Error"), qsTr("&OK") );
+		// We're done...
+		return;
+	}
+	
+	// Create a file info object for easy access
+	var g_oFile = new DzFileInfo( getScriptFileName() );
+	
+	// Get the path of our include script. Doing it this way, we can debug
+	// with an ascii file and ship a binary [encrypted] file with the same
+	// name... without having to update the contents of the script or manually
+	// handle the file extensions.
+	var g_sInclude = String( "%1/Lesson Strips/Common/Interactive" ).arg( App.getResourcesPath() );
+	var g_oScript = new DzScript();
+	var g_sIncludeFull = g_oScript.getScriptFile( g_sInclude );
+	
+	// If our script was not found
+	if( g_sIncludeFull.isEmpty() ){
+		// Inform the user
+		MessageBox.information( qsTr("%1 : Could not find \"%2\"").arg( g_oFile.baseName() ).arg( g_sInclude ),
+			qsTr("Critical Error"), qsTr("&OK") );
+		
+		// We're done...
+		return;
+	}
+	
+	// Include the script
+	include( g_sIncludeFull );
+	
+	// Define the arrary of interactive lesson instructions
+	var aInstructions = [];
+	
+	var sContinue = qsTr("Continue");
+	var nWidth = 355;
+	
+	var nContentPaneVersion = 0x0004000b00000070; // 4.11.0.112
+	
+	var sPane = (App.version64 >= nContentPaneVersion ? "Content Library" : "Smart Content");
+	
+	var sRenderer = "3Delight";
+	
+	var oInstruction = displayMessage(
+		qsTr("Getting Started"),
+		imageResource( "Elvish Fury/ElvishFury3Delight.jpg", 455, 350, false, true ) +
+		qsTr("Welcome to the //Elvish Fury// lesson!\n\n "+
+			"By completing this lesson, you will be able to find content in the **%1** pane, and " +
+			"build and render the //Elvish Fury// scene as shown above.\n\n "+
+			"Click //%2// (below) to proceed with this lesson. Click //Stop [Esc]// " +
+			"to exit the lesson at any time." )
+				.arg( sPane )
+				.arg( sContinue ),
+		"",
+		nWidth,
+		sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	var sActionClass = "DzNewAction";
+	oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Starting a New Scene"),
+		qsTr("Click the  ##%1.label## action in the toolbar; this gives you a fresh scene. " +
+			"You can also find the ##%1.label## action in the **Main Menu Bar** at the top of the " +
+			"screen under the ##%1.menu## menu or use the ##%1.shortcut## shortcut.")
+				.arg( sActionClass ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	var sRelPath = "/Default/Environments/Architecture/Exterior/Scene_01.duf";
+	var sAssetPath = "/Environments/Architecture/Memorial/Scenes/Scene_01.duf";
+	var sProduct = "DM's Memorial DS";
+	var nSku = 18009;
+	var sTitle = qsTr("Loading an Environment");
+	var sDescription = qsTr("Locate and double-click the //DM's Memorial// environment from the **%1** pane.")
+				.arg( sPane );
+	var sNote = "";
+	if( App.version64 >= nContentPaneVersion ){
+		oInstruction = contentLibraryPaneAssetLoad(
+			sRelPath, sAssetPath, sProduct, nSku, sTitle, sDescription, sNote, nWidth );
+	} else {
+		oInstruction = smartContentPaneAssetLoad(
+			sRelPath, sAssetPath, sProduct, nSku, sTitle, sDescription, sNote, nWidth );
+	}
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	var sValue = qsTr("Backdrop");
+	oInstruction = widgetSelect(
+		"Environment.EnvironmentPaneTypeBtn",
+		qsTr("Adding a Backdrop"),
+		qsTr("Now, you will learn how to add a **%1** (or background) into %2.\n\n" +
+			"To do this, go to the **Environment** pane.\n\n" +
+			"Select the drop-down next to //Type:// and choose **%1**.")
+				.arg( sValue )
+				.arg( App.appName ),
+		"",
+		nWidth,
+		"" );
+	oInstruction = requireValue( oInstruction, sValue );
+	aInstructions.push( oInstruction );
+	
+	
+	var sPath = "/Diffuse/Background";
+	sValue = "#ffffff"; //white
+	var vTolerance = undefined;
+	oInstruction = widgetSelect(
+		"Environment.EnvironmentPaneMainWgt.EnvironmentPaneBackDropWgt.DzSideNavPropertyListView",
+		qsTr("Set the Background Color"),
+		qsTr("Select white as the background color."),
+		"",
+		nWidth,
+		"" );
+	oInstruction = setItemInList( oInstruction, sPath );
+	oInstruction = setPropertyMembers( oInstruction, sValue, vTolerance );
+	aInstructions.push( oInstruction );
+	
+	
+	sPath = "/Diffuse/Background.map";
+	sValue = "none";
+	vTolerance = undefined;
+	oInstruction = widgetSelect(
+		"Environment.EnvironmentPaneMainWgt.EnvironmentPaneBackDropWgt.DzSideNavPropertyListView",
+		qsTr("Clear an Existing Backdrop"),
+		qsTr("Select the arrow under //Background// and choose //None//\n\n" +
+			"This ensures that there is no background currently applied to the scene."),
+		"",
+		nWidth,
+		"" );
+	oInstruction = setItemInList( oInstruction, sPath );
+	oInstruction = setPropertyMembers( oInstruction, sValue, vTolerance );
+	aInstructions.push( oInstruction );
+	
+	
+	sPath = "/Diffuse/Background.map";
+	sValue = "a_value"; //can be "<relative_path_to_image_in_mapped_content_dir>" or "a_value" or "none"
+	var sBrowsePath = "Runtime/Textures/danieNmarforno/Memorial/DMsMemorialBackgrounds/MemorialBack01.jpg";
+	if( typeof( getMappedAbsFilePath ) == "undefined" ){
+		var oContentMgr = App.getContentMgr();
+		var sAbsBrowsePath = oContentMgr.getAbsolutePath( sBrowsePath, true );
+		var oFileInfo = new DzFileInfo( sAbsBrowsePath );
+		sBrowsePath = oFileInfo.absolutePath();
+		oFileInfo.deleteLater();
+	} else {
+		sBrowsePath = getMappedAbsFilePath( sBrowsePath, true );
+	}
+	vTolerance = undefined;
+	oInstruction = widgetSelect(
+		"Environment.EnvironmentPaneMainWgt.EnvironmentPaneBackDropWgt.DzSideNavPropertyListView",
+		qsTr("Adding a Backdrop"),
+		qsTr("Select the arrow under //Background// and choose //Browse...//\n\n" +
+			"You will want to browse to **%1**.\n\n" +
+			"Select the backdrop here that you would like to use and click //Open//.\n\n " +
+			"When the backdrop is added, click //%2//.")
+				.arg( sBrowsePath )
+				.arg( sContinue ),
+		"",
+		nWidth,
+		"" );
+	oInstruction = setItemInList( oInstruction, sPath );
+	oInstruction = setPropertyMembers( oInstruction, sValue, vTolerance );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	sActionClass = "DzSaveAction";
+	oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Better Safe than Sorry"),
+		qsTr("Be sure to save before moving on. You can find the ##%1.label## action in the **Main Menu Bar** " +
+			"under the ##%1.menu## menu or use the ##%1.shortcut## shortcut to save the scene.\n\n " +
+			"When saving this scene, make sure you name it //Elvish Fury//.")
+				.arg( sActionClass ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = displayMessage(
+		qsTr("Congratulations"),
+		qsTr("This completes the first lesson in the series!\n\n" +
+			"You have learned how to add an **Environment** and " +
+			"**Backdrop**."),
+		"",
+		nWidth,
+		qsTr("II - Adding a Figure") );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = lessonSelect(
+		"/Guided Tours/II - Sample Scenes/Elvish Fury 3Delight/II - Adding a Figure",
+		qsTr("Moving On"),
+		qsTr("Wonderful. Move on to //II - Adding a Figure// when you are ready."),
+		"",
+		nWidth );
+	aInstructions.push( oInstruction );
+	
+	
+	// Define an array of additionally required files;
+	var aRequiredFiles = [
+		requiredAsset(
+			"Runtime/Textures/danieNmarforno/Memorial/DMsMemorialBackgrounds/MemorialBack01.jpg",
+			"DM's Memorial DS",
+			18009
+		)
+	];
+	
+	// Process the lesson
+	processLesson( aInstructions, aRequiredFiles );
+	
+// Finalize the function and invoke
+})();

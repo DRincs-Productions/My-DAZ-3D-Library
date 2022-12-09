@@ -1,0 +1,70 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Tools/Projection%20Templates/G9%20Dress%20Tight/Morphs/Daz%203D/Base/KeyERC_rThighSideIn.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-08-11T10:55:00Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "KeyERC_rThighSideIn",
+			"name" : "KeyERC_rThighSideIn",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Tools/Projection%20Templates/G9%20Dress%20Tight/G9TightDressTemplate.dsf#G9TightDress_Template_13411",
+			"presentation" : {
+				"type" : "Modifier/Corrective",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.1607843, 0.1607843, 0.1607843 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "KeyERC_rThighSideIn",
+				"label" : "KeyERC_rThighSideIn",
+				"visible" : false,
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Hidden",
+			"formulas" : [
+				{
+					"output" : "G9TightDress_Template_13411:#KeyERC_rThighSideIn?value",
+					"operations" : [
+						{ "op" : "push", "url" : "r_thigh:/data/Daz%203D/Genesis%209/Base/Tools/Projection%20Templates/G9%20Dress%20Tight/G9TightDressTemplate.dsf#r_thigh?rotation/z" },
+						{ "op" : "push", "val" : 0.04166667 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "G9TightDress_Template_13411:/data/Daz%203D/Genesis%209/Base/Tools/Projection%20Templates/G9%20Dress%20Tight/Morphs/Daz%203D/Base/body_cbs_thigh_z24p_r.dsf#body_cbs_thigh_z24p_r?value",
+					"operations" : [
+						{ "op" : "push", "url" : "G9TightDress_Template_13411:#KeyERC_rThighSideIn?value" },
+						{ "op" : "push", "val" : [ 0.5, 0, 0, 0, 0 ] },
+						{ "op" : "push", "val" : [ 1, 1, 0, 0, 0 ] },
+						{ "op" : "push", "val" : 2 },
+						{ "op" : "spline_tcb" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "KeyERC_rThighSideIn-1",
+				"url" : "#KeyERC_rThighSideIn"
+			}
+		]
+	}
+}

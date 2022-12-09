@@ -1,0 +1,82 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/dForce%20Starter%20Essentials/Bardot%20Top/Morphs/Mada/Base/PBMGlutesLowerDepth.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : ""
+		},
+		"revision" : "1.0",
+		"modified" : "2017-10-03T18:19:26Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "PBMGlutesLowerDepth",
+			"name" : "PBMGlutesLowerDepth",
+			"parent" : "/data/Daz%203D/dForce%20Starter%20Essentials/Bardot%20Top/BardotTop_10570.dsf#BardotTop",
+			"presentation" : {
+				"type" : "Modifier/Shape",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.4588235, 0.172549, 0.2156863 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "PBMGlutesLowerDepth",
+				"visible" : false,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Actor/Hip/Real World",
+			"morph" : {
+				"vertex_count" : 10570,
+				"deltas" : {
+					"count" : 24,
+					"values" : [
+						[ 3110, 0, 0, -1.361986e-05 ],
+						[ 3111, 0, 0, -5.614985e-05 ],
+						[ 3112, 3.016009e-11, -9.545584e-09, -0.000157772 ],
+						[ 3113, 7.249135e-11, -2.206925e-08, -0.0002000153 ],
+						[ 3114, 0, -8.93034e-10, -9.220068e-05 ],
+						[ 3125, 5.507027e-13, -8.297476e-09, -8.419832e-05 ],
+						[ 3126, 1.29761e-10, -8.066446e-08, -0.0003461973 ],
+						[ 3127, 1.465355e-10, -8.438386e-08, -0.0003619485 ],
+						[ 3128, 1.32279e-12, -1.778804e-08, -0.0001070671 ],
+						[ 3129, 0, -1.9602e-09, -1.133878e-05 ],
+						[ 3136, 6.574236e-11, -2.788917e-08, -0.0001365147 ],
+						[ 3137, 2.105208e-10, -1.517878e-07, -0.0005564571 ],
+						[ 3138, 1.758562e-10, -3.356623e-07, -0.0007986362 ],
+						[ 3139, 1.31666e-10, -7.078686e-08, -0.0003372406 ],
+						[ 3140, 5.75015e-13, -5.959036e-09, -3.204048e-05 ],
+						[ 3148, 0, 0, -1.364211e-05 ],
+						[ 3149, 0, -3.139978e-09, -9.630895e-05 ],
+						[ 3150, -3.966772e-12, -5.35694e-09, -0.0001252249 ],
+						[ 3151, 0, -1.899255e-09, -4.996637e-05 ],
+						[ 3550, 5.564053e-13, -6.071408e-09, -2.652278e-05 ],
+						[ 3889, 4.062262e-11, -1.928897e-08, -0.0001146563 ],
+						[ 3895, 4.572678e-13, -6.658102e-09, -2.572604e-05 ],
+						[ 4035, 1.495549e-13, -3.675992e-09, -2.138963e-05 ],
+						[ 4039, 1.179055e-12, -1.417123e-08, -5.339428e-05 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "PBMGlutesLowerDepth-1",
+				"url" : "#PBMGlutesLowerDepth"
+			}
+		]
+	}
+}

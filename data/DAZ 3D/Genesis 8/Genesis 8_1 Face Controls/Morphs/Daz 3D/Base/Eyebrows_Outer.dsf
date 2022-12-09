@@ -1,0 +1,99 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Morphs/Daz%203D/Base/Eyebrows_Outer.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2021-01-25T19:01:40Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "Eyebrows_Outer",
+			"name" : "Eyebrows_Outer",
+			"parent" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Genesis%208.1%20Face%20Controls",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.1607843, 0.1607843, 0.1607843 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Eyebrows_Outer",
+				"label" : "Eyebrows_Outer",
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/LR",
+			"formulas" : [
+				{
+					"output" : "Genesis%208.1%20Face%20Controls:#Eyebrows_Outer?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Eyebrows_Outer_L2:/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Eyebrows_Outer_L2?translation/y" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis%208.1%20Face%20Controls:#Eyebrows_Outer?value",
+					"operations" : [
+						{ "op" : "push", "url" : "r_Eyebrows_Outer_R2:/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Eyebrows_Outer_R2?translation/y" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_Eyebrows_Outer_L:/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Eyebrows_Outer_L?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis%208.1%20Face%20Controls:#Eyebrows_Outer?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_Eyebrow_Outer:/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Eyebrow_Outer?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis%208.1%20Face%20Controls:#Eyebrows_Outer?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "l_Eyebrow_Outer:/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Eyebrow_Outer?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis%208.1%20Face%20Controls:#Eyebrows_Outer?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "r_Eyebrows_Outer_R:/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Eyebrows_Outer_R?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis%208.1%20Face%20Controls:#Eyebrows_Outer?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "Eyebrows_Outer-1",
+				"url" : "#Eyebrows_Outer"
+			}
+		]
+	}
+}

@@ -1,0 +1,110 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/FACS/facs_bs_MouthStickyUpperOuterRight.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-02-17T15:35:29Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_bs_MouthStickyUpperOuterRight",
+			"name" : "facs_bs_MouthStickyUpperOuterRight",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#Genesis9-1",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "Mouth Sticky Upper Outer Right",
+				"visible" : false,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Pose Controls/Head/Mouth/Sub-Components",
+			"formulas" : [
+				{
+					"output" : "Genesis9:#facs_bs_MouthStickyUpperOuterRight?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/FACS/facs_ctrl_MouthStickyControlRight.dsf#facs_ctrl_MouthStickyRight?value" },
+						{ "op" : "push", "val" : [ 0, 0 ] },
+						{ "op" : "push", "val" : [ 0.5, 1 ] },
+						{ "op" : "push", "val" : [ 1, 1 ] },
+						{ "op" : "push", "val" : 3 },
+						{ "op" : "spline_linear" }
+					]
+				},
+				{
+					"output" : "Genesis9:#facs_bs_MouthStickyUpperOuterRight?value",
+					"stage" : "mult",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/FACS/facs_ctrl_MouthStickyPower.dsf#facs_ctrl_MouthStickyPower?value" }
+					]
+				}
+			],
+			"morph" : {
+				"vertex_count" : 25182,
+				"deltas" : {
+					"count" : 31,
+					"values" : [
+						[ 14806, -0.00722003, -0.09698486, 0.005859375 ],
+						[ 14812, -0.003360152, -0.1049957, 0.002149105 ],
+						[ 14813, 0, -0.00100708, -9.536743e-07 ],
+						[ 14895, -8.98838e-05, -0.08998108, 0.0002403259 ],
+						[ 14896, 0, -0.04000854, 1.144409e-05 ],
+						[ 15564, 0.007420063, -0.03399658, 0.001199245 ],
+						[ 15565, 0.003169894, -0.01901245, 0.0005187988 ],
+						[ 15566, 0.0002799034, -0.00100708, 3.957748e-05 ],
+						[ 15567, 0.007759929, -0.04199219, 0.001279831 ],
+						[ 16243, 0.0009999275, -0.003997803, -0.0002307892 ],
+						[ 16244, 0.001330137, -0.01400757, 0.0007886887 ],
+						[ 16245, -0.001939774, -0.01599121, 0.003671646 ],
+						[ 16246, -0.004159927, -0.01699829, 0.006278038 ],
+						[ 16247, -0.005530119, -0.01100159, 0.00592041 ],
+						[ 16261, 0.0007200241, -0.006988525, -0.0004405975 ],
+						[ 16263, 0.001489997, -0.03199768, 6.103516e-05 ],
+						[ 16264, -0.002020001, -0.05200195, 0.003048897 ],
+						[ 16265, -0.002130032, -0.0579834, 0.008680344 ],
+						[ 16266, -0.004190207, -0.04898071, 0.005680084 ],
+						[ 16279, 0.0001200438, -0.0309906, 0.0002679825 ],
+						[ 16280, 0.0005300045, -0.1069946, 0.0008001328 ],
+						[ 16283, 0.0006699562, -0.1459961, 0.001340389 ],
+						[ 16284, 0.0003099442, -0.1139984, 0.0004501343 ],
+						[ 16299, 3.004074e-05, -0.01499939, 0 ],
+						[ 16300, 8.98838e-05, -0.06600952, 1.001358e-05 ],
+						[ 16301, 2.992153e-05, -0.09098816, -4.005432e-05 ],
+						[ 16302, 3.004074e-05, -0.06799316, -3.004074e-05 ],
+						[ 23625, 0.0004200935, -0.1060028, -0.0007100105 ],
+						[ 23630, 8.98838e-05, -0.09100342, 0.0001502037 ],
+						[ 23631, 0.0001400709, -0.1379852, 0.0002298355 ],
+						[ 23633, 2.002716e-05, -0.01898193, 4.005432e-05 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_bs_MouthStickyUpperOuterRight-1",
+				"url" : "#facs_bs_MouthStickyUpperOuterRight"
+			}
+		]
+	}
+}

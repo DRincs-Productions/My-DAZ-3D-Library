@@ -1,0 +1,65 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20Bikini/Morphs/Daz%203D/Base/body_cbs_spine3_x35p.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-10-04T17:44:21Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "body_cbs_spine3_x35p",
+			"name" : "body_cbs_spine3_x35p",
+			"parent" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20Bikini/Undies_002%20UV_4046.dsf#geometry",
+			"presentation" : {
+				"type" : "Modifier/Shape",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "body_cbs_spine3_x35p",
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Hidden/Base Correctives/Torso",
+			"morph" : {
+				"vertex_count" : 4046,
+				"deltas" : {
+					"count" : 8,
+					"values" : [
+						[ 677, -3.844035e-06, -2.231621e-05, 2.227163e-05 ],
+						[ 679, -2.403131e-06, -1.381429e-05, 1.385982e-05 ],
+						[ 681, -2.674098e-06, -1.559479e-05, 1.552594e-05 ],
+						[ 683, -1.862251e-06, -1.280216e-05, 1.264735e-05 ],
+						[ 2514, 3.844114e-06, -2.231667e-05, 2.227208e-05 ],
+						[ 2516, 2.402814e-06, -1.381247e-05, 1.385799e-05 ],
+						[ 2518, 2.673971e-06, -1.559403e-05, 1.55252e-05 ],
+						[ 2520, 1.857373e-06, -1.280208e-05, 1.266675e-05 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "body_cbs_spine3_x35p-1",
+				"url" : "#body_cbs_spine3_x35p"
+			}
+		]
+	}
+}

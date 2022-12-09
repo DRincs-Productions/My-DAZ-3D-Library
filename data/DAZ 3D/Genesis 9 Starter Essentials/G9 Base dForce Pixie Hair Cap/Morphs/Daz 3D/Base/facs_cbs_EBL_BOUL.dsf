@@ -1,0 +1,74 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/Morphs/Daz%203D/Base/facs_cbs_EBL_BOUL.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-10-05T18:12:53Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_cbs_EBL_BOUL",
+			"name" : "facs_cbs_EBL_BOUL",
+			"parent" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/dForce%20Pixie%20Hair%20Cap_1085.dsf#Morphing%20Pixie%20Hair%20Cap",
+			"presentation" : {
+				"type" : "Modifier/Shape",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "facs_cbs_EBL_BOUL",
+				"visible" : false,
+				"locked" : true,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : 0,
+				"max" : 0,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Hidden/FACS/Fixes",
+			"morph" : {
+				"vertex_count" : 1085,
+				"deltas" : {
+					"count" : 14,
+					"values" : [
+						[ 167, -9.871572e-06, 8.766273e-05, 5.108615e-05 ],
+						[ 168, -2.389872e-06, 2.057336e-05, 1.229891e-05 ],
+						[ 175, -1.361177e-06, 1.434516e-05, 7.455239e-06 ],
+						[ 508, -1.185898e-05, 9.317782e-05, 5.487112e-05 ],
+						[ 509, -2.516871e-06, 1.145346e-05, 5.631434e-06 ],
+						[ 510, -3.291759e-05, 0.0002766595, 0.0001674725 ],
+						[ 511, -7.947278e-06, 6.540896e-05, 4.037656e-05 ],
+						[ 512, -1.575998e-06, 1.524311e-05, 8.370248e-06 ],
+						[ 529, -6.10368e-06, 5.026545e-05, 3.101954e-05 ],
+						[ 530, -3.168667e-05, 0.000265936, 0.0001611805 ],
+						[ 545, -2.277718e-05, -3.845298e-05, -2.583804e-05 ],
+						[ 547, -3.303085e-05, 0.0001493656, 8.613581e-05 ],
+						[ 548, -6.875397e-05, -8.517335e-05, -6.973626e-05 ],
+						[ 549, -9.664884e-05, 0.0008127717, 0.0004877597 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_cbs_EBL_BOUL-1",
+				"url" : "#facs_cbs_EBL_BOUL"
+			}
+		]
+	}
+}

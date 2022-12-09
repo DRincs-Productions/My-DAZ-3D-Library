@@ -1,0 +1,70 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/dForce%20Starter%20Essentials/Bardot%20Top/Morphs/Mada/Base/PBMLegsLength.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : ""
+		},
+		"revision" : "1.0",
+		"modified" : "2017-10-03T18:19:26Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "PBMLegsLength",
+			"name" : "PBMLegsLength",
+			"parent" : "/data/Daz%203D/dForce%20Starter%20Essentials/Bardot%20Top/BardotTop_10570.dsf#BardotTop",
+			"presentation" : {
+				"type" : "Modifier/Shape",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.4588235, 0.172549, 0.2156863 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "PBMLegsLength",
+				"visible" : false,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Actor/Legs/Real World",
+			"morph" : {
+				"vertex_count" : 10570,
+				"deltas" : {
+					"count" : 12,
+					"values" : [
+						[ 3103, 4.888196e-07, 1.469788e-05, 1.695403e-07 ],
+						[ 3104, 5.08865e-07, 1.531016e-05, 1.767095e-07 ],
+						[ 3105, 4.384433e-07, 1.314334e-05, 1.522235e-07 ],
+						[ 3111, 3.640352e-07, 1.109587e-05, 1.273098e-07 ],
+						[ 3112, 1.143643e-06, 3.508301e-05, 4.008455e-07 ],
+						[ 3113, 1.223946e-06, 3.758914e-05, 4.288825e-07 ],
+						[ 3126, 6.833154e-07, 2.086817e-05, 2.365249e-07 ],
+						[ 3127, 5.659848e-07, 1.730473e-05, 1.960117e-07 ],
+						[ 3137, -5.117694e-07, 2.121435e-05, 2.408313e-07 ],
+						[ 3138, -1.228349e-06, 4.30019e-05, 4.866995e-07 ],
+						[ 3139, -4.033959e-07, 1.236768e-05, 1.411474e-07 ],
+						[ 3150, -5.20081e-07, 1.599425e-05, 1.844519e-07 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "PBMLegsLength-1",
+				"url" : "#PBMLegsLength"
+			}
+		]
+	}
+}

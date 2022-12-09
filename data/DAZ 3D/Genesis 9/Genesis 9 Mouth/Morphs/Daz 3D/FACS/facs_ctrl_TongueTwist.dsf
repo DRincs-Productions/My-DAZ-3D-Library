@@ -1,0 +1,84 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Morphs/Daz%203D/FACS/facs_ctrl_TongueTwist.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2021-10-21T14:43:38Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_ctrl_TongueTwist",
+			"name" : "facs_ctrl_TongueTwist",
+			"parent" : "/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Genesis9Mouth.dsf#Genesis9Mouth",
+			"presentation" : {
+				"type" : "",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "facs_ctrl_TongueTwist",
+				"label" : "Tongue Twist",
+				"visible" : false,
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Pose Controls/Head/Mouth/Tongue",
+			"formulas" : [
+				{
+					"output" : "tongue02:/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Genesis9Mouth.dsf#tongue02?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9Mouth:#facs_ctrl_TongueTwist?value" },
+						{ "op" : "push", "val" : 7 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "tongue03:/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Genesis9Mouth.dsf#tongue03?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9Mouth:#facs_ctrl_TongueTwist?value" },
+						{ "op" : "push", "val" : 14 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "tongue04:/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Genesis9Mouth.dsf#tongue04?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9Mouth:#facs_ctrl_TongueTwist?value" },
+						{ "op" : "push", "val" : 28 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "tongue05:/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Genesis9Mouth.dsf#tongue05?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9Mouth:#facs_ctrl_TongueTwist?value" },
+						{ "op" : "push", "val" : 54 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_ctrl_TongueTwist-1",
+				"url" : "#facs_ctrl_TongueTwist"
+			}
+		]
+	}
+}

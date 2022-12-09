@@ -1,0 +1,2662 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Built-in%20Content/Subsurface%20Stone/Subsurface%20Stone.dsf",
+		"type" : "material",
+		"contributor" : {
+			"author" : "DAZ 3D",
+			"email" : "",
+			"website" : "http://www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "Wed May 2 19:01:19 2012"
+	},
+	"material_library" : [
+		{
+			"id" : "Subsurface Stone",
+			"extra" : [
+				{
+					"type" : "studio/material/daz_brick",
+					"brick_settings" : {
+						"BrickSetup" : {
+							"type" : "settings",
+							"value" : {
+								"Bricks" : {
+									"type" : "settings",
+									"value" : {
+										"Brick_1" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzSimpleSurfaceBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickSet" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Name" : "shader_Surface",
+																		"LastInvalidate" : "1336006866"
+																	}
+																},
+																"HideParams" : false,
+																"PosX" : 10,
+																"PosY" : 148,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 234 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"shadowPassActive" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Shadow Pass",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 1 ],
+																		"Value" : [ "i", 1 ]
+																	}
+																},
+																"beautyPassActive" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Beauty Pass",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 1 ],
+																		"Value" : [ "i", 1 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"c_in" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_db3885ef_e143_4392_b544_cea396bcdffc_token_25",
+																"Label" : "Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Color",
+																		"Hidden" : false,
+																		"Path" : "/Surface (1)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "Color"
+																	}
+																}
+															}
+														},
+														"o_in" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_2be216bc_874e_4919_96b7_f6198b47affe_token_26",
+																"Label" : "Opacity",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Opacity",
+																		"Hidden" : false,
+																		"Path" : "/Surface (1)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "opac"
+																	}
+																}
+															}
+														},
+														"acceptShadows" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_b023d12d_7c91_434e_98c0_bd7feabfd951_token_27",
+																"Label" : "Accept Shadows",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Accept Shadows",
+																		"Hidden" : true,
+																		"Path" : "/Surface (1)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 1 ],
+																		"Value" : [ "i", 1 ],
+																		"Name" : "Accept Shadows"
+																	}
+																}
+															}
+														},
+														"rootSettings" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Root Settings"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_2" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzDefaultMaterialBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"HideParams" : false,
+																"PosX" : 673,
+																"PosY" : 383,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 414 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_4" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_6" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_7" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_8" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_9" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_10" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_14" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 101,
+																						"Green" : 127,
+																						"Blue" : 8
+																					}
+																				}
+																			}
+																		},
+																		"Param_15" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 142,
+																						"Green" : 212,
+																						"Blue" : 72
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"Lighting Model" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Lighting Model",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 5 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 0 ],
+																		"Value" : [ "i", 0 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"DiffuseColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_c6234cf6_e932_4a90_ab6e_3c739b8636b9_token_28",
+																"Label" : "Diffuse Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Diffuse Color",
+																		"Hidden" : false,
+																		"Path" : "/DAZ Material (2)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "Diffuse Color2"
+																	}
+																}
+															}
+														},
+														"DiffuseStrength" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_792aa1de_78c3_434f_ab6f_9fa5440fa8ee_token_29",
+																"Label" : "Diffuse Strength",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Strength",
+																		"Hidden" : false,
+																		"Path" : "/Diffuse",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : true,
+																		"DefaultValue" : 1,
+																		"Value" : 1,
+																		"Name" : "Diffuse Strength"
+																	}
+																}
+															}
+														},
+														"Glossiness" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_fdc0a163_d6b3_4fa6_9512_854fc2b29e36_token_30",
+																"Label" : "Glossiness",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Glossiness",
+																		"Hidden" : false,
+																		"Path" : "/Specular",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : true,
+																		"DefaultValue" : 0.95,
+																		"Value" : 0.995,
+																		"Name" : "Glossiness"
+																	}
+																}
+															}
+														},
+														"SpecularColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_eee0a453_a46b_4e45_9e5c_127b047606a2_token_31",
+																"Label" : "Specular Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Color",
+																		"Hidden" : false,
+																		"Path" : "/Specular",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"Name" : "Specular Color"
+																	}
+																}
+															}
+														},
+														"SpecularStrength" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_ac27351c_0999_4b18_94c9_caa0bc04d418_token_32",
+																"Label" : "Specular Strength",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Strength",
+																		"Hidden" : false,
+																		"Path" : "/Specular",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : true,
+																		"DefaultValue" : 1,
+																		"Value" : 1,
+																		"Name" : "Specular Strength"
+																	}
+																}
+															}
+														},
+														"SpecularThroughOpacity" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_2058aaa1_582e_448a_a41e_c62e433ec4e4_token_33",
+																"Label" : "Specular Through Opacity",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Multiply Through Opacity",
+																		"Hidden" : false,
+																		"Path" : "/Specular",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 1 ],
+																		"Value" : [ "i", 1 ],
+																		"Name" : "Multiply Specular Through Opacity"
+																	}
+																}
+															}
+														},
+														"AmbientColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_39b02fb8_9380_4311_926e_529577fcaf66_token_34",
+																"Label" : "Ambient Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Color",
+																		"Hidden" : false,
+																		"Path" : "/Ambient",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"Name" : "Ambient Color"
+																	}
+																}
+															}
+														},
+														"AmbientStrength" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_be209094_1ee9_4bc4_9381_08549aeb061b_token_35",
+																"Label" : "Ambient Strength",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Strength",
+																		"Hidden" : false,
+																		"Path" : "/Ambient",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : true,
+																		"DefaultValue" : 1,
+																		"Value" : 1,
+																		"Name" : "Ambient Strength"
+																	}
+																}
+															}
+														},
+														"OpacityColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_d063762d_6f8c_4541_8038_76da6ced78d3_token_36",
+																"Label" : "Opacity Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Strength",
+																		"Hidden" : false,
+																		"Path" : "/Opacity",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 1 ],
+																		"Sensitivity" : [ "i", 0 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "Opacity Strength"
+																	}
+																}
+															}
+														},
+														"ReflectionColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_bff49a67_8a6e_4e83_8f5f_f58fe440f7f8_token_37",
+																"Label" : "Reflection Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Reflection Color",
+																		"Hidden" : true,
+																		"Path" : "/DAZ Material (2)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"Name" : "reflection"
+																	}
+																}
+															}
+														},
+														"RefractionColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_1556a531_3c20_4f40_a64b_30ebc5134259_token_38",
+																"Label" : "Refraction Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Refraction Color",
+																		"Hidden" : true,
+																		"Path" : "/DAZ Material (2)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"Name" : "refraction"
+																	}
+																}
+															}
+														},
+														"PIn" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Point"
+															}
+														},
+														"In" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "In"
+															}
+														},
+														"Nn" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Nn"
+															}
+														},
+														"ColorOut" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_fe8a6d95_aed2_4835_98ef_3be0245f25b1_token_39",
+																"Label" : "Color"
+															}
+														},
+														"OpacityOut" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_0aa188d9_d061_4e7d_b8ca_76441955e3a0_token_40",
+																"Label" : "Opacity"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_3" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzSubSurfaceBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"HideParams" : false,
+																"PosX" : 305,
+																"PosY" : 182,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 293 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 115,
+																						"Green" : 168,
+																						"Blue" : 230
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"matdif" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_2c9d05e9_a5e6_4a9f_a1d5_96967e391377_token_56",
+																"Label" : "Material Diffuse",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Material Diffuse",
+																		"Hidden" : false,
+																		"Path" : "/Subsurface Scattering (3)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 225 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "matdif"
+																	}
+																}
+															}
+														},
+														"fullmaterial" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_254eb928_5d22_4968_990c_885e03ad4640_token_57",
+																"Label" : "Full Material",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Full Material",
+																		"Hidden" : false,
+																		"Path" : "/Subsurface Scattering (3)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 225 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "fullmaterial"
+																	}
+																}
+															}
+														},
+														"inp" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "P"
+															}
+														},
+														"outcolor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_5e237ff2_4b67_46b1_ba88_47f22a4c6c17_token_58",
+																"Label" : "Subsurface Color"
+															}
+														},
+														"sssmaterial" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_9be2a678_222e_46b3_87bc_56b08840312d_token_59",
+																"Label" : "SSS Material Type",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "SSS Material Type",
+																		"Hidden" : false,
+																		"Path" : "/Subsurface Scattering (3)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 12 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 9 ],
+																		"Value" : [ "i", 0 ],
+																		"Name" : "sssmaterial"
+																	}
+																}
+															}
+														},
+														"cScatter" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_7b4307b3_7cc5_4584_967f_b0246f7e6e30_token_60,elr_8bc04bb5_2688_4749_b679_0fff47fd36fc_token_61,elr_2746d33a_2f22_4c01_a01a_0b233a4cf3ad_token_62",
+																"Label" : "Color Scattering",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Scatter Red",
+																		"Hidden" : false,
+																		"Path" : "/Subsurface Scattering (3)/Args",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -3.40282e+38,
+																		"Max" : 3.40282e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 1.09,
+																		"Value" : 2.19,
+																		"Name" : "cScatter_x"
+																	}
+																},
+																"Prop_1" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Scatter Green",
+																		"Hidden" : false,
+																		"Path" : "/Subsurface Scattering (3)/Args",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -3.40282e+38,
+																		"Max" : 3.40282e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 1.59,
+																		"Value" : 2.62,
+																		"Name" : "cScatter_y"
+																	}
+																},
+																"Prop_2" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Scatter Blue",
+																		"Hidden" : false,
+																		"Path" : "/Subsurface Scattering (3)/Args",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -3.40282e+38,
+																		"Max" : 3.40282e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 1.79,
+																		"Value" : 3,
+																		"Name" : "cScatter_z"
+																	}
+																}
+															}
+														},
+														"cAbsorb" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_0ab7a2ab_1f2a_4078_b079_c0efa6b19800_token_63,elr_6519c6f7_3a4a_4bef_90af_5307f52480b7_token_64,elr_9595e118_e0cd_4f30_a168_7a7b7b346dd7_token_65",
+																"Label" : "Color Absorption",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Absorb Red",
+																		"Hidden" : false,
+																		"Path" : "/Subsurface Scattering (3)/Args",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -3.40282e+38,
+																		"Max" : 3.40282e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 0.013,
+																		"Value" : 0.0021,
+																		"Name" : "cAbsorb_x"
+																	}
+																},
+																"Prop_1" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Absorb Green",
+																		"Hidden" : false,
+																		"Path" : "/Subsurface Scattering (3)/Args",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -3.40282e+38,
+																		"Max" : 3.40282e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 0.07,
+																		"Value" : 0.0041,
+																		"Name" : "cAbsorb_y"
+																	}
+																},
+																"Prop_2" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Absorb Blue",
+																		"Hidden" : false,
+																		"Path" : "/Subsurface Scattering (3)/Args",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -3.40282e+38,
+																		"Max" : 3.40282e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 0.145,
+																		"Value" : 0.0071,
+																		"Name" : "cAbsorb_z"
+																	}
+																}
+															}
+														},
+														"ior" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_54c8dfc9_c67b_412b_a102_d3126379136e_token_66",
+																"Label" : "Index of Refraction",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Index of Refraction",
+																		"Hidden" : false,
+																		"Path" : "/Subsurface Scattering (3)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -1e+38,
+																		"Max" : 1e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 1,
+																		"Value" : 1.5,
+																		"Name" : "ior"
+																	}
+																}
+															}
+														},
+														"scale" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_464ead30_9ce1_4254_a291_7b1f54b4dac5_token_67",
+																"Label" : "Shading Scale",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Shading Scale",
+																		"Hidden" : false,
+																		"Path" : "/Subsurface Scattering (3)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -1e+38,
+																		"Max" : 1e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 0.1,
+																		"Value" : 1,
+																		"Name" : "Scale"
+																	}
+																}
+															}
+														},
+														"shadingrate" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_93fd9569_6758_49a4_850f_8ecfe4b0cd82_token_61",
+																"Label" : "Shading Rate",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Shading Rate",
+																		"Hidden" : false,
+																		"Path" : "/Subsurface Scattering (3)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : 0.001,
+																		"Max" : 128,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 1,
+																		"Value" : 1,
+																		"Name" : "shadingrate"
+																	}
+																}
+															}
+														},
+														"groupid" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_0454df13_c1d2_4f5e_941a_a06e658ef47f_token_69",
+																"Label" : "Group ID",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Group ID",
+																		"Hidden" : false,
+																		"Path" : "/Subsurface Scattering (3)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -1000 ],
+																		"Max" : [ "i", 1000 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 1 ],
+																		"Value" : [ "i", 1 ],
+																		"Name" : "groupid"
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_4" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzDiffuseBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"HideParams" : false,
+																"PosX" : 678,
+																"PosY" : 218,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 133 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 83,
+																						"Green" : 90,
+																						"Blue" : 8
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"color" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_c2c38cb7_48d2_4edc_b88a_760b386c3138_token_70",
+																"Label" : "Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Color",
+																		"Hidden" : false,
+																		"Path" : "/Diffuse (4)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "color"
+																	}
+																}
+															}
+														},
+														"vecNf" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Nf"
+															}
+														},
+														"diffColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_2d4cf3da_7e74_482b_944b_160fa7c0f95a_token_71",
+																"Label" : "Diffuse Color"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_5" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzFractalSumBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"HideParams" : false,
+																"PosX" : 1420,
+																"PosY" : 320,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 285 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 243,
+																						"Green" : 145,
+																						"Blue" : 212
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_4" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"mode" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Mode",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 2 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 0 ],
+																		"Value" : [ "i", 2 ]
+																	}
+																},
+																"type" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Type",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 1 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 0 ],
+																		"Value" : [ "i", 0 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"out" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_fea20603_06ac_4ba5_850b_915cc6b9ecfb_token_45",
+																"Label" : "Sum"
+															}
+														},
+														"octaves" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_c4d7a899_3018_4627_a816_16aa5e649dfb_token_46",
+																"Label" : "Octaves",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Octaves",
+																		"Hidden" : false,
+																		"Path" : "/Fractal Sum (5)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", 1 ],
+																		"Max" : [ "i", 12 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 2 ],
+																		"Value" : [ "i", 6 ],
+																		"Name" : "octaves"
+																	}
+																}
+															}
+														},
+														"bias" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_c5c9343e_bcb6_4c9b_9efd_81c16d1e9208_token_47",
+																"Label" : "Bias",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Bias",
+																		"Hidden" : false,
+																		"Path" : "/Fractal Sum (5)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -1e+38,
+																		"Max" : 1e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 2,
+																		"Value" : 2,
+																		"Name" : "bias"
+																	}
+																}
+															}
+														},
+														"gain" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_8cd78e28_561c_4490_a496_c2ce7984f26e_token_48",
+																"Label" : "Gain",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Gain",
+																		"Hidden" : false,
+																		"Path" : "/Fractal Sum (5)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -1e+38,
+																		"Max" : 1e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 0.5,
+																		"Value" : 0.5,
+																		"Name" : "gain"
+																	}
+																}
+															}
+														},
+														"scale" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_309f310a_1cc0_4aff_a277_8f6394939f8b_token_49,elr_c940677c_1269_46aa_9795_ce29f4ae4db4_token_50,elr_85e7c96a_2f1d_446c_a8ae_4a6086dbee70_token_51",
+																"Label" : "Scale",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "X",
+																		"Hidden" : false,
+																		"Path" : "/Fractal Sum (5)/Args",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -3.40282e+38,
+																		"Max" : 3.40282e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 0.8,
+																		"Value" : 1,
+																		"Name" : "scale_x"
+																	}
+																},
+																"Prop_1" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Y",
+																		"Hidden" : false,
+																		"Path" : "/Fractal Sum (5)/Args",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -3.40282e+38,
+																		"Max" : 3.40282e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 0.8,
+																		"Value" : 1,
+																		"Name" : "scale_y"
+																	}
+																},
+																"Prop_2" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Z",
+																		"Hidden" : false,
+																		"Path" : "/Fractal Sum (5)/Args",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -3.40282e+38,
+																		"Max" : 3.40282e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 0.8,
+																		"Value" : 1,
+																		"Name" : "scale_z"
+																	}
+																}
+															}
+														},
+														"point" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Point"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_6" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzClampBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"HideParams" : false,
+																"PosX" : 1080,
+																"PosY" : 358,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 265 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 23,
+																						"Green" : 137,
+																						"Blue" : 56
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"ValueType" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Type",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 4 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 0 ],
+																		"Value" : [ "i", 0 ]
+																	}
+																},
+																"Operation" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Operation",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 2 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 0 ],
+																		"Value" : [ "i", 1 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"result" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_88d6a61d_49dc_416b_b350_1575a109cdf5_token_86",
+																"Label" : "Result"
+															}
+														},
+														"min" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_2537c586_480e_4bcd_a8cf_9f7c0b337d7b_token_87",
+																"Label" : "Min",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Min",
+																		"Hidden" : false,
+																		"Path" : "/ClampAndStep (6)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -1e+38,
+																		"Max" : 1e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 0,
+																		"Value" : -1,
+																		"Name" : "min"
+																	}
+																}
+															}
+														},
+														"max" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_000a9abd_2022_4670_a3d1_00fbbe3da863_token_88",
+																"Label" : "Max",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Max",
+																		"Hidden" : false,
+																		"Path" : "/ClampAndStep (6)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -1e+38,
+																		"Max" : 1e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 0,
+																		"Value" : 1,
+																		"Name" : "max"
+																	}
+																}
+															}
+														},
+														"value" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_9d19af67_f9cb_4f9d_ba85_e8ca7d8cd7ca_token_89",
+																"Label" : "Value",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Value",
+																		"Hidden" : false,
+																		"Path" : "/ClampAndStep (6)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"Min" : -1e+38,
+																		"Max" : 1e+38,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"DefaultValue" : 0,
+																		"Value" : 0,
+																		"Name" : "value"
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								},
+								"Connections" : {
+									"type" : "settings",
+									"value" : {
+										"Connection_0" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_1",
+												"TargetBrick" : "Brick_3",
+												"SourceParam" : "c_in",
+												"TargetParam" : "outcolor"
+											}
+										},
+										"Connection_1" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_6",
+												"SourceParam" : "DiffuseColor",
+												"TargetParam" : "result"
+											}
+										},
+										"Connection_2" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_3",
+												"TargetBrick" : "Brick_4",
+												"SourceParam" : "matdif",
+												"TargetParam" : "diffColor"
+											}
+										},
+										"Connection_3" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_3",
+												"TargetBrick" : "Brick_2",
+												"SourceParam" : "fullmaterial",
+												"TargetParam" : "ColorOut"
+											}
+										},
+										"Connection_4" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_4",
+												"TargetBrick" : "Brick_6",
+												"SourceParam" : "color",
+												"TargetParam" : "result"
+											}
+										},
+										"Connection_5" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_6",
+												"TargetBrick" : "Brick_5",
+												"SourceParam" : "value",
+												"TargetParam" : "out"
+											}
+										}
+									}
+								},
+								"BrickUserName" : "Subsurface Stone",
+								"Identifier" : "{ba7d4282-01a9-41ad-9bf3-ae07a8e5762d}"
+							}
+						}
+					}
+				},
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"name" : "Smooth On",
+								"label" : "Smooth",
+								"value" : true
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"name" : "Smooth Angle",
+								"label" : "Angle",
+								"value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"name" : "Render Priority",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"name" : "Propagate Priority",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"value" : false
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "opac",
+								"type" : "color",
+								"name" : "opac",
+								"label" : "Opacity",
+								"value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Surface (1)"
+						},
+						{
+							"channel" : {
+								"id" : "Accept Shadows",
+								"type" : "bool",
+								"name" : "Accept Shadows",
+								"label" : "Accept Shadows",
+								"visible" : false,
+								"value" : true
+							},
+							"group" : "/Surface (1)"
+						},
+						{
+							"channel" : {
+								"id" : "sssmaterial",
+								"type" : "enum",
+								"name" : "sssmaterial",
+								"label" : "SSS Material Type",
+								"value" : 9,
+								"enum_values" : [ "Custom", "Apple", "Chicken A", "Chicken B", "Cream", "Ketchup", "Marble", "Potato", "Skimmilk", "Skin A", "Skin B", "Spectralon", "Wholemilk" ]
+							},
+							"group" : "/Subsurface Scattering (3)"
+						},
+						{
+							"channel" : {
+								"id" : "cScatter_x",
+								"type" : "float",
+								"name" : "cScatter_x",
+								"label" : "Scatter Red",
+								"value" : 1.09,
+								"min" : -3.40282e+38,
+								"max" : 3.40282e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Subsurface Scattering (3)/Args"
+						},
+						{
+							"channel" : {
+								"id" : "cScatter_y",
+								"type" : "float",
+								"name" : "cScatter_y",
+								"label" : "Scatter Green",
+								"value" : 1.59,
+								"min" : -3.40282e+38,
+								"max" : 3.40282e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Subsurface Scattering (3)/Args"
+						},
+						{
+							"channel" : {
+								"id" : "cScatter_z",
+								"type" : "float",
+								"name" : "cScatter_z",
+								"label" : "Scatter Blue",
+								"value" : 1.79,
+								"min" : -3.40282e+38,
+								"max" : 3.40282e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Subsurface Scattering (3)/Args"
+						},
+						{
+							"channel" : {
+								"id" : "cAbsorb_x",
+								"type" : "float",
+								"name" : "cAbsorb_x",
+								"label" : "Absorb Red",
+								"value" : 0.013,
+								"min" : -3.40282e+38,
+								"max" : 3.40282e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Subsurface Scattering (3)/Args"
+						},
+						{
+							"channel" : {
+								"id" : "cAbsorb_y",
+								"type" : "float",
+								"name" : "cAbsorb_y",
+								"label" : "Absorb Green",
+								"value" : 0.07,
+								"min" : -3.40282e+38,
+								"max" : 3.40282e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Subsurface Scattering (3)/Args"
+						},
+						{
+							"channel" : {
+								"id" : "cAbsorb_z",
+								"type" : "float",
+								"name" : "cAbsorb_z",
+								"label" : "Absorb Blue",
+								"value" : 0.145,
+								"min" : -3.40282e+38,
+								"max" : 3.40282e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Subsurface Scattering (3)/Args"
+						},
+						{
+							"channel" : {
+								"id" : "ior",
+								"type" : "float",
+								"name" : "ior",
+								"label" : "Index of Refraction",
+								"value" : 1,
+								"min" : -1e+38,
+								"max" : 1e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Subsurface Scattering (3)"
+						},
+						{
+							"channel" : {
+								"id" : "Scale",
+								"type" : "float",
+								"name" : "Scale",
+								"label" : "Shading Scale",
+								"value" : 0.1,
+								"min" : -1e+38,
+								"max" : 1e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Subsurface Scattering (3)"
+						},
+						{
+							"channel" : {
+								"id" : "shadingrate",
+								"type" : "float",
+								"name" : "shadingrate",
+								"label" : "Shading Rate",
+								"value" : 1,
+								"min" : 0.001,
+								"max" : 128,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Subsurface Scattering (3)"
+						},
+						{
+							"channel" : {
+								"id" : "groupid",
+								"type" : "int",
+								"name" : "groupid",
+								"label" : "Group ID",
+								"value" : 1,
+								"min" : -1000,
+								"max" : 1000,
+								"step_size" : 1
+							},
+							"group" : "/Subsurface Scattering (3)"
+						},
+						{
+							"channel" : {
+								"id" : "min",
+								"type" : "float",
+								"name" : "min",
+								"label" : "Min",
+								"value" : 0,
+								"min" : -1e+38,
+								"max" : 1e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/ClampAndStep (6)"
+						},
+						{
+							"channel" : {
+								"id" : "max",
+								"type" : "float",
+								"name" : "max",
+								"label" : "Max",
+								"value" : 0,
+								"min" : -1e+38,
+								"max" : 1e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/ClampAndStep (6)"
+						},
+						{
+							"channel" : {
+								"id" : "Diffuse Strength",
+								"type" : "float",
+								"name" : "Diffuse Strength",
+								"label" : "Strength",
+								"value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Diffuse"
+						},
+						{
+							"channel" : {
+								"id" : "Glossiness",
+								"type" : "float",
+								"name" : "Glossiness",
+								"label" : "Glossiness",
+								"value" : 0.95,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Specular Color",
+								"type" : "color",
+								"name" : "Specular Color",
+								"label" : "Color",
+								"value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Specular Strength",
+								"type" : "float",
+								"name" : "Specular Strength",
+								"label" : "Strength",
+								"value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Multiply Specular Through Opacity",
+								"type" : "bool",
+								"name" : "Multiply Specular Through Opacity",
+								"label" : "Multiply Through Opacity",
+								"value" : true
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Color",
+								"type" : "color",
+								"name" : "Ambient Color",
+								"label" : "Color",
+								"value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Ambient"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Strength",
+								"type" : "float",
+								"name" : "Ambient Strength",
+								"label" : "Strength",
+								"value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Ambient"
+						},
+						{
+							"channel" : {
+								"id" : "Opacity Strength",
+								"type" : "color",
+								"name" : "Opacity Strength",
+								"label" : "Strength",
+								"value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Opacity"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Color",
+								"type" : "color",
+								"name" : "reflection",
+								"label" : "Reflection Color",
+								"visible" : false,
+								"value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/DAZ Material (2)"
+						},
+						{
+							"channel" : {
+								"id" : "Refraction Color",
+								"type" : "color",
+								"name" : "refraction",
+								"label" : "Refraction Color",
+								"visible" : false,
+								"value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/DAZ Material (2)"
+						},
+						{
+							"channel" : {
+								"id" : "octaves",
+								"type" : "int",
+								"name" : "octaves",
+								"label" : "Octaves",
+								"value" : 2,
+								"min" : 1,
+								"max" : 12,
+								"clamped" : true,
+								"step_size" : 1
+							},
+							"group" : "/Fractal Sum (5)"
+						},
+						{
+							"channel" : {
+								"id" : "bias",
+								"type" : "float",
+								"name" : "bias",
+								"label" : "Bias",
+								"value" : 2,
+								"min" : -1e+38,
+								"max" : 1e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Fractal Sum (5)"
+						},
+						{
+							"channel" : {
+								"id" : "gain",
+								"type" : "float",
+								"name" : "gain",
+								"label" : "Gain",
+								"value" : 0.5,
+								"min" : -1e+38,
+								"max" : 1e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Fractal Sum (5)"
+						},
+						{
+							"channel" : {
+								"id" : "scale_x",
+								"type" : "float",
+								"name" : "scale_x",
+								"label" : "X",
+								"value" : 0.8,
+								"min" : -3.40282e+38,
+								"max" : 3.40282e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Fractal Sum (5)/Args"
+						},
+						{
+							"channel" : {
+								"id" : "scale_y",
+								"type" : "float",
+								"name" : "scale_y",
+								"label" : "Y",
+								"value" : 0.8,
+								"min" : -3.40282e+38,
+								"max" : 3.40282e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Fractal Sum (5)/Args"
+						},
+						{
+							"channel" : {
+								"id" : "scale_z",
+								"type" : "float",
+								"name" : "scale_z",
+								"label" : "Z",
+								"value" : 0.8,
+								"min" : -3.40282e+38,
+								"max" : 3.40282e+38,
+								"step_size" : 0.01
+							},
+							"group" : "/Fractal Sum (5)/Args"
+						}
+					]
+				}
+			]
+		}
+	]
+}

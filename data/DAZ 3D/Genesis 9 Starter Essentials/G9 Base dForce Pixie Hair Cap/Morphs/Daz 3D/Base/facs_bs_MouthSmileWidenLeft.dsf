@@ -1,0 +1,75 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/Morphs/Daz%203D/Base/facs_bs_MouthSmileWidenLeft.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-10-05T18:12:53Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_bs_MouthSmileWidenLeft",
+			"name" : "facs_bs_MouthSmileWidenLeft",
+			"parent" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/dForce%20Pixie%20Hair%20Cap_1085.dsf#Morphing%20Pixie%20Hair%20Cap",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "facs_bs_MouthSmileWidenLeft",
+				"visible" : false,
+				"locked" : true,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : 0,
+				"max" : 0,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Pose Controls/Head/Mouth",
+			"morph" : {
+				"vertex_count" : 1085,
+				"deltas" : {
+					"count" : 15,
+					"values" : [
+						[ 120, 0.001614558, -7.761809e-08, 0.0004360033 ],
+						[ 153, 0.0001132477, 0.000297893, 0.000198082 ],
+						[ 290, 0.001175494, -1.493877e-05, 0.0003431248 ],
+						[ 419, 2.317741e-05, 6.307026e-05, 3.88058e-05 ],
+						[ 444, 0.000162847, 0.0004183058, 0.0003324151 ],
+						[ 482, 0.0001728364, -3.356747e-05, 1.478411e-05 ],
+						[ 483, 0.0002607744, 3.379768e-05, 8.930368e-05 ],
+						[ 485, 0.0001160613, 0.0002879091, 0.0002499094 ],
+						[ 536, 0.002621083, 0.006974435, 0.005354432 ],
+						[ 537, 0.002395896, 0.006974014, 0.005866818 ],
+						[ 538, 0.00277683, 0.002434978, 0.002549773 ],
+						[ 539, 0.004807297, -0.0007465142, 0.0005562049 ],
+						[ 540, 0.001620047, 0.004611445, 0.00286363 ],
+						[ 543, 0.0001322253, 0.0003243558, 0.0002120724 ],
+						[ 544, 1.827228e-05, 3.293095e-05, 2.388908e-05 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_bs_MouthSmileWidenLeft-1",
+				"url" : "#facs_bs_MouthSmileWidenLeft"
+			}
+		]
+	}
+}

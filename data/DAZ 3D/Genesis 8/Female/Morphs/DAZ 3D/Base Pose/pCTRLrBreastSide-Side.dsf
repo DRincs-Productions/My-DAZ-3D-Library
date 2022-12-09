@@ -1,0 +1,59 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Female/Morphs/Daz%203D/Base%20Pose/pCTRLrBreastSide-Side.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-04-06T18:41:53Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "CTRLrBreastSide-Side",
+			"name" : "pCTRLrBreastSide-Side",
+			"parent" : "/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#Genesis8Female",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "pCTRLrBreastSide-Side",
+				"label" : "Breasts Side-Side Right",
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Pose Controls/Torso",
+			"formulas" : [
+				{
+					"output" : "rPectoral:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#rPectoral?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#CTRLrBreastSide-Side?value" },
+						{ "op" : "push", "val" : 10 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "pCTRLrBreastSide-Side",
+				"url" : "#CTRLrBreastSide-Side"
+			}
+		]
+	}
+}

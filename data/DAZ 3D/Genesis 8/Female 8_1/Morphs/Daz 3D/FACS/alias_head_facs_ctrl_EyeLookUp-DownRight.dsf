@@ -1,0 +1,44 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%208/Female%208_1/Morphs/Daz%203D/FACS/alias_head_facs_ctrl_EyeLookUp-DownRight.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "0.0",
+		"modified" : "2020-11-13T17:29:26Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_ctrl_EyeLookUp-DownRight",
+			"name" : "facs_ctrl_EyeLookUp-DownRight",
+			"parent" : "/data/Daz%203D/Genesis%208/Female%208_1/Genesis8_1Female.dsf#head",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "alias",
+				"name" : "facs_ctrl_EyeLookUp-DownRight",
+				"label" : "Eye Look Up-Down Right",
+				"target_channel" : "Genesis8_1Female:/data/Daz%203D/Genesis%208/Female%208_1/Morphs/Daz%203D/FACS/facs_ctrl_EyeLookUp-DownRight.dsf#facs_ctrl_EyeLookUp-DownRight?value"
+			},
+			"group" : "/Pose Controls/Head/Eyes"
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_ctrl_EyeLookUp-DownRight-1",
+				"url" : "#facs_ctrl_EyeLookUp-DownRight"
+			}
+		]
+	}
+}

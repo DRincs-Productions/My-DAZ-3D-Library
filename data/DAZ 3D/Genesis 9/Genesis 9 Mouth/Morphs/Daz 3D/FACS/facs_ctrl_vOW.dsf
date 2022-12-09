@@ -1,0 +1,101 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Morphs/Daz%203D/FACS/facs_ctrl_vOW.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-03-14T14:39:40Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_ctrl_vOW",
+			"name" : "facs_ctrl_vOW",
+			"parent" : "/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Genesis9Mouth.dsf#Genesis9Mouth",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.1607843, 0.1607843, 0.1607843 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "facs_ctrl_vOW",
+				"label" : "OW",
+				"visible" : false,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Pose Controls/Head/Visemes",
+			"formulas" : [
+				{
+					"output" : "tongue01:/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Genesis9Mouth.dsf#tongue01?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9Mouth:#facs_ctrl_vOW?value" },
+						{ "op" : "push", "val" : -4 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "tongue02:/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Genesis9Mouth.dsf#tongue02?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9Mouth:#facs_ctrl_vOW?value" },
+						{ "op" : "push", "val" : 20 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "tongue03:/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Genesis9Mouth.dsf#tongue03?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9Mouth:#facs_ctrl_vOW?value" },
+						{ "op" : "push", "val" : -12 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "tongue04:/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Genesis9Mouth.dsf#tongue04?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9Mouth:#facs_ctrl_vOW?value" },
+						{ "op" : "push", "val" : -15 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9Mouth:/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Morphs/Daz%203D/FACS/facs_bs_TongueRoll.dsf#facs_bs_TongueRoll?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9Mouth:#facs_ctrl_vOW?value" },
+						{ "op" : "push", "val" : 0.2 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9Mouth:/data/Daz%203D/Genesis%209/Genesis%209%20Mouth/Morphs/Daz%203D/FACS/facs_bs_TongueIn.dsf#facs_bs_TongueIn?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9Mouth:#facs_ctrl_vOW?value" },
+						{ "op" : "push", "val" : 0.2156863 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_ctrl_vOW-1",
+				"url" : "#facs_ctrl_vOW"
+			}
+		]
+	}
+}

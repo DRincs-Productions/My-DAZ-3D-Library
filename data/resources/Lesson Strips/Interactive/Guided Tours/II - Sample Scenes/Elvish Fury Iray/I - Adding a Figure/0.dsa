@@ -1,0 +1,184 @@
+// DAZ Studio version 4.10.0.123 filetype DAZ Script
+/**********************************************************************
+ 
+	Copyright (C) 2002-2018 Daz 3D, Inc. All Rights Reserved.
+ 
+	This script is provided as part of the Daz Script Documentation. The
+	contents of this script, and\or any portion thereof, may only be used
+	in accordance with the following license:
+ 
+	Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+	- http://creativecommons.org/licenses/by/3.0
+ 
+	To contact Daz 3D or for more information about Daz Script visit the
+	Daz 3D website:
+ 
+	- http://www.daz3d.com
+ 
+**********************************************************************/
+// Source: ./resources/Lesson Strips/Common/Interactive.dsa
+
+// Define an anonymous function;
+// serves as our main loop,
+// limits the scope of variables
+( function(){
+	
+	// If the version number is less than required; 4.10.0.123
+	if( App.version64 < 0x0004000a0000007b ){
+		// Inform the user
+		MessageBox.information( qsTr("%1 4.10.0.123 or newer is required to continue.\nCurrent version: %2.")
+			.arg( App.appName ).arg( App.longVersionString ),
+			qsTr("Resource Error"), qsTr("&OK") );
+		// We're done...
+		return;
+	}
+	
+	// Create a file info object for easy access
+	var g_oFile = new DzFileInfo( getScriptFileName() );
+	
+	// Get the path of our include script. Doing it this way, we can debug
+	// with an ascii file and ship a binary [encrypted] file with the same
+	// name... without having to update the contents of the script or manually
+	// handle the file extensions.
+	var g_sInclude = String( "%1/Lesson Strips/Common/Interactive" ).arg( App.getResourcesPath() );
+	var g_oScript = new DzScript();
+	var g_sIncludeFull = g_oScript.getScriptFile( g_sInclude );
+	
+	// If our script was not found
+	if( g_sIncludeFull.isEmpty() ){
+		// Inform the user
+		MessageBox.information( qsTr("%1 : Could not find \"%2\"").arg( g_oFile.baseName() ).arg( g_sInclude ),
+			qsTr("Critical Error"), qsTr("&OK") );
+		
+		// We're done...
+		return;
+	}
+	
+	// Include the script
+	include( g_sIncludeFull );
+	
+	// Define the arrary of interactive lesson instructions
+	var aInstructions = [];
+	
+	var sContinue = qsTr("Continue");
+	var nWidth = 355;
+	
+	var nContentPaneVersion = 0x0004000b00000070; // 4.11.0.112
+	
+	var sPane = (App.version64 >= nContentPaneVersion ? "Content Library" : "Smart Content");
+	
+	var sRenderer = "NVIDIA Iray";
+	
+	var oInstruction = displayMessage(
+		qsTr("Getting Started"),
+		imageResource( "Elvish Fury/ElvishFuryIray.jpg", 455, 350, false, true ) +
+		qsTr("Welcome to the //Elvish Fury// lesson!\n\n "+
+			"By completing this lesson, you will be able to find content in the **%1** pane, and " +
+			"build and render the //Elvish Fury// scene as shown above.\n\n "+
+			"Click //%2// (below) to proceed with this lesson. Click //Stop [Esc]// " +
+			"to exit the lesson at any time." )
+				.arg( sPane )
+				.arg( sContinue ),
+		"",
+		nWidth,
+		sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	var sActionClass = "DzNewAction";
+	oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Starting a New Scene"),
+		qsTr("Click the  ##%1.label## action in the toolbar; this gives you a fresh scene. " +
+			"You can also find the ##%1.label## action in the **Main Menu Bar** at the top of the " +
+			"screen under the ##%1.menu## menu or use the ##%1.shortcut## shortcut.")
+				.arg( sActionClass ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = renderSettingsPaneEditorRendererSelect(
+		sRenderer,
+		qsTr("Change the Active Renderer"),
+		qsTr("Since this lesson is specifically made for the //%1// render engine, " +
+			"you will need to switch the active renderer to //%1//.")
+				.arg( sRenderer ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	var sRelPath = "/Default/Figures/People/Female/Real World/Genesis 8 Basic Female.duf";
+	var sAssetPath = "/People/Genesis 8 Female/Genesis 8 Basic Female.duf";
+	var sProduct = "Genesis 8 Starter Essentials";
+	var nSku = 42071;
+	var sTitle = qsTr("Loading Your Character");
+	var sDescription = qsTr("You will want to load your character from the **%1** pane.\n\n" +
+				"To do this, follow the arrows through the **%1** pane and " +
+				"and double-click //Genesis 8 Female//.")
+					.arg( sPane );
+	var sNote = "";
+	if( App.version64 >= 0x0004000b00000070 ){ // 4.11.0.112
+		oInstruction = contentLibraryPaneAssetLoad(
+			sRelPath, sAssetPath, sProduct, nSku, sTitle, sDescription, sNote, nWidth );
+	} else {
+		oInstruction = smartContentPaneAssetLoad(
+			sRelPath, sAssetPath, sProduct, nSku, sTitle, sDescription, sNote, nWidth );
+	}
+	aInstructions.push( oInstruction );
+	
+	
+	sActionClass = "DzSaveAction";
+	oInstruction = actionSelect(
+		sActionClass,
+		qsTr("Better Safe than Sorry"),
+		qsTr("Save your progress at any time by using the shortcut ##%1.shortcut##. " +
+			"Or use the ##%1.label## action in the **Main Menu Bar** under the " +
+			"##%1.menu##.")
+				.arg( sActionClass ),
+		"",
+		nWidth );
+	oInstruction = setOptional( oInstruction, sContinue );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = displayMessage(
+		qsTr("Congratulations"),
+		qsTr("You just finished the first lesson! " +
+			"Now it is time to move on to the next lesson.\n\n " +
+			"When you are ready, continue to the next lesson, or press " +
+			"//Stop [Esc]// below to practice what you learned."),
+		"",
+		nWidth,
+		qsTr("Continue to II - Dressing a Figure") );
+	aInstructions.push( oInstruction );
+	
+	
+	oInstruction = lessonSelect(
+		"/Guided Tours/II - Sample Scenes/Elvish Fury Iray/II - Dressing a Figure",
+		qsTr("Next Lesson"),
+		qsTr("Locate and click //II - Dressing a Figure// from the **Lesson Selector**."),
+		"",
+		nWidth );
+	aInstructions.push( oInstruction );
+	
+	
+	// Define an array of additionally required files;
+	var aRequiredFiles = [
+		/*
+		requiredAsset(
+			"/Default/Figures/People/Female/Real World/Genesis 8 Basic Female.duf",
+			"Genesis 8 Starter Essentials",
+			42071
+		)
+		*/
+	];
+	
+	// Process the lesson
+	processLesson( aInstructions, aRequiredFiles );
+	
+// Finalize the function and invoke
+})();

@@ -1,0 +1,60 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Bobbie25/Basic%20Wear/B25BWBra/Morphs/Bobbie25/Base/lShldrBend_CTRLMD_N_ZRotate_87_803.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-05-31T01:29:42Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "CTRLMD_N_ZRotate_87_803",
+			"name" : "CTRLMD_N_ZRotate_87_803",
+			"parent" : "/data/Bobbie25/Basic%20Wear/B25BWBra/Bra_20266.dsf#lShldrBend",
+			"presentation" : {
+				"type" : "Modifier/Corrective",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.5019608, 0, 0 ], [ 0.5019608, 0, 0 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "CTRLMD_N_ZRotate_87_803",
+				"label" : "CTRLMD_N_ZRotate_87_803",
+				"visible" : false,
+				"locked" : true,
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Hidden/CTRLMDs",
+			"formulas" : [
+				{
+					"output" : "lShldrBend:#CTRLMD_N_ZRotate_87_803?value",
+					"operations" : [
+						{ "op" : "push", "url" : "lShldrBend:/data/Bobbie25/Basic%20Wear/B25BWBra/Bra_20266.dsf#lShldrBend?rotation/z" },
+						{ "op" : "push", "val" : 0.01138913 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "CTRLMD_N_ZRotate_87_803-1",
+				"url" : "#CTRLMD_N_ZRotate_87_803"
+			}
+		]
+	}
+}

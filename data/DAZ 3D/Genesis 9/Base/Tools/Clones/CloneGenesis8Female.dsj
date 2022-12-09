@@ -1,0 +1,2228 @@
+{
+	"file_type" : "template_clone",
+	"nodes" : [
+		{
+			"id" : "ROOT_SKELETON",
+			"center_point" : [ 0, 0, 0 ],
+			"end_point" : [ 0, 103.876, 0 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "hip",
+			"parent" : "ROOT_SKELETON",
+			"group" : "",
+			"center_point" : [ 0, 105.1781, 1.824816 ],
+			"end_point" : [ 0, 88.82034, 0.02407765 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "pelvis",
+			"parent" : "hip",
+			"group" : "Hip",
+			"center_point" : [ 0, 107.0423, 1.873485 ],
+			"end_point" : [ 0, 88.0048, 1.555934 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lThighBend",
+			"parent" : "pelvis",
+			"group" : "lThigh",
+			"center_point" : [ 7.909208, 96.41562, 0.3913819 ],
+			"end_point" : [ 11.47284, 75.84707, -0.1116907 ],
+			"orientation" : [ 1.163925, 4.855467, 7.945159 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, -6 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lThighTwist",
+			"parent" : "lThighBend",
+			"group" : "",
+			"center_point" : [ 10.78465, 75.66734, -0.04346678 ],
+			"end_point" : [ 13.7365, 54.19333, -0.6480957 ],
+			"orientation" : [ 1.163925, 4.855467, 7.945159 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lShin",
+			"parent" : "lThighTwist",
+			"group" : "lShin",
+			"center_point" : [ 14.29748, 50.63388, -1.764112 ],
+			"end_point" : [ 20.14339, 9.625622, -5.490406 ],
+			"orientation" : [ 5.150357, 9.729668, 8.541517 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lFoot",
+			"parent" : "lShin",
+			"group" : "lFoot",
+			"center_point" : [ 20.50789, 8.32, -4.65 ],
+			"end_point" : [ 22.5267, 5.493056, 0.3605404 ],
+			"orientation" : [ 22.12137, 15.45568, 9.103889 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 3 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lMetatarsals",
+			"parent" : "lFoot",
+			"group" : "",
+			"center_point" : [ 20.61985, 7.776619, -5.420714 ],
+			"end_point" : [ 24.11295, 3.450798, 5.519059 ],
+			"orientation" : [ 23.11861, 14.23168, 8.985261 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lToe",
+			"parent" : "lMetatarsals",
+			"group" : "lToe",
+			"center_point" : [ 24.63211, 3.088423, 7.04092 ],
+			"end_point" : [ 26.24334, 2.00199, 11.68567 ],
+			"orientation" : [ 13.16512, 18.66373, 2.172698 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lSmallToe4",
+			"parent" : "lToe",
+			"group" : "",
+			"center_point" : [ 27.94741, 3.114045, 5.988034 ],
+			"end_point" : [ 28.21247, 2.494586, 7.015037 ],
+			"orientation" : [ 29.83486, 15.87714, -2.648265 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lSmallToe4_2",
+			"parent" : "lSmallToe4",
+			"group" : "",
+			"center_point" : [ 28.19225, 2.687712, 7.016786 ],
+			"end_point" : [ 28.47754, 1.875127, 8.042038 ],
+			"orientation" : [ 29.83486, 15.87714, -2.648265 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lSmallToe3",
+			"parent" : "lToe",
+			"group" : "",
+			"center_point" : [ 26.46871, 3.315909, 6.881001 ],
+			"end_point" : [ 26.96045, 2.570705, 8.197064 ],
+			"orientation" : [ 28.8943, 18.4031, 1.573073 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lSmallToe3_2",
+			"parent" : "lSmallToe3",
+			"group" : "",
+			"center_point" : [ 26.93958, 2.770106, 8.198872 ],
+			"end_point" : [ 27.45219, 1.825499, 9.513128 ],
+			"orientation" : [ 28.8943, 18.4031, 1.573077 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lSmallToe2",
+			"parent" : "lToe",
+			"group" : "",
+			"center_point" : [ 25.42976, 3.580022, 7.626344 ],
+			"end_point" : [ 26.03605, 2.733353, 9.369286 ],
+			"orientation" : [ 27.51826, 17.38085, 4.352695 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lSmallToe2_2",
+			"parent" : "lSmallToe2",
+			"group" : "",
+			"center_point" : [ 26.01474, 2.936781, 9.371129 ],
+			"end_point" : [ 26.64233, 1.886686, 11.11223 ],
+			"orientation" : [ 27.51826, 17.38083, 4.352695 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lSmallToe1",
+			"parent" : "lToe",
+			"group" : "",
+			"center_point" : [ 23.86634, 3.52439, 8.023041 ],
+			"end_point" : [ 24.65629, 2.721787, 10.033 ],
+			"orientation" : [ 23.25265, 19.95899, 4.516325 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lSmallToe1_2",
+			"parent" : "lSmallToe1",
+			"group" : "",
+			"center_point" : [ 24.63309, 2.943409, 10.035 ],
+			"end_point" : [ 25.44625, 1.919183, 12.04294 ],
+			"orientation" : [ 23.25264, 19.95899, 4.516325 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lBigToe",
+			"parent" : "lToe",
+			"group" : "",
+			"center_point" : [ 21.51157, 3.191494, 8.112574 ],
+			"end_point" : [ 22.43098, 2.520247, 10.43438 ],
+			"orientation" : [ 18.56853, 20.31664, 4.553663 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lBigToe_2",
+			"parent" : "lBigToe",
+			"group" : "",
+			"center_point" : [ 22.43139, 2.516345, 10.43435 ],
+			"end_point" : [ 23.35039, 1.848997, 12.75618 ],
+			"orientation" : [ 18.56852, 20.31663, 4.553663 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rThighBend",
+			"parent" : "pelvis",
+			"group" : "rThigh",
+			"center_point" : [ -7.909208, 96.41562, 0.3913819 ],
+			"end_point" : [ -11.47284, 75.84707, -0.1116907 ],
+			"orientation" : [ 1.163925, -4.855467, -7.945159 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 6 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rThighTwist",
+			"parent" : "rThighBend",
+			"group" : "",
+			"center_point" : [ -10.78465, 75.66734, -0.04346678 ],
+			"end_point" : [ -13.7365, 54.19333, -0.6480957 ],
+			"orientation" : [ 1.163925, -4.855467, -7.945159 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rShin",
+			"parent" : "rThighTwist",
+			"group" : "rShin",
+			"center_point" : [ -14.29748, 50.63388, -1.764112 ],
+			"end_point" : [ -20.14339, 9.625622, -5.490406 ],
+			"orientation" : [ 5.150356, -9.729667, -8.541515 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rFoot",
+			"parent" : "rShin",
+			"group" : "rFoot",
+			"center_point" : [ -20.50789, 8.32, -4.65 ],
+			"end_point" : [ -22.5267, 5.493056, 0.3605404 ],
+			"orientation" : [ 22.12137, -15.45568, -9.103889 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, -3 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rMetatarsals",
+			"parent" : "rFoot",
+			"group" : "",
+			"center_point" : [ -20.61985, 7.776619, -5.420714 ],
+			"end_point" : [ -24.11295, 3.450798, 5.519059 ],
+			"orientation" : [ 23.11861, -14.23168, -8.985259 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rToe",
+			"parent" : "rMetatarsals",
+			"group" : "rToe",
+			"center_point" : [ -24.63211, 3.088423, 7.04092 ],
+			"end_point" : [ -26.24334, 2.00199, 11.68567 ],
+			"orientation" : [ 13.16512, -18.66373, -2.172698 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rSmallToe4",
+			"parent" : "rToe",
+			"group" : "",
+			"center_point" : [ -27.94741, 3.114045, 5.988034 ],
+			"end_point" : [ -28.21247, 2.494586, 7.015037 ],
+			"orientation" : [ 29.83486, -15.87714, 2.648265 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rSmallToe4_2",
+			"parent" : "rSmallToe4",
+			"group" : "",
+			"center_point" : [ -28.19225, 2.687712, 7.016786 ],
+			"end_point" : [ -28.47754, 1.875127, 8.042038 ],
+			"orientation" : [ 29.83486, -15.87714, 2.648265 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rSmallToe3",
+			"parent" : "rToe",
+			"group" : "",
+			"center_point" : [ -26.46871, 3.315909, 6.881001 ],
+			"end_point" : [ -26.96045, 2.570705, 8.197064 ],
+			"orientation" : [ 28.8943, -18.4031, -1.573073 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rSmallToe3_2",
+			"parent" : "rSmallToe3",
+			"group" : "",
+			"center_point" : [ -26.93958, 2.770106, 8.198872 ],
+			"end_point" : [ -27.45219, 1.825499, 9.513128 ],
+			"orientation" : [ 28.8943, -18.4031, -1.573077 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rSmallToe2",
+			"parent" : "rToe",
+			"group" : "",
+			"center_point" : [ -25.42976, 3.580022, 7.626344 ],
+			"end_point" : [ -26.03605, 2.733353, 9.369286 ],
+			"orientation" : [ 27.51826, -17.38085, -4.352695 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rSmallToe2_2",
+			"parent" : "rSmallToe2",
+			"group" : "",
+			"center_point" : [ -26.01474, 2.936781, 9.371129 ],
+			"end_point" : [ -26.64233, 1.886686, 11.11223 ],
+			"orientation" : [ 27.51826, -17.38083, -4.352694 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rSmallToe1",
+			"parent" : "rToe",
+			"group" : "",
+			"center_point" : [ -23.86634, 3.52439, 8.023041 ],
+			"end_point" : [ -24.65629, 2.721787, 10.033 ],
+			"orientation" : [ 23.25265, -19.95899, -4.516325 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rSmallToe1_2",
+			"parent" : "rSmallToe1",
+			"group" : "",
+			"center_point" : [ -24.63309, 2.943409, 10.035 ],
+			"end_point" : [ -25.44625, 1.919183, 12.04294 ],
+			"orientation" : [ 23.25264, -19.95899, -4.516325 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rBigToe",
+			"parent" : "rToe",
+			"group" : "",
+			"center_point" : [ -21.51157, 3.191494, 8.112574 ],
+			"end_point" : [ -22.43098, 2.520247, 10.43438 ],
+			"orientation" : [ 18.56853, -20.31664, -4.553662 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rBigToe_2",
+			"parent" : "rBigToe",
+			"group" : "",
+			"center_point" : [ -22.43139, 2.516345, 10.43435 ],
+			"end_point" : [ -23.35039, 1.848997, 12.75618 ],
+			"orientation" : [ 18.56852, -20.31663, -4.553662 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "abdomenLower",
+			"parent" : "hip",
+			"group" : "Abdomen",
+			"center_point" : [ 0, 106.9446, 0.3423212 ],
+			"end_point" : [ 0, 115.0478, 0.4073269 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "abdomenUpper",
+			"parent" : "abdomenLower",
+			"group" : "AbdomenUpper",
+			"center_point" : [ 0, 115.0947, 1.53567 ],
+			"end_point" : [ 0, 122.5955, 0.839857 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "chestLower",
+			"parent" : "abdomenUpper",
+			"group" : "Chest",
+			"center_point" : [ 0, 123, 1.138297 ],
+			"end_point" : [ 0, 143.7313, 1.202407 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "chestUpper",
+			"parent" : "chestLower",
+			"group" : "ChestUpper",
+			"center_point" : [ 0, 136.0765, -2.479732 ],
+			"end_point" : [ 0, 149.5166, -2.438965 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lCollar",
+			"parent" : "chestUpper",
+			"group" : "lCollar",
+			"center_point" : [ 3.465208, 146.9626, -4.110317 ],
+			"end_point" : [ 13.45499, 147.5363, -4.854364 ],
+			"orientation" : [ 0.05370409, 3.510381, 1.752411 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lShldrBend",
+			"parent" : "lCollar",
+			"group" : "lShoulder",
+			"center_point" : [ 15.40978, 145.627, -4.916882 ],
+			"end_point" : [ 23.14322, 136.9117, -4.665148 ],
+			"orientation" : [ 1.228037, -1.153136, -48.60357 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lShldrTwist",
+			"parent" : "lShldrBend",
+			"group" : "",
+			"center_point" : [ 23.16304, 136.9295, -4.667035 ],
+			"end_point" : [ 32.71958, 126.0328, -4.42785 ],
+			"orientation" : [ 1.215739, -0.750201, -48.78141 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lForearmBend",
+			"parent" : "lShldrTwist",
+			"group" : "lForearm",
+			"center_point" : [ 32.85266, 126.2099, -4.923763 ],
+			"end_point" : [ 41.25117, 118.0638, -1.4356 ],
+			"orientation" : [ 1.176365, -16.39288, -44.76654 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lForearmTwist",
+			"parent" : "lForearmBend",
+			"group" : "",
+			"center_point" : [ 41.20532, 118.1169, -1.487801 ],
+			"end_point" : [ 51.15399, 108.4553, 2.49912 ],
+			"orientation" : [ 1.162587, -16.31953, -44.66678 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lHand",
+			"parent" : "lForearmTwist",
+			"group" : "lHand",
+			"center_point" : [ 50.96496, 108.4512, 2.214822 ],
+			"end_point" : [ 57.64429, 101.9704, 2.305093 ],
+			"orientation" : [ 1.205137, -0.5642815, -44.11588 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lThumb1",
+			"parent" : "lHand",
+			"group" : "lThumb1",
+			"center_point" : [ 51.47279, 106.9388, 3.795763 ],
+			"end_point" : [ 52.50239, 104.7198, 7.085684 ],
+			"orientation" : [ -15.36745, -53.36727, -65.10932 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lThumb2",
+			"parent" : "lThumb1",
+			"group" : "lThumb2",
+			"center_point" : [ 52.48938, 104.7749, 7.097317 ],
+			"end_point" : [ 53.35403, 102.3976, 8.674707 ],
+			"orientation" : [ -20.63464, -31.94603, -70.01147 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lThumb3",
+			"parent" : "lThumb2",
+			"group" : "lThumb3",
+			"center_point" : [ 53.35403, 102.3976, 8.674707 ],
+			"end_point" : [ 54.24747, 100.5302, 10.62766 ],
+			"orientation" : [ -27.9612, -43.32954, -64.32572 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lCarpal1",
+			"parent" : "lHand",
+			"group" : "",
+			"center_point" : [ 51.54131, 108.4491, 3.342167 ],
+			"end_point" : [ 56.50318, 102.6805, 5.236221 ],
+			"orientation" : [ 1.719033, -13.9782, -49.2991 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lIndex1",
+			"parent" : "lCarpal1",
+			"group" : "lIndex1",
+			"center_point" : [ 56.44681, 103.0041, 5.290136 ],
+			"end_point" : [ 58.92588, 99.99886, 5.858657 ],
+			"orientation" : [ 3.362149, -8.981328, -50.9436 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lIndex2",
+			"parent" : "lIndex1",
+			"group" : "lIndex2",
+			"center_point" : [ 58.92588, 99.99886, 5.858657 ],
+			"end_point" : [ 60.22561, 98.37543, 6.043416 ],
+			"orientation" : [ 1.463033, -5.164292, -51.22198 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lIndex3",
+			"parent" : "lIndex2",
+			"group" : "lIndex3",
+			"center_point" : [ 60.22561, 98.37543, 6.043416 ],
+			"end_point" : [ 61.50821, 96.71306, 6.197693 ],
+			"orientation" : [ 1.459023, -4.310821, -52.4839 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lCarpal2",
+			"parent" : "lHand",
+			"group" : "",
+			"center_point" : [ 51.74031, 108.2764, 2.459781 ],
+			"end_point" : [ 56.81302, 102.4305, 3.231111 ],
+			"orientation" : [ 1.392319, -5.691045, -49.05057 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lMid1",
+			"parent" : "lCarpal2",
+			"group" : "lMid1",
+			"center_point" : [ 56.87056, 102.8805, 3.246592 ],
+			"end_point" : [ 59.64886, 99.56845, 3.49945 ],
+			"orientation" : [ 1.823729, -3.672242, -47.74039 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lMid2",
+			"parent" : "lMid1",
+			"group" : "lMid2",
+			"center_point" : [ 59.8057, 99.67656, 3.499563 ],
+			"end_point" : [ 61.28694, 97.64203, 3.670315 ],
+			"orientation" : [ 1.473883, -3.869982, -53.94618 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lMid3",
+			"parent" : "lMid2",
+			"group" : "lMid3",
+			"center_point" : [ 61.28694, 97.64203, 3.670315 ],
+			"end_point" : [ 62.78574, 96.03388, 3.679724 ],
+			"orientation" : [ 1.202765, -0.2765329, -47.01905 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lCarpal3",
+			"parent" : "lHand",
+			"group" : "",
+			"center_point" : [ 51.80978, 108.2366, 1.465284 ],
+			"end_point" : [ 56.48948, 102.8117, 1.289902 ],
+			"orientation" : [ 1.137181, 1.402286, -49.21778 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lRing1",
+			"parent" : "lCarpal3",
+			"group" : "lRing1",
+			"center_point" : [ 56.48808, 103.1822, 1.3666 ],
+			"end_point" : [ 59.09236, 100.1196, 1.153956 ],
+			"orientation" : [ 1.701754, 3.207179, -49.9608 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lRing2",
+			"parent" : "lRing1",
+			"group" : "lRing2",
+			"center_point" : [ 59.09236, 100.1196, 1.153956 ],
+			"end_point" : [ 60.48803, 98.43823, 1.06041 ],
+			"orientation" : [ 3.522953, 2.456977, -50.2989 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lRing3",
+			"parent" : "lRing2",
+			"group" : "lRing3",
+			"center_point" : [ 60.48803, 98.43823, 1.06041 ],
+			"end_point" : [ 61.8229, 96.85529, 1.000046 ],
+			"orientation" : [ 1.11563, 1.675707, -49.83128 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lCarpal4",
+			"parent" : "lHand",
+			"group" : "",
+			"center_point" : [ 51.821, 108.256, 0.5514359 ],
+			"end_point" : [ 55.9499, 103.2702, -0.631645 ],
+			"orientation" : [ 0.6955609, 10.35698, -50.37073 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lPinky1",
+			"parent" : "lCarpal4",
+			"group" : "lPinky1",
+			"center_point" : [ 55.70708, 103.1928, -0.6659586 ],
+			"end_point" : [ 57.52787, 101.0978, -0.9583068 ],
+			"orientation" : [ 2.035041, 6.375912, -49.25728 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lPinky2",
+			"parent" : "lPinky1",
+			"group" : "lPinky2",
+			"center_point" : [ 57.52787, 101.0978, -0.9583068 ],
+			"end_point" : [ 58.62975, 99.83759, -1.124308 ],
+			"orientation" : [ -1.083208, 6.718356, -48.80098 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lPinky3",
+			"parent" : "lPinky2",
+			"group" : "lPinky3",
+			"center_point" : [ 58.63061, 99.83876, -1.150033 ],
+			"end_point" : [ 59.74734, 98.55131, -1.384159 ],
+			"orientation" : [ -2.930455, 6.729253, -49.03785 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rCollar",
+			"parent" : "chestUpper",
+			"group" : "rCollar",
+			"center_point" : [ -3.465208, 146.9626, -4.110317 ],
+			"end_point" : [ -13.45499, 147.5363, -4.854364 ],
+			"orientation" : [ 0.05370408, -3.510381, -1.752411 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rShldrBend",
+			"parent" : "rCollar",
+			"group" : "rShoulder",
+			"center_point" : [ -15.40978, 145.627, -4.916882 ],
+			"end_point" : [ -23.14322, 136.9117, -4.665148 ],
+			"orientation" : [ 1.228037, 1.153136, 48.60357 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rShldrTwist",
+			"parent" : "rShldrBend",
+			"group" : "",
+			"center_point" : [ -23.16304, 136.9295, -4.667035 ],
+			"end_point" : [ -32.71958, 126.0328, -4.42785 ],
+			"orientation" : [ 1.215739, 0.750201, 48.78141 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rForearmBend",
+			"parent" : "rShldrTwist",
+			"group" : "rForearm",
+			"center_point" : [ -32.85266, 126.2099, -4.923763 ],
+			"end_point" : [ -41.25117, 118.0638, -1.4356 ],
+			"orientation" : [ 1.176365, 16.39288, 44.76654 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rForearmTwist",
+			"parent" : "rForearmBend",
+			"group" : "",
+			"center_point" : [ -41.20532, 118.1169, -1.487801 ],
+			"end_point" : [ -51.15399, 108.4553, 2.49912 ],
+			"orientation" : [ 1.162587, 16.31953, 44.66677 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rHand",
+			"parent" : "rForearmTwist",
+			"group" : "rHand",
+			"center_point" : [ -50.96496, 108.4512, 2.214822 ],
+			"end_point" : [ -57.64429, 101.9704, 2.305093 ],
+			"orientation" : [ 1.205137, 0.5642815, 44.11588 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rThumb1",
+			"parent" : "rHand",
+			"group" : "rThumb1",
+			"center_point" : [ -51.47279, 106.9388, 3.795763 ],
+			"end_point" : [ -52.50239, 104.7198, 7.085684 ],
+			"orientation" : [ -15.36745, 53.36728, 65.10932 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rThumb2",
+			"parent" : "rThumb1",
+			"group" : "rThumb2",
+			"center_point" : [ -52.48938, 104.7749, 7.097317 ],
+			"end_point" : [ -53.35403, 102.3976, 8.674707 ],
+			"orientation" : [ -20.63464, 31.94603, 70.01146 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rThumb3",
+			"parent" : "rThumb2",
+			"group" : "rThumb3",
+			"center_point" : [ -53.35403, 102.3976, 8.674707 ],
+			"end_point" : [ -54.24747, 100.5302, 10.62766 ],
+			"orientation" : [ -27.96119, 43.32954, 64.32572 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rCarpal1",
+			"parent" : "rHand",
+			"group" : "",
+			"center_point" : [ -51.54131, 108.4491, 3.342167 ],
+			"end_point" : [ -56.50318, 102.6805, 5.236221 ],
+			"orientation" : [ 1.719033, 13.9782, 49.2991 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rIndex1",
+			"parent" : "rCarpal1",
+			"group" : "rIndex1",
+			"center_point" : [ -56.44681, 103.0041, 5.290136 ],
+			"end_point" : [ -58.92588, 99.99886, 5.858657 ],
+			"orientation" : [ 3.36215, 8.981328, 50.9436 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rIndex2",
+			"parent" : "rIndex1",
+			"group" : "rIndex2",
+			"center_point" : [ -58.92588, 99.99886, 5.858657 ],
+			"end_point" : [ -60.22561, 98.37543, 6.043416 ],
+			"orientation" : [ 1.463033, 5.164291, 51.22198 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rIndex3",
+			"parent" : "rIndex2",
+			"group" : "rIndex3",
+			"center_point" : [ -60.22561, 98.37543, 6.043416 ],
+			"end_point" : [ -61.50821, 96.71306, 6.197693 ],
+			"orientation" : [ 1.459023, 4.310821, 52.48389 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rCarpal2",
+			"parent" : "rHand",
+			"group" : "",
+			"center_point" : [ -51.74031, 108.2764, 2.459781 ],
+			"end_point" : [ -56.81302, 102.4305, 3.231111 ],
+			"orientation" : [ 1.392319, 5.691044, 49.05057 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rMid1",
+			"parent" : "rCarpal2",
+			"group" : "rMid1",
+			"center_point" : [ -56.87056, 102.8805, 3.246592 ],
+			"end_point" : [ -59.64886, 99.56845, 3.49945 ],
+			"orientation" : [ 1.823729, 3.672241, 47.74039 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rMid2",
+			"parent" : "rMid1",
+			"group" : "rMid2",
+			"center_point" : [ -59.8057, 99.67656, 3.499563 ],
+			"end_point" : [ -61.28694, 97.64203, 3.670315 ],
+			"orientation" : [ 1.473883, 3.869982, 53.94618 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rMid3",
+			"parent" : "rMid2",
+			"group" : "rMid3",
+			"center_point" : [ -61.28694, 97.64203, 3.670315 ],
+			"end_point" : [ -62.78574, 96.03388, 3.679724 ],
+			"orientation" : [ 1.202765, 0.2765329, 47.01905 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rCarpal3",
+			"parent" : "rHand",
+			"group" : "",
+			"center_point" : [ -51.80978, 108.2366, 1.465284 ],
+			"end_point" : [ -56.48948, 102.8117, 1.289902 ],
+			"orientation" : [ 1.137181, -1.402286, 49.21778 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rRing1",
+			"parent" : "rCarpal3",
+			"group" : "rRing1",
+			"center_point" : [ -56.48808, 103.1822, 1.3666 ],
+			"end_point" : [ -59.09236, 100.1196, 1.153956 ],
+			"orientation" : [ 1.701754, -3.207179, 49.9608 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rRing2",
+			"parent" : "rRing1",
+			"group" : "rRing2",
+			"center_point" : [ -59.09236, 100.1196, 1.153956 ],
+			"end_point" : [ -60.48803, 98.43823, 1.06041 ],
+			"orientation" : [ 3.522953, -2.456977, 50.2989 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rRing3",
+			"parent" : "rRing2",
+			"group" : "rRing3",
+			"center_point" : [ -60.48803, 98.43823, 1.06041 ],
+			"end_point" : [ -61.8229, 96.85529, 1.000046 ],
+			"orientation" : [ 1.11563, -1.675707, 49.83128 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rCarpal4",
+			"parent" : "rHand",
+			"group" : "",
+			"center_point" : [ -51.821, 108.256, 0.5514359 ],
+			"end_point" : [ -55.9499, 103.2702, -0.631645 ],
+			"orientation" : [ 0.6955609, -10.35698, 50.37073 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rPinky1",
+			"parent" : "rCarpal4",
+			"group" : "rPinky1",
+			"center_point" : [ -55.70708, 103.1928, -0.6659586 ],
+			"end_point" : [ -57.52787, 101.0978, -0.9583068 ],
+			"orientation" : [ 2.035041, -6.375912, 49.25727 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rPinky2",
+			"parent" : "rPinky1",
+			"group" : "rPinky2",
+			"center_point" : [ -57.52787, 101.0978, -0.9583068 ],
+			"end_point" : [ -58.62975, 99.83759, -1.124308 ],
+			"orientation" : [ -1.083208, -6.718356, 48.80098 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rPinky3",
+			"parent" : "rPinky2",
+			"group" : "rPinky3",
+			"center_point" : [ -58.63061, 99.83876, -1.150033 ],
+			"end_point" : [ -59.74734, 98.55131, -1.384159 ],
+			"orientation" : [ -2.930455, -6.729253, 49.03785 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "neckLower",
+			"parent" : "chestUpper",
+			"group" : "Neck",
+			"center_point" : [ 0, 154.33, -3.98 ],
+			"end_point" : [ 0, 157.69, -2.93 ],
+			"orientation" : [ 8.49, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "neckUpper",
+			"parent" : "neckLower",
+			"group" : "NeckUpper",
+			"center_point" : [ 0, 157.61, -2 ],
+			"end_point" : [ 0, 162.59, -1.53 ],
+			"orientation" : [ 8.49, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "head",
+			"parent" : "neckUpper",
+			"group" : "Head",
+			"center_point" : [ 0, 162.5502, -1.840575 ],
+			"end_point" : [ 0, 165.8927, -1.77677 ],
+			"orientation" : [ 0.6970934, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "upperTeeth",
+			"parent" : "head",
+			"group" : "UpperJaw",
+			"center_point" : [ 0, 162.6658, 5.914668 ],
+			"end_point" : [ 0, 162.6625, 6.998552 ],
+			"orientation" : [ 1.08971, 0.009999997, 0.009999997 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lowerJaw",
+			"parent" : "head",
+			"group" : "LowerJaw",
+			"center_point" : [ 0, 164.1132, 0.09420407 ],
+			"end_point" : [ 0, 160.9067, 7.457417 ],
+			"orientation" : [ 23.54969, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lowerTeeth",
+			"parent" : "lowerJaw",
+			"group" : "",
+			"center_point" : [ 0, 161.5753, 5.668454 ],
+			"end_point" : [ 0, 161.3627, 6.756145 ],
+			"orientation" : [ 11.55568, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "tongue01",
+			"parent" : "lowerTeeth",
+			"group" : "Tongue",
+			"center_point" : [ 0, 160.3393, 3.85828 ],
+			"end_point" : [ 0, 161.2002, 4.845032 ],
+			"orientation" : [ -41.10588, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "tongue02",
+			"parent" : "tongue01",
+			"group" : "",
+			"center_point" : [ 0, 161.2002, 4.845032 ],
+			"end_point" : [ 0, 161.4191, 6.028244 ],
+			"orientation" : [ -10.4809, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "tongue03",
+			"parent" : "tongue02",
+			"group" : "",
+			"center_point" : [ 0, 161.4243, 6.043645 ],
+			"end_point" : [ 0, 161.399, 7.200136 ],
+			"orientation" : [ 1.24941, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "tongue04",
+			"parent" : "tongue03",
+			"group" : "",
+			"center_point" : [ 0, 161.399, 7.200136 ],
+			"end_point" : [ 0, 161.5258, 8.25432 ],
+			"orientation" : [ -6.853857, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lowerFaceRig",
+			"parent" : "lowerJaw",
+			"group" : "",
+			"center_point" : [ 0, 164.1132, 0.09420407 ],
+			"end_point" : [ 0, 161.0237, 7.171402 ],
+			"orientation" : [ 23.54969, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lNasolabialLower",
+			"parent" : "lowerFaceRig",
+			"group" : "",
+			"center_point" : [ 3.007976, 159.6345, 6.575895 ],
+			"end_point" : [ 3.005277, 159.6385, 7.675242 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rNasolabialLower",
+			"parent" : "lowerFaceRig",
+			"group" : "",
+			"center_point" : [ -3.007976, 159.6345, 6.575895 ],
+			"end_point" : [ -3.005277, 159.6385, 7.675242 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lNasolabialMouthCorner",
+			"parent" : "lowerFaceRig",
+			"group" : "",
+			"center_point" : [ 4.24674, 161.8622, 6.781797 ],
+			"end_point" : [ 4.241295, 161.8562, 7.882604 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rNasolabialMouthCorner",
+			"parent" : "lowerFaceRig",
+			"group" : "",
+			"center_point" : [ -4.24674, 161.8622, 6.781797 ],
+			"end_point" : [ -4.241295, 161.8562, 7.882604 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lLipCorner",
+			"parent" : "lowerFaceRig",
+			"group" : "",
+			"center_point" : [ 3.256799, 161.7079, 7.331606 ],
+			"end_point" : [ 3.433054, 161.6424, 8.377045 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lLipLowerOuter",
+			"parent" : "lowerFaceRig",
+			"group" : "",
+			"center_point" : [ 2.127608, 161.1172, 8.127138 ],
+			"end_point" : [ 2.152609, 161.1163, 9.131135 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lLipLowerInner",
+			"parent" : "lowerFaceRig",
+			"group" : "",
+			"center_point" : [ 1.089672, 160.9406, 8.398042 ],
+			"end_point" : [ 1.095273, 160.9416, 9.334579 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "LipLowerMiddle",
+			"parent" : "lowerFaceRig",
+			"group" : "",
+			"center_point" : [ 0, 160.705, 8.692502 ],
+			"end_point" : [ 0, 160.7054, 9.655585 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rLipLowerInner",
+			"parent" : "lowerFaceRig",
+			"group" : "",
+			"center_point" : [ -1.089672, 160.9406, 8.398042 ],
+			"end_point" : [ -1.095273, 160.9416, 9.334579 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rLipLowerOuter",
+			"parent" : "lowerFaceRig",
+			"group" : "",
+			"center_point" : [ -2.127608, 161.1172, 8.127138 ],
+			"end_point" : [ -2.152609, 161.1163, 9.131135 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rLipCorner",
+			"parent" : "lowerFaceRig",
+			"group" : "",
+			"center_point" : [ -3.256799, 161.7079, 7.331606 ],
+			"end_point" : [ -3.433054, 161.6424, 8.377045 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "LipBelow",
+			"parent" : "lowerFaceRig",
+			"group" : "",
+			"center_point" : [ 0, 159.588, 8.421598 ],
+			"end_point" : [ 0, 159.5904, 9.536015 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "Chin",
+			"parent" : "lowerFaceRig",
+			"group" : "",
+			"center_point" : [ 0, 158.3418, 7.446119 ],
+			"end_point" : [ 0, 158.341, 8.567238 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lCheekLower",
+			"parent" : "lowerFaceRig",
+			"group" : "",
+			"center_point" : [ 5.490659, 162.0978, 5.171132 ],
+			"end_point" : [ 5.491183, 162.0726, 6.312698 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rCheekLower",
+			"parent" : "lowerFaceRig",
+			"group" : "",
+			"center_point" : [ -5.490659, 162.0978, 5.171132 ],
+			"end_point" : [ -5.491183, 162.0726, 6.312698 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "BelowJaw",
+			"parent" : "lowerFaceRig",
+			"group" : "",
+			"center_point" : [ 0, 157.1052, 4.735023 ],
+			"end_point" : [ 0, 157.0961, 5.929609 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lJawClench",
+			"parent" : "lowerFaceRig",
+			"group" : "",
+			"center_point" : [ 6.070787, 161.7958, 0.7882266 ],
+			"end_point" : [ 6.049245, 161.7779, 1.978136 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rJawClench",
+			"parent" : "lowerFaceRig",
+			"group" : "",
+			"center_point" : [ -6.070787, 161.7958, 0.7882266 ],
+			"end_point" : [ -6.049245, 161.7779, 1.978136 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "upperFaceRig",
+			"parent" : "head",
+			"group" : "",
+			"center_point" : [ 0, 162.5502, -1.840575 ],
+			"end_point" : [ 0, 165.8927, -1.77677 ],
+			"orientation" : [ 0.6970933, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rBrowInner",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -1.95, 170.4, 8.75 ],
+			"end_point" : [ -1.954939, 170.4023, 9.625085 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rBrowMid",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -3.856626, 170.6706, 8.5 ],
+			"end_point" : [ -3.857862, 170.6743, 9.398236 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rBrowOuter",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -5.469148, 170.0714, 7.250023 ],
+			"end_point" : [ -5.460074, 170.0647, 8.201488 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lBrowInner",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 1.95, 170.4, 8.75 ],
+			"end_point" : [ 1.954939, 170.4023, 9.625085 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lBrowMid",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 3.856626, 170.6706, 8.5 ],
+			"end_point" : [ 3.857862, 170.6743, 9.398236 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lBrowOuter",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 5.469148, 170.0714, 7.250023 ],
+			"end_point" : [ 5.460074, 170.0647, 8.201488 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "CenterBrow",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 0, 170.31, 9.224089 ],
+			"end_point" : [ 0, 170.308, 10.09167 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "MidNoseBridge",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 0, 168.34, 9 ],
+			"end_point" : [ 0, 168.3436, 9.913671 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lEyelidInner",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 3.265177, 168.6169, 6.229174 ],
+			"end_point" : [ 1.802441, 168.6169, 7.889934 ],
+			"orientation" : [ -4.355637e-06, 41.17961, 180 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lEyelidUpperInner",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 3.260104, 168.635, 6.243627 ],
+			"end_point" : [ 3.216003, 169.0578, 8.074774 ],
+			"orientation" : [ -13.00065, -1.344284, 0.1531764 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lEyelidUpper",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 3.290639, 168.635, 6.243627 ],
+			"end_point" : [ 3.290639, 169.0435, 8.074774 ],
+			"orientation" : [ -13.11436, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lEyelidUpperOuter",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 3.319767, 168.635, 6.243627 ],
+			"end_point" : [ 3.367531, 169.0494, 8.074774 ],
+			"orientation" : [ -12.752, 1.457347, -0.1628582 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lEyelidOuter",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 3.31101, 168.6169, 6.23 ],
+			"end_point" : [ 4.778837, 168.6169, 7 ],
+			"orientation" : [ 1.441883e-06, -61.86681, 180 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lEyelidLowerOuter",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 3.318757, 168.601, 6.242318 ],
+			"end_point" : [ 3.406563, 167.9549, 7.964937 ],
+			"orientation" : [ -20.76292, -2.880734, 180 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lEyelidLower",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 3.290639, 168.601, 6.242318 ],
+			"end_point" : [ 3.290639, 167.9414, 7.996017 ],
+			"orientation" : [ -20.45865, -3.494361e-07, 180 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lEyelidLowerInner",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 3.260896, 168.601, 6.242318 ],
+			"end_point" : [ 3.179546, 167.9491, 7.996017 ],
+			"orientation" : [ -20.40733, 2.717546, 180 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rEyelidInner",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -3.265177, 168.6169, 6.229174 ],
+			"end_point" : [ -1.802441, 168.6169, 7.889934 ],
+			"orientation" : [ -5.737292e-06, -41.17961, -180 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rEyelidUpperInner",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -3.260104, 168.635, 6.243627 ],
+			"end_point" : [ -3.216003, 169.0578, 8.074774 ],
+			"orientation" : [ -13.00065, 1.344284, -0.1531764 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rEyelidUpper",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -3.290639, 168.635, 6.243627 ],
+			"end_point" : [ -3.290639, 169.0435, 8.074774 ],
+			"orientation" : [ -13.11436, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rEyelidUpperOuter",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -3.319767, 168.635, 6.243627 ],
+			"end_point" : [ -3.367531, 169.0494, 8.074774 ],
+			"orientation" : [ -12.752, -1.457347, 0.1628582 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rEyelidOuter",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -3.31101, 168.6169, 6.23 ],
+			"end_point" : [ -4.778837, 168.6169, 7 ],
+			"orientation" : [ 5.709579e-06, 61.8668, -180 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rEyelidLowerOuter",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -3.318757, 168.601, 6.242318 ],
+			"end_point" : [ -3.406563, 167.9549, 7.964937 ],
+			"orientation" : [ -20.76292, 2.880733, -180 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rEyelidLower",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -3.290639, 168.601, 6.242318 ],
+			"end_point" : [ -3.290639, 167.9414, 7.996017 ],
+			"orientation" : [ -20.45865, 4.013972e-07, -180 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rEyelidLowerInner",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -3.260896, 168.601, 6.242318 ],
+			"end_point" : [ -3.179546, 167.9491, 7.996017 ],
+			"orientation" : [ -20.40733, -2.717546, -180 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lSquintInner",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 2.738243, 167.3127, 7.686976 ],
+			"end_point" : [ 2.734971, 167.315, 8.638041 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lSquintOuter",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 5.060328, 167.6247, 6.95796 ],
+			"end_point" : [ 5.062188, 167.627, 8.01493 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rSquintInner",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -2.738243, 167.3127, 7.686976 ],
+			"end_point" : [ -2.734971, 167.315, 8.638041 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rSquintOuter",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -5.060328, 167.6247, 6.95796 ],
+			"end_point" : [ -5.062188, 167.627, 8.01493 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lCheekUpper",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 5.464041, 165.6674, 6.802028 ],
+			"end_point" : [ 5.46754, 165.6535, 7.80492 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rCheekUpper",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -5.464041, 165.6674, 6.802028 ],
+			"end_point" : [ -5.46754, 165.6535, 7.80492 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "Nose",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 0, 164.8733, 10.35309 ],
+			"end_point" : [ 0, 164.8613, 11.40171 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lNostril",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 1.090652, 164.5528, 9.608484 ],
+			"end_point" : [ 1.0971, 164.5534, 10.64744 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rNostril",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -1.090652, 164.5528, 9.608484 ],
+			"end_point" : [ -1.0971, 164.5534, 10.64744 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lLipBelowNose",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 1.258494, 163.3366, 8.593252 ],
+			"end_point" : [ 1.266338, 163.3372, 9.654034 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rLipBelowNose",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -1.258494, 163.3366, 8.593252 ],
+			"end_point" : [ -1.266338, 163.3372, 9.654034 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lLipNasolabialCrease",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 2.548639, 162.8419, 8.593252 ],
+			"end_point" : [ 2.546782, 162.8424, 9.642406 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rLipNasolabialCrease",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -2.548639, 162.8419, 8.593252 ],
+			"end_point" : [ -2.546782, 162.8424, 9.642406 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lNasolabialUpper",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 1.685855, 166.3484, 8.593252 ],
+			"end_point" : [ 1.69011, 166.3361, 9.475029 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rNasolabialUpper",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -1.685855, 166.3484, 8.593252 ],
+			"end_point" : [ -1.69011, 166.3361, 9.475029 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lNasolabialMiddle",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 2.928212, 164.4825, 8.22962 ],
+			"end_point" : [ 2.922766, 164.4765, 9.34219 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rNasolabialMiddle",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -2.928212, 164.4825, 8.22962 ],
+			"end_point" : [ -2.922766, 164.4765, 9.34219 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "LipUpperMiddle",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 0, 162.5266, 9.21162 ],
+			"end_point" : [ 0, 162.5286, 10.18682 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lLipUpperOuter",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 2.102423, 162.0561, 8.528473 ],
+			"end_point" : [ 2.100566, 162.0548, 9.449345 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lLipUpperInner",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ 1.093588, 162.2439, 8.828822 ],
+			"end_point" : [ 1.091732, 162.2415, 9.794587 ],
+			"orientation" : [ 3.377146e-11, -0.1876335, -0.1023251 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rLipUpperInner",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -1.093588, 162.2439, 8.828822 ],
+			"end_point" : [ -1.091732, 162.2415, 9.794587 ],
+			"orientation" : [ 3.476203e-11, 0.1876335, 0.1023251 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rLipUpperOuter",
+			"parent" : "upperFaceRig",
+			"group" : "",
+			"center_point" : [ -2.102423, 162.0561, 8.528473 ],
+			"end_point" : [ -2.100566, 162.0548, 9.449345 ],
+			"orientation" : [ 0, 0, 0 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lEye",
+			"parent" : "head",
+			"group" : "lEye",
+			"center_point" : [ 3.290832, 168.6187, 6.201231 ],
+			"end_point" : [ 3.290693, 168.6188, 7.924307 ],
+			"orientation" : [ 0, 0, 180 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rEye",
+			"parent" : "head",
+			"group" : "rEye",
+			"center_point" : [ -3.290832, 168.6187, 6.201231 ],
+			"end_point" : [ -3.290693, 168.6188, 7.924307 ],
+			"orientation" : [ 0, 0, -180 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lEar",
+			"parent" : "head",
+			"group" : "",
+			"center_point" : [ 6.89126, 166.6339, -1.281856 ],
+			"end_point" : [ 8.589582, 166.5146, -4.197512 ],
+			"orientation" : [ -2.305794, 59.7186, -4.015396 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rEar",
+			"parent" : "head",
+			"group" : "",
+			"center_point" : [ -6.89126, 166.6339, -1.281856 ],
+			"end_point" : [ -8.589582, 166.5146, -4.197512 ],
+			"orientation" : [ -2.305794, -59.71859, 4.015396 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "lPectoral",
+			"parent" : "chestLower",
+			"group" : "lPectoral",
+			"center_point" : [ 3.121763, 131.7603, -7.454938 ],
+			"end_point" : [ 10.76093, 135.1547, 12.01135 ],
+			"orientation" : [ -8.844269, 21.09831, -0.007491965 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		},
+		{
+			"id" : "rPectoral",
+			"parent" : "chestLower",
+			"group" : "rPectoral",
+			"center_point" : [ -3.121763, 131.7603, -7.454938 ],
+			"end_point" : [ -10.76093, 135.1547, 12.01135 ],
+			"orientation" : [ -8.844268, -21.09831, 0.007491756 ],
+			"translation" : [ 0, 0, 0 ],
+			"rotation" : [ 0, 0, 0 ],
+			"scale" : [ 1, 1, 1, 1 ],
+			"modifiers" : [
+			]
+		}
+	],
+	"modifier_links" : [
+	]
+}

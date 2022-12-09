@@ -1,0 +1,115 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%208/Male%208_1/Morphs/DAZ%203D/FACS/facs_jnt_EyeLookDownLeft.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2020-12-01T15:44:31Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_jnt_EyeLookDownLeft",
+			"name" : "facs_jnt_EyeLookDownLeft",
+			"parent" : "/data/Daz%203D/Genesis%208/Male%208_1/Genesis8_1Male.dsf#Genesis8_1Male",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "facs_jnt_EyeLookDownLeft",
+				"label" : "Eye Look Down Left",
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Pose Controls/Head/Eyes/Lids",
+			"formulas" : [
+				{
+					"output" : "lEyelidInner:/data/Daz%203D/Genesis%208/Male%208_1/Genesis8_1Male.dsf#lEyelidInner?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Male:#facs_jnt_EyeLookDownLeft?value" },
+						{ "op" : "push", "val" : -2.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidUpperInner:/data/Daz%203D/Genesis%208/Male%208_1/Genesis8_1Male.dsf#lEyelidUpperInner?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Male:#facs_jnt_EyeLookDownLeft?value" },
+						{ "op" : "push", "val" : 16.2605 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidTop:/data/Daz%203D/Genesis%208/Male%208_1/Genesis8_1Male.dsf#lEyelidTop?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Male:#facs_jnt_EyeLookDownLeft?value" },
+						{ "op" : "push", "val" : 17.64706 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidUpperOuter:/data/Daz%203D/Genesis%208/Male%208_1/Genesis8_1Male.dsf#lEyelidUpperOuter?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Male:#facs_jnt_EyeLookDownLeft?value" },
+						{ "op" : "push", "val" : 17.64706 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidOuter:/data/Daz%203D/Genesis%208/Male%208_1/Genesis8_1Male.dsf#lEyelidOuter?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Male:#facs_jnt_EyeLookDownLeft?value" },
+						{ "op" : "push", "val" : -2.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidLowerOuter:/data/Daz%203D/Genesis%208/Male%208_1/Genesis8_1Male.dsf#lEyelidLowerOuter?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Male:#facs_jnt_EyeLookDownLeft?value" },
+						{ "op" : "push", "val" : -10 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidLower:/data/Daz%203D/Genesis%208/Male%208_1/Genesis8_1Male.dsf#lEyelidLower?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Male:#facs_jnt_EyeLookDownLeft?value" },
+						{ "op" : "push", "val" : -10 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lEyelidLower_2:/data/Daz%203D/Genesis%208/Male%208_1/Genesis8_1Male.dsf#lEyelidLower_2?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Male:#facs_jnt_EyeLookDownLeft?value" },
+						{ "op" : "push", "val" : -10 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_jnt_EyeLookDownLeft-1",
+				"url" : "#facs_jnt_EyeLookDownLeft"
+			}
+		]
+	}
+}

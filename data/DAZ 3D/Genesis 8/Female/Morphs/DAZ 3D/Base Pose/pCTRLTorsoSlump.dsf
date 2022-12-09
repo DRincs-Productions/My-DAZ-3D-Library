@@ -1,0 +1,115 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Female/Morphs/DAZ%203D/Base%20Pose/pCTRLTorsoSlump.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-03-28T16:13:18Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "pCTRLTorsoSlump",
+			"name" : "pCTRLTorsoSlump",
+			"parent" : "/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#Genesis8Female",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "pCTRLTorsoSlump",
+				"label" : "Torso Slump",
+				"value" : 0,
+				"min" : -0.5,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Pose Controls/Torso",
+			"formulas" : [
+				{
+					"output" : "abdomenLower:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#abdomenLower?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#pCTRLTorsoSlump?value" },
+						{ "op" : "push", "val" : 14.89496 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "abdomen2:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#abdomen2?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#pCTRLTorsoSlump?value" },
+						{ "op" : "push", "val" : -25 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "chest:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#chest?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#pCTRLTorsoSlump?value" },
+						{ "op" : "push", "val" : -1.302521 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "chest_2:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#chest_2?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#pCTRLTorsoSlump?value" },
+						{ "op" : "push", "val" : 15 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "neck:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#neck?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#pCTRLTorsoSlump?value" },
+						{ "op" : "push", "val" : 18.67647 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "neck:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#neck?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#pCTRLTorsoSlump?value" },
+						{ "op" : "push", "val" : 1.490116e-07 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "neck_2:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#neck_2?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#pCTRLTorsoSlump?value" },
+						{ "op" : "push", "val" : -21.07563 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "head:/data/DAZ%203D/Genesis%208/Female/Genesis8Female.dsf#head?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Female:#pCTRLTorsoSlump?value" },
+						{ "op" : "push", "val" : -2.310925 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "pCTRLTorsoSlump-1",
+				"url" : "#pCTRLTorsoSlump"
+			}
+		]
+	}
+}

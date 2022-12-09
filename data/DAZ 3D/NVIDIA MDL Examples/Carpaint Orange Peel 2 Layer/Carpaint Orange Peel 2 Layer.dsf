@@ -1,0 +1,4222 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/NVIDIA%20MDL%20Examples/Carpaint%20Orange%20Peel%202%20Layer/Carpaint%20Orange%20Peel%202%20Layer.dsf",
+		"type" : "material",
+		"contributor" : {
+			"author" : "DAZ 3D",
+			"email" : "support@daz3d.com",
+			"website" : "http://www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2015-05-19T01:58:50Z"
+	},
+	"material_library" : [
+		{
+			"id" : "Carpaint Orange Peel 2 Layer",
+			"diffuse" : {
+				"channel" : {
+					"id" : "diffuse",
+					"type" : "float_color",
+					"name" : "Diffuse Color",
+					"label" : "Base Color",
+					"value" : [ 0.3511192, 0.04328762, 0.04328762 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"step_size" : 1,
+					"color_blend_mode" : "rgb",
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Base paint"
+			},
+			"extra" : [
+				{
+					"type" : "studio/material/daz_brick",
+					"brick_settings" : {
+						"BrickSetup" : {
+							"type" : "settings",
+							"value" : {
+								"Bricks" : {
+									"type" : "settings",
+									"value" : {
+										"Brick_1" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzUserParametersBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"UserOutputParameters" : {
+															"type" : "settings",
+															"value" : {
+																"user_out_1" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "outlinecolorid_value_arg",
+																		"ParamType" : "color",
+																		"PropertyClass" : "DzColorProperty",
+																		"PropertyName" : "OutlineColorID"
+																	}
+																},
+																"user_out_2" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "base_color_value_arg",
+																		"MapArgName" : "base_color_map_arg",
+																		"ParamType" : "color",
+																		"PropertyClass" : "DzFloatColorProperty",
+																		"PropertyName" : "Diffuse Color"
+																	}
+																},
+																"user_out_3" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "flake_intensity",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "flake_intensity"
+																	}
+																},
+																"user_out_4" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "flake_color_value_arg",
+																		"MapArgName" : "flake_color_map_arg",
+																		"ParamType" : "color",
+																		"PropertyClass" : "DzFloatColorProperty",
+																		"PropertyName" : "flake_color"
+																	}
+																},
+																"user_out_5" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "flake_size",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "flake_size"
+																	}
+																},
+																"user_out_6" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "flake_amount",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "flake_amount"
+																	}
+																},
+																"user_out_7" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "flake_roughness_value_arg",
+																		"MapArgName" : "flake_roughness_map_arg",
+																		"ParamType" : "color",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "flake_roughness"
+																	}
+																},
+																"user_out_8" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "flake_bumpiness",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "flake_bumpiness"
+																	}
+																},
+																"user_out_9" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "coat_color_value_arg",
+																		"MapArgName" : "coat_color_map_arg",
+																		"ParamType" : "color",
+																		"PropertyClass" : "DzFloatColorProperty",
+																		"PropertyName" : "coat_color"
+																	}
+																},
+																"user_out_10" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "coat_weight_value_arg",
+																		"MapArgName" : "coat_weight_map_arg",
+																		"ParamType" : "color",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "coat_weight"
+																	}
+																},
+																"user_out_11" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "coat_roughness",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "coat_roughness"
+																	}
+																},
+																"user_out_12" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "coating_ior",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "coating_ior"
+																	}
+																},
+																"user_out_13" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "peel_amount",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "peel_amount"
+																	}
+																},
+																"user_out_14" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "peel_size",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "peel_size"
+																	}
+																},
+																"user_out_15" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "horizontal_tiles_value_arg",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "Horizontal Tiles"
+																	}
+																},
+																"user_out_16" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "vertical_tiles_value_arg",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "Vertical Tiles"
+																	}
+																},
+																"user_out_17" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "horizontal_offset_value_arg",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "Horizontal Offset"
+																	}
+																},
+																"user_out_18" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "vertical_offset_value_arg",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "Vertical Offset"
+																	}
+																}
+															}
+														},
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "User Parameters (11)",
+																"HideParams" : false,
+																"PosX" : 1271,
+																"PosY" : -1974,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 380 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 38,
+																						"Green" : 71,
+																						"Blue" : 91
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 128,
+																						"Green" : 64,
+																						"Blue" : 237
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 89,
+																						"Green" : 87,
+																						"Blue" : 141
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 95,
+																						"Green" : 155,
+																						"Blue" : 243
+																					}
+																				}
+																			}
+																		},
+																		"Param_4" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 91,
+																						"Green" : 8,
+																						"Blue" : 141
+																					}
+																				}
+																			}
+																		},
+																		"Param_5" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 6,
+																						"Green" : 92,
+																						"Blue" : 55
+																					}
+																				}
+																			}
+																		},
+																		"Param_6" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 247,
+																						"Green" : 91,
+																						"Blue" : 60
+																					}
+																				}
+																			}
+																		},
+																		"Param_7" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 11,
+																						"Green" : 49,
+																						"Blue" : 173
+																					}
+																				}
+																			}
+																		},
+																		"Param_8" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 167,
+																						"Green" : 1,
+																						"Blue" : 161
+																					}
+																				}
+																			}
+																		},
+																		"Param_9" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 151,
+																						"Green" : 69,
+																						"Blue" : 173
+																					}
+																				}
+																			}
+																		},
+																		"Param_10" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 133,
+																						"Green" : 1,
+																						"Blue" : 45
+																					}
+																				}
+																			}
+																		},
+																		"Param_11" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 219,
+																						"Green" : 197,
+																						"Blue" : 193
+																					}
+																				}
+																			}
+																		},
+																		"Param_12" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 100,
+																						"Green" : 187,
+																						"Blue" : 22
+																					}
+																				}
+																			}
+																		},
+																		"Param_13" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 69,
+																						"Green" : 156,
+																						"Blue" : 220
+																					}
+																				}
+																			}
+																		},
+																		"Param_14" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 132,
+																						"Green" : 120,
+																						"Blue" : 87
+																					}
+																				}
+																			}
+																		},
+																		"Param_15" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 218,
+																						"Green" : 99,
+																						"Blue" : 173
+																					}
+																				}
+																			}
+																		},
+																		"Param_16" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 254,
+																						"Green" : 165,
+																						"Blue" : 173
+																					}
+																				}
+																			}
+																		},
+																		"Param_17" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 184,
+																						"Green" : 144,
+																						"Blue" : 141
+																					}
+																				}
+																			}
+																		},
+																		"Param_18" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 114,
+																						"Green" : 177,
+																						"Blue" : 237
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"val1" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Auto Add"
+															}
+														},
+														"outlinecolorid_value_arg" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_outlinecolorid_value_arg_b1_t0",
+																"Label" : "Material ID",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Material ID",
+																		"Hidden" : false,
+																		"Path" : "/General/Material ID",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"Name" : "OutlineColorID"
+																	}
+																}
+															}
+														},
+														"base_color_value_arg" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_base_color_value_arg_b1_t0,elr_base_color_map_arg_b1_t1,elr_base_color_map_arg_txt_ins_greyscale_b1_t2,elr_base_color_map_arg_txt_ins_offset_b1_t3,elr_base_color_map_arg_txt_ins_h_tiles_b1_t4,elr_base_color_map_arg_txt_ins_h_offset_b1_t5,elr_base_color_map_arg_txt_ins_v_tiles_b1_t6,elr_base_color_map_arg_txt_ins_v_offset_b1_t7",
+																"Label" : "Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Base Color",
+																		"Hidden" : false,
+																		"Path" : "/Base paint",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : true,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"TextureModifierFlags" : [ "i", 31 ],
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 1,
+																		"BlendMode" : [ "i", 2 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"RedF" : 0.1,
+																				"GreenF" : 0.001,
+																				"BlueF" : 0.001
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"RedF" : 0.1,
+																				"GreenF" : 0.001,
+																				"BlueF" : 0.001
+																			}
+																		},
+																		"MapImage" : "",
+																		"Name" : "Diffuse Color"
+																	}
+																}
+															}
+														},
+														"flake_intensity" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_flake_intensity_b1_t0",
+																"Label" : "Weight",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Flake Weight",
+																		"Hidden" : false,
+																		"Path" : "/Flake layer",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 0.5,
+																		"DefaultValue" : 0.5,
+																		"Name" : "flake_intensity"
+																	}
+																}
+															}
+														},
+														"flake_color_value_arg" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_flake_color_value_arg_b1_t0,elr_flake_color_map_arg_b1_t1,elr_flake_color_map_arg_txt_ins_greyscale_b1_t2,elr_flake_color_map_arg_txt_ins_offset_b1_t3,elr_flake_color_map_arg_txt_ins_h_tiles_b1_t4,elr_flake_color_map_arg_txt_ins_h_offset_b1_t5,elr_flake_color_map_arg_txt_ins_v_tiles_b1_t6,elr_flake_color_map_arg_txt_ins_v_offset_b1_t7",
+																"Label" : "Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Flakes Color",
+																		"Hidden" : false,
+																		"Path" : "/Flake layer",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : true,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"TextureModifierFlags" : [ "i", 31 ],
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 1,
+																		"BlendMode" : [ "i", 2 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"RedF" : 1,
+																				"GreenF" : 0.7,
+																				"BlueF" : 0.02
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"RedF" : 1,
+																				"GreenF" : 0.7,
+																				"BlueF" : 0.02
+																			}
+																		},
+																		"MapImage" : "",
+																		"Name" : "flake_color"
+																	}
+																}
+															}
+														},
+														"flake_size" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_flake_size_b1_t0",
+																"Label" : "Flake size",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Flake Size",
+																		"Hidden" : false,
+																		"Path" : "/Flake layer",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : 0,
+																		"Max" : 0.1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 0.002,
+																		"DefaultValue" : 0.002,
+																		"Name" : "flake_size"
+																	}
+																}
+															}
+														},
+														"flake_amount" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_flake_amount_b1_t0",
+																"Label" : "Flake amount",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Flake Amount",
+																		"Hidden" : false,
+																		"Path" : "/Flake layer",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 0.22,
+																		"DefaultValue" : 0.22,
+																		"Name" : "flake_amount"
+																	}
+																}
+															}
+														},
+														"flake_roughness_value_arg" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_flake_roughness_value_arg_b1_t0,elr_flake_roughness_map_arg_b1_t1,elr_flake_roughness_map_arg_txt_ins_greyscale_b1_t2,elr_flake_roughness_map_arg_txt_ins_offset_b1_t3,elr_flake_roughness_map_arg_txt_ins_h_tiles_b1_t4,elr_flake_roughness_map_arg_txt_ins_h_offset_b1_t5,elr_flake_roughness_map_arg_txt_ins_v_tiles_b1_t6,elr_flake_roughness_map_arg_txt_ins_v_offset_b1_t7",
+																"Label" : "Micro roughness",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Flake Micro Roughness",
+																		"Hidden" : false,
+																		"Path" : "/Flake layer",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : true,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"TextureModifierFlags" : [ "i", 31 ],
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 1,
+																		"AsPercent" : false,
+																		"Value" : 0.2,
+																		"DefaultValue" : 0.2,
+																		"MapImage" : "",
+																		"Name" : "flake_roughness"
+																	}
+																}
+															}
+														},
+														"flake_bumpiness" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_flake_bumpiness_b1_t0",
+																"Label" : "Macro roughness",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Macro Roughness",
+																		"Hidden" : false,
+																		"Path" : "/Flake layer",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : 0.001,
+																		"Max" : 10,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 0.6,
+																		"DefaultValue" : 0.6,
+																		"Name" : "flake_bumpiness"
+																	}
+																}
+															}
+														},
+														"coat_color_value_arg" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_coat_color_value_arg_b1_t0,elr_coat_color_map_arg_b1_t1,elr_coat_color_map_arg_txt_ins_greyscale_b1_t2,elr_coat_color_map_arg_txt_ins_offset_b1_t3,elr_coat_color_map_arg_txt_ins_h_tiles_b1_t4,elr_coat_color_map_arg_txt_ins_h_offset_b1_t5,elr_coat_color_map_arg_txt_ins_v_tiles_b1_t6,elr_coat_color_map_arg_txt_ins_v_offset_b1_t7",
+																"Label" : "Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Top Coat Color",
+																		"Hidden" : false,
+																		"Path" : "/Top coat",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : true,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"TextureModifierFlags" : [ "i", 31 ],
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 1,
+																		"BlendMode" : [ "i", 2 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"RedF" : 1,
+																				"GreenF" : 1,
+																				"BlueF" : 1
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"RedF" : 1,
+																				"GreenF" : 1,
+																				"BlueF" : 1
+																			}
+																		},
+																		"MapImage" : "",
+																		"Name" : "coat_color"
+																	}
+																}
+															}
+														},
+														"coat_weight_value_arg" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_coat_weight_value_arg_b1_t0,elr_coat_weight_map_arg_b1_t1,elr_coat_weight_map_arg_txt_ins_greyscale_b1_t2,elr_coat_weight_map_arg_txt_ins_offset_b1_t3,elr_coat_weight_map_arg_txt_ins_h_tiles_b1_t4,elr_coat_weight_map_arg_txt_ins_h_offset_b1_t5,elr_coat_weight_map_arg_txt_ins_v_tiles_b1_t6,elr_coat_weight_map_arg_txt_ins_v_offset_b1_t7",
+																"Label" : "Weight",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Top Coat Weight",
+																		"Hidden" : false,
+																		"Path" : "/Top coat",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : true,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"TextureModifierFlags" : [ "i", 31 ],
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 1,
+																		"AsPercent" : false,
+																		"Value" : 1,
+																		"DefaultValue" : 1,
+																		"MapImage" : "",
+																		"Name" : "coat_weight"
+																	}
+																}
+															}
+														},
+														"coat_roughness" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_coat_roughness_b1_t0",
+																"Label" : "Micro roughness",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Top Coat Micro Roughness",
+																		"Hidden" : false,
+																		"Path" : "/Top coat",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 0,
+																		"DefaultValue" : 0,
+																		"Name" : "coat_roughness"
+																	}
+																}
+															}
+														},
+														"coating_ior" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_coating_ior_b1_t0",
+																"Label" : "Index of refraction",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Index of Refraction",
+																		"Hidden" : false,
+																		"Path" : "/Top coat",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : 1,
+																		"Max" : 2,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 1.5,
+																		"DefaultValue" : 1.5,
+																		"Name" : "coating_ior"
+																	}
+																}
+															}
+														},
+														"peel_amount" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_peel_amount_b1_t0",
+																"Label" : "Orange peel strength",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Orange Peel Strength",
+																		"Hidden" : false,
+																		"Path" : "/Top coat",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : 0,
+																		"Max" : 0.5,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 0.3,
+																		"DefaultValue" : 0.3,
+																		"Name" : "peel_amount"
+																	}
+																}
+															}
+														},
+														"peel_size" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_peel_size_b1_t0",
+																"Label" : "Orange peel size",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Orange Peel Size",
+																		"Hidden" : false,
+																		"Path" : "/Top coat",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : 0,
+																		"Max" : 10,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 0.05,
+																		"DefaultValue" : 0.05,
+																		"Name" : "peel_size"
+																	}
+																}
+															}
+														},
+														"horizontal_tiles_value_arg" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_horizontal_tiles_value_arg_b1_t0",
+																"Label" : "Horizontal Tiles",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Horizontal Tiles",
+																		"Hidden" : false,
+																		"Path" : "/Tilling",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : -1000,
+																		"Max" : 1000,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 1,
+																		"DefaultValue" : 1,
+																		"Name" : "Horizontal Tiles"
+																	}
+																}
+															}
+														},
+														"vertical_tiles_value_arg" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_vertical_tiles_value_arg_b1_t0",
+																"Label" : "Vertical Tiles",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Vertical Tiles",
+																		"Hidden" : false,
+																		"Path" : "/Tilling",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : -1000,
+																		"Max" : 1000,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 1,
+																		"DefaultValue" : 1,
+																		"Name" : "Vertical Tiles"
+																	}
+																}
+															}
+														},
+														"horizontal_offset_value_arg" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_horizontal_offset_value_arg_b1_t0",
+																"Label" : "Horizontal Offset",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Horizontal Offset",
+																		"Hidden" : false,
+																		"Path" : "/Tilling",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : -1000,
+																		"Max" : 1000,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 0,
+																		"DefaultValue" : 0,
+																		"Name" : "Horizontal Offset"
+																	}
+																}
+															}
+														},
+														"vertical_offset_value_arg" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_vertical_offset_value_arg_b1_t0",
+																"Label" : "Vertical Offset",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Vertical Offset",
+																		"Hidden" : false,
+																		"Path" : "/Tilling",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : -1000,
+																		"Max" : 1000,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 0,
+																		"DefaultValue" : 0,
+																		"Name" : "Vertical Offset"
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_2" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzCustomMDLBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "Custom MDL (1)",
+																"HideParams" : false,
+																"PosX" : -149,
+																"PosY" : -1995,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 229 ],
+																"Height" : [ "i", 422 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 7,
+																						"Green" : 216,
+																						"Blue" : 104
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_4" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_5" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_6" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_7" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_8" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_9" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_10" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_11" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_12" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_13" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_14" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_15" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_16" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_17" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_18" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_19" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_20" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_21" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"MDL Callable" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "MDL Callable",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"Value" : "nvidia::carpaint_orange_peel::carpaint_orange_peel_2_layer"
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"base_color" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Color"
+															}
+														},
+														"flake_intensity" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Weight"
+															}
+														},
+														"flake_color" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Color"
+															}
+														},
+														"flake_size" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Flake size"
+															}
+														},
+														"flake_amount" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Flake amount"
+															}
+														},
+														"flake_roughness" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Micro roughness"
+															}
+														},
+														"flake_bumpiness" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Macro roughness"
+															}
+														},
+														"coat_color" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Color"
+															}
+														},
+														"coat_weight" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Weight"
+															}
+														},
+														"coat_roughness" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Micro roughness"
+															}
+														},
+														"coating_ior" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Index of refraction"
+															}
+														},
+														"peel_amount" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Orange peel strength"
+															}
+														},
+														"peel_size" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Orange peel size"
+															}
+														},
+														"uvw" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Texture_coordinates"
+															}
+														},
+														"Result" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_Result_b2_t0",
+																"Label" : "Result"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_3" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzMDLSurfaceBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickSet" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Name" : "shader_MDL_Surface",
+																		"LastInvalidate" : "1432000693"
+																	}
+																},
+																"BrickTitle" : "MDL Surface (2)",
+																"HideParams" : false,
+																"PosX" : -608,
+																"PosY" : -1851,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 135 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"material" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Material"
+															}
+														},
+														"color_id" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_color_id_b3_t0",
+																"Label" : "Material ID",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Material ID",
+																		"Hidden" : false,
+																		"Path" : "/General/Material ID",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"Name" : "OutlineColorID"
+																	}
+																}
+															}
+														},
+														"subd_displacement_level" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_subd_displacement_level_b3_t0",
+																"Label" : "SubD Displacement Level",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "SubD Displacement Level",
+																		"Hidden" : false,
+																		"Path" : "/MDL Surface (2)",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 12 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : [ "i", 0 ],
+																		"DefaultValue" : [ "i", 0 ],
+																		"Name" : "SubD Displacement Level"
+																	}
+																}
+															}
+														},
+														"max_displacement" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Displace Max"
+															}
+														},
+														"rootSettings" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Root Settings"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_4" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzTextureInstanceBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "Base Color (5)",
+																"HideParams" : false,
+																"PosX" : 353,
+																"PosY" : -2407,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 150 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 228,
+																						"Green" : 177,
+																						"Blue" : 164
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 168,
+																						"Green" : 15,
+																						"Blue" : 139
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_4" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_5" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_6" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																},
+																"ShowAdvanced" : false,
+																"SettingsGroupCollapsed" : true,
+																"HideUnusedParams" : true
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"type" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Type",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 1 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : [ "i", 0 ],
+																		"DefaultValue" : [ "i", 0 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"tint" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_tint_b4_t0",
+																"Label" : "Tint"
+															}
+														},
+														"mono" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_mono_b4_t0",
+																"Label" : "Mono"
+															}
+														},
+														"color" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_color_b4_t0,elr_image_b4_t1,elr_image_txt_ins_greyscale_b4_t2,elr_image_txt_ins_offset_b4_t3,elr_image_txt_ins_h_tiles_b4_t4,elr_image_txt_ins_h_offset_b4_t5,elr_image_txt_ins_v_tiles_b4_t6,elr_image_txt_ins_v_offset_b4_t7",
+																"Label" : "Image",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Color",
+																		"Hidden" : false,
+																		"Path" : "/Base paint",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : true,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"TextureModifierFlags" : [ "i", 31 ],
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 1,
+																		"BlendMode" : [ "i", 2 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"RedF" : 0.1,
+																				"GreenF" : 0.001,
+																				"BlueF" : 0.001
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"RedF" : 0.1,
+																				"GreenF" : 0.001,
+																				"BlueF" : 0.001
+																			}
+																		},
+																		"MapImage" : "",
+																		"Name" : "base_color"
+																	}
+																}
+															}
+														},
+														"direct_scale" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Direct Scale"
+															}
+														},
+														"s" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "S (RSL)"
+															}
+														},
+														"t" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "T (RSL)"
+															}
+														},
+														"uvw" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Texture Coordinate Info (MDL)"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_5" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzMdlRslTilerBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "Texture Tiler (6)",
+																"HideParams" : false,
+																"PosX" : 896,
+																"PosY" : -1582,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 199 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 79,
+																						"Green" : 104,
+																						"Blue" : 152
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 79,
+																						"Green" : 200,
+																						"Blue" : 152
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 99,
+																						"Green" : 100,
+																						"Blue" : 100
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_4" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_5" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_6" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"sout" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_sout_b5_t0",
+																"Label" : "Tiled S (RSL)"
+															}
+														},
+														"tout" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_tout_b5_t0",
+																"Label" : "Tiled T (RSL)"
+															}
+														},
+														"uvw_out" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Texture Coordinate Info (MDL)"
+															}
+														},
+														"sFreq" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_sFreq_b5_t0",
+																"Label" : "Horizontal Tiles",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Horizontal Tiles",
+																		"Hidden" : false,
+																		"Path" : "/Tilling",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : -1000,
+																		"Max" : 1000,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 1,
+																		"DefaultValue" : 1,
+																		"Name" : "Horizontal Tiles"
+																	}
+																}
+															}
+														},
+														"tFreq" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_tFreq_b5_t0",
+																"Label" : "Vertical Tiles",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Vertical Tiles",
+																		"Hidden" : false,
+																		"Path" : "/Tilling",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : -1000,
+																		"Max" : 1000,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 1,
+																		"DefaultValue" : 1,
+																		"Name" : "Vertical Tiles"
+																	}
+																}
+															}
+														},
+														"sOffset" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_sOffset_b5_t0",
+																"Label" : "Horizontal Offset",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Horizontal Offset",
+																		"Hidden" : false,
+																		"Path" : "/Tilling",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : -1000,
+																		"Max" : 1000,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 0,
+																		"DefaultValue" : 0,
+																		"Name" : "Horizontal Offset"
+																	}
+																}
+															}
+														},
+														"tOffset" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_tOffset_b5_t0",
+																"Label" : "Vertical Offset",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Vertical Offset",
+																		"Hidden" : false,
+																		"Path" : "/Tilling",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : -1000,
+																		"Max" : 1000,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 0,
+																		"DefaultValue" : 0,
+																		"Name" : "Vertical Offset"
+																	}
+																}
+															}
+														},
+														"s" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "S (RSL)"
+															}
+														},
+														"t" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "T (RSL)"
+															}
+														},
+														"uvw" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Texture Coordinate Info (MDL)"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_6" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzTextureInstanceBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "Flake Color (8)",
+																"HideParams" : false,
+																"PosX" : 353,
+																"PosY" : -2230,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 150 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 166,
+																						"Green" : 146,
+																						"Blue" : 76
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 30,
+																						"Green" : 124,
+																						"Blue" : 41
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_4" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_5" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_6" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																},
+																"SettingsGroupCollapsed" : true,
+																"HideUnusedParams" : true
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"type" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Type",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 1 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : [ "i", 0 ],
+																		"DefaultValue" : [ "i", 0 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"tint" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_tint_b6_t0",
+																"Label" : "Tint"
+															}
+														},
+														"mono" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_mono_b6_t0",
+																"Label" : "Mono"
+															}
+														},
+														"color" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_color_b6_t0,elr_image_b6_t1,elr_image_txt_ins_greyscale_b6_t2,elr_image_txt_ins_offset_b6_t3,elr_image_txt_ins_h_tiles_b6_t4,elr_image_txt_ins_h_offset_b6_t5,elr_image_txt_ins_v_tiles_b6_t6,elr_image_txt_ins_v_offset_b6_t7",
+																"Label" : "Image",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Color",
+																		"Hidden" : false,
+																		"Path" : "/Flake layer",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : true,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"TextureModifierFlags" : [ "i", 31 ],
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 1,
+																		"BlendMode" : [ "i", 2 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"RedF" : 1,
+																				"GreenF" : 0.7,
+																				"BlueF" : 0.02
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"RedF" : 1,
+																				"GreenF" : 0.7,
+																				"BlueF" : 0.02
+																			}
+																		},
+																		"MapImage" : "",
+																		"Name" : "flake_color"
+																	}
+																}
+															}
+														},
+														"direct_scale" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Direct Scale"
+															}
+														},
+														"s" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "S (RSL)"
+															}
+														},
+														"t" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "T (RSL)"
+															}
+														},
+														"uvw" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Texture Coordinate Info (MDL)"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_7" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzTextureInstanceBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "Flake Roughness (9)",
+																"HideParams" : false,
+																"PosX" : 353,
+																"PosY" : -1800,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 150 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 7,
+																						"Green" : 130,
+																						"Blue" : 160
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 217,
+																						"Green" : 178,
+																						"Blue" : 120
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_4" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_5" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_6" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																},
+																"HideUnusedParams" : true,
+																"SettingsGroupCollapsed" : true
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"type" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Type",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 1 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 0 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"tint" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_tint_b7_t0",
+																"Label" : "Tint"
+															}
+														},
+														"mono" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_mono_b7_t0",
+																"Label" : "Mono"
+															}
+														},
+														"color" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_color_b7_t0,elr_image_b7_t1,elr_image_txt_ins_greyscale_b7_t2,elr_image_txt_ins_offset_b7_t3,elr_image_txt_ins_h_tiles_b7_t4,elr_image_txt_ins_h_offset_b7_t5,elr_image_txt_ins_v_tiles_b7_t6,elr_image_txt_ins_v_offset_b7_t7",
+																"Label" : "Image",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Micro roughness",
+																		"Hidden" : false,
+																		"Path" : "/Flake layer",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : true,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"TextureModifierFlags" : [ "i", 31 ],
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 1,
+																		"AsPercent" : false,
+																		"Value" : 0.2,
+																		"DefaultValue" : 0.2,
+																		"MapImage" : "",
+																		"Name" : "flake_roughness"
+																	}
+																}
+															}
+														},
+														"direct_scale" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Direct Scale"
+															}
+														},
+														"s" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "S (RSL)"
+															}
+														},
+														"t" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "T (RSL)"
+															}
+														},
+														"uvw" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Texture Coordinate Info (MDL)"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_8" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzTextureInstanceBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "Coat Weight (11)",
+																"HideParams" : false,
+																"PosX" : 353,
+																"PosY" : -1446,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 150 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 104,
+																						"Green" : 114,
+																						"Blue" : 244
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 148,
+																						"Green" : 232,
+																						"Blue" : 199
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_4" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_5" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_6" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																},
+																"HideUnusedParams" : true,
+																"SettingsGroupCollapsed" : true
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"type" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Type",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 1 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 0 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"tint" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_tint_b8_t0",
+																"Label" : "Tint"
+															}
+														},
+														"mono" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_mono_b8_t0",
+																"Label" : "Mono"
+															}
+														},
+														"color" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_color_b8_t0,elr_image_b8_t1,elr_image_txt_ins_greyscale_b8_t2,elr_image_txt_ins_offset_b8_t3,elr_image_txt_ins_h_tiles_b8_t4,elr_image_txt_ins_h_offset_b8_t5,elr_image_txt_ins_v_tiles_b8_t6,elr_image_txt_ins_v_offset_b8_t7",
+																"Label" : "Image",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Weight",
+																		"Hidden" : false,
+																		"Path" : "/Top coat",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : true,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"TextureModifierFlags" : [ "i", 31 ],
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 1,
+																		"AsPercent" : false,
+																		"Value" : 1,
+																		"DefaultValue" : 1,
+																		"MapImage" : "",
+																		"Name" : "coat_weight"
+																	}
+																}
+															}
+														},
+														"direct_scale" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Direct Scale"
+															}
+														},
+														"s" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "S (RSL)"
+															}
+														},
+														"t" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "T (RSL)"
+															}
+														},
+														"uvw" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Texture Coordinate Info (MDL)"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_9" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzTextureInstanceBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "Coat Color (10)",
+																"HideParams" : false,
+																"PosX" : 353,
+																"PosY" : -1623,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 150 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 201,
+																						"Green" : 99,
+																						"Blue" : 72
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 80,
+																						"Green" : 31,
+																						"Blue" : 22
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_4" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_5" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_6" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																},
+																"HideUnusedParams" : true,
+																"SettingsGroupCollapsed" : true
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"type" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Type",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 1 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : [ "i", 0 ],
+																		"DefaultValue" : [ "i", 0 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"tint" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_tint_b9_t0",
+																"Label" : "Tint"
+															}
+														},
+														"mono" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_mono_b9_t0",
+																"Label" : "Mono"
+															}
+														},
+														"color" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_color_b9_t0,elr_image_b9_t1,elr_image_txt_ins_greyscale_b9_t2,elr_image_txt_ins_offset_b9_t3,elr_image_txt_ins_h_tiles_b9_t4,elr_image_txt_ins_h_offset_b9_t5,elr_image_txt_ins_v_tiles_b9_t6,elr_image_txt_ins_v_offset_b9_t7",
+																"Label" : "Image",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Color",
+																		"Hidden" : false,
+																		"Path" : "/Top coat",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : true,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"TextureModifierFlags" : [ "i", 31 ],
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 1,
+																		"BlendMode" : [ "i", 2 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"RedF" : 1,
+																				"GreenF" : 1,
+																				"BlueF" : 1
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"RedF" : 1,
+																				"GreenF" : 1,
+																				"BlueF" : 1
+																			}
+																		},
+																		"MapImage" : "",
+																		"Name" : "coat_color"
+																	}
+																}
+															}
+														},
+														"direct_scale" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Direct Scale"
+															}
+														},
+														"s" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "S (RSL)"
+															}
+														},
+														"t" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "T (RSL)"
+															}
+														},
+														"uvw" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Texture Coordinate Info (MDL)"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_10" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzMdlMultiply",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "Scale Flakes",
+																"HideParams" : false,
+																"PosX" : 353,
+																"PosY" : -2053,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 226 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 47,
+																						"Green" : 18,
+																						"Blue" : 112
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"Operation" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Operation",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 158 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : [ "i", 0 ],
+																		"DefaultValue" : [ "i", 0 ]
+																	}
+																},
+																"Result Frequency" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Result Frequency",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 2 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 0 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"x" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "X"
+															}
+														},
+														"y" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Y"
+															}
+														},
+														"Result" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_Result_b10_t0",
+																"Label" : "Result"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_11" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzDirectValueBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "Direct Value (13)",
+																"HideParams" : true,
+																"PosX" : 619,
+																"PosY" : -1933,
+																"BrickIsRightToLeft" : true,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 56 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 178,
+																						"Green" : 254,
+																						"Blue" : 164
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																},
+																"SettingsGroupCollapsed" : true,
+																"InputsGroupCollapsed" : true,
+																"OutputsGroupCollapsed" : true
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"ValueType" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Type",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 8 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : [ "i", 0 ],
+																		"DefaultValue" : [ "i", 0 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"Result" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_Result_b11_t0",
+																"Label" : "Result"
+															}
+														},
+														"value" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_value_b11_t0",
+																"Label" : "Value",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Value",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : -1000,
+																		"Max" : 1000,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 0.01,
+																		"DefaultValue" : 0.01,
+																		"Name" : "value"
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								},
+								"Connections" : {
+									"type" : "settings",
+									"value" : {
+										"Connection_0" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_4",
+												"SourceParam" : "base_color",
+												"TargetParam" : "tint"
+											}
+										},
+										"Connection_1" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "flake_intensity",
+												"TargetParam" : "flake_intensity"
+											}
+										},
+										"Connection_2" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_6",
+												"SourceParam" : "flake_color",
+												"TargetParam" : "tint"
+											}
+										},
+										"Connection_3" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_10",
+												"SourceParam" : "flake_size",
+												"TargetParam" : "Result"
+											}
+										},
+										"Connection_4" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "flake_amount",
+												"TargetParam" : "flake_amount"
+											}
+										},
+										"Connection_5" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_7",
+												"SourceParam" : "flake_roughness",
+												"TargetParam" : "tint"
+											}
+										},
+										"Connection_6" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "flake_bumpiness",
+												"TargetParam" : "flake_bumpiness"
+											}
+										},
+										"Connection_7" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_9",
+												"SourceParam" : "coat_color",
+												"TargetParam" : "tint"
+											}
+										},
+										"Connection_8" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_8",
+												"SourceParam" : "coat_weight",
+												"TargetParam" : "tint"
+											}
+										},
+										"Connection_9" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "coat_roughness",
+												"TargetParam" : "coat_roughness"
+											}
+										},
+										"Connection_10" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "coating_ior",
+												"TargetParam" : "coating_ior"
+											}
+										},
+										"Connection_11" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "peel_amount",
+												"TargetParam" : "peel_amount"
+											}
+										},
+										"Connection_12" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "peel_size",
+												"TargetParam" : "peel_size"
+											}
+										},
+										"Connection_13" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_2",
+												"TargetBrick" : "Brick_5",
+												"SourceParam" : "uvw",
+												"TargetParam" : "uvw_out"
+											}
+										},
+										"Connection_14" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_3",
+												"TargetBrick" : "Brick_2",
+												"SourceParam" : "material",
+												"TargetParam" : "Result"
+											}
+										},
+										"Connection_15" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_3",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "color_id",
+												"TargetParam" : "outlinecolorid_value_arg"
+											}
+										},
+										"Connection_16" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_4",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "color",
+												"TargetParam" : "base_color_value_arg"
+											}
+										},
+										"Connection_17" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_4",
+												"TargetBrick" : "Brick_5",
+												"SourceParam" : "uvw",
+												"TargetParam" : "uvw_out"
+											}
+										},
+										"Connection_18" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_5",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "sFreq",
+												"TargetParam" : "horizontal_tiles_value_arg"
+											}
+										},
+										"Connection_19" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_5",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "tFreq",
+												"TargetParam" : "vertical_tiles_value_arg"
+											}
+										},
+										"Connection_20" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_5",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "sOffset",
+												"TargetParam" : "horizontal_offset_value_arg"
+											}
+										},
+										"Connection_21" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_5",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "tOffset",
+												"TargetParam" : "vertical_offset_value_arg"
+											}
+										},
+										"Connection_22" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_6",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "color",
+												"TargetParam" : "flake_color_value_arg"
+											}
+										},
+										"Connection_23" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_6",
+												"TargetBrick" : "Brick_5",
+												"SourceParam" : "uvw",
+												"TargetParam" : "uvw_out"
+											}
+										},
+										"Connection_24" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_7",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "color",
+												"TargetParam" : "flake_roughness_value_arg"
+											}
+										},
+										"Connection_25" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_7",
+												"TargetBrick" : "Brick_5",
+												"SourceParam" : "uvw",
+												"TargetParam" : "uvw_out"
+											}
+										},
+										"Connection_26" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_8",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "color",
+												"TargetParam" : "coat_weight_value_arg"
+											}
+										},
+										"Connection_27" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_8",
+												"TargetBrick" : "Brick_5",
+												"SourceParam" : "uvw",
+												"TargetParam" : "uvw_out"
+											}
+										},
+										"Connection_28" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_9",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "color",
+												"TargetParam" : "coat_color_value_arg"
+											}
+										},
+										"Connection_29" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_9",
+												"TargetBrick" : "Brick_5",
+												"SourceParam" : "uvw",
+												"TargetParam" : "uvw_out"
+											}
+										},
+										"Connection_30" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_10",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "x",
+												"TargetParam" : "flake_size"
+											}
+										},
+										"Connection_31" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_10",
+												"TargetBrick" : "Brick_11",
+												"SourceParam" : "y",
+												"TargetParam" : "Result"
+											}
+										}
+									}
+								},
+								"BrickUserName" : "Carpaint Orange Peel 2 Layer",
+								"Identifier" : "{b1a4ce23-e3e3-47a3-bf56-cc2f2628d04a}"
+							}
+						}
+					}
+				},
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Tags",
+								"type" : "string",
+								"label" : "Tags",
+								"value" : ""
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"label" : "Smooth",
+								"value" : true
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"label" : "Angle",
+								"value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"value" : false
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "OutlineColorID",
+								"type" : "color",
+								"label" : "Material ID",
+								"value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/General/Material ID"
+						},
+						{
+							"channel" : {
+								"id" : "flake_intensity",
+								"type" : "float",
+								"label" : "Flake Weight",
+								"value" : 0.5,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Flake layer"
+						},
+						{
+							"channel" : {
+								"id" : "flake_color",
+								"type" : "float_color",
+								"label" : "Flakes Color",
+								"value" : [ 1, 0.8503349, 0.1689433 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 1,
+								"color_blend_mode" : "rgb",
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Flake layer"
+						},
+						{
+							"channel" : {
+								"id" : "flake_size",
+								"type" : "float",
+								"label" : "Flake Size",
+								"value" : 0.002,
+								"min" : 0,
+								"max" : 0.1,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Flake layer"
+						},
+						{
+							"channel" : {
+								"id" : "flake_amount",
+								"type" : "float",
+								"label" : "Flake Amount",
+								"value" : 0.22,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Flake layer"
+						},
+						{
+							"channel" : {
+								"id" : "flake_roughness",
+								"type" : "float",
+								"label" : "Flake Micro Roughness",
+								"value" : 0.2,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 1,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Flake layer"
+						},
+						{
+							"channel" : {
+								"id" : "flake_bumpiness",
+								"type" : "float",
+								"label" : "Macro Roughness",
+								"value" : 0.6,
+								"min" : 0.001,
+								"max" : 10,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Flake layer"
+						},
+						{
+							"channel" : {
+								"id" : "coat_color",
+								"type" : "float_color",
+								"label" : "Top Coat Color",
+								"value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 1,
+								"color_blend_mode" : "rgb",
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Top coat"
+						},
+						{
+							"channel" : {
+								"id" : "coat_weight",
+								"type" : "float",
+								"label" : "Top Coat Weight",
+								"value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 1,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Top coat"
+						},
+						{
+							"channel" : {
+								"id" : "coat_roughness",
+								"type" : "float",
+								"label" : "Top Coat Micro Roughness",
+								"value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Top coat"
+						},
+						{
+							"channel" : {
+								"id" : "coating_ior",
+								"type" : "float",
+								"label" : "Index of Refraction",
+								"value" : 1.5,
+								"min" : 1,
+								"max" : 2,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Top coat"
+						},
+						{
+							"channel" : {
+								"id" : "peel_amount",
+								"type" : "float",
+								"label" : "Orange Peel Strength",
+								"value" : 0.3,
+								"min" : 0,
+								"max" : 0.5,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Top coat"
+						},
+						{
+							"channel" : {
+								"id" : "peel_size",
+								"type" : "float",
+								"label" : "Orange Peel Size",
+								"value" : 0.05,
+								"min" : 0,
+								"max" : 10,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Top coat"
+						},
+						{
+							"channel" : {
+								"id" : "Horizontal Tiles",
+								"type" : "float",
+								"label" : "Horizontal Tiles",
+								"value" : 1,
+								"min" : -1000,
+								"max" : 1000,
+								"step_size" : 0.01
+							},
+							"group" : "/Tilling"
+						},
+						{
+							"channel" : {
+								"id" : "Vertical Tiles",
+								"type" : "float",
+								"label" : "Vertical Tiles",
+								"value" : 1,
+								"min" : -1000,
+								"max" : 1000,
+								"step_size" : 0.01
+							},
+							"group" : "/Tilling"
+						},
+						{
+							"channel" : {
+								"id" : "Horizontal Offset",
+								"type" : "float",
+								"label" : "Horizontal Offset",
+								"value" : 0,
+								"min" : -1000,
+								"max" : 1000,
+								"step_size" : 0.01
+							},
+							"group" : "/Tilling"
+						},
+						{
+							"channel" : {
+								"id" : "Vertical Offset",
+								"type" : "float",
+								"label" : "Vertical Offset",
+								"value" : 0,
+								"min" : -1000,
+								"max" : 1000,
+								"step_size" : 0.01
+							},
+							"group" : "/Tilling"
+						}
+					]
+				}
+			]
+		}
+	]
+}

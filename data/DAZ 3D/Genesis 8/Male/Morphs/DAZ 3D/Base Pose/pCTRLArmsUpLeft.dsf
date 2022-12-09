@@ -1,0 +1,100 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Pose/pCTRLArmsUpLeft.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-06-21T23:27:32Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "pCTRLArmsUpLeft",
+			"name" : "pCTRLArmsUpLeft",
+			"parent" : "/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#Genesis8Male",
+			"presentation" : {
+				"type" : "Modifier/Corrective",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "pCTRLArmsUpLeft",
+				"label" : "pCTRLArmsUpLeft",
+				"visible" : false,
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Hidden/Pose Controls/Arms",
+			"formulas" : [
+				{
+					"output" : "lCollar:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lCollar?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLArmsUpLeft?value" },
+						{ "op" : "push", "val" : -30 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lCollar:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lCollar?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLArmsUpLeft?value" },
+						{ "op" : "push", "val" : 45 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lShldr:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lShldr?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLArmsUpLeft?value" },
+						{ "op" : "push", "val" : -15.11364 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lShldr:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lShldr?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLArmsUpLeft?value" },
+						{ "op" : "push", "val" : 87.80303 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lShldrTwist:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lShldrTwist?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLArmsUpLeft?value" },
+						{ "op" : "push", "val" : -59.20454 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lPectoral:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lPectoral?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLArmsUpLeft?value" },
+						{ "op" : "push", "val" : -2.086163e-07 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "pCTRLArmsUpLeft-1",
+				"url" : "#pCTRLArmsUpLeft"
+			}
+		]
+	}
+}

@@ -1,0 +1,60 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20Shorts/Morphs/Daz%203D/Base/l_thigh_CTRLMD_N_ZRotate_90.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : ""
+		},
+		"revision" : "1.0",
+		"modified" : "2022-10-18T14:53:00Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "CTRLMD_N_ZRotate_90",
+			"name" : "CTRLMD_N_ZRotate_90",
+			"parent" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20Shorts/EssentialShortsG9.dsf#l_thigh",
+			"presentation" : {
+				"type" : "Modifier/Corrective",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.5019608, 0, 0 ], [ 0.5019608, 0, 0 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "CTRLMD_N_ZRotate_90",
+				"label" : "CTRLMD_N_ZRotate_90",
+				"visible" : false,
+				"locked" : true,
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Hidden/CTRLMDs",
+			"formulas" : [
+				{
+					"output" : "l_thigh:#CTRLMD_N_ZRotate_90?value",
+					"operations" : [
+						{ "op" : "push", "url" : "l_thigh:/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20Shorts/EssentialShortsG9.dsf#l_thigh?rotation/z" },
+						{ "op" : "push", "val" : 0.01111111 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "CTRLMD_N_ZRotate_90-1",
+				"url" : "#CTRLMD_N_ZRotate_90"
+			}
+		]
+	}
+}

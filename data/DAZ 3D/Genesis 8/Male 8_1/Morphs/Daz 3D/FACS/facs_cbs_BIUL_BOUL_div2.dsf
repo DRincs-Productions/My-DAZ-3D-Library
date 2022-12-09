@@ -1,0 +1,108 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%208/Male%208_1/Morphs/DAZ%203D/FACS/facs_cbs_BIUL_BOUL_div2.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2020-10-29T14:05:20Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_cbs_BIUxBOUL_div2",
+			"name" : "facs_cbs_BIUL_BOUL_div2",
+			"parent" : "/data/Daz%203D/Genesis%208/Male%208_1/Genesis8_1Male.dsf#Genesis81MaleGeom",
+			"presentation" : {
+				"type" : "Modifier/Corrective",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.1607843, 0.1607843, 0.1607843 ], [ 0.4980392, 0, 0 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "facs_cbs_BIUL_BOUL_div2",
+				"visible" : false,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Hidden/FACS/Fixes",
+			"formulas" : [
+				{
+					"output" : "Genesis8_1Male:#facs_cbs_BIUxBOUL_div2?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Male:/data/Daz%203D/Genesis%208/Male%208_1/Morphs/DAZ%203D/FACS/facs_bs_BrowInnerUpLeft_div2.dsf#facs_bs_BrowInnerUpLeft_div2?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis8_1Male:#facs_cbs_BIUxBOUL_div2?value",
+					"stage" : "mult",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8_1Male:/data/Daz%203D/Genesis%208/Male%208_1/Morphs/DAZ%203D/FACS/facs_bs_BrowOuterUpLeft_div2.dsf#facs_BrowOuterUpLeft?value" }
+					]
+				}
+			],
+			"morph" : {
+				"vertex_count" : 16384,
+				"deltas" : {
+					"count" : 31,
+					"values" : [
+						[ 591, -0.0006914139, -0.001617432, -0.0001502037 ],
+						[ 594, -0.001168966, -0.003219604, -0.0007543564 ],
+						[ 597, -0.0006558895, -0.0025177, -0.0004854202 ],
+						[ 735, -0.0001964569, -0.001068115, -0.0004682541 ],
+						[ 736, -0.000674963, -0.001037598, -0.0009765625 ],
+						[ 2319, 0.004969597, 0.001068115, 0.008296013 ],
+						[ 2320, 0.009831905, 0.002975464, 0.0148859 ],
+						[ 2322, -0.0009565353, -0.0006561279, -0.002989769 ],
+						[ 2411, 0.003332615, 0.0007629395, 0.003578186 ],
+						[ 5018, 0.008903027, 0.007675171, 0.02047729 ],
+						[ 5019, 0.01123333, 0.00592041, 0.01501465 ],
+						[ 5022, 0.004664898, 0.001327515, 0.002645493 ],
+						[ 5023, 0.001549244, 0.0005645752, 0.001213551 ],
+						[ 5024, 0.001223087, 0.0004272461, 0.0008845329 ],
+						[ 5026, 0.001677155, 0.002975464, 0.009374619 ],
+						[ 5162, 0.00980401, 0.01512146, 0.006237984 ],
+						[ 5166, 0.004141569, 0.004104614, 0.002580643 ],
+						[ 5171, 0.01061511, 0.01092529, 0.00477314 ],
+						[ 5172, 0.0005853176, 0.002059937, 0.004863739 ],
+						[ 5175, 0.003720045, 0.008911133, 0.00378418 ],
+						[ 5205, 0.001833916, 0.001037598, 0.004603386 ],
+						[ 5209, 0.00976944, 0.003128052, 0.01558971 ],
+						[ 5210, 0.0115428, 0.003143311, 0.01302147 ],
+						[ 5214, 0.006346703, 0.001617432, 0.005727768 ],
+						[ 5217, -0.000105679, -0.0003356934, -0.001211166 ],
+						[ 5218, 0.003401756, 0.001373291, 0.005708694 ],
+						[ 5219, 0.001397967, 0.0009613037, 0.003879547 ],
+						[ 5224, 0.004908085, -0.001876831, 0.00154686 ],
+						[ 5225, 0.005432367, 0.000869751, 0.00627327 ],
+						[ 5226, 0.004416466, -0.002593994, -0.0002484322 ],
+						[ 5227, 0.004906654, 0.0007324219, 0.002717495 ]
+					]
+				},
+				"hd_url" : "/data/Daz%203D/Genesis%208/Male%208_1/Morphs/DAZ%203D/FACS/facs_cbs_BIUL_BOUL_div2.dhdm"
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_cbs_BIUL_BOUL_div2",
+				"url" : "#facs_cbs_BIUxBOUL_div2"
+			}
+		]
+	}
+}

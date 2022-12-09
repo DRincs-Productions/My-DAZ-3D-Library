@@ -1,0 +1,44 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%208/Female%208_1/Morphs/Daz%203D/FACS/alias_head_facs_jnt_TongueLeft.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "0.0",
+		"modified" : "2020-11-13T17:29:26Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_jnt_TongueLeft",
+			"name" : "facs_jnt_TongueLeft",
+			"parent" : "/data/Daz%203D/Genesis%208/Female%208_1/Genesis8_1Female.dsf#head",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "alias",
+				"name" : "facs_jnt_TongueLeft",
+				"label" : "Tongue Left",
+				"target_channel" : "Genesis8_1Female:/data/Daz%203D/Genesis%208/Female%208_1/Morphs/Daz%203D/FACS/facs_jnt_TongueLeft.dsf#facs_jnt_TongueLeft?value"
+			},
+			"group" : "/Pose Controls/Head/Mouth/Tongue"
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_jnt_TongueLeft-1",
+				"url" : "#facs_jnt_TongueLeft"
+			}
+		]
+	}
+}

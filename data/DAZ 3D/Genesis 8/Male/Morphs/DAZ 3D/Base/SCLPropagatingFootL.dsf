@@ -1,0 +1,99 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base/SCLPropagatingFootL.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-06-21T23:27:32Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "SCLPropagatingFootL",
+			"name" : "SCLPropagatingFootL",
+			"parent" : "/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#Genesis8Male",
+			"presentation" : {
+				"type" : "Modifier/Shape",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "SCLPropagatingFootL",
+				"label" : "Foot Propagating Scale Left",
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"region" : "Feet",
+			"group" : "/Real World",
+			"formulas" : [
+				{
+					"output" : "lFoot:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lFoot?scale/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#SCLPropagatingFootL?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lFoot:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lFoot?scale/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#SCLPropagatingFootL?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lFoot:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lFoot?scale/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#SCLPropagatingFootL?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lToe:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lToe?scale/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#SCLPropagatingFootL?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lToe:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lToe?scale/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#SCLPropagatingFootL?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lToe:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lToe?scale/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#SCLPropagatingFootL?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "SCLPropagatingFootL-1",
+				"url" : "#SCLPropagatingFootL"
+			}
+		]
+	}
+}

@@ -1,0 +1,441 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Built-in%20Content/Light%20Disc/omLightDisc.dsf",
+		"type" : "prop",
+		"contributor" : {
+			"author" : "DAZ 3D",
+			"email" : "",
+			"website" : "http://www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "Fri May 4 15:29:03 2012"
+	},
+	"geometry_library" : [
+		{
+			"id" : "geometry",
+			"name" : "geometry",
+			"type" : "polygon_mesh",
+			"vertices" : {
+				"count" : 34,
+				"values" : [
+					[ 0, 0, 0 ],
+					[ 50, 0, 0 ],
+					[ 49.03927, 0, -9.754517 ],
+					[ 46.19397, 0, -19.13417 ],
+					[ 41.57348, 0, -27.77851 ],
+					[ 35.35534, 0, -35.35534 ],
+					[ 27.77851, 0, -41.57348 ],
+					[ 19.13417, 0, -46.19397 ],
+					[ 9.754512, 0, -49.03927 ],
+					[ -2.18557e-06, 0, -50 ],
+					[ -9.754517, 0, -49.03927 ],
+					[ -19.13418, 0, -46.19397 ],
+					[ -27.77852, 0, -41.57348 ],
+					[ -35.35534, 0, -35.35534 ],
+					[ -41.57348, 0, -27.77851 ],
+					[ -46.19397, 0, -19.13416 ],
+					[ -49.03927, 0, -9.754515 ],
+					[ -50, 0, 4.371139e-06 ],
+					[ -49.03927, 0, 9.754523 ],
+					[ -46.19397, 0, 19.13417 ],
+					[ -41.57348, 0, 27.77851 ],
+					[ -35.35533, 0, 35.35534 ],
+					[ -27.7785, 0, 41.57349 ],
+					[ -19.13416, 0, 46.19399 ],
+					[ -9.754519, 0, 49.03927 ],
+					[ 5.96244e-07, 0, 50 ],
+					[ 9.754521, 0, 49.03927 ],
+					[ 19.13418, 0, 46.19397 ],
+					[ 27.77852, 0, 41.57348 ],
+					[ 35.35535, 0, 35.35533 ],
+					[ 41.57348, 0, 27.77851 ],
+					[ 46.19397, 0, 19.13417 ],
+					[ 49.03927, 0, 9.754512 ],
+					[ 50, 0, -8.742279e-06 ]
+				]
+			},
+			"polygon_groups" : {
+				"count" : 1,
+				"values" : [
+					"Group_0"
+				]
+			},
+			"polygon_material_groups" : {
+				"count" : 1,
+				"values" : [
+					"default"
+				]
+			},
+			"polylist" : {
+				"count" : 32,
+				"values" : [
+					[ 0, 0, 0, 2, 1 ],
+					[ 0, 0, 0, 3, 2 ],
+					[ 0, 0, 0, 4, 3 ],
+					[ 0, 0, 0, 5, 4 ],
+					[ 0, 0, 0, 6, 5 ],
+					[ 0, 0, 0, 7, 6 ],
+					[ 0, 0, 0, 8, 7 ],
+					[ 0, 0, 0, 9, 8 ],
+					[ 0, 0, 0, 10, 9 ],
+					[ 0, 0, 0, 11, 10 ],
+					[ 0, 0, 0, 12, 11 ],
+					[ 0, 0, 0, 13, 12 ],
+					[ 0, 0, 0, 14, 13 ],
+					[ 0, 0, 0, 15, 14 ],
+					[ 0, 0, 0, 16, 15 ],
+					[ 0, 0, 0, 17, 16 ],
+					[ 0, 0, 0, 18, 17 ],
+					[ 0, 0, 0, 19, 18 ],
+					[ 0, 0, 0, 20, 19 ],
+					[ 0, 0, 0, 21, 20 ],
+					[ 0, 0, 0, 22, 21 ],
+					[ 0, 0, 0, 23, 22 ],
+					[ 0, 0, 0, 24, 23 ],
+					[ 0, 0, 0, 25, 24 ],
+					[ 0, 0, 0, 26, 25 ],
+					[ 0, 0, 0, 27, 26 ],
+					[ 0, 0, 0, 28, 27 ],
+					[ 0, 0, 0, 29, 28 ],
+					[ 0, 0, 0, 30, 29 ],
+					[ 0, 0, 0, 31, 30 ],
+					[ 0, 0, 0, 32, 31 ],
+					[ 0, 0, 0, 33, 32 ]
+				]
+			},
+			"default_uv_set" : "/data/DAZ%203D/Built-in%20Content/Light%20Disc/UV%20Sets/DAZ%203D/Base/default.dsf#default"
+		}
+	],
+	"node_library" : [
+		{
+			"id" : "omLightDisc",
+			"name" : "omLightDisc",
+			"type" : "node",
+			"label" : "AreaLight Disc 1",
+			"rotation_order" : "XYZ",
+			"center_point" : [
+				{
+					"id" : "x",
+					"type" : "float",
+					"name" : "xOrigin",
+					"label" : "X Center",
+					"visible" : false,
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -3.402823e+38,
+					"max" : 3.402823e+38,
+					"step_size" : 0.01
+				},
+				{
+					"id" : "y",
+					"type" : "float",
+					"name" : "yOrigin",
+					"label" : "Y Center",
+					"visible" : false,
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -3.402823e+38,
+					"max" : 3.402823e+38,
+					"step_size" : 0.01
+				},
+				{
+					"id" : "z",
+					"type" : "float",
+					"name" : "zOrigin",
+					"label" : "Z Center",
+					"visible" : false,
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -3.402823e+38,
+					"max" : 3.402823e+38,
+					"step_size" : 0.01
+				}
+			],
+			"end_point" : [
+				{
+					"id" : "x",
+					"type" : "float",
+					"name" : "xEnd",
+					"label" : "X End",
+					"visible" : false,
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -3.402823e+38,
+					"max" : 3.402823e+38,
+					"step_size" : 0.01
+				},
+				{
+					"id" : "y",
+					"type" : "float",
+					"name" : "yEnd",
+					"label" : "Y End",
+					"visible" : false,
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -3.402823e+38,
+					"max" : 3.402823e+38,
+					"step_size" : 0.01
+				},
+				{
+					"id" : "z",
+					"type" : "float",
+					"name" : "zEnd",
+					"label" : "Z End",
+					"visible" : false,
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -3.402823e+38,
+					"max" : 3.402823e+38,
+					"step_size" : 0.01
+				}
+			],
+			"orientation" : [
+				{
+					"id" : "x",
+					"type" : "float",
+					"name" : "xOrientation",
+					"label" : "X Orientation",
+					"visible" : false,
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -3.402823e+38,
+					"max" : 3.402823e+38,
+					"step_size" : 0.01
+				},
+				{
+					"id" : "y",
+					"type" : "float",
+					"name" : "yOrientation",
+					"label" : "Y Orientation",
+					"visible" : false,
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -3.402823e+38,
+					"max" : 3.402823e+38,
+					"step_size" : 0.01
+				},
+				{
+					"id" : "z",
+					"type" : "float",
+					"name" : "zOrientation",
+					"label" : "Z Orientation",
+					"visible" : false,
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -3.402823e+38,
+					"max" : 3.402823e+38,
+					"step_size" : 0.01
+				}
+			],
+			"rotation" : [
+				{
+					"id" : "x",
+					"type" : "float",
+					"name" : "XRotate",
+					"label" : "X Rotate",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -3.402823e+38,
+					"max" : 3.402823e+38,
+					"step_size" : 0.5
+				},
+				{
+					"id" : "y",
+					"type" : "float",
+					"name" : "YRotate",
+					"label" : "Y Rotate",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -3.402823e+38,
+					"max" : 3.402823e+38,
+					"step_size" : 0.5
+				},
+				{
+					"id" : "z",
+					"type" : "float",
+					"name" : "ZRotate",
+					"label" : "Z Rotate",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -3.402823e+38,
+					"max" : 3.402823e+38,
+					"step_size" : 0.5
+				}
+			],
+			"translation" : [
+				{
+					"id" : "x",
+					"type" : "float",
+					"name" : "XTranslate",
+					"label" : "X Translate",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -3.402823e+38,
+					"max" : 3.402823e+38,
+					"step_size" : 1
+				},
+				{
+					"id" : "y",
+					"type" : "float",
+					"name" : "YTranslate",
+					"label" : "Y Translate",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -3.402823e+38,
+					"max" : 3.402823e+38,
+					"step_size" : 1
+				},
+				{
+					"id" : "z",
+					"type" : "float",
+					"name" : "ZTranslate",
+					"label" : "Z Translate",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -3.402823e+38,
+					"max" : 3.402823e+38,
+					"step_size" : 1
+				}
+			],
+			"scale" : [
+				{
+					"id" : "x",
+					"type" : "float",
+					"name" : "XScale",
+					"label" : "X Scale",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -3.402823e+38,
+					"max" : 3.402823e+38,
+					"display_as_percent" : true,
+					"step_size" : 0.005
+				},
+				{
+					"id" : "y",
+					"type" : "float",
+					"name" : "YScale",
+					"label" : "Y Scale",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -3.402823e+38,
+					"max" : 3.402823e+38,
+					"display_as_percent" : true,
+					"step_size" : 0.005
+				},
+				{
+					"id" : "z",
+					"type" : "float",
+					"name" : "ZScale",
+					"label" : "Z Scale",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -3.402823e+38,
+					"max" : 3.402823e+38,
+					"display_as_percent" : true,
+					"step_size" : 0.005
+				}
+			],
+			"general_scale" : {
+				"id" : "general_scale",
+				"type" : "float",
+				"name" : "Scale",
+				"label" : "Scale",
+				"value" : 1,
+				"current_value" : 1,
+				"min" : -3.402823e+38,
+				"max" : 3.402823e+38,
+				"display_as_percent" : true,
+				"step_size" : 0.005
+			},
+			"presentation" : {
+				"type" : "Prop",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"extra" : [
+				{
+					"type" : "studio_node_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Point At",
+								"type" : "numeric_node",
+								"name" : "Point At",
+								"label" : "Point At",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 0.01,
+								"needs_node" : true,
+								"node" : null
+							},
+							"group" : "/General/Misc"
+						},
+						{
+							"channel" : {
+								"id" : "Renderable",
+								"type" : "bool",
+								"name" : "Renderable",
+								"label" : "Visible in Render",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General/Misc"
+						},
+						{
+							"channel" : {
+								"id" : "Cast Shadows",
+								"type" : "bool",
+								"name" : "Cast Shadows",
+								"label" : "Cast Shadows",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General/Misc"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"name" : "Render Priority",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"current_value" : 6,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/General/Misc"
+						},
+						{
+							"channel" : {
+								"id" : "Visible",
+								"type" : "bool",
+								"name" : "Visible",
+								"label" : "Visible",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General/Misc"
+						},
+						{
+							"channel" : {
+								"id" : "Selectable",
+								"type" : "bool",
+								"name" : "Selectable",
+								"label" : "Selectable",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General/Misc"
+						}
+					]
+				}
+			]
+		}
+	]
+}

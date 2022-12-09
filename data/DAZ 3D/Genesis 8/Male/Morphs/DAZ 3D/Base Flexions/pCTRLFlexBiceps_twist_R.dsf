@@ -1,0 +1,67 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Flexions/pCTRLFlexBiceps_twist_R.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-06-21T23:27:32Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "pCTRLFlexBiceps_twist_R",
+			"name" : "pCTRLFlexBiceps_twist_R",
+			"parent" : "/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#Genesis8Male",
+			"presentation" : {
+				"type" : "Modifier/Corrective",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.1607843, 0.1607843, 0.1607843 ], [ 0.4980392, 0, 0 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "pCTRLFlexBiceps_twist_R",
+				"label" : "pCTRLFlexBiceps_twist_R",
+				"visible" : false,
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Hidden/Correctives/Flexions",
+			"formulas" : [
+				{
+					"output" : "Genesis8Male:#pCTRLFlexBiceps_twist_R?value",
+					"operations" : [
+						{ "op" : "push", "url" : "rWrist:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rWrist?rotation/x" },
+						{ "op" : "push", "val" : -0.01111111 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis8Male:#pCTRLFlexBiceps_twist_R?value",
+					"stage" : "mult",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base/BaseFlexions.dsf#BaseFlexions?value" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "pCTRLFlexBiceps_twist_R-1",
+				"url" : "#pCTRLFlexBiceps_twist_R"
+			}
+		]
+	}
+}

@@ -1,0 +1,92 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Pose/pCTRLArmsDownRight.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-06-21T23:27:32Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "pCTRLArmsDownRight",
+			"name" : "pCTRLArmsDownRight",
+			"parent" : "/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#Genesis8Male",
+			"presentation" : {
+				"type" : "Modifier/Corrective",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "pCTRLArmsDownRight",
+				"label" : "pCTRLArmsDownRight",
+				"visible" : false,
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Hidden/Pose Controls/Arms",
+			"formulas" : [
+				{
+					"output" : "rCollar:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rCollar?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLArmsDownRight?value" },
+						{ "op" : "push", "val" : 3.84 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rShldr:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rShldr?rotation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLArmsDownRight?value" },
+						{ "op" : "push", "val" : 1.92 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rShldr:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rShldr?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLArmsDownRight?value" },
+						{ "op" : "push", "val" : 33.12 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rShldrTwist:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rShldrTwist?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLArmsDownRight?value" },
+						{ "op" : "push", "val" : 9.599999 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rWrist:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rWrist?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLArmsDownRight?value" },
+						{ "op" : "push", "val" : -4.8 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "pCTRLArmsDownRight-1",
+				"url" : "#pCTRLArmsDownRight"
+			}
+		]
+	}
+}

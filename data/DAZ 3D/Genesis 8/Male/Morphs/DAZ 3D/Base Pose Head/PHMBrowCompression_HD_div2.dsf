@@ -1,0 +1,356 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Pose%20Head/PHMBrowCompression_HD_div2.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-06-23T06:01:50Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "PHMBrowCompression_HD_div2",
+			"name" : "PHMBrowCompression_HD_div2",
+			"parent" : "/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#geometry",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "Brow Compression HD",
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Pose Controls/Head/Brow",
+			"formulas" : [
+				{
+					"output" : "rBrowInner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rBrowInner?center_point/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : -0.03852487 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rBrowInner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rBrowInner?center_point/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : -0.01860046 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rBrowInner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rBrowInner?center_point/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : -0.004387856 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rBrowInner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rBrowInner?end_point/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : -0.0376122 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rBrowInner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rBrowInner?end_point/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : -0.02207947 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rBrowInner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rBrowInner?end_point/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : -0.008095741 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rBrowMid:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rBrowMid?center_point/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : 0.01400018 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rBrowMid:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rBrowMid?center_point/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : -0.01669312 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rBrowMid:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rBrowMid?center_point/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : -0.02324677 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rBrowMid:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rBrowMid?end_point/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : -0.006748915 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rBrowMid:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rBrowMid?end_point/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : -0.0151825 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rBrowMid:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rBrowMid?end_point/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : -0.02780628 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lBrowInner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lBrowInner?center_point/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : 0.04634953 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lBrowInner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lBrowInner?center_point/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : -0.01455688 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lBrowInner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lBrowInner?center_point/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : -0.00918293 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lBrowInner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lBrowInner?end_point/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : 0.04543471 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lBrowInner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lBrowInner?end_point/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : -0.016922 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lBrowInner:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lBrowInner?end_point/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : -0.01424599 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lBrowMid:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lBrowMid?center_point/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : -0.01514697 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lBrowMid:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lBrowMid?center_point/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : -0.01724243 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lBrowMid:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lBrowMid?center_point/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : -0.02563477 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lBrowMid:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lBrowMid?end_point/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : 0.007170677 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lBrowMid:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lBrowMid?end_point/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : -0.01527405 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lBrowMid:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lBrowMid?end_point/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#PHMBrowCompression_HD_div2?value" },
+						{ "op" : "push", "val" : -0.03043652 },
+						{ "op" : "mult" }
+					]
+				}
+			],
+			"morph" : {
+				"vertex_count" : 16384,
+				"deltas" : {
+					"count" : 103,
+					"values" : [
+						[ 59, -0.004964, 0.02384949, 0.03114796 ],
+						[ 68, 0.012119, 0.01701355, -0.0003108978 ],
+						[ 947, 0.00635004, -0.01002502, 0.001558304 ],
+						[ 2168, 0.02880025, -0.02200317, -0.02048111 ],
+						[ 2169, 0.04207993, -0.01100159, -0.02997112 ],
+						[ 2170, -0.02541971, -0.02600098, -0.02724171 ],
+						[ 2171, -0.10142, -0.05302429, -0.03542328 ],
+						[ 2172, -0.03350398, -0.007492065, -0.03672314 ],
+						[ 2225, 0.04108012, -0.02301025, -0.006892204 ],
+						[ 2278, 0.05524993, 0.03065491, 0.008086205 ],
+						[ 2318, 0.02298599, 0.01101685, -0.01583099 ],
+						[ 2319, 0.005670071, -0.01000977, -0.06511116 ],
+						[ 2320, -0.02188063, -0.02500916, -0.02129078 ],
+						[ 2321, 0.04848015, 0, -0.0008516312 ],
+						[ 2322, 0.04558015, -0.006988525, -0.01773167 ],
+						[ 2347, 0.02761984, -0.01701355, -0.04334068 ],
+						[ 2348, 0.01730013, -3.051758e-05, -0.006481171 ],
+						[ 2349, 0.03271008, -0.01602173, 0.01013851 ],
+						[ 2350, 0.06345987, 0.00100708, -0.0003509521 ],
+						[ 2351, 0.07852006, -0.02101135, -0.02104187 ],
+						[ 2352, 0.1199698, -0.02600098, -0.0001115799 ],
+						[ 2353, 0.02708983, 0.02198792, -0.03052139 ],
+						[ 2354, -0.01141977, -0.01301575, -0.02273178 ],
+						[ 2357, -0.008741379, -0.00100708, -0.02583122 ],
+						[ 2358, -0.004021645, -0.005981445, -0.03918123 ],
+						[ 2417, -0.01775074, -0.01800537, -0.03685093 ],
+						[ 2418, -0.01815081, -0.02101135, -0.05423069 ],
+						[ 4927, -0.006671965, 0.006256104, 0.03905678 ],
+						[ 4928, 0.00287, -0.009811401, 0.01659775 ],
+						[ 4931, -0.01951015, 0.02798462, 0.02070808 ],
+						[ 4932, 0.006274998, -0.006240845, 0.008281708 ],
+						[ 4956, 0.02338994, -0.01599121, 0.01471901 ],
+						[ 4961, 0.006541, -0.04734802, 0.007686615 ],
+						[ 4962, 0.08541805, 0.07336426, -0.03453732 ],
+						[ 4963, 0.003612995, 0.0005950928, 0.01941395 ],
+						[ 5008, 0.00021, -0.02403259, -0.007661819 ],
+						[ 5016, 0.008952081, 0.009979248, -0.03215313 ],
+						[ 5018, 0.01817989, 0.005966187, -0.02774143 ],
+						[ 5026, -0.001900077, 0.01799011, -0.02687168 ],
+						[ 5172, 0.01179296, 0.01698303, -0.03873158 ],
+						[ 5202, -0.000884, 0.02099609, -0.02104092 ],
+						[ 5203, -0.001016974, 0.01799011, -0.02538109 ],
+						[ 5204, 0.04603982, 0.01896667, -0.01838017 ],
+						[ 5205, 0.04508996, 0.003982544, -0.02239037 ],
+						[ 5209, 0.003829956, -0.02301025, -0.04207134 ],
+						[ 5210, -0.0138998, -0.01600647, -0.02929211 ],
+						[ 5215, 0.004180074, 0.02398682, -0.01592159 ],
+						[ 5216, 1.5e-05, 0.01298523, -0.03134155 ],
+						[ 5217, -0.0008589029, 0.02799988, -0.04269123 ],
+						[ 5218, 0.02259994, 0.01599121, -0.03437138 ],
+						[ 5219, 0.02317011, 0.0009765625, -0.03658009 ],
+						[ 5224, -0.01758003, -0.02500916, -0.01728153 ],
+						[ 5225, 0.007499933, -0.01600647, -0.01345158 ],
+						[ 5228, 0.00575006, 0.01799011, -0.03458023 ],
+						[ 6069, 0.02546, -0.00201416, 0.01044941 ],
+						[ 6073, 0.02169001, 0.007019043, 0.02022743 ],
+						[ 6082, 0.02007008, 0.007980347, 0.007867813 ],
+						[ 6950, -0.02052999, -0.01599121, 0.01659822 ],
+						[ 7133, -0.01669002, -0.00201416, 0.0008192062 ],
+						[ 8354, -0.02970004, -0.02001953, -0.01896191 ],
+						[ 8355, -0.03679991, -0.01602173, -0.04518127 ],
+						[ 8356, 0.02571988, -0.02600098, -0.02772141 ],
+						[ 8357, 0.07399589, -0.05500793, -0.008293152 ],
+						[ 8358, -0.003593981, -0.006195068, -0.01257515 ],
+						[ 8411, -0.03644001, -0.02500916, 0.0001564026 ],
+						[ 8464, -0.05168581, 0.0305481, 0.009843826 ],
+						[ 8504, -0.004939079, 0.05001831, -0.007361412 ],
+						[ 8505, -0.004000187, -0.005004883, -0.05476093 ],
+						[ 8506, 0.02128077, -0.02401733, -0.02000046 ],
+						[ 8507, -0.04422998, 0.002990723, 0.002718925 ],
+						[ 8508, -0.03820014, -0.01600647, -0.02748299 ],
+						[ 8533, -0.02838993, -0.01802063, -0.04101086 ],
+						[ 8534, -0.01929998, 0.0009765625, -0.00616169 ],
+						[ 8535, -0.03538013, -0.01802063, 0.01404858 ],
+						[ 8536, -0.05068994, -0.007019043, 0.007027626 ],
+						[ 8537, -0.0538702, -0.03601074, -0.01093102 ],
+						[ 8538, -0.09146988, -0.02998352, 0.007556915 ],
+						[ 8540, 0.01125979, -0.01301575, -0.02468204 ],
+						[ 11074, 0.005034, 0.008178711, 0.03856182 ],
+						[ 11077, 0.02080023, 0.02598572, 0.01922798 ],
+						[ 11078, -0.007514, -0.006408691, 0.005487442 ],
+						[ 11101, -0.02333999, -0.01599121, 0.01495934 ],
+						[ 11105, -0.06441605, 0.05717468, -0.03813839 ],
+						[ 11106, -0.003022015, 0.002243042, 0.02581787 ],
+						[ 11159, -0.01882005, 0.007995605, -0.02493095 ],
+						[ 11167, 0.00180006, 0.01899719, -0.02510071 ],
+						[ 11296, -0.01969004, 0.022995, -0.05230236 ],
+						[ 11305, -0.01175994, 0.01698303, -0.03865147 ],
+						[ 11333, -0.005924106, 0.03999329, -0.02424145 ],
+						[ 11334, -0.04466987, 0.01997375, -0.01708031 ],
+						[ 11335, -0.04225993, 0.002990723, -0.02540112 ],
+						[ 11339, -0.009749889, -0.02700806, -0.03706169 ],
+						[ 11340, 0.01186085, -0.01600647, -0.02577114 ],
+						[ 11345, -0.03334999, 0.04296875, -0.02503204 ],
+						[ 11346, 0.0009769201, 0.02799988, -0.04262161 ],
+						[ 11347, -0.02092981, 0.01399231, -0.03890324 ],
+						[ 11348, -0.02156007, 0.0009765625, -0.03667068 ],
+						[ 11354, -0.008229971, -0.01600647, -0.01176167 ],
+						[ 11355, 0.008579731, -0.01400757, -0.03436089 ],
+						[ 11357, -0.005740047, 0.01699829, -0.03722095 ],
+						[ 12135, -0.02175009, -0.0009918213, 0.01054859 ],
+						[ 12139, -0.01994002, 0.004974365, 0.02011871 ],
+						[ 12151, -0.01184988, 0.009994507, 0.006229401 ]
+					]
+				},
+				"hd_url" : "/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Pose%20Head/PHMBrowCompression_HD_div2.dhdm"
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "PHMBrowCompression_HD_div2-1",
+				"url" : "#PHMBrowCompression_HD_div2"
+			}
+		]
+	}
+}

@@ -1,0 +1,257 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Pose%20Head/ePHMCheekCreaseR.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-06-21T23:27:33Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "ePHMCheekCreaseR",
+			"name" : "ePHMCheekCreaseR",
+			"parent" : "/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#geometry",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "Cheek Crease Right",
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Pose Controls/Head/Cheeks and Jaw",
+			"formulas" : [
+				{
+					"output" : "rLipNasolabialCrease:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rLipNasolabialCrease?center_point/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#ePHMCheekCreaseR?value" },
+						{ "op" : "push", "val" : -0.04898596 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rLipNasolabialCrease:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rLipNasolabialCrease?center_point/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#ePHMCheekCreaseR?value" },
+						{ "op" : "push", "val" : 0.0643158 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rLipNasolabialCrease:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rLipNasolabialCrease?center_point/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#ePHMCheekCreaseR?value" },
+						{ "op" : "push", "val" : -0.01685238 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rLipNasolabialCrease:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rLipNasolabialCrease?end_point/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#ePHMCheekCreaseR?value" },
+						{ "op" : "push", "val" : -0.01019382 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rLipNasolabialCrease:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rLipNasolabialCrease?end_point/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#ePHMCheekCreaseR?value" },
+						{ "op" : "push", "val" : -0.002044678 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rLipNasolabialCrease:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rLipNasolabialCrease?end_point/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#ePHMCheekCreaseR?value" },
+						{ "op" : "push", "val" : -0.02115536 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rNasolabialUpper:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rNasolabialUpper?center_point/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#ePHMCheekCreaseR?value" },
+						{ "op" : "push", "val" : -4.589558e-05 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rNasolabialUpper:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rNasolabialUpper?center_point/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#ePHMCheekCreaseR?value" },
+						{ "op" : "push", "val" : 0.01828003 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rNasolabialUpper:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rNasolabialUpper?center_point/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#ePHMCheekCreaseR?value" },
+						{ "op" : "push", "val" : 0.001099586 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rNasolabialUpper:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rNasolabialUpper?end_point/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#ePHMCheekCreaseR?value" },
+						{ "op" : "push", "val" : -0.000528574 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rNasolabialUpper:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rNasolabialUpper?end_point/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#ePHMCheekCreaseR?value" },
+						{ "op" : "push", "val" : -0.02008057 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rNasolabialUpper:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rNasolabialUpper?end_point/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#ePHMCheekCreaseR?value" },
+						{ "op" : "push", "val" : -0.0008659363 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rNasolabialMiddle:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rNasolabialMiddle?center_point/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#ePHMCheekCreaseR?value" },
+						{ "op" : "push", "val" : 0.03414869 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rNasolabialMiddle:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rNasolabialMiddle?center_point/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#ePHMCheekCreaseR?value" },
+						{ "op" : "push", "val" : -0.08457947 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rNasolabialMiddle:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rNasolabialMiddle?center_point/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#ePHMCheekCreaseR?value" },
+						{ "op" : "push", "val" : -0.01348972 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rNasolabialMiddle:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rNasolabialMiddle?end_point/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#ePHMCheekCreaseR?value" },
+						{ "op" : "push", "val" : 0.009905577 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rNasolabialMiddle:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rNasolabialMiddle?end_point/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#ePHMCheekCreaseR?value" },
+						{ "op" : "push", "val" : -0.05329895 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rNasolabialMiddle:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rNasolabialMiddle?end_point/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#ePHMCheekCreaseR?value" },
+						{ "op" : "push", "val" : -0.02583694 },
+						{ "op" : "mult" }
+					]
+				}
+			],
+			"morph" : {
+				"vertex_count" : 16384,
+				"deltas" : {
+					"count" : 53,
+					"values" : [
+						[ 6993, 0.0005919933, 0.0008087158, -0.002438545 ],
+						[ 6994, 0.0006787777, 0.0009460449, -0.002931595 ],
+						[ 7121, 0.001435757, -0.001556396, -0.0001268387 ],
+						[ 7731, 0.03265882, -0.1274109, -0.0166893 ],
+						[ 7732, 0.03155947, -0.1209717, -0.01990414 ],
+						[ 7770, 0.03224778, -0.05767822, -0.01306343 ],
+						[ 8367, 0.004384995, 0.007537842, -0.02931976 ],
+						[ 8368, 0.01126194, 0.02212524, -0.04611397 ],
+						[ 8419, -0.004918456, -0.0003662109, -0.005002975 ],
+						[ 8421, -0.022035, 0.03659058, -0.01934528 ],
+						[ 8424, 0.08333886, -0.0247345, -0.05705929 ],
+						[ 8426, 0.03844118, -0.04829407, -0.001423836 ],
+						[ 8427, 0.02122474, -0.07763672, 0.003403664 ],
+						[ 8428, -0.001404524, -0.0001678467, 0.000752449 ],
+						[ 8432, 0.03533459, -0.0914917, -0.01733208 ],
+						[ 8446, 0.001185298, -0.01213074, 0.002176285 ],
+						[ 8447, -0.009483695, -0.02281189, 0.02668285 ],
+						[ 8452, 0.05225217, -0.01589966, -0.02596664 ],
+						[ 8454, -0.03859401, 0.004074097, 0.02932358 ],
+						[ 8456, 0.007912636, -0.04638672, 0.002228737 ],
+						[ 8457, 0.01789212, -0.1098785, -0.004668236 ],
+						[ 8458, -0.008654356, -0.0003662109, -0.1093512 ],
+						[ 8459, -0.03959572, 0.06716919, -0.03341007 ],
+						[ 8460, 0.01597881, -0.0579071, 0.001220703 ],
+						[ 8463, 0.03995514, -0.1182861, -0.01252842 ],
+						[ 8471, 0.001267433, 0.0004577637, -0.004598141 ],
+						[ 8483, -0.01855087, 0.02824402, -0.003799438 ],
+						[ 8484, -0.004593134, 0.005172729, -0.0004320145 ],
+						[ 8485, -0.01901889, 0.03318787, -0.006130219 ],
+						[ 8487, 0.01390362, -0.05204773, -0.002989769 ],
+						[ 8489, 0.03925109, -0.1121979, -0.01630592 ],
+						[ 8490, -0.03182197, 0.03981018, -0.002502441 ],
+						[ 8491, -0.05972576, 0.08647156, -0.01266575 ],
+						[ 8492, -0.06851959, 0.1078033, -0.02989864 ],
+						[ 8493, 0.01109266, -0.02850342, -0.003453255 ],
+						[ 8496, 0.05660439, -0.130661, -0.03532124 ],
+						[ 8500, 0.06458235, -0.09303284, -0.01173162 ],
+						[ 8501, 0.07713008, -0.1262054, -0.02642488 ],
+						[ 8503, 0.009941578, -0.01252747, -0.001049995 ],
+						[ 9854, -0.007589698, 0.01345825, -0.006583214 ],
+						[ 9855, -0.0009378195, -0.0005493164, -0.001109123 ],
+						[ 9856, 0.02472818, -0.008895874, -0.01450825 ],
+						[ 9857, 0.007884145, -0.002502441, -0.003904343 ],
+						[ 11237, -0.05622196, 0.09617615, -0.0381403 ],
+						[ 11238, -0.001077175, 0.002334595, -0.0007276535 ],
+						[ 11241, 0.00440836, 0.01580811, -0.06892204 ],
+						[ 11242, 0.02176094, 0.007858276, -0.06551743 ],
+						[ 11244, 0.02733231, 0.007705688, -0.1653409 ],
+						[ 11246, 0.01085639, 0.01403809, -0.1522512 ],
+						[ 11249, -0.007771015, 0.02096558, -0.1473866 ],
+						[ 11250, 0.007977962, 0.001953125, -0.02976465 ],
+						[ 11251, -0.008603334, 0.007537842, -0.1252537 ],
+						[ 11252, -0.001374722, 0.003173828, -0.0008955002 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "ePHMCheekCreaseR-1",
+				"url" : "#ePHMCheekCreaseR"
+			}
+		]
+	}
+}

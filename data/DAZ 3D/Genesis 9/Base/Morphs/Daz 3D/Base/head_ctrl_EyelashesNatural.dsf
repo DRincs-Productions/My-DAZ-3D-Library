@@ -1,0 +1,132 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base/head_ctrl_EyelashesNatural.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-10-05T20:41:40Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "head_ctrl_EyelashesNatural",
+			"name" : "head_ctrl_EyelashesNatural",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#Genesis9",
+			"presentation" : {
+				"type" : "Modifier/Shape",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.5019608, 0.5019608, 0.7529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "Eyelashes Natural",
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"region" : "Eyes",
+			"group" : "/Eyelashes/Base",
+			"formulas" : [
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base/head_bs_EyelashesSkewIrregularUpper.dsf#head_bs_EyelashesSkewIrregularUpper?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#head_ctrl_EyelashesNatural?value" },
+						{ "op" : "push", "val" : 0.67 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base/head_bs_EyelashesSkewIrregularLower.dsf#head_bs_EyelashesSkewIrregularLower?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#head_ctrl_EyelashesNatural?value" },
+						{ "op" : "push", "val" : 0.67 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base/head_bs_EyelashesRootSpreadIrregularUpper.dsf#head_bs_EyelashesRootSpreadIrregularUpper?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#head_ctrl_EyelashesNatural?value" },
+						{ "op" : "push", "val" : 0.34 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base/head_bs_EyelashesRootSpreadIrregularLower.dsf#head_bs_EyelashesRootSpreadIrregularLower?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#head_ctrl_EyelashesNatural?value" },
+						{ "op" : "push", "val" : 0.34 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base/head_bs_EyelashesRootSkewIrregular.dsf#head_bs_EyelashesRootSkewIrregular?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#head_ctrl_EyelashesNatural?value" },
+						{ "op" : "push", "val" : 0.67 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base/head_bs_EyelashesCurlIrregularUpper.dsf#head_bs_EyelashesCurlIrregularUpper?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#head_ctrl_EyelashesNatural?value" },
+						{ "op" : "push", "val" : 0.34 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base/head_bs_EyelashesCurlIrregularLower.dsf#head_bs_EyelashesCurlIrregularLower?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#head_ctrl_EyelashesNatural?value" },
+						{ "op" : "push", "val" : 0.34 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base/head_bs_EyelashesRootZag.dsf#head_bs_EyelashesRootZag?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#head_ctrl_EyelashesNatural?value" },
+						{ "op" : "push", "val" : 0.34 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base/head_bs_EyelashesIrregularTwist.dsf#head_bs_EyelashesIrregularTwist?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#head_ctrl_EyelashesNatural?value" },
+						{ "op" : "push", "val" : 0.34 },
+						{ "op" : "mult" }
+					]
+				}
+			],
+			"morph" : {
+				"vertex_count" : -1,
+				"deltas" : {
+					"count" : 0,
+					"values" : [
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "head_ctrl_EyelashesNatural-1",
+				"url" : "#head_ctrl_EyelashesNatural"
+			}
+		]
+	}
+}

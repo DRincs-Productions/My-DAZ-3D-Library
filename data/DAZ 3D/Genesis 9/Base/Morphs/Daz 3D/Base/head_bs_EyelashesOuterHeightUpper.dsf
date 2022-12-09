@@ -1,0 +1,50 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base/head_bs_EyelashesOuterHeightUpper.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "0.0",
+		"modified" : "2022-05-18T19:00:10Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "head_bs_EyelashesOuterHeightUpper",
+			"name" : "head_bs_EyelashesOuterHeightUpper",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#Genesis9",
+			"presentation" : {
+				"type" : "Modifier/Shape",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.5019608, 0.5019608, 0.7529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "head_bs_EyelashesOuterHeightUpper",
+				"label" : "Eyelashes Outer Height Upper",
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"region" : "Eyes",
+			"group" : "/Eyelashes/Base"
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "head_bs_EyelashesOuterHeightUpper-1",
+				"url" : "#head_bs_EyelashesOuterHeightUpper"
+			}
+		]
+	}
+}

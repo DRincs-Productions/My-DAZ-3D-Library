@@ -1,0 +1,6247 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Female/Projection%20Templates/Dresses/Knee-Length.duf",
+		"type" : "scene_subset",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-06-13T10:57:28Z"
+	},
+	"material_library" : [
+		{
+			"id" : "Torso_SkirtRework_SuckedIn",
+			"type" : "Plastic",
+			"diffuse" : {
+				"channel" : {
+					"id" : "diffuse",
+					"type" : "color",
+					"name" : "Diffuse Color",
+					"label" : "Diffuse Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"diffuse_strength" : {
+				"channel" : {
+					"id" : "diffuse_strength",
+					"type" : "float",
+					"name" : "Diffuse Strength",
+					"label" : "Diffuse Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"specular" : {
+				"channel" : {
+					"id" : "specular",
+					"type" : "color",
+					"name" : "Specular Color",
+					"label" : "Specular Color",
+					"value" : [ 0.6, 0.6, 0.6 ],
+					"current_value" : [ 0.6, 0.6, 0.6 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"specular_strength" : {
+				"channel" : {
+					"id" : "specular_strength",
+					"type" : "float",
+					"name" : "Specular Strength",
+					"label" : "Specular Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"glossiness" : {
+				"channel" : {
+					"id" : "glossiness",
+					"type" : "float",
+					"name" : "Glossiness",
+					"label" : "Glossiness",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"ambient" : {
+				"channel" : {
+					"id" : "ambient",
+					"type" : "color",
+					"name" : "Ambient Color",
+					"label" : "Ambient Color",
+					"value" : [ 0, 0, 0 ],
+					"current_value" : [ 0, 0, 0 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Ambient"
+			},
+			"ambient_strength" : {
+				"channel" : {
+					"id" : "ambient_strength",
+					"type" : "float",
+					"name" : "Ambient Strength",
+					"label" : "Ambient Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Ambient"
+			},
+			"reflection" : {
+				"channel" : {
+					"id" : "reflection",
+					"type" : "color",
+					"name" : "Reflection Color",
+					"label" : "Reflection Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Reflection"
+			},
+			"reflection_strength" : {
+				"channel" : {
+					"id" : "reflection_strength",
+					"type" : "float",
+					"name" : "Reflection Strength",
+					"label" : "Reflection Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Reflection"
+			},
+			"refraction" : {
+				"channel" : {
+					"id" : "refraction",
+					"type" : "color",
+					"name" : "Refraction Color",
+					"label" : "Refraction Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Refraction"
+			},
+			"refraction_strength" : {
+				"channel" : {
+					"id" : "refraction_strength",
+					"type" : "float",
+					"name" : "Refraction Strength",
+					"label" : "Refraction Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Refraction"
+			},
+			"ior" : {
+				"channel" : {
+					"id" : "ior",
+					"type" : "float",
+					"name" : "Index of Refraction",
+					"label" : "Index of Refraction",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 10,
+					"clamped" : true,
+					"step_size" : 0.01
+				},
+				"group" : "/Refraction"
+			},
+			"bump" : {
+				"channel" : {
+					"id" : "bump",
+					"type" : "float",
+					"name" : "Bump Strength",
+					"label" : "Bump Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 2,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true,
+					"invalid_without_map" : true
+				},
+				"group" : "/Bump"
+			},
+			"bump_min" : {
+				"channel" : {
+					"id" : "bump_min",
+					"type" : "float",
+					"name" : "Negative Bump",
+					"label" : "Negative Bump",
+					"value" : -0.01,
+					"current_value" : -0.01,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Bump"
+			},
+			"bump_max" : {
+				"channel" : {
+					"id" : "bump_max",
+					"type" : "float",
+					"name" : "Positive Bump",
+					"label" : "Positive Bump",
+					"value" : 0.01,
+					"current_value" : 0.01,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Bump"
+			},
+			"displacement" : {
+				"channel" : {
+					"id" : "displacement",
+					"type" : "float",
+					"name" : "Displacement Strength",
+					"label" : "Displacement Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 2,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true,
+					"invalid_without_map" : true
+				},
+				"group" : "/Displacement"
+			},
+			"displacement_min" : {
+				"channel" : {
+					"id" : "displacement_min",
+					"type" : "float",
+					"name" : "Minimum Displacement",
+					"label" : "Minimum Displacement",
+					"value" : -0.1,
+					"current_value" : -0.1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Displacement"
+			},
+			"displacement_max" : {
+				"channel" : {
+					"id" : "displacement_max",
+					"type" : "float",
+					"name" : "Maximum Displacement",
+					"label" : "Maximum Displacement",
+					"value" : 0.1,
+					"current_value" : 0.1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Displacement"
+			},
+			"transparency" : {
+				"channel" : {
+					"id" : "transparency",
+					"type" : "float",
+					"name" : "Opacity Strength",
+					"label" : "Opacity Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Opacity"
+			},
+			"normal" : {
+				"channel" : {
+					"id" : "normal",
+					"type" : "image",
+					"name" : "Normal Map",
+					"label" : "Normal Map",
+					"default_image_gamma" : 1
+				},
+				"group" : "/Normal Mapping"
+			},
+			"u_offset" : {
+				"channel" : {
+					"id" : "u_offset",
+					"type" : "float",
+					"name" : "Horizontal Offset",
+					"label" : "Horizontal Offset",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"u_scale" : {
+				"channel" : {
+					"id" : "u_scale",
+					"type" : "float",
+					"name" : "Horizontal Tiles",
+					"label" : "Horizontal Tiles",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"v_offset" : {
+				"channel" : {
+					"id" : "v_offset",
+					"type" : "float",
+					"name" : "Vertical Offset",
+					"label" : "Vertical Offset",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"v_scale" : {
+				"channel" : {
+					"id" : "v_scale",
+					"type" : "float",
+					"name" : "Vertical Tiles",
+					"label" : "Vertical Tiles",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"extra" : [
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Multiply Specular Through Opacity",
+								"type" : "bool",
+								"label" : "Multiply Specular Through Opacity",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Sheen Color",
+								"type" : "color",
+								"label" : "Sheen Color",
+								"visible" : false,
+								"value" : [ 0.4, 0.4, 0.4 ],
+								"current_value" : [ 0.4, 0.4, 0.4 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Scatter Color",
+								"type" : "color",
+								"label" : "Scatter Color",
+								"visible" : false,
+								"value" : [ 0.8, 0.1490196, 0.05882353 ],
+								"current_value" : [ 0.8, 0.1490196, 0.05882353 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Thickness",
+								"type" : "float",
+								"label" : "Thickness",
+								"visible" : false,
+								"value" : 0.25,
+								"current_value" : 0.25,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Lighting Model",
+								"type" : "enum",
+								"label" : "Lighting Model",
+								"value" : 0,
+								"current_value" : 0,
+								"enum_values" : [ "Plastic", "Metallic", "Skin", "Glossy (Plastic)", "Matte", "Glossy (Metallic)" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Tags",
+								"type" : "string",
+								"label" : "Tags",
+								"value" : "",
+								"current_value" : ""
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"label" : "Smooth",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"label" : "Angle",
+								"value" : 89.9,
+								"current_value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"current_value" : 3,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/Render Priority"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id" : "Face_SkirtRework_SuckedIn",
+			"type" : "Plastic",
+			"diffuse" : {
+				"channel" : {
+					"id" : "diffuse",
+					"type" : "color",
+					"name" : "Diffuse Color",
+					"label" : "Diffuse Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"diffuse_strength" : {
+				"channel" : {
+					"id" : "diffuse_strength",
+					"type" : "float",
+					"name" : "Diffuse Strength",
+					"label" : "Diffuse Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"specular" : {
+				"channel" : {
+					"id" : "specular",
+					"type" : "color",
+					"name" : "Specular Color",
+					"label" : "Specular Color",
+					"value" : [ 0.6, 0.6, 0.6 ],
+					"current_value" : [ 0.6, 0.6, 0.6 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"specular_strength" : {
+				"channel" : {
+					"id" : "specular_strength",
+					"type" : "float",
+					"name" : "Specular Strength",
+					"label" : "Specular Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"glossiness" : {
+				"channel" : {
+					"id" : "glossiness",
+					"type" : "float",
+					"name" : "Glossiness",
+					"label" : "Glossiness",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"ambient" : {
+				"channel" : {
+					"id" : "ambient",
+					"type" : "color",
+					"name" : "Ambient Color",
+					"label" : "Ambient Color",
+					"value" : [ 0, 0, 0 ],
+					"current_value" : [ 0, 0, 0 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Ambient"
+			},
+			"ambient_strength" : {
+				"channel" : {
+					"id" : "ambient_strength",
+					"type" : "float",
+					"name" : "Ambient Strength",
+					"label" : "Ambient Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Ambient"
+			},
+			"reflection" : {
+				"channel" : {
+					"id" : "reflection",
+					"type" : "color",
+					"name" : "Reflection Color",
+					"label" : "Reflection Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Reflection"
+			},
+			"reflection_strength" : {
+				"channel" : {
+					"id" : "reflection_strength",
+					"type" : "float",
+					"name" : "Reflection Strength",
+					"label" : "Reflection Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Reflection"
+			},
+			"refraction" : {
+				"channel" : {
+					"id" : "refraction",
+					"type" : "color",
+					"name" : "Refraction Color",
+					"label" : "Refraction Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Refraction"
+			},
+			"refraction_strength" : {
+				"channel" : {
+					"id" : "refraction_strength",
+					"type" : "float",
+					"name" : "Refraction Strength",
+					"label" : "Refraction Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Refraction"
+			},
+			"ior" : {
+				"channel" : {
+					"id" : "ior",
+					"type" : "float",
+					"name" : "Index of Refraction",
+					"label" : "Index of Refraction",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 10,
+					"clamped" : true,
+					"step_size" : 0.01
+				},
+				"group" : "/Refraction"
+			},
+			"bump" : {
+				"channel" : {
+					"id" : "bump",
+					"type" : "float",
+					"name" : "Bump Strength",
+					"label" : "Bump Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 2,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true,
+					"invalid_without_map" : true
+				},
+				"group" : "/Bump"
+			},
+			"bump_min" : {
+				"channel" : {
+					"id" : "bump_min",
+					"type" : "float",
+					"name" : "Negative Bump",
+					"label" : "Negative Bump",
+					"value" : -0.01,
+					"current_value" : -0.01,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Bump"
+			},
+			"bump_max" : {
+				"channel" : {
+					"id" : "bump_max",
+					"type" : "float",
+					"name" : "Positive Bump",
+					"label" : "Positive Bump",
+					"value" : 0.01,
+					"current_value" : 0.01,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Bump"
+			},
+			"displacement" : {
+				"channel" : {
+					"id" : "displacement",
+					"type" : "float",
+					"name" : "Displacement Strength",
+					"label" : "Displacement Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 2,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true,
+					"invalid_without_map" : true
+				},
+				"group" : "/Displacement"
+			},
+			"displacement_min" : {
+				"channel" : {
+					"id" : "displacement_min",
+					"type" : "float",
+					"name" : "Minimum Displacement",
+					"label" : "Minimum Displacement",
+					"value" : -0.1,
+					"current_value" : -0.1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Displacement"
+			},
+			"displacement_max" : {
+				"channel" : {
+					"id" : "displacement_max",
+					"type" : "float",
+					"name" : "Maximum Displacement",
+					"label" : "Maximum Displacement",
+					"value" : 0.1,
+					"current_value" : 0.1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Displacement"
+			},
+			"transparency" : {
+				"channel" : {
+					"id" : "transparency",
+					"type" : "float",
+					"name" : "Opacity Strength",
+					"label" : "Opacity Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Opacity"
+			},
+			"normal" : {
+				"channel" : {
+					"id" : "normal",
+					"type" : "image",
+					"name" : "Normal Map",
+					"label" : "Normal Map",
+					"default_image_gamma" : 1
+				},
+				"group" : "/Normal Mapping"
+			},
+			"u_offset" : {
+				"channel" : {
+					"id" : "u_offset",
+					"type" : "float",
+					"name" : "Horizontal Offset",
+					"label" : "Horizontal Offset",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"u_scale" : {
+				"channel" : {
+					"id" : "u_scale",
+					"type" : "float",
+					"name" : "Horizontal Tiles",
+					"label" : "Horizontal Tiles",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"v_offset" : {
+				"channel" : {
+					"id" : "v_offset",
+					"type" : "float",
+					"name" : "Vertical Offset",
+					"label" : "Vertical Offset",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"v_scale" : {
+				"channel" : {
+					"id" : "v_scale",
+					"type" : "float",
+					"name" : "Vertical Tiles",
+					"label" : "Vertical Tiles",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"extra" : [
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Multiply Specular Through Opacity",
+								"type" : "bool",
+								"label" : "Multiply Specular Through Opacity",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Sheen Color",
+								"type" : "color",
+								"label" : "Sheen Color",
+								"visible" : false,
+								"value" : [ 0.4, 0.4, 0.4 ],
+								"current_value" : [ 0.4, 0.4, 0.4 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Scatter Color",
+								"type" : "color",
+								"label" : "Scatter Color",
+								"visible" : false,
+								"value" : [ 0.8, 0.1490196, 0.05882353 ],
+								"current_value" : [ 0.8, 0.1490196, 0.05882353 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Thickness",
+								"type" : "float",
+								"label" : "Thickness",
+								"visible" : false,
+								"value" : 0.25,
+								"current_value" : 0.25,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Lighting Model",
+								"type" : "enum",
+								"label" : "Lighting Model",
+								"value" : 0,
+								"current_value" : 0,
+								"enum_values" : [ "Plastic", "Metallic", "Skin", "Glossy (Plastic)", "Matte", "Glossy (Metallic)" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Tags",
+								"type" : "string",
+								"label" : "Tags",
+								"value" : "",
+								"current_value" : ""
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"label" : "Smooth",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"label" : "Angle",
+								"value" : 89.9,
+								"current_value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"current_value" : 3,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/Render Priority"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id" : "Lips_SkirtRework_SuckedIn",
+			"type" : "Plastic",
+			"diffuse" : {
+				"channel" : {
+					"id" : "diffuse",
+					"type" : "color",
+					"name" : "Diffuse Color",
+					"label" : "Diffuse Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"diffuse_strength" : {
+				"channel" : {
+					"id" : "diffuse_strength",
+					"type" : "float",
+					"name" : "Diffuse Strength",
+					"label" : "Diffuse Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"specular" : {
+				"channel" : {
+					"id" : "specular",
+					"type" : "color",
+					"name" : "Specular Color",
+					"label" : "Specular Color",
+					"value" : [ 0.6, 0.6, 0.6 ],
+					"current_value" : [ 0.6, 0.6, 0.6 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"specular_strength" : {
+				"channel" : {
+					"id" : "specular_strength",
+					"type" : "float",
+					"name" : "Specular Strength",
+					"label" : "Specular Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"glossiness" : {
+				"channel" : {
+					"id" : "glossiness",
+					"type" : "float",
+					"name" : "Glossiness",
+					"label" : "Glossiness",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"ambient" : {
+				"channel" : {
+					"id" : "ambient",
+					"type" : "color",
+					"name" : "Ambient Color",
+					"label" : "Ambient Color",
+					"value" : [ 0, 0, 0 ],
+					"current_value" : [ 0, 0, 0 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Ambient"
+			},
+			"ambient_strength" : {
+				"channel" : {
+					"id" : "ambient_strength",
+					"type" : "float",
+					"name" : "Ambient Strength",
+					"label" : "Ambient Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Ambient"
+			},
+			"reflection" : {
+				"channel" : {
+					"id" : "reflection",
+					"type" : "color",
+					"name" : "Reflection Color",
+					"label" : "Reflection Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Reflection"
+			},
+			"reflection_strength" : {
+				"channel" : {
+					"id" : "reflection_strength",
+					"type" : "float",
+					"name" : "Reflection Strength",
+					"label" : "Reflection Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Reflection"
+			},
+			"refraction" : {
+				"channel" : {
+					"id" : "refraction",
+					"type" : "color",
+					"name" : "Refraction Color",
+					"label" : "Refraction Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Refraction"
+			},
+			"refraction_strength" : {
+				"channel" : {
+					"id" : "refraction_strength",
+					"type" : "float",
+					"name" : "Refraction Strength",
+					"label" : "Refraction Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Refraction"
+			},
+			"ior" : {
+				"channel" : {
+					"id" : "ior",
+					"type" : "float",
+					"name" : "Index of Refraction",
+					"label" : "Index of Refraction",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 10,
+					"clamped" : true,
+					"step_size" : 0.01
+				},
+				"group" : "/Refraction"
+			},
+			"bump" : {
+				"channel" : {
+					"id" : "bump",
+					"type" : "float",
+					"name" : "Bump Strength",
+					"label" : "Bump Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 2,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true,
+					"invalid_without_map" : true
+				},
+				"group" : "/Bump"
+			},
+			"bump_min" : {
+				"channel" : {
+					"id" : "bump_min",
+					"type" : "float",
+					"name" : "Negative Bump",
+					"label" : "Negative Bump",
+					"value" : -0.01,
+					"current_value" : -0.01,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Bump"
+			},
+			"bump_max" : {
+				"channel" : {
+					"id" : "bump_max",
+					"type" : "float",
+					"name" : "Positive Bump",
+					"label" : "Positive Bump",
+					"value" : 0.01,
+					"current_value" : 0.01,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Bump"
+			},
+			"displacement" : {
+				"channel" : {
+					"id" : "displacement",
+					"type" : "float",
+					"name" : "Displacement Strength",
+					"label" : "Displacement Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 2,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true,
+					"invalid_without_map" : true
+				},
+				"group" : "/Displacement"
+			},
+			"displacement_min" : {
+				"channel" : {
+					"id" : "displacement_min",
+					"type" : "float",
+					"name" : "Minimum Displacement",
+					"label" : "Minimum Displacement",
+					"value" : -0.1,
+					"current_value" : -0.1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Displacement"
+			},
+			"displacement_max" : {
+				"channel" : {
+					"id" : "displacement_max",
+					"type" : "float",
+					"name" : "Maximum Displacement",
+					"label" : "Maximum Displacement",
+					"value" : 0.1,
+					"current_value" : 0.1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Displacement"
+			},
+			"transparency" : {
+				"channel" : {
+					"id" : "transparency",
+					"type" : "float",
+					"name" : "Opacity Strength",
+					"label" : "Opacity Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Opacity"
+			},
+			"normal" : {
+				"channel" : {
+					"id" : "normal",
+					"type" : "image",
+					"name" : "Normal Map",
+					"label" : "Normal Map",
+					"default_image_gamma" : 1
+				},
+				"group" : "/Normal Mapping"
+			},
+			"u_offset" : {
+				"channel" : {
+					"id" : "u_offset",
+					"type" : "float",
+					"name" : "Horizontal Offset",
+					"label" : "Horizontal Offset",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"u_scale" : {
+				"channel" : {
+					"id" : "u_scale",
+					"type" : "float",
+					"name" : "Horizontal Tiles",
+					"label" : "Horizontal Tiles",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"v_offset" : {
+				"channel" : {
+					"id" : "v_offset",
+					"type" : "float",
+					"name" : "Vertical Offset",
+					"label" : "Vertical Offset",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"v_scale" : {
+				"channel" : {
+					"id" : "v_scale",
+					"type" : "float",
+					"name" : "Vertical Tiles",
+					"label" : "Vertical Tiles",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"extra" : [
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Multiply Specular Through Opacity",
+								"type" : "bool",
+								"label" : "Multiply Specular Through Opacity",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Sheen Color",
+								"type" : "color",
+								"label" : "Sheen Color",
+								"visible" : false,
+								"value" : [ 0.4, 0.4, 0.4 ],
+								"current_value" : [ 0.4, 0.4, 0.4 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Scatter Color",
+								"type" : "color",
+								"label" : "Scatter Color",
+								"visible" : false,
+								"value" : [ 0.8, 0.1490196, 0.05882353 ],
+								"current_value" : [ 0.8, 0.1490196, 0.05882353 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Thickness",
+								"type" : "float",
+								"label" : "Thickness",
+								"visible" : false,
+								"value" : 0.25,
+								"current_value" : 0.25,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Lighting Model",
+								"type" : "enum",
+								"label" : "Lighting Model",
+								"value" : 0,
+								"current_value" : 0,
+								"enum_values" : [ "Plastic", "Metallic", "Skin", "Glossy (Plastic)", "Matte", "Glossy (Metallic)" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Tags",
+								"type" : "string",
+								"label" : "Tags",
+								"value" : "",
+								"current_value" : ""
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"label" : "Smooth",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"label" : "Angle",
+								"value" : 89.9,
+								"current_value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"current_value" : 3,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/Render Priority"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id" : "EyeSocket_SkirtRework_SuckedIn",
+			"type" : "Plastic",
+			"diffuse" : {
+				"channel" : {
+					"id" : "diffuse",
+					"type" : "color",
+					"name" : "Diffuse Color",
+					"label" : "Diffuse Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"diffuse_strength" : {
+				"channel" : {
+					"id" : "diffuse_strength",
+					"type" : "float",
+					"name" : "Diffuse Strength",
+					"label" : "Diffuse Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"specular" : {
+				"channel" : {
+					"id" : "specular",
+					"type" : "color",
+					"name" : "Specular Color",
+					"label" : "Specular Color",
+					"value" : [ 0.6, 0.6, 0.6 ],
+					"current_value" : [ 0.6, 0.6, 0.6 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"specular_strength" : {
+				"channel" : {
+					"id" : "specular_strength",
+					"type" : "float",
+					"name" : "Specular Strength",
+					"label" : "Specular Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"glossiness" : {
+				"channel" : {
+					"id" : "glossiness",
+					"type" : "float",
+					"name" : "Glossiness",
+					"label" : "Glossiness",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"ambient" : {
+				"channel" : {
+					"id" : "ambient",
+					"type" : "color",
+					"name" : "Ambient Color",
+					"label" : "Ambient Color",
+					"value" : [ 0, 0, 0 ],
+					"current_value" : [ 0, 0, 0 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Ambient"
+			},
+			"ambient_strength" : {
+				"channel" : {
+					"id" : "ambient_strength",
+					"type" : "float",
+					"name" : "Ambient Strength",
+					"label" : "Ambient Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Ambient"
+			},
+			"reflection" : {
+				"channel" : {
+					"id" : "reflection",
+					"type" : "color",
+					"name" : "Reflection Color",
+					"label" : "Reflection Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Reflection"
+			},
+			"reflection_strength" : {
+				"channel" : {
+					"id" : "reflection_strength",
+					"type" : "float",
+					"name" : "Reflection Strength",
+					"label" : "Reflection Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Reflection"
+			},
+			"refraction" : {
+				"channel" : {
+					"id" : "refraction",
+					"type" : "color",
+					"name" : "Refraction Color",
+					"label" : "Refraction Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Refraction"
+			},
+			"refraction_strength" : {
+				"channel" : {
+					"id" : "refraction_strength",
+					"type" : "float",
+					"name" : "Refraction Strength",
+					"label" : "Refraction Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Refraction"
+			},
+			"ior" : {
+				"channel" : {
+					"id" : "ior",
+					"type" : "float",
+					"name" : "Index of Refraction",
+					"label" : "Index of Refraction",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 10,
+					"clamped" : true,
+					"step_size" : 0.01
+				},
+				"group" : "/Refraction"
+			},
+			"bump" : {
+				"channel" : {
+					"id" : "bump",
+					"type" : "float",
+					"name" : "Bump Strength",
+					"label" : "Bump Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 2,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true,
+					"invalid_without_map" : true
+				},
+				"group" : "/Bump"
+			},
+			"bump_min" : {
+				"channel" : {
+					"id" : "bump_min",
+					"type" : "float",
+					"name" : "Negative Bump",
+					"label" : "Negative Bump",
+					"value" : -0.01,
+					"current_value" : -0.01,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Bump"
+			},
+			"bump_max" : {
+				"channel" : {
+					"id" : "bump_max",
+					"type" : "float",
+					"name" : "Positive Bump",
+					"label" : "Positive Bump",
+					"value" : 0.01,
+					"current_value" : 0.01,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Bump"
+			},
+			"displacement" : {
+				"channel" : {
+					"id" : "displacement",
+					"type" : "float",
+					"name" : "Displacement Strength",
+					"label" : "Displacement Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 2,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true,
+					"invalid_without_map" : true
+				},
+				"group" : "/Displacement"
+			},
+			"displacement_min" : {
+				"channel" : {
+					"id" : "displacement_min",
+					"type" : "float",
+					"name" : "Minimum Displacement",
+					"label" : "Minimum Displacement",
+					"value" : -0.1,
+					"current_value" : -0.1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Displacement"
+			},
+			"displacement_max" : {
+				"channel" : {
+					"id" : "displacement_max",
+					"type" : "float",
+					"name" : "Maximum Displacement",
+					"label" : "Maximum Displacement",
+					"value" : 0.1,
+					"current_value" : 0.1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Displacement"
+			},
+			"transparency" : {
+				"channel" : {
+					"id" : "transparency",
+					"type" : "float",
+					"name" : "Opacity Strength",
+					"label" : "Opacity Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Opacity"
+			},
+			"normal" : {
+				"channel" : {
+					"id" : "normal",
+					"type" : "image",
+					"name" : "Normal Map",
+					"label" : "Normal Map",
+					"default_image_gamma" : 1
+				},
+				"group" : "/Normal Mapping"
+			},
+			"u_offset" : {
+				"channel" : {
+					"id" : "u_offset",
+					"type" : "float",
+					"name" : "Horizontal Offset",
+					"label" : "Horizontal Offset",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"u_scale" : {
+				"channel" : {
+					"id" : "u_scale",
+					"type" : "float",
+					"name" : "Horizontal Tiles",
+					"label" : "Horizontal Tiles",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"v_offset" : {
+				"channel" : {
+					"id" : "v_offset",
+					"type" : "float",
+					"name" : "Vertical Offset",
+					"label" : "Vertical Offset",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"v_scale" : {
+				"channel" : {
+					"id" : "v_scale",
+					"type" : "float",
+					"name" : "Vertical Tiles",
+					"label" : "Vertical Tiles",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"extra" : [
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Multiply Specular Through Opacity",
+								"type" : "bool",
+								"label" : "Multiply Specular Through Opacity",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Sheen Color",
+								"type" : "color",
+								"label" : "Sheen Color",
+								"visible" : false,
+								"value" : [ 0.4, 0.4, 0.4 ],
+								"current_value" : [ 0.4, 0.4, 0.4 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Scatter Color",
+								"type" : "color",
+								"label" : "Scatter Color",
+								"visible" : false,
+								"value" : [ 0.8, 0.1490196, 0.05882353 ],
+								"current_value" : [ 0.8, 0.1490196, 0.05882353 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Thickness",
+								"type" : "float",
+								"label" : "Thickness",
+								"visible" : false,
+								"value" : 0.25,
+								"current_value" : 0.25,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Lighting Model",
+								"type" : "enum",
+								"label" : "Lighting Model",
+								"value" : 0,
+								"current_value" : 0,
+								"enum_values" : [ "Plastic", "Metallic", "Skin", "Glossy (Plastic)", "Matte", "Glossy (Metallic)" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Tags",
+								"type" : "string",
+								"label" : "Tags",
+								"value" : "",
+								"current_value" : ""
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"label" : "Smooth",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"label" : "Angle",
+								"value" : 89.9,
+								"current_value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"current_value" : 3,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/Render Priority"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id" : "Arms_SkirtRework_SuckedIn",
+			"type" : "Plastic",
+			"diffuse" : {
+				"channel" : {
+					"id" : "diffuse",
+					"type" : "color",
+					"name" : "Diffuse Color",
+					"label" : "Diffuse Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"diffuse_strength" : {
+				"channel" : {
+					"id" : "diffuse_strength",
+					"type" : "float",
+					"name" : "Diffuse Strength",
+					"label" : "Diffuse Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"specular" : {
+				"channel" : {
+					"id" : "specular",
+					"type" : "color",
+					"name" : "Specular Color",
+					"label" : "Specular Color",
+					"value" : [ 0.6, 0.6, 0.6 ],
+					"current_value" : [ 0.6, 0.6, 0.6 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"specular_strength" : {
+				"channel" : {
+					"id" : "specular_strength",
+					"type" : "float",
+					"name" : "Specular Strength",
+					"label" : "Specular Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"glossiness" : {
+				"channel" : {
+					"id" : "glossiness",
+					"type" : "float",
+					"name" : "Glossiness",
+					"label" : "Glossiness",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"ambient" : {
+				"channel" : {
+					"id" : "ambient",
+					"type" : "color",
+					"name" : "Ambient Color",
+					"label" : "Ambient Color",
+					"value" : [ 0, 0, 0 ],
+					"current_value" : [ 0, 0, 0 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Ambient"
+			},
+			"ambient_strength" : {
+				"channel" : {
+					"id" : "ambient_strength",
+					"type" : "float",
+					"name" : "Ambient Strength",
+					"label" : "Ambient Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Ambient"
+			},
+			"reflection" : {
+				"channel" : {
+					"id" : "reflection",
+					"type" : "color",
+					"name" : "Reflection Color",
+					"label" : "Reflection Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Reflection"
+			},
+			"reflection_strength" : {
+				"channel" : {
+					"id" : "reflection_strength",
+					"type" : "float",
+					"name" : "Reflection Strength",
+					"label" : "Reflection Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Reflection"
+			},
+			"refraction" : {
+				"channel" : {
+					"id" : "refraction",
+					"type" : "color",
+					"name" : "Refraction Color",
+					"label" : "Refraction Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Refraction"
+			},
+			"refraction_strength" : {
+				"channel" : {
+					"id" : "refraction_strength",
+					"type" : "float",
+					"name" : "Refraction Strength",
+					"label" : "Refraction Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Refraction"
+			},
+			"ior" : {
+				"channel" : {
+					"id" : "ior",
+					"type" : "float",
+					"name" : "Index of Refraction",
+					"label" : "Index of Refraction",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 10,
+					"clamped" : true,
+					"step_size" : 0.01
+				},
+				"group" : "/Refraction"
+			},
+			"bump" : {
+				"channel" : {
+					"id" : "bump",
+					"type" : "float",
+					"name" : "Bump Strength",
+					"label" : "Bump Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 2,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true,
+					"invalid_without_map" : true
+				},
+				"group" : "/Bump"
+			},
+			"bump_min" : {
+				"channel" : {
+					"id" : "bump_min",
+					"type" : "float",
+					"name" : "Negative Bump",
+					"label" : "Negative Bump",
+					"value" : -0.01,
+					"current_value" : -0.01,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Bump"
+			},
+			"bump_max" : {
+				"channel" : {
+					"id" : "bump_max",
+					"type" : "float",
+					"name" : "Positive Bump",
+					"label" : "Positive Bump",
+					"value" : 0.01,
+					"current_value" : 0.01,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Bump"
+			},
+			"displacement" : {
+				"channel" : {
+					"id" : "displacement",
+					"type" : "float",
+					"name" : "Displacement Strength",
+					"label" : "Displacement Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 2,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true,
+					"invalid_without_map" : true
+				},
+				"group" : "/Displacement"
+			},
+			"displacement_min" : {
+				"channel" : {
+					"id" : "displacement_min",
+					"type" : "float",
+					"name" : "Minimum Displacement",
+					"label" : "Minimum Displacement",
+					"value" : -0.1,
+					"current_value" : -0.1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Displacement"
+			},
+			"displacement_max" : {
+				"channel" : {
+					"id" : "displacement_max",
+					"type" : "float",
+					"name" : "Maximum Displacement",
+					"label" : "Maximum Displacement",
+					"value" : 0.1,
+					"current_value" : 0.1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Displacement"
+			},
+			"transparency" : {
+				"channel" : {
+					"id" : "transparency",
+					"type" : "float",
+					"name" : "Opacity Strength",
+					"label" : "Opacity Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Opacity"
+			},
+			"normal" : {
+				"channel" : {
+					"id" : "normal",
+					"type" : "image",
+					"name" : "Normal Map",
+					"label" : "Normal Map",
+					"default_image_gamma" : 1
+				},
+				"group" : "/Normal Mapping"
+			},
+			"u_offset" : {
+				"channel" : {
+					"id" : "u_offset",
+					"type" : "float",
+					"name" : "Horizontal Offset",
+					"label" : "Horizontal Offset",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"u_scale" : {
+				"channel" : {
+					"id" : "u_scale",
+					"type" : "float",
+					"name" : "Horizontal Tiles",
+					"label" : "Horizontal Tiles",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"v_offset" : {
+				"channel" : {
+					"id" : "v_offset",
+					"type" : "float",
+					"name" : "Vertical Offset",
+					"label" : "Vertical Offset",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"v_scale" : {
+				"channel" : {
+					"id" : "v_scale",
+					"type" : "float",
+					"name" : "Vertical Tiles",
+					"label" : "Vertical Tiles",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"extra" : [
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Multiply Specular Through Opacity",
+								"type" : "bool",
+								"label" : "Multiply Specular Through Opacity",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Sheen Color",
+								"type" : "color",
+								"label" : "Sheen Color",
+								"visible" : false,
+								"value" : [ 0.4, 0.4, 0.4 ],
+								"current_value" : [ 0.4, 0.4, 0.4 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Scatter Color",
+								"type" : "color",
+								"label" : "Scatter Color",
+								"visible" : false,
+								"value" : [ 0.8, 0.1490196, 0.05882353 ],
+								"current_value" : [ 0.8, 0.1490196, 0.05882353 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Thickness",
+								"type" : "float",
+								"label" : "Thickness",
+								"visible" : false,
+								"value" : 0.25,
+								"current_value" : 0.25,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Lighting Model",
+								"type" : "enum",
+								"label" : "Lighting Model",
+								"value" : 0,
+								"current_value" : 0,
+								"enum_values" : [ "Plastic", "Metallic", "Skin", "Glossy (Plastic)", "Matte", "Glossy (Metallic)" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Tags",
+								"type" : "string",
+								"label" : "Tags",
+								"value" : "",
+								"current_value" : ""
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"label" : "Smooth",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"label" : "Angle",
+								"value" : 89.9,
+								"current_value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"current_value" : 3,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/Render Priority"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id" : "Dress",
+			"type" : "Plastic",
+			"diffuse" : {
+				"channel" : {
+					"id" : "diffuse",
+					"type" : "color",
+					"name" : "Diffuse Color",
+					"label" : "Diffuse Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"diffuse_strength" : {
+				"channel" : {
+					"id" : "diffuse_strength",
+					"type" : "float",
+					"name" : "Diffuse Strength",
+					"label" : "Diffuse Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"specular" : {
+				"channel" : {
+					"id" : "specular",
+					"type" : "color",
+					"name" : "Specular Color",
+					"label" : "Specular Color",
+					"value" : [ 0.6, 0.6, 0.6 ],
+					"current_value" : [ 0.6, 0.6, 0.6 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"specular_strength" : {
+				"channel" : {
+					"id" : "specular_strength",
+					"type" : "float",
+					"name" : "Specular Strength",
+					"label" : "Specular Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"glossiness" : {
+				"channel" : {
+					"id" : "glossiness",
+					"type" : "float",
+					"name" : "Glossiness",
+					"label" : "Glossiness",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Specular"
+			},
+			"ambient" : {
+				"channel" : {
+					"id" : "ambient",
+					"type" : "color",
+					"name" : "Ambient Color",
+					"label" : "Ambient Color",
+					"value" : [ 0, 0, 0 ],
+					"current_value" : [ 0, 0, 0 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Ambient"
+			},
+			"ambient_strength" : {
+				"channel" : {
+					"id" : "ambient_strength",
+					"type" : "float",
+					"name" : "Ambient Strength",
+					"label" : "Ambient Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Ambient"
+			},
+			"reflection" : {
+				"channel" : {
+					"id" : "reflection",
+					"type" : "color",
+					"name" : "Reflection Color",
+					"label" : "Reflection Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Reflection"
+			},
+			"reflection_strength" : {
+				"channel" : {
+					"id" : "reflection_strength",
+					"type" : "float",
+					"name" : "Reflection Strength",
+					"label" : "Reflection Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Reflection"
+			},
+			"refraction" : {
+				"channel" : {
+					"id" : "refraction",
+					"type" : "color",
+					"name" : "Refraction Color",
+					"label" : "Refraction Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/Refraction"
+			},
+			"refraction_strength" : {
+				"channel" : {
+					"id" : "refraction_strength",
+					"type" : "float",
+					"name" : "Refraction Strength",
+					"label" : "Refraction Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Refraction"
+			},
+			"ior" : {
+				"channel" : {
+					"id" : "ior",
+					"type" : "float",
+					"name" : "Index of Refraction",
+					"label" : "Index of Refraction",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 10,
+					"clamped" : true,
+					"step_size" : 0.01
+				},
+				"group" : "/Refraction"
+			},
+			"bump" : {
+				"channel" : {
+					"id" : "bump",
+					"type" : "float",
+					"name" : "Bump Strength",
+					"label" : "Bump Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 2,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true,
+					"invalid_without_map" : true
+				},
+				"group" : "/Bump"
+			},
+			"bump_min" : {
+				"channel" : {
+					"id" : "bump_min",
+					"type" : "float",
+					"name" : "Negative Bump",
+					"label" : "Negative Bump",
+					"value" : -0.01,
+					"current_value" : -0.01,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Bump"
+			},
+			"bump_max" : {
+				"channel" : {
+					"id" : "bump_max",
+					"type" : "float",
+					"name" : "Positive Bump",
+					"label" : "Positive Bump",
+					"value" : 0.01,
+					"current_value" : 0.01,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Bump"
+			},
+			"displacement" : {
+				"channel" : {
+					"id" : "displacement",
+					"type" : "float",
+					"name" : "Displacement Strength",
+					"label" : "Displacement Strength",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : 0,
+					"max" : 2,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true,
+					"invalid_without_map" : true
+				},
+				"group" : "/Displacement"
+			},
+			"displacement_min" : {
+				"channel" : {
+					"id" : "displacement_min",
+					"type" : "float",
+					"name" : "Minimum Displacement",
+					"label" : "Minimum Displacement",
+					"value" : -0.1,
+					"current_value" : -0.1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Displacement"
+			},
+			"displacement_max" : {
+				"channel" : {
+					"id" : "displacement_max",
+					"type" : "float",
+					"name" : "Maximum Displacement",
+					"label" : "Maximum Displacement",
+					"value" : 0.1,
+					"current_value" : 0.1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Displacement"
+			},
+			"transparency" : {
+				"channel" : {
+					"id" : "transparency",
+					"type" : "float",
+					"name" : "Opacity Strength",
+					"label" : "Opacity Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/Opacity"
+			},
+			"normal" : {
+				"channel" : {
+					"id" : "normal",
+					"type" : "image",
+					"name" : "Normal Map",
+					"label" : "Normal Map",
+					"default_image_gamma" : 1
+				},
+				"group" : "/Normal Mapping"
+			},
+			"u_offset" : {
+				"channel" : {
+					"id" : "u_offset",
+					"type" : "float",
+					"name" : "Horizontal Offset",
+					"label" : "Horizontal Offset",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"u_scale" : {
+				"channel" : {
+					"id" : "u_scale",
+					"type" : "float",
+					"name" : "Horizontal Tiles",
+					"label" : "Horizontal Tiles",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"v_offset" : {
+				"channel" : {
+					"id" : "v_offset",
+					"type" : "float",
+					"name" : "Vertical Offset",
+					"label" : "Vertical Offset",
+					"value" : 0,
+					"current_value" : 0,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"v_scale" : {
+				"channel" : {
+					"id" : "v_scale",
+					"type" : "float",
+					"name" : "Vertical Tiles",
+					"label" : "Vertical Tiles",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : -10000,
+					"max" : 10000,
+					"step_size" : 0.01
+				},
+				"group" : "/Tiling"
+			},
+			"extra" : [
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Multiply Specular Through Opacity",
+								"type" : "bool",
+								"label" : "Multiply Specular Through Opacity",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Sheen Color",
+								"type" : "color",
+								"label" : "Sheen Color",
+								"visible" : false,
+								"value" : [ 0.4, 0.4, 0.4 ],
+								"current_value" : [ 0.4, 0.4, 0.4 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Scatter Color",
+								"type" : "color",
+								"label" : "Scatter Color",
+								"visible" : false,
+								"value" : [ 0.8, 0.1490196, 0.05882353 ],
+								"current_value" : [ 0.8, 0.1490196, 0.05882353 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Thickness",
+								"type" : "float",
+								"label" : "Thickness",
+								"visible" : false,
+								"value" : 0.25,
+								"current_value" : 0.25,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/Subsurface"
+						},
+						{
+							"channel" : {
+								"id" : "Lighting Model",
+								"type" : "enum",
+								"label" : "Lighting Model",
+								"value" : 0,
+								"current_value" : 0,
+								"enum_values" : [ "Plastic", "Metallic", "Skin", "Glossy (Plastic)", "Matte", "Glossy (Metallic)" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Tags",
+								"type" : "string",
+								"label" : "Tags",
+								"value" : "",
+								"current_value" : ""
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"label" : "Smooth",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"label" : "Angle",
+								"value" : 89.9,
+								"current_value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"current_value" : 3,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/Render Priority"
+						}
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"nodes" : [
+			{
+				"id" : "Genesis3SkirtTemplate_21138",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#Genesis3SkirtTemplate_21138",
+				"name" : "Genesis3SkirtTemplate_21138",
+				"label" : "Genesis3SkirtTemplate",
+				"geometries" : [
+					{
+						"id" : "SkirtRework_SuckedIn",
+						"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#SkirtRework_SuckedIn",
+						"name" : "Genesis3SkirtTemplate",
+						"label" : "shape",
+						"type" : "subdivision_surface",
+						"current_subdivision_level" : 1,
+						"edge_interpolation_mode" : "edges_only",
+						"extra" : [
+							{
+								"type" : "studio_geometry_channels",
+								"channels" : [
+									{
+										"channel" : {
+											"id" : "SubDRenderLevel",
+											"type" : "int",
+											"current_value" : 0
+										}
+									}
+								]
+							}
+						]
+					}
+				],
+				"preview" : {
+					"type" : "figure",
+					"oriented_box" : {
+						"min" : [ -62.327, 49.191, -12.648 ],
+						"max" : [ 62.328, 180.03, 13.542 ]
+					},
+					"center_point" : [ 0, 0, 0 ],
+					"end_point" : [ 0, 103.876, 0 ],
+					"rotation_order" : "YXZ"
+				}
+			},
+			{
+				"id" : "hip",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#hip",
+				"name" : "hip",
+				"label" : "Hip",
+				"parent" : "#Genesis3SkirtTemplate_21138",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 105.1781, 1.824816 ],
+					"end_point" : [ 0, 88.82034, 0.02407765 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "pelvis",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#pelvis",
+				"name" : "pelvis",
+				"label" : "Pelvis",
+				"parent" : "#hip",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -18.583, -57.836, -14.412 ],
+						"max" : [ 18.584, 1.624, 9.989 ]
+					},
+					"center_point" : [ 0, 107.0423, 1.873485 ],
+					"end_point" : [ 0, 88.0048, 1.555934 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "lThighBend",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lThighBend",
+				"name" : "lThighBend",
+				"label" : "Left Thigh Bend",
+				"parent" : "#pelvis",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -9.562, -46.625, -13.041 ],
+						"max" : [ 11.225, -2.036, 11.416 ]
+					},
+					"center_point" : [ 7.909208, 96.41562, 0.3913819 ],
+					"end_point" : [ 11.47284, 75.84707, -0.1116907 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "lThighTwist",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lThighTwist",
+				"name" : "lThighTwist",
+				"label" : "Left Thigh Twist",
+				"parent" : "#lThighBend",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 10.78465, 75.66734, -0.04346678 ],
+					"end_point" : [ 13.7365, 54.19333, -0.6480957 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "rThighBend",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rThighBend",
+				"name" : "rThighBend",
+				"label" : "Right Thigh Bend",
+				"parent" : "#pelvis",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -11.224, -46.625, -13.041 ],
+						"max" : [ 9.563, -2.036, 11.416 ]
+					},
+					"center_point" : [ -7.909208, 96.41562, 0.3913819 ],
+					"end_point" : [ -11.47284, 75.84707, -0.1116907 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "rThighTwist",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rThighTwist",
+				"name" : "rThighTwist",
+				"label" : "Right Thigh Twist",
+				"parent" : "#rThighBend",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -10.78465, 75.66734, -0.04346678 ],
+					"end_point" : [ -13.7365, 54.19333, -0.6480957 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "abdomenLower",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#abdomenLower",
+				"name" : "abdomenLower",
+				"label" : "Abdomen Lower",
+				"parent" : "#hip",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -15.102, -3.007, -8.775 ],
+						"max" : [ 15.103, 9.898, 11.645 ]
+					},
+					"center_point" : [ 0, 106.9446, 0.3423212 ],
+					"end_point" : [ 0, 115.0478, 0.4073269 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "abdomenUpper",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#abdomenUpper",
+				"name" : "abdomenUpper",
+				"label" : "Abdomen Upper",
+				"parent" : "#abdomenLower",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -13.114, -0.435, -10.416 ],
+						"max" : [ 13.115, 13.767, 10.291 ]
+					},
+					"center_point" : [ 0, 115.0947, 1.53567 ],
+					"end_point" : [ 0, 122.5955, 0.839857 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "chestLower",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#chestLower",
+				"name" : "chestLower",
+				"label" : "Chest Lower",
+				"parent" : "#abdomenUpper",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -14.819, 0.278, -13.452 ],
+						"max" : [ 14.82, 16.987, 12.14 ]
+					},
+					"center_point" : [ 0, 123, 1.138297 ],
+					"end_point" : [ 0, 143.7313, 1.202407 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "chestUpper",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#chestUpper",
+				"name" : "chestUpper",
+				"label" : "Chest Upper",
+				"parent" : "#chestLower",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -15.325, -0.305, -9.9 ],
+						"max" : [ 15.326, 16.797, 13.987 ]
+					},
+					"center_point" : [ 0, 136.0765, -2.479732 ],
+					"end_point" : [ 0, 149.5166, -2.438965 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "lCollar",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lCollar",
+				"name" : "lCollar",
+				"label" : "Left Collar",
+				"parent" : "#chestUpper",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ 4.891, -9.73, -7.653 ],
+						"max" : [ 20.73, 4.13, 6.982 ]
+					},
+					"center_point" : [ 3.465208, 146.9626, -4.110317 ],
+					"end_point" : [ 13.45499, 147.5363, -4.854364 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "lShldrBend",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lShldrBend",
+				"name" : "lShldrBend",
+				"label" : "Left Shoulder Bend",
+				"parent" : "#lCollar",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ 6.661, -4.53, -4.836 ],
+						"max" : [ 28.243, 3.747, 4.22 ]
+					},
+					"center_point" : [ 15.40978, 145.627, -4.916882 ],
+					"end_point" : [ 23.14322, 136.9117, -4.665148 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "lShldrTwist",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lShldrTwist",
+				"name" : "lShldrTwist",
+				"label" : "Left Shoulder Twist",
+				"parent" : "#lShldrBend",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 23.16304, 136.9295, -4.667035 ],
+					"end_point" : [ 32.71958, 126.0328, -4.42785 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "lForearmBend",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lForearmBend",
+				"name" : "lForearmBend",
+				"label" : "Left Forearm Bend",
+				"parent" : "#lShldrTwist",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ 0.513, -4.552, -4.076 ],
+						"max" : [ 25.111, 3.77, 3.76 ]
+					},
+					"center_point" : [ 32.85266, 126.2099, -4.923763 ],
+					"end_point" : [ 41.25117, 118.0638, -1.4356 ],
+					"rotation_order" : "XZY"
+				}
+			},
+			{
+				"id" : "lForearmTwist",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lForearmTwist",
+				"name" : "lForearmTwist",
+				"label" : "Left Forearm Twist",
+				"parent" : "#lForearmBend",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 41.20532, 118.1169, -1.487801 ],
+					"end_point" : [ 51.15399, 108.4553, 2.49912 ],
+					"rotation_order" : "XZY"
+				}
+			},
+			{
+				"id" : "lHand",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lHand",
+				"name" : "lHand",
+				"label" : "Left Hand",
+				"parent" : "#lForearmTwist",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -2.495, -2.182, -3.783 ],
+						"max" : [ 9.52, 2.52, 4.511 ]
+					},
+					"center_point" : [ 50.96496, 108.4512, 2.214822 ],
+					"end_point" : [ 57.64429, 101.9704, 2.305093 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "lThumb1",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lThumb1",
+				"name" : "lThumb1",
+				"label" : "Left Thumb 1",
+				"parent" : "#lHand",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 51.47279, 106.9388, 3.795763 ],
+					"end_point" : [ 52.50239, 104.7198, 7.085684 ],
+					"rotation_order" : "XZY"
+				}
+			},
+			{
+				"id" : "lThumb2",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lThumb2",
+				"name" : "lThumb2",
+				"label" : "Left Thumb 2",
+				"parent" : "#lThumb1",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 52.48938, 104.7749, 7.097317 ],
+					"end_point" : [ 53.35403, 102.3976, 8.674707 ],
+					"rotation_order" : "XZY"
+				}
+			},
+			{
+				"id" : "lCarpal1",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lCarpal1",
+				"name" : "lCarpal1",
+				"label" : "Left Carpal 1",
+				"parent" : "#lHand",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 51.54131, 108.4491, 3.342167 ],
+					"end_point" : [ 56.50318, 102.6805, 5.236221 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "lIndex1",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lIndex1",
+				"name" : "lIndex1",
+				"label" : "Left Index 1",
+				"parent" : "#lCarpal1",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 56.44681, 103.0041, 5.290136 ],
+					"end_point" : [ 58.92588, 99.99886, 5.858657 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "lIndex2",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lIndex2",
+				"name" : "lIndex2",
+				"label" : "Left Index 2",
+				"parent" : "#lIndex1",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 58.92588, 99.99886, 5.858657 ],
+					"end_point" : [ 60.22561, 98.37543, 6.043416 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "lCarpal2",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lCarpal2",
+				"name" : "lCarpal2",
+				"label" : "Left Carpal 2",
+				"parent" : "#lHand",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 51.74031, 108.2764, 2.459781 ],
+					"end_point" : [ 56.81302, 102.4305, 3.231111 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "lMid1",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lMid1",
+				"name" : "lMid1",
+				"label" : "Left Mid 1",
+				"parent" : "#lCarpal2",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 56.87056, 102.8805, 3.246592 ],
+					"end_point" : [ 59.64886, 99.56845, 3.49945 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "lMid2",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lMid2",
+				"name" : "lMid2",
+				"label" : "Left Mid 2",
+				"parent" : "#lMid1",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 59.8057, 99.67656, 3.499563 ],
+					"end_point" : [ 61.28694, 97.64203, 3.670315 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "lCarpal3",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lCarpal3",
+				"name" : "lCarpal3",
+				"label" : "Left Carpal 3",
+				"parent" : "#lHand",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 51.80978, 108.2366, 1.465284 ],
+					"end_point" : [ 56.48948, 102.8117, 1.289902 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "lRing1",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lRing1",
+				"name" : "lRing1",
+				"label" : "Left Ring 1",
+				"parent" : "#lCarpal3",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 56.48808, 103.1822, 1.3666 ],
+					"end_point" : [ 59.09236, 100.1196, 1.153956 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "lRing2",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lRing2",
+				"name" : "lRing2",
+				"label" : "Left Ring 2",
+				"parent" : "#lRing1",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 59.09236, 100.1196, 1.153956 ],
+					"end_point" : [ 60.48803, 98.43823, 1.06041 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "lCarpal4",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lCarpal4",
+				"name" : "lCarpal4",
+				"label" : "Left Carpal 4",
+				"parent" : "#lHand",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 51.821, 108.256, 0.5514359 ],
+					"end_point" : [ 55.9499, 103.2702, -0.631645 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "lPinky1",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lPinky1",
+				"name" : "lPinky1",
+				"label" : "Left Pinky 1",
+				"parent" : "#lCarpal4",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 55.70708, 103.1928, -0.6659586 ],
+					"end_point" : [ 57.52787, 101.0978, -0.9583068 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "lPinky2",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lPinky2",
+				"name" : "lPinky2",
+				"label" : "Left Pinky 2",
+				"parent" : "#lPinky1",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 57.52787, 101.0978, -0.9583068 ],
+					"end_point" : [ 58.62975, 99.83759, -1.124308 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "rCollar",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rCollar",
+				"name" : "rCollar",
+				"label" : "Right Collar",
+				"parent" : "#chestUpper",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -20.729, -9.73, -7.653 ],
+						"max" : [ -4.89, 4.13, 6.982 ]
+					},
+					"center_point" : [ -3.465208, 146.9626, -4.110317 ],
+					"end_point" : [ -13.45499, 147.5363, -4.854364 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "rShldrBend",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rShldrBend",
+				"name" : "rShldrBend",
+				"label" : "Right Shoulder Bend",
+				"parent" : "#rCollar",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -28.242, -4.53, -4.836 ],
+						"max" : [ -6.66, 3.747, 4.22 ]
+					},
+					"center_point" : [ -15.40978, 145.627, -4.916882 ],
+					"end_point" : [ -23.14322, 136.9117, -4.665148 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "rShldrTwist",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rShldrTwist",
+				"name" : "rShldrTwist",
+				"label" : "Right Shoulder Twist",
+				"parent" : "#rShldrBend",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -23.16304, 136.9295, -4.667035 ],
+					"end_point" : [ -32.71958, 126.0328, -4.42785 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "rForearmBend",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rForearmBend",
+				"name" : "rForearmBend",
+				"label" : "Right Forearm Bend",
+				"parent" : "#rShldrTwist",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -25.11, -4.552, -4.076 ],
+						"max" : [ -0.512, 3.77, 3.76 ]
+					},
+					"center_point" : [ -32.85266, 126.2099, -4.923763 ],
+					"end_point" : [ -41.25117, 118.0638, -1.4356 ],
+					"rotation_order" : "XZY"
+				}
+			},
+			{
+				"id" : "rForearmTwist",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rForearmTwist",
+				"name" : "rForearmTwist",
+				"label" : "Right Forearm Twist",
+				"parent" : "#rForearmBend",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -41.20532, 118.1169, -1.487801 ],
+					"end_point" : [ -51.15399, 108.4553, 2.49912 ],
+					"rotation_order" : "XZY"
+				}
+			},
+			{
+				"id" : "rHand",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rHand",
+				"name" : "rHand",
+				"label" : "Right Hand",
+				"parent" : "#rForearmTwist",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -9.519, -2.182, -3.783 ],
+						"max" : [ 2.496, 2.52, 4.511 ]
+					},
+					"center_point" : [ -50.96496, 108.4512, 2.214822 ],
+					"end_point" : [ -57.64429, 101.9704, 2.305093 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "rThumb1",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rThumb1",
+				"name" : "rThumb1",
+				"label" : "Right Thumb 1",
+				"parent" : "#rHand",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -51.47279, 106.9388, 3.795763 ],
+					"end_point" : [ -52.50239, 104.7198, 7.085684 ],
+					"rotation_order" : "XZY"
+				}
+			},
+			{
+				"id" : "rThumb2",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rThumb2",
+				"name" : "rThumb2",
+				"label" : "Right Thumb 2",
+				"parent" : "#rThumb1",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -52.48938, 104.7749, 7.097317 ],
+					"end_point" : [ -53.35403, 102.3976, 8.674707 ],
+					"rotation_order" : "XZY"
+				}
+			},
+			{
+				"id" : "rCarpal1",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rCarpal1",
+				"name" : "rCarpal1",
+				"label" : "Right Carpal 1",
+				"parent" : "#rHand",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -51.54131, 108.4491, 3.342167 ],
+					"end_point" : [ -56.50318, 102.6805, 5.236221 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "rIndex1",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rIndex1",
+				"name" : "rIndex1",
+				"label" : "Right Index 1",
+				"parent" : "#rCarpal1",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -56.44681, 103.0041, 5.290136 ],
+					"end_point" : [ -58.92588, 99.99886, 5.858657 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "rIndex2",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rIndex2",
+				"name" : "rIndex2",
+				"label" : "Right Index 2",
+				"parent" : "#rIndex1",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -58.92588, 99.99886, 5.858657 ],
+					"end_point" : [ -60.22561, 98.37543, 6.043416 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "rCarpal2",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rCarpal2",
+				"name" : "rCarpal2",
+				"label" : "Right Carpal 2",
+				"parent" : "#rHand",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -51.74031, 108.2764, 2.459781 ],
+					"end_point" : [ -56.81302, 102.4305, 3.231111 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "rMid1",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rMid1",
+				"name" : "rMid1",
+				"label" : "Right Mid 1",
+				"parent" : "#rCarpal2",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -56.87056, 102.8805, 3.246592 ],
+					"end_point" : [ -59.64886, 99.56845, 3.49945 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "rMid2",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rMid2",
+				"name" : "rMid2",
+				"label" : "Right Mid 2",
+				"parent" : "#rMid1",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -59.8057, 99.67656, 3.499563 ],
+					"end_point" : [ -61.28694, 97.64203, 3.670315 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "rCarpal3",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rCarpal3",
+				"name" : "rCarpal3",
+				"label" : "Right Carpal 3",
+				"parent" : "#rHand",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -51.80978, 108.2366, 1.465284 ],
+					"end_point" : [ -56.48948, 102.8117, 1.289902 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "rRing1",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rRing1",
+				"name" : "rRing1",
+				"label" : "Right Ring 1",
+				"parent" : "#rCarpal3",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -56.48808, 103.1822, 1.3666 ],
+					"end_point" : [ -59.09236, 100.1196, 1.153956 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "rRing2",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rRing2",
+				"name" : "rRing2",
+				"label" : "Right Ring 2",
+				"parent" : "#rRing1",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -59.09236, 100.1196, 1.153956 ],
+					"end_point" : [ -60.48803, 98.43823, 1.06041 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "rCarpal4",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rCarpal4",
+				"name" : "rCarpal4",
+				"label" : "Right Carpal 4",
+				"parent" : "#rHand",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -51.821, 108.256, 0.5514359 ],
+					"end_point" : [ -55.9499, 103.2702, -0.631645 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "rPinky1",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rPinky1",
+				"name" : "rPinky1",
+				"label" : "Right Pinky 1",
+				"parent" : "#rCarpal4",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -55.70708, 103.1928, -0.6659586 ],
+					"end_point" : [ -57.52787, 101.0978, -0.9583068 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "rPinky2",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rPinky2",
+				"name" : "rPinky2",
+				"label" : "Right Pinky 2",
+				"parent" : "#rPinky1",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -57.52787, 101.0978, -0.9583068 ],
+					"end_point" : [ -58.62975, 99.83759, -1.124308 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "neckLower",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#neckLower",
+				"name" : "neckLower",
+				"label" : "Neck Lower",
+				"parent" : "#chestUpper",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -7.307, -4.268, -5.237 ],
+						"max" : [ 7.308, 3.062, 5.706 ]
+					},
+					"center_point" : [ 0, 154.33, -3.98 ],
+					"end_point" : [ 0, 157.69, -2.93 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "neckUpper",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#neckUpper",
+				"name" : "neckUpper",
+				"label" : "Neck Upper",
+				"parent" : "#neckLower",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -6.236, -3.287, -6 ],
+						"max" : [ 6.237, 5.638, 5.096 ]
+					},
+					"center_point" : [ 0, 157.61, -2 ],
+					"end_point" : [ 0, 162.59, -1.53 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "head",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#head",
+				"name" : "head",
+				"label" : "Head",
+				"parent" : "#neckUpper",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -7.808, -5.902, -9.42 ],
+						"max" : [ 7.809, 17.408, 13.18 ]
+					},
+					"center_point" : [ 0, 162.5502, -1.840575 ],
+					"end_point" : [ 0, 165.8927, -1.77677 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "upperTeeth",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#upperTeeth",
+				"name" : "upperTeeth",
+				"label" : "Upper Teeth",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 162.6658, 5.914668 ],
+					"end_point" : [ 0, 162.6625, 6.998552 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lowerJaw",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lowerJaw",
+				"name" : "lowerJaw",
+				"label" : "Lower Jaw",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 164.1132, 0.09420407 ],
+					"end_point" : [ 0, 160.9067, 7.457417 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lowerTeeth",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lowerTeeth",
+				"name" : "lowerTeeth",
+				"label" : "Lower Teeth",
+				"parent" : "#lowerJaw",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 161.5753, 5.668454 ],
+					"end_point" : [ 0, 161.3627, 6.756145 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lowerFaceRig",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lowerFaceRig",
+				"name" : "lowerFaceRig",
+				"label" : "Lower Face Rig",
+				"parent" : "#lowerJaw",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 164.1132, 0.09420407 ],
+					"end_point" : [ 0, 161.0237, 7.171402 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lNasolabialLower",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lNasolabialLower",
+				"name" : "lNasolabialLower",
+				"label" : "Left Nasolabial Lower",
+				"parent" : "#lowerFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 3.007976, 159.6345, 6.575895 ],
+					"end_point" : [ 3.005277, 159.6385, 7.675242 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rNasolabialLower",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rNasolabialLower",
+				"name" : "rNasolabialLower",
+				"label" : "Right Nasolabial Lower",
+				"parent" : "#lowerFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -3.007976, 159.6345, 6.575895 ],
+					"end_point" : [ -3.005277, 159.6385, 7.675242 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lNasolabialMouthCorner",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lNasolabialMouthCorner",
+				"name" : "lNasolabialMouthCorner",
+				"label" : "Left Nasolabial Mouth Corner",
+				"parent" : "#lowerFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 4.24674, 161.8622, 6.781797 ],
+					"end_point" : [ 4.241295, 161.8562, 7.882604 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rNasolabialMouthCorner",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rNasolabialMouthCorner",
+				"name" : "rNasolabialMouthCorner",
+				"label" : "Right Nasolabial Mouth Corner",
+				"parent" : "#lowerFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -4.24674, 161.8622, 6.781797 ],
+					"end_point" : [ -4.241295, 161.8562, 7.882604 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lLipCorner",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lLipCorner",
+				"name" : "lLipCorner",
+				"label" : "Left Lip Corner",
+				"parent" : "#lowerFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 3.256799, 161.7079, 7.331606 ],
+					"end_point" : [ 3.433054, 161.6424, 8.377045 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lLipLowerOuter",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lLipLowerOuter",
+				"name" : "lLipLowerOuter",
+				"label" : "Left Lip Lower Outer",
+				"parent" : "#lowerFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 2.127608, 161.1172, 8.127138 ],
+					"end_point" : [ 2.152609, 161.1163, 9.131135 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lLipLowerInner",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lLipLowerInner",
+				"name" : "lLipLowerInner",
+				"label" : "Left Lip Lower Inner",
+				"parent" : "#lowerFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 1.089672, 160.9406, 8.398042 ],
+					"end_point" : [ 1.095273, 160.9416, 9.334579 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "LipLowerMiddle",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#LipLowerMiddle",
+				"name" : "LipLowerMiddle",
+				"label" : "Lip Lower Middle",
+				"parent" : "#lowerFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 160.705, 8.692502 ],
+					"end_point" : [ 0, 160.7054, 9.655585 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rLipLowerInner",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rLipLowerInner",
+				"name" : "rLipLowerInner",
+				"label" : "Right Lip Lower Inner",
+				"parent" : "#lowerFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -1.089672, 160.9406, 8.398042 ],
+					"end_point" : [ -1.095273, 160.9416, 9.334579 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rLipLowerOuter",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rLipLowerOuter",
+				"name" : "rLipLowerOuter",
+				"label" : "Right Lip Lower Outer",
+				"parent" : "#lowerFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -2.127608, 161.1172, 8.127138 ],
+					"end_point" : [ -2.152609, 161.1163, 9.131135 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rLipCorner",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rLipCorner",
+				"name" : "rLipCorner",
+				"label" : "Right Lip Corner",
+				"parent" : "#lowerFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -3.256799, 161.7079, 7.331606 ],
+					"end_point" : [ -3.433054, 161.6424, 8.377045 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "LipBelow",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#LipBelow",
+				"name" : "LipBelow",
+				"label" : "Lip Below",
+				"parent" : "#lowerFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 159.588, 8.421598 ],
+					"end_point" : [ 0, 159.5904, 9.536015 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "Chin",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#Chin",
+				"name" : "Chin",
+				"label" : "Chin",
+				"parent" : "#lowerFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 158.3418, 7.446119 ],
+					"end_point" : [ 0, 158.341, 8.567238 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lCheekLower",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lCheekLower",
+				"name" : "lCheekLower",
+				"label" : "Left Cheek Lower",
+				"parent" : "#lowerFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 5.490659, 162.0978, 5.171132 ],
+					"end_point" : [ 5.491183, 162.0726, 6.312698 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rCheekLower",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rCheekLower",
+				"name" : "rCheekLower",
+				"label" : "Right Cheek Lower",
+				"parent" : "#lowerFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -5.490659, 162.0978, 5.171132 ],
+					"end_point" : [ -5.491183, 162.0726, 6.312698 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "BelowJaw",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#BelowJaw",
+				"name" : "BelowJaw",
+				"label" : "Below Jaw",
+				"parent" : "#lowerFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 157.1052, 4.735023 ],
+					"end_point" : [ 0, 157.0961, 5.929609 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lJawClench",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lJawClench",
+				"name" : "lJawClench",
+				"label" : "Left Jaw Clench",
+				"parent" : "#lowerFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 6.070787, 161.7958, 0.7882266 ],
+					"end_point" : [ 6.049245, 161.7779, 1.978136 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rJawClench",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rJawClench",
+				"name" : "rJawClench",
+				"label" : "Right Jaw Clench",
+				"parent" : "#lowerFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -6.070787, 161.7958, 0.7882266 ],
+					"end_point" : [ -6.049245, 161.7779, 1.978136 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "upperFaceRig",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#upperFaceRig",
+				"name" : "upperFaceRig",
+				"label" : "Upper Face Rig",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 162.5502, -1.840575 ],
+					"end_point" : [ 0, 165.8927, -1.77677 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "rBrowInner",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rBrowInner",
+				"name" : "rBrowInner",
+				"label" : "Right Brow Inner",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -1.95, 170.4, 8.75 ],
+					"end_point" : [ -1.954939, 170.4023, 9.625085 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rBrowMid",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rBrowMid",
+				"name" : "rBrowMid",
+				"label" : "Right Brow Middle",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -3.856626, 170.6706, 8.5 ],
+					"end_point" : [ -3.857862, 170.6743, 9.398236 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rBrowOuter",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rBrowOuter",
+				"name" : "rBrowOuter",
+				"label" : "Right Brow Outer",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -5.469148, 170.0714, 7.250023 ],
+					"end_point" : [ -5.460074, 170.0647, 8.201488 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lBrowInner",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lBrowInner",
+				"name" : "lBrowInner",
+				"label" : "Left Brow Inner",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 1.95, 170.4, 8.75 ],
+					"end_point" : [ 1.954939, 170.4023, 9.625085 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lBrowMid",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lBrowMid",
+				"name" : "lBrowMid",
+				"label" : "Left Brow Middle",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 3.856626, 170.6706, 8.5 ],
+					"end_point" : [ 3.857862, 170.6743, 9.398236 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lBrowOuter",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lBrowOuter",
+				"name" : "lBrowOuter",
+				"label" : "Left Brow Outer",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 5.469148, 170.0714, 7.250023 ],
+					"end_point" : [ 5.460074, 170.0647, 8.201488 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "CenterBrow",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#CenterBrow",
+				"name" : "CenterBrow",
+				"label" : "Center Brow",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 170.31, 9.224089 ],
+					"end_point" : [ 0, 170.308, 10.09167 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "MidNoseBridge",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#MidNoseBridge",
+				"name" : "MidNoseBridge",
+				"label" : "Middle Nose Bridge",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 168.34, 9 ],
+					"end_point" : [ 0, 168.3436, 9.913671 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lEyelidInner",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lEyelidInner",
+				"name" : "lEyelidInner",
+				"label" : "Left Eyelid Inner",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 3.265177, 168.6169, 6.229174 ],
+					"end_point" : [ 1.802441, 168.6169, 7.889934 ],
+					"rotation_order" : "ZXY"
+				}
+			},
+			{
+				"id" : "lEyelidUpperInner",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lEyelidUpperInner",
+				"name" : "lEyelidUpperInner",
+				"label" : "Left Eyelid Upper Inner",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 3.260104, 168.635, 6.243627 ],
+					"end_point" : [ 3.216003, 169.0578, 8.074774 ],
+					"rotation_order" : "ZXY"
+				}
+			},
+			{
+				"id" : "lEyelidUpper",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lEyelidUpper",
+				"name" : "lEyelidUpper",
+				"label" : "Left Eyelid Upper",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 3.290639, 168.635, 6.243627 ],
+					"end_point" : [ 3.290639, 169.0435, 8.074774 ],
+					"rotation_order" : "ZXY"
+				}
+			},
+			{
+				"id" : "lEyelidUpperOuter",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lEyelidUpperOuter",
+				"name" : "lEyelidUpperOuter",
+				"label" : "Left Eyelid Upper Outer",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 3.319767, 168.635, 6.243627 ],
+					"end_point" : [ 3.367531, 169.0494, 8.074774 ],
+					"rotation_order" : "ZXY"
+				}
+			},
+			{
+				"id" : "lEyelidOuter",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lEyelidOuter",
+				"name" : "lEyelidOuter",
+				"label" : "Left Eyelid Outer",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 3.31101, 168.6169, 6.23 ],
+					"end_point" : [ 4.778837, 168.6169, 7 ],
+					"rotation_order" : "ZXY"
+				}
+			},
+			{
+				"id" : "lEyelidLowerOuter",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lEyelidLowerOuter",
+				"name" : "lEyelidLowerOuter",
+				"label" : "Left Eyelid Lower Outer",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 3.318757, 168.601, 6.242318 ],
+					"end_point" : [ 3.406563, 167.9549, 7.964937 ],
+					"rotation_order" : "ZXY"
+				}
+			},
+			{
+				"id" : "lEyelidLower",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lEyelidLower",
+				"name" : "lEyelidLower",
+				"label" : "Left Eyelid Lower",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 3.290639, 168.601, 6.242318 ],
+					"end_point" : [ 3.290639, 167.9414, 7.996017 ],
+					"rotation_order" : "ZXY"
+				}
+			},
+			{
+				"id" : "lEyelidLowerInner",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lEyelidLowerInner",
+				"name" : "lEyelidLowerInner",
+				"label" : "Left Eyelid Lower Inner",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 3.260896, 168.601, 6.242318 ],
+					"end_point" : [ 3.179546, 167.9491, 7.996017 ],
+					"rotation_order" : "ZXY"
+				}
+			},
+			{
+				"id" : "rEyelidInner",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rEyelidInner",
+				"name" : "rEyelidInner",
+				"label" : "Right Eyelid Inner",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -3.265177, 168.6169, 6.229174 ],
+					"end_point" : [ -1.802441, 168.6169, 7.889934 ],
+					"rotation_order" : "ZXY"
+				}
+			},
+			{
+				"id" : "rEyelidUpperInner",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rEyelidUpperInner",
+				"name" : "rEyelidUpperInner",
+				"label" : "Right Eyelid Upper Inner",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -3.260104, 168.635, 6.243627 ],
+					"end_point" : [ -3.216003, 169.0578, 8.074774 ],
+					"rotation_order" : "ZXY"
+				}
+			},
+			{
+				"id" : "rEyelidUpper",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rEyelidUpper",
+				"name" : "rEyelidUpper",
+				"label" : "Right Eyelid Upper",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -3.290639, 168.635, 6.243627 ],
+					"end_point" : [ -3.290639, 169.0435, 8.074774 ],
+					"rotation_order" : "ZXY"
+				}
+			},
+			{
+				"id" : "rEyelidUpperOuter",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rEyelidUpperOuter",
+				"name" : "rEyelidUpperOuter",
+				"label" : "Right Eyelid Upper Outer",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -3.319767, 168.635, 6.243627 ],
+					"end_point" : [ -3.367531, 169.0494, 8.074774 ],
+					"rotation_order" : "ZXY"
+				}
+			},
+			{
+				"id" : "rEyelidOuter",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rEyelidOuter",
+				"name" : "rEyelidOuter",
+				"label" : "Right Eyelid Outer",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -3.31101, 168.6169, 6.23 ],
+					"end_point" : [ -4.778837, 168.6169, 7 ],
+					"rotation_order" : "ZXY"
+				}
+			},
+			{
+				"id" : "rEyelidLowerOuter",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rEyelidLowerOuter",
+				"name" : "rEyelidLowerOuter",
+				"label" : "Right Eyelid Lower Outer",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -3.318757, 168.601, 6.242318 ],
+					"end_point" : [ -3.406563, 167.9549, 7.964937 ],
+					"rotation_order" : "ZXY"
+				}
+			},
+			{
+				"id" : "rEyelidLower",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rEyelidLower",
+				"name" : "rEyelidLower",
+				"label" : "Right Eyelid Lower",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -3.290639, 168.601, 6.242318 ],
+					"end_point" : [ -3.290639, 167.9414, 7.996017 ],
+					"rotation_order" : "ZXY"
+				}
+			},
+			{
+				"id" : "rEyelidLowerInner",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rEyelidLowerInner",
+				"name" : "rEyelidLowerInner",
+				"label" : "Right Eyelid Lower Inner",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -3.260896, 168.601, 6.242318 ],
+					"end_point" : [ -3.179546, 167.9491, 7.996017 ],
+					"rotation_order" : "ZXY"
+				}
+			},
+			{
+				"id" : "lSquintInner",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lSquintInner",
+				"name" : "lSquintInner",
+				"label" : "Left Squint Inner",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 2.738243, 167.3127, 7.686976 ],
+					"end_point" : [ 2.734971, 167.315, 8.638041 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lSquintOuter",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lSquintOuter",
+				"name" : "lSquintOuter",
+				"label" : "Left Squint Outer",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 5.060328, 167.6247, 6.95796 ],
+					"end_point" : [ 5.062188, 167.627, 8.01493 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rSquintInner",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rSquintInner",
+				"name" : "rSquintInner",
+				"label" : "Right Squint Inner",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -2.738243, 167.3127, 7.686976 ],
+					"end_point" : [ -2.734971, 167.315, 8.638041 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rSquintOuter",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rSquintOuter",
+				"name" : "rSquintOuter",
+				"label" : "Right Squint Outer",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -5.060328, 167.6247, 6.95796 ],
+					"end_point" : [ -5.062188, 167.627, 8.01493 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lCheekUpper",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lCheekUpper",
+				"name" : "lCheekUpper",
+				"label" : "Left Cheek Upper",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 5.464041, 165.6674, 6.802028 ],
+					"end_point" : [ 5.46754, 165.6535, 7.80492 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rCheekUpper",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rCheekUpper",
+				"name" : "rCheekUpper",
+				"label" : "Right Cheek Upper",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -5.464041, 165.6674, 6.802028 ],
+					"end_point" : [ -5.46754, 165.6535, 7.80492 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "Nose",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#Nose",
+				"name" : "Nose",
+				"label" : "Nose",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 164.8733, 10.35309 ],
+					"end_point" : [ 0, 164.8613, 11.40171 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lNostril",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lNostril",
+				"name" : "lNostril",
+				"label" : "Left Nostril",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 1.090652, 164.5528, 9.608484 ],
+					"end_point" : [ 1.0971, 164.5534, 10.64744 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rNostril",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rNostril",
+				"name" : "rNostril",
+				"label" : "Right Nostril",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -1.090652, 164.5528, 9.608484 ],
+					"end_point" : [ -1.0971, 164.5534, 10.64744 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lLipBelowNose",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lLipBelowNose",
+				"name" : "lLipBelowNose",
+				"label" : "Left Lip Below Nose",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 1.258494, 163.3366, 8.593252 ],
+					"end_point" : [ 1.266338, 163.3372, 9.654034 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rLipBelowNose",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rLipBelowNose",
+				"name" : "rLipBelowNose",
+				"label" : "Right Lip Below Nose",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -1.258494, 163.3366, 8.593252 ],
+					"end_point" : [ -1.266338, 163.3372, 9.654034 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lLipNasolabialCrease",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lLipNasolabialCrease",
+				"name" : "lLipNasolabialCrease",
+				"label" : "Left Lip Nasolabial Crease",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 2.548639, 162.8419, 8.593252 ],
+					"end_point" : [ 2.546782, 162.8424, 9.642406 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rLipNasolabialCrease",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rLipNasolabialCrease",
+				"name" : "rLipNasolabialCrease",
+				"label" : "Right Lip Nasolabial Crease",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -2.548639, 162.8419, 8.593252 ],
+					"end_point" : [ -2.546782, 162.8424, 9.642406 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lNasolabialUpper",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lNasolabialUpper",
+				"name" : "lNasolabialUpper",
+				"label" : "Left Nasolabial Upper",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 1.685855, 166.3484, 8.593252 ],
+					"end_point" : [ 1.69011, 166.3361, 9.475029 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rNasolabialUpper",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rNasolabialUpper",
+				"name" : "rNasolabialUpper",
+				"label" : "Right Nasolabial Upper",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -1.685855, 166.3484, 8.593252 ],
+					"end_point" : [ -1.69011, 166.3361, 9.475029 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lNasolabialMiddle",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lNasolabialMiddle",
+				"name" : "lNasolabialMiddle",
+				"label" : "Left Nasolabial Middle",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 2.928212, 164.4825, 8.22962 ],
+					"end_point" : [ 2.922766, 164.4765, 9.34219 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rNasolabialMiddle",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rNasolabialMiddle",
+				"name" : "rNasolabialMiddle",
+				"label" : "Right Nasolabial Middle",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -2.928212, 164.4825, 8.22962 ],
+					"end_point" : [ -2.922766, 164.4765, 9.34219 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "LipUpperMiddle",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#LipUpperMiddle",
+				"name" : "LipUpperMiddle",
+				"label" : "Lip Upper Middle",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 162.5266, 9.21162 ],
+					"end_point" : [ 0, 162.5286, 10.18682 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lLipUpperOuter",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lLipUpperOuter",
+				"name" : "lLipUpperOuter",
+				"label" : "Left Lip Upper Outer",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 2.102423, 162.0561, 8.528473 ],
+					"end_point" : [ 2.100566, 162.0548, 9.449345 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lLipUpperInner",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lLipUpperInner",
+				"name" : "lLipUpperInner",
+				"label" : "Left Lip Upper Inner",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 1.093588, 162.2439, 8.828822 ],
+					"end_point" : [ 1.091732, 162.2415, 9.794587 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rLipUpperInner",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rLipUpperInner",
+				"name" : "rLipUpperInner",
+				"label" : "Right Lip Upper Inner",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -1.093588, 162.2439, 8.828822 ],
+					"end_point" : [ -1.091732, 162.2415, 9.794587 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rLipUpperOuter",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rLipUpperOuter",
+				"name" : "rLipUpperOuter",
+				"label" : "Right Lip Upper Outer",
+				"parent" : "#upperFaceRig",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -2.102423, 162.0561, 8.528473 ],
+					"end_point" : [ -2.100566, 162.0548, 9.449345 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "lEye",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lEye",
+				"name" : "lEye",
+				"label" : "Left Eye",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.859, -0.003, 1.133 ],
+						"max" : [ 1.276, 1.063, 1.6 ]
+					},
+					"center_point" : [ 3.290832, 168.6187, 6.201231 ],
+					"end_point" : [ 3.290693, 168.6188, 7.924307 ],
+					"rotation_order" : "ZXY"
+				}
+			},
+			{
+				"id" : "rEye",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rEye",
+				"name" : "rEye",
+				"label" : "Right Eye",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -1.275, -0.003, 1.133 ],
+						"max" : [ 0.86, 1.063, 1.6 ]
+					},
+					"center_point" : [ -3.290832, 168.6187, 6.201231 ],
+					"end_point" : [ -3.290693, 168.6188, 7.924307 ],
+					"rotation_order" : "ZXY"
+				}
+			},
+			{
+				"id" : "lEar",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lEar",
+				"name" : "lEar",
+				"label" : "Left Ear",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 6.89126, 166.6339, -1.281856 ],
+					"end_point" : [ 8.589582, 166.5146, -4.197512 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "rEar",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rEar",
+				"name" : "rEar",
+				"label" : "Right Ear",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -6.89126, 166.6339, -1.281856 ],
+					"end_point" : [ -8.589582, 166.5146, -4.197512 ],
+					"rotation_order" : "XYZ"
+				}
+			},
+			{
+				"id" : "lPectoral",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#lPectoral",
+				"name" : "lPectoral",
+				"label" : "Left Pectoral",
+				"parent" : "#chestLower",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -5.556, -5.527, 17.179 ],
+						"max" : [ 5.342, 5.181, 21.577 ]
+					},
+					"center_point" : [ 3.121763, 131.7603, -7.454938 ],
+					"end_point" : [ 10.76093, 135.1547, 12.01135 ],
+					"rotation_order" : "ZYX"
+				}
+			},
+			{
+				"id" : "rPectoral",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#rPectoral",
+				"name" : "rPectoral",
+				"label" : "Right Pectoral",
+				"parent" : "#chestLower",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -5.341, -5.527, 17.179 ],
+						"max" : [ 5.557, 5.181, 21.577 ]
+					},
+					"center_point" : [ -3.121763, 131.7603, -7.454938 ],
+					"end_point" : [ -10.76093, 135.1547, 12.01135 ],
+					"rotation_order" : "ZYX"
+				}
+			}
+		],
+		"modifiers" : [
+			{
+				"id" : "SkinBinding",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#SkinBinding",
+				"parent" : "#SkirtRework_SuckedIn",
+				"extra" : [
+					{
+						"type" : "skin_settings",
+						"auto_normalize_general" : true,
+						"auto_normalize_local" : true,
+						"auto_normalize_scale" : true,
+						"binding_mode" : "General",
+						"general_map_mode" : "DualQuat",
+						"scale_mode" : "BindingMaps"
+					}
+				]
+			},
+			{
+				"id" : "DzMeshSmoothModifier",
+				"url" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/Genesis3SkirtTemplate_21138.dsf#DzMeshSmoothModifier",
+				"parent" : "#Genesis3SkirtTemplate_21138",
+				"extra" : [
+					{
+						"type" : "studio/modifier/smoothing"
+					},
+					{
+						"type" : "studio_modifier_channels",
+						"channels" : [
+							{
+								"channel" : {
+									"id" : "Enable Smoothing",
+									"type" : "bool",
+									"current_value" : false
+								}
+							}
+						]
+					}
+				]
+			}
+		],
+		"materials" : [
+			{
+				"id" : "Torso_SkirtRework_SuckedIn-1",
+				"url" : "#Torso_SkirtRework_SuckedIn",
+				"geometry" : "#SkirtRework_SuckedIn",
+				"groups" : [ "Torso_SkirtRework_SuckedIn" ],
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "color",
+						"name" : "Diffuse Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"diffuse_strength" : {
+					"channel" : {
+						"id" : "diffuse_strength",
+						"type" : "float",
+						"name" : "Diffuse Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"specular" : {
+					"channel" : {
+						"id" : "specular",
+						"type" : "color",
+						"name" : "Specular Color",
+						"current_value" : [ 0.6, 0.6, 0.6 ],
+						"image" : null
+					}
+				},
+				"specular_strength" : {
+					"channel" : {
+						"id" : "specular_strength",
+						"type" : "float",
+						"name" : "Specular Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"glossiness" : {
+					"channel" : {
+						"id" : "glossiness",
+						"type" : "float",
+						"name" : "Glossiness",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"ambient" : {
+					"channel" : {
+						"id" : "ambient",
+						"type" : "color",
+						"name" : "Ambient Color",
+						"current_value" : [ 0, 0, 0 ],
+						"image" : null
+					}
+				},
+				"ambient_strength" : {
+					"channel" : {
+						"id" : "ambient_strength",
+						"type" : "float",
+						"name" : "Ambient Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"reflection" : {
+					"channel" : {
+						"id" : "reflection",
+						"type" : "color",
+						"name" : "Reflection Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"reflection_strength" : {
+					"channel" : {
+						"id" : "reflection_strength",
+						"type" : "float",
+						"name" : "Reflection Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"refraction" : {
+					"channel" : {
+						"id" : "refraction",
+						"type" : "color",
+						"name" : "Refraction Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"refraction_strength" : {
+					"channel" : {
+						"id" : "refraction_strength",
+						"type" : "float",
+						"name" : "Refraction Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"ior" : {
+					"channel" : {
+						"id" : "ior",
+						"type" : "float",
+						"name" : "Index of Refraction",
+						"current_value" : 0
+					}
+				},
+				"bump" : {
+					"channel" : {
+						"id" : "bump",
+						"type" : "float",
+						"name" : "Bump Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"bump_min" : {
+					"channel" : {
+						"id" : "bump_min",
+						"type" : "float",
+						"name" : "Negative Bump",
+						"current_value" : -0.01
+					}
+				},
+				"bump_max" : {
+					"channel" : {
+						"id" : "bump_max",
+						"type" : "float",
+						"name" : "Positive Bump",
+						"current_value" : 0.01
+					}
+				},
+				"displacement" : {
+					"channel" : {
+						"id" : "displacement",
+						"type" : "float",
+						"name" : "Displacement Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"displacement_min" : {
+					"channel" : {
+						"id" : "displacement_min",
+						"type" : "float",
+						"name" : "Minimum Displacement",
+						"current_value" : -0.1
+					}
+				},
+				"displacement_max" : {
+					"channel" : {
+						"id" : "displacement_max",
+						"type" : "float",
+						"name" : "Maximum Displacement",
+						"current_value" : 0.1
+					}
+				},
+				"transparency" : {
+					"channel" : {
+						"id" : "transparency",
+						"type" : "float",
+						"name" : "Opacity Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"normal" : {
+					"channel" : {
+						"id" : "normal",
+						"type" : "image",
+						"name" : "Normal Map",
+						"image" : null
+					}
+				},
+				"u_offset" : {
+					"channel" : {
+						"id" : "u_offset",
+						"type" : "float",
+						"name" : "Horizontal Offset",
+						"current_value" : 0
+					}
+				},
+				"u_scale" : {
+					"channel" : {
+						"id" : "u_scale",
+						"type" : "float",
+						"name" : "Horizontal Tiles",
+						"current_value" : 1
+					}
+				},
+				"v_offset" : {
+					"channel" : {
+						"id" : "v_offset",
+						"type" : "float",
+						"name" : "Vertical Offset",
+						"current_value" : 0
+					}
+				},
+				"v_scale" : {
+					"channel" : {
+						"id" : "v_scale",
+						"type" : "float",
+						"name" : "Vertical Tiles",
+						"current_value" : 1
+					}
+				},
+				"uv_set" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/UV%20Sets/Daz%203D/Base/default.dsf#default"
+			},
+			{
+				"id" : "Face_SkirtRework_SuckedIn-1",
+				"url" : "#Face_SkirtRework_SuckedIn",
+				"geometry" : "#SkirtRework_SuckedIn",
+				"groups" : [ "Face_SkirtRework_SuckedIn" ],
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "color",
+						"name" : "Diffuse Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"diffuse_strength" : {
+					"channel" : {
+						"id" : "diffuse_strength",
+						"type" : "float",
+						"name" : "Diffuse Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"specular" : {
+					"channel" : {
+						"id" : "specular",
+						"type" : "color",
+						"name" : "Specular Color",
+						"current_value" : [ 0.6, 0.6, 0.6 ],
+						"image" : null
+					}
+				},
+				"specular_strength" : {
+					"channel" : {
+						"id" : "specular_strength",
+						"type" : "float",
+						"name" : "Specular Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"glossiness" : {
+					"channel" : {
+						"id" : "glossiness",
+						"type" : "float",
+						"name" : "Glossiness",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"ambient" : {
+					"channel" : {
+						"id" : "ambient",
+						"type" : "color",
+						"name" : "Ambient Color",
+						"current_value" : [ 0, 0, 0 ],
+						"image" : null
+					}
+				},
+				"ambient_strength" : {
+					"channel" : {
+						"id" : "ambient_strength",
+						"type" : "float",
+						"name" : "Ambient Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"reflection" : {
+					"channel" : {
+						"id" : "reflection",
+						"type" : "color",
+						"name" : "Reflection Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"reflection_strength" : {
+					"channel" : {
+						"id" : "reflection_strength",
+						"type" : "float",
+						"name" : "Reflection Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"refraction" : {
+					"channel" : {
+						"id" : "refraction",
+						"type" : "color",
+						"name" : "Refraction Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"refraction_strength" : {
+					"channel" : {
+						"id" : "refraction_strength",
+						"type" : "float",
+						"name" : "Refraction Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"ior" : {
+					"channel" : {
+						"id" : "ior",
+						"type" : "float",
+						"name" : "Index of Refraction",
+						"current_value" : 0
+					}
+				},
+				"bump" : {
+					"channel" : {
+						"id" : "bump",
+						"type" : "float",
+						"name" : "Bump Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"bump_min" : {
+					"channel" : {
+						"id" : "bump_min",
+						"type" : "float",
+						"name" : "Negative Bump",
+						"current_value" : -0.01
+					}
+				},
+				"bump_max" : {
+					"channel" : {
+						"id" : "bump_max",
+						"type" : "float",
+						"name" : "Positive Bump",
+						"current_value" : 0.01
+					}
+				},
+				"displacement" : {
+					"channel" : {
+						"id" : "displacement",
+						"type" : "float",
+						"name" : "Displacement Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"displacement_min" : {
+					"channel" : {
+						"id" : "displacement_min",
+						"type" : "float",
+						"name" : "Minimum Displacement",
+						"current_value" : -0.1
+					}
+				},
+				"displacement_max" : {
+					"channel" : {
+						"id" : "displacement_max",
+						"type" : "float",
+						"name" : "Maximum Displacement",
+						"current_value" : 0.1
+					}
+				},
+				"transparency" : {
+					"channel" : {
+						"id" : "transparency",
+						"type" : "float",
+						"name" : "Opacity Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"normal" : {
+					"channel" : {
+						"id" : "normal",
+						"type" : "image",
+						"name" : "Normal Map",
+						"image" : null
+					}
+				},
+				"u_offset" : {
+					"channel" : {
+						"id" : "u_offset",
+						"type" : "float",
+						"name" : "Horizontal Offset",
+						"current_value" : 0
+					}
+				},
+				"u_scale" : {
+					"channel" : {
+						"id" : "u_scale",
+						"type" : "float",
+						"name" : "Horizontal Tiles",
+						"current_value" : 1
+					}
+				},
+				"v_offset" : {
+					"channel" : {
+						"id" : "v_offset",
+						"type" : "float",
+						"name" : "Vertical Offset",
+						"current_value" : 0
+					}
+				},
+				"v_scale" : {
+					"channel" : {
+						"id" : "v_scale",
+						"type" : "float",
+						"name" : "Vertical Tiles",
+						"current_value" : 1
+					}
+				},
+				"uv_set" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/UV%20Sets/Daz%203D/Base/default.dsf#default"
+			},
+			{
+				"id" : "Lips_SkirtRework_SuckedIn-1",
+				"url" : "#Lips_SkirtRework_SuckedIn",
+				"geometry" : "#SkirtRework_SuckedIn",
+				"groups" : [ "Lips_SkirtRework_SuckedIn" ],
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "color",
+						"name" : "Diffuse Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"diffuse_strength" : {
+					"channel" : {
+						"id" : "diffuse_strength",
+						"type" : "float",
+						"name" : "Diffuse Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"specular" : {
+					"channel" : {
+						"id" : "specular",
+						"type" : "color",
+						"name" : "Specular Color",
+						"current_value" : [ 0.6, 0.6, 0.6 ],
+						"image" : null
+					}
+				},
+				"specular_strength" : {
+					"channel" : {
+						"id" : "specular_strength",
+						"type" : "float",
+						"name" : "Specular Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"glossiness" : {
+					"channel" : {
+						"id" : "glossiness",
+						"type" : "float",
+						"name" : "Glossiness",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"ambient" : {
+					"channel" : {
+						"id" : "ambient",
+						"type" : "color",
+						"name" : "Ambient Color",
+						"current_value" : [ 0, 0, 0 ],
+						"image" : null
+					}
+				},
+				"ambient_strength" : {
+					"channel" : {
+						"id" : "ambient_strength",
+						"type" : "float",
+						"name" : "Ambient Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"reflection" : {
+					"channel" : {
+						"id" : "reflection",
+						"type" : "color",
+						"name" : "Reflection Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"reflection_strength" : {
+					"channel" : {
+						"id" : "reflection_strength",
+						"type" : "float",
+						"name" : "Reflection Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"refraction" : {
+					"channel" : {
+						"id" : "refraction",
+						"type" : "color",
+						"name" : "Refraction Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"refraction_strength" : {
+					"channel" : {
+						"id" : "refraction_strength",
+						"type" : "float",
+						"name" : "Refraction Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"ior" : {
+					"channel" : {
+						"id" : "ior",
+						"type" : "float",
+						"name" : "Index of Refraction",
+						"current_value" : 0
+					}
+				},
+				"bump" : {
+					"channel" : {
+						"id" : "bump",
+						"type" : "float",
+						"name" : "Bump Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"bump_min" : {
+					"channel" : {
+						"id" : "bump_min",
+						"type" : "float",
+						"name" : "Negative Bump",
+						"current_value" : -0.01
+					}
+				},
+				"bump_max" : {
+					"channel" : {
+						"id" : "bump_max",
+						"type" : "float",
+						"name" : "Positive Bump",
+						"current_value" : 0.01
+					}
+				},
+				"displacement" : {
+					"channel" : {
+						"id" : "displacement",
+						"type" : "float",
+						"name" : "Displacement Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"displacement_min" : {
+					"channel" : {
+						"id" : "displacement_min",
+						"type" : "float",
+						"name" : "Minimum Displacement",
+						"current_value" : -0.1
+					}
+				},
+				"displacement_max" : {
+					"channel" : {
+						"id" : "displacement_max",
+						"type" : "float",
+						"name" : "Maximum Displacement",
+						"current_value" : 0.1
+					}
+				},
+				"transparency" : {
+					"channel" : {
+						"id" : "transparency",
+						"type" : "float",
+						"name" : "Opacity Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"normal" : {
+					"channel" : {
+						"id" : "normal",
+						"type" : "image",
+						"name" : "Normal Map",
+						"image" : null
+					}
+				},
+				"u_offset" : {
+					"channel" : {
+						"id" : "u_offset",
+						"type" : "float",
+						"name" : "Horizontal Offset",
+						"current_value" : 0
+					}
+				},
+				"u_scale" : {
+					"channel" : {
+						"id" : "u_scale",
+						"type" : "float",
+						"name" : "Horizontal Tiles",
+						"current_value" : 1
+					}
+				},
+				"v_offset" : {
+					"channel" : {
+						"id" : "v_offset",
+						"type" : "float",
+						"name" : "Vertical Offset",
+						"current_value" : 0
+					}
+				},
+				"v_scale" : {
+					"channel" : {
+						"id" : "v_scale",
+						"type" : "float",
+						"name" : "Vertical Tiles",
+						"current_value" : 1
+					}
+				},
+				"uv_set" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/UV%20Sets/Daz%203D/Base/default.dsf#default"
+			},
+			{
+				"id" : "EyeSocket_SkirtRework_SuckedIn-1",
+				"url" : "#EyeSocket_SkirtRework_SuckedIn",
+				"geometry" : "#SkirtRework_SuckedIn",
+				"groups" : [ "EyeSocket_SkirtRework_SuckedIn" ],
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "color",
+						"name" : "Diffuse Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"diffuse_strength" : {
+					"channel" : {
+						"id" : "diffuse_strength",
+						"type" : "float",
+						"name" : "Diffuse Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"specular" : {
+					"channel" : {
+						"id" : "specular",
+						"type" : "color",
+						"name" : "Specular Color",
+						"current_value" : [ 0.6, 0.6, 0.6 ],
+						"image" : null
+					}
+				},
+				"specular_strength" : {
+					"channel" : {
+						"id" : "specular_strength",
+						"type" : "float",
+						"name" : "Specular Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"glossiness" : {
+					"channel" : {
+						"id" : "glossiness",
+						"type" : "float",
+						"name" : "Glossiness",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"ambient" : {
+					"channel" : {
+						"id" : "ambient",
+						"type" : "color",
+						"name" : "Ambient Color",
+						"current_value" : [ 0, 0, 0 ],
+						"image" : null
+					}
+				},
+				"ambient_strength" : {
+					"channel" : {
+						"id" : "ambient_strength",
+						"type" : "float",
+						"name" : "Ambient Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"reflection" : {
+					"channel" : {
+						"id" : "reflection",
+						"type" : "color",
+						"name" : "Reflection Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"reflection_strength" : {
+					"channel" : {
+						"id" : "reflection_strength",
+						"type" : "float",
+						"name" : "Reflection Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"refraction" : {
+					"channel" : {
+						"id" : "refraction",
+						"type" : "color",
+						"name" : "Refraction Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"refraction_strength" : {
+					"channel" : {
+						"id" : "refraction_strength",
+						"type" : "float",
+						"name" : "Refraction Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"ior" : {
+					"channel" : {
+						"id" : "ior",
+						"type" : "float",
+						"name" : "Index of Refraction",
+						"current_value" : 0
+					}
+				},
+				"bump" : {
+					"channel" : {
+						"id" : "bump",
+						"type" : "float",
+						"name" : "Bump Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"bump_min" : {
+					"channel" : {
+						"id" : "bump_min",
+						"type" : "float",
+						"name" : "Negative Bump",
+						"current_value" : -0.01
+					}
+				},
+				"bump_max" : {
+					"channel" : {
+						"id" : "bump_max",
+						"type" : "float",
+						"name" : "Positive Bump",
+						"current_value" : 0.01
+					}
+				},
+				"displacement" : {
+					"channel" : {
+						"id" : "displacement",
+						"type" : "float",
+						"name" : "Displacement Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"displacement_min" : {
+					"channel" : {
+						"id" : "displacement_min",
+						"type" : "float",
+						"name" : "Minimum Displacement",
+						"current_value" : -0.1
+					}
+				},
+				"displacement_max" : {
+					"channel" : {
+						"id" : "displacement_max",
+						"type" : "float",
+						"name" : "Maximum Displacement",
+						"current_value" : 0.1
+					}
+				},
+				"transparency" : {
+					"channel" : {
+						"id" : "transparency",
+						"type" : "float",
+						"name" : "Opacity Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"normal" : {
+					"channel" : {
+						"id" : "normal",
+						"type" : "image",
+						"name" : "Normal Map",
+						"image" : null
+					}
+				},
+				"u_offset" : {
+					"channel" : {
+						"id" : "u_offset",
+						"type" : "float",
+						"name" : "Horizontal Offset",
+						"current_value" : 0
+					}
+				},
+				"u_scale" : {
+					"channel" : {
+						"id" : "u_scale",
+						"type" : "float",
+						"name" : "Horizontal Tiles",
+						"current_value" : 1
+					}
+				},
+				"v_offset" : {
+					"channel" : {
+						"id" : "v_offset",
+						"type" : "float",
+						"name" : "Vertical Offset",
+						"current_value" : 0
+					}
+				},
+				"v_scale" : {
+					"channel" : {
+						"id" : "v_scale",
+						"type" : "float",
+						"name" : "Vertical Tiles",
+						"current_value" : 1
+					}
+				},
+				"uv_set" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/UV%20Sets/Daz%203D/Base/default.dsf#default"
+			},
+			{
+				"id" : "Arms_SkirtRework_SuckedIn-1",
+				"url" : "#Arms_SkirtRework_SuckedIn",
+				"geometry" : "#SkirtRework_SuckedIn",
+				"groups" : [ "Arms_SkirtRework_SuckedIn" ],
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "color",
+						"name" : "Diffuse Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"diffuse_strength" : {
+					"channel" : {
+						"id" : "diffuse_strength",
+						"type" : "float",
+						"name" : "Diffuse Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"specular" : {
+					"channel" : {
+						"id" : "specular",
+						"type" : "color",
+						"name" : "Specular Color",
+						"current_value" : [ 0.6, 0.6, 0.6 ],
+						"image" : null
+					}
+				},
+				"specular_strength" : {
+					"channel" : {
+						"id" : "specular_strength",
+						"type" : "float",
+						"name" : "Specular Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"glossiness" : {
+					"channel" : {
+						"id" : "glossiness",
+						"type" : "float",
+						"name" : "Glossiness",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"ambient" : {
+					"channel" : {
+						"id" : "ambient",
+						"type" : "color",
+						"name" : "Ambient Color",
+						"current_value" : [ 0, 0, 0 ],
+						"image" : null
+					}
+				},
+				"ambient_strength" : {
+					"channel" : {
+						"id" : "ambient_strength",
+						"type" : "float",
+						"name" : "Ambient Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"reflection" : {
+					"channel" : {
+						"id" : "reflection",
+						"type" : "color",
+						"name" : "Reflection Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"reflection_strength" : {
+					"channel" : {
+						"id" : "reflection_strength",
+						"type" : "float",
+						"name" : "Reflection Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"refraction" : {
+					"channel" : {
+						"id" : "refraction",
+						"type" : "color",
+						"name" : "Refraction Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"refraction_strength" : {
+					"channel" : {
+						"id" : "refraction_strength",
+						"type" : "float",
+						"name" : "Refraction Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"ior" : {
+					"channel" : {
+						"id" : "ior",
+						"type" : "float",
+						"name" : "Index of Refraction",
+						"current_value" : 0
+					}
+				},
+				"bump" : {
+					"channel" : {
+						"id" : "bump",
+						"type" : "float",
+						"name" : "Bump Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"bump_min" : {
+					"channel" : {
+						"id" : "bump_min",
+						"type" : "float",
+						"name" : "Negative Bump",
+						"current_value" : -0.01
+					}
+				},
+				"bump_max" : {
+					"channel" : {
+						"id" : "bump_max",
+						"type" : "float",
+						"name" : "Positive Bump",
+						"current_value" : 0.01
+					}
+				},
+				"displacement" : {
+					"channel" : {
+						"id" : "displacement",
+						"type" : "float",
+						"name" : "Displacement Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"displacement_min" : {
+					"channel" : {
+						"id" : "displacement_min",
+						"type" : "float",
+						"name" : "Minimum Displacement",
+						"current_value" : -0.1
+					}
+				},
+				"displacement_max" : {
+					"channel" : {
+						"id" : "displacement_max",
+						"type" : "float",
+						"name" : "Maximum Displacement",
+						"current_value" : 0.1
+					}
+				},
+				"transparency" : {
+					"channel" : {
+						"id" : "transparency",
+						"type" : "float",
+						"name" : "Opacity Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"normal" : {
+					"channel" : {
+						"id" : "normal",
+						"type" : "image",
+						"name" : "Normal Map",
+						"image" : null
+					}
+				},
+				"u_offset" : {
+					"channel" : {
+						"id" : "u_offset",
+						"type" : "float",
+						"name" : "Horizontal Offset",
+						"current_value" : 0
+					}
+				},
+				"u_scale" : {
+					"channel" : {
+						"id" : "u_scale",
+						"type" : "float",
+						"name" : "Horizontal Tiles",
+						"current_value" : 1
+					}
+				},
+				"v_offset" : {
+					"channel" : {
+						"id" : "v_offset",
+						"type" : "float",
+						"name" : "Vertical Offset",
+						"current_value" : 0
+					}
+				},
+				"v_scale" : {
+					"channel" : {
+						"id" : "v_scale",
+						"type" : "float",
+						"name" : "Vertical Tiles",
+						"current_value" : 1
+					}
+				},
+				"uv_set" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/UV%20Sets/Daz%203D/Base/default.dsf#default"
+			},
+			{
+				"id" : "Dress-1",
+				"url" : "#Dress",
+				"geometry" : "#SkirtRework_SuckedIn",
+				"groups" : [ "Dress" ],
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "color",
+						"name" : "Diffuse Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"diffuse_strength" : {
+					"channel" : {
+						"id" : "diffuse_strength",
+						"type" : "float",
+						"name" : "Diffuse Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"specular" : {
+					"channel" : {
+						"id" : "specular",
+						"type" : "color",
+						"name" : "Specular Color",
+						"current_value" : [ 0.6, 0.6, 0.6 ],
+						"image" : null
+					}
+				},
+				"specular_strength" : {
+					"channel" : {
+						"id" : "specular_strength",
+						"type" : "float",
+						"name" : "Specular Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"glossiness" : {
+					"channel" : {
+						"id" : "glossiness",
+						"type" : "float",
+						"name" : "Glossiness",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"ambient" : {
+					"channel" : {
+						"id" : "ambient",
+						"type" : "color",
+						"name" : "Ambient Color",
+						"current_value" : [ 0, 0, 0 ],
+						"image" : null
+					}
+				},
+				"ambient_strength" : {
+					"channel" : {
+						"id" : "ambient_strength",
+						"type" : "float",
+						"name" : "Ambient Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"reflection" : {
+					"channel" : {
+						"id" : "reflection",
+						"type" : "color",
+						"name" : "Reflection Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"reflection_strength" : {
+					"channel" : {
+						"id" : "reflection_strength",
+						"type" : "float",
+						"name" : "Reflection Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"refraction" : {
+					"channel" : {
+						"id" : "refraction",
+						"type" : "color",
+						"name" : "Refraction Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image" : null
+					}
+				},
+				"refraction_strength" : {
+					"channel" : {
+						"id" : "refraction_strength",
+						"type" : "float",
+						"name" : "Refraction Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"ior" : {
+					"channel" : {
+						"id" : "ior",
+						"type" : "float",
+						"name" : "Index of Refraction",
+						"current_value" : 0
+					}
+				},
+				"bump" : {
+					"channel" : {
+						"id" : "bump",
+						"type" : "float",
+						"name" : "Bump Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"bump_min" : {
+					"channel" : {
+						"id" : "bump_min",
+						"type" : "float",
+						"name" : "Negative Bump",
+						"current_value" : -0.01
+					}
+				},
+				"bump_max" : {
+					"channel" : {
+						"id" : "bump_max",
+						"type" : "float",
+						"name" : "Positive Bump",
+						"current_value" : 0.01
+					}
+				},
+				"displacement" : {
+					"channel" : {
+						"id" : "displacement",
+						"type" : "float",
+						"name" : "Displacement Strength",
+						"current_value" : 0,
+						"image" : null
+					}
+				},
+				"displacement_min" : {
+					"channel" : {
+						"id" : "displacement_min",
+						"type" : "float",
+						"name" : "Minimum Displacement",
+						"current_value" : -0.1
+					}
+				},
+				"displacement_max" : {
+					"channel" : {
+						"id" : "displacement_max",
+						"type" : "float",
+						"name" : "Maximum Displacement",
+						"current_value" : 0.1
+					}
+				},
+				"transparency" : {
+					"channel" : {
+						"id" : "transparency",
+						"type" : "float",
+						"name" : "Opacity Strength",
+						"current_value" : 1,
+						"image" : null
+					}
+				},
+				"normal" : {
+					"channel" : {
+						"id" : "normal",
+						"type" : "image",
+						"name" : "Normal Map",
+						"image" : null
+					}
+				},
+				"u_offset" : {
+					"channel" : {
+						"id" : "u_offset",
+						"type" : "float",
+						"name" : "Horizontal Offset",
+						"current_value" : 0
+					}
+				},
+				"u_scale" : {
+					"channel" : {
+						"id" : "u_scale",
+						"type" : "float",
+						"name" : "Horizontal Tiles",
+						"current_value" : 1
+					}
+				},
+				"v_offset" : {
+					"channel" : {
+						"id" : "v_offset",
+						"type" : "float",
+						"name" : "Vertical Offset",
+						"current_value" : 0
+					}
+				},
+				"v_scale" : {
+					"channel" : {
+						"id" : "v_scale",
+						"type" : "float",
+						"name" : "Vertical Tiles",
+						"current_value" : 1
+					}
+				},
+				"uv_set" : "/data/Daz%203D/Genesis%208/Female/Tools/Projection%20Templates/Knee-Length/UV%20Sets/Daz%203D/Base/default.dsf#default"
+			}
+		]
+	}
+}

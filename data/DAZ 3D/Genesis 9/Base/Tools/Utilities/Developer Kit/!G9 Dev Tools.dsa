@@ -1,0 +1,101 @@
+// DAZ Studio version 4.9.3.10 filetype DAZ Script
+/* Release Notes
+	v1.3 - Added "Save Current Pane Info" action. Pane uses saved values on launch if they exist
+		 - fixed Get Morph Deltas Info to break link first
+		 - fixed Presentation script to handle 8.1
+*/
+(function(){	
+	// Globals
+	var g_oFile = new DzFileInfo( getScriptFileName() );
+	var g_oFilePath = g_oFile.path();
+	
+	print( g_oFilePath );
+	
+	var oMgr = MainWindow.getPaneMgr();
+	var oPane = oMgr.findPane( "DzScriptedStepsPane" );
+	if( oPane )
+	{
+		oPane.setLabel( "G9 Dev Tools v0.3" );	
+		// Open the Scripted Steps Pane	
+		oMgr.showPane( oPane );
+		var oPaneGrp = oPane.getPaneGroup();
+		//oPaneGrp.size = new Size( 210, 400 );
+		//oPaneGrp.pos = new Point( 5, 5 );
+		print( oPaneGrp.x, oPaneGrp.y );
+	
+		// settings
+		var oAppSettings = new DzAppSettings( "DzTools/G9DevTools" );
+		if( oAppSettings.containsValue( "PaneGrpWidth" ) && oAppSettings.containsValue( "PaneGrpHeight" ) ){
+			nWidth = oAppSettings.getStringValue( "PaneGrpWidth" );
+			nHeight = oAppSettings.getStringValue( "PaneGrpHeight" );
+			print( String( "Size = %1x%2" ).arg( nWidth ).arg( nHeight ) );
+			oPaneGrp.size = new Size( nWidth, nHeight );
+		} else {
+			oPaneGrp.size = new Size( 210, 430 );
+		}
+		if( oAppSettings.containsValue( "PaneGrpPosX" ) && oAppSettings.containsValue( "PaneGrpPosY" ) ){
+			oPaneGrp.pos = new Point( oAppSettings.getStringValue( "PaneGrpPosX" ), oAppSettings.getStringValue( "PaneGrpPosY" ) );
+		} else {
+			oPaneGrp.pos = new Point( 100, 600 );
+		}
+		
+		var sCode =
+			"print( \"Saving Pane Info\" );" +
+			"var oMgr = MainWindow.getPaneMgr();" +
+			"var oPane = oMgr.findPane( \"DzScriptedStepsPane\" );" +
+			"var oPaneGrp = oPane.getPaneGroup();" +
+			"var oAppSettings = new DzAppSettings( \"DzTools/EssentialDevTools\" );" +
+			"oAppSettings.setStringValue( \"PaneGrpWidth\", oPaneGrp.width );" +
+			"oAppSettings.setStringValue( \"PaneGrpHeight\", oPaneGrp.height );" +
+			"oAppSettings.setStringValue( \"PaneGrpPosX\", oPaneGrp.x );" +
+			"oAppSettings.setStringValue( \"PaneGrpPosY\", oPaneGrp.y )";
+	
+		// Clear Pane Before Populating It	
+		oPane.clearAllSteps();
+		oPane.clearAllStepSets();
+		//oPane.clearSignalScripts();
+		
+	    oPane.addStep( "Export Selected to OBJ",
+	        g_oFilePath + "/Export Selected.dse",
+	        DzScriptedStepsPane.File, false );
+			        
+	    oPane.addStep( "Select Morph Verts",
+	        g_oFilePath + "/Morph-SelectMorphedVerts.dse",
+	        DzScriptedStepsPane.File, true );
+	    oPane.addStep( "Clear Morph Deltas (Verts)",
+	        g_oFilePath + "/Morph-ClearMorphDeltas.dse",
+	        DzScriptedStepsPane.File, false );
+	    oPane.addStep( "Clear HD Morph Deltas (Faces)",
+	        g_oFilePath + "/Morph-ClearMorphHDDeltas.dse",
+	        DzScriptedStepsPane.File, false );
+	    oPane.addStep( "Remove Empty Morphs",
+	        g_oFilePath + "/Morph-RemoveEmptyMorphs.dse",
+	        DzScriptedStepsPane.File, false );
+	    oPane.addStep( "Get Morph Delta Info",
+	        g_oFilePath + "/Morph-GetMorphDeltaInfo.dse",
+	        DzScriptedStepsPane.File, false );
+	        	        
+	    oPane.addStep( "Texture Convert: Single UDIM to Multiple",
+	        g_oFilePath + "/ImageMagick/Single UDIM to Multi.dse",
+	        DzScriptedStepsPane.File, true );
+	        	        
+	    oPane.addStep( "Adjust Eye Rigging",
+	        g_oFilePath + "/Adjust Eye Rigging.dse",
+	        DzScriptedStepsPane.File, true );
+	    oPane.addStep( "Set G9 to Shape",
+	        g_oFilePath + "/Set G9 to Shape.dse",
+	        DzScriptedStepsPane.File, false );
+	    oPane.addStep( "Create Follower",
+	        g_oFilePath + "/Create Follower.dse",
+	        DzScriptedStepsPane.File, false );
+	    oPane.addStep( "Update Follower Base Shape",
+	        g_oFilePath + "/Update Follower Base Shape.dse",
+	        DzScriptedStepsPane.File, false );
+	        
+	    oPane.addStep( "Save Current Pane Info", sCode, DzScriptedStepsPane.Code, true );
+	} else {
+		MessageBox.critical( "No Script Steps Pane!", "Error", "&OK" );
+		print( "No Script Steps Pane!" );
+	}
+	
+})();

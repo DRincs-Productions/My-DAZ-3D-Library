@@ -1,0 +1,163 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/DAZ%203D/Genesis%208/Male/Morphs/DAZ%203D/Base%20Pose/pCTRLHipBendBck.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-06-21T23:27:32Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "pCTRLHipBendBck",
+			"name" : "pCTRLHipBendBck",
+			"parent" : "/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#Genesis8Male",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3764706, 0.2784314, 0.3254902 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "pCTRLHipBendBck",
+				"label" : "Hip Bend Back",
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Pose Controls/Torso",
+			"formulas" : [
+				{
+					"output" : "hip:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#hip?translation/y",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLHipBendBck?value" },
+						{ "op" : "push", "val" : -3.25 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "hip:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#hip?translation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLHipBendBck?value" },
+						{ "op" : "push", "val" : 18.25 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "hip:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#hip?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLHipBendBck?value" },
+						{ "op" : "push", "val" : -6.2937 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "pelvis:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#pelvis?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLHipBendBck?value" },
+						{ "op" : "push", "val" : -10 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lThigh:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lThigh?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLHipBendBck?value" },
+						{ "op" : "push", "val" : 30 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lThigh:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lThigh?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLHipBendBck?value" },
+						{ "op" : "push", "val" : 2.7 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "lFoot:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#lFoot?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLHipBendBck?value" },
+						{ "op" : "push", "val" : -14 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rThigh:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rThigh?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLHipBendBck?value" },
+						{ "op" : "push", "val" : 30 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rThigh:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rThigh?rotation/z",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLHipBendBck?value" },
+						{ "op" : "push", "val" : -2.7 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "rFoot:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#rFoot?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLHipBendBck?value" },
+						{ "op" : "push", "val" : -14 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "abdomenLower:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#abdomenLower?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLHipBendBck?value" },
+						{ "op" : "push", "val" : -15 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "abdomen2:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#abdomen2?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLHipBendBck?value" },
+						{ "op" : "push", "val" : -15 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "chest:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#chest?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLHipBendBck?value" },
+						{ "op" : "push", "val" : -15 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "chest_2:/data/DAZ%203D/Genesis%208/Male/Genesis8Male.dsf#chest_2?rotation/x",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis8Male:#pCTRLHipBendBck?value" },
+						{ "op" : "push", "val" : -15 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "pCTRLHipBendBck-1",
+				"url" : "#pCTRLHipBendBck"
+			}
+		]
+	}
+}

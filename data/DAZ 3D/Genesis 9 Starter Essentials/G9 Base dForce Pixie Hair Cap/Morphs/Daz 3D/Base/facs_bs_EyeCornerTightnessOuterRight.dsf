@@ -1,0 +1,80 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/Morphs/Daz%203D/Base/facs_bs_EyeCornerTightnessOuterRight.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-10-05T18:12:53Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_bs_EyeCornerTightnessOuterRight",
+			"name" : "facs_bs_EyeCornerTightnessOuterRight",
+			"parent" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/dForce%20Pixie%20Hair%20Cap_1085.dsf#Morphing%20Pixie%20Hair%20Cap",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "facs_bs_EyeCornerTightnessOuterRight",
+				"visible" : false,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : 0,
+				"max" : 1e-05,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Pose Controls/Head/Eyes/Adjustments",
+			"morph" : {
+				"vertex_count" : 1085,
+				"deltas" : {
+					"count" : 21,
+					"values" : [
+						[ 695, 5.025176e-05, -0.001003606, -0.0001156783 ],
+						[ 696, 0.0001084534, -0.001050914, 0.000145187 ],
+						[ 697, 1.21936e-05, -9.670079e-05, 7.944484e-06 ],
+						[ 701, 0.0001104235, -0.001003511, -0.0001293397 ],
+						[ 702, 8.849164e-05, -0.0009906003, -9.87075e-05 ],
+						[ 703, 8.082995e-05, -0.0009964075, -9.974734e-05 ],
+						[ 704, 1.987757e-06, -2.305095e-05, -4.687824e-07 ],
+						[ 918, 0.0002307653, -0.00106281, -0.0001777266 ],
+						[ 919, 0.0001910489, -0.001050375, -0.0001716206 ],
+						[ 1036, 8.593357e-06, -1.697771e-05, 1.162394e-05 ],
+						[ 1038, 1.479238e-05, -6.008544e-05, 2.17531e-05 ],
+						[ 1039, 1.02199e-06, -1.032748e-05, 1.334943e-06 ],
+						[ 1053, -1.407451e-06, -7.01389e-05, 4.67296e-07 ],
+						[ 1055, 0.0004183536, -0.003443557, 0.0005251474 ],
+						[ 1056, 0.0005083866, -0.002346162, 0.0007465348 ],
+						[ 1057, 0.0003923553, -0.003285473, 0.0003770241 ],
+						[ 1058, 0.0004231093, -0.004159158, 0.0002955698 ],
+						[ 1059, 0.0001309346, -0.002087539, 7.453357e-05 ],
+						[ 1073, 0.000182606, -0.0001729205, 0.0001717416 ],
+						[ 1074, 4.421139e-05, -2.505714e-05, 3.739297e-05 ],
+						[ 1075, 0.0006658753, -0.001264406, 0.0008350666 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_bs_EyeCornerTightnessOuterRight-1",
+				"url" : "#facs_bs_EyeCornerTightnessOuterRight"
+			}
+		]
+	}
+}

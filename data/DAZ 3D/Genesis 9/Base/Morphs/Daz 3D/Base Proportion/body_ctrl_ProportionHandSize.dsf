@@ -1,0 +1,69 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base%20Proportion/body_ctrl_ProportionHandSize.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-08-27T00:19:26Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "body_ctrl_ProportionHandSize",
+			"name" : "body_ctrl_ProportionHandSize",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#Genesis9",
+			"presentation" : {
+				"type" : "Modifier/Shape",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.8078431, 0.5098039, 0.3098039 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "body_ctrl_ProportionHandSize",
+				"label" : "Proportion Hand Size",
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : -2,
+				"max" : 2,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"region" : "Hands",
+			"group" : "/Base",
+			"formulas" : [
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base%20Proportion/body_ctrl_ProportionHandSizeR_scl.dsf#body_ctrl_ProportionHandSizeR_scl?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHandSize?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base%20Proportion/body_ctrl_ProportionHandSizeL_scl.dsf#body_ctrl_ProportionHandSizeL_scl?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#body_ctrl_ProportionHandSize?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "body_ctrl_ProportionHandSize-1",
+				"url" : "#body_ctrl_ProportionHandSize"
+			}
+		]
+	}
+}

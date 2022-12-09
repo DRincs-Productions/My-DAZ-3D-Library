@@ -1,0 +1,73 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/Morphs/Daz%203D/Base/facs_bs_CheekPuffLeft.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-10-05T18:12:53Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_bs_CheekPuffLeft",
+			"name" : "facs_bs_CheekPuffLeft",
+			"parent" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Base%20dForce%20Pixie%20Hair%20Cap/dForce%20Pixie%20Hair%20Cap_1085.dsf#Morphing%20Pixie%20Hair%20Cap",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "facs_bs_CheekPuffLeft",
+				"visible" : false,
+				"locked" : true,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : 0,
+				"max" : 0,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Pose Controls/Head/Cheek and Jaw",
+			"morph" : {
+				"vertex_count" : 1085,
+				"deltas" : {
+					"count" : 13,
+					"values" : [
+						[ 200, -2.584501e-06, 0, 8.452705e-05 ],
+						[ 201, -1.069416e-05, 8.540505e-07, 0.0003776015 ],
+						[ 482, -2.125885e-05, 8.379503e-05, 0.0006006913 ],
+						[ 483, -1.471085e-05, 3.824925e-05, 0.0003088594 ],
+						[ 484, -1.899771e-05, 4.460632e-05, 0.000635904 ],
+						[ 485, -2.088918e-06, 2.439612e-07, 2.89437e-05 ],
+						[ 535, -5.335549e-05, 0.0001111088, 0.001938471 ],
+						[ 536, -3.97849e-06, 0, 3.781939e-05 ],
+						[ 537, -3.170547e-05, 3.936451e-05, 0.0004336433 ],
+						[ 538, -0.0001821366, 0.0002340014, 0.003494671 ],
+						[ 539, -0.0002844355, 0.001236046, 0.009118322 ],
+						[ 541, -0.0001626082, 0.0002808216, 0.006803459 ],
+						[ 542, -0.000240566, 0.00120753, 0.009950519 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_bs_CheekPuffLeft-1",
+				"url" : "#facs_bs_CheekPuffLeft"
+			}
+		]
+	}
+}
