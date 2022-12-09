@@ -1,0 +1,44 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/Light%20Presets/DS%20Defaults/dzSpotLight.duf",
+		"type" : "preset_light",
+		"contributor" : {
+			"author" : "DAZ 3D",
+			"email" : "",
+			"website" : ""
+		},
+		"revision" : "1.0",
+		"modified" : "2012-08-09T22:14:16Z"
+	},
+	"node_library" : [
+		{
+			"id" : "ShaderLight 1",
+			"name" : "ShaderLight 1",
+			"type" : "light",
+			"label" : "ShaderLight 1",
+			"extra" : [
+				{
+					"type" : "studio/node/light/daz_shader",
+					"definition" : "support/DAZ/shaderDefinitions/light/dzspotDef.dsa",
+					"shader_light_type" : "spot"
+				}
+			]
+		}
+	],
+	"scene" : {
+		"nodes" : [
+			{
+				"id" : "ShaderLight 1-1",
+				"url" : "#ShaderLight%201",
+				"name" : "ShaderLight 1",
+				"label" : "ShaderLight 1",
+				"extra" : [
+					{
+						"type" : "studio/node/light/daz_shader"
+					}
+				]
+			}
+		]
+	}
+}

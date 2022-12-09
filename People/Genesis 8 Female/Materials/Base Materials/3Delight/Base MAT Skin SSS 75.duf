@@ -1,0 +1,81 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/People/Genesis 8 Female/Materials/Base Materials/3Delight/Karen%207%20Skin%20SSS%2050.duf",
+		"type" : "preset_hierarchical_material",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2015-05-28T18:07:53Z"
+	},
+	"scene" : {
+		"nodes" : [
+			{
+				"id" : "Genesis3Female",
+				"url" : "name://@selection/Genesis3Female:",
+				"geometries" : [
+					{
+						"id" : "Genesis3Female-1",
+						"url" : "name://@selection#geometries/Genesis3Female:"
+					}
+				]
+			},
+			{
+				"id" : "Genesis3FemaleGenitalia",
+				"url" : "name://@selection/Genesis3FemaleGenitalia:",
+				"parent" : "#Genesis3Female",
+				"geometries" : [
+					{
+						"id" : "geometry",
+						"url" : "name://@selection#geometries/geometry:"
+					}
+				]
+			}
+		],
+		"animations" : [
+			{
+				"url" : "Genesis3Female#materials/Fingernails:?extra/studio_material_channels/channels/Ambient%20Strength/value",
+				"keys" : [ [ 0, 0.75 ] ]
+			},
+			{
+				"url" : "Genesis3Female#materials/Toenails:?extra/studio_material_channels/channels/Ambient%20Strength/value",
+				"keys" : [ [ 0, 0.75 ] ]
+			},
+			{
+				"url" : "Genesis3Female#materials/Face:?extra/studio_material_channels/channels/Ambient%20Strength/value",
+				"keys" : [ [ 0, 0.75 ] ]
+			},
+			{
+				"url" : "Genesis3Female#materials/Lips:?extra/studio_material_channels/channels/Ambient%20Strength/value",
+				"keys" : [ [ 0, 0.75 ] ]
+			},
+			{
+				"url" : "Genesis3Female#materials/Ears:?extra/studio_material_channels/channels/Ambient%20Strength/value",
+				"keys" : [ [ 0, 0.75 ] ]
+			},
+			{
+				"url" : "Genesis3Female#materials/Legs:?extra/studio_material_channels/channels/Ambient%20Strength/value",
+				"keys" : [ [ 0, 0.75 ] ]
+			},
+			{
+				"url" : "Genesis3Female#materials/Torso:?extra/studio_material_channels/channels/Ambient%20Strength/value",
+				"keys" : [ [ 0, 0.75 ] ]
+			},
+			{
+				"url" : "Genesis3Female#materials/EyeSocket:?extra/studio_material_channels/channels/Ambient%20Strength/value",
+				"keys" : [ [ 0, 0.75 ] ]
+			},
+			{
+				"url" : "Genesis3Female#materials/Arms:?extra/studio_material_channels/channels/Ambient%20Strength/value",
+				"keys" : [ [ 0, 0.75 ] ]
+			},
+			{
+				"url" : "Genesis3FemaleGenitalia#materials/Genitalia:?extra/studio_material_channels/channels/Ambient%20Strength/value",
+				"keys" : [ [ 0, 0.75 ] ]
+			}
+		]
+	}
+}

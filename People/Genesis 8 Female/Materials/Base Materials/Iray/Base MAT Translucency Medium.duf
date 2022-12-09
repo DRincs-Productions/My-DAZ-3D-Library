@@ -1,0 +1,69 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/People/Genesis%203%20Female/Materials/Victoria%207/Iray/Victoria%207%20Translucency%20Medium.duf",
+		"type" : "preset_hierarchical_material",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2015-06-17T01:31:21Z"
+	},
+	"scene" : {
+		"nodes" : [
+			{
+				"id" : "Genesis3Female",
+				"url" : "name://@selection/Genesis3Female:",
+				"geometries" : [
+					{
+						"id" : "Genesis3Female-1",
+						"url" : "name://@selection#geometries/Genesis3Female:"
+					}
+				]
+			},
+			{
+				"id" : "Genesis3FemaleGenitalia",
+				"url" : "name://@selection/Genesis3FemaleGenitalia:",
+				"parent" : "#Genesis3Female",
+				"geometries" : [
+					{
+						"id" : "geometry",
+						"url" : "name://@selection#geometries/geometry:"
+					}
+				]
+			}
+		],
+		"animations" : [
+			{
+				"url" : "Genesis3Female#materials/Face:?extra/studio_material_channels/channels/Translucency%20Weight/value",
+				"keys" : [ [ 0, 0.5 ] ]
+			},
+			{
+				"url" : "Genesis3Female#materials/Lips:?extra/studio_material_channels/channels/Translucency%20Weight/value",
+				"keys" : [ [ 0, 0.5 ] ]
+			},
+			{
+				"url" : "Genesis3Female#materials/Ears:?extra/studio_material_channels/channels/Translucency%20Weight/value",
+				"keys" : [ [ 0, 0.5 ] ]
+			},
+			{
+				"url" : "Genesis3Female#materials/Legs:?extra/studio_material_channels/channels/Translucency%20Weight/value",
+				"keys" : [ [ 0, 0.5 ] ]
+			},
+			{
+				"url" : "Genesis3Female#materials/Torso:?extra/studio_material_channels/channels/Translucency%20Weight/value",
+				"keys" : [ [ 0, 0.5 ] ]
+			},
+			{
+				"url" : "Genesis3Female#materials/Arms:?extra/studio_material_channels/channels/Translucency%20Weight/value",
+				"keys" : [ [ 0, 0.5 ] ]
+			},
+			{
+				"url" : "Genesis3FemaleGenitalia#materials/Genitalia:?extra/studio_material_channels/channels/Translucency%20Weight/value",
+				"keys" : [ [ 0, 0.5 ] ]
+			}
+		]
+	}
+}

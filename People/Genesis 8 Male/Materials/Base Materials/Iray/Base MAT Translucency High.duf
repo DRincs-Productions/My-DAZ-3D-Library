@@ -1,0 +1,69 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/People/Genesis%203%20Male/Materials/Michael%207/Iray/Michael%207%20Translucency%20High.duf",
+		"type" : "preset_hierarchical_material",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2015-07-02T22:40:06Z"
+	},
+	"scene" : {
+		"nodes" : [
+			{
+				"id" : "Genesis3Male",
+				"url" : "name://@selection/Genesis3Male:",
+				"geometries" : [
+					{
+						"id" : "Genesis3Male-1",
+						"url" : "name://@selection#geometries/Genesis3Male:"
+					}
+				]
+			},
+			{
+				"id" : "G3MGenitalia",
+				"url" : "name://@selection/G3MGenitalia:",
+				"parent" : "#Genesis3Male",
+				"geometries" : [
+					{
+						"id" : "G3MGenitalia-1",
+						"url" : "name://@selection#geometries/G3MGenitalia:"
+					}
+				]
+			}
+		],
+		"animations" : [
+			{
+				"url" : "Genesis3Male#materials/Face:?extra/studio_material_channels/channels/Translucency%20Weight/value",
+				"keys" : [ [ 0, 0.65 ] ]
+			},
+			{
+				"url" : "Genesis3Male#materials/Lips:?extra/studio_material_channels/channels/Translucency%20Weight/value",
+				"keys" : [ [ 0, 0.65 ] ]
+			},
+			{
+				"url" : "Genesis3Male#materials/Ears:?extra/studio_material_channels/channels/Translucency%20Weight/value",
+				"keys" : [ [ 0, 0.65 ] ]
+			},
+			{
+				"url" : "Genesis3Male#materials/Legs:?extra/studio_material_channels/channels/Translucency%20Weight/value",
+				"keys" : [ [ 0, 0.65 ] ]
+			},
+			{
+				"url" : "Genesis3Male#materials/Torso:?extra/studio_material_channels/channels/Translucency%20Weight/value",
+				"keys" : [ [ 0, 0.65 ] ]
+			},
+			{
+				"url" : "Genesis3Male#materials/Arms:?extra/studio_material_channels/channels/Translucency%20Weight/value",
+				"keys" : [ [ 0, 0.65 ] ]
+			},
+			{
+				"url" : "G3MGenitalia#materials/Genitalia:?extra/studio_material_channels/channels/Translucency%20Weight/value",
+				"keys" : [ [ 0, 0.65 ] ]
+			}
+		]
+	}
+}

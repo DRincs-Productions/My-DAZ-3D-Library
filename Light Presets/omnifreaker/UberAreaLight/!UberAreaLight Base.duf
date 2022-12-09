@@ -1,0 +1,37 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/Light%20Presets/omnifreaker/UberAreaLight/%21UberAreaLight%20Base.duf",
+		"type" : "preset_shader",
+		"contributor" : {
+			"author" : "DAZ 3D",
+			"email" : "",
+			"website" : "http://www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2013-05-10T19:58:13Z"
+	},
+	"material_library" : [
+		{
+			"id" : "Default",
+			"extra" : [
+				{
+					"type" : "studio/material/daz_shader",
+					"definition" : "support/DAZ/Uber/shaderDefinitions/surface/omUberAreaLightDef.dse"
+				}
+			]
+		}
+	],
+	"scene" : {
+		"materials" : [
+			{
+				"url" : "#Default",
+				"extra" : [
+					{
+						"type" : "studio/material/daz_shader"
+					}
+				]
+			}
+		]
+	}
+}

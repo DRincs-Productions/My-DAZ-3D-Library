@@ -1,0 +1,302 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/People/Genesis%209/Anatomy/Daz%20Originals/Base%20Anatomy/Eyebrows%20Card/Materials/G9%20Eyebrows%20Transparency%20Thin.duf",
+		"type" : "preset_hierarchical_material",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-10-04T17:02:41Z"
+	},
+	"image_library" : [
+		{
+			"id" : "OpacityCutout01_Thin.jpg-1",
+			"name" : "OpacityCutout01_Thin.jpg",
+			"map_gamma" : 1,
+			"map" : [
+				{
+					"url" : "/Runtime/Textures/DAZ/Characters/Genesis9/Base/Eyebrows/OpacityCutout01_Thin.jpg",
+					"label" : "OpacityCutout01_Thin.jpg"
+				}
+			]
+		},
+		{
+			"id" : "NormalMap01_Thin.jpg-1",
+			"name" : "NormalMap01_Thin.jpg",
+			"map_gamma" : 1,
+			"map" : [
+				{
+					"url" : "/Runtime/Textures/DAZ/Characters/Genesis9/Base/Eyebrows/NormalMap01_Thin.jpg",
+					"label" : "NormalMap01_Thin.jpg"
+				}
+			]
+		}
+	],
+	"material_library" : [
+		{
+			"id" : "Eyebrows_Primary",
+			"extra" : [
+				{
+					"type" : "studio/material/uber_iray",
+					"version" : "1.1.0.0"
+				},
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Cutout Opacity",
+								"type" : "float",
+								"label" : "Cutout Opacity",
+								"value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 1,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/Geometry/Cutout",
+							"presentation" : {
+								"type" : "",
+								"label" : "",
+								"description" : "",
+								"icon_large" : "",
+								"colors" : [ [ 0.5019608, 0.5019608, 0.5019608 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
+							}
+						},
+						{
+							"channel" : {
+								"id" : "Normal Map",
+								"type" : "float",
+								"label" : "Normal Map",
+								"value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true,
+								"invalid_without_map" : true
+							},
+							"group" : "/Base/Bump",
+							"presentation" : {
+								"type" : "",
+								"label" : "",
+								"description" : "",
+								"icon_large" : "",
+								"colors" : [ [ 0.345098, 0.5019608, 0.6588235 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id" : "Eyebrows_Secondary",
+			"extra" : [
+				{
+					"type" : "studio/material/uber_iray",
+					"version" : "1.1.0.0"
+				},
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Cutout Opacity",
+								"type" : "float",
+								"label" : "Cutout Opacity",
+								"value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 1,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/Geometry/Cutout",
+							"presentation" : {
+								"type" : "",
+								"label" : "",
+								"description" : "",
+								"icon_large" : "",
+								"colors" : [ [ 0.5019608, 0.5019608, 0.5019608 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"nodes" : [
+			{
+				"id" : "Genesis9",
+				"url" : "name://@selection/Genesis9:",
+				"geometries" : [
+					{
+						"id" : "Genesis9-1",
+						"url" : "name://@selection#geometries/Genesis9:"
+					}
+				]
+			},
+			{
+				"id" : "G9EyebrowCards",
+				"url" : "name://@selection/G9EyebrowCards:",
+				"parent" : "#Genesis9",
+				"geometries" : [
+					{
+						"id" : "G9Eyebrows_CS01_High",
+						"url" : "name://@selection#geometries/G9Eyebrows_CS01_High:"
+					}
+				]
+			}
+		],
+		"materials" : [
+			{
+				"id" : "Eyebrows_Primary-1",
+				"url" : "#Eyebrows_Primary",
+				"geometry" : "#G9Eyebrows_CS01_High",
+				"groups" : [ "Eyebrows_Primary" ],
+				"uv_set" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Eyebrows%20Card%20Style%2001/UV%20Sets/Daz%203D/Base/default.dsf#default",
+				"extra" : [
+					{
+						"type" : "studio/material/uber_iray",
+						"version" : "1.1.0.0"
+					}
+				]
+			},
+			{
+				"id" : "Eyebrows_Secondary-1",
+				"url" : "#Eyebrows_Secondary",
+				"geometry" : "#G9Eyebrows_CS01_High",
+				"groups" : [ "Eyebrows_Secondary" ],
+				"uv_set" : "/data/Daz%203D/Genesis%209%20Starter%20Essentials/G9%20Eyebrows%20Card%20Style%2001/UV%20Sets/Daz%203D/Base/default.dsf#default",
+				"extra" : [
+					{
+						"type" : "studio/material/uber_iray",
+						"version" : "1.1.0.0"
+					}
+				]
+			}
+		],
+		"animations" : [
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Primary:?extra/studio_material_channels/channels/Cutout%20Opacity/image_file",
+				"keys" : [ [ 0, "/Runtime/Textures/DAZ/Characters/Genesis9/Base/Eyebrows/OpacityCutout01_Thin.jpg" ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Primary:?extra/studio_material_channels/channels/Cutout%20Opacity/image_modification/scale",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Primary:?extra/studio_material_channels/channels/Cutout%20Opacity/image_modification/offset",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Primary:?extra/studio_material_channels/channels/Cutout%20Opacity/image_modification/grayscale_mode",
+				"keys" : [ [ 0, "average" ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Primary:?extra/studio_material_channels/channels/Cutout%20Opacity/image_modification/invert",
+				"keys" : [ [ 0, false ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Primary:?extra/studio_material_channels/channels/Cutout%20Opacity/image_modification/horizontal_tiles",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Primary:?extra/studio_material_channels/channels/Cutout%20Opacity/image_modification/horizontal_tiling_offset",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Primary:?extra/studio_material_channels/channels/Cutout%20Opacity/image_modification/vertical_tiles",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Primary:?extra/studio_material_channels/channels/Cutout%20Opacity/image_modification/vertical_tiling_offset",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Secondary:?extra/studio_material_channels/channels/Cutout%20Opacity/image_file",
+				"keys" : [ [ 0, "/Runtime/Textures/DAZ/Characters/Genesis9/Base/Eyebrows/OpacityCutout01_Thin.jpg" ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Secondary:?extra/studio_material_channels/channels/Cutout%20Opacity/image_modification/scale",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Secondary:?extra/studio_material_channels/channels/Cutout%20Opacity/image_modification/offset",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Secondary:?extra/studio_material_channels/channels/Cutout%20Opacity/image_modification/grayscale_mode",
+				"keys" : [ [ 0, "average" ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Secondary:?extra/studio_material_channels/channels/Cutout%20Opacity/image_modification/invert",
+				"keys" : [ [ 0, false ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Secondary:?extra/studio_material_channels/channels/Cutout%20Opacity/image_modification/horizontal_tiles",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Secondary:?extra/studio_material_channels/channels/Cutout%20Opacity/image_modification/horizontal_tiling_offset",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Secondary:?extra/studio_material_channels/channels/Cutout%20Opacity/image_modification/vertical_tiles",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Secondary:?extra/studio_material_channels/channels/Cutout%20Opacity/image_modification/vertical_tiling_offset",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Primary:?extra/studio_material_channels/channels/Normal%20Map/image_file",
+				"keys" : [ [ 0, "/Runtime/Textures/DAZ/Characters/Genesis9/Base/Eyebrows/NormalMap01_Thin.jpg" ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Primary:?extra/studio_material_channels/channels/Normal%20Map/image_modification/horizontal_tiles",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Primary:?extra/studio_material_channels/channels/Normal%20Map/image_modification/horizontal_tiling_offset",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Primary:?extra/studio_material_channels/channels/Normal%20Map/image_modification/vertical_tiles",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Primary:?extra/studio_material_channels/channels/Normal%20Map/image_modification/vertical_tiling_offset",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Secondary:?extra/studio_material_channels/channels/Normal%20Map/image_file",
+				"keys" : [ [ 0, "/Runtime/Textures/DAZ/Characters/Genesis9/Base/Eyebrows/NormalMap01_Thin.jpg" ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Secondary:?extra/studio_material_channels/channels/Normal%20Map/image_modification/horizontal_tiles",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Secondary:?extra/studio_material_channels/channels/Normal%20Map/image_modification/horizontal_tiling_offset",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Secondary:?extra/studio_material_channels/channels/Normal%20Map/image_modification/vertical_tiles",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "G9EyebrowCards#materials/Eyebrows_Secondary:?extra/studio_material_channels/channels/Normal%20Map/image_modification/vertical_tiling_offset",
+				"keys" : [ [ 0, 0 ] ]
+			}
+		]
+	}
+}

@@ -1,0 +1,72 @@
+// DAZ Studio version 3.0  filetype DAZ Script
+
+/**********************************************************************
+	Copyright (C) 2002-2012 DAZ 3D, Inc. All Rights Reserved.
+
+	This is UNPUBLISHED PROPRIETARY SOURCE CODE of DAZ 3D, Inc.
+	the contents of this file may not be disclosed to third parties,
+	copied or duplicated in any form, in whole or in part, without the
+	prior written permission of DAZ 3D, Inc.
+**********************************************************************/
+
+// Change this
+var g_sMapName = "OmDawn_EnvM";
+
+function getChildByName(oLight, sName) {
+    aChildren = oLight.getNodeChildren()
+	for (var i=0; i< aChildren.length; i++) {
+		if (aChildren[i].name == sName) {
+			return aChildren[i];
+		}
+	}
+	return undefined;
+}
+
+function setChildTex(oLight, sTexPath) {
+    oGeo = getChildByName(oLight, "environmentSphere_1923");
+    if (oGeo) {
+        var oObject = oGeo.getObject();
+        var oShape = oObject.getShape(0);
+        var oMaterial = oShape.findMaterial("default");
+        var oProp = oMaterial.findPropertyByLabel("Diffuse Color");
+        oProp.setMap(sTexPath);
+        oProp = oMaterial.findPropertyByLabel("Ambient Color");
+        oProp.setMap(sTexPath);
+    }
+}
+
+function main() {
+    var sel = Scene.getSelectedLightList();
+    var oProp;
+    var oPHelper = new DzPresetHelper;
+    
+    if( sel.length < 1 )
+    {
+        MessageBox.information( "You must select UberEnvironment Light(s) first.", "UberEnvironment", "&OK" );
+    }
+    else
+    {
+        var sBasePath = "/Runtime/textures/omnifreaker/Environment";
+        var sMapTif = "%1/%2.tif".arg(sBasePath).arg(g_sMapName);
+        var sMapJpg = "%1/%2.jpg".arg(sBasePath).arg(g_sMapName);
+        
+        for (var i = 0; i < sel.length; i++)
+        {
+            oLight = sel[ i ];
+            if (oLight.name.startsWith("UberEnvironment") || oLight.name.startsWith("omUberEnvironment")) {       
+                print('Changing HDR texture to "%1"'.arg(sMapTif));
+                oProp = oLight.findPropertyByLabel("Color")
+                oProp.setMap(sMapTif);
+                
+                setChildTex(oLight, sMapJpg);
+            
+            } else {
+                MessageBox.information( '"%1" is not an UberEnvironment Light; Skipping.'.arg(oLight.getLabel()), "UberEnvironment", "&OK" );
+            }
+        }
+    }
+}
+    
+beginUndo();
+main();
+acceptUndo( "SetHDR" );

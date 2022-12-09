@@ -1,0 +1,5263 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/People/Genesis%208%20Female/Developer%20Kit/Genesis%208.1%20Female%20Face%20Controls.duf",
+		"type" : "wearable",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2021-01-25T19:01:56Z"
+	},
+	"material_library" : [
+		{
+			"id" : "FACS_CONTROLS_2",
+			"diffuse" : {
+				"channel" : {
+					"id" : "diffuse",
+					"type" : "color",
+					"name" : "Diffuse Color",
+					"label" : "Diffuse Color",
+					"visible" : false,
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 0, 0, 0 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"extra" : [
+				{
+					"type" : "studio/material/daz_brick",
+					"brick_settings" : {
+						"BrickSetup" : {
+							"type" : "settings",
+							"value" : {
+								"Bricks" : {
+									"type" : "settings",
+									"value" : {
+										"Brick_1" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzSimpleSurfaceBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickSet" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Name" : "shader_Surface",
+																		"LastInvalidate" : "1611600763"
+																	}
+																},
+																"BrickTitle" : "Surface (1)",
+																"HideParams" : false,
+																"PosX" : 91,
+																"PosY" : -93,
+																"BrickIsRightToLeft" : false,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 199 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"shadowPassActive" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Shadow Pass",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : true,
+																		"DefaultValue" : true
+																	}
+																},
+																"beautyPassActive" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Beauty Pass",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : true,
+																		"DefaultValue" : true
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"c_in" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_c_in_b1_t0",
+																"Label" : "Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Color",
+																		"Hidden" : false,
+																		"Path" : "/Surface (1)",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "Color"
+																	}
+																}
+															}
+														},
+														"o_in" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_o_in_b1_t0",
+																"Label" : "Opacity",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Opacity",
+																		"Hidden" : false,
+																		"Path" : "/Surface (1)",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "opac"
+																	}
+																}
+															}
+														},
+														"acceptShadows" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_acceptShadows_b1_t0",
+																"Label" : "Accept Shadows",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Accept Shadows",
+																		"Hidden" : true,
+																		"Path" : "/Surface (1)",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : true,
+																		"DefaultValue" : true,
+																		"Name" : "Accept Shadows"
+																	}
+																}
+															}
+														},
+														"rootSettings" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Root Settings"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_2" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzDefaultMaterialBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "DS Default Material (2)",
+																"HideParams" : false,
+																"PosX" : -367,
+																"PosY" : -162,
+																"BrickIsRightToLeft" : false,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 336 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_4" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_5" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_6" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_7" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_8" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_9" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_10" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_14" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 101,
+																						"Green" : 127,
+																						"Blue" : 8
+																					}
+																				}
+																			}
+																		},
+																		"Param_15" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 142,
+																						"Green" : 212,
+																						"Blue" : 72
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickVersion" : 1.1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"Lighting Model" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Lighting Model",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 5 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : [ "i", 0 ],
+																		"DefaultValue" : [ "i", 0 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"DiffuseColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_DiffuseColor_b2_t0",
+																"Label" : "Diffuse Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Diffuse Color",
+																		"Hidden" : true,
+																		"Path" : "/Diffuse",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "Diffuse Color"
+																	}
+																}
+															}
+														},
+														"DiffuseStrength" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_DiffuseStrength_b2_t0",
+																"Label" : "Diffuse Strength",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Diffuse Strength",
+																		"Hidden" : true,
+																		"Path" : "/Diffuse",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : true,
+																		"Value" : 1,
+																		"DefaultValue" : 1,
+																		"Name" : "Diffuse Strength"
+																	}
+																}
+															}
+														},
+														"Glossiness" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_Glossiness_b2_t0",
+																"Label" : "Glossiness",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Glossiness",
+																		"Hidden" : true,
+																		"Path" : "/Specular",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : true,
+																		"Value" : 0,
+																		"DefaultValue" : 0.95,
+																		"Name" : "Glossiness"
+																	}
+																}
+															}
+														},
+														"SpecularColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_SpecularColor_b2_t0",
+																"Label" : "Specular Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Specular Color",
+																		"Hidden" : true,
+																		"Path" : "/Specular",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "Specular Color"
+																	}
+																}
+															}
+														},
+														"SpecularStrength" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_SpecularStrength_b2_t0",
+																"Label" : "Specular Strength",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Specular Strength",
+																		"Hidden" : true,
+																		"Path" : "/Specular",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : true,
+																		"Value" : 0,
+																		"DefaultValue" : 1,
+																		"Name" : "Specular Strength"
+																	}
+																}
+															}
+														},
+														"SpecularThroughOpacity" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_SpecularThroughOpacity_b2_t0",
+																"Label" : "Specular Through Opacity",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Multiply Specular Through Opacity",
+																		"Hidden" : true,
+																		"Path" : "/Specular",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : false,
+																		"DefaultValue" : true,
+																		"Name" : "Multiply Specular Through Opacity"
+																	}
+																}
+															}
+														},
+														"AmbientColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_AmbientColor_b2_t0",
+																"Label" : "Ambient Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Ambient Color",
+																		"Hidden" : false,
+																		"Path" : "/Ambient",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"Name" : "Ambient Color"
+																	}
+																}
+															}
+														},
+														"AmbientStrength" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_AmbientStrength_b2_t0",
+																"Label" : "Ambient Strength",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Ambient Strength",
+																		"Hidden" : true,
+																		"Path" : "/Ambient",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : true,
+																		"Value" : 1,
+																		"DefaultValue" : 1,
+																		"Name" : "Ambient Strength"
+																	}
+																}
+															}
+														},
+														"OpacityColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_OpacityColor_b2_t0",
+																"Label" : "Opacity Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Opacity Strength",
+																		"Hidden" : false,
+																		"Path" : "/Opacity",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 0 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "Opacity Strength"
+																	}
+																}
+															}
+														},
+														"ReflectionColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_ReflectionColor_b2_t0",
+																"Label" : "Reflection Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Reflection Color",
+																		"Hidden" : true,
+																		"Path" : "/DS Default Material (2)",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"Name" : "reflection"
+																	}
+																}
+															}
+														},
+														"RefractionColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_RefractionColor_b2_t0",
+																"Label" : "Refraction Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Refraction Color",
+																		"Hidden" : true,
+																		"Path" : "/DS Default Material (2)",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"Name" : "refraction"
+																	}
+																}
+															}
+														},
+														"PIn" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Point"
+															}
+														},
+														"In" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "In"
+															}
+														},
+														"Nn" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Nn"
+															}
+														},
+														"ColorOut" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_ColorOut_b2_t0",
+																"Label" : "Material Color"
+															}
+														},
+														"OpacityOut" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_OpacityOut_b2_t0",
+																"Label" : "Material Opacity"
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								},
+								"Connections" : {
+									"type" : "settings",
+									"value" : {
+										"Connection_0" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_1",
+												"TargetBrick" : "Brick_2",
+												"SourceParam" : "c_in",
+												"TargetParam" : "ColorOut"
+											}
+										},
+										"Connection_1" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_1",
+												"TargetBrick" : "Brick_2",
+												"SourceParam" : "o_in",
+												"TargetParam" : "OpacityOut"
+											}
+										}
+									}
+								},
+								"BrickUserName" : "DAZ Default Material",
+								"Identifier" : "{dd028600-f0d8-4387-bed9-f8f70c9c5e96}"
+							}
+						}
+					}
+				},
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Tags",
+								"type" : "string",
+								"label" : "Tags",
+								"value" : "",
+								"current_value" : ""
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"label" : "Smooth",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"label" : "Angle",
+								"value" : 89.9,
+								"current_value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Line Preview Color",
+								"type" : "color",
+								"label" : "Line Preview Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Lines"
+						},
+						{
+							"channel" : {
+								"id" : "Line Start Width",
+								"type" : "float",
+								"label" : "Line Start Width (mm)",
+								"value" : 0.1,
+								"current_value" : 0.1,
+								"min" : -10000,
+								"max" : 10000,
+								"step_size" : 0.01
+							},
+							"group" : "/Lines/Generation"
+						},
+						{
+							"channel" : {
+								"id" : "Line End Width",
+								"type" : "float",
+								"label" : "Line End Width (mm)",
+								"value" : 0.1,
+								"current_value" : 0.1,
+								"min" : -10000,
+								"max" : 10000,
+								"step_size" : 0.01
+							},
+							"group" : "/Lines/Generation"
+						},
+						{
+							"channel" : {
+								"id" : "Line UV Width",
+								"type" : "float",
+								"label" : "Line UV Width",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/Lines/Generation"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"current_value" : 3,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Accept Shadows",
+								"type" : "bool",
+								"label" : "Accept Shadows",
+								"visible" : false,
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Surface (1)"
+						},
+						{
+							"channel" : {
+								"id" : "Diffuse Strength",
+								"type" : "float",
+								"label" : "Diffuse Strength",
+								"visible" : false,
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Diffuse"
+						},
+						{
+							"channel" : {
+								"id" : "Glossiness",
+								"type" : "float",
+								"label" : "Glossiness",
+								"visible" : false,
+								"value" : 0.95,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Specular Color",
+								"type" : "color",
+								"label" : "Specular Color",
+								"visible" : false,
+								"value" : [ 1, 1, 1 ],
+								"current_value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Specular Strength",
+								"type" : "float",
+								"label" : "Specular Strength",
+								"visible" : false,
+								"value" : 1,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Multiply Specular Through Opacity",
+								"type" : "bool",
+								"label" : "Multiply Specular Through Opacity",
+								"visible" : false,
+								"value" : true,
+								"current_value" : false
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Color",
+								"type" : "color",
+								"label" : "Ambient Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 0, 0, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Ambient"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Strength",
+								"type" : "float",
+								"label" : "Ambient Strength",
+								"visible" : false,
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Ambient"
+						},
+						{
+							"channel" : {
+								"id" : "Opacity Strength",
+								"type" : "color",
+								"label" : "Opacity Strength",
+								"value" : [ 1, 1, 1 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Opacity"
+						},
+						{
+							"channel" : {
+								"id" : "reflection",
+								"type" : "color",
+								"label" : "Reflection Color",
+								"visible" : false,
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/DS Default Material (2)"
+						},
+						{
+							"channel" : {
+								"id" : "refraction",
+								"type" : "color",
+								"label" : "Refraction Color",
+								"visible" : false,
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/DS Default Material (2)"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id" : "FACS_CONTROLS_1",
+			"diffuse" : {
+				"channel" : {
+					"id" : "diffuse",
+					"type" : "color",
+					"name" : "Diffuse Color",
+					"label" : "Diffuse Color",
+					"visible" : false,
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 0, 0, 0 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"extra" : [
+				{
+					"type" : "studio/material/daz_brick",
+					"brick_settings" : {
+						"BrickSetup" : {
+							"type" : "settings",
+							"value" : {
+								"Bricks" : {
+									"type" : "settings",
+									"value" : {
+										"Brick_1" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzSimpleSurfaceBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickSet" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Name" : "shader_Surface",
+																		"LastInvalidate" : "1611600763"
+																	}
+																},
+																"BrickTitle" : "Surface (1)",
+																"HideParams" : false,
+																"PosX" : 177,
+																"PosY" : -77,
+																"BrickIsRightToLeft" : false,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 199 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"shadowPassActive" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Shadow Pass",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : true,
+																		"DefaultValue" : true
+																	}
+																},
+																"beautyPassActive" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Beauty Pass",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : true,
+																		"DefaultValue" : true
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"c_in" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_c_in_b1_t0",
+																"Label" : "Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Color",
+																		"Hidden" : false,
+																		"Path" : "/Surface (1)",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "Color"
+																	}
+																}
+															}
+														},
+														"o_in" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_o_in_b1_t0",
+																"Label" : "Opacity",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Opacity",
+																		"Hidden" : false,
+																		"Path" : "/Surface (1)",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "opac"
+																	}
+																}
+															}
+														},
+														"acceptShadows" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_acceptShadows_b1_t0",
+																"Label" : "Accept Shadows",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Accept Shadows",
+																		"Hidden" : true,
+																		"Path" : "/Surface (1)",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : true,
+																		"DefaultValue" : true,
+																		"Name" : "Accept Shadows"
+																	}
+																}
+															}
+														},
+														"rootSettings" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Root Settings"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_2" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzDefaultMaterialBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "DS Default Material (2)",
+																"HideParams" : false,
+																"PosX" : -281,
+																"PosY" : -146,
+																"BrickIsRightToLeft" : false,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 336 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_4" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_5" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_6" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_7" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_8" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_9" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_10" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_14" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 101,
+																						"Green" : 127,
+																						"Blue" : 8
+																					}
+																				}
+																			}
+																		},
+																		"Param_15" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 142,
+																						"Green" : 212,
+																						"Blue" : 72
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickVersion" : 1.1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"Lighting Model" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Lighting Model",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 5 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : [ "i", 0 ],
+																		"DefaultValue" : [ "i", 0 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"DiffuseColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_DiffuseColor_b2_t0",
+																"Label" : "Diffuse Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Diffuse Color",
+																		"Hidden" : true,
+																		"Path" : "/Diffuse",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "Diffuse Color"
+																	}
+																}
+															}
+														},
+														"DiffuseStrength" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_DiffuseStrength_b2_t0",
+																"Label" : "Diffuse Strength",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Diffuse Strength",
+																		"Hidden" : true,
+																		"Path" : "/Diffuse",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : true,
+																		"Value" : 1,
+																		"DefaultValue" : 1,
+																		"Name" : "Diffuse Strength"
+																	}
+																}
+															}
+														},
+														"Glossiness" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_Glossiness_b2_t0",
+																"Label" : "Glossiness",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Glossiness",
+																		"Hidden" : true,
+																		"Path" : "/Specular",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : true,
+																		"Value" : 0,
+																		"DefaultValue" : 0.95,
+																		"Name" : "Glossiness"
+																	}
+																}
+															}
+														},
+														"SpecularColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_SpecularColor_b2_t0",
+																"Label" : "Specular Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Specular Color",
+																		"Hidden" : true,
+																		"Path" : "/Specular",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "Specular Color"
+																	}
+																}
+															}
+														},
+														"SpecularStrength" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_SpecularStrength_b2_t0",
+																"Label" : "Specular Strength",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Specular Strength",
+																		"Hidden" : true,
+																		"Path" : "/Specular",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : true,
+																		"Value" : 0,
+																		"DefaultValue" : 1,
+																		"Name" : "Specular Strength"
+																	}
+																}
+															}
+														},
+														"SpecularThroughOpacity" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_SpecularThroughOpacity_b2_t0",
+																"Label" : "Specular Through Opacity",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Multiply Specular Through Opacity",
+																		"Hidden" : true,
+																		"Path" : "/Specular",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : false,
+																		"DefaultValue" : true,
+																		"Name" : "Multiply Specular Through Opacity"
+																	}
+																}
+															}
+														},
+														"AmbientColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_AmbientColor_b2_t0",
+																"Label" : "Ambient Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Ambient Color",
+																		"Hidden" : false,
+																		"Path" : "/Ambient",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 128 ],
+																				"Blue" : [ "i", 128 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"Name" : "Ambient Color"
+																	}
+																}
+															}
+														},
+														"AmbientStrength" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_AmbientStrength_b2_t0",
+																"Label" : "Ambient Strength",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Ambient Strength",
+																		"Hidden" : true,
+																		"Path" : "/Ambient",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : true,
+																		"Value" : 1,
+																		"DefaultValue" : 1,
+																		"Name" : "Ambient Strength"
+																	}
+																}
+															}
+														},
+														"OpacityColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_OpacityColor_b2_t0",
+																"Label" : "Opacity Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Opacity Strength",
+																		"Hidden" : false,
+																		"Path" : "/Opacity",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 0 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
+																			}
+																		},
+																		"Name" : "Opacity Strength"
+																	}
+																}
+															}
+														},
+														"ReflectionColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_ReflectionColor_b2_t0",
+																"Label" : "Reflection Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Reflection Color",
+																		"Hidden" : true,
+																		"Path" : "/DS Default Material (2)",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"Name" : "reflection"
+																	}
+																}
+															}
+														},
+														"RefractionColor" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_RefractionColor_b2_t0",
+																"Label" : "Refraction Color",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Refraction Color",
+																		"Hidden" : true,
+																		"Path" : "/DS Default Material (2)",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"Red" : [ "i", 0 ],
+																				"Green" : [ "i", 0 ],
+																				"Blue" : [ "i", 0 ]
+																			}
+																		},
+																		"Name" : "refraction"
+																	}
+																}
+															}
+														},
+														"PIn" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Point"
+															}
+														},
+														"In" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "In"
+															}
+														},
+														"Nn" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Nn"
+															}
+														},
+														"ColorOut" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_ColorOut_b2_t0",
+																"Label" : "Material Color"
+															}
+														},
+														"OpacityOut" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_OpacityOut_b2_t0",
+																"Label" : "Material Opacity"
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								},
+								"Connections" : {
+									"type" : "settings",
+									"value" : {
+										"Connection_0" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_1",
+												"TargetBrick" : "Brick_2",
+												"SourceParam" : "c_in",
+												"TargetParam" : "ColorOut"
+											}
+										},
+										"Connection_1" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_1",
+												"TargetBrick" : "Brick_2",
+												"SourceParam" : "o_in",
+												"TargetParam" : "OpacityOut"
+											}
+										}
+									}
+								},
+								"BrickUserName" : "DAZ Default Material",
+								"Identifier" : "{dd028600-f0d8-4387-bed9-f8f70c9c5e96}"
+							}
+						}
+					}
+				},
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Tags",
+								"type" : "string",
+								"label" : "Tags",
+								"value" : "",
+								"current_value" : ""
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"label" : "Smooth",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"label" : "Angle",
+								"value" : 89.9,
+								"current_value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Line Preview Color",
+								"type" : "color",
+								"label" : "Line Preview Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Lines"
+						},
+						{
+							"channel" : {
+								"id" : "Line Start Width",
+								"type" : "float",
+								"label" : "Line Start Width (mm)",
+								"value" : 0.1,
+								"current_value" : 0.1,
+								"min" : -10000,
+								"max" : 10000,
+								"step_size" : 0.01
+							},
+							"group" : "/Lines/Generation"
+						},
+						{
+							"channel" : {
+								"id" : "Line End Width",
+								"type" : "float",
+								"label" : "Line End Width (mm)",
+								"value" : 0.1,
+								"current_value" : 0.1,
+								"min" : -10000,
+								"max" : 10000,
+								"step_size" : 0.01
+							},
+							"group" : "/Lines/Generation"
+						},
+						{
+							"channel" : {
+								"id" : "Line UV Width",
+								"type" : "float",
+								"label" : "Line UV Width",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/Lines/Generation"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"current_value" : 3,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Accept Shadows",
+								"type" : "bool",
+								"label" : "Accept Shadows",
+								"visible" : false,
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Surface (1)"
+						},
+						{
+							"channel" : {
+								"id" : "Diffuse Strength",
+								"type" : "float",
+								"label" : "Diffuse Strength",
+								"visible" : false,
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Diffuse"
+						},
+						{
+							"channel" : {
+								"id" : "Glossiness",
+								"type" : "float",
+								"label" : "Glossiness",
+								"visible" : false,
+								"value" : 0.95,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Specular Color",
+								"type" : "color",
+								"label" : "Specular Color",
+								"visible" : false,
+								"value" : [ 1, 1, 1 ],
+								"current_value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Specular Strength",
+								"type" : "float",
+								"label" : "Specular Strength",
+								"visible" : false,
+								"value" : 1,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Multiply Specular Through Opacity",
+								"type" : "bool",
+								"label" : "Multiply Specular Through Opacity",
+								"visible" : false,
+								"value" : true,
+								"current_value" : false
+							},
+							"group" : "/Specular"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Color",
+								"type" : "color",
+								"label" : "Ambient Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 0.5019608, 0.5019608 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Ambient"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Strength",
+								"type" : "float",
+								"label" : "Ambient Strength",
+								"visible" : false,
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Ambient"
+						},
+						{
+							"channel" : {
+								"id" : "Opacity Strength",
+								"type" : "color",
+								"label" : "Opacity Strength",
+								"value" : [ 1, 1, 1 ],
+								"current_value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Opacity"
+						},
+						{
+							"channel" : {
+								"id" : "reflection",
+								"type" : "color",
+								"label" : "Reflection Color",
+								"visible" : false,
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/DS Default Material (2)"
+						},
+						{
+							"channel" : {
+								"id" : "refraction",
+								"type" : "color",
+								"label" : "Refraction Color",
+								"visible" : false,
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/DS Default Material (2)"
+						}
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"nodes" : [
+			{
+				"id" : "Genesis 8.1 Face Controls",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Genesis%208.1%20Face%20Controls",
+				"name" : "Genesis 8.1 Face Controls",
+				"label" : "Genesis 8.1 Face Controls",
+				"parent" : "name://@selection/head:",
+				"geometries" : [
+					{
+						"id" : "Genesis 8.1 Face Controls-1",
+						"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Genesis%208.1%20Face%20Controls-1",
+						"name" : "Genesis 8.1 Face Controls_1778",
+						"label" : "shape",
+						"type" : "polygon_mesh",
+						"extra" : [
+							{
+								"type" : "studio_geometry_channels",
+								"channels" : [
+									{
+										"channel" : {
+											"id" : "SubDRenderLevel",
+											"type" : "int",
+											"current_value" : 0
+										}
+									}
+								]
+							}
+						]
+					}
+				],
+				"preview" : {
+					"type" : "figure",
+					"oriented_box" : {
+						"min" : [ -8.516, 154.388, 5.843 ],
+						"max" : [ 8.517, 181.429, 13.604 ]
+					},
+					"center_point" : [ 0, 0, 0 ],
+					"end_point" : [ 0, 167.9082, 9.764562 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4,
+						"channels" : [
+							{
+								"channel" : {
+									"id" : "Renderable",
+									"type" : "bool",
+									"current_value" : false
+								}
+							},
+							{
+								"channel" : {
+									"id" : "Visible in Simulation",
+									"type" : "bool",
+									"current_value" : false
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"id" : "Face_Controls_XYZ",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Face_Controls_XYZ",
+				"name" : "Face_Controls_XYZ",
+				"label" : "Face_Controls_XYZ",
+				"parent" : "#Genesis%208.1%20Face%20Controls",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.962, -0.962, -0.826 ],
+						"max" : [ 0.963, 0.963, 0.827 ]
+					},
+					"center_point" : [ 0, 180.466, 8.510016 ],
+					"end_point" : [ 0, 180.47, 8.51 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "l_Eyebrows_Outer_L",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Eyebrows_Outer_L",
+				"name" : "l_Eyebrows_Outer_L",
+				"label" : "Eyebrows_Outer_L",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 5.998085, 170.7168, 9.144 ],
+					"end_point" : [ 5.997791, 170.7168, 9.144 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Eyebrows_Outer_L2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Eyebrows_Outer_L2",
+				"name" : "Eyebrows_Outer_L2",
+				"label" : "Eyebrows_Outer_L2",
+				"parent" : "#l_Eyebrows_Outer_L",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.208, -0.209, 0 ],
+						"max" : [ 0.211, 0.21, 0 ]
+					},
+					"center_point" : [ 5.997791, 170.7168, 9.144 ],
+					"end_point" : [ 5.998085, 170.7168, 9.144 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "r_Mouth_Corner",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Mouth_Corner",
+				"name" : "r_Mouth_Corner",
+				"label" : "r_Mouth_Corner",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -5.46184, 161.495, 8.973312 ],
+					"end_point" : [ -5.46137, 161.495, 8.973312 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "l_Mouth_Corner",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Mouth_Corner",
+				"name" : "l_Mouth_Corner",
+				"label" : "l_Mouth_Corner",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 5.46184, 161.495, 8.973312 ],
+					"end_point" : [ 5.46137, 161.495, 8.973312 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth_Corners_R",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Corners_R",
+				"name" : "Mouth_Corners_R",
+				"label" : "Mouth_Corners_R",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -5.462274, 161.4951, 8.973312 ],
+					"end_point" : [ -5.462108, 161.4951, 8.973312 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth_Corners_R2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Corners_R2",
+				"name" : "Mouth_Corners_R2",
+				"label" : "Mouth_Corners_R2",
+				"parent" : "#Mouth_Corners_R",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.209, -0.209, 0 ],
+						"max" : [ 0.211, 0.21, 0 ]
+					},
+					"center_point" : [ -5.462108, 161.4951, 8.973312 ],
+					"end_point" : [ -5.461941, 161.4951, 8.973312 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Tongue_Out",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Tongue_Out",
+				"name" : "Tongue_Out",
+				"label" : "Tongue_Out",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 174.3701, 12.78 ],
+					"end_point" : [ 0, 174.3701, 12.78 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Tongue_In",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Tongue_In",
+				"name" : "Tongue_In",
+				"label" : "Tongue_In",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 174.3701, 12.78 ],
+					"end_point" : [ 0, 174.3701, 12.78 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Tongue_Tip_Narrow_Wide_R",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Tongue_Tip_Narrow_Wide_R",
+				"name" : "Tongue_Tip_Narrow_Wide_R",
+				"label" : "Tongue_Tip_Narrow_Wide_R",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -1.26, 173.485, 12.77722 ],
+					"end_point" : [ -1.25998, 173.485, 12.77722 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Tongue_Tip_Narrow_Wide_R2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Tongue_Tip_Narrow_Wide_R2",
+				"name" : "Tongue_Tip_Narrow_Wide_R2",
+				"label" : "Tongue_Tip_Narrow_Wide_R2",
+				"parent" : "#Tongue_Tip_Narrow_Wide_R",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.323, -0.383, 0 ],
+						"max" : [ 0.381, 0.384, 0 ]
+					},
+					"center_point" : [ -1.25998, 173.485, 12.77722 ],
+					"end_point" : [ -1.25996, 173.485, 12.77722 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Tongue_Tip",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Tongue_Tip",
+				"name" : "Tongue_Tip",
+				"label" : "Tongue_Tip",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.5, 0 ],
+						"max" : [ 0.384, 0.501, 0 ]
+					},
+					"center_point" : [ 0, 173.4848, 12.77722 ],
+					"end_point" : [ 0, 173.4848, 12.77722 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Tongue",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Tongue",
+				"name" : "Tongue",
+				"label" : "Tongue",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.962, -0.383, 0 ],
+						"max" : [ 0.963, 0.963, 0 ]
+					},
+					"center_point" : [ 0, 174.37, 12.77722 ],
+					"end_point" : [ 0, 174.3695, 12.77722 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Tongue_Out-1",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Tongue_Out-1",
+				"name" : "Tongue_Out",
+				"label" : "Tongue_Out",
+				"parent" : "#Tongue",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ 0, -0.382, -0.381 ],
+						"max" : [ 0, 0.384, 0.323 ]
+					},
+					"center_point" : [ 0, 174.3695, 13.28099 ],
+					"end_point" : [ 0.0004730225, 174.3695, 13.28099 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Tongue_In-1",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Tongue_In-1",
+				"name" : "Tongue_In",
+				"label" : "Tongue_In",
+				"parent" : "#Tongue",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ 0, -0.382, -0.322 ],
+						"max" : [ 0, 0.384, 0.382 ]
+					},
+					"center_point" : [ 0, 174.3695, 12.27347 ],
+					"end_point" : [ 0.0004730225, 174.3695, 12.27377 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Tongue_Narrow_R",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Tongue_Narrow_R",
+				"name" : "Tongue_Narrow_R",
+				"label" : "Tongue_Narrow_R",
+				"parent" : "#Tongue",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -1.2, 175.5697, 12.77722 ],
+					"end_point" : [ -1.2, 175.57, 12.78 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Tongue_Narrow_R2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Tongue_Narrow_R2",
+				"name" : "Tongue_Narrow_R2",
+				"label" : "Tongue_Narrow_R2",
+				"parent" : "#Tongue_Narrow_R",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.383, -0.002 ],
+						"max" : [ 0.321, 0.384, -0.002 ]
+					},
+					"center_point" : [ -1.2, 175.57, 12.78 ],
+					"end_point" : [ -1.2, 175.57, 12.78 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Tongue_Narrow",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Tongue_Narrow",
+				"name" : "Tongue_Narrow",
+				"label" : "Tongue_Narrow_L",
+				"parent" : "#Tongue",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 1.2, 175.5697, 12.77722 ],
+					"end_point" : [ 1.2, 175.57, 12.78 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Tongue_Narrow_L2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Tongue_Narrow_L2",
+				"name" : "Tongue_Narrow_L2",
+				"label" : "Tongue_Narrow_L2",
+				"parent" : "#Tongue_Narrow",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.321, -0.383, -0.002 ],
+						"max" : [ 0.383, 0.384, -0.002 ]
+					},
+					"center_point" : [ 1.201085, 175.57, 12.78 ],
+					"end_point" : [ 1.200936, 175.57, 12.78 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth_Press_Top",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Press_Top",
+				"name" : "Mouth_Press_Top",
+				"label" : "Mouth_Press_Top",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 162.9, 11.10801 ],
+					"end_point" : [ 0, 162.9, 11.10801 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth_Press_Top2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Press_Top2",
+				"name" : "Mouth_Press_Top2",
+				"label" : "Mouth_Press_Top2",
+				"parent" : "#Mouth_Press_Top",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.799, -0.24, 0 ],
+						"max" : [ 0.8, 0.519, 0 ]
+					},
+					"center_point" : [ 0, 162.9, 11.10801 ],
+					"end_point" : [ 0, 162.9, 11.10801 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth_Side_to_Side",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Side_to_Side",
+				"name" : "Mouth_Side_to_Side",
+				"label" : "Mouth_Side_to_Side",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ 0, 0, 0 ],
+						"max" : [ 0, 0, 0 ]
+					},
+					"center_point" : [ 0, 157.9109, 10.89965 ],
+					"end_point" : [ 0, 157.9109, 10.89965 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth_Shrug_Upper",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Shrug_Upper",
+				"name" : "Mouth_Shrug_Upper",
+				"label" : "Mouth_Shrug_Upper",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.381, 0 ],
+						"max" : [ 0.384, 0.323, 0 ]
+					},
+					"center_point" : [ 0, 158.5509, 10.89965 ],
+					"end_point" : [ 0, 158.5509, 10.89965 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth_Shrug_Lower",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Shrug_Lower",
+				"name" : "Mouth_Shrug_Lower",
+				"label" : "Mouth_Shrug_Lower",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.381, 0 ],
+						"max" : [ 0.384, 0.322, 0 ]
+					},
+					"center_point" : [ 0, 157.3304, 10.89965 ],
+					"end_point" : [ 0, 157.3304, 10.89965 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Lips_Funnel_R",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Lips_Funnel_R",
+				"name" : "Lips_Funnel_R",
+				"label" : "Lips_Funnel_R",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -3.705989, 161.4952, 10.31443 ],
+					"end_point" : [ -3.705739, 161.4952, 10.31443 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Lips_Funnel_R2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Lips_Funnel_R2",
+				"name" : "Lips_Funnel_R2",
+				"label" : "Lips_Funnel_R2",
+				"parent" : "#Lips_Funnel_R",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.202, -0.799, 0 ],
+						"max" : [ 0.558, 0.8, 0 ]
+					},
+					"center_point" : [ -3.705739, 161.4952, 10.31443 ],
+					"end_point" : [ -3.705489, 161.4952, 10.31443 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "r_Dimple",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Dimple",
+				"name" : "r_Dimple",
+				"label" : "r_Dimple",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ 0, -0.383, -0.351 ],
+						"max" : [ 0, 0.384, 0.352 ]
+					},
+					"center_point" : [ -5.462016, 161.4954, 7.967887 ],
+					"end_point" : [ -5.462016, 161.4954, 7.967887 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Dimples_R",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Dimples_R",
+				"name" : "Dimples_R",
+				"label" : "Dimples_R",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -5.462016, 161.4952, 8.641142 ],
+					"end_point" : [ -5.461008, 161.4952, 8.641142 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Dimples_R2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Dimples_R2",
+				"name" : "Dimples_R2",
+				"label" : "Dimples_R2",
+				"parent" : "#Dimples_R",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ 0, -0.209, -0.209 ],
+						"max" : [ 0, 0.21, 0.21 ]
+					},
+					"center_point" : [ -5.461008, 161.4952, 8.641142 ],
+					"end_point" : [ -5.46, 161.4952, 8.641142 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "l_Dimple",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Dimple",
+				"name" : "l_Dimple",
+				"label" : "l_Dimple",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ 0, -0.383, -0.351 ],
+						"max" : [ 0, 0.384, 0.352 ]
+					},
+					"center_point" : [ 5.462016, 161.4954, 7.967887 ],
+					"end_point" : [ 5.462016, 161.4954, 7.967887 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth_Down_R",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Down_R",
+				"name" : "Mouth_Down_R",
+				"label" : "Mouth_Down_R",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -2.317277, 160.33, 10.27786 ],
+					"end_point" : [ -2.317154, 160.3302, 10.27786 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth_Down_R2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Down_R2",
+				"name" : "Mouth_Down_R2",
+				"label" : "Mouth_Down_R2",
+				"parent" : "#Mouth_Down_R",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.208, -0.212, 0 ],
+						"max" : [ 0.211, 0.208, 0 ]
+					},
+					"center_point" : [ -2.317154, 160.3302, 10.27786 ],
+					"end_point" : [ -2.317031, 160.3305, 10.27786 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "r_Mouth_Down",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Mouth_Down",
+				"name" : "r_Mouth_Down",
+				"label" : "r_Mouth_Down",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.321, 0 ],
+						"max" : [ 0.383, 0.383, 0 ]
+					},
+					"center_point" : [ -2.315955, 159.6241, 10.27786 ],
+					"end_point" : [ -2.315889, 159.6241, 10.27786 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "r_Mouth_Up",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Mouth_Up",
+				"name" : "r_Mouth_Up",
+				"label" : "r_Mouth_Up",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.382, -0.381, 0 ],
+						"max" : [ 0.385, 0.322, 0 ]
+					},
+					"center_point" : [ -2.317154, 163.3662, 10.27786 ],
+					"end_point" : [ -2.317521, 163.3662, 10.27786 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth",
+				"name" : "Mouth",
+				"label" : "Mouth",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.962, -0.383, 0 ],
+						"max" : [ 0.963, 0.384, 0 ]
+					},
+					"center_point" : [ 0, 157.9108, 10.89965 ],
+					"end_point" : [ 0, 157.9108, 10.89965 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "l_Mouth_Down",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Mouth_Down",
+				"name" : "l_Mouth_Down",
+				"label" : "l_Mouth_Down",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.382, -0.321, 0 ],
+						"max" : [ 0.384, 0.383, 0 ]
+					},
+					"center_point" : [ 2.315955, 159.6241, 10.27786 ],
+					"end_point" : [ 2.315889, 159.6241, 10.27786 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth_Up_R",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Up_R",
+				"name" : "Mouth_Up_R",
+				"label" : "Mouth_Up_R",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -2.317178, 162.663, 10.27786 ],
+					"end_point" : [ -2.317047, 162.663, 10.27786 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth_Up_R2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Up_R2",
+				"name" : "Mouth_Up_R2",
+				"label" : "Mouth_Up_R2",
+				"parent" : "#Mouth_Up_R",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.209, -0.209, 0 ],
+						"max" : [ 0.211, 0.21, 0 ]
+					},
+					"center_point" : [ -2.317047, 162.663, 10.27786 ],
+					"end_point" : [ -2.316916, 162.663, 10.27786 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "l_Mouth_Up",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Mouth_Up",
+				"name" : "l_Mouth_Up",
+				"label" : "l_Mouth_Up",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.384, -0.381, 0 ],
+						"max" : [ 0.383, 0.322, 0 ]
+					},
+					"center_point" : [ 2.317154, 163.3662, 10.27786 ],
+					"end_point" : [ 2.317521, 163.3662, 10.27786 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "r_Squint",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Squint",
+				"name" : "r_Squint",
+				"label" : "r_Squint",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.381, 0 ],
+						"max" : [ 0.384, 0.323, 0 ]
+					},
+					"center_point" : [ -3.761708, 167.3698, 10.8265 ],
+					"end_point" : [ -3.761485, 167.37, 10.8265 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "r_Eye",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Eye",
+				"name" : "r_Eye",
+				"label" : "r_Eye",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.481, -0.48, 0 ],
+						"max" : [ 0.481, 0.482, 0 ]
+					},
+					"center_point" : [ -3.290394, 168.6189, 9.144 ],
+					"end_point" : [ -3.290529, 168.6189, 9.144 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "r_Eyelid",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Eyelid",
+				"name" : "r_Eyelid",
+				"label" : "r_Eyelid",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.382, -0.381, 0 ],
+						"max" : [ 0.384, 0.322, 0 ]
+					},
+					"center_point" : [ -3.377953, 169.733, 11.38733 ],
+					"end_point" : [ -3.377944, 169.7331, 11.38733 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "r_Blink",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Blink",
+				"name" : "r_Blink",
+				"label" : "r_Blink",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.32, 0 ],
+						"max" : [ 0.384, 0.384, 0 ]
+					},
+					"center_point" : [ -4.145121, 169.6717, 11.38733 ],
+					"end_point" : [ -4.144518, 169.6714, 11.38733 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Squint_R",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Squint_R",
+				"name" : "Squint_R",
+				"label" : "Squint_R",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -3.761448, 166.6669, 10.8265 ],
+					"end_point" : [ -3.761495, 166.6669, 10.8265 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Squint_R2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Squint_R2",
+				"name" : "Squint_R2",
+				"label" : "Squint_R2",
+				"parent" : "#Squint_R",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.209, -0.209, 0 ],
+						"max" : [ 0.21, 0.21, 0 ]
+					},
+					"center_point" : [ -3.761495, 166.6669, 10.8265 ],
+					"end_point" : [ -3.761542, 166.6669, 10.8265 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "l_Squint",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Squint",
+				"name" : "l_Squint",
+				"label" : "l_Squint",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.381, 0 ],
+						"max" : [ 0.384, 0.323, 0 ]
+					},
+					"center_point" : [ 3.761708, 167.3698, 10.8265 ],
+					"end_point" : [ 3.761485, 167.37, 10.8265 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "l_Eye",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Eye",
+				"name" : "l_Eye",
+				"label" : "l_Eye",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.48, -0.48, 0 ],
+						"max" : [ 0.482, 0.482, 0 ]
+					},
+					"center_point" : [ 3.290394, 168.6189, 9.144 ],
+					"end_point" : [ 3.290529, 168.6189, 9.144 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Eyelids_R",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Eyelids_R",
+				"name" : "Eyelids_R",
+				"label" : "Eyelids_R",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -3.759042, 169.0299, 11.38733 ],
+					"end_point" : [ -3.759036, 169.0299, 11.38733 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Eyelids_R2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Eyelids_R2",
+				"name" : "Eyelids_R2",
+				"label" : "Eyelids_R2",
+				"parent" : "#Eyelids_R",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.212, -0.209, 0 ],
+						"max" : [ 0.208, 0.21, 0 ]
+					},
+					"center_point" : [ -3.759036, 169.0299, 11.38733 ],
+					"end_point" : [ -3.759029, 169.0299, 11.38733 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "l_Eyelid",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Eyelid",
+				"name" : "l_Eyelid",
+				"label" : "l_Eyelid",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.381, 0 ],
+						"max" : [ 0.383, 0.322, 0 ]
+					},
+					"center_point" : [ 3.377953, 169.733, 11.38733 ],
+					"end_point" : [ 3.377944, 169.7331, 11.38733 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "l_Blink",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Blink",
+				"name" : "l_Blink",
+				"label" : "l_Blink",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.321, 0 ],
+						"max" : [ 0.384, 0.382, 0 ]
+					},
+					"center_point" : [ 4.145121, 169.6732, 11.38733 ],
+					"end_point" : [ 4.145031, 169.6734, 11.38733 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Eyes",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Eyes",
+				"name" : "Eyes",
+				"label" : "Eyes",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.962, -0.962, 0 ],
+						"max" : [ 0.963, 0.963, 0 ]
+					},
+					"center_point" : [ 0, 169.0299, 11.38733 ],
+					"end_point" : [ 0, 169.0299, 11.38733 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "r_Nose",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Nose",
+				"name" : "r_Nose",
+				"label" : "r_Nose",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.382, 0 ],
+						"max" : [ 0.384, 0.322, 0 ]
+					},
+					"center_point" : [ -2.072686, 165.5256, 11.36294 ],
+					"end_point" : [ -2.072855, 165.5254, 11.36294 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Sneer_R",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Sneer_R",
+				"name" : "Sneer_R",
+				"label" : "Sneer_R",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -2.072184, 164.8219, 11.36294 ],
+					"end_point" : [ -2.071834, 164.8219, 11.36294 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Sneer_R2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Sneer_R2",
+				"name" : "Sneer_R2",
+				"label" : "Sneer_R2",
+				"parent" : "#Sneer_R",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.21, -0.209, 0 ],
+						"max" : [ 0.209, 0.21, 0 ]
+					},
+					"center_point" : [ -2.071834, 164.8219, 11.36294 ],
+					"end_point" : [ -2.071485, 164.8219, 11.36294 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "l_Nose",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Nose",
+				"name" : "l_Nose",
+				"label" : "l_Nose",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.382, 0 ],
+						"max" : [ 0.384, 0.322, 0 ]
+					},
+					"center_point" : [ 2.072686, 165.5256, 11.36294 ],
+					"end_point" : [ 2.072855, 165.5254, 11.36294 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Jaw",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Jaw",
+				"name" : "Jaw",
+				"label" : "Jaw",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.962, -0.961, 0 ],
+						"max" : [ 0.963, 0.384, 0 ]
+					},
+					"center_point" : [ 0, 155.35, 9.948672 ],
+					"end_point" : [ 0, 155.3507, 9.948672 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Jaw_In",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Jaw_In",
+				"name" : "Jaw_In",
+				"label" : "Jaw_In",
+				"parent" : "#Jaw",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ 0, -0.383, -0.351 ],
+						"max" : [ 0, 0.384, 0.352 ]
+					},
+					"center_point" : [ 0, 155.3506, 9.474415 ],
+					"end_point" : [ 0, 155.3506, 9.474415 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Jaw_Out",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Jaw_Out",
+				"name" : "Jaw_Out",
+				"label" : "Jaw_Out",
+				"parent" : "#Jaw",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ 0, -0.383, -0.351 ],
+						"max" : [ 0, 0.384, 0.352 ]
+					},
+					"center_point" : [ 0, 155.3506, 10.42293 ],
+					"end_point" : [ 0, 155.3506, 10.42293 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth_Close",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Close",
+				"name" : "Mouth_Close",
+				"label" : "Mouth_Close",
+				"parent" : "#Jaw",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.477, -0.477, 0 ],
+						"max" : [ 0.478, 0.478, 0 ]
+					},
+					"center_point" : [ 0, 156.0257, 9.948672 ],
+					"end_point" : [ 0, 156.0257, 9.948672 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "r_Cheek",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Cheek",
+				"name" : "r_Cheek",
+				"label" : "r_Cheek",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.381, 0 ],
+						"max" : [ 0.384, 0.322, 0 ]
+					},
+					"center_point" : [ -5.315723, 164.9967, 9.412224 ],
+					"end_point" : [ -5.31566, 164.9969, 9.412224 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Cheeks_R",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Cheeks_R",
+				"name" : "Cheeks_R",
+				"label" : "Cheeks_R",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -5.316068, 164.2935, 9.412224 ],
+					"end_point" : [ -5.316035, 164.2935, 9.412224 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Cheeks_R2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Cheeks_R2",
+				"name" : "Cheeks_R2",
+				"label" : "Cheeks_R2",
+				"parent" : "#Cheeks_R",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.209, -0.209, 0 ],
+						"max" : [ 0.211, 0.21, 0 ]
+					},
+					"center_point" : [ -5.316035, 164.2935, 9.412224 ],
+					"end_point" : [ -5.316003, 164.2935, 9.412224 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "l_Cheek",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Cheek",
+				"name" : "l_Cheek",
+				"label" : "l_Cheek",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.382, 0 ],
+						"max" : [ 0.384, 0.322, 0 ]
+					},
+					"center_point" : [ 5.315723, 164.9972, 9.412224 ],
+					"end_point" : [ 5.31566, 164.9978, 9.412224 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "r_Puff",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Puff",
+				"name" : "r_Puff",
+				"label" : "r_Puff",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.309, -1.623, 0 ],
+						"max" : [ 0.946, 1.625, 0 ]
+					},
+					"center_point" : [ -8.20627, 161.4952, 5.925313 ],
+					"end_point" : [ -8.207031, 161.4952, 5.925313 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Cheek_Puff_R",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Cheek_Puff_R",
+				"name" : "Cheek_Puff_R",
+				"label" : "Cheek_Puff_R",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -7.485763, 161.4952, 5.925313 ],
+					"end_point" : [ -7.486054, 161.4952, 5.925313 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Cheek_Puff_R2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Cheek_Puff_R2",
+				"name" : "Cheek_Puff_R2",
+				"label" : "Cheek_Puff_R2",
+				"parent" : "#Cheek_Puff_R",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.209, -0.209, 0 ],
+						"max" : [ 0.211, 0.21, 0 ]
+					},
+					"center_point" : [ -7.486054, 161.4952, 5.925313 ],
+					"end_point" : [ -7.486345, 161.4952, 5.925313 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "l_Puff",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Puff",
+				"name" : "l_Puff",
+				"label" : "l_Puff",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.945, -1.623, 0 ],
+						"max" : [ 0.31, 1.625, 0 ]
+					},
+					"center_point" : [ 8.20627, 161.4952, 5.925313 ],
+					"end_point" : [ 8.207031, 161.4952, 5.925313 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "r_Brow_Down",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Brow_Down",
+				"name" : "r_Brow_Down",
+				"label" : "r_Brow_Down",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.322, 0 ],
+						"max" : [ 0.384, 0.382, 0 ]
+					},
+					"center_point" : [ -4.413198, 170.7612, 10.16813 ],
+					"end_point" : [ -4.413198, 170.7611, 10.16813 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "r_Brow_Up",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Brow_Up",
+				"name" : "r_Brow_Up",
+				"label" : "r_Brow_Up",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.382, -0.381, 0 ],
+						"max" : [ 0.384, 0.323, 0 ]
+					},
+					"center_point" : [ -4.414004, 172.1757, 10.16813 ],
+					"end_point" : [ -4.414112, 172.1759, 10.16813 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "r_Eyebrow_Outer",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Eyebrow_Outer",
+				"name" : "r_Eyebrow_Outer",
+				"label" : "r_Eyebrow_Outer",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.382, 0 ],
+						"max" : [ 0.384, 0.322, 0 ]
+					},
+					"center_point" : [ -5.998166, 171.4208, 9.144 ],
+					"end_point" : [ -5.998287, 171.4209, 9.144 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Brows_L",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Brows_L",
+				"name" : "Brows_L",
+				"label" : "Brows_L",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 4.413598, 171.4728, 10.16813 ],
+					"end_point" : [ 4.414031, 171.4727, 10.16813 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Brows_L2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Brows_L2",
+				"name" : "Brows_L2",
+				"label" : "Brows_L2",
+				"parent" : "#Brows_L",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.21, -0.209, 0 ],
+						"max" : [ 0.21, 0.21, 0 ]
+					},
+					"center_point" : [ 4.414031, 171.4727, 10.16813 ],
+					"end_point" : [ 4.414476, 171.4727, 10.16813 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "l_Brow_Down",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Brow_Down",
+				"name" : "l_Brow_Down",
+				"label" : "l_Brow_Down",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.322, 0 ],
+						"max" : [ 0.384, 0.382, 0 ]
+					},
+					"center_point" : [ 4.413198, 170.7612, 10.16813 ],
+					"end_point" : [ 4.413198, 170.7611, 10.16813 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "l_Brow_Up",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Brow_Up",
+				"name" : "l_Brow_Up",
+				"label" : "l_Brow_Up",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.381, 0 ],
+						"max" : [ 0.383, 0.323, 0 ]
+					},
+					"center_point" : [ 4.414004, 172.1757, 10.16813 ],
+					"end_point" : [ 4.414112, 172.1759, 10.16813 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "l_Eyebrows_Inner_L",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Eyebrows_Inner_L",
+				"name" : "l_Eyebrows_Inner_L",
+				"label" : "Eyebrows_Inner_L",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 2.024454, 171.4727, 10.83381 ],
+					"end_point" : [ 2.024454, 171.4727, 10.83381 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Eyebrows_Inner_L2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Eyebrows_Inner_L2",
+				"name" : "Eyebrows_Inner_L2",
+				"label" : "Eyebrows_Inner_L2",
+				"parent" : "#l_Eyebrows_Inner_L",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.21, -0.209, 0 ],
+						"max" : [ 0.21, 0.21, 0 ]
+					},
+					"center_point" : [ 2.024454, 171.4727, 10.83381 ],
+					"end_point" : [ 2.024454, 171.4727, 10.83381 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Nostrils_Dilate",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Nostrils_Dilate",
+				"name" : "Nostrils_Dilate",
+				"label" : "Nostrils_Dilate",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.799, 0, -0.379 ],
+						"max" : [ 0.8, 0, 0.38 ]
+					},
+					"center_point" : [ 0, 164.8176, 13.20639 ],
+					"end_point" : [ 0, 164.8176, 13.20639 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "l_Eyebrow_Outer",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Eyebrow_Outer",
+				"name" : "l_Eyebrow_Outer",
+				"label" : "l_Eyebrow_Outer",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.382, 0 ],
+						"max" : [ 0.384, 0.322, 0 ]
+					},
+					"center_point" : [ 5.998166, 171.4208, 9.144 ],
+					"end_point" : [ 5.998287, 171.4209, 9.144 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Eyebrows_Inner_R",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Eyebrows_Inner_R",
+				"name" : "Eyebrows_Inner_R",
+				"label" : "Eyebrows_Inner_R",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -2.02, 171.4727, 10.83381 ],
+					"end_point" : [ -2.02, 171.4727, 10.83381 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Eyebrows_Inner_R2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Eyebrows_Inner_R2",
+				"name" : "Eyebrows_Inner_R2",
+				"label" : "Eyebrows_Inner_R2",
+				"parent" : "#Eyebrows_Inner_R",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.213, -0.209, 0 ],
+						"max" : [ 0.206, 0.21, 0 ]
+					},
+					"center_point" : [ -2.02, 171.4727, 10.83381 ],
+					"end_point" : [ -2.02, 171.4727, 10.83381 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Brows_R",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Brows_R",
+				"name" : "Brows_R",
+				"label" : "Brows_R",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -4.41, 171.4728, 10.16813 ],
+					"end_point" : [ -4.41, 171.4727, 10.16813 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Brows_R2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Brows_R2",
+				"name" : "Brows_R2",
+				"label" : "Brows_R2",
+				"parent" : "#Brows_R",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.213, -0.209, 0 ],
+						"max" : [ 0.207, 0.21, 0 ]
+					},
+					"center_point" : [ -4.41, 171.4727, 10.16813 ],
+					"end_point" : [ -4.41, 171.4727, 10.16813 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "r_Eyebrows_Outer_R",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Eyebrows_Outer_R",
+				"name" : "r_Eyebrows_Outer_R",
+				"label" : "Eyebrows_Outer_R",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -6, 170.7168, 9.144 ],
+					"end_point" : [ -6, 170.7168, 9.144 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "r_Eyebrows_Outer_R2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Eyebrows_Outer_R2",
+				"name" : "r_Eyebrows_Outer_R2",
+				"label" : "Eyebrows_Outer_R2",
+				"parent" : "#r_Eyebrows_Outer_R",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.208, -0.209, 0 ],
+						"max" : [ 0.212, 0.21, 0 ]
+					},
+					"center_point" : [ -6, 170.7168, 9.144 ],
+					"end_point" : [ -6, 170.7168, 9.144 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "l_Eyebrow_Inner",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Eyebrow_Inner",
+				"name" : "l_Eyebrow_Inner",
+				"label" : "l_Eyebrow_Inner",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.381, 0 ],
+						"max" : [ 0.384, 0.323, 0 ]
+					},
+					"center_point" : [ 2.024033, 172.1756, 10.83381 ],
+					"end_point" : [ 2.024454, 172.1755, 10.83 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "r_Eyebrow_Inner",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Eyebrow_Inner",
+				"name" : "r_Eyebrow_Inner",
+				"label" : "r_Eyebrow_Inner",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.383, -0.381, 0 ],
+						"max" : [ 0.384, 0.323, 0 ]
+					},
+					"center_point" : [ -2.024033, 172.1756, 10.83381 ],
+					"end_point" : [ -2.024454, 172.1755, 10.83 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Eyelids_L",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Eyelids_L",
+				"name" : "Eyelids_L",
+				"label" : "Eyelids_L",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 3.76, 169.0299, 11.38733 ],
+					"end_point" : [ 3.76, 169.0299, 11.38733 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Eyelids_L2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Eyelids_L2",
+				"name" : "Eyelids_L2",
+				"label" : "Eyelids_L2",
+				"parent" : "#Eyelids_L",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.208, -0.209, 0 ],
+						"max" : [ 0.212, 0.21, 0 ]
+					},
+					"center_point" : [ 3.76, 169.0299, 11.38733 ],
+					"end_point" : [ 3.76, 169.0299, 11.38733 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Squint_L",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Squint_L",
+				"name" : "Squint_L",
+				"label" : "Squint_L",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 3.76, 166.6669, 10.8265 ],
+					"end_point" : [ 3.76, 166.6669, 10.8265 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Squint_L2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Squint_L2",
+				"name" : "Squint_L2",
+				"label" : "Squint_L2",
+				"parent" : "#Squint_L",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.208, -0.209, 0 ],
+						"max" : [ 0.212, 0.21, 0 ]
+					},
+					"center_point" : [ 3.76, 166.6669, 10.8265 ],
+					"end_point" : [ 3.76, 166.6669, 10.8265 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Cheeks_L",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Cheeks_L",
+				"name" : "Cheeks_L",
+				"label" : "Cheeks_L",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 5.32, 164.2935, 9.412224 ],
+					"end_point" : [ 5.32, 164.2935, 9.412224 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Cheeks_L2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Cheeks_L2",
+				"name" : "Cheeks_L2",
+				"label" : "Cheeks_L2",
+				"parent" : "#Cheeks_L",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.214, -0.209, 0 ],
+						"max" : [ 0.206, 0.21, 0 ]
+					},
+					"center_point" : [ 5.32, 164.2935, 9.412224 ],
+					"end_point" : [ 5.32, 164.2935, 9.412224 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Sneer_L",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Sneer_L",
+				"name" : "Sneer_L",
+				"label" : "Sneer_L",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 2.07, 164.8219, 11.36294 ],
+					"end_point" : [ 2.07, 164.8219, 11.36294 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Sneer_L2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Sneer_L2",
+				"name" : "Sneer_L2",
+				"label" : "Sneer_L2",
+				"parent" : "#Sneer_L",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.207, -0.209, 0 ],
+						"max" : [ 0.213, 0.21, 0 ]
+					},
+					"center_point" : [ 2.07, 164.8219, 11.36294 ],
+					"end_point" : [ 2.07, 164.8219, 11.36294 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth_Up_L",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Up_L",
+				"name" : "Mouth_Up_L",
+				"label" : "Mouth_Up_L",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 2.32, 162.663, 10.27786 ],
+					"end_point" : [ 2.32, 162.663, 10.27786 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth_Up_L2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Up_L2",
+				"name" : "Mouth_Up_L2",
+				"label" : "Mouth_Up_L2",
+				"parent" : "#Mouth_Up_L",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.213, -0.209, 0 ],
+						"max" : [ 0.207, 0.21, 0 ]
+					},
+					"center_point" : [ 2.32, 162.663, 10.27786 ],
+					"end_point" : [ 2.32, 162.663, 10.27786 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth_Down_L",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Down_L",
+				"name" : "Mouth_Down_L",
+				"label" : "Mouth_Down_L",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 2.32, 160.33, 10.27786 ],
+					"end_point" : [ 2.32, 160.3302, 10.27786 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth_Down_L2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Down_L2",
+				"name" : "Mouth_Down_L2",
+				"label" : "Mouth_Down_L2",
+				"parent" : "#Mouth_Down_L",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.213, -0.212, 0 ],
+						"max" : [ 0.207, 0.208, 0 ]
+					},
+					"center_point" : [ 2.32, 160.3302, 10.27786 ],
+					"end_point" : [ 2.32, 160.3305, 10.27786 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Cheek_Puff_L",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Cheek_Puff_L",
+				"name" : "Cheek_Puff_L",
+				"label" : "Cheek_Puff_L",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 7.49, 161.4952, 5.925313 ],
+					"end_point" : [ 7.49, 161.4952, 5.925313 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Cheek_Puff_L2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Cheek_Puff_L2",
+				"name" : "Cheek_Puff_L2",
+				"label" : "Cheek_Puff_L2",
+				"parent" : "#Cheek_Puff_L",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.214, -0.209, 0 ],
+						"max" : [ 0.206, 0.21, 0 ]
+					},
+					"center_point" : [ 7.49, 161.4952, 5.925313 ],
+					"end_point" : [ 7.49, 161.4952, 5.925313 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "r_Mouth_Corner2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#r_Mouth_Corner2",
+				"name" : "r_Mouth_Corner2",
+				"label" : "r_Mouth_Corner 2",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.962, -0.962, 0 ],
+						"max" : [ 0.963, 0.963, 0 ]
+					},
+					"center_point" : [ -5.46184, 161.495, 8.973312 ],
+					"end_point" : [ -5.46137, 161.495, 8.973312 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "l_Mouth_Corner2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#l_Mouth_Corner2",
+				"name" : "l_Mouth_Corner2",
+				"label" : "l_Mouth_Corner 2",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.962, -0.962, 0 ],
+						"max" : [ 0.963, 0.963, 0 ]
+					},
+					"center_point" : [ 5.46184, 161.495, 8.973312 ],
+					"end_point" : [ 5.46137, 161.495, 8.973312 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth_Corners_L",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Corners_L",
+				"name" : "Mouth_Corners_L",
+				"label" : "Mouth_Corners_L",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 5.46, 161.4951, 8.973312 ],
+					"end_point" : [ 5.46, 161.4951, 8.973312 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth_Corners_L2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Corners_L2",
+				"name" : "Mouth_Corners_L2",
+				"label" : "Mouth_Corners_L2",
+				"parent" : "#Mouth_Corners_L",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.208, -0.209, 0 ],
+						"max" : [ 0.212, 0.21, 0 ]
+					},
+					"center_point" : [ 5.46, 161.4951, 8.973312 ],
+					"end_point" : [ 5.46, 161.4951, 8.973312 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Dimples_L",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Dimples_L",
+				"name" : "Dimples_L",
+				"label" : "Dimples_L",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 5.46, 161.4952, 8.641142 ],
+					"end_point" : [ 5.46, 161.4952, 8.641142 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Dimples_L2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Dimples_L2",
+				"name" : "Dimples_L2",
+				"label" : "Dimples_L2",
+				"parent" : "#Dimples_L",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ 0.002, -0.209, -0.209 ],
+						"max" : [ 0.002, 0.21, 0.21 ]
+					},
+					"center_point" : [ 5.46, 161.4952, 8.641142 ],
+					"end_point" : [ 5.46, 161.4952, 8.641142 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth_Press_Bottom",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Press_Bottom",
+				"name" : "Mouth_Press_Bottom",
+				"label" : "Mouth_Press_Bottom",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 160.1, 11.10801 ],
+					"end_point" : [ 0, 160.1, 11.10801 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Mouth_Press_Bottom2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Mouth_Press_Bottom2",
+				"name" : "Mouth_Press_Bottom2",
+				"label" : "Mouth_Press_Bottom2",
+				"parent" : "#Mouth_Press_Bottom",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.799, -0.528, 0 ],
+						"max" : [ 0.8, 0.232, 0 ]
+					},
+					"center_point" : [ 0, 160.1, 11.10801 ],
+					"end_point" : [ 0, 160.1, 11.10801 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Lips_Funnel_L",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Lips_Funnel_L",
+				"name" : "Lips_Funnel_L",
+				"label" : "Lips_Funnel_L",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 3.71, 161.4952, 10.31443 ],
+					"end_point" : [ 3.71, 161.4952, 10.31443 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Lips_Funnel_L2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Lips_Funnel_L2",
+				"name" : "Lips_Funnel_L2",
+				"label" : "Lips_Funnel_L2",
+				"parent" : "#Lips_Funnel_L",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.561, -0.799, 0 ],
+						"max" : [ 0.199, 0.8, 0 ]
+					},
+					"center_point" : [ 3.71, 161.4952, 10.31443 ],
+					"end_point" : [ 3.71, 161.4952, 10.31443 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Tongue_Tip_Narrow_Wide_L",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Tongue_Tip_Narrow_Wide_L",
+				"name" : "Tongue_Tip_Narrow_Wide_L",
+				"label" : "Tongue_Tip_Narrow_Wide_L",
+				"parent" : "#Face_Controls_XYZ",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 1.26, 173.485, 12.77722 ],
+					"end_point" : [ 1.26, 173.485, 12.77722 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			},
+			{
+				"id" : "Tongue_Tip_Narrow_Wide_L2",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#Tongue_Tip_Narrow_Wide_L2",
+				"name" : "Tongue_Tip_Narrow_Wide_L2",
+				"label" : "Tongue_Tip_Narrow_Wide_L2",
+				"parent" : "#Tongue_Tip_Narrow_Wide_L",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -0.38, -0.383, 0 ],
+						"max" : [ 0.324, 0.384, 0 ]
+					},
+					"center_point" : [ 1.26, 173.485, 12.77722 ],
+					"end_point" : [ 1.26, 173.485, 12.77722 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"version" : 4
+					}
+				]
+			}
+		],
+		"modifiers" : [
+			{
+				"id" : "SkinBinding",
+				"url" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/Genesis%208.1%20Face%20Controls.dsf#SkinBinding",
+				"parent" : "#Genesis%208.1%20Face%20Controls-1",
+				"extra" : [
+					{
+						"type" : "skin_settings",
+						"auto_normalize_general" : true,
+						"auto_normalize_local" : true,
+						"auto_normalize_scale" : true,
+						"binding_mode" : "General",
+						"general_map_mode" : "Linear",
+						"scale_mode" : "BindingMaps"
+					}
+				]
+			}
+		],
+		"materials" : [
+			{
+				"id" : "FACS_CONTROLS_2-1",
+				"url" : "#FACS_CONTROLS_2",
+				"geometry" : "#Genesis%208.1%20Face%20Controls-1",
+				"groups" : [ "FACS_CONTROLS_2" ],
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "color",
+						"name" : "Diffuse Color",
+						"current_value" : [ 0, 0, 0 ]
+					}
+				},
+				"uv_set" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/UV%20Sets/Faux2D/Base/default.dsf#default",
+				"extra" : [
+					{
+						"type" : "studio/material/daz_brick"
+					}
+				]
+			},
+			{
+				"id" : "FACS_CONTROLS_1-1",
+				"url" : "#FACS_CONTROLS_1",
+				"geometry" : "#Genesis%208.1%20Face%20Controls-1",
+				"groups" : [ "FACS_CONTROLS_1" ],
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "color",
+						"name" : "Diffuse Color",
+						"current_value" : [ 0, 0, 0 ]
+					}
+				},
+				"uv_set" : "/data/Daz%203D/Genesis%208/Genesis%208_1%20Face%20Controls/UV%20Sets/Faux2D/Base/default.dsf#default",
+				"extra" : [
+					{
+						"type" : "studio/material/daz_brick"
+					}
+				]
+			}
+		]
+	}
+}

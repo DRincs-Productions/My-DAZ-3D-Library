@@ -1,0 +1,4020 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/People/Genesis%208%20Female/Hair/Toulouse%20Hair/Toulouse%20Hair.duf",
+		"type" : "wearable",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2017-06-13T21:26:18Z"
+	},
+	"image_library" : [
+		{
+			"id" : "SW_Toulouse_01.jpg-1",
+			"name" : "SW_Toulouse_01.jpg",
+			"map_gamma" : 0,
+			"map" : [
+				{
+					"url" : "/Runtime/Textures/SWAM_Art/ToulouseHR/SW_Toulouse_01.jpg",
+					"label" : "SW_Toulouse_01.jpg"
+				}
+			]
+		},
+		{
+			"id" : "SW_Toulouse_TR1.jpg-1",
+			"name" : "SW_Toulouse_TR1.jpg",
+			"map_gamma" : 1,
+			"map" : [
+				{
+					"url" : "/Runtime/Textures/SWAM_Art/ToulouseHR/SW_Toulouse_TR1.jpg",
+					"label" : "SW_Toulouse_TR1.jpg"
+				}
+			]
+		},
+		{
+			"id" : "SW_Toulouse_BUM.jpg-1",
+			"name" : "SW_Toulouse_BUM.jpg",
+			"map_gamma" : 1,
+			"map" : [
+				{
+					"url" : "/Runtime/Textures/SWAM_Art/ToulouseHR/SW_Toulouse_BUM.jpg",
+					"label" : "SW_Toulouse_BUM.jpg"
+				}
+			]
+		},
+		{
+			"id" : "SW_Toulouse_01B.jpg",
+			"name" : "SW_Toulouse_01B.jpg",
+			"map_gamma" : 0,
+			"map" : [
+				{
+					"url" : "/Runtime/Textures/SWAM_Art/ToulouseHR/SW_Toulouse_01B.jpg",
+					"label" : "SW_Toulouse_01B.jpg"
+				}
+			]
+		},
+		{
+			"id" : "SW_ToulouseT_Base_TR.jpg",
+			"name" : "SW_ToulouseT_Base_TR.jpg",
+			"map_gamma" : 1,
+			"map" : [
+				{
+					"url" : "/Runtime/Textures/SWAM_Art/ToulouseHR/SW_ToulouseT_Base_TR.jpg",
+					"label" : "SW_ToulouseT_Base_TR.jpg"
+				}
+			]
+		},
+		{
+			"id" : "SW_Toulouse_03B.jpg",
+			"name" : "SW_Toulouse_03B.jpg",
+			"map_gamma" : 1,
+			"map" : [
+				{
+					"url" : "/Runtime/Textures/SWAM_Art/ToulouseHR/SW_Toulouse_03B.jpg",
+					"label" : "SW_Toulouse_03B.jpg"
+				}
+			]
+		}
+	],
+	"material_library" : [
+		{
+			"id" : "Hair",
+			"diffuse" : {
+				"channel" : {
+					"id" : "diffuse",
+					"type" : "color",
+					"name" : "Diffuse Color",
+					"label" : "Diffuse Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/General"
+			},
+			"transparency" : {
+				"channel" : {
+					"id" : "transparency",
+					"type" : "float",
+					"name" : "Opacity Strength",
+					"label" : "Opacity Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/General"
+			},
+			"extra" : [
+				{
+					"type" : "studio/material/daz_shader",
+					"definition" : "support/DAZ/Uber/shaderDefinitions/surface/omUberSurfaceDef.dse"
+				},
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Tags",
+								"type" : "string",
+								"label" : "Tags",
+								"value" : "",
+								"current_value" : ""
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"label" : "Smooth",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"label" : "Angle",
+								"value" : 89.9,
+								"current_value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"current_value" : 3,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Bump Active",
+								"type" : "bool",
+								"label" : "Bump Active",
+								"value" : false,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Bump Strength",
+								"type" : "float",
+								"label" : "Bump Strength",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 2,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true,
+								"invalid_without_map" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Bump Minimum",
+								"type" : "float",
+								"label" : "Bump Minimum",
+								"value" : -0.1,
+								"current_value" : -0.02,
+								"min" : 0,
+								"max" : 0,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Bump Maximum",
+								"type" : "float",
+								"label" : "Bump Maximum",
+								"value" : 0.1,
+								"current_value" : 0.015,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Displacement Active",
+								"type" : "bool",
+								"label" : "Displacement Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Displacement Strength",
+								"type" : "float",
+								"label" : "Displacement Strength",
+								"value" : 1,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 2,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true,
+								"invalid_without_map" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Displacement Minimum",
+								"type" : "float",
+								"label" : "Displacement Minimum",
+								"value" : -0.1,
+								"current_value" : -0.1,
+								"min" : 0,
+								"max" : 0,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Displacement Maximum",
+								"type" : "float",
+								"label" : "Displacement Maximum",
+								"value" : 0.1,
+								"current_value" : 0.1,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Trace Displacements",
+								"type" : "bool",
+								"label" : "Trace Displacements",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Normal Map",
+								"type" : "image",
+								"label" : "Normal Map",
+								"default_image_gamma" : 1
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Diffuse Active",
+								"type" : "bool",
+								"label" : "Diffuse Active",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Diffuse Strength",
+								"type" : "float",
+								"label" : "Diffuse Strength",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Diffuse Roughness",
+								"type" : "float",
+								"label" : "Diffuse Roughness",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 5,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Opacity Active",
+								"type" : "bool",
+								"label" : "Opacity Active",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Opacity Color",
+								"type" : "color",
+								"label" : "Opacity Color",
+								"value" : [ 1, 1, 1 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Map Tiling U",
+								"type" : "float",
+								"label" : "Map Tiling U",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0.1,
+								"max" : 10,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Map Tiling V",
+								"type" : "float",
+								"label" : "Map Tiling V",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0.1,
+								"max" : 10,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular Active",
+								"type" : "bool",
+								"label" : "Specular Active",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular Color",
+								"type" : "color",
+								"label" : "Specular Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 0.9607843, 0.8078431 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular Strength",
+								"type" : "float",
+								"label" : "Specular Strength",
+								"value" : 1,
+								"current_value" : 0.5,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Glossiness",
+								"type" : "float",
+								"label" : "Glossiness",
+								"value" : 0.1,
+								"current_value" : 0.85,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular Sharpness",
+								"type" : "float",
+								"label" : "Specular Sharpness",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Anisotropic Active",
+								"type" : "bool",
+								"label" : "Anisotropic Active",
+								"value" : false,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Anisotropic Direction",
+								"type" : "enum",
+								"label" : "Anisotropic Direction",
+								"value" : 0,
+								"current_value" : 0,
+								"enum_values" : [ "U", "V" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular2 Active",
+								"type" : "bool",
+								"label" : "Specular2 Active",
+								"value" : false,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular2 Color",
+								"type" : "color",
+								"label" : "Specular2 Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular2 Strength",
+								"type" : "float",
+								"label" : "Specular2 Strength",
+								"value" : 1,
+								"current_value" : 0.05,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular2 Roughness",
+								"type" : "float",
+								"label" : "Specular2 Roughness",
+								"value" : 0.1,
+								"current_value" : 0.85,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular2 Sharpness",
+								"type" : "float",
+								"label" : "Specular2 Sharpness",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Anisotropic2 Active",
+								"type" : "bool",
+								"label" : "Anisotropic2 Active",
+								"value" : false,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Anisotropic2 Direction",
+								"type" : "enum",
+								"label" : "Anisotropic2 Direction",
+								"value" : 0,
+								"current_value" : 0,
+								"enum_values" : [ "U", "V" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Multiply Specular Through Opacity",
+								"type" : "bool",
+								"label" : "Multiply Specular Through Opacity",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Active",
+								"type" : "bool",
+								"label" : "Ambient Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Color",
+								"type" : "color",
+								"label" : "Ambient Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Strength",
+								"type" : "float",
+								"label" : "Ambient Strength",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Refraction Active",
+								"type" : "bool",
+								"label" : "Refraction Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Index of Refraction",
+								"type" : "float",
+								"label" : "Index of Refraction",
+								"value" : 1.3,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 10,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Active",
+								"type" : "bool",
+								"label" : "Reflection Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Mode",
+								"type" : "enum",
+								"label" : "Reflection Mode",
+								"value" : 0,
+								"current_value" : 0,
+								"enum_values" : [ "Environment Map", "Raytrace" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Environment Map (Map in Lat/Long format)",
+								"type" : "color",
+								"label" : "Reflection Environment Map (Map in Lat/Long format)",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true,
+								"invalid_without_map" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Color",
+								"type" : "color",
+								"label" : "Reflection Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Strength",
+								"type" : "float",
+								"label" : "Reflection Strength",
+								"value" : 1,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Blur",
+								"type" : "float",
+								"label" : "Reflection Blur",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Blur Samples",
+								"type" : "int",
+								"label" : "Reflection Blur Samples",
+								"value" : 4,
+								"current_value" : 4,
+								"min" : 1,
+								"max" : 64,
+								"clamped" : true,
+								"step_size" : 1
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Multiply Reflection Through Opacity",
+								"type" : "bool",
+								"label" : "Multiply Reflection Through Opacity",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Fresnel Active",
+								"type" : "bool",
+								"label" : "Fresnel Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Fresnel Strength",
+								"type" : "float",
+								"label" : "Fresnel Strength",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Fresnel Falloff",
+								"type" : "float",
+								"label" : "Fresnel Falloff",
+								"value" : 0.4,
+								"current_value" : 0.4,
+								"min" : 0.05,
+								"max" : 5,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Fresnel Sharpness",
+								"type" : "float",
+								"label" : "Fresnel Sharpness",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Velvet Active",
+								"type" : "bool",
+								"label" : "Velvet Active",
+								"value" : false,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Velvet Color",
+								"type" : "color",
+								"label" : "Velvet Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 0.7333333, 0.6705882, 0.5254902 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Velvet Strength",
+								"type" : "float",
+								"label" : "Velvet Strength",
+								"value" : 1,
+								"current_value" : 0.5,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Velvet Falloff",
+								"type" : "float",
+								"label" : "Velvet Falloff",
+								"value" : 20,
+								"current_value" : 20,
+								"min" : 1,
+								"max" : 100,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Active",
+								"type" : "bool",
+								"label" : "Subsurface Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Color",
+								"type" : "color",
+								"label" : "Subsurface Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Strength",
+								"type" : "float",
+								"label" : "Subsurface Strength",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Refraction",
+								"type" : "float",
+								"label" : "Subsurface Refraction",
+								"value" : 1.5,
+								"current_value" : 1.5,
+								"min" : 0.01,
+								"max" : 5,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Scale",
+								"type" : "float",
+								"label" : "Subsurface Scale",
+								"value" : 4,
+								"current_value" : 4,
+								"min" : 0,
+								"max" : 10,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Group",
+								"type" : "int",
+								"label" : "Subsurface Group",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 64,
+								"clamped" : true,
+								"step_size" : 1
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Shading Rate",
+								"type" : "float",
+								"label" : "Subsurface Shading Rate",
+								"value" : 32,
+								"current_value" : 32,
+								"min" : 0,
+								"max" : 128,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Translucency Active",
+								"type" : "bool",
+								"label" : "Translucency Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Translucency Color",
+								"type" : "color",
+								"label" : "Translucency Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Translucency Strength",
+								"type" : "float",
+								"label" : "Translucency Strength",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Fantom",
+								"type" : "bool",
+								"label" : "Fantom",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Raytrace",
+								"type" : "bool",
+								"label" : "Raytrace",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Accept Shadows",
+								"type" : "bool",
+								"label" : "Accept Shadows",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Occlusion",
+								"type" : "bool",
+								"label" : "Occlusion",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Occlusion Shading Rate Mode",
+								"type" : "enum",
+								"label" : "Occlusion Shading Rate Mode",
+								"value" : 0,
+								"current_value" : 1,
+								"enum_values" : [ "Global", "Override" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Occlusion Shading Rate",
+								"type" : "float",
+								"label" : "Occlusion Shading Rate",
+								"value" : 10,
+								"current_value" : 128,
+								"min" : 0.1,
+								"max" : 128,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id" : "Strands",
+			"diffuse" : {
+				"channel" : {
+					"id" : "diffuse",
+					"type" : "color",
+					"name" : "Diffuse Color",
+					"label" : "Diffuse Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/General"
+			},
+			"transparency" : {
+				"channel" : {
+					"id" : "transparency",
+					"type" : "float",
+					"name" : "Opacity Strength",
+					"label" : "Opacity Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/General"
+			},
+			"extra" : [
+				{
+					"type" : "studio/material/daz_shader",
+					"definition" : "support/DAZ/Uber/shaderDefinitions/surface/omUberSurfaceDef.dse"
+				},
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Tags",
+								"type" : "string",
+								"label" : "Tags",
+								"value" : "",
+								"current_value" : ""
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"label" : "Smooth",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"label" : "Angle",
+								"value" : 89.9,
+								"current_value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"current_value" : 3,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Bump Active",
+								"type" : "bool",
+								"label" : "Bump Active",
+								"value" : false,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Bump Strength",
+								"type" : "float",
+								"label" : "Bump Strength",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 2,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true,
+								"invalid_without_map" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Bump Minimum",
+								"type" : "float",
+								"label" : "Bump Minimum",
+								"value" : -0.1,
+								"current_value" : -0.02,
+								"min" : 0,
+								"max" : 0,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Bump Maximum",
+								"type" : "float",
+								"label" : "Bump Maximum",
+								"value" : 0.1,
+								"current_value" : 0.015,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Displacement Active",
+								"type" : "bool",
+								"label" : "Displacement Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Displacement Strength",
+								"type" : "float",
+								"label" : "Displacement Strength",
+								"value" : 1,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 2,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true,
+								"invalid_without_map" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Displacement Minimum",
+								"type" : "float",
+								"label" : "Displacement Minimum",
+								"value" : -0.1,
+								"current_value" : -0.1,
+								"min" : 0,
+								"max" : 0,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Displacement Maximum",
+								"type" : "float",
+								"label" : "Displacement Maximum",
+								"value" : 0.1,
+								"current_value" : 0.1,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Trace Displacements",
+								"type" : "bool",
+								"label" : "Trace Displacements",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Normal Map",
+								"type" : "image",
+								"label" : "Normal Map",
+								"default_image_gamma" : 1
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Diffuse Active",
+								"type" : "bool",
+								"label" : "Diffuse Active",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Diffuse Strength",
+								"type" : "float",
+								"label" : "Diffuse Strength",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Diffuse Roughness",
+								"type" : "float",
+								"label" : "Diffuse Roughness",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 5,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Opacity Active",
+								"type" : "bool",
+								"label" : "Opacity Active",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Opacity Color",
+								"type" : "color",
+								"label" : "Opacity Color",
+								"value" : [ 1, 1, 1 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Map Tiling U",
+								"type" : "float",
+								"label" : "Map Tiling U",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0.1,
+								"max" : 10,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Map Tiling V",
+								"type" : "float",
+								"label" : "Map Tiling V",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0.1,
+								"max" : 10,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular Active",
+								"type" : "bool",
+								"label" : "Specular Active",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular Color",
+								"type" : "color",
+								"label" : "Specular Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 0.9607843, 0.8078431 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular Strength",
+								"type" : "float",
+								"label" : "Specular Strength",
+								"value" : 1,
+								"current_value" : 0.5,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Glossiness",
+								"type" : "float",
+								"label" : "Glossiness",
+								"value" : 0.1,
+								"current_value" : 0.85,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular Sharpness",
+								"type" : "float",
+								"label" : "Specular Sharpness",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Anisotropic Active",
+								"type" : "bool",
+								"label" : "Anisotropic Active",
+								"value" : false,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Anisotropic Direction",
+								"type" : "enum",
+								"label" : "Anisotropic Direction",
+								"value" : 0,
+								"current_value" : 0,
+								"enum_values" : [ "U", "V" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular2 Active",
+								"type" : "bool",
+								"label" : "Specular2 Active",
+								"value" : false,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular2 Color",
+								"type" : "color",
+								"label" : "Specular2 Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular2 Strength",
+								"type" : "float",
+								"label" : "Specular2 Strength",
+								"value" : 1,
+								"current_value" : 0.05,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular2 Roughness",
+								"type" : "float",
+								"label" : "Specular2 Roughness",
+								"value" : 0.1,
+								"current_value" : 0.85,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular2 Sharpness",
+								"type" : "float",
+								"label" : "Specular2 Sharpness",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Anisotropic2 Active",
+								"type" : "bool",
+								"label" : "Anisotropic2 Active",
+								"value" : false,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Anisotropic2 Direction",
+								"type" : "enum",
+								"label" : "Anisotropic2 Direction",
+								"value" : 0,
+								"current_value" : 0,
+								"enum_values" : [ "U", "V" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Multiply Specular Through Opacity",
+								"type" : "bool",
+								"label" : "Multiply Specular Through Opacity",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Active",
+								"type" : "bool",
+								"label" : "Ambient Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Color",
+								"type" : "color",
+								"label" : "Ambient Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Strength",
+								"type" : "float",
+								"label" : "Ambient Strength",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Refraction Active",
+								"type" : "bool",
+								"label" : "Refraction Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Index of Refraction",
+								"type" : "float",
+								"label" : "Index of Refraction",
+								"value" : 1.3,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 10,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Active",
+								"type" : "bool",
+								"label" : "Reflection Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Mode",
+								"type" : "enum",
+								"label" : "Reflection Mode",
+								"value" : 0,
+								"current_value" : 0,
+								"enum_values" : [ "Environment Map", "Raytrace" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Environment Map (Map in Lat/Long format)",
+								"type" : "color",
+								"label" : "Reflection Environment Map (Map in Lat/Long format)",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true,
+								"invalid_without_map" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Color",
+								"type" : "color",
+								"label" : "Reflection Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Strength",
+								"type" : "float",
+								"label" : "Reflection Strength",
+								"value" : 1,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Blur",
+								"type" : "float",
+								"label" : "Reflection Blur",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Blur Samples",
+								"type" : "int",
+								"label" : "Reflection Blur Samples",
+								"value" : 4,
+								"current_value" : 4,
+								"min" : 1,
+								"max" : 64,
+								"clamped" : true,
+								"step_size" : 1
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Multiply Reflection Through Opacity",
+								"type" : "bool",
+								"label" : "Multiply Reflection Through Opacity",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Fresnel Active",
+								"type" : "bool",
+								"label" : "Fresnel Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Fresnel Strength",
+								"type" : "float",
+								"label" : "Fresnel Strength",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Fresnel Falloff",
+								"type" : "float",
+								"label" : "Fresnel Falloff",
+								"value" : 0.4,
+								"current_value" : 0.4,
+								"min" : 0.05,
+								"max" : 5,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Fresnel Sharpness",
+								"type" : "float",
+								"label" : "Fresnel Sharpness",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Velvet Active",
+								"type" : "bool",
+								"label" : "Velvet Active",
+								"value" : false,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Velvet Color",
+								"type" : "color",
+								"label" : "Velvet Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 0.7333333, 0.6705882, 0.5254902 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Velvet Strength",
+								"type" : "float",
+								"label" : "Velvet Strength",
+								"value" : 1,
+								"current_value" : 0.5,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Velvet Falloff",
+								"type" : "float",
+								"label" : "Velvet Falloff",
+								"value" : 20,
+								"current_value" : 20,
+								"min" : 1,
+								"max" : 100,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Active",
+								"type" : "bool",
+								"label" : "Subsurface Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Color",
+								"type" : "color",
+								"label" : "Subsurface Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Strength",
+								"type" : "float",
+								"label" : "Subsurface Strength",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Refraction",
+								"type" : "float",
+								"label" : "Subsurface Refraction",
+								"value" : 1.5,
+								"current_value" : 1.5,
+								"min" : 0.01,
+								"max" : 5,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Scale",
+								"type" : "float",
+								"label" : "Subsurface Scale",
+								"value" : 4,
+								"current_value" : 4,
+								"min" : 0,
+								"max" : 10,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Group",
+								"type" : "int",
+								"label" : "Subsurface Group",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 64,
+								"clamped" : true,
+								"step_size" : 1
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Shading Rate",
+								"type" : "float",
+								"label" : "Subsurface Shading Rate",
+								"value" : 32,
+								"current_value" : 32,
+								"min" : 0,
+								"max" : 128,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Translucency Active",
+								"type" : "bool",
+								"label" : "Translucency Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Translucency Color",
+								"type" : "color",
+								"label" : "Translucency Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Translucency Strength",
+								"type" : "float",
+								"label" : "Translucency Strength",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Fantom",
+								"type" : "bool",
+								"label" : "Fantom",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Raytrace",
+								"type" : "bool",
+								"label" : "Raytrace",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Accept Shadows",
+								"type" : "bool",
+								"label" : "Accept Shadows",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Occlusion",
+								"type" : "bool",
+								"label" : "Occlusion",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Occlusion Shading Rate Mode",
+								"type" : "enum",
+								"label" : "Occlusion Shading Rate Mode",
+								"value" : 0,
+								"current_value" : 1,
+								"enum_values" : [ "Global", "Override" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Occlusion Shading Rate",
+								"type" : "float",
+								"label" : "Occlusion Shading Rate",
+								"value" : 10,
+								"current_value" : 128,
+								"min" : 0.1,
+								"max" : 128,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id" : "Base",
+			"diffuse" : {
+				"channel" : {
+					"id" : "diffuse",
+					"type" : "color",
+					"name" : "Diffuse Color",
+					"label" : "Diffuse Color",
+					"value" : [ 1, 1, 1 ],
+					"current_value" : [ 1, 1, 1 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"default_image_gamma" : 0,
+					"mappable" : true
+				},
+				"group" : "/General"
+			},
+			"transparency" : {
+				"channel" : {
+					"id" : "transparency",
+					"type" : "float",
+					"name" : "Opacity Strength",
+					"label" : "Opacity Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"default_image_gamma" : 1,
+					"mappable" : true
+				},
+				"group" : "/General"
+			},
+			"extra" : [
+				{
+					"type" : "studio/material/daz_shader",
+					"definition" : "support/DAZ/Uber/shaderDefinitions/surface/omUberSurfaceDef.dse"
+				},
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Tags",
+								"type" : "string",
+								"label" : "Tags",
+								"value" : "",
+								"current_value" : ""
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"label" : "Smooth",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"label" : "Angle",
+								"value" : 89.9,
+								"current_value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"current_value" : 3,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Bump Active",
+								"type" : "bool",
+								"label" : "Bump Active",
+								"value" : false,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Bump Strength",
+								"type" : "float",
+								"label" : "Bump Strength",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 2,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true,
+								"invalid_without_map" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Bump Minimum",
+								"type" : "float",
+								"label" : "Bump Minimum",
+								"value" : -0.1,
+								"current_value" : -0.02,
+								"min" : 0,
+								"max" : 0,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Bump Maximum",
+								"type" : "float",
+								"label" : "Bump Maximum",
+								"value" : 0.1,
+								"current_value" : 0.015,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Displacement Active",
+								"type" : "bool",
+								"label" : "Displacement Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Displacement Strength",
+								"type" : "float",
+								"label" : "Displacement Strength",
+								"value" : 1,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 2,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true,
+								"invalid_without_map" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Displacement Minimum",
+								"type" : "float",
+								"label" : "Displacement Minimum",
+								"value" : -0.1,
+								"current_value" : -0.1,
+								"min" : 0,
+								"max" : 0,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Displacement Maximum",
+								"type" : "float",
+								"label" : "Displacement Maximum",
+								"value" : 0.1,
+								"current_value" : 0.1,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Trace Displacements",
+								"type" : "bool",
+								"label" : "Trace Displacements",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Normal Map",
+								"type" : "image",
+								"label" : "Normal Map",
+								"default_image_gamma" : 1
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Diffuse Active",
+								"type" : "bool",
+								"label" : "Diffuse Active",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Diffuse Strength",
+								"type" : "float",
+								"label" : "Diffuse Strength",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Diffuse Roughness",
+								"type" : "float",
+								"label" : "Diffuse Roughness",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 5,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Opacity Active",
+								"type" : "bool",
+								"label" : "Opacity Active",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Opacity Color",
+								"type" : "color",
+								"label" : "Opacity Color",
+								"value" : [ 1, 1, 1 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Map Tiling U",
+								"type" : "float",
+								"label" : "Map Tiling U",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0.1,
+								"max" : 10,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Map Tiling V",
+								"type" : "float",
+								"label" : "Map Tiling V",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0.1,
+								"max" : 10,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular Active",
+								"type" : "bool",
+								"label" : "Specular Active",
+								"value" : true,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular Color",
+								"type" : "color",
+								"label" : "Specular Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular Strength",
+								"type" : "float",
+								"label" : "Specular Strength",
+								"value" : 1,
+								"current_value" : 0.15,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Glossiness",
+								"type" : "float",
+								"label" : "Glossiness",
+								"value" : 0.1,
+								"current_value" : 0.1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular Sharpness",
+								"type" : "float",
+								"label" : "Specular Sharpness",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Anisotropic Active",
+								"type" : "bool",
+								"label" : "Anisotropic Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Anisotropic Direction",
+								"type" : "enum",
+								"label" : "Anisotropic Direction",
+								"value" : 0,
+								"current_value" : 0,
+								"enum_values" : [ "U", "V" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular2 Active",
+								"type" : "bool",
+								"label" : "Specular2 Active",
+								"value" : false,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular2 Color",
+								"type" : "color",
+								"label" : "Specular2 Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular2 Strength",
+								"type" : "float",
+								"label" : "Specular2 Strength",
+								"value" : 1,
+								"current_value" : 0.3,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular2 Roughness",
+								"type" : "float",
+								"label" : "Specular2 Roughness",
+								"value" : 0.1,
+								"current_value" : 0.85,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Specular2 Sharpness",
+								"type" : "float",
+								"label" : "Specular2 Sharpness",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Anisotropic2 Active",
+								"type" : "bool",
+								"label" : "Anisotropic2 Active",
+								"value" : false,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Anisotropic2 Direction",
+								"type" : "enum",
+								"label" : "Anisotropic2 Direction",
+								"value" : 0,
+								"current_value" : 0,
+								"enum_values" : [ "U", "V" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Multiply Specular Through Opacity",
+								"type" : "bool",
+								"label" : "Multiply Specular Through Opacity",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Active",
+								"type" : "bool",
+								"label" : "Ambient Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Color",
+								"type" : "color",
+								"label" : "Ambient Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Strength",
+								"type" : "float",
+								"label" : "Ambient Strength",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Refraction Active",
+								"type" : "bool",
+								"label" : "Refraction Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Index of Refraction",
+								"type" : "float",
+								"label" : "Index of Refraction",
+								"value" : 1.3,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 10,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Active",
+								"type" : "bool",
+								"label" : "Reflection Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Mode",
+								"type" : "enum",
+								"label" : "Reflection Mode",
+								"value" : 0,
+								"current_value" : 0,
+								"enum_values" : [ "Environment Map", "Raytrace" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Environment Map (Map in Lat/Long format)",
+								"type" : "color",
+								"label" : "Reflection Environment Map (Map in Lat/Long format)",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true,
+								"invalid_without_map" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Color",
+								"type" : "color",
+								"label" : "Reflection Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Strength",
+								"type" : "float",
+								"label" : "Reflection Strength",
+								"value" : 1,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Blur",
+								"type" : "float",
+								"label" : "Reflection Blur",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Reflection Blur Samples",
+								"type" : "int",
+								"label" : "Reflection Blur Samples",
+								"value" : 4,
+								"current_value" : 4,
+								"min" : 1,
+								"max" : 64,
+								"clamped" : true,
+								"step_size" : 1
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Multiply Reflection Through Opacity",
+								"type" : "bool",
+								"label" : "Multiply Reflection Through Opacity",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Fresnel Active",
+								"type" : "bool",
+								"label" : "Fresnel Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Fresnel Strength",
+								"type" : "float",
+								"label" : "Fresnel Strength",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Fresnel Falloff",
+								"type" : "float",
+								"label" : "Fresnel Falloff",
+								"value" : 0.4,
+								"current_value" : 0.4,
+								"min" : 0.05,
+								"max" : 5,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Fresnel Sharpness",
+								"type" : "float",
+								"label" : "Fresnel Sharpness",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Velvet Active",
+								"type" : "bool",
+								"label" : "Velvet Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Velvet Color",
+								"type" : "color",
+								"label" : "Velvet Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Velvet Strength",
+								"type" : "float",
+								"label" : "Velvet Strength",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Velvet Falloff",
+								"type" : "float",
+								"label" : "Velvet Falloff",
+								"value" : 20,
+								"current_value" : 20,
+								"min" : 1,
+								"max" : 100,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Active",
+								"type" : "bool",
+								"label" : "Subsurface Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Color",
+								"type" : "color",
+								"label" : "Subsurface Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Strength",
+								"type" : "float",
+								"label" : "Subsurface Strength",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Refraction",
+								"type" : "float",
+								"label" : "Subsurface Refraction",
+								"value" : 1.5,
+								"current_value" : 1.5,
+								"min" : 0.01,
+								"max" : 5,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Scale",
+								"type" : "float",
+								"label" : "Subsurface Scale",
+								"value" : 4,
+								"current_value" : 4,
+								"min" : 0,
+								"max" : 10,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Group",
+								"type" : "int",
+								"label" : "Subsurface Group",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 64,
+								"clamped" : true,
+								"step_size" : 1
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Subsurface Shading Rate",
+								"type" : "float",
+								"label" : "Subsurface Shading Rate",
+								"value" : 32,
+								"current_value" : 32,
+								"min" : 0,
+								"max" : 128,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Translucency Active",
+								"type" : "bool",
+								"label" : "Translucency Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Translucency Color",
+								"type" : "color",
+								"label" : "Translucency Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"default_image_gamma" : 0,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Translucency Strength",
+								"type" : "float",
+								"label" : "Translucency Strength",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Fantom",
+								"type" : "bool",
+								"label" : "Fantom",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Raytrace",
+								"type" : "bool",
+								"label" : "Raytrace",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Accept Shadows",
+								"type" : "bool",
+								"label" : "Accept Shadows",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Occlusion",
+								"type" : "bool",
+								"label" : "Occlusion",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Occlusion Shading Rate Mode",
+								"type" : "enum",
+								"label" : "Occlusion Shading Rate Mode",
+								"value" : 0,
+								"current_value" : 1,
+								"enum_values" : [ "Global", "Override" ]
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Occlusion Shading Rate",
+								"type" : "float",
+								"label" : "Occlusion Shading Rate",
+								"value" : 10,
+								"current_value" : 128,
+								"min" : 0.1,
+								"max" : 128,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						}
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"nodes" : [
+			{
+				"id" : "ToulouseHR",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#Genesis%202_35228",
+				"name" : "ToulouseHR",
+				"label" : "Toulouse Hair",
+				"parent" : "name://@selection:",
+				"geometries" : [
+					{
+						"id" : "geometry",
+						"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#Genesis%202",
+						"name" : "Genesis 2",
+						"label" : "shape",
+						"type" : "polygon_mesh",
+						"extra" : [
+							{
+								"type" : "studio_geometry_channels",
+								"channels" : [
+									{
+										"channel" : {
+											"id" : "SubDRenderLevel",
+											"type" : "int",
+											"current_value" : 0
+										}
+									}
+								]
+							}
+						]
+					}
+				],
+				"conform_target" : "name://@selection:",
+				"preview" : {
+					"type" : "figure",
+					"oriented_box" : {
+						"min" : [ -13.498, 88.002, -15.214 ],
+						"max" : [ 13.499, 182.647, 13.73 ]
+					},
+					"center_point" : [ 0, 0, 0 ],
+					"end_point" : [ 0.160443, 103.876, 0 ],
+					"rotation_order" : "YXZ"
+				}
+			},
+			{
+				"id" : "hip",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#hip",
+				"name" : "hip",
+				"label" : "Hip",
+				"parent" : "#ToulouseHR",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 105.1781, 1.824816 ],
+					"end_point" : [ 0, 88.82034, 0.02407765 ],
+					"rotation_order" : "YZX"
+				},
+				"end_point" : [
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zEnd",
+						"current_value" : 0.02407765
+					}
+				]
+			},
+			{
+				"id" : "pelvis",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#pelvis",
+				"name" : "pelvis",
+				"label" : "Pelvis",
+				"parent" : "#hip",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 107.0423, 1.873485 ],
+					"end_point" : [ 0, 88.0048, 1.555934 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "abdomenLower",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#abdomenLower",
+				"name" : "abdomenLower",
+				"label" : "Abdomen Lower",
+				"parent" : "#hip",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 106.9446, 0.3423212 ],
+					"end_point" : [ 0, 115.0478, 0.4073269 ],
+					"rotation_order" : "YZX"
+				},
+				"center_point" : [
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zOrigin",
+						"current_value" : 0.3423212
+					}
+				],
+				"end_point" : [
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zEnd",
+						"current_value" : 0.4073269
+					}
+				]
+			},
+			{
+				"id" : "abdomenUpper",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#abdomenUpper",
+				"name" : "abdomenUpper",
+				"label" : "Abdomen Upper",
+				"parent" : "#abdomenLower",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 115.0947, 1.53567 ],
+					"end_point" : [ 0, 122.5955, 0.839857 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "chestLower",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#chestLower",
+				"name" : "chestLower",
+				"label" : "Chest Lower",
+				"parent" : "#abdomenUpper",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 123, 1.138297 ],
+					"end_point" : [ 0, 143.7313, 1.202407 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "chestUpper",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#chestUpper",
+				"name" : "chestUpper",
+				"label" : "Chest Upper",
+				"parent" : "#chestLower",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 136.0765, -2.479732 ],
+					"end_point" : [ 0, 149.5166, -2.438965 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "lCollar",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#lCollar",
+				"name" : "lCollar",
+				"label" : "Left Collar",
+				"parent" : "#chestUpper",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 3.465208, 146.9626, -4.110317 ],
+					"end_point" : [ 13.45499, 147.5363, -4.854364 ],
+					"rotation_order" : "XYZ"
+				},
+				"center_point" : [
+					{
+						"id" : "x",
+						"type" : "float",
+						"name" : "xOrigin",
+						"current_value" : 3.465208
+					},
+					{
+						"id" : "y",
+						"type" : "float",
+						"name" : "yOrigin",
+						"current_value" : 146.9626
+					}
+				],
+				"end_point" : [
+					{
+						"id" : "x",
+						"type" : "float",
+						"name" : "xEnd",
+						"current_value" : 13.45499
+					},
+					{
+						"id" : "y",
+						"type" : "float",
+						"name" : "yEnd",
+						"current_value" : 147.5363
+					}
+				],
+				"orientation" : [
+					{
+						"id" : "x",
+						"type" : "float",
+						"name" : "xOrientation",
+						"current_value" : 0.05370408
+					},
+					{
+						"id" : "y",
+						"type" : "float",
+						"name" : "yOrientation",
+						"current_value" : 3.510381
+					},
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zOrientation",
+						"current_value" : 1.752411
+					}
+				]
+			},
+			{
+				"id" : "rCollar",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#rCollar",
+				"name" : "rCollar",
+				"label" : "Right Collar",
+				"parent" : "#chestUpper",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -3.465208, 146.9626, -4.110317 ],
+					"end_point" : [ -13.45499, 147.5363, -4.854364 ],
+					"rotation_order" : "XYZ"
+				},
+				"center_point" : [
+					{
+						"id" : "x",
+						"type" : "float",
+						"name" : "xOrigin",
+						"current_value" : -3.465208
+					},
+					{
+						"id" : "y",
+						"type" : "float",
+						"name" : "yOrigin",
+						"current_value" : 146.9626
+					}
+				],
+				"end_point" : [
+					{
+						"id" : "x",
+						"type" : "float",
+						"name" : "xEnd",
+						"current_value" : -13.45499
+					},
+					{
+						"id" : "y",
+						"type" : "float",
+						"name" : "yEnd",
+						"current_value" : 147.5363
+					}
+				],
+				"orientation" : [
+					{
+						"id" : "x",
+						"type" : "float",
+						"name" : "xOrientation",
+						"current_value" : 0.05370408
+					},
+					{
+						"id" : "y",
+						"type" : "float",
+						"name" : "yOrientation",
+						"current_value" : -3.510381
+					},
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zOrientation",
+						"current_value" : -1.752411
+					}
+				]
+			},
+			{
+				"id" : "neckLower",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#neckLower",
+				"name" : "neckLower",
+				"label" : "Neck Lower",
+				"parent" : "#chestUpper",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 154.33, -3.98 ],
+					"end_point" : [ 0, 157.69, -2.93 ],
+					"rotation_order" : "YZX"
+				},
+				"center_point" : [
+					{
+						"id" : "y",
+						"type" : "float",
+						"name" : "yOrigin",
+						"current_value" : 154.33
+					},
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zOrigin",
+						"current_value" : -3.98
+					}
+				],
+				"end_point" : [
+					{
+						"id" : "y",
+						"type" : "float",
+						"name" : "yEnd",
+						"current_value" : 157.69
+					},
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zEnd",
+						"current_value" : -2.93
+					}
+				],
+				"orientation" : [
+					{
+						"id" : "x",
+						"type" : "float",
+						"name" : "xOrientation",
+						"current_value" : 8.489999
+					}
+				]
+			},
+			{
+				"id" : "neckUpper",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#neckUpper",
+				"name" : "neckUpper",
+				"label" : "Neck Upper",
+				"parent" : "#neckLower",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -8.802, -1.842, -11.791 ],
+						"max" : [ 9.332, 4.593, -2.049 ]
+					},
+					"center_point" : [ 0, 157.61, -2 ],
+					"end_point" : [ 0, 162.59, -1.53 ],
+					"rotation_order" : "YZX"
+				},
+				"center_point" : [
+					{
+						"id" : "y",
+						"type" : "float",
+						"name" : "yOrigin",
+						"current_value" : 157.61
+					}
+				],
+				"end_point" : [
+					{
+						"id" : "y",
+						"type" : "float",
+						"name" : "yEnd",
+						"current_value" : 162.59
+					},
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zEnd",
+						"current_value" : -1.53
+					}
+				],
+				"orientation" : [
+					{
+						"id" : "x",
+						"type" : "float",
+						"name" : "xOrientation",
+						"current_value" : 8.489999
+					}
+				]
+			},
+			{
+				"id" : "head",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#head",
+				"name" : "head",
+				"label" : "Head",
+				"parent" : "#neckUpper",
+				"preview" : {
+					"type" : "bone",
+					"oriented_box" : {
+						"min" : [ -11.642, -3.243, -13.45 ],
+						"max" : [ 11.536, 20.062, 12.332 ]
+					},
+					"center_point" : [ 0, 162.5502, -1.840575 ],
+					"end_point" : [ 0, 165.8927, -1.77677 ],
+					"rotation_order" : "YZX"
+				}
+			},
+			{
+				"id" : "lowerJaw",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#lowerJaw",
+				"name" : "lowerJaw",
+				"label" : "Lower Jaw",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 164.1132, 0.09420407 ],
+					"end_point" : [ 0, 160.9067, 7.457417 ],
+					"rotation_order" : "ZYX"
+				},
+				"end_point" : [
+					{
+						"id" : "y",
+						"type" : "float",
+						"name" : "yEnd",
+						"current_value" : 160.9067
+					},
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zEnd",
+						"current_value" : 7.457417
+					}
+				],
+				"orientation" : [
+					{
+						"id" : "x",
+						"type" : "float",
+						"name" : "xOrientation",
+						"current_value" : 23.54969
+					}
+				]
+			},
+			{
+				"id" : "rBrowInner",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#rBrowInner",
+				"name" : "rBrowInner",
+				"label" : "Right Brow Inner",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -1.95, 170.4, 8.75 ],
+					"end_point" : [ -1.954939, 170.4023, 9.625085 ],
+					"rotation_order" : "ZYX"
+				},
+				"end_point" : [
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zEnd",
+						"current_value" : 9.625085
+					}
+				]
+			},
+			{
+				"id" : "rBrowMid",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#rBrowMid",
+				"name" : "rBrowMid",
+				"label" : "Right Brow Middle",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -3.856626, 170.6706, 8.5 ],
+					"end_point" : [ -3.857862, 170.6743, 9.398236 ],
+					"rotation_order" : "ZYX"
+				},
+				"end_point" : [
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zEnd",
+						"current_value" : 9.398236
+					}
+				]
+			},
+			{
+				"id" : "rBrowOuter",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#rBrowOuter",
+				"name" : "rBrowOuter",
+				"label" : "Right Brow Outer",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -5.469148, 170.0714, 7.250023 ],
+					"end_point" : [ -5.460074, 170.0647, 8.201488 ],
+					"rotation_order" : "ZYX"
+				},
+				"end_point" : [
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zEnd",
+						"current_value" : 8.201488
+					}
+				]
+			},
+			{
+				"id" : "lBrowInner",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#lBrowInner",
+				"name" : "lBrowInner",
+				"label" : "Left Brow Inner",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 1.95, 170.4, 8.75 ],
+					"end_point" : [ 1.954939, 170.4023, 9.625085 ],
+					"rotation_order" : "ZYX"
+				},
+				"end_point" : [
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zEnd",
+						"current_value" : 9.625085
+					}
+				]
+			},
+			{
+				"id" : "lBrowMid",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#lBrowMid",
+				"name" : "lBrowMid",
+				"label" : "Left Brow Middle",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 3.856626, 170.6706, 8.5 ],
+					"end_point" : [ 3.857862, 170.6743, 9.398236 ],
+					"rotation_order" : "ZYX"
+				},
+				"end_point" : [
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zEnd",
+						"current_value" : 9.398236
+					}
+				]
+			},
+			{
+				"id" : "lBrowOuter",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#lBrowOuter",
+				"name" : "lBrowOuter",
+				"label" : "Left Brow Outer",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 5.469148, 170.0714, 7.250023 ],
+					"end_point" : [ 5.460074, 170.0647, 8.201488 ],
+					"rotation_order" : "ZYX"
+				},
+				"end_point" : [
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zEnd",
+						"current_value" : 8.201488
+					}
+				]
+			},
+			{
+				"id" : "CenterBrow",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#CenterBrow",
+				"name" : "CenterBrow",
+				"label" : "Center Brow",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 0, 170.31, 9.224089 ],
+					"end_point" : [ 0, 170.308, 10.09167 ],
+					"rotation_order" : "ZYX"
+				},
+				"end_point" : [
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zEnd",
+						"current_value" : 10.09167
+					}
+				]
+			},
+			{
+				"id" : "lCheekUpper",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#lCheekUpper",
+				"name" : "lCheekUpper",
+				"label" : "Left Cheek Upper",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 5.464041, 165.6674, 6.802028 ],
+					"end_point" : [ 5.46754, 165.6535, 7.80492 ],
+					"rotation_order" : "ZYX"
+				},
+				"center_point" : [
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zOrigin",
+						"current_value" : 6.802028
+					}
+				],
+				"end_point" : [
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zEnd",
+						"current_value" : 7.80492
+					}
+				]
+			},
+			{
+				"id" : "rCheekUpper",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#rCheekUpper",
+				"name" : "rCheekUpper",
+				"label" : "Right Cheek Upper",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -5.464041, 165.6674, 6.802028 ],
+					"end_point" : [ -5.46754, 165.6535, 7.80492 ],
+					"rotation_order" : "ZYX"
+				},
+				"center_point" : [
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zOrigin",
+						"current_value" : 6.802028
+					}
+				],
+				"end_point" : [
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zEnd",
+						"current_value" : 7.80492
+					}
+				]
+			},
+			{
+				"id" : "lEar",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#lEar",
+				"name" : "lEar",
+				"label" : "Left Ear",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 6.89126, 166.6339, -1.281856 ],
+					"end_point" : [ 8.589582, 166.5146, -4.197512 ],
+					"rotation_order" : "XYZ"
+				},
+				"orientation" : [
+					{
+						"id" : "x",
+						"type" : "float",
+						"name" : "xOrientation",
+						"current_value" : -2.305794
+					},
+					{
+						"id" : "y",
+						"type" : "float",
+						"name" : "yOrientation",
+						"current_value" : 59.71859
+					},
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zOrientation",
+						"current_value" : -4.015396
+					}
+				]
+			},
+			{
+				"id" : "rEar",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#rEar",
+				"name" : "rEar",
+				"label" : "Right Ear",
+				"parent" : "#head",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -6.89126, 166.6339, -1.281856 ],
+					"end_point" : [ -8.589582, 166.5146, -4.197512 ],
+					"rotation_order" : "XYZ"
+				},
+				"orientation" : [
+					{
+						"id" : "x",
+						"type" : "float",
+						"name" : "xOrientation",
+						"current_value" : -2.305794
+					},
+					{
+						"id" : "y",
+						"type" : "float",
+						"name" : "yOrientation",
+						"current_value" : -59.71859
+					},
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zOrientation",
+						"current_value" : 4.015396
+					}
+				]
+			},
+			{
+				"id" : "lPectoral",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#lPectoral",
+				"name" : "lPectoral",
+				"label" : "Left Pectoral",
+				"parent" : "#chestLower",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ 3.121763, 131.7603, -7.454938 ],
+					"end_point" : [ 10.76093, 135.1547, 12.01135 ],
+					"rotation_order" : "ZYX"
+				},
+				"orientation" : [
+					{
+						"id" : "x",
+						"type" : "float",
+						"name" : "xOrientation",
+						"current_value" : -8.844268
+					},
+					{
+						"id" : "y",
+						"type" : "float",
+						"name" : "yOrientation",
+						"current_value" : 21.09831
+					},
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zOrientation",
+						"current_value" : -0.007491964
+					}
+				]
+			},
+			{
+				"id" : "rPectoral",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#rPectoral",
+				"name" : "rPectoral",
+				"label" : "Right Pectoral",
+				"parent" : "#chestLower",
+				"preview" : {
+					"type" : "bone",
+					"center_point" : [ -3.121763, 131.7603, -7.454938 ],
+					"end_point" : [ -10.76093, 135.1547, 12.01135 ],
+					"rotation_order" : "ZYX"
+				},
+				"orientation" : [
+					{
+						"id" : "x",
+						"type" : "float",
+						"name" : "xOrientation",
+						"current_value" : -8.844267
+					},
+					{
+						"id" : "y",
+						"type" : "float",
+						"name" : "yOrientation",
+						"current_value" : -21.09831
+					},
+					{
+						"id" : "z",
+						"type" : "float",
+						"name" : "zOrientation",
+						"current_value" : 0.007491755
+					}
+				]
+			}
+		],
+		"modifiers" : [
+			{
+				"id" : "SkinBinding",
+				"url" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/ToulouseHR.dsf#SkinBinding",
+				"parent" : "#geometry",
+				"extra" : [
+					{
+						"type" : "skin_settings",
+						"auto_normalize_general" : true,
+						"auto_normalize_local" : true,
+						"auto_normalize_scale" : true,
+						"binding_mode" : "General",
+						"general_map_mode" : "DualQuat",
+						"scale_mode" : "BindingMaps"
+					}
+				]
+			}
+		],
+		"materials" : [
+			{
+				"id" : "Hair-1",
+				"url" : "#Hair",
+				"geometry" : "#geometry",
+				"groups" : [ "Hair" ],
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "color",
+						"name" : "Diffuse Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image_file" : "/Runtime/Textures/SWAM_Art/ToulouseHR/SW_Toulouse_01.jpg"
+					}
+				},
+				"transparency" : {
+					"channel" : {
+						"id" : "transparency",
+						"type" : "float",
+						"name" : "Opacity Strength",
+						"current_value" : 1,
+						"image_file" : "/Runtime/Textures/SWAM_Art/ToulouseHR/SW_Toulouse_TR1.jpg"
+					}
+				},
+				"uv_set" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/UV%20Sets/SWAM/Base/default.dsf#default",
+				"extra" : [
+					{
+						"type" : "studio/material/daz_shader"
+					},
+					{
+						"type" : "studio_material_channels",
+						"channels" : [
+							{
+								"channel" : {
+									"id" : "Bump Strength",
+									"type" : "float",
+									"current_value" : 1,
+									"image_file" : "/Runtime/Textures/SWAM_Art/ToulouseHR/SW_Toulouse_BUM.jpg"
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"id" : "Strands-1",
+				"url" : "#Strands",
+				"geometry" : "#geometry",
+				"groups" : [ "Strands" ],
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "color",
+						"name" : "Diffuse Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image_file" : "/Runtime/Textures/SWAM_Art/ToulouseHR/SW_Toulouse_01.jpg"
+					}
+				},
+				"transparency" : {
+					"channel" : {
+						"id" : "transparency",
+						"type" : "float",
+						"name" : "Opacity Strength",
+						"current_value" : 1,
+						"image_file" : "/Runtime/Textures/SWAM_Art/ToulouseHR/SW_Toulouse_TR1.jpg"
+					}
+				},
+				"uv_set" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/UV%20Sets/SWAM/Base/default.dsf#default",
+				"extra" : [
+					{
+						"type" : "studio/material/daz_shader"
+					},
+					{
+						"type" : "studio_material_channels",
+						"channels" : [
+							{
+								"channel" : {
+									"id" : "Bump Strength",
+									"type" : "float",
+									"current_value" : 1,
+									"image_file" : "/Runtime/Textures/SWAM_Art/ToulouseHR/SW_Toulouse_BUM.jpg"
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"id" : "Base-1",
+				"url" : "#Base",
+				"geometry" : "#geometry",
+				"groups" : [ "Base" ],
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "color",
+						"name" : "Diffuse Color",
+						"current_value" : [ 1, 1, 1 ],
+						"image_file" : "/Runtime/Textures/SWAM_Art/ToulouseHR/SW_Toulouse_01B.jpg"
+					}
+				},
+				"transparency" : {
+					"channel" : {
+						"id" : "transparency",
+						"type" : "float",
+						"name" : "Opacity Strength",
+						"current_value" : 1,
+						"image_file" : "/Runtime/Textures/SWAM_Art/ToulouseHR/SW_ToulouseT_Base_TR.jpg"
+					}
+				},
+				"uv_set" : "/data/Daz%203D/Genesis%208%20Female%20Starter%20Essentials/Toulouse%20Hair/UV%20Sets/SWAM/Base/default.dsf#default",
+				"extra" : [
+					{
+						"type" : "studio/material/daz_shader"
+					},
+					{
+						"type" : "studio_material_channels",
+						"channels" : [
+							{
+								"channel" : {
+									"id" : "Bump Strength",
+									"type" : "float",
+									"current_value" : 1,
+									"image_file" : "/Runtime/Textures/SWAM_Art/ToulouseHR/SW_Toulouse_03B.jpg"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

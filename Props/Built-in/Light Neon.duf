@@ -1,0 +1,457 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/Props/Built-in/Light%20Neon.duf",
+		"type" : "scene_subset",
+		"contributor" : {
+			"author" : "DAZ 3D",
+			"email" : "",
+			"website" : "http://www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "Fri May 4 15:30:50 2012"
+	},
+	"material_library" : [
+		{
+			"id" : "default",
+			"diffuse" : {
+				"channel" : {
+					"id" : "diffuse",
+					"type" : "color",
+					"name" : "Diffuse Color",
+					"label" : "Diffuse Color",
+					"value" : [ 0.8235294, 0.8235294, 0.8235294 ],
+					"current_value" : [ 0.8235294, 0.8235294, 0.8235294 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"mappable" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"transparency" : {
+				"channel" : {
+					"id" : "transparency",
+					"type" : "float",
+					"name" : "Opacity Strength",
+					"label" : "Opacity Strength",
+					"value" : 1,
+					"current_value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"mappable" : true
+				},
+				"group" : "/Opacity/Basic"
+			},
+			"extra" : [
+				{
+					"type" : "studio/material/daz_shader",
+					"definition" : "support/DAZ/Uber/shaderDefinitions/surface/omUberAreaLightDef.dse"
+				},
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"name" : "Smooth On",
+								"label" : "Smooth",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"name" : "Smooth Angle",
+								"label" : "Angle",
+								"value" : 89.9,
+								"current_value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"name" : "Render Priority",
+								"label" : "Render Priority",
+								"visible" : false,
+								"locked" : true,
+								"value" : 3,
+								"current_value" : 6,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"name" : "Propagate Priority",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"locked" : true,
+								"value" : false,
+								"current_value" : true
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Diffuse Active",
+								"type" : "bool",
+								"name" : "Diffuse Active",
+								"label" : "Diffuse Active",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Diffuse"
+						},
+						{
+							"channel" : {
+								"id" : "Diffuse Strength",
+								"type" : "float",
+								"name" : "Diffuse Strength",
+								"label" : "Diffuse Strength",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"mappable" : true
+							},
+							"group" : "/Diffuse"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Active",
+								"type" : "bool",
+								"name" : "Ambient Active",
+								"label" : "Ambient Active",
+								"value" : false,
+								"current_value" : true
+							},
+							"group" : "/Ambient"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Color",
+								"type" : "color",
+								"name" : "Ambient Color",
+								"label" : "Ambient Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 0.1647059, 0, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"mappable" : true
+							},
+							"group" : "/Ambient"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Strength",
+								"type" : "float",
+								"name" : "Ambient Strength",
+								"label" : "Ambient Strength",
+								"value" : 0,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"mappable" : true
+							},
+							"group" : "/Ambient"
+						},
+						{
+							"channel" : {
+								"id" : "Opacity Active",
+								"type" : "bool",
+								"name" : "Opacity Active",
+								"label" : "Opacity Active",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Opacity/Basic"
+						},
+						{
+							"channel" : {
+								"id" : "Opacity Color",
+								"type" : "color",
+								"name" : "Opacity Color",
+								"label" : "Opacity Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"mappable" : true
+							},
+							"group" : "/Opacity/Basic"
+						},
+						{
+							"channel" : {
+								"id" : "Fantom",
+								"type" : "bool",
+								"name" : "Fantom",
+								"label" : "Fantom",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/Visibility"
+						},
+						{
+							"channel" : {
+								"id" : "Raytrace",
+								"type" : "bool",
+								"name" : "Raytrace",
+								"label" : "Raytrace",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Visibility"
+						},
+						{
+							"channel" : {
+								"id" : "Accept Shadows",
+								"type" : "bool",
+								"name" : "Accept Shadows",
+								"label" : "Accept Shadows",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Visibility"
+						},
+						{
+							"channel" : {
+								"id" : "Intensity",
+								"type" : "float",
+								"name" : "Intensity",
+								"label" : "Intensity",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 10,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Light/Basic"
+						},
+						{
+							"channel" : {
+								"id" : "Color",
+								"type" : "color",
+								"name" : "Color",
+								"label" : "Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 0.4588235, 0.4666667, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"mappable" : true
+							},
+							"group" : "/Light/Basic"
+						},
+						{
+							"channel" : {
+								"id" : "Samples",
+								"type" : "int",
+								"name" : "Samples",
+								"label" : "Samples",
+								"value" : 8,
+								"current_value" : 16,
+								"min" : 0,
+								"max" : 256,
+								"step_size" : 1
+							},
+							"group" : "/Light/Basic"
+						},
+						{
+							"channel" : {
+								"id" : "Shadows Active",
+								"type" : "bool",
+								"name" : "Shadows Active",
+								"label" : "Shadows Active",
+								"value" : true,
+								"current_value" : true
+							},
+							"group" : "/Light/Basic"
+						},
+						{
+							"channel" : {
+								"id" : "Shadow Color",
+								"type" : "color",
+								"name" : "Shadow Color",
+								"label" : "Shadow Color",
+								"value" : [ 0, 0, 0 ],
+								"current_value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Light/Basic"
+						},
+						{
+							"channel" : {
+								"id" : "Shadow Intensity",
+								"type" : "float",
+								"name" : "Shadow Intensity",
+								"label" : "Shadow Intensity",
+								"value" : 1,
+								"current_value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Light/Basic"
+						},
+						{
+							"channel" : {
+								"id" : "Shadow Bias",
+								"type" : "float",
+								"name" : "Shadow Bias",
+								"label" : "Shadow Bias",
+								"value" : 0.1,
+								"current_value" : 0.1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Light/Basic"
+						},
+						{
+							"channel" : {
+								"id" : "Falloff Active",
+								"type" : "bool",
+								"name" : "Falloff Active",
+								"label" : "Falloff Active",
+								"value" : false,
+								"current_value" : false
+							},
+							"group" : "/Light/Falloff"
+						},
+						{
+							"channel" : {
+								"id" : "Falloff Start",
+								"type" : "float",
+								"name" : "Falloff Start",
+								"label" : "Falloff Start",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/Light/Falloff"
+						},
+						{
+							"channel" : {
+								"id" : "Falloff End",
+								"type" : "float",
+								"name" : "Falloff End",
+								"label" : "Falloff End",
+								"value" : 0,
+								"current_value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/Light/Falloff"
+						},
+						{
+							"channel" : {
+								"id" : "Falloff Decay",
+								"type" : "float",
+								"name" : "Falloff Decay",
+								"label" : "Falloff Decay",
+								"value" : 2,
+								"current_value" : 2,
+								"min" : 0.1,
+								"max" : 5,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Light/Falloff"
+						}
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"nodes" : [
+			{
+				"id" : "omNeonOmni",
+				"url" : "/data/DAZ%203D/Built-in%20Content/Light%20Neon/omNeonOmni.dsf#omNeonOmni",
+				"name" : "omNeonOmni",
+				"label" : "AreaLight Neon 1",
+				"geometries" : [
+					{
+						"id" : "geometry",
+						"url" : "/data/DAZ%203D/Built-in%20Content/Light%20Neon/omNeonOmni.dsf#geometry",
+						"name" : "omNeonOmni",
+						"label" : "shape",
+						"type" : "polygon_mesh"
+					}
+				],
+				"preview" : {
+					"oriented_box" : {
+						"min" : [ -116.5, -2.446, -0.699 ],
+						"max" : [ 116.501, 73.868, 0.7 ]
+					},
+					"center_point" : [ 0, 0, 0 ],
+					"end_point" : [ 0, 0, 0 ],
+					"rotation_order" : "XYZ"
+				},
+				"extra" : [
+					{
+						"type" : "studio_node_channels",
+						"channels" : [
+							{
+								"channel" : {
+									"id" : "Render Priority",
+									"type" : "enum",
+									"name" : "Render Priority",
+									"current_value" : 6
+								},
+								"group" : "/General/Misc"
+							}
+						]
+					}
+				]
+			}
+		],
+		"materials" : [
+			{
+				"id" : "default-1",
+				"url" : "#default",
+				"geometry" : "#geometry",
+				"groups" : [ "default" ],
+				"uv_set" : "/data/DAZ%203D/Built-in%20Content/Light%20Neon/UV%20Sets/DAZ%203D/Base/default.dsf#default",
+				"extra" : [
+					{
+						"type" : "studio/material/daz_shader"
+					}
+				]
+			}
+		]
+	}
+}

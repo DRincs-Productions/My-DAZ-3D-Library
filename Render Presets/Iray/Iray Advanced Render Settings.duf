@@ -1,0 +1,189 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/%21%20SCENES/Genesis%203/Victoria%207/MISC/Iray%20Advanced%20Render%20Settings.duf",
+		"type" : "preset_render_settings",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2015-06-17T19:04:14Z"
+	},
+	"scene" : {
+		"extra" : [
+			{
+				"type" : "studio_render_settings",
+				"render_options" : {
+					"active_renderer" : "DzIrayRenderer",
+					"renderType" : "Software",
+					"renderStyle" : "Normal",
+					"openGLPasses" : 4,
+					"useGLSL" : false,
+					"isCurrentFrameRender" : true,
+					"doubleSided" : true,
+					"render_elements" : [
+						{
+							"id" : "General Render",
+							"channels" : [
+							]
+						},
+						{
+							"id" : "NVIDIA Iray Render Options",
+							"channels" : [
+								{
+									"channel" : {
+										"id" : "Min Samples",
+										"type" : "int",
+										"current_value" : 5
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Max Samples",
+										"type" : "int",
+										"current_value" : 12000,
+										"clamped" : false
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Max Time",
+										"type" : "int",
+										"current_value" : 22000
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Rendering Quality Enable",
+										"type" : "bool",
+										"current_value" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Rendering Quality",
+										"type" : "float",
+										"current_value" : 2
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Rendering Converged Ratio",
+										"type" : "float",
+										"current_value" : 0.98,
+										"display_as_percent" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Pixel Filter",
+										"type" : "enum",
+										"value" : 2,
+										"current_value" : 2
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Pixel Filter Radius",
+										"type" : "float",
+										"current_value" : 1.5
+									}
+								}
+							],
+							"children" : [
+								{
+									"id" : "NVIDIA Iray Photoreal Options",
+									"channels" : [
+										{
+											"channel" : {
+												"id" : "Min Update Samples",
+												"type" : "int",
+												"current_value" : 1
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Update Interval",
+												"type" : "float",
+												"current_value" : 5
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Firefly Filter Enable",
+												"type" : "bool",
+												"current_value" : true
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Nominal Luminance",
+												"type" : "float",
+												"current_value" : 0
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Noise Filter Enable",
+												"type" : "bool",
+												"current_value" : true
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Noise Degrain Filtering",
+												"type" : "int",
+												"current_value" : 2
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Noise Degrain Radius",
+												"type" : "int",
+												"current_value" : 4
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Noise Degrain Blur Difference",
+												"type" : "float",
+												"current_value" : 0.1
+											}
+										}
+									]
+								},
+								{
+									"id" : "NVIDIA Iray Interactive Options",
+									"channels" : [
+									]
+								},
+								{
+									"id" : "NVIDIA Iray Tonemapper Options",
+									"channels" : [
+									]
+								},
+								{
+									"id" : "NVIDIA Iray Environment Options",
+									"channels" : [
+									]
+								}
+							],
+							"extra" : [
+								{
+									"type" : "studio/element_data/iray_settings",
+									"render_to_canvases" : false,
+									"canvases" : [
+									],
+									"node_lists" : [
+									]
+								}
+							]
+						}
+					]
+				}
+			}
+		]
+	}
+}
