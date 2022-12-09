@@ -1,0 +1,18 @@
+// DAZ Studio version 3.0  filetype DAZ Script
+/**********************************************************************	
+	Copyright (C) 2002-2013 DAZ 3D, Inc. All Rights Reserved.
+	
+	This is UNPUBLISHED PROPRIETARY SOURCE CODE of DAZ 3D, Inc;
+	the contents of this file may not be disclosed to third parties, 
+	copied or duplicated in any form, in whole or in part, without the 
+	prior written permission of DAZ 3D, Inc.
+**********************************************************************/
+
+var oNode = Scene.getPrimarySelection();
+if( oNode ){
+	var oParent = oNode.getNodeParent();
+	if( oParent ){
+		oNode.select( false );
+		oParent.select( true );
+	}
+}

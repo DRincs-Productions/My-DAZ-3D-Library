@@ -1,0 +1,119 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/Shader%20Presets/Iray/NVIDIA%20MDL%20Examples/Carbon%20Composite.duf",
+		"type" : "preset_shader",
+		"contributor" : {
+			"author" : "DAZ 3D",
+			"email" : "support@daz3d.com",
+			"website" : "http://www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2015-05-19T01:19:37Z"
+	},
+	"image_library" : [
+		{
+			"id" : "carbon_direction.jpg",
+			"name" : "carbon_direction.jpg",
+			"map_gamma" : 1,
+			"map" : [
+				{
+					"url" : "/resources/carbon_direction.jpg",
+					"label" : "carbon_direction.jpg"
+				}
+			]
+		},
+		{
+			"id" : "carbon_reflectivity.jpg",
+			"name" : "carbon_reflectivity.jpg",
+			"map_gamma" : 1,
+			"map" : [
+				{
+					"url" : "/resources/carbon_reflectivity.jpg",
+					"label" : "carbon_reflectivity.jpg"
+				}
+			]
+		},
+		{
+			"id" : "carbon_bump.png",
+			"name" : "carbon_bump.png",
+			"map_gamma" : 1,
+			"map" : [
+				{
+					"url" : "/resources/carbon_bump.png",
+					"label" : "carbon_bump.png"
+				}
+			]
+		}
+	],
+	"scene" : {
+		"materials" : [
+			{
+				"url" : "/data/DAZ%203D/NVIDIA%20MDL%20Examples/Carbon%20Composite/Carbon%20Composite.dsf#Carbon%20Composite",
+				"extra" : [
+					{
+						"type" : "studio/material/daz_brick"
+					}
+				]
+			}
+		],
+		"animations" : [
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Tags/value",
+				"keys" : [ [ 0, "Carbon Composite" ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/ior/value",
+				"keys" : [ [ 0, 1.5 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/coat_roughness/value",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/peel_amount/value",
+				"keys" : [ [ 0, 0.1 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/peel_size/value",
+				"keys" : [ [ 0, 0.3 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/rotation/value",
+				"keys" : [ [ 0, "/resources/carbon_direction.jpg" ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Diffuse%20Color/value",
+				"keys" : [ [ 0, "/resources/carbon_reflectivity.jpg" ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/fibre_reflectance_multiplier/value",
+				"keys" : [ [ 0, [ 0.3511192, 0.3511192, 0.3511192 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/roughness/value",
+				"keys" : [ [ 0, 0.03 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/anisotropy/value",
+				"keys" : [ [ 0, 0.9 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Bump%20Strength/value",
+				"keys" : [ [ 0, 10 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Bump%20Strength/image_file",
+				"keys" : [ [ 0, "/resources/carbon_bump.png" ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Horizontal%20Tiles/value",
+				"keys" : [ [ 0, 20 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Vertical%20Tiles/value",
+				"keys" : [ [ 0, 10 ] ]
+			}
+		]
+	}
+}

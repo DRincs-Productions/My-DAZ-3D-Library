@@ -1,0 +1,42 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/Shader%20Presets/Age%20of%20Armour/Subsurface/%21SSS_BaseV5.duf",
+		"type" : "preset_shader",
+		"contributor" : {
+			"author" : "William Hurt - Age of Armour",
+			"email" : "",
+			"website" : "http://www.ageofarmour.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2013-03-01T01:18:44Z"
+	},
+	"scene" : {
+		"materials" : [
+			{
+				"url" : "/data/Age%20of%20Armour/Subsurface%20Shaders/AoA_Subsurface/AoA_Subsurface.dsf#AoA_Subsurface",
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "color",
+						"name" : "Diffuse Color"
+					},
+					"group" : "/Diffuse"
+				},
+				"transparency" : {
+					"channel" : {
+						"id" : "transparency",
+						"type" : "float",
+						"name" : "Opacity Strength"
+					},
+					"group" : "/Opacity"
+				},
+				"extra" : [
+					{
+						"type" : "studio/material/daz_brick"
+					}
+				]
+			}
+		]
+	}
+}

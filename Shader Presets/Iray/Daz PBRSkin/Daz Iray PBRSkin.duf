@@ -1,0 +1,51 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/Shader%20Presets/Iray/Daz%20PBRSkin/Daz%20Iray%20PBRSkin.duf",
+		"type" : "preset_shader",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : ""
+		},
+		"revision" : "1.0",
+		"modified" : "2020-11-17T23:28:58Z"
+	},
+	"scene" : {
+		"materials" : [
+			{
+				"url" : "/data/Daz%203D/Built-in%20Content/Daz%20Iray%20PBRSkin/PBRSkin.dsf#PBRSkin",
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "float_color",
+						"name" : "Diffuse Color",
+						"value" : [ 0.7529414, 0.7529414, 0.7529414 ]
+					}
+				},
+				"extra" : [
+					{
+						"type" : "studio/material/daz_brick"
+					},
+					{
+						"type" : "studio_material_channels",
+						"channels" : [
+							{
+								"channel" : {
+									"id" : "Translucency Color",
+									"type" : "float_color"
+								}
+							},
+							{
+								"channel" : {
+									"id" : "Transmitted Color",
+									"type" : "float_color"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

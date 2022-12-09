@@ -1,0 +1,631 @@
+/**********************************************************************
+	
+    Human Surface Preset
+
+	Copyright (C) 2002-2012 DAZ 3D, Inc. All Rights Reserved.
+	
+    http://products.micahhenrie.com
+    info@micahhenrie.com
+
+**********************************************************************/
+
+const g_sTOOL_NAME = "Shader Preset";
+const g_oFILE = new DzFile( getScriptFileName() );
+const g_sSCRIPT_NAME = String( "%1.%2" ).arg( g_oFILE.baseName() ).arg( g_oFILE.extension() );
+const g_bSHIFT_PRESSED = shiftPressed();
+const g_bCONTROL_PRESSED = ctrlPressed();
+
+const g_sALL = "All";
+const g_sSELECTED = "Selected";
+const g_sABSOLUTE_MAPS = "Replace";
+const g_sIGNORE_MAPS = "Ignore";
+
+var g_oSettings = new DsSettings;
+var g_oGui = new DsInterface;
+var g_oActions = new DsActions;
+
+class DsSettings{
+	const m_oMGR = App.getAppSettingsMgr();
+	
+	function set( sPath, sName, oValue ){
+		m_oMGR.pushPath( sPath );
+		switch( typeof oValue ){
+			case "string":
+				m_oMGR.setStringValue( sName, oValue );
+				break;
+			case "boolean":
+				m_oMGR.setBoolValue( sName, oValue );
+				break;
+			case "number":
+				m_oMGR.setFloatValue( sName, oValue );
+				break;
+			default:
+				break;
+		}
+		m_oMGR.popPath();
+	}
+	
+	function get( sPath, sName, oValue ){
+		var v;
+		m_oMGR.pushPath( sPath );
+		switch( typeof oValue ){
+			case "string":
+				v = m_oMGR.getStringValue( sName, oValue );
+				break;
+			case "boolean":
+				v = m_oMGR.getBoolValue( sName, oValue );
+				break;
+			case "number":
+				v = m_oMGR.getFloatValue( sName, oValue );
+				break;
+			default:
+				break;
+		}
+		m_oMGR.popPath();
+		return v;
+	}
+}
+
+class DsInterface{
+	const m_nMARGIN = 5;
+	const m_nSPACING = 5;
+	const m_nMIN_BTN_WIDTH = 80;
+	const m_nMAX_BTN_HEIGHT = 20;
+	const m_nWIDGET_WIDTH = 190;
+	
+	var m_aBoolNames = new Array;
+	var m_aBoolObjs = new Array;
+	var m_aStrNames = new Array;
+	var m_aStrObjs = new Array;
+	var m_aCmbNames = new Array;
+	var m_aCmbObjs = new Array;
+	
+	var m_wDlg, m_wTabStack;
+	var m_wOptionPage, m_wPrefsPage;
+	var m_wCombGB, m_wPrefsGB;
+	var m_wSrfcsLbl, m_wMpSttngsLbl;
+	var m_wSurfaces, m_wMapSettings;
+	var m_wHelpBtn, m_wAcceptBtn, m_wCancelBtn;
+	var m_wRcrdOnExec, m_wRcrdBtn, m_wRdBtn, m_wDfltBtn;
+	
+	function doCommon(){
+		m_wDlg = new DzDialog;
+		m_wTabStack = new DzTabWidget( m_wDlg );
+		m_wOptionPage = new DzVGroupBox( m_wTabStack );
+		m_wCombGB = new DzVGroupBox( m_wOptionPage );
+		m_wSrfcsLbl = new DzLabel( m_wCombGB );
+		m_wSurfaces = new DzComboBox( m_wCombGB );
+		m_wSurfaces.insertItem( g_sALL );
+		m_wSurfaces.insertItem( g_sSELECTED );
+		m_aCmbObjs.push( m_wSurfaces );
+		m_aCmbNames.push( 'cbSurfaces' );
+		m_wMpSttngsLbl = new DzLabel( m_wCombGB );
+		m_wMapSettings = new DzComboBox( m_wCombGB );
+		m_wMapSettings.insertItem( g_sABSOLUTE_MAPS );
+		m_wMapSettings.insertItem( g_sIGNORE_MAPS );
+		m_aCmbObjs.push( m_wMapSettings );
+		m_aCmbNames.push( 'cbMapSettings' );
+		m_wPrefsPage = new DzVGroupBox( m_wTabStack );
+		m_wPrefsGB = new DzVGroupBox( m_wPrefsPage );
+		m_wRcrdOnExec = new DzCheckBox( m_wPrefsGB );
+		m_aBoolObjs.push( m_wRcrdOnExec );
+		m_aBoolNames.push( 'rcrdOnExec' );
+		setDefaults();
+	}
+	
+	function doDialog(){
+		doCommon();
+		var oHelp = App.getHelpMgr();
+		var oMgr = MainWindow.getActionMgr();
+		var oAction = oMgr ? oMgr.findAction( "DzWhatsThisAction" ) : undefined;
+		m_wDlg.caption = String( "%1 (%2)" ).arg( g_sTOOL_NAME ).arg( g_sSCRIPT_NAME );
+		m_wDlg.whatsThis =
+			String( "<b>File : </b> %1<br>" ).arg( g_sSCRIPT_NAME ) +
+			String( "<b>Type : </b> %2<br>" ).arg( getScriptType() ) +
+			String( "<b>Size : </b> %3<br>" ).arg( g_oFILE.sizeStr() ) +
+			String( "<b>Version : </b> %4<br>" ).arg( getScriptVersionString() ) +
+			String( "<b>Created : </b> %5<br>" ).arg( g_oFILE.created().toString( "dddd, MMMM d yyyy h:mm ap" ) ) +
+			String( "<b>Modified : </b> %6" ).arg( g_oFILE.lastModified().toString( "dddd, MMMM d yyyy h:mm ap" ) );
+		var wDlgLayout = new DzGridLayout( m_wDlg );
+		wDlgLayout.margin = m_nMARGIN;
+		wDlgLayout.spacing = m_nSPACING;
+		wDlgLayout.addMultiCellWidget( m_wTabStack, 0, 0, 0, 2 );
+		var wDlgBtnsGB = new DzGroupBox( m_wDlg );
+		wDlgBtnsGB.flat = true;
+		var wDlgBtnsLyt = new DzGridLayout( wDlgBtnsGB );
+		wDlgBtnsLyt.margin = m_nMARGIN;
+		wDlgBtnsLyt.spacing = m_nSPACING;
+		m_wHelpBtn = new DzPushButton( wDlgBtnsGB );
+		m_wHelpBtn.pixmap = new Pixmap( String( "%1/images/icons/whatsthissmallicon.png" ).arg( App.getResourcesPath() ) );
+		m_wHelpBtn.maxHeight = m_nMAX_BTN_HEIGHT;
+		if( oAction )
+			connect( m_wHelpBtn, "clicked()", oAction, "activate()" );
+		m_wHelpBtn.toolTip = oHelp.getToolTip( "WhatsThis" );
+		m_wHelpBtn.whatsThis = oHelp.getHelpString( "WhatsThis" );
+		wDlgBtnsLyt.addWidget( m_wHelpBtn, 0, 0 );
+		wDlgBtnsLyt.setColStretch( 1, 1 );
+		m_wAcceptBtn = new DzPushButton( wDlgBtnsGB );
+		m_wAcceptBtn.text = "&Accept";
+		m_wAcceptBtn.minWidth = m_nMIN_BTN_WIDTH;
+		m_wAcceptBtn.maxHeight = m_nMAX_BTN_HEIGHT;
+		m_wDlg.setAcceptButton( m_wAcceptBtn );
+		m_wAcceptBtn.toolTip = oHelp.getToolTip( "AcceptDialog" );
+		m_wAcceptBtn.whatsThis = oHelp.getHelpString( "AcceptDialog" );
+		wDlgBtnsLyt.addWidget( m_wAcceptBtn, 0, 2 );
+		m_wCancelBtn = new DzPushButton( wDlgBtnsGB );
+		m_wCancelBtn.text = "&Cancel";
+		m_wCancelBtn.minWidth = m_nMIN_BTN_WIDTH;
+		m_wCancelBtn.maxHeight = m_nMAX_BTN_HEIGHT;
+		m_wDlg.setRejectButton( m_wCancelBtn );
+		m_wCancelBtn.toolTip = oHelp.getToolTip( "CancelDialog" );
+		m_wCancelBtn.whatsThis = oHelp.getHelpString( "CancelDialog" );
+		wDlgBtnsLyt.addWidget( m_wCancelBtn, 0, 3 );
+		wDlgLayout.addMultiCellWidget( wDlgBtnsGB, 1, 1, 0, 2 );
+		m_wOptionPage.whatsThis = oHelp.getHelpString( "PresetOptionTab" );
+		m_wOptionPage.flat = true;
+		m_wOptionPage.insideMargin = m_nMARGIN;
+		m_wOptionPage.insideSpacing = m_nSPACING;
+		m_wCombGB.columns = 2;
+		m_wSrfcsLbl.text = "Surfaces :";
+		m_wSrfcsLbl.alignment = m_wSrfcsLbl.AlignRight;
+		m_wSrfcsLbl.whatsThis = oHelp.getHelpString( "PresetSurface" );
+		m_wSurfaces.minWidth = m_nWIDGET_WIDTH;
+		m_wSurfaces.whatsThis = m_wSrfcsLbl.whatsThis;
+		m_wMpSttngsLbl.text = "Map Settings :";
+		m_wMpSttngsLbl.alignment = m_wMpSttngsLbl.AlignRight;
+		m_wMpSttngsLbl.whatsThis = oHelp.getHelpString( "PresetSurfaceMap" );
+		m_wMapSettings.minWidth = m_nWIDGET_WIDTH;
+		m_wMapSettings.whatsThis = m_wMpSttngsLbl.whatsThis;
+		m_wTabStack.addTab( m_wOptionPage, "Options" );
+		m_wPrefsPage.whatsThis = oHelp.getHelpString( "PresetPrefTab" );
+		m_wPrefsPage.flat = true;
+		m_wPrefsPage.insideMargin = m_nMARGIN;
+		m_wPrefsPage.insideSpacing = m_nSPACING;
+		m_wPrefsGB.margin = m_nMARGIN;
+		m_wPrefsGB.spacing = m_nSPACING;
+		m_wRcrdOnExec.text = "Set Preferred Options on Accept";
+		m_wRcrdOnExec.whatsThis = oHelp.getHelpString( "PresetPrefOnAccept" );
+		m_wRcrdBtn = new DzPushButton( m_wPrefsGB );
+		m_wRcrdBtn.text = "&Set Preferred Options";
+		m_wRcrdBtn.whatsThis = oHelp.getHelpString( "PresetSetPref" );
+		connect( m_wRcrdBtn, "pressed()", setOptions );
+		m_wRdBtn = new DzPushButton( m_wPrefsGB );
+		m_wRdBtn.text = "&Read Preferred Options";
+		m_wRdBtn.whatsThis = oHelp.getHelpString( "PresetReadPref" );
+		connect( m_wRdBtn, "pressed()", getOptions );
+		m_wDfltBtn = new DzPushButton( m_wPrefsGB );
+		m_wDfltBtn.text = "Restore &Default Options";
+		m_wDfltBtn.whatsThis = oHelp.getHelpString( "PresetRestoreDef" );
+		connect( m_wDfltBtn, "pressed()", setDefaults );
+		var wNotesGB = new DzVGroupBox( m_wPrefsPage );
+		wNotesGB.title = "Notes :";
+		wNotesGB.margin = m_nMARGIN;
+		wNotesGB.spacing = m_nSPACING;
+		wNotesGB.minWidth = m_nWIDGET_WIDTH + 100;
+		var wKeyLbl = new DzLabel( wNotesGB );
+		wKeyLbl.text = oHelp.getHelpString( "PresetNotes" );
+		m_wTabStack.addTab( m_wPrefsPage, "Preferences" );
+		m_wDlg.maxWidth = m_wDlg.minWidth;
+		m_wDlg.maxHeight = m_wDlg.minHeight;
+		getOptions();
+		if( m_wDlg.exec() ){
+			if( m_wRcrdOnExec.checked ){ setOptions(); }
+			g_oActions.begin();
+		}
+	}
+	
+	function doNoDialog(){
+		doCommon();
+		if( g_bSHIFT_PRESSED ){ getOptions(); }
+		g_oActions.begin();
+	}
+	
+	function setDefaults(){
+		for( var i = 0; i < m_wSurfaces.count; i++ ){
+			if( m_wSurfaces.text( i ) == g_sSELECTED ){
+				m_wSurfaces.currentItem = i;
+				break;
+			}
+			m_wSurfaces.currentItem = 0;
+		}
+		for( var i = 0; i < m_wMapSettings.count; i++ ){
+			if( m_wMapSettings.text( i ) == g_sABSOLUTE_MAPS ){
+				m_wMapSettings.currentItem = i;
+				break;
+			}
+			m_wMapSettings.currentItem = 0;
+		}
+		m_wRcrdOnExec.checked = false;
+	}
+	
+	function getOptions(){
+		for( var i = 0; i < m_aBoolObjs.length; i++ ){
+			m_aBoolObjs[ i ].checked = g_oSettings.get( g_oActions.stripSpaces( g_sTOOL_NAME ), m_aBoolNames[ i ], m_aBoolObjs[ i ].checked );
+		}
+		for( var i = 0; i < m_aStrObjs.length; i++ ){
+			m_aStrObjs[ i ].text = g_oSettings.get( g_oActions.stripSpaces( g_sTOOL_NAME ), m_aStrNames[ i ], m_aStrObjs[ i ].text );
+		}
+		for( var i = 0; i < m_aCmbObjs.length; i++ ){
+			var tStr = g_oSettings.get( g_oActions.stripSpaces( g_sTOOL_NAME ), m_aCmbNames[ i ], m_aCmbObjs[ i ].currentText );
+			for( var j = 0; j < m_aCmbObjs[ i ].count; j++ ){
+				if( m_aCmbObjs[ i ].text( j ) == tStr ){
+					m_aCmbObjs[ i ].currentItem = j;
+					break;
+				}
+			}
+		}
+	}
+	
+	function setOptions(){
+		for( var i = 0; i < m_aBoolObjs.length; i++ ){
+			g_oSettings.set( g_oActions.stripSpaces( g_sTOOL_NAME ), m_aBoolNames[ i ], m_aBoolObjs[ i ].checked );
+		}
+		for( var i = 0; i < m_aStrObjs.length; i++ ){
+			g_oSettings.set( g_oActions.stripSpaces( g_sTOOL_NAME ), m_aStrNames[ i ], m_aStrObjs[ i ].text );
+		}
+		for( var i = 0; i < m_aCmbObjs.length; i++ ){
+			g_oSettings.set( g_oActions.stripSpaces( g_sTOOL_NAME ), m_aCmbNames[ i ], m_aCmbObjs[ i ].currentText );
+		}
+	}
+	
+	function getSurfaces(){ return m_wSurfaces.currentText; }
+	function getMapSettings(){ return m_wMapSettings.currentText; }
+}
+
+class DsActions{
+	const m_nSTART_TIME = Scene.getTime();
+	
+	var m_aNodes = new Array;
+	var m_aMaterials = new Array;
+	var m_aNewMaterials = new Array;
+	var m_aMissingClass;
+	
+	var m_oNode;
+	var m_oElement;
+	var m_sMaterialType;
+	var m_sDefinitionFile;
+	
+	var m_bAskImage = true;
+	var m_aImagePaths = new Array;
+	
+	function addToArray( aToCheck, oToCheck ){
+		if( isInArray( aToCheck, oToCheck ) < 0 ){
+			aToCheck.push( oToCheck );
+		}
+		return aToCheck;
+	}
+	
+	function isInArray( aToCheck, oToCheck ){
+		if( aToCheck ){
+			for( var i = 0; i < aToCheck.length; i++ ){
+				if( aToCheck[ i ] == oToCheck ){
+					return i;
+				}
+			}
+		}
+		return -1;
+	}
+	
+	function isInArrayByName( aToCheck, oToCheck ){
+		if( aToCheck ){
+			for( var i = 0; i < aToCheck.length; i++ ){
+				if( String( aToCheck[ i ].name ) == String( oToCheck.name ) ){
+					return i;
+				}
+			}
+		}
+		return -1;
+	}
+	
+	function stripSpaces( sString ){
+		var rePattern = RegExp( " " );
+		rePattern.global = true;
+		return sString.replace( rePattern, "" );
+	}
+	
+	function processMaterials( oNode, aMaterials ){
+		var oObject = oNode.getObject();
+		if( oObject != undefined ){
+			var nShapes = oObject.getNumShapes();
+			for( var s = 0; s < nShapes; s++ ){
+				var oShape = oObject.getShape( s );
+				if( oShape != undefined ){
+					var nMaterials = oShape.getNumMaterials();
+					for( var m = 0; m < nMaterials; m++ ){
+						var oMaterial = oShape.getMaterial( m );
+						if( isInArrayByName( aMaterials, oMaterial ) != -1 ){
+							buildMaterial( oShape, oMaterial );
+						}
+					}
+				}
+			}
+		}
+		var nNodes = oNode.getNumNodeChildren();
+		for( var n = 0; n < nNodes; n++ ){
+			processMaterials( oNode.getNodeChild( n ), aMaterials );
+		}
+	}
+	
+	function buildMaterial( oShape, oMaterial ){
+		var bSwap = false;
+		var oNewMaterial;
+		var nIndex = isInArrayByName( m_aNewMaterials, oMaterial );
+		if( nIndex < 0 ){
+			var bDefExists = new DzFile( String( "%1/%2" ).arg( App.getScriptsPath() ).arg( m_sDefinitionFile ) ).exists();
+			if( !bDefExists ){
+				print( String( "\"%1\" not found." ).arg( m_sDefinitionFile ) );
+				return;
+			}
+			else if( oMaterial.className() == m_sMaterialType && oMaterial.getDefinitionFile() == m_sDefinitionFile ){
+				return;
+			}
+			try{
+				oNewMaterial = new DzShaderMaterial( m_sDefinitionFile );
+			}
+			catch( e ){
+				m_aMissingClasses = addToArray( m_aMissingClasses, "DzShaderMaterial" );
+				return;
+			}
+			oNewMaterial.setName( oMaterial.name );
+			oNewMaterial.setLabel( oMaterial.getLabel() );
+			m_aNewMaterials = addToArray( m_aNewMaterials, oNewMaterial );
+			bSwap = true;
+		}
+		else{
+			oNewMaterial = m_aNewMaterials[ nIndex ];
+			bSwap = true;
+		}
+		if( bSwap ){
+			oNewMaterial.copyFrom( oMaterial );
+			oShape.replaceMaterial( oMaterial, oNewMaterial );
+		}
+		else{
+			print( String( "Error: %1, DsActions::buildMaterial( %2, %3 );" ).arg( g_sSCRIPT_NAME ).arg( oShape.name ).arg( oMaterial.getLabel() ) );
+		}
+		m_oElement = oNewMaterial;
+	}
+	
+	function prepareMaterial(){
+		var bBuildMaterial = false;
+		if( m_oElement.className() != m_sMaterialType ){
+			bBuildMaterial = true;
+		}
+		else if( m_sDefinitionFile != undefined ){
+			if( m_oElement.inherits( "DzShaderMaterial" ) &&
+			m_sDefinitionFile != m_oElement.getDefinitionFile() ){
+				bBuildMaterial = true;
+			}
+		}
+		if( bBuildMaterial )
+			processMaterials( m_oNode, [ m_oElement ] );
+	}
+	
+	function collectMaterials( oNode, bSelectedOnly, bRecurse ){
+		var oObject = oNode.getObject();
+		if( oObject != undefined ){
+			var nShapes = oObject.getNumShapes();
+			for( var s = 0; s < nShapes; s++ ){
+				var oShape = oObject.getShape( s );
+				if( oShape != undefined ){
+					var nMaterials = bSelectedOnly ? oShape.getNumSelectedMaterials() : oShape.getNumMaterials();
+					for( var m = 0; m < nMaterials; m++ ){
+						var oMaterial = bSelectedOnly ? oShape.getSelectedMaterial( m ) : oShape.getMaterial( m );
+						m_aMaterials = addToArray( m_aMaterials, oMaterial );
+					}
+				}
+			}
+		}
+		if( bRecurse ){
+			var nNodes = oNode.getNumNodeChildren();
+			for( var n = 0; n < nNodes; n++ ){
+				if( oNode.getNodeChild( n ).inherits( "DzBone" ) )
+					collectMaterials( oNode.getNodeChild( n ), bSelectedOnly, bRecurse );
+			}
+		}
+	}
+	
+	function collectNodes( bSelected, bRecurse, bFromRoot ){
+		var aRootNodes = new Array;
+		var nNodes = bSelected ? Scene.getNumSelectedNodes() : Scene.getNumNodes();
+		if( bSelected && nNodes < 1 ){
+			MessageBox.warning( "This action requires an item within the scene to be selected.",
+			"Selection Error", "OK", "" );
+		}
+		var oNode;
+		for( var n = 0; n < nNodes; n++ ){
+			oNode = bSelected ? Scene.getSelectedNode( n ) : Scene.getNode( n );
+			if( oNode == undefined ){
+				continue;
+			}
+			
+			if( oNode.inherits( "DzBone" ) ){
+				if( bFromRoot ){
+					oNode = oNode.getSkeleton();
+				}
+				else if( bRecurse ){
+					var oTopNode = oNode;
+					while( !oTopNode.inherits( "DzSkeleton" ) ){
+						oTopNode = oTopNode.getNodeParent();
+						if( oTopNode.isSelected() ){
+							oNode = oTopNode;
+						}
+					}
+				}
+			}
+			aRootNodes = addToArray( aRootNodes, oNode );
+		}
+		return aRootNodes;
+	}
+	
+	function checkAnimationRange( nMaxTime ){
+		var oAnimRange = Scene.getAnimRange();
+		var oPlayRange = Scene.getPlayRange();
+		if( m_nSTART_TIME + nMaxTime <= oAnimRange.end && m_nSTART_TIME + nMaxTime <= oPlayRange.end )
+			return;
+		var sMessage = String( "This %1 contains information for frames beyond the length of your current\n" +
+				"timeline. Would you like to add frames to the timeline in order to import the entire file?" )
+				.arg( g_sTOOL_NAME );
+		if( MessageBox.question( sMessage, "Animation Range : Total Frames", "&Yes", "&No" ) == 1 )
+			return;
+		if( m_nSTART_TIME + nMaxTime > oAnimRange.end ){
+			oAnimRange.end = m_nSTART_TIME + nMaxTime;
+			Scene.setAnimRange( oAnimRange );
+		}
+		if( m_nSTART_TIME + nMaxTime > oPlayRange.end ){
+			oPlayRange.end = m_nSTART_TIME + nMaxTime;
+			Scene.setPlayRange( oPlayRange );
+		}
+	}
+	
+	function getImage( sMapFile ){
+		if( !sMapFile )
+			return;
+		var sPath;
+		var oFile = new DzFile( sMapFile );
+		if( !oFile.exists() ){
+			var oContentMgr = App.getContentMgr();
+			var sAbsMapFile = oContentMgr.getAbsolutePath( sMapFile, true );
+			sPath = sAbsMapFile;
+			userFindFile:
+			if( m_bAskImage && !sPath ){
+				for( var sRelPath in m_aImagePaths ){
+					if( sRelPath == sMapFile ){
+						sPath = m_aImagePaths[ sRelPath ];
+						break userFindFile;
+					}
+				}
+				var sShortName = String( "%1.%2" ).arg( oFile.baseName() ).arg( oFile.extension() );
+				var sMessage = String( "Could not find file: %1" ).arg( sShortName );
+				var nResult = MessageBox.question( sMessage, "Unable to locate file", "&Locate...", "&Skip", "Stop &Asking" );
+				if( nResult == 1 )
+					return undefined;
+				else if( nResult == 2 ){
+					m_bAskImage = false;
+					return undefined;
+				}
+				var sInitPath = String( "%1/%2" ).arg( App.getImportMgr().getImportPath() ).arg( sShortName );
+				sPath = FileDialog.doImageDialog( true, sInitPath );
+				if( sPath )
+					m_aImagePaths[ sMapFile ] = sPath;
+			}
+			if( !sPath )
+				return undefined;
+		}
+		else
+			sPath = sMapFile;
+		return App.getImageMgr().getImage( sPath );
+	}
+	
+	function setPropertyNumeric( oProperty, aKeys ){
+		if( aKeys.length == 1 ){
+			oProperty.setValue( aKeys[ 0 ] );
+			return true;
+		}
+		else if( oProperty.canAnimate() ){
+			for( var i = 0; i < aKeys.length; i += 2 )
+				oProperty.setValue( aKeys[ i ] + m_nSTART_TIME, aKeys[ i + 1 ] );
+			return true;
+		}
+		return false;
+	}
+	
+	function setPropertyColor( oProperty, aKeys ){
+		var oColor;
+		if( aKeys.length == 1 ){
+			oColor = new Color( aKeys[ 0 ][ 0 ], aKeys[ 0 ][ 1 ], aKeys[ 0 ][ 2 ] );
+			oProperty.setColorValue( oColor );
+			return true;
+		}
+		else if( oProperty.canAnimate() ){
+			for( var i = 0; i < aKeys.length; i += 2 )
+				oColor = new Color( aKeys[ i + 1 ][ 0 ], aKeys[ i + 1 ][ 1 ], aKeys[ i + 1 ][ 2 ] );
+				oProperty.setColorValue( aKeys[ i ] + m_nSTART_TIME, oColor );
+			return true;
+		}
+		return false;
+	}
+	
+	function setPropertyMap( oProperty, sMapFile ){
+		if( !oProperty.isMappable() )
+			return;
+		if( g_oGui.getMapSettings() == g_sABSOLUTE_MAPS )
+			oProperty.clearMap();
+		if( sMapFile && g_oGui.getMapSettings() != g_sIGNORE_MAPS ){
+			var oImage = getImage( sMapFile );
+			oProperty.setMap( oImage );
+		}
+	}
+	
+	function setNumericProperty( sPropertyName, aKeys, sMapFile ){
+		var oProperty = m_oElement.findProperty( sPropertyName );
+		if( !oProperty || !oProperty.inherits( "DzNumericProperty" ) )
+			return;
+		if( !setPropertyNumeric( oProperty, aKeys ) )
+			return;
+		setPropertyMap( oProperty, sMapFile );
+	}
+	
+	function setColorProperty( sPropertyName, aKeys, sMapFile ){
+		var oProperty = m_oElement.findProperty( sPropertyName );
+		if( !oProperty || !oProperty.inherits( "DzColorProperty" ) )
+			return;
+		if( !setPropertyColor( oProperty, aKeys ) )
+			return;
+		setPropertyMap( oProperty, sMapFile );
+	}
+	
+	function setImageProperty( sPropertyName, sMapFile ){
+		var oProperty = m_oElement.findProperty( sPropertyName );
+		if( !oProperty || !oProperty.inherits( "DzImageProperty" ) )
+			return;
+		if( g_oGui.getMapSettings() == g_sABSOLUTE_MAPS )
+			oProperty.setMap( undefined );
+		if( sMapFile && g_oGui.getMapSettings() != g_sIGNORE_MAPS ){
+			var oImage = getImage( sMapFile );
+			oProperty.setValue( oImage );
+		}
+	}
+	
+	function begin(){
+		var bSelected = false;
+		var bRoot = false;
+		if( g_oGui.getSurfaces() == g_sSELECTED ){
+			bSelected = true;
+			bRoot = true;
+		}
+		if( g_oGui.getSurfaces() == g_sALL ){
+			bRoot = true;
+		}
+		
+		setBusyCursor();
+		m_aNodes = collectNodes( true, true, true );
+		
+		beginUndo();
+		for( var i = 0; i < m_aNodes.length; i++ ){
+			m_oNode = m_aNodes[i];
+			m_aMaterials = new Array;
+			m_aNewMaterials = new Array;
+			collectMaterials( m_oNode, bSelected, bRoot );
+			for( var j = 0; j < m_aMaterials.length; j++ )
+				setMaterialProperties( m_aMaterials[j] );
+		}
+		acceptUndo( String( "\"%1\"" ).arg( g_sSCRIPT_NAME ) );
+		clearBusyCursor();
+		
+		if( m_aMissingClass != undefined ){
+			MessageBox.warning( String( "The %1 type is not available." ).arg( m_aMissingClass ), "Type Error", "OK", "" );
+		}
+	}
+	
+	function setMaterialProperties( oMaterial ){
+		m_oElement = oMaterial;
+		m_sMaterialType = "DzShaderMaterial";
+		m_sDefinitionFile = "support/omnifreaker/shaderDefinitions/surface/omHumanSurfaceDef.ds";
+		prepareMaterial();
+		setColorProperty( "Reflection Environment Map (Map in Lat/Long format)", [ [ 255, 255, 255 ] ],
+			"/Runtime/textures/omnifreaker/HumanSurface/OM_KHPark_EnvRefl.tif" );
+	}
+}
+
+g_bCONTROL_PRESSED ? g_oGui.doDialog() : g_oGui.doNoDialog();
+

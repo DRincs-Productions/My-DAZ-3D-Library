@@ -1,0 +1,78 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/Shader%20Presets/Iray/NVIDIA%20MDL%20Examples/Cast%20Iron.duf",
+		"type" : "preset_shader",
+		"contributor" : {
+			"author" : "DAZ 3D",
+			"email" : "support@daz3d.com",
+			"website" : "http://www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2015-05-19T02:27:52Z"
+	},
+	"image_library" : [
+		{
+			"id" : "grunge_d.jpg",
+			"name" : "grunge_d.jpg",
+			"map_gamma" : 0,
+			"map" : [
+				{
+					"url" : "/resources/grunge_d.jpg",
+					"label" : "grunge_d.jpg"
+				}
+			]
+		}
+	],
+	"scene" : {
+		"materials" : [
+			{
+				"url" : "/data/DAZ%203D/NVIDIA%20MDL%20Examples/Cast%20Iron/Cast%20Iron.dsf#Cast%20Iron",
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "float_color",
+						"name" : "Diffuse Color",
+						"value" : [ 0.7576253, 0.7493261, 0.7493261 ]
+					},
+					"group" : "/Cast Iron"
+				},
+				"extra" : [
+					{
+						"type" : "studio/material/daz_brick"
+					}
+				]
+			}
+		],
+		"animations" : [
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Tags/value",
+				"keys" : [ [ 0, "Cast Iron" ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?diffuse/value",
+				"keys" : [ [ 0, [ 0.7576253, 0.7493261, 0.7493261 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/is_normaltexture/value",
+				"keys" : [ [ 0, false ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Bump%20Strength/value",
+				"keys" : [ [ 0, 1.5 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Bump%20Strength/image_file",
+				"keys" : [ [ 0, "/resources/grunge_d.jpg" ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Horizontal%20Tiles/value",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Vertical%20Tiles/value",
+				"keys" : [ [ 0, 1 ] ]
+			}
+		]
+	}
+}

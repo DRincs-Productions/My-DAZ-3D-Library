@@ -1,0 +1,531 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/Shader%20Presets/omnifreaker/UberVolume/%21UberVolume%20Base.duf",
+		"type" : "preset_shader",
+		"contributor" : {
+			"author" : "DAZ 3D",
+			"email" : "",
+			"website" : "http://www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "Fri May 4 15:46:49 2012"
+	},
+	"material_library" : [
+		{
+			"id" : "Default",
+			"diffuse" : {
+				"channel" : {
+					"id" : "diffuse",
+					"type" : "color",
+					"name" : "Diffuse Color",
+					"label" : "Diffuse Color",
+					"visible" : false,
+					"value" : [ 0.8235294, 0.8235294, 0.8235294 ],
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"mappable" : true
+				},
+				"group" : "/Diffuse"
+			},
+			"transparency" : {
+				"channel" : {
+					"id" : "transparency",
+					"type" : "float",
+					"name" : "Opacity Strength",
+					"label" : "Opacity Strength",
+					"value" : 1,
+					"min" : 0,
+					"max" : 1,
+					"clamped" : true,
+					"display_as_percent" : true,
+					"step_size" : 0.01,
+					"mappable" : true
+				},
+				"group" : "/Opacity/Basic"
+			},
+			"extra" : [
+				{
+					"type" : "studio/material/daz_shader",
+					"definition" : "support/DAZ/Uber/shaderDefinitions/volume/omUberVolumeDef.dse"
+				},
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Smooth On",
+								"type" : "bool",
+								"name" : "Smooth On",
+								"label" : "Smooth",
+								"value" : true
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Smooth Angle",
+								"type" : "float",
+								"name" : "Smooth Angle",
+								"label" : "Angle",
+								"value" : 89.9,
+								"min" : 0,
+								"max" : 180,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Smoothing"
+						},
+						{
+							"channel" : {
+								"id" : "Render Priority",
+								"type" : "enum",
+								"name" : "Render Priority",
+								"label" : "Render Priority",
+								"visible" : false,
+								"value" : 3,
+								"enum_values" : [ "Lowest", "Low", "Below Normal", "Normal", "Above Normal", "High", "Highest" ]
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Propagate Priority",
+								"type" : "bool",
+								"name" : "Propagate Priority",
+								"label" : "Propagate Priority",
+								"visible" : false,
+								"value" : false
+							},
+							"group" : "/Render Priority"
+						},
+						{
+							"channel" : {
+								"id" : "Diffuse Active",
+								"type" : "bool",
+								"name" : "Diffuse Active",
+								"label" : "Diffuse Active",
+								"visible" : false,
+								"value" : true
+							},
+							"group" : "/Diffuse"
+						},
+						{
+							"channel" : {
+								"id" : "Diffuse Strength",
+								"type" : "float",
+								"name" : "Diffuse Strength",
+								"label" : "Diffuse Strength",
+								"visible" : false,
+								"value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"mappable" : true
+							},
+							"group" : "/Diffuse"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Active",
+								"type" : "bool",
+								"name" : "Ambient Active",
+								"label" : "Ambient Active",
+								"visible" : false,
+								"value" : false
+							},
+							"group" : "/Ambient"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Color",
+								"type" : "color",
+								"name" : "Ambient Color",
+								"label" : "Ambient Color",
+								"visible" : false,
+								"value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"mappable" : true
+							},
+							"group" : "/Ambient"
+						},
+						{
+							"channel" : {
+								"id" : "Ambient Strength",
+								"type" : "float",
+								"name" : "Ambient Strength",
+								"label" : "Ambient Strength",
+								"visible" : false,
+								"value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01,
+								"mappable" : true
+							},
+							"group" : "/Ambient"
+						},
+						{
+							"channel" : {
+								"id" : "Opacity Active",
+								"type" : "bool",
+								"name" : "Opacity Active",
+								"label" : "Opacity Active",
+								"visible" : false,
+								"value" : true
+							},
+							"group" : "/Opacity/Basic"
+						},
+						{
+							"channel" : {
+								"id" : "Opacity Color",
+								"type" : "color",
+								"name" : "Opacity Color",
+								"label" : "Opacity Color",
+								"visible" : false,
+								"value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"mappable" : true
+							},
+							"group" : "/Opacity/Basic"
+						},
+						{
+							"channel" : {
+								"id" : "Fantom",
+								"type" : "bool",
+								"name" : "Fantom",
+								"label" : "Fantom",
+								"value" : false
+							},
+							"group" : "/Visibility"
+						},
+						{
+							"channel" : {
+								"id" : "Raytrace",
+								"type" : "bool",
+								"name" : "Raytrace",
+								"label" : "Raytrace",
+								"value" : true
+							},
+							"group" : "/Visibility"
+						},
+						{
+							"channel" : {
+								"id" : "Accept Shadows",
+								"type" : "bool",
+								"name" : "Accept Shadows",
+								"label" : "Accept Shadows",
+								"value" : true
+							},
+							"group" : "/Visibility"
+						},
+						{
+							"channel" : {
+								"id" : "Color",
+								"type" : "color",
+								"name" : "Color",
+								"label" : "Color",
+								"value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Volume/Basic"
+						},
+						{
+							"channel" : {
+								"id" : "Density",
+								"type" : "float",
+								"name" : "Density",
+								"label" : "Density",
+								"value" : 0.01,
+								"min" : 0,
+								"max" : 0.1,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Volume/Basic"
+						},
+						{
+							"channel" : {
+								"id" : "Volume Start",
+								"type" : "float",
+								"name" : "Volume Start",
+								"label" : "Volume Start",
+								"value" : 0.01,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/Volume/Basic"
+						},
+						{
+							"channel" : {
+								"id" : "Volume End",
+								"type" : "float",
+								"name" : "Volume End",
+								"label" : "Volume End",
+								"value" : 1000,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/Volume/Basic"
+						},
+						{
+							"channel" : {
+								"id" : "Step Size",
+								"type" : "float",
+								"name" : "Step Size",
+								"label" : "Step Size",
+								"value" : 4,
+								"min" : 0,
+								"max" : 10,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Volume/Basic"
+						},
+						{
+							"channel" : {
+								"id" : "Max Steps",
+								"type" : "int",
+								"name" : "Max Steps",
+								"label" : "Max Steps",
+								"value" : 100,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 1
+							},
+							"group" : "/Volume/Basic"
+						},
+						{
+							"channel" : {
+								"id" : "Scatter",
+								"type" : "color",
+								"name" : "Scatter",
+								"label" : "Scatter",
+								"value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Volume/Basic"
+						},
+						{
+							"channel" : {
+								"id" : "Strength",
+								"type" : "float",
+								"name" : "Strength",
+								"label" : "Strength",
+								"value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"display_as_percent" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Volume/Smoke"
+						},
+						{
+							"channel" : {
+								"id" : "Detail",
+								"type" : "float",
+								"name" : "Detail",
+								"label" : "Detail",
+								"value" : 1,
+								"min" : 0,
+								"max" : 20,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Volume/Smoke"
+						},
+						{
+							"channel" : {
+								"id" : "Scale",
+								"type" : "float",
+								"name" : "Scale",
+								"label" : "Scale",
+								"value" : 10,
+								"min" : 0,
+								"max" : 20,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Volume/Smoke"
+						},
+						{
+							"channel" : {
+								"id" : "Contrast",
+								"type" : "float",
+								"name" : "Contrast",
+								"label" : "Contrast",
+								"value" : 1,
+								"min" : 0,
+								"max" : 20,
+								"clamped" : true,
+								"step_size" : 0.01
+							},
+							"group" : "/Volume/Smoke"
+						}
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"materials" : [
+			{
+				"url" : "#Default",
+				"extra" : [
+					{
+						"type" : "studio/material/daz_shader"
+					}
+				]
+			}
+		],
+		"animations" : [
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Smooth%20On/value",
+				"keys" : [ [ 0, true ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Smooth%20Angle/value",
+				"keys" : [ [ 0, 89.9 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Render%20Priority/value",
+				"keys" : [ [ 0, 3 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Propagate%20Priority/value",
+				"keys" : [ [ 0, false ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Diffuse%20Active/value",
+				"keys" : [ [ 0, true ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?diffuse/value",
+				"keys" : [ [ 0, [ 1, 1, 1 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?diffuse/image",
+				"keys" : [ [ 0, null ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Diffuse%20Strength/value",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Diffuse%20Strength/image",
+				"keys" : [ [ 0, null ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Ambient%20Active/value",
+				"keys" : [ [ 0, false ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Ambient%20Color/value",
+				"keys" : [ [ 0, [ 0, 0, 0 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Ambient%20Color/image",
+				"keys" : [ [ 0, null ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Ambient%20Strength/value",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Ambient%20Strength/image",
+				"keys" : [ [ 0, null ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Opacity%20Active/value",
+				"keys" : [ [ 0, true ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Opacity%20Color/value",
+				"keys" : [ [ 0, [ 1, 1, 1 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Opacity%20Color/image",
+				"keys" : [ [ 0, null ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?transparency/value",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?transparency/image",
+				"keys" : [ [ 0, null ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Fantom/value",
+				"keys" : [ [ 0, false ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Raytrace/value",
+				"keys" : [ [ 0, true ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Accept%20Shadows/value",
+				"keys" : [ [ 0, true ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Color/value",
+				"keys" : [ [ 0, [ 1, 1, 1 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Density/value",
+				"keys" : [ [ 0, 0.01 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Volume%20Start/value",
+				"keys" : [ [ 0, 0.01 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Volume%20End/value",
+				"keys" : [ [ 0, 1000 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Step%20Size/value",
+				"keys" : [ [ 0, 4 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Max%20Steps/value",
+				"keys" : [ [ 0, 100 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Scatter/value",
+				"keys" : [ [ 0, [ 1, 1, 1 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Strength/value",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Detail/value",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Scale/value",
+				"keys" : [ [ 0, 10 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Contrast/value",
+				"keys" : [ [ 0, 1 ] ]
+			}
+		]
+	}
+}

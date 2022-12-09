@@ -1,0 +1,111 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/Shader%20Presets/Iray/NVIDIA%20MDL%20Examples/Walnut%20Semi-Gloss.duf",
+		"type" : "preset_shader",
+		"contributor" : {
+			"author" : "DAZ 3D",
+			"email" : "support@daz3d.com",
+			"website" : "http://www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2015-05-19T03:41:50Z"
+	},
+	"image_library" : [
+		{
+			"id" : "walnut.png",
+			"name" : "walnut.png",
+			"map_gamma" : 0,
+			"map" : [
+				{
+					"url" : "/resources/walnut.png",
+					"label" : "walnut.png"
+				}
+			]
+		},
+		{
+			"id" : "walnut_spec.png",
+			"name" : "walnut_spec.png",
+			"map_gamma" : 0,
+			"map" : [
+				{
+					"url" : "/resources/walnut_spec.png",
+					"label" : "walnut_spec.png"
+				}
+			]
+		},
+		{
+			"id" : "walnut_bump.png",
+			"name" : "walnut_bump.png",
+			"map_gamma" : 0,
+			"map" : [
+				{
+					"url" : "/resources/walnut_bump.png",
+					"label" : "walnut_bump.png"
+				}
+			]
+		}
+	],
+	"scene" : {
+		"materials" : [
+			{
+				"url" : "/data/DAZ%203D/NVIDIA%20MDL%20Examples/Walnut%20Semi-Gloss/Walnut%20Semi-Gloss.dsf#Walnut%20Semi-Gloss",
+				"extra" : [
+					{
+						"type" : "studio/material/daz_brick"
+					}
+				]
+			}
+		],
+		"animations" : [
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Tags/value",
+				"keys" : [ [ 0, "Walnut Semi-Gloss" ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Diffuse%20Color/value",
+				"keys" : [ [ 0, "/resources/walnut.png" ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/base_roughness/value",
+				"keys" : [ [ 0, 0.15 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/reflect_texture/value",
+				"keys" : [ [ 0, "/resources/walnut_spec.png" ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/glossy_weight/value",
+				"keys" : [ [ 0, 0.7 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/coat_roughness/value",
+				"keys" : [ [ 0, 0.05 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/coat_bump_amount/value",
+				"keys" : [ [ 0, 0.2 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Sheen%20Color/value",
+				"keys" : [ [ 0, 1.5 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Bump%20Strength/value",
+				"keys" : [ [ 0, 0.4 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Bump%20Strength/image_file",
+				"keys" : [ [ 0, "/resources/walnut_bump.png" ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Horizontal%20Tiles/value",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Vertical%20Tiles/value",
+				"keys" : [ [ 0, 1 ] ]
+			}
+		]
+	}
+}

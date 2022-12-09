@@ -1,0 +1,109 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/Shader%20Presets/Iray/NVIDIA%20MDL%20Examples/Metal%20Brushed.duf",
+		"type" : "preset_shader",
+		"contributor" : {
+			"author" : "DAZ 3D",
+			"email" : "support@daz3d.com",
+			"website" : "http://www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2015-05-19T03:06:00Z"
+	},
+	"image_library" : [
+		{
+			"id" : "brushed_full_contrast.jpg-2",
+			"name" : "brushed_full_contrast.jpg",
+			"map_gamma" : 0,
+			"map" : [
+				{
+					"url" : "/resources/brushed_full_contrast.jpg",
+					"label" : "brushed_full_contrast.jpg"
+				}
+			]
+		},
+		{
+			"id" : "brushed_a.jpg",
+			"name" : "brushed_a.jpg",
+			"map_gamma" : 0,
+			"map" : [
+				{
+					"url" : "/resources/brushed_a.jpg",
+					"label" : "brushed_a.jpg"
+				}
+			]
+		}
+	],
+	"scene" : {
+		"materials" : [
+			{
+				"url" : "/data/DAZ%203D/NVIDIA%20MDL%20Examples/Metal%20Brushed/Metal%20Brushed.dsf#Metal%20Brushed",
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "float_color",
+						"name" : "Diffuse Color",
+						"value" : [ 0.8221681, 0.8221681, 0.8221681 ]
+					},
+					"group" : "/Metal Brushed"
+				},
+				"extra" : [
+					{
+						"type" : "studio/material/daz_brick"
+					}
+				]
+			}
+		],
+		"animations" : [
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Tags/value",
+				"keys" : [ [ 0, "Metal Brushed" ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?diffuse/value",
+				"keys" : [ [ 0, [ 0.8221681, 0.8221681, 0.8221681 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/brush_texture/value",
+				"keys" : [ [ 0, "/resources/brushed_full_contrast.jpg" ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/brushing_strength/value",
+				"keys" : [ [ 0, 0.5 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/roughness_texture_u/value",
+				"keys" : [ [ 0, "/resources/brushed_full_contrast.jpg" ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/roughness_texture_v/value",
+				"keys" : [ [ 0, "/resources/brushed_full_contrast.jpg" ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/reflection_stretch/value",
+				"keys" : [ [ 0, 0.75 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/is_normaltexture/value",
+				"keys" : [ [ 0, false ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Bump%20Strength/value",
+				"keys" : [ [ 0, 0.4 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Bump%20Strength/image_file",
+				"keys" : [ [ 0, "/resources/brushed_a.jpg" ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Horizontal%20Tiles/value",
+				"keys" : [ [ 0, 3 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Vertical%20Tiles/value",
+				"keys" : [ [ 0, 3 ] ]
+			}
+		]
+	}
+}

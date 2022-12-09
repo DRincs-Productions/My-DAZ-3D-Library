@@ -1,0 +1,57 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/Shader%20Presets/Iray/NVIDIA%20MDL%20Examples/Resin%20Polyurethane%20Matte.duf",
+		"type" : "preset_shader",
+		"contributor" : {
+			"author" : "DAZ 3D",
+			"email" : "support@daz3d.com",
+			"website" : "http://www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2015-05-19T03:34:32Z"
+	},
+	"scene" : {
+		"materials" : [
+			{
+				"url" : "/data/DAZ%203D/NVIDIA%20MDL%20Examples/Resin%20Polyurethane%20Matte/Resin%20Polyurethane%20Matte.dsf#Resin%20Polyurethane%20Matte",
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "float_color",
+						"name" : "Diffuse Color",
+						"value" : [ 0.9035454, 0.3511192, 0.4144169 ]
+					},
+					"group" : "/Resin Polyurethane Matte"
+				},
+				"extra" : [
+					{
+						"type" : "studio/material/daz_brick"
+					}
+				]
+			}
+		],
+		"animations" : [
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Tags/value",
+				"keys" : [ [ 0, "Resin Polyurethane Matte" ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?diffuse/value",
+				"keys" : [ [ 0, [ 0.9035454, 0.3511192, 0.4144169 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/roughness/value",
+				"keys" : [ [ 0, 0.25 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Index%20of%20Refraction/value",
+				"keys" : [ [ 0, 1.49 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/glossy_weight/value",
+				"keys" : [ [ 0, 0.95 ] ]
+			}
+		]
+	}
+}

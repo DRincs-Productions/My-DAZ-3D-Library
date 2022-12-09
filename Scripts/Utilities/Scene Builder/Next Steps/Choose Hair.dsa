@@ -1,0 +1,55 @@
+// DAZ Studio version 4.7 filetype DAZ Script
+/**********************************************************************
+	File: Scene Builder AddOn.dsa
+	
+	Copyright (C) 2002-2016 DAZ 3D, Inc. All Rights Reserved.
+
+	This file is part of the DAZ Script Documentation.
+
+	This file may be used only in accordance with the DAZ Script 
+	license provided with the DAZ Script Documentation.
+
+	The contents of this file may not be disclosed to third parties, 
+	copied or duplicated in any form, in whole or in part, without the 
+	prior written permission of DAZ 3D, Inc, except as explicitly
+	allowed in the DAZ Script license.
+
+	See http://www.daz3d.com to contact DAZ 3D, Inc or for more 
+	information about DAZ Script.
+**********************************************************************/
+// Get the path of this script
+var g_sCurrentFile = getScriptFileName();
+
+// If the application version is 4.9.2.69 or newer
+if( App.version64 >= 0x0004000900020045 ){
+	// Get the content manager
+	var oContentMgr = App.getContentMgr();
+	// Get the relative path of this file
+	var sRelativePath = oContentMgr.getRelativePath( DzContentMgr.NativeDirs | DzContentMgr.CloudDB, g_sCurrentFile );
+
+	// Get the asset manager
+	var oAssetMgr = App.getAssetMgr();
+	// Find installed user-facing assets for this file
+	var aAssets = oAssetMgr.findAssetsForFile( sRelativePath, true, true );
+	// If we have an asset
+	if( aAssets.length > 0 ){
+		// Get the first asset
+		var oAsset = aAssets[0];
+		// Update the current file
+		g_sCurrentFile = String("%1/%2").arg( oAsset.originalPath ).arg( oAsset.originalFilename );
+	}
+}
+
+// Create a file info object for easy access
+var g_oFile = new DzFileInfo( g_sCurrentFile );
+
+// Define the category; so we can run this script from the support location
+var g_sCategory = g_oFile.baseName();
+
+// Create a script, for the conveniences it offers
+var g_oScript = new DzScript();
+
+// Get the path of the support file
+var g_sIncludePath = g_oScript.getScriptFile( String("%1/support/DAZ/SceneBuilder/dzSceneBuilderAddOn").arg( App.getScriptsPath() ) );
+// Include the support file
+include( g_sIncludePath );

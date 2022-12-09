@@ -1,0 +1,37 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/Shader%20Presets/DS%20Defaults/dzSkin.duf",
+		"type" : "preset_shader",
+		"contributor" : {
+			"author" : "DAZ 3D",
+			"email" : "",
+			"website" : ""
+		},
+		"revision" : "1.0",
+		"modified" : "2012-08-09T22:14:16Z"
+	},
+	"material_library" : [
+		{
+			"id" : "Default",
+			"extra" : [
+				{
+					"type" : "studio/material/daz_shader",
+					"definition" : "support/DAZ/shaderDefinitions/surface/dzskinDef.dsa"
+				}
+			]
+		}
+	],
+	"scene" : {
+		"materials" : [
+			{
+				"url" : "#Default",
+				"extra" : [
+					{
+						"type" : "studio/material/daz_shader"
+					}
+				]
+			}
+		]
+	}
+}

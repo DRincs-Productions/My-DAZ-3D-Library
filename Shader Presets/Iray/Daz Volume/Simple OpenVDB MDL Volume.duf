@@ -1,0 +1,69 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/Shader%20Presets/Iray/Daz%20Volume/Simple%20OpenVDB%20MDL%20Volume.duf",
+		"type" : "preset_shader",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : ""
+		},
+		"revision" : "1.0",
+		"modified" : "2021-11-09T16:44:01Z"
+	},
+	"scene" : {
+		"materials" : [
+			{
+				"url" : "/data/DAZ%203D/Built-in%20Content/Simple%20OpenVDB%20MDL%20Volume/Simple%20OpenVDB%20MDL%20Volume.dsf#Simple%20OpenVDB%20MDL%20Volume",
+				"diffuse" : {
+					"channel" : {
+						"id" : "diffuse",
+						"type" : "color",
+						"name" : "Diffuse Color"
+					}
+				},
+				"transparency" : {
+					"channel" : {
+						"id" : "transparency",
+						"type" : "float",
+						"name" : "Opacity Strength"
+					}
+				},
+				"extra" : [
+					{
+						"type" : "studio/material/daz_brick"
+					},
+					{
+						"type" : "studio_material_channels",
+						"channels" : [
+							{
+								"channel" : {
+									"id" : "Scattering Multiplier",
+									"type" : "float_color"
+								}
+							},
+							{
+								"channel" : {
+									"id" : "Absorption Multiplier",
+									"type" : "float_color"
+								}
+							},
+							{
+								"channel" : {
+									"id" : "Scattering Offset",
+									"type" : "float_color"
+								}
+							},
+							{
+								"channel" : {
+									"id" : "Absorption Offset",
+									"type" : "float_color"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
