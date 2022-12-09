@@ -1,0 +1,80 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/Shader%20Presets/Shader%20Mixer/Orange%20Toon.duf",
+		"type" : "preset_shader",
+		"contributor" : {
+			"author" : "DAZ 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "Fri May 4 10:53:43 2012"
+	},
+	"scene" : {
+		"materials" : [
+			{
+				"url" : "/data/DAZ%203D/Built-in%20Content/Orange%20Toon/Orange%20Toon.dsf#Orange%20Toon",
+				"extra" : [
+					{
+						"type" : "studio/material/daz_brick"
+					}
+				]
+			}
+		],
+		"animations" : [
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Smooth%20On/value",
+				"keys" : [ [ 0, true ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Smooth%20Angle/value",
+				"keys" : [ [ 0, 89.9 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Render%20Priority/value",
+				"keys" : [ [ 0, 3 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Propagate%20Priority/value",
+				"keys" : [ [ 0, false ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/opac/value",
+				"keys" : [ [ 0, [ 1, 1, 1 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Accept%20Shadows/value",
+				"keys" : [ [ 0, true ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/color/value",
+				"keys" : [ [ 0, [ 1, 1, 1 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/clamps/value",
+				"keys" : [ [ 0, 3 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/clampBlend/value",
+				"keys" : [ [ 0, 0.2 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/inputColor/value",
+				"keys" : [ [ 0, [ 1, 1, 1 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/outlineColor/value",
+				"keys" : [ [ 0, [ 0, 0, 0 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/outlineThreshold/value",
+				"keys" : [ [ 0, 4 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/value/value",
+				"keys" : [ [ 0, [ 1, 0.5019608, 0 ] ] ]
+			}
+		]
+	}
+}

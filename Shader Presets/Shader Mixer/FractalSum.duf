@@ -1,0 +1,137 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/Shader%20Presets/Shader%20Mixer/FractalSum.duf",
+		"type" : "preset_shader",
+		"contributor" : {
+			"author" : "DAZ 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "Fri May 4 10:51:31 2012"
+	},
+	"scene" : {
+		"materials" : [
+			{
+				"url" : "/data/DAZ%203D/Built-in%20Content/FractalSum/Mixed%20Fractual%20Sum.dsf#Mixed%20Fractual%20Sum",
+				"extra" : [
+					{
+						"type" : "studio/material/daz_brick"
+					},
+					{
+						"type" : "studio_material_channels",
+						"channels" : [
+							{
+								"channel" : {
+									"id" : "reflection",
+									"type" : "color",
+									"name" : "reflection",
+									"label" : "Reflection Color",
+									"visible" : false
+								},
+								"group" : "/DAZ Material (2)"
+							},
+							{
+								"channel" : {
+									"id" : "refraction",
+									"type" : "color",
+									"name" : "refraction",
+									"label" : "Refraction Color",
+									"visible" : false
+								},
+								"group" : "/DAZ Material (2)"
+							}
+						]
+					}
+				]
+			}
+		],
+		"animations" : [
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Smooth%20On/value",
+				"keys" : [ [ 0, true ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Smooth%20Angle/value",
+				"keys" : [ [ 0, 89.9 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Render%20Priority/value",
+				"keys" : [ [ 0, 3 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Propagate%20Priority/value",
+				"keys" : [ [ 0, false ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Accept%20Shadows/value",
+				"keys" : [ [ 0, true ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Diffuse%20Strength/value",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Glossiness/value",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Specular%20Color/value",
+				"keys" : [ [ 0, [ 0.6, 0.6, 0.6 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Specular%20Strength/value",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Multiply%20Specular%20Through%20Opacity/value",
+				"keys" : [ [ 0, true ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Ambient%20Color/value",
+				"keys" : [ [ 0, [ 0, 0, 0 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Ambient%20Strength/value",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Opacity%20Strength/value",
+				"keys" : [ [ 0, [ 1, 1, 1 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/reflection/value",
+				"keys" : [ [ 0, [ 0, 0, 0 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/refraction/value",
+				"keys" : [ [ 0, [ 0, 0, 0 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/base/value",
+				"keys" : [ [ 0, [ 0, 0, 1 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/layer/value",
+				"keys" : [ [ 0, [ 1, 0, 0 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/value/value",
+				"keys" : [ [ 0, 20 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/octaves/value",
+				"keys" : [ [ 0, 4 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/bias/value",
+				"keys" : [ [ 0, 2 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/gain/value",
+				"keys" : [ [ 0, 0.5 ] ]
+			}
+		]
+	}
+}

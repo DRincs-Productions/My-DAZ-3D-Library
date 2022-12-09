@@ -1,0 +1,640 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/Shader%20Presets/Strand-Based%20Hair/RSL%20Strand-Based%20Hair%20Shader.duf",
+		"type" : "preset_shader",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : ""
+		},
+		"revision" : "1.0",
+		"modified" : "2019-05-10T21:50:12Z"
+	},
+	"material_library" : [
+		{
+			"id" : "Strand-Based Hair Material",
+			"extra" : [
+				{
+					"type" : "studio/material/strand_hair_rsl"
+				},
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Line Preview Color",
+								"type" : "color",
+								"label" : "Line Preview Color",
+								"value" : [ 0, 0, 0 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Lines"
+						},
+						{
+							"channel" : {
+								"id" : "Line Start Width",
+								"type" : "float",
+								"label" : "Line Start Width (mm)",
+								"value" : 0.1,
+								"min" : -10000,
+								"max" : 10000,
+								"step_size" : 0.01
+							},
+							"group" : "/Lines/Generation"
+						},
+						{
+							"channel" : {
+								"id" : "Line End Width",
+								"type" : "float",
+								"label" : "Line End Width (mm)",
+								"value" : 0.1,
+								"min" : -10000,
+								"max" : 10000,
+								"step_size" : 0.01
+							},
+							"group" : "/Lines/Generation"
+						},
+						{
+							"channel" : {
+								"id" : "Line UV Width",
+								"type" : "float",
+								"label" : "Line UV Width",
+								"value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/Lines/Generation"
+						},
+						{
+							"channel" : {
+								"id" : "Shading Rate",
+								"type" : "int",
+								"label" : "Shading Rate",
+								"value" : 32,
+								"min" : -2147483648,
+								"max" : 2147483647,
+								"step_size" : 1
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "Opacity",
+								"type" : "float",
+								"label" : "Opacity",
+								"value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "S Opacity",
+								"type" : "float",
+								"label" : "S Opacity",
+								"value" : 1,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/General"
+						},
+						{
+							"channel" : {
+								"id" : "A Intensity",
+								"type" : "float",
+								"label" : "A Intensity",
+								"value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/Ambient & Diffuse"
+						},
+						{
+							"channel" : {
+								"id" : "D Intensity",
+								"type" : "float",
+								"label" : "D Intensity",
+								"value" : 0.3,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/Ambient & Diffuse"
+						},
+						{
+							"channel" : {
+								"id" : "R Intensity",
+								"type" : "float",
+								"label" : "R Intensity",
+								"value" : 0.6,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/Primary Specular (R)"
+						},
+						{
+							"channel" : {
+								"id" : "R Colour",
+								"type" : "color",
+								"label" : "R Colour",
+								"value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Primary Specular (R)"
+						},
+						{
+							"channel" : {
+								"id" : "R Colour Blend",
+								"type" : "float",
+								"label" : "R Colour Blend",
+								"value" : 0.8,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/Primary Specular (R)"
+						},
+						{
+							"channel" : {
+								"id" : "R Longitudinal Shift",
+								"type" : "float",
+								"label" : "R Longitudinal Shift",
+								"value" : 10,
+								"min" : -10000,
+								"max" : 10000,
+								"step_size" : 0.01
+							},
+							"group" : "/Primary Specular (R)"
+						},
+						{
+							"channel" : {
+								"id" : "R Longitudinal Width",
+								"type" : "float",
+								"label" : "R Longitudinal Width",
+								"value" : 10,
+								"min" : -10000,
+								"max" : 10000,
+								"step_size" : 0.01
+							},
+							"group" : "/Primary Specular (R)"
+						},
+						{
+							"channel" : {
+								"id" : "TRT Intensity",
+								"type" : "float",
+								"label" : "TRT Intensity",
+								"value" : 0.6,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/Secondary Specular (TRT)"
+						},
+						{
+							"channel" : {
+								"id" : "TRT Colour",
+								"type" : "color",
+								"label" : "TRT Colour",
+								"value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Secondary Specular (TRT)"
+						},
+						{
+							"channel" : {
+								"id" : "TRT Colour Blend",
+								"type" : "float",
+								"label" : "TRT Colour Blend",
+								"value" : 0.7,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/Secondary Specular (TRT)"
+						},
+						{
+							"channel" : {
+								"id" : "TRT Longitudinal Shift",
+								"type" : "float",
+								"label" : "TRT Longitudinal Shift",
+								"value" : 5,
+								"min" : -10000,
+								"max" : 10000,
+								"step_size" : 0.01
+							},
+							"group" : "/Secondary Specular (TRT)"
+						},
+						{
+							"channel" : {
+								"id" : "TRT Longitudinal Width",
+								"type" : "float",
+								"label" : "TRT Longitudinal Width",
+								"value" : 30,
+								"min" : -10000,
+								"max" : 10000,
+								"step_size" : 0.01
+							},
+							"group" : "/Secondary Specular (TRT)"
+						},
+						{
+							"channel" : {
+								"id" : "G Intensity",
+								"type" : "float",
+								"label" : "G Intensity",
+								"value" : 0.5,
+								"min" : -10000,
+								"max" : 10000,
+								"step_size" : 0.01
+							},
+							"group" : "/Secondary Specular (TRT)"
+						},
+						{
+							"channel" : {
+								"id" : "G Azimuthal Shift",
+								"type" : "float",
+								"label" : "G Azimuthal Shift",
+								"value" : 0,
+								"min" : -10000,
+								"max" : 10000,
+								"step_size" : 0.01
+							},
+							"group" : "/Secondary Specular (TRT)"
+						},
+						{
+							"channel" : {
+								"id" : "G Azimuthal Width",
+								"type" : "float",
+								"label" : "G Azimuthal Width",
+								"value" : 3,
+								"min" : -10000,
+								"max" : 10000,
+								"step_size" : 0.01
+							},
+							"group" : "/Secondary Specular (TRT)"
+						},
+						{
+							"channel" : {
+								"id" : "TT Intensity",
+								"type" : "float",
+								"label" : "TT Intensity",
+								"value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/Transmission (TT)"
+						},
+						{
+							"channel" : {
+								"id" : "TT Colour",
+								"type" : "color",
+								"label" : "TT Colour",
+								"value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true
+							},
+							"group" : "/Transmission (TT)"
+						},
+						{
+							"channel" : {
+								"id" : "TT Colour Blend",
+								"type" : "float",
+								"label" : "TT Colour Blend",
+								"value" : 0.5,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/Transmission (TT)"
+						},
+						{
+							"channel" : {
+								"id" : "TT Longitudinal Shift",
+								"type" : "float",
+								"label" : "TT Longitudinal Shift",
+								"value" : 0,
+								"min" : -10000,
+								"max" : 10000,
+								"step_size" : 0.01
+							},
+							"group" : "/Transmission (TT)"
+						},
+						{
+							"channel" : {
+								"id" : "TT Longitudinal Width",
+								"type" : "float",
+								"label" : "TT Longitudinal Width",
+								"value" : 4,
+								"min" : -10000,
+								"max" : 10000,
+								"step_size" : 0.01
+							},
+							"group" : "/Transmission (TT)"
+						},
+						{
+							"channel" : {
+								"id" : "O Shader Intensity",
+								"type" : "float",
+								"label" : "O Shader Intensity",
+								"value" : 0,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/Occlusion"
+						},
+						{
+							"channel" : {
+								"id" : "O Shading Rate",
+								"type" : "int",
+								"label" : "O Shading Rate",
+								"value" : 128,
+								"min" : -2147483648,
+								"max" : 2147483647,
+								"step_size" : 1
+							},
+							"group" : "/Occlusion"
+						},
+						{
+							"channel" : {
+								"id" : "O Max Error",
+								"type" : "float",
+								"label" : "O Max Error",
+								"value" : 0.9,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/Occlusion"
+						},
+						{
+							"channel" : {
+								"id" : "O Max Solid Angle",
+								"type" : "float",
+								"label" : "O Max Solid Angle",
+								"value" : 0.5,
+								"min" : 0,
+								"max" : 1,
+								"step_size" : 0.01
+							},
+							"group" : "/Occlusion"
+						},
+						{
+							"channel" : {
+								"id" : "O Max Distance",
+								"type" : "float",
+								"label" : "O Max Distance",
+								"value" : 100,
+								"min" : -10000,
+								"max" : 10000,
+								"step_size" : 0.01
+							},
+							"group" : "/Occlusion"
+						},
+						{
+							"channel" : {
+								"id" : "O Number Samples",
+								"type" : "int",
+								"label" : "O Number Samples",
+								"value" : 2,
+								"min" : -2147483648,
+								"max" : 2147483647,
+								"step_size" : 1
+							},
+							"group" : "/Occlusion"
+						},
+						{
+							"channel" : {
+								"id" : "A Correct Gamma",
+								"type" : "bool",
+								"label" : "A Correct Gamma",
+								"value" : false
+							},
+							"group" : "/Advanced"
+						},
+						{
+							"channel" : {
+								"id" : "A SpecularHitMode",
+								"type" : "enum",
+								"label" : "A SpecularHitMode",
+								"value" : 0,
+								"enum_values" : [ "Off", "Primitive", "Shader" ]
+							},
+							"group" : "/Advanced"
+						},
+						{
+							"channel" : {
+								"id" : "A DiffuseHitMode",
+								"type" : "enum",
+								"label" : "A DiffuseHitMode",
+								"value" : 0,
+								"enum_values" : [ "Off", "Primitive", "Shader" ]
+							},
+							"group" : "/Advanced"
+						},
+						{
+							"channel" : {
+								"id" : "A TransmissionHitMode",
+								"type" : "enum",
+								"label" : "A TransmissionHitMode",
+								"value" : 0,
+								"enum_values" : [ "Off", "Primitive", "Shader" ]
+							},
+							"group" : "/Advanced"
+						},
+						{
+							"channel" : {
+								"id" : "A CameraHitMode",
+								"type" : "enum",
+								"label" : "A CameraHitMode",
+								"value" : 0,
+								"enum_values" : [ "Off", "Primitive", "Shader" ]
+							},
+							"group" : "/Advanced"
+						}
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"materials" : [
+			{
+				"url" : "#Strand-Based%20Hair%20Material",
+				"extra" : [
+					{
+						"type" : "studio/material/strand_hair_rsl"
+					}
+				]
+			}
+		],
+		"animations" : [
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Shading%20Rate/value",
+				"keys" : [ [ 0, 32 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Opacity/value",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/S%20Opacity/value",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Line%20Preview%20Color/value",
+				"keys" : [ [ 0, [ 0.8, 0.5764706, 0.1372549 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Line%20Start%20Width/value",
+				"keys" : [ [ 0, 0.1 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Line%20End%20Width/value",
+				"keys" : [ [ 0, 0.1 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Line%20UV%20Width/value",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/A%20Intensity/value",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/D%20Intensity/value",
+				"keys" : [ [ 0, 0.3 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/R%20Intensity/value",
+				"keys" : [ [ 0, 0.6 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/R%20Colour/value",
+				"keys" : [ [ 0, [ 1, 1, 1 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/R%20Colour%20Blend/value",
+				"keys" : [ [ 0, 0.8 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/R%20Longitudinal%20Shift/value",
+				"keys" : [ [ 0, 10 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/R%20Longitudinal%20Width/value",
+				"keys" : [ [ 0, 10 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/TRT%20Intensity/value",
+				"keys" : [ [ 0, 0.6 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/TRT%20Colour/value",
+				"keys" : [ [ 0, [ 1, 1, 1 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/TRT%20Colour%20Blend/value",
+				"keys" : [ [ 0, 0.7 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/TRT%20Longitudinal%20Shift/value",
+				"keys" : [ [ 0, 5 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/TRT%20Longitudinal%20Width/value",
+				"keys" : [ [ 0, 30 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/G%20Intensity/value",
+				"keys" : [ [ 0, 0.5 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/G%20Azimuthal%20Shift/value",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/G%20Azimuthal%20Width/value",
+				"keys" : [ [ 0, 3 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/TT%20Intensity/value",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/TT%20Colour/value",
+				"keys" : [ [ 0, [ 1, 1, 1 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/TT%20Colour%20Blend/value",
+				"keys" : [ [ 0, 0.5 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/TT%20Longitudinal%20Shift/value",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/TT%20Longitudinal%20Width/value",
+				"keys" : [ [ 0, 4 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/O%20Shader%20Intensity/value",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/O%20Shading%20Rate/value",
+				"keys" : [ [ 0, 128 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/O%20Max%20Error/value",
+				"keys" : [ [ 0, 0.9 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/O%20Max%20Solid%20Angle/value",
+				"keys" : [ [ 0, 0.5 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/O%20Max%20Distance/value",
+				"keys" : [ [ 0, 100 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/O%20Number%20Samples/value",
+				"keys" : [ [ 0, 2 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/A%20Correct%20Gamma/value",
+				"keys" : [ [ 0, false ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/A%20SpecularHitMode/value",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/A%20DiffuseHitMode/value",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/A%20TransmissionHitMode/value",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/A%20CameraHitMode/value",
+				"keys" : [ [ 0, 2 ] ]
+			}
+		]
+	}
+}
