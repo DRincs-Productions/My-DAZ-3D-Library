@@ -1,5 +1,5 @@
 {
-	"file_version" : "0.6.0.0",
+	"file_version" : "0.6.1.0",
 	"asset_info" : {
 		"id" : "/data/Daz%203D/Genesis%209/Base/Tools/Projection%20Templates/G9%20Bodysuit%20Tight/Morphs/Daz%203D/Base/body_cbs_thigh_z24p_r.dsf",
 		"type" : "modifier",
@@ -9,7 +9,7 @@
 			"website" : "www.daz3d.com"
 		},
 		"revision" : "1.0",
-		"modified" : "2022-08-11T23:38:58Z"
+		"modified" : "2022-10-31T22:25:01Z"
 	},
 	"modifier_library" : [
 		{
@@ -28,6 +28,7 @@
 				"type" : "float",
 				"name" : "Value",
 				"label" : "body_cbs_thigh_z24p_r",
+				"visible" : false,
 				"auto_follow" : true,
 				"value" : 0,
 				"min" : 0,
@@ -36,7 +37,7 @@
 				"display_as_percent" : true,
 				"step_size" : 0.01
 			},
-			"group" : "/Morphs/Morph Loader",
+			"group" : "/Hidden/Base Correctives/Legs",
 			"formulas" : [
 				{
 					"output" : "G9BodysuitTight2_14867:#body_cbs_thigh_z24p_r?value",

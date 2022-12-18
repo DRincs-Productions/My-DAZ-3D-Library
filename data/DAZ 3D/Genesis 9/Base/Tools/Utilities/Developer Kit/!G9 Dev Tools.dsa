@@ -55,7 +55,7 @@
 		oPane.clearAllStepSets();
 		//oPane.clearSignalScripts();
 		
-	    oPane.addStep( "Export Selected to OBJ",
+	    oPane.addStep( "Export Selected to OBJ...",
 	        g_oFilePath + "/Export Selected.dse",
 	        DzScriptedStepsPane.File, false );
 			        
@@ -71,18 +71,18 @@
 	    oPane.addStep( "Remove Empty Morphs",
 	        g_oFilePath + "/Morph-RemoveEmptyMorphs.dse",
 	        DzScriptedStepsPane.File, false );
-	    oPane.addStep( "Get Morph Delta Info",
+	    oPane.addStep( "Get Morph Delta Info...",
 	        g_oFilePath + "/Morph-GetMorphDeltaInfo.dse",
 	        DzScriptedStepsPane.File, false );
 	        	        
-	    oPane.addStep( "Texture Convert: Single UDIM to Multiple",
+	    oPane.addStep( "Texture Convert: Single UDIM to Multiple...",
 	        g_oFilePath + "/ImageMagick/Single UDIM to Multi.dse",
 	        DzScriptedStepsPane.File, true );
 	        	        
 	    oPane.addStep( "Adjust Eye Rigging",
 	        g_oFilePath + "/Adjust Eye Rigging.dse",
 	        DzScriptedStepsPane.File, true );
-	    oPane.addStep( "Set G9 to Shape",
+	    oPane.addStep( "Set G9 to Shape...",
 	        g_oFilePath + "/Set G9 to Shape.dse",
 	        DzScriptedStepsPane.File, false );
 	    oPane.addStep( "Create Follower",

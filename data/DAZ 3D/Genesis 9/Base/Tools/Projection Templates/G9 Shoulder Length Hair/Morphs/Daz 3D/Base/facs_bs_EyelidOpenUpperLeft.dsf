@@ -1,0 +1,70 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Tools/Projection%20Templates/G9%20Shoulder%20Length%20Hair/Morphs/Daz%203D/Base/facs_bs_EyelidOpenUpperLeft.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "0.0",
+		"modified" : "2022-11-17T23:16:46Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_bs_EyelidOpenUpperLeft",
+			"name" : "facs_bs_EyelidOpenUpperLeft",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Tools/Projection%20Templates/G9%20Shoulder%20Length%20Hair/G9ShoulderLengthHairTemplate_2512.dsf#G9LongHairTemplate",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "facs_bs_EyelidOpenUpperLeft",
+				"visible" : false,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Pose Controls/Head/Eyes/Sub-Components",
+			"morph" : {
+				"vertex_count" : 2512,
+				"deltas" : {
+					"count" : 12,
+					"values" : [
+						[ 171, 0.007078262, 0.008018527, 0.008419097 ],
+						[ 172, 0.004825104, 0.007010099, 0.006747358 ],
+						[ 176, 0.001300076, 0.001999637, 0.002010965 ],
+						[ 178, 0.001880345, 0.00300614, 0.002670043 ],
+						[ 179, 0.002790692, 0.003998393, 0.003530823 ],
+						[ 448, 0.00225083, 0.003007067, 0.003510508 ],
+						[ 580, 0.003722716, 0.003022062, 0.001690608 ],
+						[ 581, 0.001340666, 0.00099267, 0.0004102741 ],
+						[ 582, 0.006794253, 0.004991449, 0.004912857 ],
+						[ 583, 0.00242859, 0.001997772, 0.001769496 ],
+						[ 584, 0.001170141, 0.0009914027, 0.0004895051 ],
+						[ 592, 0.0005688667, 0.00100708, 0.0007801056 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_bs_EyelidOpenUpperLeft-1",
+				"url" : "#facs_bs_EyelidOpenUpperLeft"
+			}
+		]
+	}
+}

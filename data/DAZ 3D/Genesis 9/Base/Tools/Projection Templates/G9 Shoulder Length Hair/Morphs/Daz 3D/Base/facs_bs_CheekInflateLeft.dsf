@@ -1,0 +1,60 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Tools/Projection%20Templates/G9%20Shoulder%20Length%20Hair/Morphs/Daz%203D/Base/facs_bs_CheekInflateLeft.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "0.0",
+		"modified" : "2022-11-17T23:16:46Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_bs_CheekInflateLeft",
+			"name" : "facs_bs_CheekInflateLeft",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Tools/Projection%20Templates/G9%20Shoulder%20Length%20Hair/G9ShoulderLengthHairTemplate_2512.dsf#G9LongHairTemplate",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "facs_bs_CheekInflateLeft",
+				"visible" : false,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Pose Controls/Head/Cheek and Jaw",
+			"morph" : {
+				"vertex_count" : 2512,
+				"deltas" : {
+					"count" : 2,
+					"values" : [
+						[ 550, 0.003859971, -2.45509e-08, 0.0002999946 ],
+						[ 552, 0.001279831, 0, 0.0001200438 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_bs_CheekInflateLeft-1",
+				"url" : "#facs_bs_CheekInflateLeft"
+			}
+		]
+	}
+}

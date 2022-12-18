@@ -1,0 +1,85 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Tools/Projection%20Templates/G9%20Shoulder%20Length%20Hair/Morphs/Daz%203D/Base/facs_bs_CheekInflateCounterRight.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "0.0",
+		"modified" : "2022-11-17T23:16:46Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_bs_CheekInflateCounterRight",
+			"name" : "facs_bs_CheekInflateCounterRight",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Tools/Projection%20Templates/G9%20Shoulder%20Length%20Hair/G9ShoulderLengthHairTemplate_2512.dsf#G9LongHairTemplate",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "facs_bs_CheekInflateCounterRight",
+				"visible" : false,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Pose Controls/Head/Cheek and Jaw",
+			"morph" : {
+				"vertex_count" : 2512,
+				"deltas" : {
+					"count" : 27,
+					"values" : [
+						[ 734, -0.003231684, 0.001007939, 0.003311411 ],
+						[ 796, -0.0002589226, 0.003005981, 8.59499e-05 ],
+						[ 797, -0.0009198189, 0.005996704, 0.0002200603 ],
+						[ 798, -0.001610097, 0.010009, 0.0004299958 ],
+						[ 799, -0.001978504, 0.001006825, 0.002069555 ],
+						[ 905, -0.0003604723, 0.001008329, 0.0003615477 ],
+						[ 1056, -0.001320037, 1.534486e-05, 0.001379161 ],
+						[ 1057, -1.001358e-05, 0.00100708, 1.105666e-05 ],
+						[ 1058, -0.001310051, 0.003006213, 0.001314154 ],
+						[ 1059, -0.001559755, 0.002014253, 0.001569854 ],
+						[ 1060, -0.0005900519, 0.003006982, 0.0005970033 ],
+						[ 1061, -0.0002302539, 0.001998394, 0.0002499185 ],
+						[ 1062, -0.001810891, 0.001007615, 0.001810425 ],
+						[ 1087, -9.021383e-05, 0.001007598, 8.722481e-05 ],
+						[ 1089, -0.006400639, 0.00399914, 0.006810973 ],
+						[ 1090, -0.003370744, 0.0009923723, 0.003380474 ],
+						[ 1093, -0.001400452, 0.00100704, 0.00142012 ],
+						[ 1128, -0.005160351, 0.01400733, 0.003319602 ],
+						[ 1129, -0.007489925, 0.01301462, 0.00568015 ],
+						[ 1130, -0.003360271, 0.01298523, 0.001320004 ],
+						[ 1131, -0.008059978, 0.008987427, 0.007760048 ],
+						[ 1132, -0.0001997948, 0.003997803, 0.0002149343 ],
+						[ 1136, -0.004060435, 0.003998605, 0.004180649 ],
+						[ 1140, -0.003899922, 0.006988104, 0.003449837 ],
+						[ 1141, -0.002420775, 0.007004594, 0.001940071 ],
+						[ 1142, -0.001150131, 0.007003784, 0.0008500814 ],
+						[ 1143, -0.0004301071, 0.004989624, 0.0004811883 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_bs_CheekInflateCounterRight-1",
+				"url" : "#facs_bs_CheekInflateCounterRight"
+			}
+		]
+	}
+}

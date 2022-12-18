@@ -1,0 +1,68 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/PowerPose/powerpose_ctrl_LipsPucker-Press.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-12-05T22:41:51Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "powerpose_ctrl_LipsPucker-Press",
+			"name" : "powerpose_ctrl_LipsPucker-Press",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#Genesis9",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.1607843, 0.1607843, 0.1607843 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "powerpose_ctrl_LipsPucker-Press",
+				"label" : "powerpose_ctrl_LipsPucker-Press",
+				"visible" : false,
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Hidden/PowerPose",
+			"formulas" : [
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/FACS/facs_ctrl_MouthPucker.dsf#facs_ctrl_MouthPucker?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#powerpose_ctrl_LipsPucker-Press?value" },
+						{ "op" : "push", "val" : -1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/FACS/facs_ctrl_MouthPress.dsf#facs_ctrl_MouthPress?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#powerpose_ctrl_LipsPucker-Press?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "powerpose_ctrl_LipsPucker-Press-1",
+				"url" : "#powerpose_ctrl_LipsPucker-Press"
+			}
+		]
+	}
+}

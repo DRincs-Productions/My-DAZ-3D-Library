@@ -1,0 +1,140 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/PowerPose/powerpose_ctrl_BareTeeth.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-12-05T22:41:51Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "powerpose_ctrl_BareTeeth",
+			"name" : "powerpose_ctrl_BareTeeth",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#Genesis9",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.1607843, 0.1607843, 0.1607843 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "powerpose_ctrl_BareTeeth",
+				"label" : "powerpose_ctrl_BareTeeth",
+				"visible" : false,
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"group" : "/Hidden/PowerPose",
+			"formulas" : [
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/FACS/facs_ctrl_MouthUpperUp.dsf#facs_ctrl_MouthUpperUp?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#powerpose_ctrl_BareTeeth?value" },
+						{ "op" : "push", "val" : 0.75 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/FACS/facs_ctrl_MouthLowerDown.dsf#facs_ctrl_MouthLowerDown?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#powerpose_ctrl_BareTeeth?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/FACS/facs_ctrl_MouthForward-Back.dsf#facs_ctrl_MouthForward-Back?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#powerpose_ctrl_BareTeeth?value" },
+						{ "op" : "push", "val" : -0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/FACS/facs_bs_MouthCornerTightnessUpperRight.dsf#facs_bs_MouthCornerTightnessUpperRight?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#powerpose_ctrl_BareTeeth?value" },
+						{ "op" : "push", "val" : -0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/FACS/facs_bs_MouthCornerTightnessUpperLeft.dsf#facs_bs_MouthCornerTightnessUpperLeft?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#powerpose_ctrl_BareTeeth?value" },
+						{ "op" : "push", "val" : -0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/FACS/facs_bs_MouthCornerTightnessLowerRight.dsf#facs_bs_MouthCornerTightnessLowerRight?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#powerpose_ctrl_BareTeeth?value" },
+						{ "op" : "push", "val" : -0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/FACS/facs_bs_MouthCornerTightnessLowerLeft.dsf#facs_bs_MouthCornerTightnessLowerLeft?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#powerpose_ctrl_BareTeeth?value" },
+						{ "op" : "push", "val" : -0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/FACS/facs_bs_MouthCornerMoveUp-DownRight.dsf#facs_bs_MouthCornerMoveUp-DownRight?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#powerpose_ctrl_BareTeeth?value" },
+						{ "op" : "push", "val" : -0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/FACS/facs_bs_MouthCornerMoveUp-DownLeft.dsf#facs_bs_MouthCornerMoveUp-DownLeft?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#powerpose_ctrl_BareTeeth?value" },
+						{ "op" : "push", "val" : -0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/FACS/facs_bs_MouthCornerMoveSide-SideRight.dsf#facs_bs_MouthCornerMoveSide-SideRight?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#powerpose_ctrl_BareTeeth?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/FACS/facs_bs_MouthCornerMoveSide-SideLeft.dsf#facs_bs_MouthCornerMoveSide-SideLeft?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#powerpose_ctrl_BareTeeth?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "powerpose_ctrl_BareTeeth-1",
+				"url" : "#powerpose_ctrl_BareTeeth"
+			}
+		]
+	}
+}

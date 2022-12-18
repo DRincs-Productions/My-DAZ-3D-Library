@@ -1,0 +1,66 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Tools/Projection%20Templates/G9%20Shoulder%20Length%20Hair/Morphs/Daz%203D/Base/body_cbs_neck1_y22n_r.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2022-11-17T23:16:46Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "body_cbs_neck1_y22n_r",
+			"name" : "body_cbs_neck1_y22n_r",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Tools/Projection%20Templates/G9%20Shoulder%20Length%20Hair/G9ShoulderLengthHairTemplate_2512.dsf#G9LongHairTemplate",
+			"presentation" : {
+				"type" : "Modifier/Corrective",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "body_cbs_neck1_y22n_r",
+				"visible" : false,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Hidden/Base Correctives/Head",
+			"morph" : {
+				"vertex_count" : 2512,
+				"deltas" : {
+					"count" : 8,
+					"values" : [
+						[ 185, 0.002956579, -0.0005827124, -0.00014897 ],
+						[ 224, 0.01696759, -0.003361168, -0.0002438963 ],
+						[ 226, 0.01538865, -0.003844779, -0.003432975 ],
+						[ 247, 0.05011619, -0.008527574, 0.001766006 ],
+						[ 559, 0.001649059, -0.000473437, -0.0001362188 ],
+						[ 561, 0.002255967, -0.0002760548, -0.0001699448 ],
+						[ 597, 0.02249387, -0.001892056, -0.003371131 ],
+						[ 598, 0.06488669, -0.005475153, 0.01344066 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "body_cbs_neck1_y22n_r-1",
+				"url" : "#body_cbs_neck1_y22n_r"
+			}
+		]
+	}
+}

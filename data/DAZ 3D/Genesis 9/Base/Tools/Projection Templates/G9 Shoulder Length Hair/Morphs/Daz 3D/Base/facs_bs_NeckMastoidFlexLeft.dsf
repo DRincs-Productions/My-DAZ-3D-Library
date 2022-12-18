@@ -1,0 +1,84 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Tools/Projection%20Templates/G9%20Shoulder%20Length%20Hair/Morphs/Daz%203D/Base/facs_bs_NeckMastoidFlexLeft.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "0.0",
+		"modified" : "2022-11-17T23:16:46Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_bs_NeckMastoidFlexLeft",
+			"name" : "facs_bs_NeckMastoidFlexLeft",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Tools/Projection%20Templates/G9%20Shoulder%20Length%20Hair/G9ShoulderLengthHairTemplate_2512.dsf#G9LongHairTemplate",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "facs_bs_NeckMastoidFlexLeft",
+				"visible" : false,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Pose Controls/Neck",
+			"morph" : {
+				"vertex_count" : 2512,
+				"deltas" : {
+					"count" : 26,
+					"values" : [
+						[ 185, 0.003044424, -0.0009950079, -0.0003075952 ],
+						[ 201, 0.08656492, -0.003997066, -0.02093796 ],
+						[ 204, 0.03945864, -0.00100631, -0.01321532 ],
+						[ 208, 0.001690875, -1.508516e-05, -0.0005106547 ],
+						[ 224, 0.02425851, -0.004011272, -4.605752e-05 ],
+						[ 226, 0.1421694, -0.009978584, -0.01451953 ],
+						[ 227, 0.08924011, -0.007003289, -0.02091002 ],
+						[ 228, 0.03892986, -0.00399743, -0.01467981 ],
+						[ 247, 0.1159866, -0.0140048, 0.004267692 ],
+						[ 248, 0.005550636, -0.000991505, -0.002350376 ],
+						[ 278, 0.002303756, -0.0009924932, -0.000681002 ],
+						[ 495, 0.03470629, -0.005004088, -0.007639287 ],
+						[ 498, 0.00135127, -2.701063e-07, -0.0002979938 ],
+						[ 499, 0.001266599, -1.788518e-06, -0.0001920588 ],
+						[ 500, 0.001993119, -2.184719e-06, -0.0004393155 ],
+						[ 501, 0.009410968, -0.001007123, -0.001300134 ],
+						[ 503, 0.02196794, -0.004988676, -0.007939648 ],
+						[ 559, 0.01130525, -0.001993677, -0.001397335 ],
+						[ 560, 0.003182373, -0.001008839, -0.0005669275 ],
+						[ 561, 0.0513792, -0.007002237, -0.004149067 ],
+						[ 566, 0.03778981, -0.005996441, -0.01479979 ],
+						[ 567, 0.005983658, -0.0009921053, -0.002581433 ],
+						[ 568, 0.07247552, -0.008010477, -0.01743884 ],
+						[ 569, 0.07656788, -0.006986485, -0.008697742 ],
+						[ 597, 0.1393807, -0.007002912, -0.0127188 ],
+						[ 598, 0.1506694, -0.006984113, 0.00746569 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_bs_NeckMastoidFlexLeft-1",
+				"url" : "#facs_bs_NeckMastoidFlexLeft"
+			}
+		]
+	}
+}

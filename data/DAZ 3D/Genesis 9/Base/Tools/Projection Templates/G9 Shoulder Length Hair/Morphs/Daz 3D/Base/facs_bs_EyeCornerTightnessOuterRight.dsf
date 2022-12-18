@@ -1,0 +1,65 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Tools/Projection%20Templates/G9%20Shoulder%20Length%20Hair/Morphs/Daz%203D/Base/facs_bs_EyeCornerTightnessOuterRight.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "0.0",
+		"modified" : "2022-11-17T23:16:46Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_bs_EyeCornerTightnessOuterRight",
+			"name" : "facs_bs_EyeCornerTightnessOuterRight",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Tools/Projection%20Templates/G9%20Shoulder%20Length%20Hair/G9ShoulderLengthHairTemplate_2512.dsf#G9LongHairTemplate",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "facs_bs_EyeCornerTightnessOuterRight",
+				"visible" : false,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Pose Controls/Head/Eyes/Adjustments",
+			"morph" : {
+				"vertex_count" : 2512,
+				"deltas" : {
+					"count" : 7,
+					"values" : [
+						[ 748, 5.016869e-05, -0.001008332, -0.000119446 ],
+						[ 749, 0.0001000202, -0.001008477, 0.0001308408 ],
+						[ 754, 0.0001102271, -0.00100708, -0.0001297393 ],
+						[ 755, 8.985367e-05, -0.001006742, -0.0001001022 ],
+						[ 756, 8.008511e-05, -0.001006784, -9.96297e-05 ],
+						[ 1026, 0.0002279328, -0.001007596, -0.0001896281 ],
+						[ 1027, 0.0001903956, -0.001009091, -0.0001799267 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_bs_EyeCornerTightnessOuterRight-1",
+				"url" : "#facs_bs_EyeCornerTightnessOuterRight"
+			}
+		]
+	}
+}

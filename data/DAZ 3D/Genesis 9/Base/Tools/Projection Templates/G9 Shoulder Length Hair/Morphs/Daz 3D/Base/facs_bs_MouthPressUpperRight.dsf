@@ -1,0 +1,83 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Tools/Projection%20Templates/G9%20Shoulder%20Length%20Hair/Morphs/Daz%203D/Base/facs_bs_MouthPressUpperRight.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "www.daz3d.com"
+		},
+		"revision" : "0.0",
+		"modified" : "2022-11-17T23:16:46Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "facs_bs_MouthPressUpperRight",
+			"name" : "facs_bs_MouthPressUpperRight",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Tools/Projection%20Templates/G9%20Shoulder%20Length%20Hair/G9ShoulderLengthHairTemplate_2512.dsf#G9LongHairTemplate",
+			"presentation" : {
+				"type" : "Modifier/Pose",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "",
+				"colors" : [ [ 0.3529412, 0.3529412, 0.3529412 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Value",
+				"label" : "facs_bs_MouthPressUpperRight",
+				"visible" : false,
+				"auto_follow" : true,
+				"value" : 0,
+				"min" : -1,
+				"max" : 1,
+				"display_as_percent" : true,
+				"step_size" : 0.01
+			},
+			"group" : "/Pose Controls/Head/Mouth",
+			"morph" : {
+				"vertex_count" : 2512,
+				"deltas" : {
+					"count" : 25,
+					"values" : [
+						[ 734, -0.005722302, 0.001008375, 0.00586151 ],
+						[ 798, -0.0001907256, 0.00302108, 0.0001999063 ],
+						[ 799, -0.003568166, 0.001006825, 0.003729431 ],
+						[ 904, -8.894446e-05, 0.001001198, 8.894889e-05 ],
+						[ 905, -0.0003904024, 0.001008126, 0.000391477 ],
+						[ 1055, -0.00107875, 5.594671e-09, 0.001199059 ],
+						[ 1056, -0.002559885, 1.534486e-05, 0.002668559 ],
+						[ 1058, -0.001210406, 0.003006104, 0.001213209 ],
+						[ 1059, -0.001839618, 0.003005682, 0.001839977 ],
+						[ 1060, -0.0003901788, 0.001999472, 0.0003960236 ],
+						[ 1062, -0.00258055, 0.002014485, 0.002590443 ],
+						[ 1063, -0.000990366, 0, 0.001080009 ],
+						[ 1087, -5.000624e-05, 0.00100584, 5.01253e-05 ],
+						[ 1089, -0.009221757, 0.004990695, 0.009250848 ],
+						[ 1090, -0.005321118, 0.0019994, 0.005350562 ],
+						[ 1093, -0.002330265, 0.001007058, 0.002350054 ],
+						[ 1128, -0.002800284, 0.009002176, 0.002819711 ],
+						[ 1129, -0.005580219, 0.01000911, 0.005640417 ],
+						[ 1130, -0.0009899139, 0.005996704, 0.0009900331 ],
+						[ 1131, -0.008890152, 0.007995605, 0.008930206 ],
+						[ 1136, -0.005350205, 0.003998445, 0.005350688 ],
+						[ 1140, -0.003580067, 0.005996439, 0.003609986 ],
+						[ 1141, -0.001699176, 0.005005264, 0.001700018 ],
+						[ 1142, -0.0005702972, 0.003997803, 0.000590086 ],
+						[ 1143, -0.0001301765, 0.001983643, 0.0001501441 ]
+					]
+				}
+			}
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "facs_bs_MouthPressUpperRight-1",
+				"url" : "#facs_bs_MouthPressUpperRight"
+			}
+		]
+	}
+}
