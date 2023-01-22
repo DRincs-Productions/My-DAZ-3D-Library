@@ -31,3 +31,8 @@ git config pull.rebase false
 git pull https://github.com/DRincs-Productions/daz-assert-templete.git main --allow-unrelated-histories
 
 ```
+## Info
+The goals of queto assert are:
+* keep folders sorted, so that you can quickly find what you are looking for is to open as few folders as possible.
+* cleaning unnecessary files
+* compress images while maintaining 80% quality for assert of objects and environments. character textures will not be compressed.
