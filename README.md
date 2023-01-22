@@ -32,7 +32,7 @@ git pull https://github.com/DRincs-Productions/daz-assert-templete.git main --al
 
 ```
 ## Info
-The goals of queto assert are:
+The goals of this repo are:
 * keep folders sorted, so that you can quickly find what you are looking for is to open as few folders as possible.
 * cleaning unnecessary files
 * compress images while maintaining 80% quality for assert of objects and environments. character textures will not be compressed.
