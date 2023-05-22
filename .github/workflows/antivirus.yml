@@ -10,8 +10,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-  schedule:
-    - cron: '31 17 * * 0'
+#  schedule:
+#    - cron: '31 17 * * 0'
 
 jobs:
   gitavscan:
