@@ -7,7 +7,7 @@ Before you start creating a scene check the [wiki](https://github.com/DRincs-Pro
 ## Request new material
 
 If you need an Assert that is not included in this folder try checking in these bookmarks: [raindrop](https://raindrop.io/drincs)
-in case you find what you needed or not, request to add a new Assert [here](https://github.com/DRincs-Productions/daz-assert-posing/issues/new/choose).
+in case you find what you needed or not, request to add a new Assert [here](https://github.com/DRincs-Productions/daz-assert-ABFD-all-in-one/issues/new/choose).
 
 ## Instructions (for those unfamiliar with Git)
 
