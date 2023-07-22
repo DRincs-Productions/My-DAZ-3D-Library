@@ -7,7 +7,7 @@ Before you start creating a scene check the [wiki](https://github.com/DRincs-Pro
 ## Request new material
 
 If you need an Assert that is not included in this folder try checking in these bookmarks: [raindrop](https://raindrop.io/drincs)
-in case you find what you needed or not, request to add a new Assert [here](https://github.com/DRincs-Productions/daz-assert-posing/issues/new/choose).
+in case you find what you needed or not, request to add a new Assert [here](https://github.com/DRincs-Productions/daz-assert-ABFD-all-in-one/issues/new/choose).
 
 ## Instructions (for those unfamiliar with Git)
 
@@ -31,3 +31,9 @@ git config pull.rebase false
 git pull https://github.com/DRincs-Productions/daz-assert-templete.git main --allow-unrelated-histories
 
 ```
+## Info
+The goals of this repo are:
+* keep folders sorted, so that you can quickly find what you are looking for is to open as few folders as possible.
+* cleaning unnecessary files
+* compress images while maintaining 80% quality for assert of objects and environments. character textures will not be compressed.
+* use only the best assert. replace those already present if others are inserted
