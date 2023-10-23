@@ -1,0 +1,404 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base%20Characters%209/Laura_head_bs_Head.dsf",
+		"type" : "modifier",
+		"contributor" : {
+			"author" : "Daz 3D",
+			"email" : "",
+			"website" : "https://www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2023-08-29T23:10:33Z"
+	},
+	"modifier_library" : [
+		{
+			"id" : "Laura_head_bs_Head",
+			"name" : "Laura_head_bs_Head",
+			"parent" : "/data/Daz%203D/Genesis%209/Base/Genesis9.dsf#Genesis9",
+			"presentation" : {
+				"type" : "Modifier/Shape",
+				"label" : "",
+				"description" : "",
+				"icon_large" : "/data/DAZ%203D/Genesis%209/Base/Morphs/Daz%203D/Base%20Characters%209/Laura_head_bs_Head.png",
+				"colors" : [ [ 0.9764706, 0.772549, 0.1764706 ], [ 1, 1, 1 ] ]
+			},
+			"channel" : {
+				"id" : "value",
+				"type" : "float",
+				"name" : "Laura_head_bs_Head",
+				"label" : "Laura Head",
+				"value" : 0,
+				"min" : 0,
+				"max" : 1,
+				"clamped" : true,
+				"display_as_percent" : true,
+				"step_size" : 0.04
+			},
+			"region" : "Head",
+			"group" : "/People/Feminine",
+			"formulas" : [
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base%20Proportion/head_ctrl_ProportionHeadSize_scl.dsf#head_ctrl_ProportionHeadSize_scl?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.0999999 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base/head_bs_EyelashesLengthUniformUpper.dsf#head_bs_EyelashesLengthUniformUpper?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base/head_bs_EyelashesLengthUniformLower.dsf#head_bs_EyelashesLengthUniformLower?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base/head_bs_EyelashesLargeUniformUpper.dsf#head_bs_EyelashesLargeUniformUpper?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base/head_bs_EyelashesLargeUniformLower.dsf#head_bs_EyelashesLargeUniformLower?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base/head_bs_EyelashesGoneUpper.dsf#head_bs_EyelashesGoneUpper?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.2342342 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base/head_bs_EyelashesGoneLower.dsf#head_bs_EyelashesGoneLower?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.1981982 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base/head_bs_EyelashesCurvature.dsf#head_bs_EyelashesCurvature?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : -1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryNoseWingSizeRight.dsf#head_bs_AsymmetryNoseWingSizeRight?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : -1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryNoseWingSizeLeft.dsf#head_bs_AsymmetryNoseWingSizeLeft?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : -1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryNoseWingHeightPosRight.dsf#head_bs_AsymmetryNoseWingHeightPosRight?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryNoseWingHeightPosLeft.dsf#head_bs_AsymmetryNoseWingHeightPosLeft?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryNoseBridgeHorizontal.dsf#head_bs_AsymmetryNoseBridgeHorizontal?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : -0.5333333 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryMouthMidCurveRight.dsf#head_bs_AsymmetryMouthMidCurveRight?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.7833333 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryMouthMidCurveLeft.dsf#head_bs_AsymmetryMouthMidCurveLeft?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.7333333 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryLipUpperThicknessRight.dsf#head_bs_AsymmetryLipUpperThicknessRight?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryLipUpperThicknessLeft.dsf#head_bs_AsymmetryLipUpperThicknessLeft?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryJawHorizontalBalance.dsf#head_bs_AsymmetryJawHorizontalBalance?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : -0.01666665 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryFaceSquareRight.dsf#head_bs_AsymmetryFaceSquareRight?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : -0.1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryFaceSquareLeft.dsf#head_bs_AsymmetryFaceSquareLeft?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : -0.1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryFaceHeartRight.dsf#head_bs_AsymmetryFaceHeartRight?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryFaceHeartLeft.dsf#head_bs_AsymmetryFaceHeartLeft?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryEyesPositionWidthRight.dsf#head_bs_AsymmetryEyesPositionWidthRight?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.2792792 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryEyesPositionWidthLeft.dsf#head_bs_AsymmetryEyesPositionWidthLeft?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.3693694 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryEyesPositionDepthRight.dsf#head_bs_AsymmetryEyesDepthRight?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.4594594 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryEyesPositionDepthLeft.dsf#head_bs_AsymmetryEyesDepthLeft?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.3873874 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryEyelidsLowerRelaxRight.dsf#head_bs_AsymmetryEyelidsLowerRelaxRight?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : -1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryEyelidsLowerRelaxLeft.dsf#head_bs_AsymmetryEyelidsLowerRelaxLeft?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : -1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryEyelidsCreaseHeightRight.dsf#head_bs_AsymmetryEyelidsCreaseHeightRight?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : -1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryEyelidsCreaseHeightLeft.dsf#head_bs_AsymmetryEyelidsCreaseHeightLeft?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : -1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryEarsPositionHeightRight.dsf#head_bs_AsymmetryEarsPositionHeightRight?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryEarsPositionHeightLeft.dsf#head_bs_AsymmetryEarsPositionHeightLeft?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryEars02Right.dsf#head_bs_AsymmetryEars02Right?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryEars02Left.dsf#head_bs_AsymmetryEars02Left?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryCheekSizeRight.dsf#head_bs_AsymmetryCheekSizeRight?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryCheekSizeLeft.dsf#head_bs_AsymmetryCheekSizeLeft?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryBrowSizeRight.dsf#head_bs_AsymmetryBrowSizeRight?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.25 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryBrowSizeLeft.dsf#head_bs_AsymmetryBrowSizeLeft?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 0.25 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryBrowHeightRight.dsf#head_bs_AsymmetryBrowHeightRight?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : -0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Head%20Asymmetry/head_bs_AsymmetryBrowHeightLeft.dsf#head_bs_AsymmetryBrowHeightLeft?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : -0.5 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base%20Proportion/head_bs_ProportionNeckLength.dsf#head_bs_ProportionNeckLength?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : -0.3333334 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base%20Masculine%209/BaseMasculine_head_bs_Head.dsf#BaseMasculine_head_bs_Head?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base%20Feminine%209/BaseFeminine_head_bs_Head.dsf#BaseFeminine_head_bs_Head?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				},
+				{
+					"output" : "Genesis9:/data/Daz%203D/Genesis%209/Base/Morphs/Daz%203D/Base/head_bs_MouthRealism_HD3.dsf#head_bs_MouthRealism_HD3?value",
+					"operations" : [
+						{ "op" : "push", "url" : "Genesis9:#Laura_head_bs_Head?value" },
+						{ "op" : "push", "val" : 1 },
+						{ "op" : "mult" }
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"modifiers" : [
+			{
+				"id" : "Laura_head_bs_Head-1",
+				"url" : "#Laura_head_bs_Head"
+			}
+		]
+	}
+}
