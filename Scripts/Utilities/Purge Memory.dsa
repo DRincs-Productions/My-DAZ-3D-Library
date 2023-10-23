@@ -1,22 +1,24 @@
 // DAZ Studio version 4.5.1.41 filetype DAZ Script
-
 /**********************************************************************
-	Copyright (C) 2002-2013 DAZ 3D, Inc. All Rights Reserved.
+	Copyright (C) 2002-2023 Daz 3D, Inc. All Rights Reserved.
 
-	This file is part of the DAZ Script Documentation.
-
-	This file may be used only in accordance with the DAZ Script 
-	license provided with the DAZ Script Documentation.
-
-	The contents of this file may not be disclosed to third parties, 
-	copied or duplicated in any form, in whole or in part, without the 
-	prior written permission of DAZ 3D, Inc, except as explicitly
-	allowed in the DAZ Script license.
-
-	See http://www.daz3d.com to contact DAZ 3D, Inc or for more 
-	information about DAZ Script.
+	This script is provided as part of the Daz Script Documentation. The
+	contents of this script, and\or any portion thereof, may only be used
+	in accordance with the following license:
+ 
+	Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+	- http://creativecommons.org/licenses/by/3.0
+ 
+	To contact Daz 3D or for more information about Daz Script visit the
+	Daz 3D website:
+ 
+	- http://www.daz3d.com
+ 
 **********************************************************************/
+// Source: 13176-42_DefaultResourcesContent: ./Scripts/Utilities/Purge Memory.dsa
 
-//Clears Undo Stack and delayed delete stack to reclaim memory
+// Clear the undo stack
 UndoStack.clearAll();
+
+// Clear the delayed delete stack
 App.clearDelayedDeleteStack( true );

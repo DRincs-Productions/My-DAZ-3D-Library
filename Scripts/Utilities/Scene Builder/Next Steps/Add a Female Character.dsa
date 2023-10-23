@@ -2,43 +2,61 @@
 /**********************************************************************
 	File: Scene Builder Root.dsa
 	
-	Copyright (C) 2002-2016 DAZ 3D, Inc. All Rights Reserved.
+	Copyright (C) 2002-2023 Daz 3D, Inc. All Rights Reserved.
 
-	This file is part of the DAZ Script Documentation.
-
-	This file may be used only in accordance with the DAZ Script 
-	license provided with the DAZ Script Documentation.
-
-	The contents of this file may not be disclosed to third parties, 
-	copied or duplicated in any form, in whole or in part, without the 
-	prior written permission of DAZ 3D, Inc, except as explicitly
-	allowed in the DAZ Script license.
-
-	See http://www.daz3d.com to contact DAZ 3D, Inc or for more 
-	information about DAZ Script.
+	This script is provided as part of the Daz Script Documentation. The
+	contents of this script, and\or any portion thereof, may only be used
+	in accordance with the following license:
+ 
+	Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+	- http://creativecommons.org/licenses/by/3.0
+ 
+	To contact Daz 3D or for more information about Daz Script visit the
+	Daz 3D website:
+ 
+	- http://www.daz3d.com
+ 
 **********************************************************************/
-// Get the path of this script
-var g_sCurrentFile = getScriptFileName();
+// Source: 13176-42_DefaultResourcesContent: ./Scripts/Utilities/Scene Builder/Next Steps/Add a Female Character.dsa
 
-// If the application version is 4.9.2.69 or newer
-if( App.version64 >= 0x0004000900020045 ){
+/**********************************************************************/
+// String : A function to get the relative path for a path
+function getRelativePath( sPath )
+{
+	// Declare working variables
+	var sRelativePath;
+	var aAssets;
+	var oAsset;
+	
 	// Get the content manager
 	var oContentMgr = App.getContentMgr();
-	// Get the relative path of this file
-	var sRelativePath = oContentMgr.getRelativePath( DzContentMgr.NativeDirs | DzContentMgr.CloudDB, g_sCurrentFile );
-
+	
 	// Get the asset manager
 	var oAssetMgr = App.getAssetMgr();
-	// Find installed user-facing assets for this file
-	var aAssets = oAssetMgr.findAssetsForFile( sRelativePath, true, true );
-	// If we have an asset
-	if( aAssets.length > 0 ){
-		// Get the first asset
-		var oAsset = aAssets[0];
-		// Update the current file
-		g_sCurrentFile = String("%1/%2").arg( oAsset.originalPath ).arg( oAsset.originalFilename );
+	
+	// If the application version is 4.9.2.69 or newer
+	if( App.version64 >= 0x0004000900020045 ){
+		// Get the relative path of this file
+		sRelativePath = oContentMgr.getRelativePath( DzContentMgr.NativeDirs | DzContentMgr.CloudDB, sPath );
+		
+		// Find installed user-facing assets for this file
+		aAssets = oAssetMgr.findAssetsForFile( sRelativePath, true, true );
+		// If we have an asset
+		if( aAssets.length > 0 ){
+			// Get the first asset
+			oAsset = aAssets[0];
+			// Return the asset path
+			return String( "%1/%2" ).arg( oAsset.originalPath ).arg( oAsset.originalFilename );
+		}
 	}
-}
+	
+	// Return the original path
+	return sPath;
+};
+
+/**********************************************************************/
+// Get the (relative) path of this script
+var g_sCurrentFile = getRelativePath( getScriptFileName() );
 
 // Create a file info object for easy access
 var g_oFile = new DzFileInfo( g_sCurrentFile );

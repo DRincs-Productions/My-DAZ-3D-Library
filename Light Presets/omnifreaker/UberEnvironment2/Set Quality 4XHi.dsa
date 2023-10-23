@@ -1,43 +1,46 @@
 // DAZ Studio version 3.0  filetype DAZ Script
 
 /**********************************************************************
-	Copyright (C) 2002-2012 DAZ 3D, Inc. All Rights Reserved.
+	Copyright (C) 2002-2023 Daz 3D, Inc. All Rights Reserved.
 
-	This is UNPUBLISHED PROPRIETARY SOURCE CODE of DAZ 3D, Inc.
-	the contents of this file may not be disclosed to third parties,
-	copied or duplicated in any form, in whole or in part, without the
-	prior written permission of DAZ 3D, Inc.
+	This script is provided as part of the Daz Script Documentation. The
+	contents of this script, and\or any portion thereof, may only be used
+	in accordance with the following license:
+ 
+	Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+	- http://creativecommons.org/licenses/by/3.0
+ 
+	To contact Daz 3D or for more information about Daz Script visit the
+	Daz 3D website:
+ 
+	- http://www.daz3d.com
+ 
 **********************************************************************/
 
 var sel = Scene.getSelectedNodeList();
+var selNode;
+var oProperty;
+
 beginUndo();
-if( sel.length < 1 )
-{
+if( sel.length < 1 ){
 	MessageBox.information( "You must select UberEnvironment Light(s) first.", "Preset", "&OK" );
-}
-else
-{
-	for (var i = 0; i < sel.length; i++)
-	{
+} else {
+	for( var i = 0; i < sel.length; i++ ){
 		selNode = sel[ i ];
-		var oProperty = selNode.findProperty( "Occlusion Samples" );
-		if( oProperty )
-		{
+		oProperty = selNode.findProperty( "Occlusion Samples" );
+		if( oProperty ){
 			oProperty.setValue( 128 );
-		}
-		else
-		{
+		} else {
 			MessageBox.information( "%1 is not an UberEnvironment Light(s); Please select UberEnvironment Light(s).".arg(selNode.name), "Preset", "&OK" );
 		}
-
-		var oProperty = selNode.findProperty( "Shading Rate" );
-		if( oProperty )
-		{
+		
+		oProperty = selNode.findProperty( "Shading Rate" );
+		if( oProperty ){
 			oProperty.setValue( 8 );
 		}
-		var oProperty = selNode.findProperty( "Max Error" );
-		if( oProperty )
-		{
+		
+		oProperty = selNode.findProperty( "Max Error" );
+		if( oProperty ){
 			oProperty.setValue( 0.1 );
 		}
 	}

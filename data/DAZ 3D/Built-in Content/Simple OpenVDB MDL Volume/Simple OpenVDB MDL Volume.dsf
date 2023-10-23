@@ -1,15 +1,15 @@
 {
-	"file_version" : "0.6.0.0",
+	"file_version" : "0.6.1.0",
 	"asset_info" : {
 		"id" : "/data/DAZ%203D/Built-in%20Content/Simple%20OpenVDB%20MDL%20Volume/Simple%20OpenVDB%20MDL%20Volume.dsf",
 		"type" : "material",
 		"contributor" : {
-			"author" : "Daz 3D",
+			"author" : "DAZ 3D",
 			"email" : "",
-			"website" : ""
+			"website" : "www.daz3d.com"
 		},
-		"revision" : "0.0",
-		"modified" : "2021-11-09T16:44:01Z"
+		"revision" : "1.0",
+		"modified" : "2023-10-08T13:10:43Z"
 	},
 	"material_library" : [
 		{
@@ -27,14 +27,7 @@
 					"default_image_gamma" : 0,
 					"mappable" : true
 				},
-				"group" : "/Viewport",
-				"presentation" : {
-					"type" : "",
-					"label" : "",
-					"description" : "",
-					"icon_large" : "",
-					"colors" : [ [ 0.5019608, 0.5019608, 0.5019608 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
-				}
+				"group" : "/Viewport"
 			},
 			"transparency" : {
 				"channel" : {
@@ -51,14 +44,7 @@
 					"default_image_gamma" : 1,
 					"mappable" : true
 				},
-				"group" : "/Viewport",
-				"presentation" : {
-					"type" : "",
-					"label" : "",
-					"description" : "",
-					"icon_large" : "",
-					"colors" : [ [ 0.5019608, 0.5019608, 0.5019608 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
-				}
+				"group" : "/Viewport"
 			},
 			"extra" : [
 				{
@@ -83,13 +69,31 @@
 																"user_out_1" : {
 																	"type" : "settings",
 																	"value" : {
+																		"ArgName" : "diffuse_color_value_arg",
+																		"ParamType" : "color",
+																		"PropertyClass" : "DzColorProperty",
+																		"PropertyName" : "Diffuse Color"
+																	}
+																},
+																"user_out_2" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "opacity_strength_value_arg",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "Opacity Strength"
+																	}
+																},
+																"user_out_3" : {
+																	"type" : "settings",
+																	"value" : {
 																		"ArgName" : "volume_file_value_arg",
 																		"ParamType" : "string",
 																		"PropertyClass" : "DzFileProperty",
 																		"PropertyName" : "Volume File"
 																	}
 																},
-																"user_out_2" : {
+																"user_out_4" : {
 																	"type" : "settings",
 																	"value" : {
 																		"ArgName" : "volume_channel_value_arg",
@@ -98,31 +102,13 @@
 																		"PropertyName" : "Volume Channel"
 																	}
 																},
-																"user_out_3" : {
+																"user_out_5" : {
 																	"type" : "settings",
 																	"value" : {
 																		"ArgName" : "clip_to_geometry_value_arg",
 																		"ParamType" : "bool",
 																		"PropertyClass" : "DzBoolProperty",
 																		"PropertyName" : "Clip To Geometry"
-																	}
-																},
-																"user_out_4" : {
-																	"type" : "settings",
-																	"value" : {
-																		"ArgName" : "diffuse_color_value_arg",
-																		"ParamType" : "color",
-																		"PropertyClass" : "DzColorProperty",
-																		"PropertyName" : "Diffuse Color"
-																	}
-																},
-																"user_out_5" : {
-																	"type" : "settings",
-																	"value" : {
-																		"ArgName" : "opacity_strength_value_arg",
-																		"ParamType" : "float",
-																		"PropertyClass" : "DzFloatProperty",
-																		"PropertyName" : "Opacity Strength"
 																	}
 																},
 																"user_out_6" : {
@@ -178,6 +164,60 @@
 																		"PropertyClass" : "DzBoolProperty",
 																		"PropertyName" : "Density Relative To Size"
 																	}
+																},
+																"user_out_12" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "should_show",
+																		"ParamType" : "bool",
+																		"PropertyClass" : "DzBoolProperty",
+																		"PropertyName" : "Emission Enable"
+																	}
+																},
+																"user_out_13" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "volume_channel_value_arg_1",
+																		"ParamType" : "string",
+																		"PropertyClass" : "DzStringProperty",
+																		"PropertyName" : "Emission Volume Channel"
+																	}
+																},
+																"user_out_14" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "temperature_mult",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "Emission Temperature Mult"
+																	}
+																},
+																"user_out_15" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "temperature_offset",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "Emission Temperature Offset"
+																	}
+																},
+																"user_out_16" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "scale",
+																		"ParamType" : "float",
+																		"PropertyClass" : "DzFloatProperty",
+																		"PropertyName" : "Emission Scale"
+																	}
+																},
+																"user_out_17" : {
+																	"type" : "settings",
+																	"value" : {
+																		"ArgName" : "tint",
+																		"ParamType" : "color",
+																		"PropertyClass" : "DzFloatColorProperty",
+																		"PropertyName" : "Emission Tint"
+																	}
 																}
 															}
 														},
@@ -186,8 +226,8 @@
 															"value" : {
 																"BrickTitle" : "User Parameters (3)",
 																"HideParams" : false,
-																"PosX" : -528,
-																"PosY" : -159,
+																"PosX" : -13075,
+																"PosY" : -252,
 																"BrickIsRightToLeft" : false,
 																"Width" : [ "i", 200 ],
 																"Height" : [ "i", 380 ],
@@ -349,6 +389,97 @@
 																					}
 																				}
 																			}
+																		},
+																		"Param_12" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 236,
+																						"Green" : 180,
+																						"Blue" : 225
+																					}
+																				}
+																			}
+																		},
+																		"Param_13" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 224,
+																						"Green" : 15,
+																						"Blue" : 225
+																					}
+																				}
+																			}
+																		},
+																		"Param_14" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 206,
+																						"Green" : 74,
+																						"Blue" : 225
+																					}
+																				}
+																			}
+																		},
+																		"Param_15" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 216,
+																						"Green" : 147,
+																						"Blue" : 164
+																					}
+																				}
+																			}
+																		},
+																		"Param_16" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 32,
+																						"Green" : 232,
+																						"Blue" : 37
+																					}
+																				}
+																			}
+																		},
+																		"Param_17" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 96,
+																						"Green" : 240,
+																						"Blue" : 84
+																					}
+																				}
+																			}
+																		},
+																		"Param_18" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 170,
+																						"Green" : 226,
+																						"Blue" : 231
+																					}
+																				}
+																			}
 																		}
 																	}
 																},
@@ -370,95 +501,6 @@
 															"type" : "settings",
 															"value" : {
 																"Label" : "Auto Add"
-															}
-														},
-														"volume_file_value_arg" : {
-															"type" : "settings",
-															"value" : {
-																"Tokens" : "elr_volume_file_value_arg_b1_t0",
-																"Label" : "Volume File",
-																"Prop_0" : {
-																	"type" : "settings",
-																	"value" : {
-																		"Label" : "Volume File",
-																		"Hidden" : false,
-																		"Path" : "/Volume",
-																		"UserProperty" : false,
-																		"CanAnimate" : false,
-																		"Locked" : false,
-																		"Manipulator" : true,
-																		"Favorite" : false,
-																		"GlobalFavorite" : false,
-																		"Selected" : false,
-																		"AutoFollow" : false,
-																		"AutoFollowTarget" : "",
-																		"Filter" : "VDB (*.vdb)",
-																		"FileType" : [ "i", 1 ],
-																		"Value" : "",
-																		"Name" : "Volume File"
-																	}
-																}
-															}
-														},
-														"volume_channel_value_arg" : {
-															"type" : "settings",
-															"value" : {
-																"Tokens" : "elr_volume_channel_value_arg_b1_t0",
-																"Label" : "Volume Channel",
-																"Prop_0" : {
-																	"type" : "settings",
-																	"value" : {
-																		"Label" : "Volume Channel",
-																		"Hidden" : false,
-																		"Path" : "/Volume",
-																		"UserProperty" : false,
-																		"CanAnimate" : false,
-																		"Locked" : false,
-																		"Manipulator" : true,
-																		"Favorite" : false,
-																		"GlobalFavorite" : false,
-																		"Selected" : false,
-																		"AutoFollow" : false,
-																		"AutoFollowTarget" : "",
-																		"Value" : "",
-																		"Name" : "Volume Channel"
-																	}
-																}
-															}
-														},
-														"clip_to_geometry_value_arg" : {
-															"type" : "settings",
-															"value" : {
-																"Tokens" : "elr_clip_to_geometry_value_arg_b1_t0",
-																"Label" : "Clip To Geometry",
-																"Prop_0" : {
-																	"type" : "settings",
-																	"value" : {
-																		"Label" : "Clip To Geometry",
-																		"Hidden" : false,
-																		"Path" : "/Volume",
-																		"UserProperty" : false,
-																		"CanAnimate" : false,
-																		"Locked" : false,
-																		"Manipulator" : true,
-																		"Favorite" : false,
-																		"GlobalFavorite" : false,
-																		"Selected" : false,
-																		"AutoFollow" : false,
-																		"AutoFollowTarget" : "",
-																		"XYZInterest" : "None",
-																		"Clamped" : false,
-																		"Mapable" : false,
-																		"NeedMap" : false,
-																		"DefaultImageGamma" : 0,
-																		"Min" : [ "i", -2147483648 ],
-																		"Max" : [ "i", 2147483647 ],
-																		"Sensitivity" : [ "i", 1 ],
-																		"Value" : true,
-																		"DefaultValue" : true,
-																		"Name" : "Clip To Geometry"
-																	}
-																}
 															}
 														},
 														"diffuse_color_value_arg" : {
@@ -493,9 +535,9 @@
 																		"Value" : {
 																			"type" : "settings",
 																			"value" : {
-																				"Red" : [ "i", 186 ],
-																				"Green" : [ "i", 186 ],
-																				"Blue" : [ "i", 186 ]
+																				"Red" : [ "i", 255 ],
+																				"Green" : [ "i", 255 ],
+																				"Blue" : [ "i", 255 ]
 																			}
 																		},
 																		"DefaultValue" : {
@@ -550,6 +592,97 @@
 																}
 															}
 														},
+														"volume_file_value_arg" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_volume_file_value_arg_b1_t0",
+																"Label" : "Volume File",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Volume File",
+																		"Hidden" : false,
+																		"Path" : "/Volume",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"Filter" : "VDB (*.vdb)",
+																		"FileType" : [ "i", 1 ],
+																		"Value" : "",
+																		"DefaultValue" : "",
+																		"Name" : "Volume File"
+																	}
+																}
+															}
+														},
+														"volume_channel_value_arg" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_volume_channel_value_arg_b1_t0",
+																"Label" : "Volume Channel",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Volume Channel",
+																		"Hidden" : false,
+																		"Path" : "/Volume",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"Value" : "density",
+																		"DefaultValue" : "",
+																		"Name" : "Volume Channel"
+																	}
+																}
+															}
+														},
+														"clip_to_geometry_value_arg" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_clip_to_geometry_value_arg_b1_t0",
+																"Label" : "Clip To Geometry",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Clip To Geometry",
+																		"Hidden" : false,
+																		"Path" : "/Volume",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : true,
+																		"DefaultValue" : true,
+																		"Name" : "Clip To Geometry"
+																	}
+																}
+															}
+														},
 														"scattering_multiplier" : {
 															"type" : "settings",
 															"value" : {
@@ -582,9 +715,9 @@
 																		"Value" : {
 																			"type" : "settings",
 																			"value" : {
-																				"RedF" : 0.499505,
-																				"GreenF" : 0.499505,
-																				"BlueF" : 0.499505
+																				"RedF" : 0,
+																				"GreenF" : 0,
+																				"BlueF" : 0
 																			}
 																		},
 																		"DefaultValue" : {
@@ -632,9 +765,9 @@
 																		"Value" : {
 																			"type" : "settings",
 																			"value" : {
-																				"RedF" : 0.499505,
-																				"GreenF" : 0.499505,
-																				"BlueF" : 0.499505
+																				"RedF" : 0,
+																				"GreenF" : 0,
+																				"BlueF" : 0
 																			}
 																		},
 																		"DefaultValue" : {
@@ -820,6 +953,226 @@
 																	}
 																}
 															}
+														},
+														"should_show" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_should_show_b1_t0",
+																"Label" : "Emission Enable",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Emission Enable",
+																		"Hidden" : false,
+																		"Path" : "/Volume",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : false,
+																		"DefaultValue" : false,
+																		"Name" : "Emission Enable"
+																	}
+																}
+															}
+														},
+														"volume_channel_value_arg_1" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_volume_channel_value_arg_1_b1_t0",
+																"Label" : "Emission Volume Channel",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Emission Volume Channel",
+																		"Hidden" : false,
+																		"Path" : "/Volume",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"Value" : "temperature",
+																		"DefaultValue" : "",
+																		"Name" : "Emission Volume Channel"
+																	}
+																}
+															}
+														},
+														"temperature_mult" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_temperature_mult_b1_t0",
+																"Label" : "Emission Temperature Mult",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Emission Temperature Mult",
+																		"Hidden" : false,
+																		"Path" : "/Volume",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : -1000,
+																		"Max" : 1000,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 1,
+																		"DefaultValue" : 1,
+																		"Name" : "Emission Temperature Mult"
+																	}
+																}
+															}
+														},
+														"temperature_offset" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_temperature_offset_b1_t0",
+																"Label" : "Emission Temperature Offset",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Emission Temperature Offset",
+																		"Hidden" : false,
+																		"Path" : "/Volume",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : -1000,
+																		"Max" : 1000,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 0,
+																		"DefaultValue" : 0,
+																		"Name" : "Emission Temperature Offset"
+																	}
+																}
+															}
+														},
+														"scale" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_scale_b1_t0",
+																"Label" : "Emission Scale",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Emission Scale",
+																		"Hidden" : false,
+																		"Path" : "/Volume",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 1,
+																		"Min" : -1000,
+																		"Max" : 1000,
+																		"Sensitivity" : 0.01,
+																		"AsPercent" : false,
+																		"Value" : 1,
+																		"DefaultValue" : 1,
+																		"Name" : "Emission Scale"
+																	}
+																}
+															}
+														},
+														"tint" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_tint_b1_t0",
+																"Label" : "Emission Tint",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Emission Tint",
+																		"Hidden" : false,
+																		"Path" : "/Volume",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 1,
+																		"BlendMode" : [ "i", 2 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"RedF" : 1,
+																				"GreenF" : 1,
+																				"BlueF" : 1
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"RedF" : 1,
+																				"GreenF" : 1,
+																				"BlueF" : 1
+																			}
+																		},
+																		"Name" : "Emission Tint"
+																	}
+																}
+															}
 														}
 													}
 												}
@@ -839,17 +1192,17 @@
 																	"type" : "settings",
 																	"value" : {
 																		"Name" : "shader_MDL_Surface",
-																		"LastInvalidate" : "1636474001"
+																		"LastInvalidate" : "1696769572"
 																	}
 																},
 																"SettingsGroupCollapsed" : true,
 																"BrickTitle" : "MDL Surface (2)",
 																"HideParams" : false,
-																"PosX" : 425,
-																"PosY" : -120,
+																"PosX" : -11444,
+																"PosY" : -207,
 																"BrickIsRightToLeft" : false,
 																"Width" : [ "i", 200 ],
-																"Height" : [ "i", 154 ],
+																"Height" : [ "i", 169 ],
 																"BrickParams" : {
 																	"type" : "settings",
 																	"value" : {
@@ -906,6 +1259,19 @@
 																			}
 																		},
 																		"Param_4" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_5" : {
 																			"type" : "settings",
 																			"value" : {
 																				"ConnectionColor" : {
@@ -989,6 +1355,41 @@
 																}
 															}
 														},
+														"exclude_from_white_mode" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_exclude_from_white_mode_b2_t0",
+																"Label" : "Exclude From White Mode",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Exclude From White Mode",
+																		"Hidden" : false,
+																		"Path" : "/General/Display",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : false,
+																		"DefaultValue" : false,
+																		"Name" : "Exclude From White Mode"
+																	}
+																}
+															}
+														},
 														"subd_displacement_level" : {
 															"type" : "settings",
 															"value" : {
@@ -1052,11 +1453,11 @@
 															"value" : {
 																"BrickTitle" : "Uber Add Inhomogeneous Volume (4)",
 																"HideParams" : false,
-																"PosX" : 160,
-																"PosY" : -121,
+																"PosX" : -11741,
+																"PosY" : -207,
 																"BrickIsRightToLeft" : false,
 																"Width" : [ "i", 232 ],
-																"Height" : [ "i", 177 ],
+																"Height" : [ "i", 196 ],
 																"BrickParams" : {
 																	"type" : "settings",
 																	"value" : {
@@ -1124,12 +1525,25 @@
 																					}
 																				}
 																			}
+																		},
+																		"Param_5" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
 																		}
 																	}
 																}
 															}
 														},
-														"BrickVersion" : 2021.0,
+														"BrickVersion" : 2021,
 														"BrickProperties" : {
 															"type" : "settings",
 															"value" : {
@@ -1170,6 +1584,12 @@
 															"value" : {
 																"Label" : "Thin Walled"
 															}
+														},
+														"emission_intensity" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Emission Intensity"
+															}
 														}
 													}
 												}
@@ -1187,8 +1607,8 @@
 															"value" : {
 																"BrickTitle" : "Lookup Volume Coefficients (5)",
 																"HideParams" : false,
-																"PosX" : -75,
-																"PosY" : -49,
+																"PosX" : -12306,
+																"PosY" : -268,
 																"BrickIsRightToLeft" : false,
 																"Width" : [ "i", 200 ],
 																"Height" : [ "i", 253 ],
@@ -1316,7 +1736,7 @@
 																}
 															}
 														},
-														"BrickVersion" : 2021.0,
+														"BrickVersion" : 2021,
 														"BrickProperties" : {
 															"type" : "settings",
 															"value" : {
@@ -1396,13 +1816,13 @@
 														"BrickSettings" : {
 															"type" : "settings",
 															"value" : {
-																"BrickTitle" : "Texture 3D Instance (8)",
+																"BrickTitle" : "Texture 3D Instance - Density (6)",
 																"HideParams" : false,
-																"PosX" : -273,
-																"PosY" : -174,
+																"PosX" : -12586,
+																"PosY" : -217,
 																"BrickIsRightToLeft" : false,
-																"Width" : [ "i", 156 ],
-																"Height" : [ "i", 146 ],
+																"Width" : [ "i", 218 ],
+																"Height" : [ "i", 127 ],
 																"BrickParams" : {
 																	"type" : "settings",
 																	"value" : {
@@ -1459,7 +1879,8 @@
 																			}
 																		}
 																	}
-																}
+																},
+																"OutputsGroupCollapsed" : true
 															}
 														},
 														"BrickVersion" : 1,
@@ -1503,6 +1924,7 @@
 																		"Filter" : "VDB (*.vdb)",
 																		"FileType" : [ "i", 1 ],
 																		"Value" : "",
+																		"DefaultValue" : "",
 																		"Name" : "Volume File"
 																	}
 																}
@@ -1529,6 +1951,7 @@
 																		"AutoFollow" : false,
 																		"AutoFollowTarget" : "",
 																		"Value" : "",
+																		"DefaultValue" : "",
 																		"Name" : "Volume Channel"
 																	}
 																}
@@ -1572,6 +1995,901 @@
 													}
 												}
 											}
+										},
+										"Brick_6" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzTexture3DInstanceBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "Texture 3D Instance - Emission (7)",
+																"HideParams" : false,
+																"PosX" : -12586,
+																"PosY" : -48,
+																"BrickIsRightToLeft" : false,
+																"Width" : [ "i", 220 ],
+																"Height" : [ "i", 127 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 23,
+																						"Green" : 137,
+																						"Blue" : 56
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																},
+																"OutputsGroupCollapsed" : true
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"Result" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_Result_b6_t0",
+																"Label" : "Result"
+															}
+														},
+														"file" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_file_b6_t0",
+																"Label" : "Emission Volume File",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Emission Volume File",
+																		"Hidden" : false,
+																		"Path" : "/Volume",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"Filter" : "VDB (*.vdb)",
+																		"FileType" : [ "i", 1 ],
+																		"Value" : "",
+																		"DefaultValue" : "",
+																		"Name" : "Volume File"
+																	}
+																}
+															}
+														},
+														"channel" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_channel_b6_t0",
+																"Label" : "Emission Volume Channel",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Emission Volume Channel",
+																		"Hidden" : false,
+																		"Path" : "/Volume",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"Value" : "",
+																		"DefaultValue" : "",
+																		"Name" : "Volume Channel"
+																	}
+																}
+															}
+														},
+														"clip_to_geometry" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_clip_to_geometry_b6_t0",
+																"Label" : "Clip To Geometry",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Clip To Geometry",
+																		"Hidden" : false,
+																		"Path" : "/Volume",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : false,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", -2147483648 ],
+																		"Max" : [ "i", 2147483647 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : true,
+																		"DefaultValue" : true,
+																		"Name" : "Clip To Geometry"
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_7" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzMdlBaseVolumeBlackbodyEmission",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "Volume Blackbody Emission (9)",
+																"HideParams" : false,
+																"PosX" : -12306,
+																"PosY" : 12,
+																"BrickIsRightToLeft" : false,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 215 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_4" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_5" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_6" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 155,
+																						"Green" : 117,
+																						"Blue" : 108
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														},
+														"BrickVersion" : 2021,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"temperature" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Temperature"
+															}
+														},
+														"density" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Density"
+															}
+														},
+														"temperature_mult" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Emission Temperature Mult"
+															}
+														},
+														"temperature_offset" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Emission Temperature Offset"
+															}
+														},
+														"scale" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Emission Scale"
+															}
+														},
+														"tint" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Emission Tint"
+															}
+														},
+														"Result" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_Result_b7_t0",
+																"Label" : "Result"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_8" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzDynamicallyHiddenUserParametersBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "Dynamically Hidden Parameters (8)",
+																"HideParams" : false,
+																"PosX" : -12586,
+																"PosY" : 172,
+																"BrickIsRightToLeft" : false,
+																"Width" : [ "i", 224 ],
+																"Height" : [ "i", 287 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_4" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_5" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_6" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																},
+																"SettingsGroupCollapsed" : false,
+																"InputsGroupCollapsed" : false,
+																"ShowAdvanced" : false
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"Expression Parameters Size" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Expression Parameters Size",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", 1 ],
+																		"Max" : [ "i", 32 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 1 ]
+																	}
+																},
+																"Target Parameters Size" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Target Parameters Size",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", 1 ],
+																		"Max" : [ "i", 32 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : [ "i", 5 ],
+																		"DefaultValue" : [ "i", 1 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"should_show" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_should_show_b8_t0",
+																"Label" : "Should Show"
+															}
+														},
+														"expression_parameters_0" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_expression_parameters_0_b8_t0",
+																"Label" : "Expression Parameters [0]"
+															}
+														},
+														"target_parameters_0" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_target_parameters_0_b8_t0",
+																"Label" : "Target Parameters [0]"
+															}
+														},
+														"target_parameters_1" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_target_parameters_1_b8_t0",
+																"Label" : "Target Parameters [1]"
+															}
+														},
+														"target_parameters_2" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_target_parameters_2_b8_t0",
+																"Label" : "Target Parameters [2]"
+															}
+														},
+														"target_parameters_3" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_target_parameters_3_b8_t0",
+																"Label" : "Target Parameters [3]"
+															}
+														},
+														"target_parameters_4" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_target_parameters_4_b8_t0",
+																"Label" : "Target Parameters [4]"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_9" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzChooseValueBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"ChooseType" : "color",
+														"ChooseArrayCount" : [ "i", 0 ],
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "Choose Value (9)",
+																"HideParams" : false,
+																"PosX" : -12014,
+																"PosY" : -97,
+																"BrickIsRightToLeft" : false,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 209 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 155,
+																						"Green" : 44,
+																						"Blue" : 61
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_2" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		},
+																		"Param_3" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																},
+																"ShowAdvanced" : false
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"Result Frequency" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Result Frequency",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 1 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : [ "i", 0 ],
+																		"DefaultValue" : [ "i", 0 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"choice" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_choice_b9_t0",
+																"Label" : "Choice"
+															}
+														},
+														"cond" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "If"
+															}
+														},
+														"true_exp" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Then"
+															}
+														},
+														"false_exp" : {
+															"type" : "settings",
+															"value" : {
+																"Label" : "Else"
+															}
+														}
+													}
+												}
+											}
+										},
+										"Brick_10" : {
+											"type" : "settings",
+											"value" : {
+												"DAZStudioClassName" : "DzDirectValueBrick",
+												"Attributes" : {
+													"type" : "settings",
+													"value" : {
+														"BrickSettings" : {
+															"type" : "settings",
+															"value" : {
+																"BrickTitle" : "Direct Value (10)",
+																"HideParams" : false,
+																"PosX" : -12303,
+																"PosY" : 272,
+																"BrickIsRightToLeft" : false,
+																"Width" : [ "i", 200 ],
+																"Height" : [ "i", 171 ],
+																"BrickParams" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Param_0" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 58,
+																						"Blue" : 8
+																					}
+																				}
+																			}
+																		},
+																		"Param_1" : {
+																			"type" : "settings",
+																			"value" : {
+																				"ConnectionColor" : {
+																					"type" : "settings",
+																					"value" : {
+																						"Red" : 39,
+																						"Green" : 39,
+																						"Blue" : 39
+																					}
+																				}
+																			}
+																		}
+																	}
+																},
+																"SettingsGroupCollapsed" : true
+															}
+														},
+														"BrickVersion" : 1,
+														"BrickProperties" : {
+															"type" : "settings",
+															"value" : {
+																"ValueType" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Type",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : false,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : [ "i", 0 ],
+																		"Max" : [ "i", 8 ],
+																		"Sensitivity" : [ "i", 1 ],
+																		"Value" : [ "i", 1 ],
+																		"DefaultValue" : [ "i", 0 ]
+																	}
+																}
+															}
+														}
+													}
+												},
+												"Parameters" : {
+													"type" : "settings",
+													"value" : {
+														"Result" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_Result_b10_t0",
+																"Label" : "Result"
+															}
+														},
+														"value" : {
+															"type" : "settings",
+															"value" : {
+																"Tokens" : "elr_value_b10_t0",
+																"Label" : "Value",
+																"Prop_0" : {
+																	"type" : "settings",
+																	"value" : {
+																		"Label" : "Value",
+																		"Hidden" : false,
+																		"Path" : "/General",
+																		"UserProperty" : false,
+																		"CanAnimate" : true,
+																		"Locked" : false,
+																		"Manipulator" : true,
+																		"Favorite" : false,
+																		"GlobalFavorite" : false,
+																		"Selected" : false,
+																		"AutoFollow" : false,
+																		"AutoFollowTarget" : "",
+																		"XYZInterest" : "None",
+																		"Clamped" : true,
+																		"Mapable" : false,
+																		"NeedMap" : false,
+																		"DefaultImageGamma" : 0,
+																		"Min" : 0,
+																		"Max" : 1,
+																		"Sensitivity" : 1,
+																		"BlendMode" : [ "i", 2 ],
+																		"Value" : {
+																			"type" : "settings",
+																			"value" : {
+																				"RedF" : 0,
+																				"GreenF" : 0,
+																				"BlueF" : 0
+																			}
+																		},
+																		"DefaultValue" : {
+																			"type" : "settings",
+																			"value" : {
+																				"RedF" : 0,
+																				"GreenF" : 0,
+																				"BlueF" : 0
+																			}
+																		},
+																		"Name" : "value2"
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
 										}
 									}
 								},
@@ -1599,13 +2917,22 @@
 										"Connection_2" : {
 											"type" : "settings",
 											"value" : {
+												"SourceBrick" : "Brick_3",
+												"TargetBrick" : "Brick_9",
+												"SourceParam" : "emission_intensity",
+												"TargetParam" : "choice"
+											}
+										},
+										"Connection_3" : {
+											"type" : "settings",
+											"value" : {
 												"SourceBrick" : "Brick_4",
 												"TargetBrick" : "Brick_5",
 												"SourceParam" : "density",
 												"TargetParam" : "Result"
 											}
 										},
-										"Connection_3" : {
+										"Connection_4" : {
 											"type" : "settings",
 											"value" : {
 												"SourceBrick" : "Brick_4",
@@ -1614,7 +2941,7 @@
 												"TargetParam" : "scattering_multiplier"
 											}
 										},
-										"Connection_4" : {
+										"Connection_5" : {
 											"type" : "settings",
 											"value" : {
 												"SourceBrick" : "Brick_4",
@@ -1623,7 +2950,7 @@
 												"TargetParam" : "absorption_multiplier"
 											}
 										},
-										"Connection_5" : {
+										"Connection_6" : {
 											"type" : "settings",
 											"value" : {
 												"SourceBrick" : "Brick_4",
@@ -1632,7 +2959,7 @@
 												"TargetParam" : "scattering_offset"
 											}
 										},
-										"Connection_6" : {
+										"Connection_7" : {
 											"type" : "settings",
 											"value" : {
 												"SourceBrick" : "Brick_4",
@@ -1641,7 +2968,7 @@
 												"TargetParam" : "absorption_offset"
 											}
 										},
-										"Connection_7" : {
+										"Connection_8" : {
 											"type" : "settings",
 											"value" : {
 												"SourceBrick" : "Brick_4",
@@ -1650,7 +2977,7 @@
 												"TargetParam" : "density_multiplier"
 											}
 										},
-										"Connection_8" : {
+										"Connection_9" : {
 											"type" : "settings",
 											"value" : {
 												"SourceBrick" : "Brick_4",
@@ -1659,7 +2986,7 @@
 												"TargetParam" : "density_relative_to_size"
 											}
 										},
-										"Connection_9" : {
+										"Connection_10" : {
 											"type" : "settings",
 											"value" : {
 												"SourceBrick" : "Brick_5",
@@ -1668,7 +2995,7 @@
 												"TargetParam" : "volume_file_value_arg"
 											}
 										},
-										"Connection_10" : {
+										"Connection_11" : {
 											"type" : "settings",
 											"value" : {
 												"SourceBrick" : "Brick_5",
@@ -1677,7 +3004,7 @@
 												"TargetParam" : "volume_channel_value_arg"
 											}
 										},
-										"Connection_11" : {
+										"Connection_12" : {
 											"type" : "settings",
 											"value" : {
 												"SourceBrick" : "Brick_5",
@@ -1685,11 +3012,182 @@
 												"SourceParam" : "clip_to_geometry",
 												"TargetParam" : "clip_to_geometry_value_arg"
 											}
+										},
+										"Connection_13" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_6",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "file",
+												"TargetParam" : "volume_file_value_arg"
+											}
+										},
+										"Connection_14" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_6",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "channel",
+												"TargetParam" : "volume_channel_value_arg_1"
+											}
+										},
+										"Connection_15" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_6",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "clip_to_geometry",
+												"TargetParam" : "clip_to_geometry_value_arg"
+											}
+										},
+										"Connection_16" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_7",
+												"TargetBrick" : "Brick_6",
+												"SourceParam" : "temperature",
+												"TargetParam" : "Result"
+											}
+										},
+										"Connection_17" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_7",
+												"TargetBrick" : "Brick_5",
+												"SourceParam" : "density",
+												"TargetParam" : "Result"
+											}
+										},
+										"Connection_18" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_7",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "temperature_mult",
+												"TargetParam" : "temperature_mult"
+											}
+										},
+										"Connection_19" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_7",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "temperature_offset",
+												"TargetParam" : "temperature_offset"
+											}
+										},
+										"Connection_20" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_7",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "scale",
+												"TargetParam" : "scale"
+											}
+										},
+										"Connection_21" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_7",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "tint",
+												"TargetParam" : "tint"
+											}
+										},
+										"Connection_22" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_8",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "should_show",
+												"TargetParam" : "should_show"
+											}
+										},
+										"Connection_23" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_8",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "expression_parameters_0",
+												"TargetParam" : "should_show"
+											}
+										},
+										"Connection_24" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_8",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "target_parameters_0",
+												"TargetParam" : "volume_channel_value_arg_1"
+											}
+										},
+										"Connection_25" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_8",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "target_parameters_1",
+												"TargetParam" : "temperature_mult"
+											}
+										},
+										"Connection_26" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_8",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "target_parameters_2",
+												"TargetParam" : "temperature_offset"
+											}
+										},
+										"Connection_27" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_8",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "target_parameters_3",
+												"TargetParam" : "scale"
+											}
+										},
+										"Connection_28" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_8",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "target_parameters_4",
+												"TargetParam" : "tint"
+											}
+										},
+										"Connection_29" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_9",
+												"TargetBrick" : "Brick_1",
+												"SourceParam" : "cond",
+												"TargetParam" : "should_show"
+											}
+										},
+										"Connection_30" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_9",
+												"TargetBrick" : "Brick_7",
+												"SourceParam" : "true_exp",
+												"TargetParam" : "Result"
+											}
+										},
+										"Connection_31" : {
+											"type" : "settings",
+											"value" : {
+												"SourceBrick" : "Brick_9",
+												"TargetBrick" : "Brick_10",
+												"SourceParam" : "false_exp",
+												"TargetParam" : "Result"
+											}
 										}
 									}
 								},
 								"BrickUserName" : "Simple OpenVDB MDL Volume",
-								"Identifier" : "{1755f180-5875-4ffe-9ce1-01ce37ab0489}"
+								"Identifier" : "{9ac73ee6-c55a-4345-84e1-7c6c5588796a}"
 							}
 						}
 					}
@@ -1704,14 +3202,7 @@
 								"label" : "Tags",
 								"value" : ""
 							},
-							"group" : "/General",
-							"presentation" : {
-								"type" : "",
-								"label" : "",
-								"description" : "",
-								"icon_large" : "",
-								"colors" : [ [ 0.5019608, 0.5019608, 0.5019608 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
-							}
+							"group" : "/General"
 						},
 						{
 							"channel" : {
@@ -1720,14 +3211,7 @@
 								"label" : "Smooth",
 								"value" : true
 							},
-							"group" : "/Smoothing",
-							"presentation" : {
-								"type" : "",
-								"label" : "",
-								"description" : "",
-								"icon_large" : "",
-								"colors" : [ [ 0.5019608, 0.5019608, 0.5019608 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
-							}
+							"group" : "/Smoothing"
 						},
 						{
 							"channel" : {
@@ -1740,14 +3224,7 @@
 								"clamped" : true,
 								"step_size" : 0.01
 							},
-							"group" : "/Smoothing",
-							"presentation" : {
-								"type" : "",
-								"label" : "",
-								"description" : "",
-								"icon_large" : "",
-								"colors" : [ [ 0.5019608, 0.5019608, 0.5019608 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
-							}
+							"group" : "/Smoothing"
 						},
 						{
 							"channel" : {
@@ -1759,14 +3236,7 @@
 								"max" : 1,
 								"clamped" : true
 							},
-							"group" : "/Lines",
-							"presentation" : {
-								"type" : "",
-								"label" : "",
-								"description" : "",
-								"icon_large" : "",
-								"colors" : [ [ 0.5019608, 0.5019608, 0.5019608 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
-							}
+							"group" : "/Lines"
 						},
 						{
 							"channel" : {
@@ -1832,6 +3302,7 @@
 								"label" : "Volume File",
 								"value" : "",
 								"file_type" : "file_open",
+								"file_display_text" : "",
 								"file_filter" : "VDB (*.vdb)"
 							},
 							"group" : "/Volume",
@@ -1988,6 +3459,115 @@
 								"description" : "",
 								"icon_large" : "",
 								"colors" : [ [ 0.4941176, 0.4039216, 0.5882353 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
+							}
+						},
+						{
+							"channel" : {
+								"id" : "Emission Enable",
+								"type" : "bool",
+								"label" : "Emission Enable",
+								"value" : false
+							},
+							"group" : "/Volume",
+							"presentation" : {
+								"type" : "",
+								"label" : "",
+								"description" : "",
+								"icon_large" : "",
+								"colors" : [ [ 1, 1, 0.8 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
+							}
+						},
+						{
+							"channel" : {
+								"id" : "Emission Volume Channel",
+								"type" : "string",
+								"label" : "Emission Volume Channel",
+								"value" : ""
+							},
+							"group" : "/Volume",
+							"presentation" : {
+								"type" : "",
+								"label" : "",
+								"description" : "",
+								"icon_large" : "",
+								"colors" : [ [ 1, 1, 0.8 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
+							}
+						},
+						{
+							"channel" : {
+								"id" : "Emission Temperature Mult",
+								"type" : "float",
+								"label" : "Emission Temperature Mult",
+								"value" : 1,
+								"min" : -1000,
+								"max" : 1000,
+								"step_size" : 0.01
+							},
+							"group" : "/Volume",
+							"presentation" : {
+								"type" : "",
+								"label" : "",
+								"description" : "",
+								"icon_large" : "",
+								"colors" : [ [ 1, 1, 0.8 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
+							}
+						},
+						{
+							"channel" : {
+								"id" : "Emission Temperature Offset",
+								"type" : "float",
+								"label" : "Emission Temperature Offset",
+								"value" : 0,
+								"min" : -1000,
+								"max" : 1000,
+								"step_size" : 0.01
+							},
+							"group" : "/Volume",
+							"presentation" : {
+								"type" : "",
+								"label" : "",
+								"description" : "",
+								"icon_large" : "",
+								"colors" : [ [ 1, 1, 0.8 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
+							}
+						},
+						{
+							"channel" : {
+								"id" : "Emission Scale",
+								"type" : "float",
+								"label" : "Emission Scale",
+								"value" : 1,
+								"min" : -1000,
+								"max" : 1000,
+								"step_size" : 0.01
+							},
+							"group" : "/Volume",
+							"presentation" : {
+								"type" : "",
+								"label" : "",
+								"description" : "",
+								"icon_large" : "",
+								"colors" : [ [ 1, 1, 0.8 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
+							}
+						},
+						{
+							"channel" : {
+								"id" : "Emission Tint",
+								"type" : "float_color",
+								"label" : "Emission Tint",
+								"value" : [ 1, 1, 1 ],
+								"min" : 0,
+								"max" : 1,
+								"clamped" : true,
+								"step_size" : 1
+							},
+							"group" : "/Volume",
+							"presentation" : {
+								"type" : "",
+								"label" : "",
+								"description" : "",
+								"icon_large" : "",
+								"colors" : [ [ 1, 1, 0.8 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
 							}
 						}
 					]

@@ -1,15 +1,15 @@
 {
-	"file_version" : "0.6.0.0",
+	"file_version" : "0.6.1.0",
 	"asset_info" : {
 		"id" : "/Shader%20Presets/Iray/Daz%20Volume/Simple%20OpenVDB%20MDL%20Volume.duf",
 		"type" : "preset_shader",
 		"contributor" : {
-			"author" : "Daz 3D",
+			"author" : "DAZ 3D",
 			"email" : "",
-			"website" : ""
+			"website" : "www.daz3d.com"
 		},
 		"revision" : "1.0",
-		"modified" : "2021-11-09T16:44:01Z"
+		"modified" : "2023-10-08T13:10:43Z"
 	},
 	"scene" : {
 		"materials" : [
@@ -57,6 +57,12 @@
 							{
 								"channel" : {
 									"id" : "Absorption Offset",
+									"type" : "float_color"
+								}
+							},
+							{
+								"channel" : {
+									"id" : "Emission Tint",
 									"type" : "float_color"
 								}
 							}

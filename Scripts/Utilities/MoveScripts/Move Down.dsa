@@ -1,18 +1,35 @@
-// DAZ Studio version 3.0  filetype DAZ Script
-/**********************************************************************	
-	Copyright (C) 2002-2013 DAZ 3D, Inc. All Rights Reserved.
-	
-	This is UNPUBLISHED PROPRIETARY SOURCE CODE of DAZ 3D, Inc;
-	the contents of this file may not be disclosed to third parties, 
-	copied or duplicated in any form, in whole or in part, without the 
-	prior written permission of DAZ 3D, Inc.
-**********************************************************************/
+// DAZ Studio version 3.0 filetype DAZ Script
+/**********************************************************************
+	Copyright (C) 2002-2023 Daz 3D, Inc. All Rights Reserved.
 
-var oNode = Scene.getPrimarySelection();
-if( oNode ){
-	if( oNode.getNumNodeChildren() > 0 ){
-		var oNodeChild = oNode.getNodeChild( 0 );
-		Scene.selectAllNodes( false );
-		oNodeChild.select( true );
+	This script is provided as part of the Daz Script Documentation. The
+	contents of this script, and\or any portion thereof, may only be used
+	in accordance with the following license:
+ 
+	Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+	- http://creativecommons.org/licenses/by/3.0
+ 
+	To contact Daz 3D or for more information about Daz Script visit the
+	Daz 3D website:
+ 
+	- http://www.daz3d.com
+ 
+**********************************************************************/
+// Source: 13176-42_DefaultResourcesContent: ./Scripts/Utilities/Move Scripts/Move Down.dsa
+
+(function(){
+	
+	var oNode = Scene.getPrimarySelection();
+	if( !oNode ){
+		return;
 	}
-}
+	
+	if( oNode.getNumNodeChildren() < 1 ){
+		return;
+	}
+	
+	var oNodeChild = oNode.getNodeChild( 0 );
+	Scene.selectAllNodes( false );
+	oNodeChild.select( true );
+	
+})();

@@ -1,7 +1,7 @@
 // DAZ Studio version 4.10.0.123 filetype DAZ Script
 /**********************************************************************
  
-	Copyright (C) 2002-2018 Daz 3D, Inc. All Rights Reserved.
+	Copyright (C) 2002-2023 Daz 3D, Inc. All Rights Reserved.
  
 	This script is provided as part of the Daz Script Documentation. The
 	contents of this script, and\or any portion thereof, may only be used
@@ -81,7 +81,6 @@
 	aInstructions.push( oInstruction );
 	
 	
-	var sRenderer = "NVIDIA Iray";
 	oInstruction = renderSettingsPaneEditorRendererSelect(
 		sRenderer,
 		qsTr("Change the Active Renderer"),

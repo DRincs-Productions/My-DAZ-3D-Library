@@ -1,90 +1,94 @@
 // DAZ Studio version 3.0  filetype DAZ Script
 
 /**********************************************************************
-	Copyright (C) 2002-2012 DAZ 3D, Inc. All Rights Reserved.
+	Copyright (C) 2002-2023 Daz 3D, Inc. All Rights Reserved.
 
-	This is UNPUBLISHED PROPRIETARY SOURCE CODE of DAZ 3D, Inc.
-	the contents of this file may not be disclosed to third parties,
-	copied or duplicated in any form, in whole or in part, without the
-	prior written permission of DAZ 3D, Inc.
+	This script is provided as part of the Daz Script Documentation. The
+	contents of this script, and\or any portion thereof, may only be used
+	in accordance with the following license:
+ 
+	Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+	- http://creativecommons.org/licenses/by/3.0
+ 
+	To contact Daz 3D or for more information about Daz Script visit the
+	Daz 3D website:
+ 
+	- http://www.daz3d.com
+ 
 **********************************************************************/
 
 var g_sGeoName = "omCone1m24";
 var g_sGeoLabel = "omVolumeCone";
 
 function getChildByName(oNode, sName) {
-    aChildren = oNode.getNodeChildren()
-    for (var i=0; i< aChildren.length; i++) {
-        
-        if (aChildren[i].name == sName) {
-            return aChildren[i];
-        }
-    }
-    return undefined;
+	aChildren = oNode.getNodeChildren()
+	for (var i=0; i< aChildren.length; i++) {
+		if (aChildren[i].name == sName) {
+			return aChildren[i];
+		}
+	}
+	return undefined;
 }
 
 // Start the cone expression callback
 function startCallback() {
 	print("Starting %1 callback".arg(g_sGeoLabel));
 
-    var sScriptPath = String( "%1/support/DAZ/Uber/lib/omSpotConeCallbackStart.dse" ).arg( App.getScriptsPath() );
-    if (! new DzFileInfo(sScriptPath)) {
-        MessageBox.critical( "Unable to find library file \"%1\"; Make sure that the files have been installed correctly.".arg(sScriptPath), "UberVolume", "&OK" );
-        return false;
-    }
-    
-    var oScript = new DzScript();
-    if( oScript.loadFromFile( sScriptPath ) ) {
-        oScript.execute();
-    }
+	var sScriptPath = String( "%1/support/DAZ/Uber/lib/omSpotConeCallbackStart.dse" ).arg( App.getScriptsPath() );
+	if (! new DzFileInfo(sScriptPath)) {
+		MessageBox.critical( "Unable to find library file \"%1\"; Make sure that the files have been installed correctly.".arg(sScriptPath), "UberVolume", "&OK" );
+		return false;
+	}
+	
+	var oScript = new DzScript();
+	if( oScript.loadFromFile( sScriptPath ) ) {
+		oScript.execute();
+	}
 
 }
 
 function main() {
-    var sel = Scene.getSelectedLightList();
-    var oProp;
+	var sel = Scene.getSelectedLightList();
+	var oProp;
 
-    if( sel.length < 1 )
-    {
-        MessageBox.information( "You must select a Light first.", "UberVolume", "&OK" );
+	if( sel.length < 1 )
+	{
+		MessageBox.information( "You must select a Light first.", "UberVolume", "&OK" );
 			return false;
-
-    } else if ( sel.length > 2 ) {
-        MessageBox.information( "Select only one light.", "UberVolume", "&OK" );
+	} else if ( sel.length > 2 ) {
+		MessageBox.information( "Select only one light.", "UberVolume", "&OK" );
 			return false;
-
-    } else {
+	} else {
 		var oConMgr = App.getContentMgr();
-        var sScenePath = oConMgr.getAbsolutePath( String( "/data/DAZ 3D/Built-in Content/Scenes/%2.duf" ).arg(g_sGeoLabel), false );
-        if ( sScenePath=="" || ! new DzFileInfo(sScenePath).exists()) {            
-           MessageBox.critical( '"%1" does not exist; check your install.'.arg(sScenePath), "UberVolume", "&OK" );
-            return false;
-        }
+		var sScenePath = oConMgr.getAbsolutePath( String( "/data/DAZ 3D/Built-in Content/Scenes/%2.duf" ).arg(g_sGeoLabel), false );
+		if ( sScenePath=="" || ! new DzFileInfo(sScenePath).exists()) {
+			MessageBox.critical( '"%1" does not exist; check your install.'.arg(sScenePath), "UberVolume", "&OK" );
+			return false;
+		}
 
-      var oLight = sel[ 0 ];
+		var oLight = sel[ 0 ];
 
-        if (getChildByName(oLight, g_sGeoName)) {
-           MessageBox.information( '"%1" already has a child %2; Unable to add.'.arg(oLight.getLabel()).arg(g_sGeoLabel), "UberVolume", "&OK" );
-				return false;            
+		if (getChildByName(oLight, g_sGeoName)) {
+			MessageBox.information( '"%1" already has a child %2; Unable to add.'.arg(oLight.getLabel()).arg(g_sGeoLabel), "UberVolume", "&OK" );
+			return false;
+		} else {
+			print(oLight.name);
+			var bSuccess = oConMgr.openFile(sScenePath, true);
+			if (!bSuccess) {
+				MessageBox.information( 'Unable to load Scene; "%1"'.arg(getErrorMessage(oError)), "UberVolume", "&OK" );
+				return false;
+			}
 
-        } else {
-            print(oLight.name);
-            var bSuccess = oConMgr.openFile(sScenePath, true);
-            if (!bSuccess) {
-                MessageBox.information( 'Unable to load Scene; "%1"'.arg(getErrorMessage(oError)), "UberVolume", "&OK" );
-                return false;    
-            }
+			var oGeo = Scene.findNodeByLabel(g_sGeoLabel);
+			oGeo.setLabel("%1 Volume".arg(oLight.getLabel()));
 
-            var oGeo = Scene.findNodeByLabel(g_sGeoLabel);
-            oGeo.setLabel("%1 Volume".arg(oLight.getLabel()));
+			oLight.addNodeChild(oGeo);
+		}
 
-            oLight.addNodeChild(oGeo);
-        }
-
-    }
+	}
 	return true;
 }
-    
+
 beginUndo();
 if (main()) {
 	startCallback();
