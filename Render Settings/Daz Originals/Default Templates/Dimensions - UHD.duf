@@ -1,0 +1,96 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/Render%20Settings/Daz%20Originals/Default%20Templates/Dimensions%20-%20UHD.duf",
+		"type" : "preset_render_settings",
+		"contributor" : {
+			"author" : "DAZ 3D",
+			"email" : "",
+			"website" : "http://www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2023-08-16T22:27:07Z"
+	},
+	"scene" : {
+		"extra" : [
+			{
+				"type" : "studio_render_settings",
+				"render_options" : {
+					"active_renderer" : "DzIrayRenderer",
+					"aspect_ratio" : [ 16, 9 ],
+					"renderViewport" : false,
+					"isAspectConstrained" : true,
+					"imageSize" : [ 3840, 2160 ],
+					"renderType" : "Software",
+					"renderStyle" : "Normal",
+					"openGLPasses" : 4,
+					"useGLSL" : false,
+					"isCurrentFrameRender" : true,
+					"doubleSided" : true,
+					"render_elements" : [
+						{
+							"id" : "General Render",
+							"channels" : [
+								{
+									"channel" : {
+										"id" : "Auto Headlamp",
+										"type" : "enum",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Post Process Script",
+										"type" : "file",
+										"current_value" : "",
+										"file_type" : "file_open",
+										"file_display_text" : "",
+										"file_filter" : "DAZ Script (*.dsa *.dsb *.dse)"
+									}
+								}
+							]
+						},
+						{
+							"id" : "NVIDIA Iray Render Options",
+							"channels" : [
+							],
+							"children" : [
+								{
+									"id" : "NVIDIA Iray Photoreal Options",
+									"channels" : [
+									]
+								},
+								{
+									"id" : "NVIDIA Iray Interactive Options",
+									"channels" : [
+									]
+								}
+							],
+							"extra" : [
+								{
+									"type" : "studio/element_data/iray_settings",
+									"render_to_canvases" : false,
+									"canvases" : [
+									],
+									"node_lists" : [
+										{ "id" : "NL1", "nodes" : [ ] }
+									]
+								}
+							]
+						},
+						{
+							"id" : "Tonemapper Options",
+							"channels" : [
+							]
+						},
+						{
+							"id" : "Environment Options",
+							"channels" : [
+							]
+						}
+					]
+				}
+			}
+		]
+	}
+}

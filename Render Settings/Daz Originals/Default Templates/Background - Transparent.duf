@@ -1,0 +1,955 @@
+{
+	"file_version" : "0.6.1.0",
+	"asset_info" : {
+		"id" : "/Render%20Settings/Daz%20Originals/Default%20Templates/Background%20-%20Transparent.duf",
+		"type" : "preset_render_settings",
+		"contributor" : {
+			"author" : "DAZ 3D",
+			"email" : "",
+			"website" : "http://www.daz3d.com"
+		},
+		"revision" : "1.0",
+		"modified" : "2023-08-17T16:18:26Z"
+	},
+	"scene" : {
+		"extra" : [
+			{
+				"type" : "studio_render_settings",
+				"render_options" : {
+					"active_renderer" : "DzIrayRenderer",
+					"aspect_ratio" : [ 1, 1 ],
+					"renderMovToId" : "MovieFile",
+					"renderViewport" : false,
+					"isAspectConstrained" : true,
+					"imageSize" : [ 2048, 2048 ],
+					"renderType" : "Software",
+					"renderStyle" : "Normal",
+					"openGLPasses" : 4,
+					"useGLSL" : false,
+					"isCurrentFrameRender" : true,
+					"doubleSided" : true,
+					"render_elements" : [
+						{
+							"id" : "General Render",
+							"channels" : [
+								{
+									"channel" : {
+										"id" : "Auto Headlamp",
+										"type" : "enum",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Post Process Script",
+										"type" : "file",
+										"current_value" : "",
+										"file_type" : "file_open",
+										"file_display_text" : "",
+										"file_filter" : "DAZ Script (*.dsa *.dsb *.dse)"
+									}
+								}
+							]
+						},
+						{
+							"id" : "NVIDIA Iray Render Options",
+							"channels" : [
+								{
+									"channel" : {
+										"id" : "Render Mode",
+										"type" : "enum",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Min Samples",
+										"type" : "int",
+										"current_value" : 5
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Max Samples",
+										"type" : "int",
+										"current_value" : 15000
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Max Time",
+										"type" : "int",
+										"current_value" : 600
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Rendering Quality Enable",
+										"type" : "bool",
+										"current_value" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Rendering Quality",
+										"type" : "float",
+										"current_value" : 1
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Rendering Converged Ratio",
+										"type" : "float",
+										"current_value" : 0.99,
+										"display_as_percent" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Post SSIM Available",
+										"type" : "bool",
+										"current_value" : false
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Pixel Filter",
+										"type" : "enum",
+										"value" : 2,
+										"current_value" : 2
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Pixel Filter Radius",
+										"type" : "float",
+										"current_value" : 1.5
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Post Denoiser Available",
+										"type" : "bool",
+										"current_value" : false
+									}
+								},
+								{
+									"channel" : {
+										"id" : "White Mode Enable",
+										"type" : "bool",
+										"current_value" : false
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Section Caps Enabled",
+										"type" : "bool",
+										"current_value" : false
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Active Canvas",
+										"type" : "enum",
+										"current_value" : 0
+									}
+								}
+							],
+							"children" : [
+								{
+									"id" : "NVIDIA Iray Photoreal Options",
+									"channels" : [
+										{
+											"channel" : {
+												"id" : "Min Update Samples",
+												"type" : "int",
+												"current_value" : 1
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Update Interval",
+												"type" : "float",
+												"current_value" : 5
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Default Alpha LPE",
+												"type" : "enum",
+												"current_value" : 0
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Max Path Length",
+												"type" : "int",
+												"current_value" : -1
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Caustic Sampler",
+												"type" : "bool",
+												"current_value" : false
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Guided Sampling",
+												"type" : "bool",
+												"current_value" : false
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Instancing Optimization",
+												"type" : "enum",
+												"value" : 2,
+												"current_value" : 2
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Ray Tracing Low Memory",
+												"type" : "enum",
+												"value" : 1,
+												"current_value" : 1
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Firefly Filter Enable",
+												"type" : "bool",
+												"current_value" : true
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Nominal Luminance",
+												"type" : "float",
+												"current_value" : 0
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Noise Degrain Filtering",
+												"type" : "int",
+												"current_value" : 0
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Bloom Filter Enable",
+												"type" : "bool",
+												"current_value" : false
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Spectral Rendering Enable",
+												"type" : "bool",
+												"current_value" : false
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Spectral Conversion Color Space",
+												"type" : "enum",
+												"value" : 1,
+												"current_value" : 1
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Spectral Conversion Intent",
+												"type" : "enum",
+												"current_value" : 0
+											}
+										},
+										{
+											"channel" : {
+												"id" : "Spectral Observer",
+												"type" : "enum",
+												"current_value" : 0
+											}
+										}
+									]
+								},
+								{
+									"id" : "NVIDIA Iray Interactive Options",
+									"channels" : [
+									]
+								}
+							],
+							"extra" : [
+								{
+									"type" : "studio/element_data/iray_settings",
+									"render_to_canvases" : false,
+									"canvases" : [
+									],
+									"node_lists" : [
+										{ "id" : "NL1", "nodes" : [ ] }
+									]
+								}
+							]
+						},
+						{
+							"id" : "Tonemapper Options",
+							"channels" : [
+								{
+									"channel" : {
+										"id" : "XTranslate",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "YTranslate",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "ZTranslate",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "XRotate",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "YRotate",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "ZRotate",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Scale",
+										"type" : "float",
+										"current_value" : 1
+									}
+								},
+								{
+									"channel" : {
+										"id" : "XScale",
+										"type" : "float",
+										"current_value" : 1
+									}
+								},
+								{
+									"channel" : {
+										"id" : "YScale",
+										"type" : "float",
+										"current_value" : 1
+									}
+								},
+								{
+									"channel" : {
+										"id" : "ZScale",
+										"type" : "float",
+										"current_value" : 1
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Point At",
+										"type" : "numeric_node",
+										"current_value" : 1,
+										"needs_node" : true,
+										"node" : null
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Visible",
+										"type" : "bool",
+										"current_value" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Visible in Viewport",
+										"type" : "bool",
+										"current_value" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Selectable",
+										"type" : "bool",
+										"current_value" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Renderable",
+										"type" : "bool",
+										"current_value" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Cast Shadows",
+										"type" : "bool",
+										"current_value" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Visible in Simulation",
+										"type" : "bool",
+										"current_value" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Tone Mapping Enable",
+										"type" : "bool",
+										"current_value" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Exposure Value",
+										"type" : "float",
+										"current_value" : 13
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Shutter Speed",
+										"type" : "float",
+										"current_value" : 128
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Aperture",
+										"type" : "float",
+										"current_value" : 8
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Film ISO",
+										"type" : "float",
+										"current_value" : 100
+									}
+								},
+								{
+									"channel" : {
+										"id" : "cm2 Factor",
+										"type" : "float",
+										"current_value" : 1
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Vignetting",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "White Point Scale",
+										"type" : "float",
+										"current_value" : 1
+									}
+								},
+								{
+									"channel" : {
+										"id" : "White Point",
+										"type" : "float_color",
+										"current_value" : [ 1, 1, 1 ]
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Burn Highlights Per Component",
+										"type" : "bool",
+										"current_value" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Burn Highlights",
+										"type" : "float",
+										"current_value" : 0.25
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Crush Blacks",
+										"type" : "float",
+										"current_value" : 0.2
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Saturation",
+										"type" : "float",
+										"current_value" : 1
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Gamma",
+										"type" : "float",
+										"current_value" : 2.2
+									}
+								}
+							]
+						},
+						{
+							"id" : "Environment Options",
+							"channels" : [
+								{
+									"channel" : {
+										"id" : "XTranslate",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "YTranslate",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "ZTranslate",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "XRotate",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "YRotate",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "ZRotate",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Scale",
+										"type" : "float",
+										"current_value" : 1
+									}
+								},
+								{
+									"channel" : {
+										"id" : "XScale",
+										"type" : "float",
+										"current_value" : 1
+									}
+								},
+								{
+									"channel" : {
+										"id" : "YScale",
+										"type" : "float",
+										"current_value" : 1
+									}
+								},
+								{
+									"channel" : {
+										"id" : "ZScale",
+										"type" : "float",
+										"current_value" : 1
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Point At",
+										"type" : "numeric_node",
+										"current_value" : 1,
+										"needs_node" : true,
+										"node" : null
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Visible",
+										"type" : "bool",
+										"current_value" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Visible in Viewport",
+										"type" : "bool",
+										"current_value" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Selectable",
+										"type" : "bool",
+										"current_value" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Renderable",
+										"type" : "bool",
+										"current_value" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Cast Shadows",
+										"type" : "bool",
+										"current_value" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Visible in Simulation",
+										"type" : "bool",
+										"current_value" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Environment Mode",
+										"type" : "enum",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Dome Mode",
+										"type" : "enum",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Draw Dome",
+										"type" : "bool",
+										"current_value" : false
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Environment Intensity",
+										"type" : "float",
+										"current_value" : 1
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Environment Map",
+										"type" : "float",
+										"current_value" : 2,
+										"image" : null
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Environment Tint",
+										"type" : "float_color",
+										"current_value" : [ 1, 1, 1 ]
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Environment Lighting Resolution",
+										"type" : "int",
+										"current_value" : 512
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Environment Lighting Blur",
+										"type" : "bool",
+										"current_value" : false
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Dome Orientation X",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Dome Orientation Y",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Dome Orientation Z",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Dome Rotation",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "SS Sun Direction",
+										"type" : "node",
+										"node" : null
+									}
+								},
+								{
+									"channel" : {
+										"id" : "SS Latitude",
+										"type" : "float",
+										"current_value" : 40.76426
+									}
+								},
+								{
+									"channel" : {
+										"id" : "SS Longitude",
+										"type" : "float",
+										"current_value" : -111.8972
+									}
+								},
+								{
+									"channel" : {
+										"id" : "SS Day",
+										"type" : "int",
+										"current_value" : 2457092
+									}
+								},
+								{
+									"channel" : {
+										"id" : "SS Time",
+										"type" : "int",
+										"current_value" : 64800
+									}
+								},
+								{
+									"channel" : {
+										"id" : "SS UTC Offset",
+										"type" : "float",
+										"current_value" : -6
+									}
+								},
+								{
+									"channel" : {
+										"id" : "SS Sun Disk Intensity",
+										"type" : "float",
+										"current_value" : 1
+									}
+								},
+								{
+									"channel" : {
+										"id" : "SS Sun Disk Scale",
+										"type" : "float",
+										"current_value" : 4
+									}
+								},
+								{
+									"channel" : {
+										"id" : "SS Sun Glow Intensity",
+										"type" : "float",
+										"current_value" : 1
+									}
+								},
+								{
+									"channel" : {
+										"id" : "SS Physically Scaled Sun",
+										"type" : "bool",
+										"current_value" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "SS Haze",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "SS Blue-Red Tint",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "SS Saturation",
+										"type" : "float",
+										"current_value" : 1
+									}
+								},
+								{
+									"channel" : {
+										"id" : "SS Horizon Height",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "SS Horizon Blur",
+										"type" : "float",
+										"current_value" : 0.1
+									}
+								},
+								{
+									"channel" : {
+										"id" : "SS Night Color",
+										"type" : "float_color",
+										"current_value" : [ 0, 0, 0 ]
+									}
+								},
+								{
+									"channel" : {
+										"id" : "SS Multiplier",
+										"type" : "float",
+										"current_value" : 0.10132
+									}
+								},
+								{
+									"channel" : {
+										"id" : "SS RGB Unit Conversion",
+										"type" : "float",
+										"current_value" : 1
+									}
+								},
+								{
+									"channel" : {
+										"id" : "SS Ground Color",
+										"type" : "float_color",
+										"value" : [ 0.4, 0.4, 0.4 ],
+										"current_value" : [ 0.4, 0.4, 0.4 ]
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Ground Texture Scale",
+										"type" : "float",
+										"current_value" : 100
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Ground Position Mode",
+										"type" : "enum",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Ground Origin X",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Ground Origin Y",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Ground Origin Z",
+										"type" : "float",
+										"current_value" : 0
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Draw Ground",
+										"type" : "bool",
+										"current_value" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Ground Reflectivity",
+										"type" : "float_color",
+										"current_value" : [ 0.0392157, 0.0392157, 0.0392157 ]
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Ground Glossiness",
+										"type" : "float",
+										"current_value" : 10000
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Ground Shadow Intensity",
+										"type" : "float",
+										"current_value" : 1
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Ground Visible from Below",
+										"type" : "bool",
+										"current_value" : true
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Matte Fog",
+										"type" : "bool",
+										"current_value" : false
+									}
+								},
+								{
+									"channel" : {
+										"id" : "Ground Fog",
+										"type" : "bool",
+										"current_value" : false
+									}
+								}
+							]
+						}
+					]
+				}
+			}
+		]
+	}
+}
